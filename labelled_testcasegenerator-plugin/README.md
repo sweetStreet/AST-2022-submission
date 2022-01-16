@@ -1,0 +1,1 @@
+Do a "mvn clean install -DskipTests" on Crawljax-Frag Branch. 
