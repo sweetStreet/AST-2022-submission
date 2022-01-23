@@ -1,0 +1,5076 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<style>
+html,body {
+	height: 100%;
+}
+
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -40px;	
+}
+
+#push, footer {
+	height: 40px;
+}
+
+footer {
+	background-color: #f5f5f5;
+}
+
+footer small {
+	display: inline;
+	margin-top: 10px;
+}
+
+.url-table td {
+	word-wrap: break-word;
+	max-width: 700px;
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+	.url-table td {
+		max-width: 500px;
+	}
+}
+
+@media ( max-width : 767px) {
+	#footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.url-table td {
+		max-width: 450px;
+	}
+}
+
+
+#wrap>.container {
+	padding-top: 60px;
+}
+
+.slider-panel {
+	position: absolute;
+	right: 10px;
+	top: 70px;
+	left: auto;
+	display: block;
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, .9);
+	max-width: 300px;
+	z-index: 1000;
+}
+
+.panel-right {
+	position: absolute;
+	right: 10px;
+	top: 70px;
+	left: auto;
+	display: block;
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, .9);
+	max-width: 300px;
+}
+
+.panel-right dd {
+	text-transform: capitalize;
+	word-wrap: break-word;
+}
+
+#container-graph>svg{
+	background:rgb(255, 255, 255);
+}
+</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/alchemyjs/0.2.0/alchemy.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/alchemyjs/0.2.0/scripts/vendor.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/alchemyjs/0.2.0/alchemy.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet"/>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">	
+	<!--
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="lib/vivagraph-0.9.0.min.js"></script>
+	 <script src="http://d3js.org/d3.v2.js"></script>
+
+	<!--
+	<link rel="stylesheet" href="http://cdn.graphalchemist.com/alchemy.0.2.min.css"> 
+	<script type="text/javascript" src="http://cdn.graphalchemist.com/alchemy.0.2.min.js"></script>
+	-->
+	
+</head>
+<body>
+<body>
+	<div id="wrap">
+		<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="#">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#graph" class="nav-link">State graph</a></li>
+					<li><a href="#statistics" class="nav-link">Statistics</a></li>
+					<li><a href="#urls" class="nav-link">URL's</a></li>
+					<li><a href="#config" class="nav-link">Configuration</a></li>
+					<!--li><a href="#clusters" class="nav-link">Clusters</a></li-->
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>		<div class="container page" id="container-graph" style="width: 100%; padding-top: 40px;">
+
+			<div class="panel slider-panel">
+				<p>Adjust to view nodes based on distance</p>
+				<div id="slider"> </div>
+				<div id="selectedThresholdDiv"> </div>
+			</div>
+
+			<div class="popover fade panel-right">
+				<div class="popover-inner">
+					<h3 class="popover-title">Edge info</h3>
+					<div class="popover-content">
+						<dl>
+							<dt>Element name</dt>
+							<dd name='elemName'></dd>
+						</dl>
+						<dl>
+							<dt>From</dt>
+							<dd name='from'></dd>
+						</dl>
+						<dl>
+							<dt>To</dt>
+							<dd name='to'></dd>
+						</dl>
+						<dl>
+							<dt>Identified by</dt>
+							<dd name='id'></dd>
+						</dl>
+						<dl>
+							<dt>Element</dt>
+							<dd name='element' style="text-transform: none;"></dd>
+						</dl>
+						<dl>
+							<dt>Event type</dt>
+							<dd name='eventType'></dd>
+						</dl>
+						<button class="btn btn-small" id='hideButton'>Hide</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container page" id="container-statistics" style="display: none;">
+			
+<section id='crawlResults'>
+	<div class="page-header">
+		<h1>Crawl results</h1>
+	</div>
+	<table class="table table-bordered table-striped">
+		<tbody>
+			<tr>
+				<th>Crawl time</th>
+				<td>2 minutes 36 seconds</td>
+			</tr>
+			<tr>
+				<th>Exit status</th>
+				<td>Exhausted</td>
+			<tr>
+				<th>Number of states</th>
+				<td>19</td>
+			</tr>
+			<tr>
+				<th><a href="#urls" class="nav-link">URL's visited</a></th>
+				<td>16</td>
+			</tr>
+			<tr>
+				<th>Number of edges</th>
+				<td>39</td>
+			</tr>
+			<tr>
+				<th>Number of crawl paths</th>
+				<td>20</td>
+			</tr>
+			<tr>
+				<th>Failed events</th>
+				<td>9</td>
+			<tr>
+				<th>Average DOM length</th>
+				<td>3.924 kB</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+<section id='highs-and-low'>
+	<div class="page-header">
+		<h1>Highs and lows</h1>
+	</div>
+	<table class="table table-bordered table-striped">
+		<tbody>
+			<tr>
+				<th>Highest fan-out</th> 
+								<td><a href="states/state2.html">state2</a></td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<th>Lowest fan-out</th> 				<td><a href="states/state6.html">state6</a></td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<th>Highest fan-in</th> 				<td><a href="states/state24.html">state24</a></td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<th>Lowest fan-in</th> 				<td><a href="states/index.html">index</a></td>
+				<td>0</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+		</div>
+		<div class="container page" id="container-urls" style="display: none;">
+			<div class="page-header">
+	<h1>URL's visited</h1>
+</div>
+<table class="table table-bordered table-striped url-table">
+	<tbody>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS">http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS</a></td>
+			<td> <a
+				href="states/state31.html">state31</a>, 			</td>
+		</tr>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/actions/Order.action">http://localhost:8080/jpetstore/actions/Order.action</a></td>
+			<td> <a
+				href="states/state84.html">state84</a>, 			</td>
+		</tr>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/actions/Catalog.action">http://localhost:8080/jpetstore/actions/Catalog.action</a></td>
+			<td> <a
+				href="states/state50.html">state50</a>,  <a
+				href="states/state2.html">state2</a>,  <a
+				href="states/state114.html">state114</a>, 			</td>
+		</tr>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/actions/Order.action?newOrderForm=">http://localhost:8080/jpetstore/actions/Order.action?newOrderForm=</a></td>
+			<td> <a
+				href="states/state83.html">state83</a>, 			</td>
+		</tr>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/actions/Account.action?newAccountForm=">http://localhost:8080/jpetstore/actions/Account.action?newAccountForm=</a></td>
+			<td> <a
+				href="states/state6.html">state6</a>, 			</td>
+		</tr>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/actions/Account.action?signonForm=">http://localhost:8080/jpetstore/actions/Account.action?signonForm=</a></td>
+			<td> <a
+				href="states/state5.html">state5</a>, 			</td>
+		</tr>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/">http://localhost:8080/jpetstore/</a></td>
+			<td> <a
+				href="states/index.html">index</a>, 			</td>
+		</tr>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/help.html">http://localhost:8080/jpetstore/help.html</a></td>
+			<td> <a
+				href="states/state8.html">state8</a>, 			</td>
+		</tr>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/actions/Cart.action?viewCart=">http://localhost:8080/jpetstore/actions/Cart.action?viewCart=</a></td>
+			<td> <a
+				href="states/state4.html">state4</a>,  <a
+				href="states/state115.html">state115</a>, 			</td>
+		</tr>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/actions/Order.action?newOrder=&confirmed=true">http://localhost:8080/jpetstore/actions/Order.action?newOrder=&confirmed=true</a></td>
+			<td> <a
+				href="states/state104.html">state104</a>, 			</td>
+		</tr>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-SW-01">http://localhost:8080/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-SW-01</a></td>
+			<td> <a
+				href="states/state24.html">state24</a>, 			</td>
+		</tr>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=FISH">http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=FISH</a></td>
+			<td> <a
+				href="states/state23.html">state23</a>, 			</td>
+		</tr>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-PO-02">http://localhost:8080/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-PO-02</a></td>
+			<td> <a
+				href="states/state34.html">state34</a>, 			</td>
+		</tr>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=REPTILES">http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=REPTILES</a></td>
+			<td> <a
+				href="states/state39.html">state39</a>, 			</td>
+		</tr>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/actions/Cart.action?addItemToCart=&workingItemId=EST-1">http://localhost:8080/jpetstore/actions/Cart.action?addItemToCart=&workingItemId=EST-1</a></td>
+			<td> <a
+				href="states/state27.html">state27</a>, 			</td>
+		</tr>
+				<tr>
+			<td><a href="http://localhost:8080/jpetstore/actions/Catalog.action?viewItem=&itemId=EST-1">http://localhost:8080/jpetstore/actions/Catalog.action?viewItem=&itemId=EST-1</a></td>
+			<td> <a
+				href="states/state25.html">state25</a>, 			</td>
+		</tr>
+			</tbody>
+</table>
+		</div>
+		<div class="container page" id="container-config" style="display: none;">
+			<section id='crawlConfig'>
+	<div class="page-header">
+		<h1>Crawl configuration</h1>
+	</div>
+	<table class="table table-bordered table-striped">
+		<tbody>
+						<tr>
+				<td>Url</td> 
+								<td>http://localhost:8080/jpetstore/</td> 
+							</tr>
+						<tr>
+				<td>Plugins</td> 
+								<td><ul><li>CrawlOverview</li><li>TestSuiteGenerator</li><li>TestSuiteGenerator</li><li>FragmentationPlugin</li></ul></td> 
+							</tr>
+						<tr>
+				<td>Basic Auth Url</td> 
+								<td>null</td> 
+							</tr>
+						<tr>
+				<td>Browser Config</td> 
+								<td>1 browsers of type CHROME_HEADLESS using builder Default web driver factory</td> 
+							</tr>
+						<tr>
+				<td>Proxy Configuration</td> 
+								<td>NOTHING</td> 
+							</tr>
+						<tr>
+				<td>Crawl Rules</td> 
+								<td><pre><code>{
+  &quot;crawlEvents&quot; : [ &quot;click&quot; ],
+  &quot;invariants&quot; : [ ],
+  &quot;oracleComparators&quot; : [ {
+    &quot;preConditions&quot; : [ ],
+    &quot;id&quot; : &quot;DummyComparator&quot;,
+    &quot;oracle&quot; : { }
+  } ],
+  &quot;ignoredFrameIdentifiers&quot; : [ ],
+  &quot;preCrawlConfig&quot; : {
+    &quot;waitConditions&quot; : [ ],
+    &quot;crawlConditions&quot; : [ ],
+    &quot;includedElements&quot; : [ {
+      &quot;tagName&quot; : &quot;A&quot;,
+      &quot;id&quot; : &quot;id294714524&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;eventableCondition&quot; : null,
+      &quot;withXpathExpression&quot; : null
+    }, {
+      &quot;tagName&quot; : &quot;BUTTON&quot;,
+      &quot;id&quot; : &quot;id241798218&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;eventableCondition&quot; : null,
+      &quot;withXpathExpression&quot; : null
+    }, {
+      &quot;tagName&quot; : &quot;INPUT&quot;,
+      &quot;id&quot; : &quot;id378279408&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;eventableCondition&quot; : {
+        &quot;id&quot; : &quot;id378279408&quot;,
+        &quot;conditions&quot; : [ ],
+        &quot;inXPath&quot; : &quot;//INPUT[@type='submit']&quot;,
+        &quot;linkedInputFields&quot; : [ ]
+      },
+      &quot;withXpathExpression&quot; : &quot;//INPUT[@type='submit']&quot;
+    }, {
+      &quot;tagName&quot; : &quot;INPUT&quot;,
+      &quot;id&quot; : &quot;id53234206&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;eventableCondition&quot; : {
+        &quot;id&quot; : &quot;id53234206&quot;,
+        &quot;conditions&quot; : [ ],
+        &quot;inXPath&quot; : &quot;//INPUT[@type='button']&quot;,
+        &quot;linkedInputFields&quot; : [ ]
+      },
+      &quot;withXpathExpression&quot; : &quot;//INPUT[@type='button']&quot;
+    }, {
+      &quot;tagName&quot; : &quot;A&quot;,
+      &quot;id&quot; : &quot;id357442299&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;eventableCondition&quot; : null,
+      &quot;withXpathExpression&quot; : null
+    } ],
+    &quot;excludedElements&quot; : [ ],
+    &quot;filterAttributeNames&quot; : [ &quot;closure_hashcode_(\\w)*&quot;, &quot;jquery[0-9]+&quot; ]
+  },
+  &quot;formFillMode&quot; : &quot;NORMAL&quot;,
+  &quot;formFillOrder&quot; : &quot;VISUAL&quot;,
+  &quot;inputSpecification&quot; : {
+    &quot;formInputs&quot; : {
+      &quot;name account.address2&quot; : {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.address2&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;apt 223&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      },
+      &quot;name username&quot; : {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;username&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      },
+      &quot;name repeatedPassword&quot; : {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;repeatedPassword&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      },
+      &quot;name account.lastName&quot; : {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.lastName&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;L&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      },
+      &quot;name password&quot; : {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;password&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      },
+      &quot;name account.phone&quot; : {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.phone&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;5122005208&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      },
+      &quot;name account.country&quot; : {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.country&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;US&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      },
+      &quot;name account.city&quot; : {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.city&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Austin&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      },
+      &quot;name account.zip&quot; : {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.zip&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;78705&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      },
+      &quot;name keyword&quot; : {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;keyword&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Bulldog&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      },
+      &quot;name account.email&quot; : {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.email&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;yul@utexas.edu&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      },
+      &quot;name account.firstName&quot; : {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.firstName&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Y&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      },
+      &quot;name account.state&quot; : {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.state&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;TX&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      },
+      &quot;name account.address1&quot; : {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.address1&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;27 nu st&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }
+    },
+    &quot;forms&quot; : [ {
+      &quot;formInputs&quot; : [ {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;username&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;PASSWORD&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;password&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      } ]
+    }, {
+      &quot;formInputs&quot; : [ {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;username&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;password&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;repeatedPassword&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.firstName&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Y&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.lastName&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;L&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.email&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;yul@utexas.edu&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.phone&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;5122005208&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.address1&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;27 nu st&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.address2&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;apt 223&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.city&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Austin&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.state&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;TX&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.zip&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;78705&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.country&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;US&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      } ]
+    }, {
+      &quot;formInputs&quot; : [ {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;keyword&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Bulldog&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      } ]
+    } ],
+    &quot;crawlElements&quot; : [ {
+      &quot;tagName&quot; : &quot;INPUT&quot;,
+      &quot;id&quot; : &quot;id196499319&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;eventableCondition&quot; : {
+        &quot;id&quot; : &quot;id196499319&quot;,
+        &quot;conditions&quot; : [ ],
+        &quot;inXPath&quot; : &quot;//INPUT[@value='Login']&quot;,
+        &quot;linkedInputFields&quot; : [ {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;username&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;123&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;PASSWORD&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;password&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;123123&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;username&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;123&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;PASSWORD&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;password&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;123123&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;username&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;123&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;PASSWORD&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;password&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;123123&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        } ]
+      },
+      &quot;withXpathExpression&quot; : &quot;//INPUT[@value='Login']&quot;
+    }, {
+      &quot;tagName&quot; : &quot;INPUT&quot;,
+      &quot;id&quot; : &quot;id188840658&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;eventableCondition&quot; : {
+        &quot;id&quot; : &quot;id188840658&quot;,
+        &quot;conditions&quot; : [ ],
+        &quot;inXPath&quot; : &quot;//INPUT[@value='Save Account Information']&quot;,
+        &quot;linkedInputFields&quot; : [ {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;username&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;123&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;password&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;123123&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;repeatedPassword&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;123123&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.firstName&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;Y&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.lastName&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;L&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.email&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;yul@utexas.edu&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.phone&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;5122005208&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.address1&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;27 nu st&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.address2&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;apt 223&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.city&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;Austin&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.state&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;TX&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.zip&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;78705&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.country&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;US&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;username&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;123&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;password&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;123123&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;repeatedPassword&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;123123&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.firstName&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;Y&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.lastName&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;L&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.email&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;yul@utexas.edu&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.phone&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;5122005208&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.address1&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;27 nu st&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.address2&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;apt 223&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.city&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;Austin&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.state&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;TX&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.zip&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;78705&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.country&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;US&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;username&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;123&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;password&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;123123&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;repeatedPassword&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;123123&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.firstName&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;Y&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.lastName&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;L&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.email&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;yul@utexas.edu&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.phone&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;5122005208&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.address1&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;27 nu st&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.address2&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;apt 223&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.city&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;Austin&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.state&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;TX&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.zip&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;78705&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;account.country&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;US&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        } ]
+      },
+      &quot;withXpathExpression&quot; : &quot;//INPUT[@value='Save Account Information']&quot;
+    }, {
+      &quot;tagName&quot; : &quot;INPUT&quot;,
+      &quot;id&quot; : &quot;id243362108&quot;,
+      &quot;eventType&quot; : &quot;click&quot;,
+      &quot;eventableCondition&quot; : {
+        &quot;id&quot; : &quot;id243362108&quot;,
+        &quot;conditions&quot; : [ ],
+        &quot;inXPath&quot; : &quot;//INPUT[@value='Search']&quot;,
+        &quot;linkedInputFields&quot; : [ {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;keyword&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;Bulldog&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;keyword&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;Bulldog&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        }, {
+          &quot;type&quot; : &quot;TEXT&quot;,
+          &quot;identification&quot; : {
+            &quot;how&quot; : &quot;name&quot;,
+            &quot;value&quot; : &quot;keyword&quot;,
+            &quot;webDriverBy&quot; : { }
+          },
+          &quot;inputValues&quot; : [ {
+            &quot;value&quot; : &quot;Bulldog&quot;,
+            &quot;checked&quot; : true
+          } ],
+          &quot;eventable&quot; : null
+        } ]
+      },
+      &quot;withXpathExpression&quot; : &quot;//INPUT[@value='Search']&quot;
+    } ]
+  },
+  &quot;testInvariantsWhileCrawling&quot; : true,
+  &quot;clickOnce&quot; : true,
+  &quot;randomizeCandidateElements&quot; : false,
+  &quot;crawlFrames&quot; : false,
+  &quot;crawlHiddenAnchors&quot; : false,
+  &quot;waitAfterReloadUrl&quot; : 500,
+  &quot;waitAfterEvent&quot; : 500,
+  &quot;followExternalLinks&quot; : false,
+  &quot;crawlPriorityMode&quot; : &quot;NORMAL&quot;,
+  &quot;crawlNearDuplicates&quot; : true,
+  &quot;delayNearDuplicateCrawling&quot; : true,
+  &quot;applyNonSelAdvantage&quot; : false,
+  &quot;avoidUnrelatedBacktracking&quot; : false,
+  &quot;useEquivalentReset&quot; : false,
+  &quot;avoidDifferentBacktracking&quot; : true,
+  &quot;skipExploredActions&quot; : false,
+  &quot;maxRepeatExploredActions&quot; : 3,
+  &quot;usefulFragmentRules&quot; : {
+    &quot;thresholdWidth&quot; : 50.0,
+    &quot;thresholdHeight&quot; : 50.0,
+    &quot;subtreeWidth_and&quot; : 1,
+    &quot;subtreeWidth_or&quot; : 4
+  },
+  &quot;restoreConnectedEdges&quot; : true,
+  &quot;allCrawlElements&quot; : [ {
+    &quot;tagName&quot; : &quot;A&quot;,
+    &quot;id&quot; : &quot;id294714524&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;eventableCondition&quot; : null,
+    &quot;withXpathExpression&quot; : null
+  }, {
+    &quot;tagName&quot; : &quot;BUTTON&quot;,
+    &quot;id&quot; : &quot;id241798218&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;eventableCondition&quot; : null,
+    &quot;withXpathExpression&quot; : null
+  }, {
+    &quot;tagName&quot; : &quot;INPUT&quot;,
+    &quot;id&quot; : &quot;id378279408&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;eventableCondition&quot; : {
+      &quot;id&quot; : &quot;id378279408&quot;,
+      &quot;conditions&quot; : [ ],
+      &quot;inXPath&quot; : &quot;//INPUT[@type='submit']&quot;,
+      &quot;linkedInputFields&quot; : [ ]
+    },
+    &quot;withXpathExpression&quot; : &quot;//INPUT[@type='submit']&quot;
+  }, {
+    &quot;tagName&quot; : &quot;INPUT&quot;,
+    &quot;id&quot; : &quot;id53234206&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;eventableCondition&quot; : {
+      &quot;id&quot; : &quot;id53234206&quot;,
+      &quot;conditions&quot; : [ ],
+      &quot;inXPath&quot; : &quot;//INPUT[@type='button']&quot;,
+      &quot;linkedInputFields&quot; : [ ]
+    },
+    &quot;withXpathExpression&quot; : &quot;//INPUT[@type='button']&quot;
+  }, {
+    &quot;tagName&quot; : &quot;A&quot;,
+    &quot;id&quot; : &quot;id357442299&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;eventableCondition&quot; : null,
+    &quot;withXpathExpression&quot; : null
+  }, {
+    &quot;tagName&quot; : &quot;INPUT&quot;,
+    &quot;id&quot; : &quot;id196499319&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;eventableCondition&quot; : {
+      &quot;id&quot; : &quot;id196499319&quot;,
+      &quot;conditions&quot; : [ ],
+      &quot;inXPath&quot; : &quot;//INPUT[@value='Login']&quot;,
+      &quot;linkedInputFields&quot; : [ {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;username&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;PASSWORD&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;password&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;username&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;PASSWORD&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;password&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;username&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;PASSWORD&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;password&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;username&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;PASSWORD&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;password&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      } ]
+    },
+    &quot;withXpathExpression&quot; : &quot;//INPUT[@value='Login']&quot;
+  }, {
+    &quot;tagName&quot; : &quot;INPUT&quot;,
+    &quot;id&quot; : &quot;id188840658&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;eventableCondition&quot; : {
+      &quot;id&quot; : &quot;id188840658&quot;,
+      &quot;conditions&quot; : [ ],
+      &quot;inXPath&quot; : &quot;//INPUT[@value='Save Account Information']&quot;,
+      &quot;linkedInputFields&quot; : [ {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;username&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;password&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;repeatedPassword&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.firstName&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Y&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.lastName&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;L&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.email&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;yul@utexas.edu&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.phone&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;5122005208&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.address1&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;27 nu st&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.address2&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;apt 223&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.city&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Austin&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.state&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;TX&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.zip&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;78705&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.country&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;US&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;username&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;password&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;repeatedPassword&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.firstName&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Y&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.lastName&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;L&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.email&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;yul@utexas.edu&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.phone&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;5122005208&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.address1&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;27 nu st&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.address2&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;apt 223&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.city&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Austin&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.state&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;TX&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.zip&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;78705&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.country&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;US&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;username&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;password&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;repeatedPassword&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.firstName&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Y&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.lastName&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;L&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.email&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;yul@utexas.edu&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.phone&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;5122005208&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.address1&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;27 nu st&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.address2&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;apt 223&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.city&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Austin&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.state&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;TX&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.zip&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;78705&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.country&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;US&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;username&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;password&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;repeatedPassword&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;123123&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.firstName&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Y&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.lastName&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;L&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.email&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;yul@utexas.edu&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.phone&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;5122005208&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.address1&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;27 nu st&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.address2&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;apt 223&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.city&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Austin&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.state&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;TX&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.zip&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;78705&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;account.country&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;US&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      } ]
+    },
+    &quot;withXpathExpression&quot; : &quot;//INPUT[@value='Save Account Information']&quot;
+  }, {
+    &quot;tagName&quot; : &quot;INPUT&quot;,
+    &quot;id&quot; : &quot;id243362108&quot;,
+    &quot;eventType&quot; : &quot;click&quot;,
+    &quot;eventableCondition&quot; : {
+      &quot;id&quot; : &quot;id243362108&quot;,
+      &quot;conditions&quot; : [ ],
+      &quot;inXPath&quot; : &quot;//INPUT[@value='Search']&quot;,
+      &quot;linkedInputFields&quot; : [ {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;keyword&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Bulldog&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;keyword&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Bulldog&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;keyword&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Bulldog&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      }, {
+        &quot;type&quot; : &quot;TEXT&quot;,
+        &quot;identification&quot; : {
+          &quot;how&quot; : &quot;name&quot;,
+          &quot;value&quot; : &quot;keyword&quot;,
+          &quot;webDriverBy&quot; : { }
+        },
+        &quot;inputValues&quot; : [ {
+          &quot;value&quot; : &quot;Bulldog&quot;,
+          &quot;checked&quot; : true
+        } ],
+        &quot;eventable&quot; : null
+      } ]
+    },
+    &quot;withXpathExpression&quot; : &quot;//INPUT[@value='Search']&quot;
+  } ]
+}</code></pre></td> 
+							</tr>
+						<tr>
+				<td>Maximum States</td> 
+								<td>&infin;</td> 
+							</tr>
+						<tr>
+				<td>Maximum Runtime</td> 
+								<td>3600000</td> 
+							</tr>
+						<tr>
+				<td>Maximum Depth</td> 
+								<td>&infin;</td> 
+							</tr>
+						<tr>
+				<td>Site Dir</td> 
+								<td>/Users/liuyu/projects/tackle-test-generator-ui-level/testlabeling/crawljax_frag/out/jpetstore/jpetstore_HYBRID_DOM_-1.0_60mins/localhost</td> 
+							</tr>
+						<tr>
+				<td>Output Dir</td> 
+								<td>/Users/liuyu/projects/tackle-test-generator-ui-level/testlabeling/crawljax_frag/out/jpetstore/jpetstore_HYBRID_DOM_-1.0_60mins/localhost/crawl0</td> 
+							</tr>
+						<tr>
+				<td>State Vertex Factory</td> 
+								<td>Hybrid0.0</td> 
+							</tr>
+					</tbody>
+	</table>
+</section>
+<section id='versionInfo'>
+	<div class="page-header">
+		<h1>Version info</h1>
+	</div>
+	<table class="table table-bordered table-striped">
+		<tbody>
+			<tr>
+				<td>Crawljax version</td>
+				<td>5.0-beta</td>
+			</tr>
+		</tbody>
+	</table>
+</section>		</div>
+		<div class="container page" id="container-clusters" style="display: none;">
+			
+		</div>
+		<div id="push"></div>
+	</div>
+	<footer>
+		<div class="container">
+			<small class="pull-left muted">Crawl of <a href="http://localhost:8080/jpetstore/">http://localhost:8080/jpetstore/</a> at Wed Oct 06 16:14:07 CDT 2021</small>
+			<small class="pull-right muted">Crawled by <a href="http://crawljax.com">Crawljax</a> 5.0-beta</small>
+		</div>
+	</footer>
+		
+	<script src="js/graphbuilder.js"></script>
+	<script>
+		var edges = [ {
+  "from" : "state4",
+  "to" : "state5",
+  "text" : "Sign In",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[2]",
+  "element" : "Element{node=[A: null], tag=A, text=Sign In, attributes={anyaccess=none, evlist=false, href=/jpetstore/actions/Account.action?signonForm=}}",
+  "eventType" : "click"
+}, {
+  "from" : "state5",
+  "to" : "state6",
+  "text" : "Register Now!",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Register Now!, attributes={evlist=false, href=/jpetstore/actions/Account.action?newAccountForm=}}",
+  "eventType" : "click"
+}, {
+  "from" : "state2",
+  "to" : "state8",
+  "text" : "?",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[3]",
+  "element" : "Element{node=[A: null], tag=A, text=?, attributes={evlist=false, href=../help.html}}",
+  "eventType" : "click"
+}, {
+  "from" : "state2",
+  "to" : "state23",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=FISH}}",
+  "eventType" : "click"
+}, {
+  "from" : "state23",
+  "to" : "state24",
+  "text" : "FI-SW-01",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=FI-SW-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-SW-01}}",
+  "eventType" : "click"
+}, {
+  "from" : "state24",
+  "to" : "state25",
+  "text" : "EST-1",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=EST-1, attributes={anyaccess=none, evlist=false, href=/jpetstore/actions/Catalog.action?viewItem=&itemId=EST-1}}",
+  "eventType" : "click"
+}, {
+  "from" : "state25",
+  "to" : "state24",
+  "text" : "Return to FI-SW-01",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Return to FI-SW-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-SW-01}}",
+  "eventType" : "click"
+}, {
+  "from" : "state27",
+  "to" : "state25",
+  "text" : "EST-1",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=EST-1, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewItem=&itemId=EST-1}}",
+  "eventType" : "click"
+}, {
+  "from" : "state4",
+  "to" : "state31",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[2]",
+  "element" : "Element{node=[A: null], tag=A, text=, attributes={anyaccess=none, evlist=false, href=/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS}}",
+  "eventType" : "click"
+}, {
+  "from" : "state31",
+  "to" : "state24",
+  "text" : "K9-BD-01",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=K9-BD-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-BD-01}}",
+  "eventType" : "click"
+}, {
+  "from" : "state24",
+  "to" : "state31",
+  "text" : "Return to FISH",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Return to FISH, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewCategory=&categoryId=FISH}}",
+  "eventType" : "click"
+}, {
+  "from" : "state31",
+  "to" : "state34",
+  "text" : "K9-PO-02",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=K9-PO-02, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-PO-02}}",
+  "eventType" : "click"
+}, {
+  "from" : "state34",
+  "to" : "state31",
+  "text" : "Return to DOGS",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Return to DOGS, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS}}",
+  "eventType" : "click"
+}, {
+  "from" : "state31",
+  "to" : "state24",
+  "text" : "K9-DL-01",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=K9-DL-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-DL-01}}",
+  "eventType" : "click"
+}, {
+  "from" : "state2",
+  "to" : "state39",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[3]",
+  "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=REPTILES}}",
+  "eventType" : "click"
+}, {
+  "from" : "state39",
+  "to" : "state24",
+  "text" : "RP-SN-01",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=RP-SN-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=RP-SN-01}}",
+  "eventType" : "click"
+}, {
+  "from" : "state2",
+  "to" : "state39",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[4]",
+  "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=CATS}}",
+  "eventType" : "click"
+}, {
+  "from" : "state39",
+  "to" : "state24",
+  "text" : "RP-LI-02",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=RP-LI-02, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=RP-LI-02}}",
+  "eventType" : "click"
+}, {
+  "from" : "state2",
+  "to" : "state39",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[5]",
+  "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=BIRDS}}",
+  "eventType" : "click"
+}, {
+  "from" : "state2",
+  "to" : "state50",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/DIV[1]/FORM[1]/INPUT[2]",
+  "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=searchProducts, type=submit, value=Search}}",
+  "eventType" : "click"
+}, {
+  "from" : "state2",
+  "to" : "state23",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=FISH}}",
+  "eventType" : "click"
+}, {
+  "from" : "state23",
+  "to" : "state34",
+  "text" : "FI-SW-02",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=FI-SW-02, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-SW-02}}",
+  "eventType" : "click"
+}, {
+  "from" : "state2",
+  "to" : "state31",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[2]",
+  "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=DOGS}}",
+  "eventType" : "click"
+}, {
+  "from" : "state31",
+  "to" : "state34",
+  "text" : "K9-RT-01",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=K9-RT-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-RT-01}}",
+  "eventType" : "click"
+}, {
+  "from" : "state2",
+  "to" : "state39",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[3]",
+  "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=CATS}}",
+  "eventType" : "click"
+}, {
+  "from" : "state23",
+  "to" : "state24",
+  "text" : "FI-FW-01",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=FI-FW-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-FW-01}}",
+  "eventType" : "click"
+}, {
+  "from" : "state50",
+  "to" : "state24",
+  "text" : "Friendly dog from England",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Friendly dog from England, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-BD-01}}",
+  "eventType" : "click"
+}, {
+  "from" : "state2",
+  "to" : "state39",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[4]",
+  "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=REPTILES}}",
+  "eventType" : "click"
+}, {
+  "from" : "state27",
+  "to" : "state83",
+  "text" : "Proceed to Checkout",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Proceed to Checkout, attributes={class=Button, evlist=false, href=/jpetstore/actions/Order.action?newOrderForm=}}",
+  "eventType" : "click"
+}, {
+  "from" : "state83",
+  "to" : "state84",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/INPUT[1]",
+  "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=newOrder, type=submit, value=Continue}}",
+  "eventType" : "click"
+}, {
+  "from" : "state2",
+  "to" : "state39",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[5]",
+  "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=BIRDS}}",
+  "eventType" : "click"
+}, {
+  "from" : "state23",
+  "to" : "state24",
+  "text" : "FI-FW-02",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=FI-FW-02, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-FW-02}}",
+  "eventType" : "click"
+}, {
+  "from" : "state50",
+  "to" : "state24",
+  "text" : "K9-BD-01",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/B[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=K9-BD-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-BD-01}}",
+  "eventType" : "click"
+}, {
+  "from" : "state84",
+  "to" : "state104",
+  "text" : "Confirm",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Confirm, attributes={class=Button, evlist=false, href=/jpetstore/actions/Order.action?newOrder=&confirmed=true}}",
+  "eventType" : "click"
+}, {
+  "from" : "state2",
+  "to" : "state4",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Cart.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCart=}}",
+  "eventType" : "click"
+}, {
+  "from" : "state27",
+  "to" : "state4",
+  "text" : "Remove",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[2]/TD[8]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Remove, attributes={class=Button, evlist=false, href=/jpetstore/actions/Cart.action?removeItemFromCart=&workingItemId=EST-1}}",
+  "eventType" : "click"
+}, {
+  "from" : "state5",
+  "to" : "state114",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/INPUT[1]",
+  "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=signon, type=submit, value=Login}}",
+  "eventType" : "click"
+}, {
+  "from" : "state114",
+  "to" : "state115",
+  "text" : "",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Cart.action?viewCart=}}",
+  "eventType" : "click"
+}, {
+  "from" : "index",
+  "to" : "state114",
+  "text" : "Enter the Store",
+  "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/P[1]/A[1]",
+  "element" : "Element{node=[A: null], tag=A, text=Enter the Store, attributes={evlist=false, href=actions/Catalog.action}}",
+  "eventType" : "click"
+} ];
+		var states = {
+  "state31" : {
+    "name" : "state31",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS",
+    "candidateElements" : [ {
+      "top" : 181,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 63,
+      "height" : 16
+    }, {
+      "top" : 203,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 64,
+      "height" : 16
+    }, {
+      "top" : 225,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 16
+    }, {
+      "top" : 248,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 16
+    }, {
+      "top" : 270,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[6]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 16
+    }, {
+      "top" : 293,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[7]/TD[1]/A[1]",
+      "width" : 67,
+      "height" : 16
+    } ],
+    "fanIn" : 4,
+    "fanOut" : 4,
+    "id" : 31,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 12.0,
+    "cluster" : 31,
+    "timeAdded" : 1633554920641,
+    "nearestState" : "state23"
+  },
+  "state84" : {
+    "name" : "state84",
+    "url" : "http://localhost:8080/jpetstore/actions/Order.action",
+    "candidateElements" : [ {
+      "top" : 99,
+      "left" : 973,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 133,
+      "height" : 16
+    }, {
+      "top" : 564,
+      "left" : 573,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/A[1]",
+      "width" : 43,
+      "height" : 18
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 84,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 52.0,
+    "cluster" : 84,
+    "timeAdded" : 1633554970279,
+    "nearestState" : "state6"
+  },
+  "state50" : {
+    "name" : "state50",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action",
+    "candidateElements" : [ {
+      "top" : 99,
+      "left" : 973,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 133,
+      "height" : 16
+    }, {
+      "top" : 236,
+      "left" : 311,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 293,
+      "height" : 16
+    }, {
+      "top" : 124,
+      "left" : 610,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/B[1]/A[1]",
+      "width" : 65,
+      "height" : 16
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 2,
+    "id" : 50,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 14.0,
+    "cluster" : 50,
+    "timeAdded" : 1633554941449,
+    "nearestState" : "state39"
+  },
+  "state83" : {
+    "name" : "state83",
+    "url" : "http://localhost:8080/jpetstore/actions/Order.action?newOrderForm=",
+    "candidateElements" : [ {
+      "top" : 470,
+      "left" : 570,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/INPUT[1]",
+      "width" : 49,
+      "height" : 18
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 83,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 43.0,
+    "cluster" : 83,
+    "timeAdded" : 1633554966388,
+    "nearestState" : "state6"
+  },
+  "state6" : {
+    "name" : "state6",
+    "url" : "http://localhost:8080/jpetstore/actions/Account.action?newAccountForm=",
+    "candidateElements" : [ {
+      "top" : 658,
+      "left" : 529,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/INPUT[1]",
+      "width" : 131,
+      "height" : 18
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 6,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 89.0,
+    "cluster" : 6,
+    "timeAdded" : 1633554874039,
+    "nearestState" : "state4"
+  },
+  "state5" : {
+    "name" : "state5",
+    "url" : "http://localhost:8080/jpetstore/actions/Account.action?signonForm=",
+    "candidateElements" : [ {
+      "top" : 233,
+      "left" : 661,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 90,
+      "height" : 16
+    }, {
+      "top" : 215,
+      "left" : 579,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/INPUT[1]",
+      "width" : 31,
+      "height" : 18
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 2,
+    "id" : 5,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 38.0,
+    "cluster" : 5,
+    "timeAdded" : 1633554870250,
+    "nearestState" : "state2"
+  },
+  "index" : {
+    "name" : "index",
+    "url" : "http://localhost:8080/jpetstore/",
+    "candidateElements" : [ {
+      "top" : 71,
+      "left" : 89,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/P[1]/A[1]",
+      "width" : 96,
+      "height" : 16
+    } ],
+    "fanIn" : 0,
+    "fanOut" : 1,
+    "id" : 0,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : true,
+    "distToNearestState" : -1.0,
+    "cluster" : 0,
+    "timeAdded" : 1633554852585,
+    "nearestState" : "null"
+  },
+  "state8" : {
+    "name" : "state8",
+    "url" : "http://localhost:8080/jpetstore/help.html",
+    "candidateElements" : [ {
+      "top" : 183,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 70,
+      "height" : 16
+    }, {
+      "top" : 199,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+      "width" : 63,
+      "height" : 16
+    }, {
+      "top" : 215,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+      "width" : 212,
+      "height" : 16
+    }, {
+      "top" : 231,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+      "width" : 136,
+      "height" : 16
+    }, {
+      "top" : 247,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+      "width" : 141,
+      "height" : 16
+    }, {
+      "top" : 263,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[6]/A[1]",
+      "width" : 201,
+      "height" : 16
+    }, {
+      "top" : 279,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[7]/A[1]",
+      "width" : 180,
+      "height" : 16
+    }, {
+      "top" : 295,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[8]/A[1]",
+      "width" : 206,
+      "height" : 16
+    }, {
+      "top" : 311,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[9]/A[1]",
+      "width" : 94,
+      "height" : 16
+    }, {
+      "top" : 327,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[10]/A[1]",
+      "width" : 126,
+      "height" : 16
+    }, {
+      "top" : 343,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[11]/A[1]",
+      "width" : 89,
+      "height" : 16
+    }, {
+      "top" : 380,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H2[1]/A[1]",
+      "width" : 0,
+      "height" : 25
+    }, {
+      "top" : 498,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H2[2]/A[1]",
+      "width" : 0,
+      "height" : 25
+    }, {
+      "top" : 651,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H2[3]/A[1]",
+      "width" : 23,
+      "height" : 48
+    }, {
+      "top" : 762,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H4[1]/A[1]",
+      "width" : 0,
+      "height" : 16
+    }, {
+      "top" : 970,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H4[2]/A[1]",
+      "width" : 0,
+      "height" : 16
+    }, {
+      "top" : 1072,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H2[4]/A[1]",
+      "width" : 0,
+      "height" : 25
+    }, {
+      "top" : 1115,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H4[3]/A[1]",
+      "width" : 0,
+      "height" : 16
+    }, {
+      "top" : 1307,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H4[4]/A[1]",
+      "width" : 0,
+      "height" : 16
+    }, {
+      "top" : 1453,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H4[5]/A[1]",
+      "width" : 0,
+      "height" : 16
+    }, {
+      "top" : 1664,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H2[5]/A[1]",
+      "width" : 0,
+      "height" : 25
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 8,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/H2[1]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H2[2]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H4[1]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H4[2]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H2[4]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H4[3]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H4[4]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H4[5]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H2[5]/A[1]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 99.0,
+    "cluster" : 8,
+    "timeAdded" : 1633554879708,
+    "nearestState" : "index"
+  },
+  "state2" : {
+    "name" : "state2",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action",
+    "candidateElements" : [ {
+      "top" : 47,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+      "width" : 287,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 551,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 16,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 576,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[2]",
+      "width" : 45,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 630,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[3]",
+      "width" : 8,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 492,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[1]",
+      "width" : 26,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 527,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[2]",
+      "width" : 30,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 566,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[3]",
+      "width" : 52,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 627,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[4]",
+      "width" : 28,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 664,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[5]",
+      "width" : 33,
+      "height" : 16
+    }, {
+      "top" : 112,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 148,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[2]",
+      "width" : 46,
+      "height" : 16
+    }, {
+      "top" : 184,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[3]",
+      "width" : 43,
+      "height" : 16
+    }, {
+      "top" : 220,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[4]",
+      "width" : 78,
+      "height" : 16
+    }, {
+      "top" : 256,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[5]",
+      "width" : 50,
+      "height" : 16
+    }, {
+      "top" : 24,
+      "left" : 969,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/DIV[1]/FORM[1]/INPUT[2]",
+      "width" : 56,
+      "height" : 19
+    } ],
+    "fanIn" : 0,
+    "fanOut" : 12,
+    "id" : 2,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : true,
+    "distToNearestState" : 83.0,
+    "cluster" : 2,
+    "timeAdded" : 1633554859094,
+    "nearestState" : "index"
+  },
+  "state4" : {
+    "name" : "state4",
+    "url" : "http://localhost:8080/jpetstore/actions/Cart.action?viewCart=",
+    "candidateElements" : [ {
+      "top" : 47,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+      "width" : 287,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 551,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 16,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 576,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[2]",
+      "width" : 45,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 492,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[1]",
+      "width" : 26,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 527,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[2]",
+      "width" : 30,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 566,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[3]",
+      "width" : 52,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 627,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[4]",
+      "width" : 28,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 664,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[5]",
+      "width" : 33,
+      "height" : 16
+    }, {
+      "top" : 99,
+      "left" : 973,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 133,
+      "height" : 16
+    }, {
+      "top" : 203,
+      "left" : 295,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/INPUT[1]",
+      "width" : 64,
+      "height" : 18
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 2,
+    "id" : 4,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 54.0,
+    "cluster" : 4,
+    "timeAdded" : 1633554865171,
+    "nearestState" : "state2"
+  },
+  "state114" : {
+    "name" : "state114",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action",
+    "candidateElements" : [ {
+      "top" : 25,
+      "left" : 504,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 16,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 529,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[2]",
+      "width" : 56,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 594,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[3]",
+      "width" : 74,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 677,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[4]",
+      "width" : 8,
+      "height" : 16
+    }, {
+      "top" : 128,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 164,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[2]",
+      "width" : 46,
+      "height" : 16
+    }, {
+      "top" : 200,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[3]",
+      "width" : 43,
+      "height" : 16
+    }, {
+      "top" : 236,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[4]",
+      "width" : 78,
+      "height" : 16
+    }, {
+      "top" : 272,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[5]",
+      "width" : 50,
+      "height" : 16
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 1,
+    "id" : 114,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 4.0,
+    "cluster" : 114,
+    "timeAdded" : 1633554998924,
+    "nearestState" : "state2"
+  },
+  "state104" : {
+    "name" : "state104",
+    "url" : "http://localhost:8080/jpetstore/actions/Order.action?newOrder=&confirmed=true",
+    "candidateElements" : [ {
+      "top" : 143,
+      "left" : 973,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 133,
+      "height" : 16
+    }, {
+      "top" : 735,
+      "left" : 352,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[26]/TD[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 104,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 63.0,
+    "cluster" : 104,
+    "timeAdded" : 1633554987734,
+    "nearestState" : "state84"
+  },
+  "state115" : {
+    "name" : "state115",
+    "url" : "http://localhost:8080/jpetstore/actions/Cart.action?viewCart=",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 115,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 3.0,
+    "cluster" : 115,
+    "timeAdded" : 1633555002774,
+    "nearestState" : "state4"
+  },
+  "state24" : {
+    "name" : "state24",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-SW-01",
+    "candidateElements" : [ {
+      "top" : 99,
+      "left" : 1011,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 95,
+      "height" : 16
+    }, {
+      "top" : 181,
+      "left" : 409,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 179,
+      "left" : 719,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[5]/A[1]",
+      "width" : 61,
+      "height" : 18
+    }, {
+      "top" : 203,
+      "left" : 409,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 201,
+      "left" : 719,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[5]/A[1]",
+      "width" : 61,
+      "height" : 18
+    } ],
+    "fanIn" : 10,
+    "fanOut" : 2,
+    "id" : 24,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 20.0,
+    "cluster" : 24,
+    "timeAdded" : 1633554907439,
+    "nearestState" : "state23"
+  },
+  "state23" : {
+    "name" : "state23",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=FISH",
+    "candidateElements" : [ {
+      "top" : 181,
+      "left" : 518,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 16
+    }, {
+      "top" : 203,
+      "left" : 518,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 16
+    }, {
+      "top" : 225,
+      "left" : 518,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]",
+      "width" : 60,
+      "height" : 16
+    }, {
+      "top" : 248,
+      "left" : 518,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]",
+      "width" : 60,
+      "height" : 16
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 4,
+    "id" : 23,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 31.0,
+    "cluster" : 23,
+    "timeAdded" : 1633554904109,
+    "nearestState" : "state4"
+  },
+  "state34" : {
+    "name" : "state34",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-PO-02",
+    "candidateElements" : [ {
+      "top" : 99,
+      "left" : 1002,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 105,
+      "height" : 16
+    }, {
+      "top" : 181,
+      "left" : 397,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 179,
+      "left" : 731,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[5]/A[1]",
+      "width" : 61,
+      "height" : 18
+    } ],
+    "fanIn" : 3,
+    "fanOut" : 1,
+    "id" : 34,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 13.0,
+    "cluster" : 34,
+    "timeAdded" : 1633554925556,
+    "nearestState" : "state24"
+  },
+  "state39" : {
+    "name" : "state39",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=REPTILES",
+    "candidateElements" : [ {
+      "top" : 181,
+      "left" : 517,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 65,
+      "height" : 16
+    }, {
+      "top" : 203,
+      "left" : 517,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 58,
+      "height" : 16
+    } ],
+    "fanIn" : 6,
+    "fanOut" : 2,
+    "id" : 39,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 12.0,
+    "cluster" : 39,
+    "timeAdded" : 1633554931560,
+    "nearestState" : "state23"
+  },
+  "state27" : {
+    "name" : "state27",
+    "url" : "http://localhost:8080/jpetstore/actions/Cart.action?addItemToCart=&workingItemId=EST-1",
+    "candidateElements" : [ {
+      "top" : 181,
+      "left" : 158,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 179,
+      "left" : 678,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[2]/TD[8]/A[1]",
+      "width" : 46,
+      "height" : 18
+    }, {
+      "top" : 228,
+      "left" : 386,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/A[1]",
+      "width" : 108,
+      "height" : 17
+    }, {
+      "top" : 208,
+      "left" : 273,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/INPUT[1]",
+      "width" : 64,
+      "height" : 18
+    } ],
+    "fanIn" : 0,
+    "fanOut" : 3,
+    "id" : 27,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 18.0,
+    "cluster" : 27,
+    "timeAdded" : 1633554914878,
+    "nearestState" : "state4"
+  },
+  "state25" : {
+    "name" : "state25",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewItem=&itemId=EST-1",
+    "candidateElements" : [ {
+      "top" : 99,
+      "left" : 983,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 124,
+      "height" : 16
+    }, {
+      "top" : 352,
+      "left" : 374,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[7]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 18
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 1,
+    "id" : 25,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 20.0,
+    "cluster" : 25,
+    "timeAdded" : 1633554910816,
+    "nearestState" : "state23"
+  }
+};
+		var alchemyGraph = {
+  "nodes" : [ {
+    "name" : "state31",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS",
+    "candidateElements" : [ {
+      "top" : 181,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 63,
+      "height" : 16
+    }, {
+      "top" : 203,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 64,
+      "height" : 16
+    }, {
+      "top" : 225,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 16
+    }, {
+      "top" : 248,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 16
+    }, {
+      "top" : 270,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[6]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 16
+    }, {
+      "top" : 293,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[7]/TD[1]/A[1]",
+      "width" : 67,
+      "height" : 16
+    } ],
+    "fanIn" : 4,
+    "fanOut" : 4,
+    "id" : 31,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 12.0,
+    "cluster" : 31,
+    "timeAdded" : 1633554920641,
+    "nearestState" : "state23"
+  }, {
+    "name" : "state84",
+    "url" : "http://localhost:8080/jpetstore/actions/Order.action",
+    "candidateElements" : [ {
+      "top" : 99,
+      "left" : 973,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 133,
+      "height" : 16
+    }, {
+      "top" : 564,
+      "left" : 573,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/A[1]",
+      "width" : 43,
+      "height" : 18
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 84,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 52.0,
+    "cluster" : 84,
+    "timeAdded" : 1633554970279,
+    "nearestState" : "state6"
+  }, {
+    "name" : "state50",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action",
+    "candidateElements" : [ {
+      "top" : 99,
+      "left" : 973,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 133,
+      "height" : 16
+    }, {
+      "top" : 236,
+      "left" : 311,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 293,
+      "height" : 16
+    }, {
+      "top" : 124,
+      "left" : 610,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/B[1]/A[1]",
+      "width" : 65,
+      "height" : 16
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 2,
+    "id" : 50,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 14.0,
+    "cluster" : 50,
+    "timeAdded" : 1633554941449,
+    "nearestState" : "state39"
+  }, {
+    "name" : "state83",
+    "url" : "http://localhost:8080/jpetstore/actions/Order.action?newOrderForm=",
+    "candidateElements" : [ {
+      "top" : 470,
+      "left" : 570,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/INPUT[1]",
+      "width" : 49,
+      "height" : 18
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 83,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 43.0,
+    "cluster" : 83,
+    "timeAdded" : 1633554966388,
+    "nearestState" : "state6"
+  }, {
+    "name" : "state6",
+    "url" : "http://localhost:8080/jpetstore/actions/Account.action?newAccountForm=",
+    "candidateElements" : [ {
+      "top" : 658,
+      "left" : 529,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/INPUT[1]",
+      "width" : 131,
+      "height" : 18
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 6,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 89.0,
+    "cluster" : 6,
+    "timeAdded" : 1633554874039,
+    "nearestState" : "state4"
+  }, {
+    "name" : "state5",
+    "url" : "http://localhost:8080/jpetstore/actions/Account.action?signonForm=",
+    "candidateElements" : [ {
+      "top" : 233,
+      "left" : 661,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 90,
+      "height" : 16
+    }, {
+      "top" : 215,
+      "left" : 579,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/INPUT[1]",
+      "width" : 31,
+      "height" : 18
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 2,
+    "id" : 5,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 38.0,
+    "cluster" : 5,
+    "timeAdded" : 1633554870250,
+    "nearestState" : "state2"
+  }, {
+    "name" : "index",
+    "url" : "http://localhost:8080/jpetstore/",
+    "candidateElements" : [ {
+      "top" : 71,
+      "left" : 89,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/P[1]/A[1]",
+      "width" : 96,
+      "height" : 16
+    } ],
+    "fanIn" : 0,
+    "fanOut" : 1,
+    "id" : 0,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : true,
+    "distToNearestState" : -1.0,
+    "cluster" : 0,
+    "timeAdded" : 1633554852585,
+    "nearestState" : "null"
+  }, {
+    "name" : "state8",
+    "url" : "http://localhost:8080/jpetstore/help.html",
+    "candidateElements" : [ {
+      "top" : 183,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 70,
+      "height" : 16
+    }, {
+      "top" : 199,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+      "width" : 63,
+      "height" : 16
+    }, {
+      "top" : 215,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+      "width" : 212,
+      "height" : 16
+    }, {
+      "top" : 231,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+      "width" : 136,
+      "height" : 16
+    }, {
+      "top" : 247,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+      "width" : 141,
+      "height" : 16
+    }, {
+      "top" : 263,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[6]/A[1]",
+      "width" : 201,
+      "height" : 16
+    }, {
+      "top" : 279,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[7]/A[1]",
+      "width" : 180,
+      "height" : 16
+    }, {
+      "top" : 295,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[8]/A[1]",
+      "width" : 206,
+      "height" : 16
+    }, {
+      "top" : 311,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[9]/A[1]",
+      "width" : 94,
+      "height" : 16
+    }, {
+      "top" : 327,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[10]/A[1]",
+      "width" : 126,
+      "height" : 16
+    }, {
+      "top" : 343,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[11]/A[1]",
+      "width" : 89,
+      "height" : 16
+    }, {
+      "top" : 380,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H2[1]/A[1]",
+      "width" : 0,
+      "height" : 25
+    }, {
+      "top" : 498,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H2[2]/A[1]",
+      "width" : 0,
+      "height" : 25
+    }, {
+      "top" : 651,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H2[3]/A[1]",
+      "width" : 23,
+      "height" : 48
+    }, {
+      "top" : 762,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H4[1]/A[1]",
+      "width" : 0,
+      "height" : 16
+    }, {
+      "top" : 970,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H4[2]/A[1]",
+      "width" : 0,
+      "height" : 16
+    }, {
+      "top" : 1072,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H2[4]/A[1]",
+      "width" : 0,
+      "height" : 25
+    }, {
+      "top" : 1115,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H4[3]/A[1]",
+      "width" : 0,
+      "height" : 16
+    }, {
+      "top" : 1307,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H4[4]/A[1]",
+      "width" : 0,
+      "height" : 16
+    }, {
+      "top" : 1453,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H4[5]/A[1]",
+      "width" : 0,
+      "height" : 16
+    }, {
+      "top" : 1664,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H2[5]/A[1]",
+      "width" : 0,
+      "height" : 25
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 8,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/H2[1]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H2[2]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H4[1]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H4[2]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H2[4]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H4[3]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H4[4]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H4[5]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H2[5]/A[1]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 99.0,
+    "cluster" : 8,
+    "timeAdded" : 1633554879708,
+    "nearestState" : "index"
+  }, {
+    "name" : "state2",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action",
+    "candidateElements" : [ {
+      "top" : 47,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+      "width" : 287,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 551,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 16,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 576,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[2]",
+      "width" : 45,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 630,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[3]",
+      "width" : 8,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 492,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[1]",
+      "width" : 26,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 527,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[2]",
+      "width" : 30,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 566,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[3]",
+      "width" : 52,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 627,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[4]",
+      "width" : 28,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 664,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[5]",
+      "width" : 33,
+      "height" : 16
+    }, {
+      "top" : 112,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 148,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[2]",
+      "width" : 46,
+      "height" : 16
+    }, {
+      "top" : 184,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[3]",
+      "width" : 43,
+      "height" : 16
+    }, {
+      "top" : 220,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[4]",
+      "width" : 78,
+      "height" : 16
+    }, {
+      "top" : 256,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[5]",
+      "width" : 50,
+      "height" : 16
+    }, {
+      "top" : 24,
+      "left" : 969,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/DIV[1]/FORM[1]/INPUT[2]",
+      "width" : 56,
+      "height" : 19
+    } ],
+    "fanIn" : 0,
+    "fanOut" : 12,
+    "id" : 2,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : true,
+    "distToNearestState" : 83.0,
+    "cluster" : 2,
+    "timeAdded" : 1633554859094,
+    "nearestState" : "index"
+  }, {
+    "name" : "state4",
+    "url" : "http://localhost:8080/jpetstore/actions/Cart.action?viewCart=",
+    "candidateElements" : [ {
+      "top" : 47,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+      "width" : 287,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 551,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 16,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 576,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[2]",
+      "width" : 45,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 492,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[1]",
+      "width" : 26,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 527,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[2]",
+      "width" : 30,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 566,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[3]",
+      "width" : 52,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 627,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[4]",
+      "width" : 28,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 664,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[5]",
+      "width" : 33,
+      "height" : 16
+    }, {
+      "top" : 99,
+      "left" : 973,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 133,
+      "height" : 16
+    }, {
+      "top" : 203,
+      "left" : 295,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/INPUT[1]",
+      "width" : 64,
+      "height" : 18
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 2,
+    "id" : 4,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 54.0,
+    "cluster" : 4,
+    "timeAdded" : 1633554865171,
+    "nearestState" : "state2"
+  }, {
+    "name" : "state114",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action",
+    "candidateElements" : [ {
+      "top" : 25,
+      "left" : 504,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 16,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 529,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[2]",
+      "width" : 56,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 594,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[3]",
+      "width" : 74,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 677,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[4]",
+      "width" : 8,
+      "height" : 16
+    }, {
+      "top" : 128,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 164,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[2]",
+      "width" : 46,
+      "height" : 16
+    }, {
+      "top" : 200,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[3]",
+      "width" : 43,
+      "height" : 16
+    }, {
+      "top" : 236,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[4]",
+      "width" : 78,
+      "height" : 16
+    }, {
+      "top" : 272,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[5]",
+      "width" : 50,
+      "height" : 16
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 1,
+    "id" : 114,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 4.0,
+    "cluster" : 114,
+    "timeAdded" : 1633554998924,
+    "nearestState" : "state2"
+  }, {
+    "name" : "state104",
+    "url" : "http://localhost:8080/jpetstore/actions/Order.action?newOrder=&confirmed=true",
+    "candidateElements" : [ {
+      "top" : 143,
+      "left" : 973,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 133,
+      "height" : 16
+    }, {
+      "top" : 735,
+      "left" : 352,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[26]/TD[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 104,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 63.0,
+    "cluster" : 104,
+    "timeAdded" : 1633554987734,
+    "nearestState" : "state84"
+  }, {
+    "name" : "state115",
+    "url" : "http://localhost:8080/jpetstore/actions/Cart.action?viewCart=",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 115,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 3.0,
+    "cluster" : 115,
+    "timeAdded" : 1633555002774,
+    "nearestState" : "state4"
+  }, {
+    "name" : "state24",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-SW-01",
+    "candidateElements" : [ {
+      "top" : 99,
+      "left" : 1011,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 95,
+      "height" : 16
+    }, {
+      "top" : 181,
+      "left" : 409,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 179,
+      "left" : 719,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[5]/A[1]",
+      "width" : 61,
+      "height" : 18
+    }, {
+      "top" : 203,
+      "left" : 409,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 201,
+      "left" : 719,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[5]/A[1]",
+      "width" : 61,
+      "height" : 18
+    } ],
+    "fanIn" : 10,
+    "fanOut" : 2,
+    "id" : 24,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 20.0,
+    "cluster" : 24,
+    "timeAdded" : 1633554907439,
+    "nearestState" : "state23"
+  }, {
+    "name" : "state23",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=FISH",
+    "candidateElements" : [ {
+      "top" : 181,
+      "left" : 518,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 16
+    }, {
+      "top" : 203,
+      "left" : 518,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 16
+    }, {
+      "top" : 225,
+      "left" : 518,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]",
+      "width" : 60,
+      "height" : 16
+    }, {
+      "top" : 248,
+      "left" : 518,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]",
+      "width" : 60,
+      "height" : 16
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 4,
+    "id" : 23,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 31.0,
+    "cluster" : 23,
+    "timeAdded" : 1633554904109,
+    "nearestState" : "state4"
+  }, {
+    "name" : "state34",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-PO-02",
+    "candidateElements" : [ {
+      "top" : 99,
+      "left" : 1002,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 105,
+      "height" : 16
+    }, {
+      "top" : 181,
+      "left" : 397,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 179,
+      "left" : 731,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[5]/A[1]",
+      "width" : 61,
+      "height" : 18
+    } ],
+    "fanIn" : 3,
+    "fanOut" : 1,
+    "id" : 34,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 13.0,
+    "cluster" : 34,
+    "timeAdded" : 1633554925556,
+    "nearestState" : "state24"
+  }, {
+    "name" : "state39",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=REPTILES",
+    "candidateElements" : [ {
+      "top" : 181,
+      "left" : 517,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 65,
+      "height" : 16
+    }, {
+      "top" : 203,
+      "left" : 517,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 58,
+      "height" : 16
+    } ],
+    "fanIn" : 6,
+    "fanOut" : 2,
+    "id" : 39,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 12.0,
+    "cluster" : 39,
+    "timeAdded" : 1633554931560,
+    "nearestState" : "state23"
+  }, {
+    "name" : "state27",
+    "url" : "http://localhost:8080/jpetstore/actions/Cart.action?addItemToCart=&workingItemId=EST-1",
+    "candidateElements" : [ {
+      "top" : 181,
+      "left" : 158,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 179,
+      "left" : 678,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[2]/TD[8]/A[1]",
+      "width" : 46,
+      "height" : 18
+    }, {
+      "top" : 228,
+      "left" : 386,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/A[1]",
+      "width" : 108,
+      "height" : 17
+    }, {
+      "top" : 208,
+      "left" : 273,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/INPUT[1]",
+      "width" : 64,
+      "height" : 18
+    } ],
+    "fanIn" : 0,
+    "fanOut" : 3,
+    "id" : 27,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 18.0,
+    "cluster" : 27,
+    "timeAdded" : 1633554914878,
+    "nearestState" : "state4"
+  }, {
+    "name" : "state25",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewItem=&itemId=EST-1",
+    "candidateElements" : [ {
+      "top" : 99,
+      "left" : 983,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 124,
+      "height" : 16
+    }, {
+      "top" : 352,
+      "left" : 374,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[7]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 18
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 1,
+    "id" : 25,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 20.0,
+    "cluster" : 25,
+    "timeAdded" : 1633554910816,
+    "nearestState" : "state23"
+  } ],
+  "links" : [ {
+    "source" : 4,
+    "target" : 5,
+    "text" : "Sign In",
+    "element" : "Element{node=[A: null], tag=A, text=Sign In, attributes={anyaccess=none, evlist=false, href=/jpetstore/actions/Account.action?signonForm=}}",
+    "eventType" : "click"
+  }, {
+    "source" : 5,
+    "target" : 6,
+    "text" : "Register Now!",
+    "element" : "Element{node=[A: null], tag=A, text=Register Now!, attributes={evlist=false, href=/jpetstore/actions/Account.action?newAccountForm=}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 8,
+    "text" : "?",
+    "element" : "Element{node=[A: null], tag=A, text=?, attributes={evlist=false, href=../help.html}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 23,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=FISH}}",
+    "eventType" : "click"
+  }, {
+    "source" : 23,
+    "target" : 24,
+    "text" : "FI-SW-01",
+    "element" : "Element{node=[A: null], tag=A, text=FI-SW-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-SW-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 24,
+    "target" : 25,
+    "text" : "EST-1",
+    "element" : "Element{node=[A: null], tag=A, text=EST-1, attributes={anyaccess=none, evlist=false, href=/jpetstore/actions/Catalog.action?viewItem=&itemId=EST-1}}",
+    "eventType" : "click"
+  }, {
+    "source" : 25,
+    "target" : 24,
+    "text" : "Return to FI-SW-01",
+    "element" : "Element{node=[A: null], tag=A, text=Return to FI-SW-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-SW-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 27,
+    "target" : 25,
+    "text" : "EST-1",
+    "element" : "Element{node=[A: null], tag=A, text=EST-1, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewItem=&itemId=EST-1}}",
+    "eventType" : "click"
+  }, {
+    "source" : 4,
+    "target" : 31,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={anyaccess=none, evlist=false, href=/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS}}",
+    "eventType" : "click"
+  }, {
+    "source" : 31,
+    "target" : 24,
+    "text" : "K9-BD-01",
+    "element" : "Element{node=[A: null], tag=A, text=K9-BD-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-BD-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 24,
+    "target" : 31,
+    "text" : "Return to FISH",
+    "element" : "Element{node=[A: null], tag=A, text=Return to FISH, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewCategory=&categoryId=FISH}}",
+    "eventType" : "click"
+  }, {
+    "source" : 31,
+    "target" : 34,
+    "text" : "K9-PO-02",
+    "element" : "Element{node=[A: null], tag=A, text=K9-PO-02, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-PO-02}}",
+    "eventType" : "click"
+  }, {
+    "source" : 34,
+    "target" : 31,
+    "text" : "Return to DOGS",
+    "element" : "Element{node=[A: null], tag=A, text=Return to DOGS, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS}}",
+    "eventType" : "click"
+  }, {
+    "source" : 31,
+    "target" : 24,
+    "text" : "K9-DL-01",
+    "element" : "Element{node=[A: null], tag=A, text=K9-DL-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-DL-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 39,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=REPTILES}}",
+    "eventType" : "click"
+  }, {
+    "source" : 39,
+    "target" : 24,
+    "text" : "RP-SN-01",
+    "element" : "Element{node=[A: null], tag=A, text=RP-SN-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=RP-SN-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 39,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=CATS}}",
+    "eventType" : "click"
+  }, {
+    "source" : 39,
+    "target" : 24,
+    "text" : "RP-LI-02",
+    "element" : "Element{node=[A: null], tag=A, text=RP-LI-02, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=RP-LI-02}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 39,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=BIRDS}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 50,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=searchProducts, type=submit, value=Search}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 23,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=FISH}}",
+    "eventType" : "click"
+  }, {
+    "source" : 23,
+    "target" : 34,
+    "text" : "FI-SW-02",
+    "element" : "Element{node=[A: null], tag=A, text=FI-SW-02, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-SW-02}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 31,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=DOGS}}",
+    "eventType" : "click"
+  }, {
+    "source" : 31,
+    "target" : 34,
+    "text" : "K9-RT-01",
+    "element" : "Element{node=[A: null], tag=A, text=K9-RT-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-RT-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 39,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=CATS}}",
+    "eventType" : "click"
+  }, {
+    "source" : 23,
+    "target" : 24,
+    "text" : "FI-FW-01",
+    "element" : "Element{node=[A: null], tag=A, text=FI-FW-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-FW-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 50,
+    "target" : 24,
+    "text" : "Friendly dog from England",
+    "element" : "Element{node=[A: null], tag=A, text=Friendly dog from England, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-BD-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 39,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=REPTILES}}",
+    "eventType" : "click"
+  }, {
+    "source" : 27,
+    "target" : 83,
+    "text" : "Proceed to Checkout",
+    "element" : "Element{node=[A: null], tag=A, text=Proceed to Checkout, attributes={class=Button, evlist=false, href=/jpetstore/actions/Order.action?newOrderForm=}}",
+    "eventType" : "click"
+  }, {
+    "source" : 83,
+    "target" : 84,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=newOrder, type=submit, value=Continue}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 39,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=BIRDS}}",
+    "eventType" : "click"
+  }, {
+    "source" : 23,
+    "target" : 24,
+    "text" : "FI-FW-02",
+    "element" : "Element{node=[A: null], tag=A, text=FI-FW-02, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-FW-02}}",
+    "eventType" : "click"
+  }, {
+    "source" : 50,
+    "target" : 24,
+    "text" : "K9-BD-01",
+    "element" : "Element{node=[A: null], tag=A, text=K9-BD-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-BD-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 84,
+    "target" : 104,
+    "text" : "Confirm",
+    "element" : "Element{node=[A: null], tag=A, text=Confirm, attributes={class=Button, evlist=false, href=/jpetstore/actions/Order.action?newOrder=&confirmed=true}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 4,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Cart.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCart=}}",
+    "eventType" : "click"
+  }, {
+    "source" : 27,
+    "target" : 4,
+    "text" : "Remove",
+    "element" : "Element{node=[A: null], tag=A, text=Remove, attributes={class=Button, evlist=false, href=/jpetstore/actions/Cart.action?removeItemFromCart=&workingItemId=EST-1}}",
+    "eventType" : "click"
+  }, {
+    "source" : 5,
+    "target" : 114,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=signon, type=submit, value=Login}}",
+    "eventType" : "click"
+  }, {
+    "source" : 114,
+    "target" : 115,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Cart.action?viewCart=}}",
+    "eventType" : "click"
+  }, {
+    "source" : 0,
+    "target" : 114,
+    "text" : "Enter the Store",
+    "element" : "Element{node=[A: null], tag=A, text=Enter the Store, attributes={evlist=false, href=actions/Catalog.action}}",
+    "eventType" : "click"
+  } ]
+};
+		var maxRaw = -1.0;
+		var clusters = null;
+		var selectedThreshold = 0.0;
+		var selectedThresholdChanged = false;
+		$(document).ready(
+				function() {
+					$.each(states, function() {
+						graph.addNode(this.name, {
+							img : 'screenshots/' + this.name + '_small.jpg',
+							url : "states/" + this.name + ".html"
+						});
+					});
+
+					var edgesSeen = {};
+					$.each(edges, function() {
+						var edgeKey = this.from + "-to-" + this.to;
+						if (!(edgeKey in edgesSeen)) {
+							edgesSeen[edgeKey] = true;
+							graph.addLink(this.from, this.to, {
+								text : this.text,
+								id : this.id,
+								eventType : this.eventType,
+								element : this.element
+
+							});
+						}
+					});
+
+					$("#hideButton").click(function() {
+						$(".panel-right").removeClass("in");
+						$('path[stroke="red"]').attr("stroke", "grey");
+					});
+
+					$("a[rel='popover']").popover({
+						content : $("#popup-content").html(),
+						html : true,
+						trigger : "hover"
+					});
+
+					$("a[data-toggle='tooltip']").tooltip();
+
+					var paused = false;
+					$("#pauseButton").click(
+							function() {
+								if (paused) {
+									renderer.resume();
+									paused = false;
+									$(this).children(":first").attr("class",
+											"icon-pause");
+								} else {
+									renderer.pause();
+									paused = true;
+									$(this).children(":first").attr("class",
+											"icon-play");
+								}
+							});
+
+					var hideNearDuplicates = true;
+					$("#toggleND").click(
+							function(){
+								if(hideNearDuplicates){
+									hideNearDuplicates = false;
+									hideNearDuplicatesFn();
+								}else{
+									hideNearDuplicates = true;
+									showAllNodes();
+								}
+							}
+						);
+
+					if(maxRaw == -1.0){
+						console.log("No slider");
+						$(".slider-panel").html("");
+					}
+
+					else{
+						$("#slider").slider(
+							{
+								orientation: "horizontal",
+								step:maxRaw/100,
+								max:maxRaw,
+								change:function( event, ui) {
+									currentValue = $("#slider").slider("option","value");
+									if(currentValue != selectedThreshold){
+										selectedThresholdChanged = true;
+										selectedThreshold = currentValue;
+										console.log(selectedThreshold)
+										$("#selectedThresholdDiv").html("selected threshold : " + selectedThreshold);
+										distanceBasedGraph();
+									}
+									
+								}
+							});
+					}
+
+					// Initializing Alchemy Graph
+					// alchemy.begin({
+			  //       	dataSource: alchemyGraph, 
+			  //       	divSelector: "#container-clusters",
+			  //       	nodeCaption: 'name', 
+			  //       	nodeMouseOver: 'name',
+			  //           cluster: true
+			  //           //clusterColours: ["#1B9E77","#D95F02","#7570B3","#E7298A","#66A61E","#E6AB02"]
+			  //       });
+
+					/* Makes nav links update the nav toolback with current page */
+					$('.nav-link').click(function(e) { 
+						/* Example: #url */
+						var target = e.target.hash;
+
+						updateNav(target);
+					});
+
+					/* page: a string with target page, like "#nav" */
+					function updateNav(page) {
+						/* Removes active class from previous active link */
+						$('.navbar li').removeClass('active');
+
+						/* Find correct link on nav-bar and add active class to it */
+						$('.navbar li').each(function(index, element) {
+							if ($(element).find('a').get(0).hash === page) {
+								$(element).addClass('active');
+
+								return false;
+							}
+						});
+					}
+
+					function loadPage(page) {
+						$('.page').hide();
+						$('#container-' + page).show();
+
+						if (page === "graph") {
+							$('.graphBtn').show();
+						} else {
+							$('.graphBtn').hide();
+						}
+					}
+
+					$(window).on(
+							'hashchange',
+							function(e) {
+								pageRef = window.location.hash.substring(1);
+								if ($("#container-" + pageRef).length == 0
+										&& pageRef !== "graph") {
+									window.location.hash = "graph";
+								} else {
+									loadPage(pageRef);
+								}
+							});
+
+					$(window).trigger('hashchange');
+				});
+
+		function rebuildGraph(){
+			$.each(states, function() {
+						graph.addNode(this.name, {
+							img : 'screenshots/' + this.name + '_small.jpg',
+							url : "states/" + this.name + ".html"
+						});
+					});
+
+					var edgesSeen = {};
+					$.each(edges, function() {
+						var edgeKey = this.from + "-to-" + this.to;
+						if (!(edgeKey in edgesSeen)) {
+							edgesSeen[edgeKey] = true;
+							graph.addLink(this.from, this.to, {
+								text : this.text,
+								id : this.id,
+								eventType : this.eventType,
+								element : this.element
+
+							});
+						}
+					});
+		}
+
+		function hideNearDuplicatesFn(){
+			$.each(states, function() {
+				if(this.hasNearDuplicate){
+					graph.removeNode(this.name);
+				}
+			});
+		}
+
+		function distanceBasedGraph(){
+			selectedThresholdChanged = false;
+			graph.clear();
+			rebuildGraph();
+			$.each(states, function() {
+
+				if(this.distToNearestState < selectedThreshold && this.distToNearestState > 0){
+					graph.removeNode(this.name);
+				}
+			});
+		}
+
+		function showAllNodes(){
+			graph.clear();
+			rebuildGraph();
+		}
+
+
+
+		function showInfo(link) {
+			$(".panel-right").addClass("in");
+			$(".panel-right [name='elemName']").text(link.data.text);
+			$(".panel-right [name='from']").html(asStateLink(link.fromId));
+			$(".panel-right [name='to']").html(asStateLink(link.toId));
+			$(".panel-right [name='id']").text(link.data.id);
+			$(".panel-right [name='element']").text(link.data.element);
+			$(".panel-right [name='eventType']").text(link.data.eventType);
+		}
+
+		function asStateLink(name) {
+			return "<a href='states/" + name + ".html' target='_new'>" + name
+					+ "</a>";
+		}
+
+		$('#container-graph svg').css("width", "100%");
+		function resize() {
+			$('#container-graph').css("height", window.innerHeight - 80);
+			$('#container-graph svg').css("height", window.innerHeight - 80);
+		}
+		$(window).resize(resize);
+		resize();
+	</script>
+
+	<style type="text/css">
+		#container-clusters>svg {
+		  border: 1px solid #ccc;
+		}
+		
+		circle.node {
+		  fill: lightsteelblue;
+		  stroke: #555;
+		  stroke-width: 3px;
+		}
+		circle.leaf {
+		  stroke: #fff;
+		  stroke-width: 1.5px;
+		}
+		path.hull {
+		  fill: lightsteelblue;
+		  fill-opacity: 0.3;
+		}
+		line.link {
+		  stroke: #333;
+		  stroke-opacity: 0.5;
+		  pointer-events: none;
+		}
+    </style>
+
+	<script>
+var width = 960,     // svg width
+    height = 600,     // svg height
+    dr = 4,      // default point radius
+    off = 15,    // cluster hull offset
+    expand = {}, // expanded "clusters
+    data, net, force, hullg, hull, linkg, link, nodeg, node;
+
+var curve = d3.svg.line()
+    .interpolate("cardinal-closed")
+    .tension(.85);
+
+var fill = d3.scale.category20();
+
+function noop() { return false; }
+
+function nodeid(n) {
+  return n.size ? "_g_"+n.cluster : n.name;
+}
+
+function linkid(l) {
+  var u = nodeid(l.source),
+      v = nodeid(l.target);
+  return u<v ? u+"|"+v : v+"|"+u;
+}
+
+function getcluster(n) { 
+  return n.cluster; }
+
+// constructs the network to visualize
+function network(data, prev, index, expand) {
+  expand = expand || {};
+  var gm = {},    // cluster map
+      nm = {},    // node map
+      lm = {},    // link map
+      gn = {},    // previous cluster nodes
+      gc = {},    // previous cluster centroids
+      nodes = [], // output nodes
+      links = []; // output links
+
+  // process previous nodes for reuse or centroid calculation
+  if (prev) {
+    prev.nodes.forEach(function(n) {
+      var i = index(n), o;
+      if (n.size > 0) {
+        gn[i] = n;
+        n.size = 0;
+      } else {
+        o = gc[i] || (gc[i] = {x:0,y:0,count:0});
+        o.x += n.x;
+        o.y += n.y;
+        o.count += 1;
+      }
+    });
+  }
+
+  // determine nodes
+  for (var k=0; k<data.nodes.length; ++k) {
+    var n = data.nodes[k],
+        i = index(n),
+        l = gm[i] || (gm[i]=gn[i]) || (gm[i]={cluster:i, size:0, nodes:[]});
+
+    if (expand[i]) {
+      // the node should be directly visible
+      nm[n.name] = nodes.length;
+      nodes.push(n);
+      if (gn[i]) {
+        // place new nodes at cluster location (plus jitter)
+        n.x = gn[i].x + Math.random();
+        n.y = gn[i].y + Math.random();
+      }
+    } else {
+      // the node is part of a collapsed cluster
+      if (l.size == 0) {
+        // if new cluster, add to set and position at centroid of leaf nodes
+        nm[i] = nodes.length;
+        nodes.push(l);
+        if (gc[i]) {
+          l.x = gc[i].x / gc[i].count;
+          l.y = gc[i].y / gc[i].count;
+        }
+      }
+      l.nodes.push(n);
+    }
+  // always count cluster size as we also use it to tweak the force graph strengths/distances
+    l.size += 1;
+  n.cluster_data = l;
+  }
+
+  for (i in gm) { gm[i].link_count = 0; }
+
+  // determine links
+  for (k=0; k<data.links.length; ++k) {
+    
+    var e = data.links[k];
+    if((typeof e.source == "undefined") || (typeof e.target == "undefined")){
+      console.log("source " + e.source);
+      console.log("target " + e.target);
+      continue;
+    }
+      var u = index(e.source),
+        v = index(e.target);
+    if (u != v) {
+      gm[u].link_count++;
+      gm[v].link_count++;
+    }
+    u = expand[u] ? nm[e.source.name] : nm[u];
+    v = expand[v] ? nm[e.target.name] : nm[v];
+    var i = (u<v ? u+"|"+v : v+"|"+u),
+        l = lm[i] || (lm[i] = {source:u, target:v, size:0});
+    l.size += 1;
+  }
+  for (i in lm) { links.push(lm[i]); }
+
+  return {nodes: nodes, links: links};
+}
+
+function convexHulls(nodes, index, offset) {
+  var hulls = {};
+
+  // create point sets
+  for (var k=0; k<nodes.length; ++k) {
+    var n = nodes[k];
+    if (n.size) continue;
+    var i = index(n),
+        l = hulls[i] || (hulls[i] = []);
+    l.push([n.x-offset, n.y-offset]);
+    l.push([n.x-offset, n.y+offset]);
+    l.push([n.x+offset, n.y-offset]);
+    l.push([n.x+offset, n.y+offset]);
+  }
+
+  // create convex hulls
+  var hullset = [];
+  for (i in hulls) {
+    hullset.push({cluster: i, path: d3.geom.hull(hulls[i])});
+  }
+
+  return hullset;
+}
+
+function drawCluster(d) {
+  return curve(d.path); // 0.8
+}
+
+function getNodeFromId(id){
+  for(var i=0; i< data.nodes.length; i++){
+    node = data.nodes[i];
+    if(node.id == id)
+      return node;
+  }
+}
+
+// --------------------------------------------------------
+
+var body = d3.select('body>div.container-clusters');
+
+var vis = body.append("svg")
+   .attr("width", width)
+   .attr("height", height);
+
+
+  data = alchemyGraph;
+  for (var i=0; i<data.links.length; ++i) {
+    o = data.links[i];
+    o.source = getNodeFromId(o.source);
+    o.target = getNodeFromId(o.target);
+  }
+
+  hullg = vis.append("g");
+  linkg = vis.append("g");
+  nodeg = vis.append("g");
+
+  init();
+
+  vis.attr("opacity", 1e-6)
+    .transition()
+      .duration(1000)
+      .attr("opacity", 1);
+
+function init() {
+  if (force) force.stop();
+
+  net = network(data, net, getcluster, expand);
+
+  force = d3.layout.force()
+      .nodes(net.nodes)
+      .links(net.links)
+      .size([width, height])
+      .linkDistance(function(l, i) {
+      var n1 = l.source, n2 = l.target;
+    // larger distance for bigger clusters:
+    // both between single nodes and _other_ clusters (where size of own node cluster still counts),
+    // and between two cluster nodes.
+    //
+    // reduce distance for clusters with very few outer links,
+    // again both in expanded and clustered form, i.e. between individual nodes of a cluster and
+    // nodes of another cluster or other cluster node or between two cluster nodes.
+    //
+    // The latter was done to keep the single-link clusters ('blue', rose, ...) close.
+    return 30 +
+      Math.min(20 * Math.min((n1.size || (n1.cluster != n2.cluster ? n1.cluster_data.size : 0)),
+                             (n2.size || (n1.cluster != n2.cluster ? n2.cluster_data.size : 0))),
+           -30 +
+           30 * Math.min((n1.link_count || (n1.cluster != n2.cluster ? n1.cluster_data.link_count : 0)),
+                         (n2.link_count || (n1.cluster != n2.cluster ? n2.cluster_data.link_count : 0))),
+           100);
+      //return 150;
+    })
+    .linkStrength(function(l, i) {
+    return 1;
+    })
+    .gravity(0.02)   // gravity+charge tweaked to ensure good 'clustered' view (e.g. green cluster not smack between blue&orange, ...
+    .charge(-600)    // ... charge is important to turn single-linked clusters to the outside
+    .friction(0.5)   // friction adjusted to get dampened display: less bouncy bouncy ball [Swedish Chef, anyone?]
+      .start();
+
+  hullg.selectAll("path.hull").remove();
+  hull = hullg.selectAll("path.hull")
+      .data(convexHulls(net.nodes, getcluster, off))
+    .enter().append("path")
+      .attr("class", "hull")
+      .attr("d", drawCluster)
+      .style("fill", function(d) { return fill(d.cluster); })
+      .on("click", function(d) {
+console.log("hull click", d, arguments, this, expand[d.cluster]);
+      expand[d.cluster] = false; init();
+    });
+
+  link = linkg.selectAll("line.link").data(net.links, linkid);
+  link.exit().remove();
+  link.enter().append("line")
+      .attr("class", "link")
+      .attr("x1", function(d) { return d.source.x; })
+      .attr("y1", function(d) { return d.source.y; })
+      .attr("x2", function(d) { return d.target.x; })
+      .attr("y2", function(d) { return d.target.y; })
+      .style("stroke-width", function(d) { return d.size || 1; });
+
+  node = nodeg.selectAll("g").data(net.nodes, nodeid);
+  node.exit().remove();
+  var nodeEnter = node.enter().append("g")
+      .attr("class", function(d) { return "node" + (d.size?"":" leaf"); })
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+      .on("dblclick", function(d) {
+      console.log("node click", d, arguments, this, expand[d.cluster]);
+              expand[d.cluster] = !expand[d.cluster];
+          init();
+            });
+  
+  
+  var images = nodeEnter.append("svg:image")
+    .attr("xlink:href",  function(d) { 
+      if(typeof d.name == "undefined")
+        return "screenshots/dummy.jpeg";
+      else
+        return "screenshots/" +d.name+"_small.jpg";
+    })
+    .style("opacity", function(d){ 
+      if(typeof d.name == "undefined")
+        return 0;
+      else
+        return 1;
+    })
+    .attr("x", function(d) { return -25;})
+    .attr("y", function(d) { return -25;})
+     .attr("height", 100)
+     .attr("width", 100)
+     .on("dblclick", function(d) {
+     	 if(typeof d.name == "undefined")
+     	 	console.log();
+	      else{
+	      	window.open("states/" +d.name+".html", '_blank');
+	      	d3.event.stopPropagation();
+
+	      }
+     		// $.get("states/" +d.name+".html", function (data) {
+       //              $('#statePopup').html("").append(data);
+       //          });
+
+            });
+
+  var circles = nodeEnter.append("circle")
+     
+    // // if (d.size) -- d.size > 0 when d is a cluster node.
+      .attr("r", function(d) { return d.size ? d.size + dr : dr+1; })
+      .style("fill", function(d) { return fill(d.cluster); })
+      
+
+	var text = nodeEnter.append("svg:text")
+      .html(nodeid);
+
+
+  node.call(force.drag);
+
+  force.on("tick", function() {
+    if (!hull.empty()) {
+      hull.data(convexHulls(net.nodes, getcluster, off))
+          .attr("d", drawCluster);
+    }
+
+    link.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    // node.attr("cx", function(d) { return d.x; })
+    //     .attr("cy", function(d) { return d.y; });
+    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+  });
+}
+$('#container-clusters svg').css("width", "100%");
+		function resize() {
+			$('#container-clusters').css("height", window.innerHeight - 80);
+			$('#container-clusters svg').css("height", window.innerHeight - 80);
+		}
+		$(window).resize(resize);
+		resize();
+    </script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state31</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS'>http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>4</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>4</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>6</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state23</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>12.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>31</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state31.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 492px; top: 178px; width: 65px; height: 18px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state24.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 492px; top: 200px; width: 66px; height: 18px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state34.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 492px; top: 222px; width: 63px; height: 18px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state24.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 492px; top: 245px; width: 63px; height: 18px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state34.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[6]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 492px; top: 267px; width: 63px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[7]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 492px; top: 290px; width: 69px; height: 18px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head&gt;
+&lt;link rel=&quot;StyleSheet&quot; href=&quot;../css/jpetstore.css&quot; type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+
+&lt;meta name=&quot;generator&quot; content=&quot;HTML Tidy for Linux/x86 (vers 1st November 2002), see www.w3.org&quot;&gt;
+&lt;title&gt;JPetStore Demo&lt;/title&gt;
+&lt;meta content=&quot;text/html; charset=windows-1252&quot; http-equiv=&quot;Content-Type&quot;&gt;
+&lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;max-age=0&quot;&gt;
+&lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;no-cache&quot;&gt;
+&lt;meta http-equiv=&quot;expires&quot; content=&quot;0&quot;&gt;
+&lt;meta http-equiv=&quot;Expires&quot; content=&quot;Tue, 01 Jan 1980 1:00:00 GMT&quot;&gt;
+&lt;meta http-equiv=&quot;Pragma&quot; content=&quot;no-cache&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div id=&quot;Header&quot;&gt;
+
+&lt;div id=&quot;Logo&quot;&gt;
+&lt;div id=&quot;LogoContent&quot;&gt;&lt;a href=&quot;/jpetstore/actions/Catalog.action&quot;&gt;&lt;img src=&quot;../images/logo-topbar.gif&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;Menu&quot;&gt;
+&lt;div id=&quot;MenuContent&quot;&gt;&lt;a href=&quot;/jpetstore/actions/Cart.action?viewCart=&quot;&gt;&lt;img align=&quot;middle&quot; name=&quot;img_cart&quot; src=&quot;../images/cart.gif&quot;&gt;&lt;/a&gt; &lt;img align=&quot;middle&quot; src=&quot;../images/separator.gif&quot;&gt; 
+	&lt;a href=&quot;/jpetstore/actions/Account.action?signonForm=&quot;&gt;Sign In&lt;/a&gt;
+   &lt;img align=&quot;middle&quot; src=&quot;../images/separator.gif&quot;&gt; &lt;a href=&quot;../help.html&quot;&gt;?&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;Search&quot;&gt;
+&lt;div id=&quot;SearchContent&quot;&gt;&lt;form method=&quot;post&quot; action=&quot;/jpetstore/actions/Catalog.action&quot;&gt;
+	&lt;input size=&quot;14&quot; name=&quot;keyword&quot; type=&quot;text&quot;&gt;
+	&lt;input name=&quot;searchProducts&quot; type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+&lt;div style=&quot;display: none;&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_sourcePage&quot; value=&quot;WbDcjxPc02SUk-0Opw6y55_ijIi9Zb-a044u5RFOkFAxYhuuB0lcjMBpCnzCM3C3lW5cRCnYrYkMlrODa0weDW4SauEYCR1eeXeRs1N3oPQ=&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;__fp&quot; value=&quot;AeEMttbj76yGVHnaTQvtSTjvgjzOlhqjYBEpHwO95roY2yZBwO_VxKwPa3qH2nhF&quot;&gt;&lt;/div&gt;&lt;/form&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;QuickLinks&quot;&gt;&lt;a href=&quot;/jpetstore/actions/Catalog.action?viewCategory=&amp;amp;categoryId=FISH&quot;&gt;&lt;img src=&quot;../images/sm_fish.gif&quot;&gt;&lt;/a&gt; &lt;img src=&quot;../images/separator.gif&quot;&gt; &lt;a href=&quot;/jpetstore/actions/Catalog.action?viewCategory=&amp;amp;categoryId=DOGS&quot;&gt;&lt;img src=&quot;../images/sm_dogs.gif&quot;&gt;&lt;/a&gt; &lt;img src=&quot;../images/separator.gif&quot;&gt; &lt;a href=&quot;/jpetstore/actions/Catalog.action?viewCategory=&amp;amp;categoryId=REPTILES&quot;&gt;&lt;img src=&quot;../images/sm_reptiles.gif&quot;&gt;&lt;/a&gt; &lt;img src=&quot;../images/separator.gif&quot;&gt; &lt;a href=&quot;/jpetstore/actions/Catalog.action?viewCategory=&amp;amp;categoryId=CATS&quot;&gt;&lt;img src=&quot;../images/sm_cats.gif&quot;&gt;&lt;/a&gt; &lt;img src=&quot;../images/separator.gif&quot;&gt; &lt;a href=&quot;/jpetstore/actions/Catalog.action?viewCategory=&amp;amp;categoryId=BIRDS&quot;&gt;&lt;img src=&quot;../images/sm_birds.gif&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;Content&quot;&gt;
+
+&lt;div id=&quot;BackLink&quot;&gt;&lt;a href=&quot;/jpetstore/actions/Catalog.action&quot;&gt;Return to Main Menu&lt;/a&gt;&lt;/div&gt;
+
+&lt;div id=&quot;Catalog&quot;&gt;
+
+&lt;h2&gt;Dogs&lt;/h2&gt;
+
+&lt;table&gt;
+	&lt;tbody&gt;&lt;tr&gt;
+		&lt;th&gt;Product ID&lt;/th&gt;
+		&lt;th&gt;Name&lt;/th&gt;
+	&lt;/tr&gt;
+	
+		&lt;tr&gt;
+			&lt;td&gt;&lt;a href=&quot;/jpetstore/actions/Catalog.action?viewProduct=&amp;amp;productId=K9-BD-01&quot;&gt;K9-BD-01&lt;/a&gt;&lt;/td&gt;
+			&lt;td&gt;Bulldog&lt;/td&gt;
+		&lt;/tr&gt;
+	
+		&lt;tr&gt;
+			&lt;td&gt;&lt;a href=&quot;/jpetstore/actions/Catalog.action?viewProduct=&amp;amp;productId=K9-PO-02&quot;&gt;K9-PO-02&lt;/a&gt;&lt;/td&gt;
+			&lt;td&gt;Poodle&lt;/td&gt;
+		&lt;/tr&gt;
+	
+		&lt;tr&gt;
+			&lt;td&gt;&lt;a href=&quot;/jpetstore/actions/Catalog.action?viewProduct=&amp;amp;productId=K9-DL-01&quot;&gt;K9-DL-01&lt;/a&gt;&lt;/td&gt;
+			&lt;td&gt;Dalmation&lt;/td&gt;
+		&lt;/tr&gt;
+	
+		&lt;tr&gt;
+			&lt;td&gt;&lt;a href=&quot;/jpetstore/actions/Catalog.action?viewProduct=&amp;amp;productId=K9-RT-01&quot;&gt;K9-RT-01&lt;/a&gt;&lt;/td&gt;
+			&lt;td&gt;Golden Retriever&lt;/td&gt;
+		&lt;/tr&gt;
+	
+		&lt;tr&gt;
+			&lt;td&gt;&lt;a href=&quot;/jpetstore/actions/Catalog.action?viewProduct=&amp;amp;productId=K9-RT-02&quot;&gt;K9-RT-02&lt;/a&gt;&lt;/td&gt;
+			&lt;td&gt;Labrador Retriever&lt;/td&gt;
+		&lt;/tr&gt;
+	
+		&lt;tr&gt;
+			&lt;td&gt;&lt;a href=&quot;/jpetstore/actions/Catalog.action?viewProduct=&amp;amp;productId=K9-CW-01&quot;&gt;K9-CW-01&lt;/a&gt;&lt;/td&gt;
+			&lt;td&gt;Chihuahua&lt;/td&gt;
+		&lt;/tr&gt;
+	
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;div id=&quot;Footer&quot;&gt;
+
+&lt;div id=&quot;PoweredBy&quot;&gt;&amp;nbsp;&lt;a href=&quot;http://www.mybatis.org&quot;&gt;www.mybatis.org&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;Banner&quot;&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+
+
+
+&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]</td>
+							<td><a href="state24.html">state24</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]</td>
+							<td><a href="state34.html">state34</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]</td>
+							<td><a href="state24.html">state24</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]</td>
+							<td><a href="state34.html">state34</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[6]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[7]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>
