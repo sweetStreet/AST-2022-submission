@@ -53,3 +53,5 @@ buildNumber.properties
 *.log
 
 __pycache__/
+
+~$*
