@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state35</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/mrbs/web/help.php?day=13&month=6&year=2022&area=1&room=1'>http://localhost:3000/mrbs/web/help.php?day=13&month=6&year=2022&area=1&room=1</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>38</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state3</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>2.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>35</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state35.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 608px; top: 32px; width: 29px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 668px; top: 32px; width: 43px; height: 17px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state36.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 744px; top: 32px; width: 41px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 23px; top: 2048px; width: 63px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 140px; top: 2048px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 191px; top: 2048px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 243px; top: 2048px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 295px; top: 2048px; width: 44px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 347px; top: 2048px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 398px; top: 2048px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[7]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 458px; top: 2048px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[8]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 517px; top: 2048px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[9]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 569px; top: 2048px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[10]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 621px; top: 2048px; width: 44px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[11]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 673px; top: 2048px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[12]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 724px; top: 2048px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[13]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 776px; top: 2048px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[14]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 828px; top: 2048px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 23px; top: 2063px; width: 73px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 140px; top: 2063px; width: 45px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: 193px; top: 2063px; width: 45px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[3]" class='hovers'
+				style="position: absolute; z-index: 10; left: 247px; top: 2063px; width: 45px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[4]" class='hovers'
+				style="position: absolute; z-index: 10; left: 301px; top: 2063px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 361px; top: 2063px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[5]" class='hovers'
+				style="position: absolute; z-index: 10; left: 421px; top: 2063px; width: 44px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[6]" class='hovers'
+				style="position: absolute; z-index: 10; left: 473px; top: 2063px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[7]" class='hovers'
+				style="position: absolute; z-index: 10; left: 525px; top: 2063px; width: 39px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[8]" class='hovers'
+				style="position: absolute; z-index: 10; left: 572px; top: 2063px; width: 38px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 23px; top: 2078px; width: 78px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 140px; top: 2078px; width: 57px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: 205px; top: 2078px; width: 59px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 281px; top: 2078px; width: 58px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[3]" class='hovers'
+				style="position: absolute; z-index: 10; left: 356px; top: 2078px; width: 53px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[4]" class='hovers'
+				style="position: absolute; z-index: 10; left: 418px; top: 2078px; width: 60px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[5]" class='hovers'
+				style="position: absolute; z-index: 10; left: 486px; top: 2078px; width: 58px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[6]" class='hovers'
+				style="position: absolute; z-index: 10; left: 553px; top: 2078px; width: 57px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[7]" class='hovers'
+				style="position: absolute; z-index: 10; left: 618px; top: 2078px; width: 59px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[8]" class='hovers'
+				style="position: absolute; z-index: 10; left: 686px; top: 2078px; width: 58px; height: 17px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;
+  
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Meeting Room Booking System&lt;/title&gt;
+  
+      &lt;link href=&quot;jquery/ui/css/sunny/jquery-ui-1.8.16.custom.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    
+    &lt;link href=&quot;jquery/datatables/css/mrbs-page.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;jquery/datatables/css/mrbs-table.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;jquery/datatables/css/ColReorder.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;jquery/datatables/css/ColVis.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs.css.php&quot; type=&quot;text/css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;print&quot; href=&quot;css/mrbs-print.css.php&quot; type=&quot;text/css&quot;&gt;
+    &lt;!--[if IE]&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs-ie.css&quot; type=&quot;text/css&quot;&gt;
+    &lt;![endif]--&gt;
+        &lt;!--[if IE 8]&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs-ie8.css&quot; type=&quot;text/css&quot;&gt;
+    &lt;![endif]--&gt;
+    &lt;!--[if lte IE 8]&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs-ielte8.css&quot; type=&quot;text/css&quot;&gt;
+    &lt;![endif]--&gt;
+    &lt;!--[if lte IE 7]&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs-ielte7.css.php&quot; type=&quot;text/css&quot;&gt;
+    &lt;![endif]--&gt;
+    &lt;!--[if lte IE 6]&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs-ielte6.css&quot; type=&quot;text/css&quot;&gt;
+    &lt;![endif]--&gt;
+    
+    &lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt;
+    
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery/ui/jquery-ui-1.8.22.custom.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery/ui/jquery-ui-i18n.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery/ui/jquery-ui-datepicker-en.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery/ui/jquery-ui-datepicker-en-US.js&quot;&gt;&lt;/script&gt;
+     
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE6 = false;
+  //]]&gt;
+&lt;/script&gt;
+&lt;!--[if lte IE 6]&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE6 = true;
+  //]]&gt;
+&lt;/script&gt;
+&lt;![endif]--&gt;
+    
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE7 = false;
+  //]]&gt;
+&lt;/script&gt;
+&lt;!--[if lte IE 7]&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE7 = true;
+  //]]&gt;
+&lt;/script&gt;
+&lt;![endif]--&gt;
+    
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE8 = false;
+  //]]&gt;
+&lt;/script&gt;
+&lt;!--[if lte IE 8]&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE8 = true;
+  //]]&gt;
+&lt;/script&gt;
+&lt;![endif]--&gt;
+    
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+    function init(params)
+  {
+  }
+  //]]&gt;
+&lt;/script&gt;
+    
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/functions.js.php?area=1&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/datepicker.js.php?area=1&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/general.js.php?area=1&quot;&gt;&lt;/script&gt;
+    
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+//&lt;![CDATA[
+
+
+
+
+
+$(window).load(function() {
+
+  var args = {day: '13',
+              month: '6',
+              year: '2022',
+              area: '1',
+              room: '1',
+              page: 'help'};
+    init(args);
+
+});
+
+
+//]]&gt;
+&lt;/script&gt;  
+  &lt;/head&gt;
+  
+  &lt;body class=&quot;help js&quot;&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+      //&lt;![CDATA[
+      $('body').addClass('js').removeClass('non_js');
+      //]]&gt;
+    &lt;/script&gt; 
+
+    &lt;div class=&quot;screenonly&quot;&gt;
+
+[Warning: Server failed to set locale to 'en_US.UTF-8']
+  &lt;table id=&quot;banner&quot;&gt;
+    &lt;tbody&gt;&lt;tr&gt;
+      &lt;td id=&quot;company&quot;&gt;
+        &lt;div&gt;
+          &lt;div id=&quot;logo&quot;&gt;
+&lt;span&gt;Your Company&lt;/span&gt;
+&lt;/div&gt;
+          &lt;div id=&quot;mrbs&quot;&gt;
+            &lt;a href=&quot;index.php&quot;&gt;Meeting Room Booking System&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/td&gt;
+      &lt;td&gt;
+        &lt;form action=&quot;day.php&quot; method=&quot;get&quot; id=&quot;Form1&quot;&gt;
+          &lt;div&gt;
+            &lt;span id=&quot;dateselector&quot;&gt;&lt;input class=&quot;date hasDatepicker&quot; type=&quot;text&quot; id=&quot;datepicker&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt&quot; name=&quot;_alt&quot; value=&quot;2022-6-13&quot; disabled=&quot;disabled&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_day&quot; name=&quot;day&quot; value=&quot;13&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_month&quot; name=&quot;month&quot; value=&quot;6&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_year&quot; name=&quot;year&quot; value=&quot;2022&quot;&gt;
+&lt;/span&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+
+  $(function() {
+    $(&quot;#datepicker&quot;).datepicker({yearRange: '2016:2027',
+                                                       altField: '#datepicker_alt'
+                                                       , onClose: function(dateText, inst) {datepicker_close(dateText, inst, 'Form1');}                                                      });
+        var initial_date = new Date(2022, 5, 13);
+    var dateFormat = $(&quot;#datepicker&quot;).datepicker( &quot;option&quot;, &quot;dateFormat&quot; );
+    document.getElementById('datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('datepicker_alt_day').value = 13;
+    document.getElementById('datepicker_alt_month').value = 6;
+    document.getElementById('datepicker_alt_year').value = 2022;
+    $(&quot;.ui-datepicker&quot;).draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('dateselector');
+  var datepicker_html = '&lt;input class=&quot;date&quot; type=&quot;text&quot; id=&quot;datepicker&quot;&gt;\n';
+    datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt&quot;'
+  datepicker_html += ' name=&quot;_alt&quot;';
+  datepicker_html += ' value=&quot;2022-6-13&quot;';
+  datepicker_html += ' disabled=&quot;disabled&quot;&gt;\n';
+    datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_day&quot; name=&quot;day&quot;&gt;\n';
+  datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_month&quot; name=&quot;month&quot;&gt;\n';
+  datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_year&quot; name=&quot;year&quot;&gt;\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  &lt;/script&gt;
+  &lt;input type=&quot;hidden&quot; name=&quot;area&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;room&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;submit&quot; value=&quot;goto&quot;&gt;
+           &lt;/div&gt;
+        &lt;/form&gt;
+              &lt;/td&gt;
+      &lt;td&gt;
+&lt;a href=&quot;help.php?day=13&amp;amp;month=6&amp;amp;year=2022&amp;amp;area=1&amp;amp;room=1&quot;&gt;Help&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&quot;admin.php?day=13&amp;amp;month=6&amp;amp;year=2022&amp;amp;area=1&amp;amp;room=1&quot;&gt;Rooms&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&quot;report.php?day=13&amp;amp;month=6&amp;amp;year=2022&amp;amp;area=1&amp;amp;room=1&quot;&gt;Report&lt;/a&gt;
+&lt;/td&gt;
+      
+      &lt;td&gt;
+        &lt;form id=&quot;header_search&quot; method=&quot;get&quot; action=&quot;search.php&quot;&gt;
+          &lt;div&gt;
+            &lt;a href=&quot;search.php?advanced=1&quot;&gt;Search:&lt;/a&gt;
+            &lt;input type=&quot;search&quot; name=&quot;search_str&quot; value=&quot;&quot; required=&quot;&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;day&quot; value=&quot;13&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;month&quot; value=&quot;6&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;year&quot; value=&quot;2022&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;area&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;room&quot; value=&quot;1&quot;&gt;
+          &lt;/div&gt;
+        &lt;input type=&quot;hidden&quot; name=&quot;datatable&quot; value=&quot;1&quot;&gt;&lt;/form&gt;
+      &lt;/td&gt;
+      &lt;td&gt;
+&lt;div id=&quot;logon_box&quot;&gt;
+
+                &lt;a href=&quot;report.php?from_day=13&amp;amp;from_month=6&amp;amp;from_year=2022&amp;amp;to_day=1&amp;amp;to_month=12&amp;amp;to_year=2030&amp;amp;areamatch=&amp;amp;roommatch=&amp;amp;namematch=&amp;amp;descrmatch=&amp;amp;summarize=1&amp;amp;sortby=r&amp;amp;display=d&amp;amp;sumby=d&amp;amp;creatormatch=administrator&quot; title=&quot;Click to display all my upcoming entries&quot;&gt;You are administrator&lt;/a&gt;
+                &lt;form method=&quot;post&quot; action=&quot;admin.php&quot;&gt;
+                  &lt;div&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;TargetURL&quot; value=&quot;help.php?day=13&amp;amp;month=6&amp;amp;year=2022&amp;amp;area=1&amp;amp;room=1&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;Action&quot; value=&quot;SetName&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;NewUserName&quot; value=&quot;&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;NewUserPassword&quot; value=&quot;&quot;&gt;
+                    &lt;input type=&quot;submit&quot; value=&quot; Log Off &quot;&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;contents&quot;&gt;
+&lt;h3&gt;About MRBS&lt;/h3&gt;
+&lt;table id=&quot;version_info&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://mrbs.sourceforge.net&quot;&gt;Meeting Room Booking System&lt;/a&gt;:&lt;/td&gt;&lt;td&gt;MRBS 1.4.9&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Database:&lt;/td&gt;&lt;td&gt;MySQL 5.5.61-0ubuntu0.14.04.1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;System:&lt;/td&gt;&lt;td&gt;Linux b12c1ab79abf 5.10.25-linuxkit #1 SMP Tue Mar 23 09:27:39 UTC 2021 x86_64&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Server time:&lt;/td&gt;&lt;td&gt;Tue Oct  5 04:03:21 2021&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;PHP:&lt;/td&gt;&lt;td&gt;5.5.9-1ubuntu4.26&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;
+Your browser is set with the following language preference order:
+en-US
+&lt;/p&gt;
+&lt;h3&gt;Help&lt;/h3&gt;
+&lt;p&gt;
+Please contact &lt;a href=&quot;mailto:admin_email@your.org&quot;&gt;Your Administrator&lt;/a&gt; for any questions that aren't answered here.
+&lt;/p&gt;
+&lt;!-- $Id: site_faq.html 2142 2011-10-23 18:47:56Z cimorrison $ --&gt;
+
+&lt;div id=&quot;site_faq_contents&quot;&gt;
+  &lt;a id=&quot;top&quot;&gt;&lt;/a&gt;&lt;h4&gt;Authentication&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#authenticate&quot;&gt;How do I login?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#meeting_delete&quot;&gt;Why can't I delete/alter a meeting?&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  
+  &lt;h4&gt;Making/Altering Meetings&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#repeating&quot;&gt;How do I make a recurring meeting?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#repeating_delete&quot;&gt;How do I delete one instance of a recurring meeting?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#multiple_sites&quot;&gt;How do I schedule rooms at different sites?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#too_many&quot;&gt;My meeting failed to be created because of &lt;q&gt;too many entries&lt;/q&gt;!&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#multiple_users&quot;&gt;What happens if multiple people schedule the same meeting?&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  
+  &lt;h4&gt;Miscellaneous&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#internal_external&quot;&gt;What is the difference between &lt;q&gt;Internal&lt;/q&gt; and &lt;q&gt;External&lt;/q&gt;?&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  
+  &lt;h4&gt;About The Meeting Room Booking System&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#how_much&quot;&gt;How much did the system cost?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;How does the system work and who wrote it?&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;site_faq_body&quot;&gt;
+
+  &lt;div id=&quot;authenticate&quot;&gt;
+    &lt;h4&gt;How do I login?&lt;/h4&gt;
+    &lt;p&gt;
+      The system can be configured to use one of several methods of authentication,
+      including LDAP, Netware, and SMB. See your system administrator if you
+      are having trouble logging in. Some functions are restricted to certain
+      users, and other users will get the message &lt;q&gt;You do not have access rights to
+      modify this item&lt;/q&gt;. See your system administrator if this is not working
+      correctly for you.
+      If the system is configured to use LDAP authentication, this means that you
+      login with the same username and password as you use for getting email
+      e.g. &lt;q&gt;Mark Belanger&lt;/q&gt; and &lt;q&gt;MyPassword&lt;/q&gt;.
+    &lt;/p&gt;
+    &lt;a href=&quot;#top&quot;&gt;Top&lt;/a&gt;
+  &lt;/div&gt;
+  
+  &lt;div id=&quot;meeting_delete&quot;&gt;
+    &lt;h4&gt;Why can't I delete/alter a meeting?&lt;/h4&gt;
+    &lt;p&gt;
+      In order to delete or alter a meeting, you must be logged in as the
+      same person that made the meeting.  Contact one of the meeting room
+      administrators or the person who initially made the meeting to
+      have it deleted or changed.
+    &lt;/p&gt;
+    &lt;a href=&quot;#top&quot;&gt;Top&lt;/a&gt;
+  &lt;/div&gt;
+  
+  &lt;div id=&quot;repeating&quot;&gt;
+    &lt;h4&gt;How do I make a recurring meeting?&lt;/h4&gt;
+    &lt;p&gt;
+      Clicking on the desired time brings you into the booking screen.
+      Select the appropriate &lt;dfn&gt;Repeat Type&lt;/dfn&gt;. The room will be scheduled
+      at the same time, until the &lt;dfn&gt;Repeat End Date&lt;/dfn&gt;, on the days
+      determined by the Repeat Type.
+    &lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        A &lt;dfn&gt;Daily&lt;/dfn&gt; repeat schedules every day.
+      &lt;/li&gt;
+      &lt;li&gt;
+        A &lt;dfn&gt;Weekly&lt;/dfn&gt; repeat schedules those days of the week that you
+        check under &lt;dfn&gt;Repeat Day&lt;/dfn&gt;. For example, use Weekly repeat
+        to schedule the room every Monday, Tuesday, and Thursday; check
+        those days under Repeat Day. If you check no days under Repeat Day,
+        the schedule will repeat on the same day of each week as the first
+        scheduled day.
+      &lt;/li&gt;
+      &lt;li&gt;
+        An &lt;dfn&gt;N_Weekly&lt;/dfn&gt; repeat is the same as a Weekly repeat, except
+        that the bookings are only made for every Nth week where N is 
+        entered under &lt;dfn&gt;Number of Weeks&lt;/dfn&gt;.   For example, to make
+        a booking for every other week, use 2 for the number of weeks.
+      &lt;/li&gt;
+      &lt;li&gt;
+        A &lt;dfn&gt;Monthly&lt;/dfn&gt; repeat schedules the same day of each month,
+        for example the 15th of the month.  If you select the 29th, 30th
+        or 31st of the month, then for a month where that day does not
+        exist the last day of that month will be used instead.
+      &lt;/li&gt;
+      &lt;li&gt;
+        A &lt;dfn&gt;Yearly&lt;/dfn&gt; repeat schedules the same month and day of the month,
+        for example every March 15th.   If you select the 29th February, then
+        for those years where that date does not exist the 28th February will
+        be used instead.
+      &lt;/li&gt;
+      &lt;li&gt;
+        Finally, a &lt;dfn&gt;Monthly, corresponding day&lt;/dfn&gt; repeat schedules one day
+        each month, the same weekday and ordinal position within the month.
+        Use this repeat type to schedule the first Monday, second Tuesday,
+        or fourth Friday of each month, for example.  If you have selected the 29th, 30th
+        or 31st of the month, i.e. the fifth weekday of a month, then for those 
+        months where there is no corresponding fifth day, the fourth day will 
+        be used instead.  (This is a useful way of booking the last weekday in
+        every month).
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href=&quot;#top&quot;&gt;Top&lt;/a&gt;
+  &lt;/div&gt;
+  
+  &lt;div id=&quot;repeating_delete&quot;&gt;
+    &lt;h4&gt;How do I delete one instance of a recurring meeting?&lt;/h4&gt;
+    &lt;p&gt;
+      Select the day/room/time that you want to delete and select &lt;dfn&gt;Delete Entry&lt;/dfn&gt;.
+    &lt;/p&gt;
+    &lt;a href=&quot;#top&quot;&gt;Top&lt;/a&gt;
+  &lt;/div&gt;
+  
+  &lt;div id=&quot;multiple_sites&quot;&gt;
+    &lt;h4&gt;How do I schedule rooms at different sites?&lt;/h4&gt;
+    &lt;p&gt;
+      You don't.  Presently the system cannot book two different rooms simultaneously.
+      You must schedule each one separately.  Make sure that the time you want
+      is available at both sites before making a booking.
+    &lt;/p&gt;
+    &lt;a href=&quot;#top&quot;&gt;Top&lt;/a&gt;
+  &lt;/div&gt;
+  
+  &lt;div id=&quot;too_many&quot;&gt;
+    &lt;h4&gt;My meeting failed to be created because of &lt;q&gt;too many entries&lt;/q&gt;!&lt;/h4&gt;
+    &lt;p&gt;
+      No meeting can create more than 365 entries.  There needs to be some limit on the number of meetings created.  
+      This number can be increased if necessary.
+    &lt;/p&gt;
+    &lt;a href=&quot;#top&quot;&gt;Top&lt;/a&gt;
+  &lt;/div&gt;
+  
+  &lt;div id=&quot;multiple_users&quot;&gt;
+    &lt;h4&gt;What happens if multiple people schedule the same meeting?&lt;/h4&gt;
+    &lt;p&gt;
+      The short answer is: The first person to click on
+      the &lt;dfn&gt;Submit&lt;/dfn&gt; button wins.
+      Behind the scenes, the system is using a proper multi-user, multi-threaded
+      relational database than can handle many thousands of simultaneous users.
+    &lt;/p&gt;
+    &lt;a href=&quot;#top&quot;&gt;Top&lt;/a&gt;
+  &lt;/div&gt;
+  
+  &lt;div id=&quot;internal_external&quot;&gt;
+    &lt;h4&gt;What is the difference between &lt;q&gt;Internal&lt;/q&gt; and &lt;q&gt;External&lt;/q&gt;?&lt;/h4&gt;
+    &lt;p&gt;
+      By default, MRBS defines two meeting types. &lt;dfn&gt;Internal&lt;/dfn&gt; means that the
+      meeting will only be attended by employees.  An &lt;dfn&gt;External&lt;/dfn&gt; meeting
+      might also be attended by customers, vendors, investors, etc. Your site
+      can define up to a total of 10 meeting types, according to your needs.
+      Meetings are highlighted in the main calendar view with a color corresponding
+      to their type, and a color key of all defined types is shown at the bottom
+      of the main calendar view.
+    &lt;/p&gt;
+    &lt;a href=&quot;#top&quot;&gt;Top&lt;/a&gt;
+  &lt;/div&gt;
+  
+  &lt;div id=&quot;how_much&quot;&gt;
+    &lt;a&gt;&lt;/a&gt;&lt;h4&gt;How much did the system cost?&lt;/h4&gt;
+    &lt;p&gt;
+      Nothing.  See the next section for more information.
+    &lt;/p&gt;
+    &lt;a href=&quot;#top&quot;&gt;Top&lt;/a&gt;
+  &lt;/div&gt;
+  
+  &lt;div id=&quot;about&quot;&gt;
+    &lt;h4&gt;How does the system work and who wrote it?&lt;/h4&gt;
+    &lt;p&gt;
+      The &lt;a href=&quot;http://sourceforge.net/project/?group_id=5113&quot;&gt;Meeting Room Booking System&lt;/a&gt;
+      is open source software that is distributed under the Gnu Public License(GPL).
+      This means that software is free to use, distribute, and modify. 
+    &lt;/p&gt; 
+    &lt;p&gt;
+      The system is written mostly in &lt;a href=&quot;http://www.php.net&quot;&gt;PHP&lt;/a&gt;, 
+      which is an open source programming language that can be embedded in web 
+      pages similar in concept to Microsoft active server pages.  PHP is especially 
+      good at accessing databases.
+    &lt;/p&gt;
+    &lt;p&gt;  
+      The database used for the system is either
+      &lt;a href=&quot;http://www.mysql.com&quot;&gt;MySQL&lt;/a&gt;
+      or &lt;a href=&quot;http://www.postgresql.org&quot;&gt;PostgreSQL&lt;/a&gt;.
+      MySQL is a very fast, multi-threaded, multi-user and robust 
+      SQL (Structured Query Language) database server that is also GPL.
+      PostgreSQL is a full-featured multi-user open source Object Relational SQL
+      database server.
+    &lt;/p&gt;
+    &lt;p&gt; 
+      The system will run on multiple platforms, including the PC architecture
+      using the &lt;a href=&quot;http://www.linux.com&quot;&gt;Linux&lt;/a&gt; operating system.
+      Linux, is a free, open source, unix-like operating system.
+    &lt;/p&gt;
+    &lt;p&gt;
+      The web server being used is yet another piece of free, open source
+      software.  The &lt;a href=&quot;http://www.apache.org&quot;&gt;Apache&lt;/a&gt; web server is
+      the world's most popular web server.
+    &lt;/p&gt;
+    &lt;p&gt;
+      The bottom line is: &lt;strong&gt;every piece of this system, from the operating system to the application,
+      is completely free - source code and all&lt;/strong&gt;.
+    &lt;/p&gt;
+    &lt;a href=&quot;#top&quot;&gt;Top&lt;/a&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;screenonly trailer&quot; id=&quot;trailer&quot;&gt;
+&lt;div id=&quot;viewday&quot;&gt;
+&lt;div class=&quot;trailer_label&quot;&gt;
+&lt;a href=&quot;day.php?year=2022&amp;amp;month=6&amp;amp;day=13&amp;amp;area=1&amp;amp;room=1&quot;&gt;View Day:&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;trailer_links&quot;&gt;
+&lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=06&amp;amp;day=07&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 07&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=06&amp;amp;day=08&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 08&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=06&amp;amp;day=09&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 09&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=06&amp;amp;day=10&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 10&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=06&amp;amp;day=11&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 11&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=06&amp;amp;day=12&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 12&lt;/a&gt;&lt;/span&gt;
+ | &lt;span class=&quot;current&quot;&gt;[ &lt;a href=&quot;day.php?year=2022&amp;amp;month=06&amp;amp;day=13&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 13&lt;/a&gt; ]&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=06&amp;amp;day=14&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 14&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=06&amp;amp;day=15&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 15&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=06&amp;amp;day=16&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 16&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=06&amp;amp;day=17&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 17&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=06&amp;amp;day=18&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 18&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=06&amp;amp;day=19&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 19&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=06&amp;amp;day=20&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 20&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;viewweek&quot;&gt;
+&lt;div class=&quot;trailer_label&quot;&gt;
+&lt;a href=&quot;week.php?year=2022&amp;amp;month=6&amp;amp;day=13&amp;amp;area=1&amp;amp;room=1&quot;&gt;View Week:&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;trailer_links&quot;&gt;
+  &lt;a href=&quot;week.php?year=2022&amp;amp;month=05&amp;amp;day=16&amp;amp;area=1&amp;amp;room=1&quot;&gt;May 15&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2022&amp;amp;month=05&amp;amp;day=23&amp;amp;area=1&amp;amp;room=1&quot;&gt;May 22&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2022&amp;amp;month=05&amp;amp;day=30&amp;amp;area=1&amp;amp;room=1&quot;&gt;May 29&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2022&amp;amp;month=06&amp;amp;day=06&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 05&lt;/a&gt;
+ | &lt;span class=&quot;current&quot;&gt;
+[   &lt;a href=&quot;week.php?year=2022&amp;amp;month=06&amp;amp;day=13&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 12&lt;/a&gt;
+]&lt;/span&gt;
+ |   &lt;a href=&quot;week.php?year=2022&amp;amp;month=06&amp;amp;day=20&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 19&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2022&amp;amp;month=06&amp;amp;day=27&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 26&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2022&amp;amp;month=07&amp;amp;day=04&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jul 03&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2022&amp;amp;month=07&amp;amp;day=11&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jul 10&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;viewmonth&quot;&gt;
+&lt;div class=&quot;trailer_label&quot;&gt;
+&lt;a href=&quot;month.php?year=2022&amp;amp;month=6&amp;amp;day=13&amp;amp;area=1&amp;amp;room=1&quot;&gt;View Month:&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;trailer_links&quot;&gt;
+  &lt;a href=&quot;month.php?year=2022&amp;amp;month=04&amp;amp;day=13&amp;amp;area=1&amp;amp;room=1&quot;&gt;Apr 2022&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=05&amp;amp;day=13&amp;amp;area=1&amp;amp;room=1&quot;&gt;May 2022&lt;/a&gt;
+ | &lt;span class=&quot;current&quot;&gt;
+[   &lt;a href=&quot;month.php?year=2022&amp;amp;month=06&amp;amp;day=13&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jun 2022&lt;/a&gt;
+]&lt;/span&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=07&amp;amp;day=13&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jul 2022&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=08&amp;amp;day=13&amp;amp;area=1&amp;amp;room=1&quot;&gt;Aug 2022&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=09&amp;amp;day=13&amp;amp;area=1&amp;amp;room=1&quot;&gt;Sep 2022&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=10&amp;amp;day=13&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 2022&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=11&amp;amp;day=13&amp;amp;area=1&amp;amp;room=1&quot;&gt;Nov 2022&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=12&amp;amp;day=13&amp;amp;area=1&amp;amp;room=1&quot;&gt;Dec 2022&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+  
+
+&lt;div id=&quot;ui-datepicker-div&quot; class=&quot;ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-draggable&quot; style=&quot;position: relative;&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]</td>
+							<td><a href="state36.html">state36</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[6]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[7]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[8]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[9]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[10]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[11]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[12]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[13]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[14]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[3]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[4]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/SPAN[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[5]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[6]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[7]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[8]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/SPAN[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[3]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[4]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[5]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[6]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[7]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[8]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

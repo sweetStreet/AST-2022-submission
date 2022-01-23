@@ -1,0 +1,303 @@
+[
+  {
+    "id": 1,
+    "backtrackTarget": 0,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state0:-1index_1_state2state2_5_state6state6_6_state7state7_7_state8state8_9_state10state10_10_state8state8_15_state10state10_16_state17state17_17_state18"
+  },
+  {
+    "id": 2,
+    "backtrackTarget": 10,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state10:-1state8_9_state10"
+  },
+  {
+    "id": 3,
+    "backtrackTarget": 17,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state17:-1state8_9_state10state10_16_state17"
+  },
+  {
+    "id": 4,
+    "backtrackTarget": 8,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state8:-1state8_22_state2state2_23_state30"
+  },
+  {
+    "id": 5,
+    "backtrackTarget": 2,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state2:-1state2_24_state32"
+  },
+  {
+    "id": 6,
+    "backtrackTarget": 2,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state2:-1state2_25_state34state34_26_state2state2_27_state34state34_28_state37state37_29_state38state38_30_state39"
+  },
+  {
+    "id": 7,
+    "backtrackTarget": 2,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state2:-1state2_32_state37"
+  },
+  {
+    "id": 8,
+    "backtrackTarget": 34,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state34:failed:-1state2_1000004_state39"
+  },
+  {
+    "id": 9,
+    "backtrackTarget": 34,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state34:-1state2_34_state47state47_35_state48"
+  },
+  {
+    "id": 10,
+    "backtrackTarget": 2,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state2:-1state2_38_state52state52_39_state53"
+  },
+  {
+    "id": 11,
+    "backtrackTarget": 38,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state38:failed:-1state2_32_state37state37_1000006_state57"
+  },
+  {
+    "id": 12,
+    "backtrackTarget": 38,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state38:-1state2_41_index"
+  },
+  {
+    "id": 13,
+    "backtrackTarget": 2,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state2:-1index_1_state2"
+  },
+  {
+    "id": 14,
+    "backtrackTarget": 57,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state57:-1state2_32_state37state37_1000006_state57state57_46_state38state38_47_state34"
+  },
+  {
+    "id": 15,
+    "backtrackTarget": 38,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state38:failed:-1state2_32_state37state37_1000006_state57"
+  },
+  {
+    "id": 16,
+    "backtrackTarget": 10,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state10:-1state2_5_state6state6_6_state7state7_7_state8state8_9_state10state10_100049_state78"
+  },
+  {
+    "id": 17,
+    "backtrackTarget": 7,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state7:-1state8_22_state2state2_5_state6state6_6_state7state7_50_state8"
+  },
+  {
+    "id": 18,
+    "backtrackTarget": 7,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state7:-1state8_22_state2state2_5_state6state6_6_state7state7_52_state89"
+  },
+  {
+    "id": 19,
+    "backtrackTarget": 18,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state18:failed:-1state8_9_state10state10_1000023_state78"
+  },
+  {
+    "id": 20,
+    "backtrackTarget": 17,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state17:-1state8_100054_state10state10_100055_state7state7_100056_state8"
+  },
+  {
+    "id": 21,
+    "backtrackTarget": 39,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state39:failed:-1state8_22_state2state2_1000025_state103"
+  },
+  {
+    "id": 22,
+    "backtrackTarget": 103,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state103:-1state2_1000025_state103state103_100058_state2"
+  },
+  {
+    "id": 23,
+    "backtrackTarget": 34,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state34:failed:-1state2_1000025_state103"
+  },
+  {
+    "id": 24,
+    "backtrackTarget": 89,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state89:failed:-1state2_5_state6state6_6_state7"
+  },
+  {
+    "id": 25,
+    "backtrackTarget": 103,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state103:-1state8_22_state2state2_1000025_state103state103_100060_state37"
+  },
+  {
+    "id": 26,
+    "backtrackTarget": 10,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state10:-1state2_5_state6state6_6_state7state7_7_state8state8_9_state10state10_100061_state78"
+  },
+  {
+    "id": 27,
+    "backtrackTarget": 103,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state103:-1state8_22_state2state2_1000025_state103state103_100062_state34state34_200063_state2"
+  },
+  {
+    "id": 28,
+    "backtrackTarget": 7,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state7:-1state2_5_state6state6_6_state7state7_100065_state135state135_100066_state8"
+  },
+  {
+    "id": 29,
+    "backtrackTarget": 103,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state103:failed:-1state8_22_state2state2_25_state34"
+  },
+  {
+    "id": 30,
+    "backtrackTarget": 10,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state10:-1state2_5_state6state6_6_state7state7_7_state8state8_9_state10state10_100067_state8"
+  },
+  {
+    "id": 31,
+    "backtrackTarget": 135,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state135:-1state8_9_state10state10_100055_state7state7_100065_state135state135_100069_state8"
+  },
+  {
+    "id": 32,
+    "backtrackTarget": 34,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state34:-1state8_22_state2state2_25_state34state34_200070_state37"
+  },
+  {
+    "id": 33,
+    "backtrackTarget": 7,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state7:-1state2_5_state6state6_6_state7state7_100071_state8"
+  },
+  {
+    "id": 34,
+    "backtrackTarget": 135,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state135:-1state8_9_state10state10_100055_state7state7_100065_state135state135_100073_state78"
+  },
+  {
+    "id": 35,
+    "backtrackTarget": 10,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state10:-1state8_9_state10state10_100075_state78"
+  },
+  {
+    "id": 36,
+    "backtrackTarget": 34,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state34:-1state8_22_state2state2_25_state34state34_200076_state39"
+  },
+  {
+    "id": 37,
+    "backtrackTarget": 135,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state135:-1state2_5_state6state6_6_state7state7_100065_state135state135_100077_state78"
+  },
+  {
+    "id": 38,
+    "backtrackTarget": 7,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state7:-1state8_9_state10state10_100055_state7state7_100081_state135state135_200082_state78"
+  },
+  {
+    "id": 39,
+    "backtrackTarget": 10,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state10:-1state8_9_state10"
+  },
+  {
+    "id": 40,
+    "backtrackTarget": 34,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state34:failed:-1state8_22_state2state2_1000004_state39"
+  },
+  {
+    "id": 41,
+    "backtrackTarget": 135,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state135:-1state2_5_state6state6_6_state7state7_100065_state135"
+  },
+  {
+    "id": 42,
+    "backtrackTarget": 7,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state7:-1state8_9_state10state10_100055_state7state7_100083_state2"
+  },
+  {
+    "id": 43,
+    "backtrackTarget": 7,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state7:-1state2_5_state6state6_6_state7"
+  }
+]

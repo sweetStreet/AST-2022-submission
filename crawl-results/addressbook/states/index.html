@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of index</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/addressbook/'>http://localhost:3000/addressbook/</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>null</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>-1.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/index.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 207px; top: 86px; width: 342px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[3]" class='hovers'
+				style="position: absolute; z-index: 20; left: 207px; top: 195px; width: 51px; height: 23px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state3.html'"></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;&lt;head&gt;
+	&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+	&lt;meta name=&quot;Description&quot; content=&quot;PHP-Addressbook&quot;&gt;
+	&lt;meta name=&quot;Keywords&quot; content=&quot;&quot;&gt;
+
+	&lt;style type=&quot;text/css&quot;&gt;
+		
+    body {background-image:url('./skins/header-blue.jpg');background-repeat:repeat-x;background-position:top left;}
+    table#maintable th {text-align:center;border:1px solid #ccc;font-size:12px;background:#739fce;color:#fff;}
+    table#birthdays th {color:#fff;background:#739fce;margin:25px;border:1px solid #ccc;}
+		table#maintable th a {color:#fff;}
+body,#footer,ul {margin:0;padding:0;}
+body,p,td,h1,h2,a,a:hover {font-family:Arial,Helvetica,sans-serif;font-size:12px}
+h1 {font-size:18px}
+h2 {font-size:14px}
+a {color:#036}
+a:hover {color:#06C;text-decoration:none}
+img {border:0;}
+textarea {font-family:Arial,Helvetica,sans-serif;font-size:10pt}
+
+#container {margin:0 auto;width:780px;border:0}
+#top{color:#fff;margin:5px 0 0;height:20px;text-align:right;}
+#header {height:80px;}
+#header h1 {display:none;}
+
+#nav {margin:0 0 20px;height:25px;width:770px;float:left;border:0;display:inline;}
+#nav ul li a {color:#fff;padding:0 4px;}
+#nav ul li img {display:none;}
+
+#content {margin:20px 0 0;width:780px;}
+#footer {margin:45px 0 0;padding:20px 0;clear:both;}
+
+ul {list-style:none;}
+ul li {display:inline;}
+#footer ul li {display:block;}
+
+label {margin-right:0.5em;width:10em;float:left;text-align:left;display:block;}
+
+#search-az {text-align:center;padding:2px;}
+#a-z a {font-size:75%;} 
+
+.odd {background:#e5e5e5;}
+.even {background:#f3f3f3;}
+
+#right,.right {float:right;}
+#left,.left {float:left;}
+.clear {clear:both;}
+
+.msgbox {padding:16px;border:1px solid #ccc;background:#fff4b4;width:60%;font-weight:700;}
+.msgbox i {font-weight:400;}
+
+table {width:100%;border:1px solid #ccc;border-collapse:collapse;}
+table tr td {border:1px solid #ccc;padding:2px 1px}
+table img,.center {text-align:center;}
+table th {text-align:left;font-size:14px;padding:8px 4px;}
+
+table#birthdays {border:0;}
+.tablespace td {border:0;}
+
+/* View.php */
+table#view,table#view td {border:1px solid #000;border-collapse:collapse;}
+table#view td {padding:5px;}
+
+/* Edit.php */
+#content input[type=text],#content textarea {width:220px; margin-bottom:3px;}
+#content input[type=text] {height:1,1em}
+// #content textarea {height:8em}
+input.byear{width:4em !important;}
+
+/* Source Forge */
+#download {margin:0;width:180px;background:#63A624;color:#fff;border:1px solid #000;text-align:center;}
+#download a,#top a {color:#fff;}
+
+/* Login */
+#content input[name=user],input[name=pass] {width:150px; margin-bottom:3px;}	&lt;/style&gt;
+	&lt;!--[if !IE]&gt;--&gt;
+	&lt;link media=&quot;only screen and (max-device-width: 480px)&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;iphone.css&quot;&gt;
+	&lt;!--&lt;![endif]--&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;&quot;&gt;
+
+
+	&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;icons/font.png&quot;&gt;
+	&lt;title&gt;Address book&lt;/title&gt;  	&lt;/head&gt;
+  	&lt;body&gt;
+  		&lt;div id=&quot;container&quot;&gt;
+  			&lt;div id=&quot;top&quot;&gt;&lt;/div&gt;
+        &lt;div id=&quot;header&quot;&gt;&lt;a href=&quot;.&quot;&gt;&lt;img src=&quot;title.png&quot; title=&quot;address book&quot; alt=&quot;address book&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+  			&lt;div id=&quot;nav&quot;&gt;&lt;/div&gt;
+  			&lt;div id=&quot;content&quot;&gt;
+  	      &lt;form accept-charset=&quot;utf-8&quot; name=&quot;LoginForm&quot; method=&quot;post&quot;&gt;
+  	         &lt;label&gt;User:&lt;/label&gt;&lt;input name=&quot;user&quot; tabindex=&quot;0&quot;&gt;&lt;br&gt;
+  	         &lt;label&gt;Password:&lt;/label&gt;&lt;input name=&quot;pass&quot; type=&quot;password&quot;&gt;
+  	         &lt;br&gt;
+  	         &lt;input type=&quot;submit&quot; value=&quot;Login&quot;&gt;
+  	         &lt;br&gt;
+  	         &lt;br&gt;
+          &lt;/form&gt;
+&lt;!--  	         
+  	         &lt;a href=&quot;../register&quot;&gt;Create account&lt;/a&gt;
+  	         | &lt;a href=&quot;../register&quot;&gt;Forgot password&lt;/a&gt;  	         
+  	         &lt;br&gt;&lt;br&gt;
+  	         &lt;br&gt;
+  	         &lt;hr&gt;
+  	         &lt;br&gt;&lt;br&gt;
+
+  	      &lt;form accept-charset=&quot;utf-8&quot; id=&quot;hLoginForm&quot; name=&quot;hLoginForm&quot; method=&quot;post&quot;&gt;
+  	         &lt;input name=&quot;user&quot; type=&quot;hidden&quot;/&gt;
+  	         &lt;input name=&quot;pass&quot; type=&quot;hidden&quot;/&gt;
+          &lt;/form&gt;
+  	         
+  	         &lt;a href=&quot;javascript:hLoginForm.user.value='Facebook';hLoginForm.submit();&quot;&gt;&lt;img src=&quot;icons/facebook.png&quot;&gt;&lt;/a&gt;
+  	         &lt;a href=&quot;javascript:hLoginForm.user.value='Google';hLoginForm.submit();&quot;&gt;&lt;img src=&quot;icons/google.png&quot;&gt;&lt;/a&gt;
+  	         &lt;a href=&quot;javascript:hLoginForm.user.value='Yahoo';hLoginForm.submit();&quot;&gt;&lt;img src=&quot;icons/yahoo.png&quot;&gt;&lt;/a&gt;
+  	         &lt;a href=&quot;javascript:hLoginForm.user.value='Live';hLoginForm.submit();&quot;&gt;&lt;img src=&quot;icons/microsoft.png&quot;&gt;&lt;/a&gt;
+  	         &lt;br&gt;&lt;br&gt;&lt;br&gt;
+--&gt;
+  &lt;script&gt;				
+    document.LoginForm.user.focus();
+  &lt;/script&gt;
+        &lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[3]</td>
+							<td><a href="state3.html">state3</a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

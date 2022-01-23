@@ -1,0 +1,68 @@
+[
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "id": 0,
+    "parentId": -1,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1200,
+      "height": 304
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+    "id": 1,
+    "parentId": 0,
+    "rect": {
+      "x": 34,
+      "y": 36,
+      "width": 185,
+      "height": 13
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+    "id": 3,
+    "parentId": 0,
+    "rect": {
+      "x": 350,
+      "y": 100,
+      "width": 500,
+      "height": 204
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]",
+    "id": 4,
+    "parentId": 3,
+    "rect": {
+      "x": 350,
+      "y": 100,
+      "width": 500,
+      "height": 93
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+    "id": 6,
+    "parentId": 3,
+    "rect": {
+      "x": 398,
+      "y": 213,
+      "width": 452,
+      "height": 35
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]",
+    "id": 8,
+    "parentId": 3,
+    "rect": {
+      "x": 362,
+      "y": 268,
+      "width": 81,
+      "height": 36
+    }
+  }
+]

@@ -1,0 +1,355 @@
+<html><head>
+<title>Claroline</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/HTML; charset=iso-8859-1">
+<meta name="generator" content="Claroline 1.11.10 - http://claroline.net">
+
+<link rel="stylesheet" type="text/css" href="/claroline11110/web/css/classic/main.css?1337668864" media="screen, projection, tv">
+<link rel="stylesheet" type="text/css" href="/claroline11110/web/css/print.css?1301589034" media="print">
+
+<link rel="top" href="/index.php" title="">
+<link href="http://www.claroline.net/documentation.htm" rel="Help">
+<link href="/claroline11110/CREDITS.txt" rel="Author">
+<link href="http://www.claroline.net" rel="Copyright">
+<link href="/claroline11110/claroline/../favicon.ico" rel="shortcut icon">
+
+<script type="text/javascript">
+    document.cookie="javascriptEnabled=true; path=/claroline11110";
+    </script>
+
+<script src="/claroline11110/web/js/jquery.js?1374567070" type="text/javascript"></script>
+<script src="/claroline11110/web/js/jquery.qtip.js?1371735614" type="text/javascript"></script>
+<script src="/claroline11110/web/js/claroline.js?1368605938" type="text/javascript"></script>
+<script src="/claroline11110/web/js/claroline.ui.js?1376037408" type="text/javascript"></script>
+<script src="/claroline11110/web/js/tooltitle.js?1311692694" type="text/javascript"></script>
+
+<script type="text/javascript">
+var __ = (function(){
+
+    var translation = {
+    
+
+    };
+
+    return function(string) {
+        return translation[string] || string;
+    };
+
+})();
+</script>
+            
+
+</head>
+
+<body dir="ltr" style="">
+<!-- $Id: banner.tpl.php 13151 2011-05-11 12:09:47Z abourguignon $ -->
+
+<!-- claroPage -->
+<div id="claroPage">
+
+<!-- Banner -->
+<div id="topBanner">
+
+<!-- Platform Banner -->
+<div id="platformBanner">
+    <div id="campusBannerLeft">
+        <span id="siteName">
+            <a href="/claroline11110/index.php" target="_top">
+                        Claroline                        </a>
+        </span>
+        
+        
+<!-- campusBannerLeft -->
+
+<!-- End of campusBannerLeft -->
+    </div>
+    <div id="campusBannerRight">
+        <span id="institution">
+                        
+                                                
+                    </span>
+        
+        
+<!-- campusBannerRight -->
+
+<!-- End of campusBannerRight -->
+    </div>
+    <div class="spacer"></div>
+</div>
+<!-- End of Platform Banner -->
+
+<div id="userBanner">
+    <div id="userBannerRight">
+        <ul class="menu">
+            <li><span><a href="/claroline11110/claroline/auth/login.php?sourceUrl=aHR0cDovL2xvY2FsaG9zdDozMDAwL2NsYXJvbGluZTExMTEwL2NsYXJvbGluZS9hdXRoL2luc2NyaXB0aW9uLnBocA%3D%3D" target="_top">Login</a></span></li>
+        </ul>
+    </div>
+    
+    <div class="spacer"></div>
+</div>
+<!-- End of User Banner -->
+
+<!-- BreadcrumbLine  -->
+<div id="breadcrumbLine">
+    <hr>
+    <div class="breadcrumbTrails">
+        <ul class="breadCrumbs">
+<li class="breadCrumbsNode firstBreadCrumbsNode"><a href="/claroline11110/index.php" target="_top"><img src="/claroline11110/web/img/home.png?1232376376" alt="home">&nbsp;Claroline</a>&nbsp;&gt;&nbsp;</li>
+<li class="breadCrumbsNode lastBreadCrumbsNode"><a href="inscription.php" target="_top">Create user account</a></li>
+</ul>
+    </div>
+    
+    <div id="toolViewOption">
+            </div>
+    
+    <div class="spacer"></div>
+    <hr>
+</div>
+<!-- End of BreadcrumbLine  -->
+
+</div>
+<!-- End of topBanner -->
+<!-- $Id: body.tpl.php 14332 2012-11-23 10:08:10Z zefredz $ -->
+
+
+<!-- - - - - - - - - - - Claroline Body - - - - - - - - - -->
+<div id="claroBody">
+    
+    
+                
+
+<!-- Page content -->
+<div class="toolTitleBlock"><table><tbody><tr><td><h1 class="toolTitle mainTitle">Create user account</h1>
+</td><td><ul class="commandList">
+</ul>
+</td></tr></tbody></table></div>
+<!-- $Id: user_form.tpl.php 14314 2012-11-07 09:09:19Z zefredz $ -->
+
+<form id="userSettings" method="post" action="/claroline11110/claroline/auth/inscription.php" enctype="multipart/form-data">
+        <input type="hidden" id="cmd" name="cmd" value="registration">
+    <input type="hidden" name="claroFormId" value="615cdcee2fac2">
+    
+        
+        
+        
+    
+    
+    <!-- FIRST SECTION: personal informations -->
+    <fieldset>
+        <legend>
+            Personal informations        </legend>
+        
+        <dl>
+            <dt>
+                <label for="lastname">
+                    Name                    <span class="required">*</span>
+                </label>
+            </dt>
+            <dd>
+                                
+                    <input type="text" id="lastname" name="lastname" value="">
+                
+                            </dd>
+            <dt>
+                <label for="firstname">
+                    First name                    <span class="required">*</span>
+                </label>
+            </dt>
+            <dd>
+                                
+                    <input type="text" id="firstname" name="firstname" value="">
+                
+                            </dd>
+            
+                        
+                <dt>
+                    <label for="officialCode">
+                        Administrative code
+                                            </label>
+                </dt>
+            
+                                
+                    <dd>
+                        <input type="text" id="officialCode" name="officialCode" value="">
+                    </dd>
+                
+                                    
+                        
+                        
+                            
+        </dl>
+        
+    </fieldset>
+    
+    
+    
+    <!-- SECOND SECTION: platform's account -->
+    <fieldset>
+        <legend>
+            User account        </legend>
+        
+        <dl>
+            
+                        
+                <dt></dt>
+                <dd>
+                    <p class="notice">
+                        Choose now a username and a password for the user account.<br>
+                        Memorize them, you will use them the next time you will enter to this site.                    </p>
+                </dd>
+            
+                        
+            
+            
+                <dt>
+                    <label for="username">
+                        Username                        <span class="required">*</span>
+                    </label>
+                </dt>
+                <dd>
+                                        
+                        <input type="text" name="username" id="username" value="">
+                    
+                                    </dd>
+                
+            
+            
+                
+                <dt>
+                    <label for="password">
+
+                    Password
+                    <span class="required">*</span>
+                </label>
+                </dt>
+                <dd>
+                    <input type="password" autocomplete="off" name="password" id="password">
+                </dd>
+                
+                <dt>
+                    <label for="password_conf">
+
+                    Password
+                    (Confirmation)
+                    <span class="required">*</span>
+                    </label>
+                </dt>
+                <dd>
+                    <input type="password" autocomplete="off" name="password_conf" id="password_conf">
+                </dd>
+
+                            
+                            
+        </dl>
+    </fieldset>
+    
+    
+    
+    <!-- THIRD SECTION: others informations -->
+    <fieldset>
+        <legend>
+            Other informations        </legend>
+        
+        <dl>
+            <dt>
+                <label for="email">
+                    Email                </label>
+            
+                                    
+            </dt>
+            <dd>                
+                                
+                    <input type="text" name="email" id="email" value="">
+                
+                                    
+            </dd>
+            <dt>
+                <label for="phone">
+                    Phone                </label>
+            </dt>
+            <dd>                
+                                
+                    <input type="text" value="" name="phone" id="phone">
+                
+                            </dd>
+            <dt>
+                <label for="skype">
+                    Skype account                </label>
+            </dt>
+            <dd>
+                                
+                    <input type="text" value="" name="skype" id="skype">
+                
+                            </dd>
+            
+        </dl>
+    </fieldset>
+    
+    
+    
+    <!-- FOURTH SECTION: permissions -->
+    <fieldset>
+        <legend>
+            Permissions        </legend>
+        
+        <dl>
+            <dt>
+                Platform role            </dt>
+            <dd>
+                <input type="radio" name="platformRole" id="student" value="student" checked="checked"><label for="student">Follow courses (student)</label><br>
+                <input type="radio" name="platformRole" id="courseManager" value="courseManager"><label for="courseManager">Create courses (teacher)</label><br>
+                
+                            </dd>
+            
+                    </dl>
+    </fieldset>
+    <dl>
+        <dt>
+            <input type="submit" name="applyChange" id="applyChange" value="Ok">
+            
+                            
+            <a href="http://localhost:3000/claroline11110/index.php"><input type="button" onclick="document.location='http://localhost:3000/claroline11110/index.php';return false" value="Cancel"></a>
+        </dt>
+        <dd></dd>
+    </dl>
+</form>
+
+<p class="notice">
+    <span class="required">*</span> denotes required field</p><!-- End of Page Content -->
+
+
+    
+    <div class="spacer"></div>
+</div>
+<!-- - - - - - - - - - - End of Claroline Body  - - - - - - - - - - -->
+
+<!-- $Id: footer.tpl.php 12676 2010-10-20 14:59:33Z abourguignon $ -->
+
+
+<div id="campusFooter">
+    <hr>
+    <div id="campusFooterLeft">
+        
+<!-- campusFooterLeft -->
+
+<!-- End of campusFooterLeft -->
+            </div>
+    <div id="campusFooterRight">
+        
+<!-- campusFooterRight -->
+
+<!-- End of campusFooterRight -->
+        <div id="platformManager">Administrator for Claroline : <a href="mailto:jdoe@mydomain.net?subject=[Claroline]">John Doe</a></div>    </div>
+    <div id="campusFooterCenter">
+        
+<!-- campusFooterCenter -->
+
+<!-- End of campusFooterCenter -->
+        <span class="poweredBy">Powered by <a href="http://www.claroline.net" target="_blank">Claroline</a> © 2001 - 2013</span>    </div>
+</div>
+<!-- end of claroPage -->
+</div>
+
+
+</body></html>

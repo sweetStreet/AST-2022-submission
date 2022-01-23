@@ -1,0 +1,429 @@
+[
+  {
+    "id": 1,
+    "backtrackTarget": 0,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state0:-1index_4_state5state5_5_indexindex_6_state7state7_7_state5state5_8_indexindex_10_state11state11_11_state7state7_12_state13state13_13_state14state14_14_state15state15_15_state16state16_16_state15state15_18_state16state16_19_state15state15_21_state16"
+  },
+  {
+    "id": 2,
+    "backtrackTarget": 11,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state11:-1index_10_state11state11_22_index"
+  },
+  {
+    "id": 3,
+    "backtrackTarget": 11,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state11:-1index_10_state11state11_23_state28state28_24_index"
+  },
+  {
+    "id": 4,
+    "backtrackTarget": 13,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state13:-1index_6_state7state7_12_state13state13_25_state33state33_26_state34state34_27_state35state35_28_state36"
+  },
+  {
+    "id": 5,
+    "backtrackTarget": 11,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state11:-1index_10_state11state11_29_state39state39_30_index"
+  },
+  {
+    "id": 6,
+    "backtrackTarget": 11,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state11:failed:-1index_1000006_state39"
+  },
+  {
+    "id": 7,
+    "backtrackTarget": 39,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state39:-1index_1000006_state39state39_31_state28"
+  },
+  {
+    "id": 8,
+    "backtrackTarget": 13,
+    "backtrackSuccess": false,
+    "reachedNearDup": 49,
+    "pathString": "BT-state13:failed:49index_6_state7state7_1000009_state49state49_32_state33state33_33_state35state35_34_state52"
+  },
+  {
+    "id": 9,
+    "backtrackTarget": 39,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state39:-1index_1000006_state39state39_35_state55state55_36_index"
+  },
+  {
+    "id": 10,
+    "backtrackTarget": 39,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state39:failed:-1index_1000011_state55"
+  },
+  {
+    "id": 11,
+    "backtrackTarget": 55,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state55:-1index_1000011_state55state55_37_state28"
+  },
+  {
+    "id": 12,
+    "backtrackTarget": 55,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state55:-1index_1000011_state55state55_38_state65state65_39_state66state66_40_index"
+  },
+  {
+    "id": 13,
+    "backtrackTarget": 55,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state55:failed:-1index_1000014_state66"
+  },
+  {
+    "id": 14,
+    "backtrackTarget": 7,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state7:-1index_6_state7state7_41_index"
+  },
+  {
+    "id": 15,
+    "backtrackTarget": 33,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state33:-1index_6_state7state7_1000009_state49state49_32_state33state33_42_index"
+  },
+  {
+    "id": 16,
+    "backtrackTarget": 7,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state7:-1index_6_state7state7_43_state82state82_44_index"
+  },
+  {
+    "id": 17,
+    "backtrackTarget": 7,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state7:-1index_6_state7state7_45_state86state86_46_index"
+  },
+  {
+    "id": 18,
+    "backtrackTarget": 66,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state66:-1index_1000014_state66state66_47_state90state90_48_state28"
+  },
+  {
+    "id": 19,
+    "backtrackTarget": 90,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state90:-1index_1000014_state66state66_47_state90state90_49_state95state95_50_state66"
+  },
+  {
+    "id": 20,
+    "backtrackTarget": 90,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state90:-1index_1000014_state66state66_47_state90state90_51_state28"
+  },
+  {
+    "id": 21,
+    "backtrackTarget": 95,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state95:-1index_1000014_state66state66_47_state90state90_49_state95state95_52_index"
+  },
+  {
+    "id": 22,
+    "backtrackTarget": 90,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state90:failed:-1index_1000029_state107state107_1000030_state95"
+  },
+  {
+    "id": 23,
+    "backtrackTarget": 107,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state107:-1index_1000029_state107state107_53_state28"
+  },
+  {
+    "id": 24,
+    "backtrackTarget": 107,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state107:-1index_1000029_state107state107_54_state115state115_55_index"
+  },
+  {
+    "id": 25,
+    "backtrackTarget": 95,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state95:failed:-1index_1000033_state115state115_1000034_state119"
+  },
+  {
+    "id": 26,
+    "backtrackTarget": 119,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state119:-1index_1000033_state115state115_1000034_state119state119_56_state115state115_57_index"
+  },
+  {
+    "id": 27,
+    "backtrackTarget": 119,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state119:-1index_1000033_state115state115_1000034_state119state119_58_index"
+  },
+  {
+    "id": 28,
+    "backtrackTarget": 5,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state5:failed:-1index_1000039_state133"
+  },
+  {
+    "id": 29,
+    "backtrackTarget": 133,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state133:-1index_1000039_state133state133_59_state137state137_60_index"
+  },
+  {
+    "id": 30,
+    "backtrackTarget": 133,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state133:-1index_1000039_state133state133_61_index"
+  },
+  {
+    "id": 31,
+    "backtrackTarget": 133,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state133:-1index_1000039_state133state133_62_state144state144_63_state7"
+  },
+  {
+    "id": 32,
+    "backtrackTarget": 33,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state33:-1index_6_state7state7_1000009_state49state49_32_state33"
+  },
+  {
+    "id": 33,
+    "backtrackTarget": 34,
+    "backtrackSuccess": false,
+    "reachedNearDup": 35,
+    "pathString": "BT-state34:failed:35index_6_state7state7_1000009_state49state49_32_state33state33_1000049_state35"
+  },
+  {
+    "id": 34,
+    "backtrackTarget": 49,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state49:-1index_6_state7state7_1000009_state49state49_64_state159state159_65_index"
+  },
+  {
+    "id": 35,
+    "backtrackTarget": 159,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state159:-1index_6_state7state7_1000053_state159state159_66_index"
+  },
+  {
+    "id": 36,
+    "backtrackTarget": 159,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state159:-1index_6_state7state7_1000053_state159state159_67_state14state14_68_index"
+  },
+  {
+    "id": 37,
+    "backtrackTarget": 82,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state82:failed:-1index_6_state7state7_1000057_state133"
+  },
+  {
+    "id": 38,
+    "backtrackTarget": 86,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state86:failed:-1index_6_state7state7_1000059_state176"
+  },
+  {
+    "id": 39,
+    "backtrackTarget": 115,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state115:-1index_1000033_state115"
+  },
+  {
+    "id": 40,
+    "backtrackTarget": 119,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state119:-1index_1000033_state115state115_1000034_state119"
+  },
+  {
+    "id": 41,
+    "backtrackTarget": 133,
+    "backtrackSuccess": false,
+    "reachedNearDup": 176,
+    "pathString": "BT-state133:failed:176index_1000063_state176"
+  },
+  {
+    "id": 42,
+    "backtrackTarget": 137,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state137:-1index_6_state7state7_1000065_state176state176_1000066_state137state137_69_index"
+  },
+  {
+    "id": 43,
+    "backtrackTarget": 159,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state159:-1index_6_state7state7_1000053_state159"
+  },
+  {
+    "id": 44,
+    "backtrackTarget": 14,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state14:-1index_6_state7state7_1000053_state159state159_67_state14"
+  },
+  {
+    "id": 45,
+    "backtrackTarget": 137,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state137:-1index_1000063_state176state176_1000066_state137state137_71_state176"
+  },
+  {
+    "id": 46,
+    "backtrackTarget": 137,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state137:-1index_1000063_state176state176_1000066_state137state137_72_state7"
+  },
+  {
+    "id": 47,
+    "backtrackTarget": 137,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state137:-1index_1000063_state176state176_1000066_state137state137_74_state159"
+  },
+  {
+    "id": 48,
+    "backtrackTarget": 137,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state137:-1index_1000063_state176state176_1000066_state137state137_75_state14"
+  },
+  {
+    "id": 49,
+    "backtrackTarget": 137,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state137:-1index_1000063_state176state176_1000066_state137state137_76_state115"
+  },
+  {
+    "id": 50,
+    "backtrackTarget": 137,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state137:-1index_1000063_state176state176_1000066_state137state137_77_state15state15_78_index"
+  },
+  {
+    "id": 51,
+    "backtrackTarget": 15,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state15:-1index_1000063_state176state176_1000066_state137state137_77_state15state15_79_state230state230_80_index"
+  },
+  {
+    "id": 52,
+    "backtrackTarget": 230,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state230:-1index_1000063_state176state176_1000066_state137state137_77_state15state15_79_state230state230_82_index"
+  },
+  {
+    "id": 53,
+    "backtrackTarget": 230,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state230:-1index_1000063_state176state176_1000066_state137state137_77_state15state15_79_state230state230_83_state15"
+  },
+  {
+    "id": 54,
+    "backtrackTarget": 137,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state137:-1index_1000063_state176state176_1000066_state137state137_84_state176"
+  },
+  {
+    "id": 55,
+    "backtrackTarget": 230,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state230:-1index_1000063_state176state176_1000066_state137state137_77_state15state15_79_state230"
+  },
+  {
+    "id": 56,
+    "backtrackTarget": 137,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state137:-1index_1000063_state176state176_1000066_state137state137_85_state257state257_86_index"
+  },
+  {
+    "id": 57,
+    "backtrackTarget": 137,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state137:-1index_1000063_state176state176_1000066_state137state137_87_state262state262_88_index"
+  },
+  {
+    "id": 58,
+    "backtrackTarget": 262,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state262:-1index_1000063_state176state176_1000066_state137state137_87_state262state262_89_state268state268_90_state269"
+  },
+  {
+    "id": 59,
+    "backtrackTarget": 268,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state268:-1index_1000063_state176state176_1000066_state137state137_87_state262state262_89_state268"
+  },
+  {
+    "id": 60,
+    "backtrackTarget": 257,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state257:-1index_1000063_state176state176_1000066_state137state137_85_state257"
+  },
+  {
+    "id": 61,
+    "backtrackTarget": 262,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state262:-1index_1000063_state176state176_1000066_state137state137_87_state262"
+  }
+]

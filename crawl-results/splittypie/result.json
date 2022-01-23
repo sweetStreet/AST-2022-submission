@@ -1,0 +1,2602 @@
+{
+  "states" : {
+    "state75" : {
+      "name" : "state75",
+      "url" : "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS/transactions/new?amount=null&date=2021-09-22&name=nvgYQTCl",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 573,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[1]",
+        "width" : 64,
+        "height" : 35
+      }, {
+        "top" : 573,
+        "left" : 297,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[2]",
+        "width" : 82,
+        "height" : 35
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 2,
+      "id" : 75,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]" ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 28.0,
+      "cluster" : 75,
+      "timeAdded" : 1632292250992,
+      "nearestState" : "state32"
+    },
+    "state30" : {
+      "name" : "state30",
+      "url" : "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 80,
+        "left" : 894,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/A[1]",
+        "width" : 90,
+        "height" : 42
+      }, {
+        "top" : 131,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 94,
+        "height" : 43
+      }, {
+        "top" : 131,
+        "left" : 308,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 126,
+        "height" : 43
+      }, {
+        "top" : 814,
+        "left" : 1124,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[4]/A[1]",
+        "width" : 56,
+        "height" : 56
+      }, {
+        "top" : 11,
+        "left" : 766,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 233,
+        "height" : 42
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 80,
+        "left" : 199,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 165,
+        "height" : 51
+      }, {
+        "top" : 80,
+        "left" : 783,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/BUTTON[1]",
+        "width" : 108,
+        "height" : 42
+      } ],
+      "fanIn" : 18,
+      "fanOut" : 6,
+      "id" : 30,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]", "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/BUTTON[1]" ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 94.0,
+      "cluster" : 30,
+      "timeAdded" : 1632292132919,
+      "nearestState" : "state23"
+    },
+    "state95" : {
+      "name" : "state95",
+      "url" : "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS",
+      "candidateElements" : [ {
+        "top" : 131,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 94,
+        "height" : 43
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 95,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 6.0,
+      "cluster" : 95,
+      "timeAdded" : 1632292322472,
+      "nearestState" : "state48"
+    },
+    "state6" : {
+      "name" : "state6",
+      "url" : "http://localhost:4200/new",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 112,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 0,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 333,
+        "left" : 891,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/UL[1]/LI[1]/DIV[1]/DIV[1]/SPAN[1]/BUTTON[1]",
+        "width" : 78,
+        "height" : 35
+      }, {
+        "top" : 385,
+        "left" : 891,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/UL[1]/LI[2]/DIV[1]/DIV[1]/SPAN[1]/BUTTON[1]",
+        "width" : 78,
+        "height" : 35
+      }, {
+        "top" : 436,
+        "left" : 230,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[1]",
+        "width" : 142,
+        "height" : 35
+      }, {
+        "top" : 524,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[1]",
+        "width" : 64,
+        "height" : 35
+      }, {
+        "top" : 524,
+        "left" : 297,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[2]",
+        "width" : 82,
+        "height" : 35
+      } ],
+      "fanIn" : 8,
+      "fanOut" : 5,
+      "id" : 6,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]" ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 120.0,
+      "cluster" : 6,
+      "timeAdded" : 1632292050748,
+      "nearestState" : "state1"
+    },
+    "state170" : {
+      "name" : "state170",
+      "url" : "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS",
+      "candidateElements" : [ {
+        "top" : 620,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 620,
+        "left" : 579,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 65,
+        "height" : 64
+      }, {
+        "top" : 620,
+        "left" : 644,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 69,
+        "height" : 64
+      }, {
+        "top" : 620,
+        "left" : 713,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 81,
+        "height" : 64
+      }, {
+        "top" : 620,
+        "left" : 886,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 113,
+        "height" : 64
+      }, {
+        "top" : 433,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/MAIN[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[1]/DIV[1]/P[2]/A[1]",
+        "width" : 192,
+        "height" : 42
+      }, {
+        "top" : 620,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/NAV[2]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      } ],
+      "fanIn" : 3,
+      "fanOut" : 1,
+      "id" : 170,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/NAV[2]/DIV[1]/BUTTON[1]" ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 60.0,
+      "cluster" : 170,
+      "timeAdded" : 1632292523734,
+      "nearestState" : "state121"
+    },
+    "state1" : {
+      "name" : "state1",
+      "url" : "http://localhost:4200/",
+      "candidateElements" : [ {
+        "top" : 539,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 651,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 539,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 539,
+        "left" : 647,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 65,
+        "height" : 64
+      }, {
+        "top" : 539,
+        "left" : 712,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 82,
+        "height" : 64
+      }, {
+        "top" : 539,
+        "left" : 886,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[4]/A[1]",
+        "width" : 113,
+        "height" : 64
+      }, {
+        "top" : 433,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/SECTION[1]/DIV[1]/DIV[1]/P[2]/A[1]",
+        "width" : 192,
+        "height" : 42
+      }, {
+        "top" : 539,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      } ],
+      "fanIn" : 7,
+      "fanOut" : 5,
+      "id" : 1,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]" ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 5.0,
+      "cluster" : 1,
+      "timeAdded" : 1632292030851,
+      "nearestState" : "index"
+    },
+    "state153" : {
+      "name" : "state153",
+      "url" : "http://localhost:4200/",
+      "candidateElements" : [ {
+        "top" : 539,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 651,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 539,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 539,
+        "left" : 647,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 65,
+        "height" : 64
+      }, {
+        "top" : 539,
+        "left" : 712,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 82,
+        "height" : 64
+      }, {
+        "top" : 539,
+        "left" : 886,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[4]/A[1]",
+        "width" : 113,
+        "height" : 64
+      }, {
+        "top" : 433,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/SECTION[1]/DIV[1]/DIV[1]/P[2]/A[1]",
+        "width" : 192,
+        "height" : 42
+      }, {
+        "top" : 539,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 2,
+      "id" : 153,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 3.0,
+      "cluster" : 1,
+      "timeAdded" : 1632292481125,
+      "nearestState" : "state1"
+    },
+    "state125" : {
+      "name" : "state125",
+      "url" : "http://localhost:4200/-MkBCSZ8ER2sAWDPJduB",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 112,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 164,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 0,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 80,
+        "left" : 894,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/A[1]",
+        "width" : 90,
+        "height" : 42
+      }, {
+        "top" : 131,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 94,
+        "height" : 43
+      }, {
+        "top" : 131,
+        "left" : 308,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 126,
+        "height" : 43
+      }, {
+        "top" : 814,
+        "left" : 1124,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[4]/A[1]",
+        "width" : 56,
+        "height" : 56
+      }, {
+        "top" : 11,
+        "left" : 766,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 233,
+        "height" : 42
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 80,
+        "left" : 199,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 165,
+        "height" : 51
+      }, {
+        "top" : 80,
+        "left" : 783,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/BUTTON[1]",
+        "width" : 108,
+        "height" : 42
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 4,
+      "id" : 125,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 6.0,
+      "cluster" : 30,
+      "timeAdded" : 1632292429546,
+      "nearestState" : "state30"
+    },
+    "state226" : {
+      "name" : "state226",
+      "url" : "http://localhost:4200/-MkBD60aXheGZhwD3FMl/transactions",
+      "candidateElements" : [ {
+        "top" : 131,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 94,
+        "height" : 43
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 226,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 6.0,
+      "cluster" : 226,
+      "timeAdded" : 1632292642672,
+      "nearestState" : "state215"
+    },
+    "state104" : {
+      "name" : "state104",
+      "url" : "http://localhost:4200/",
+      "candidateElements" : [ {
+        "top" : 675,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 787,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 839,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 675,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 675,
+        "left" : 578,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 65,
+        "height" : 64
+      }, {
+        "top" : 675,
+        "left" : 643,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 69,
+        "height" : 64
+      }, {
+        "top" : 675,
+        "left" : 712,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]",
+        "width" : 82,
+        "height" : 64
+      }, {
+        "top" : 675,
+        "left" : 886,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[5]/A[1]",
+        "width" : 113,
+        "height" : 64
+      }, {
+        "top" : 433,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/SECTION[1]/DIV[1]/DIV[1]/P[2]/A[1]",
+        "width" : 192,
+        "height" : 42
+      }, {
+        "top" : 707,
+        "left" : 521,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/SECTION[2]/DIV[1]/DIV[1]/A[1]",
+        "width" : 92,
+        "height" : 35
+      }, {
+        "top" : 675,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 707,
+        "left" : 613,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/SECTION[2]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 50,
+        "height" : 35
+      } ],
+      "fanIn" : 3,
+      "fanOut" : 5,
+      "id" : 104,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]" ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 6.0,
+      "cluster" : 28,
+      "timeAdded" : 1632292347097,
+      "nearestState" : "state28"
+    },
+    "state35" : {
+      "name" : "state35",
+      "url" : "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 80,
+        "left" : 894,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/A[1]",
+        "width" : 90,
+        "height" : 42
+      }, {
+        "top" : 814,
+        "left" : 1124,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[4]/A[1]",
+        "width" : 56,
+        "height" : 56
+      }, {
+        "top" : 11,
+        "left" : 769,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 231,
+        "height" : 42
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 80,
+        "left" : 199,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 128,
+        "height" : 51
+      }, {
+        "top" : 80,
+        "left" : 783,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/BUTTON[1]",
+        "width" : 108,
+        "height" : 42
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 2,
+      "id" : 35,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]", "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/BUTTON[1]" ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 5.0,
+      "cluster" : 35,
+      "timeAdded" : 1632292158306,
+      "nearestState" : "state30"
+    },
+    "state109" : {
+      "name" : "state109",
+      "url" : "http://localhost:4200/",
+      "candidateElements" : [ {
+        "top" : 787,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 675,
+        "left" : 643,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 69,
+        "height" : 64
+      }, {
+        "top" : 675,
+        "left" : 712,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]",
+        "width" : 82,
+        "height" : 64
+      }, {
+        "top" : 675,
+        "left" : 886,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[5]/A[1]",
+        "width" : 113,
+        "height" : 64
+      }, {
+        "top" : 433,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/SECTION[1]/DIV[1]/DIV[1]/P[2]/A[1]",
+        "width" : 192,
+        "height" : 42
+      }, {
+        "top" : 707,
+        "left" : 521,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/SECTION[2]/DIV[1]/DIV[1]/A[1]",
+        "width" : 92,
+        "height" : 35
+      }, {
+        "top" : 719,
+        "left" : 866,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 18,
+        "height" : 24
+      }, {
+        "top" : 873,
+        "left" : 485,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[1]",
+        "width" : 277,
+        "height" : 35
+      }, {
+        "top" : 873,
+        "left" : 770,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[2]",
+        "width" : 55,
+        "height" : 35
+      }, {
+        "top" : 873,
+        "left" : 833,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[3]",
+        "width" : 50,
+        "height" : 35
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 3,
+      "id" : 109,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 19.0,
+      "cluster" : 109,
+      "timeAdded" : 1632292371628,
+      "nearestState" : "state104"
+    },
+    "state33" : {
+      "name" : "state33",
+      "url" : "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS/edit",
+      "candidateElements" : [ {
+        "top" : 44,
+        "left" : 866,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 18,
+        "height" : 24
+      }, {
+        "top" : 175,
+        "left" : 770,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[1]",
+        "width" : 55,
+        "height" : 35
+      }, {
+        "top" : 175,
+        "left" : 833,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[2]",
+        "width" : 50,
+        "height" : 35
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 33,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 17.0,
+      "cluster" : 33,
+      "timeAdded" : 1632292149261,
+      "nearestState" : "state32"
+    },
+    "state32" : {
+      "name" : "state32",
+      "url" : "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS/edit",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 112,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 164,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 0,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 333,
+        "left" : 891,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/UL[1]/LI[1]/DIV[1]/DIV[1]/SPAN[1]/BUTTON[1]",
+        "width" : 78,
+        "height" : 35
+      }, {
+        "top" : 385,
+        "left" : 891,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/UL[1]/LI[2]/DIV[1]/DIV[1]/SPAN[1]/BUTTON[1]",
+        "width" : 78,
+        "height" : 35
+      }, {
+        "top" : 436,
+        "left" : 230,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[1]",
+        "width" : 142,
+        "height" : 35
+      }, {
+        "top" : 514,
+        "left" : 230,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[4]/DIV[1]/BUTTON[1]",
+        "width" : 122,
+        "height" : 35
+      }, {
+        "top" : 602,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[1]",
+        "width" : 64,
+        "height" : 35
+      }, {
+        "top" : 602,
+        "left" : 297,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[2]",
+        "width" : 82,
+        "height" : 35
+      } ],
+      "fanIn" : 4,
+      "fanOut" : 4,
+      "id" : 32,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]" ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 3.0,
+      "cluster" : 22,
+      "timeAdded" : 1632292141569,
+      "nearestState" : "state22"
+    },
+    "state76" : {
+      "name" : "state76",
+      "url" : "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS/transactions/new?amount=null&date=2021-09-22&name=nvgYQTCl",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[5]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[7]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[3]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[4]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[5]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[6]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[7]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[3]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[4]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[5]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[6]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[7]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[2]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[3]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[4]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[5]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[6]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[7]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[2]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[3]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[4]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 76,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/BUTTON[2]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[5]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[7]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[3]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[7]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[3]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[4]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[5]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[6]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[2]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[3]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[4]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[6]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[7]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[2]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[3]/BUTTON[1]" ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 139.0,
+      "cluster" : 75,
+      "timeAdded" : 1632292258843,
+      "nearestState" : "state75"
+    },
+    "state15" : {
+      "name" : "state15",
+      "url" : "http://localhost:4200/new",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 112,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 0,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 333,
+        "left" : 891,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/UL[1]/LI[1]/DIV[1]/DIV[1]/SPAN[1]/BUTTON[1]",
+        "width" : 78,
+        "height" : 35
+      }, {
+        "top" : 385,
+        "left" : 891,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/UL[1]/LI[2]/DIV[1]/DIV[1]/SPAN[1]/BUTTON[1]",
+        "width" : 78,
+        "height" : 35
+      }, {
+        "top" : 437,
+        "left" : 891,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/UL[1]/LI[3]/DIV[1]/DIV[1]/SPAN[1]/BUTTON[1]",
+        "width" : 78,
+        "height" : 35
+      }, {
+        "top" : 488,
+        "left" : 230,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[1]",
+        "width" : 142,
+        "height" : 35
+      }, {
+        "top" : 576,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[1]",
+        "width" : 64,
+        "height" : 35
+      }, {
+        "top" : 576,
+        "left" : 297,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[2]",
+        "width" : 82,
+        "height" : 35
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 2,
+      "id" : 15,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 8.0,
+      "cluster" : 15,
+      "timeAdded" : 1632292073011,
+      "nearestState" : "state6"
+    },
+    "state42" : {
+      "name" : "state42",
+      "url" : "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS/transactions",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 112,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 164,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 0,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 80,
+        "left" : 894,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/A[1]",
+        "width" : 90,
+        "height" : 42
+      }, {
+        "top" : 131,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 94,
+        "height" : 43
+      }, {
+        "top" : 131,
+        "left" : 308,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 126,
+        "height" : 43
+      }, {
+        "top" : 814,
+        "left" : 1124,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[4]/A[1]",
+        "width" : 56,
+        "height" : 56
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 80,
+        "left" : 199,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 128,
+        "height" : 51
+      }, {
+        "top" : 80,
+        "left" : 783,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/BUTTON[1]",
+        "width" : 108,
+        "height" : 42
+      } ],
+      "fanIn" : 3,
+      "fanOut" : 8,
+      "id" : 42,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]" ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 23.0,
+      "cluster" : 42,
+      "timeAdded" : 1632292174556,
+      "nearestState" : "state30"
+    },
+    "state63" : {
+      "name" : "state63",
+      "url" : "http://localhost:4200/new",
+      "candidateElements" : [ {
+        "top" : 112,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 164,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 333,
+        "left" : 891,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/UL[1]/LI[1]/DIV[1]/DIV[1]/SPAN[1]/BUTTON[1]",
+        "width" : 78,
+        "height" : 35
+      }, {
+        "top" : 385,
+        "left" : 891,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/UL[1]/LI[2]/DIV[1]/DIV[1]/SPAN[1]/BUTTON[1]",
+        "width" : 78,
+        "height" : 35
+      }, {
+        "top" : 436,
+        "left" : 230,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[1]",
+        "width" : 142,
+        "height" : 35
+      }, {
+        "top" : 524,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[1]",
+        "width" : 64,
+        "height" : 35
+      }, {
+        "top" : 524,
+        "left" : 297,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[2]",
+        "width" : 82,
+        "height" : 35
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 2,
+      "id" : 63,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 6.0,
+      "cluster" : 6,
+      "timeAdded" : 1632292226779,
+      "nearestState" : "state26"
+    },
+    "index" : {
+      "name" : "index",
+      "url" : "http://localhost:4200",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 112,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 0,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 0,
+        "left" : 648,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 66,
+        "height" : 64
+      }, {
+        "top" : 0,
+        "left" : 713,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 81,
+        "height" : 64
+      }, {
+        "top" : 0,
+        "left" : 886,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[4]/A[1]",
+        "width" : 113,
+        "height" : 64
+      }, {
+        "top" : 433,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/SECTION[1]/DIV[1]/DIV[1]/P[2]/A[1]",
+        "width" : 192,
+        "height" : 42
+      }, {
+        "top" : 21,
+        "left" : 1161,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/A[1]",
+        "width" : 18,
+        "height" : 24
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 0,
+      "id" : 0,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : 0,
+      "timeAdded" : 1632292013625,
+      "nearestState" : "null"
+    },
+    "state121" : {
+      "name" : "state121",
+      "url" : "http://localhost:4200/",
+      "candidateElements" : [ {
+        "top" : 539,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 651,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 539,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 433,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/SECTION[1]/DIV[1]/DIV[1]/P[2]/A[1]",
+        "width" : 192,
+        "height" : 42
+      }, {
+        "top" : 539,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 2,
+      "id" : 121,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 3.0,
+      "cluster" : 1,
+      "timeAdded" : 1632292408834,
+      "nearestState" : "state1"
+    },
+    "state142" : {
+      "name" : "state142",
+      "url" : "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS/edit",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 112,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 0,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 177,
+        "left" : 859,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/P[1]/A[1]",
+        "width" : 100,
+        "height" : 23
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 4,
+      "id" : 142,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[4]/DIV[1]/BUTTON[1]" ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 13.0,
+      "cluster" : 142,
+      "timeAdded" : 1632292462378,
+      "nearestState" : "state23"
+    },
+    "state215" : {
+      "name" : "state215",
+      "url" : "http://localhost:4200/-MkBD60aXheGZhwD3FMl/transactions",
+      "candidateElements" : [ {
+        "top" : 112,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 80,
+        "left" : 894,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/A[1]",
+        "width" : 90,
+        "height" : 42
+      }, {
+        "top" : 131,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 94,
+        "height" : 43
+      }, {
+        "top" : 11,
+        "left" : 766,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 233,
+        "height" : 42
+      }, {
+        "top" : 80,
+        "left" : 199,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 165,
+        "height" : 51
+      }, {
+        "top" : 278,
+        "left" : 316,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[4]/FORM[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[1]",
+        "width" : 148,
+        "height" : 35
+      }, {
+        "top" : 278,
+        "left" : 826,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[4]/FORM[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[2]",
+        "width" : 58,
+        "height" : 35
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 3,
+      "id" : 215,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/BUTTON[1]" ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 23.0,
+      "cluster" : 215,
+      "timeAdded" : 1632292615094,
+      "nearestState" : "state48"
+    },
+    "state23" : {
+      "name" : "state23",
+      "url" : "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS/who-are-you",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 112,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 164,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 0,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 228,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/BUTTON[1]",
+        "width" : 99,
+        "height" : 35
+      }, {
+        "top" : 228,
+        "left" : 324,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/BUTTON[2]",
+        "width" : 104,
+        "height" : 35
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 3,
+      "id" : 23,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 55.0,
+      "cluster" : 23,
+      "timeAdded" : 1632292098081,
+      "nearestState" : "state6"
+    },
+    "state22" : {
+      "name" : "state22",
+      "url" : "http://localhost:4200/new",
+      "candidateElements" : [ {
+        "top" : 112,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 164,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 333,
+        "left" : 891,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/UL[1]/LI[1]/DIV[1]/DIV[1]/SPAN[1]/BUTTON[1]",
+        "width" : 78,
+        "height" : 35
+      }, {
+        "top" : 385,
+        "left" : 891,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/UL[1]/LI[2]/DIV[1]/DIV[1]/SPAN[1]/BUTTON[1]",
+        "width" : 78,
+        "height" : 35
+      }, {
+        "top" : 436,
+        "left" : 230,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[1]",
+        "width" : 142,
+        "height" : 35
+      }, {
+        "top" : 514,
+        "left" : 230,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[4]/DIV[1]/BUTTON[1]",
+        "width" : 122,
+        "height" : 35
+      }, {
+        "top" : 602,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[1]",
+        "width" : 64,
+        "height" : 35
+      }, {
+        "top" : 602,
+        "left" : 297,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[2]",
+        "width" : 82,
+        "height" : 35
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 1,
+      "id" : 22,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 11.0,
+      "cluster" : 22,
+      "timeAdded" : 1632292090228,
+      "nearestState" : "state6"
+    },
+    "state44" : {
+      "name" : "state44",
+      "url" : "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS/transactions",
+      "candidateElements" : [ {
+        "top" : 80,
+        "left" : 894,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/A[1]",
+        "width" : 90,
+        "height" : 42
+      }, {
+        "top" : 131,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 94,
+        "height" : 43
+      }, {
+        "top" : 131,
+        "left" : 308,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 126,
+        "height" : 43
+      }, {
+        "top" : 11,
+        "left" : 769,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 231,
+        "height" : 42
+      }, {
+        "top" : 80,
+        "left" : 199,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 128,
+        "height" : 51
+      }, {
+        "top" : 44,
+        "left" : 866,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 18,
+        "height" : 24
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 44,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/BUTTON[1]" ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 14.0,
+      "cluster" : 44,
+      "timeAdded" : 1632292182392,
+      "nearestState" : "state42"
+    },
+    "state28" : {
+      "name" : "state28",
+      "url" : "http://localhost:4200/",
+      "candidateElements" : [ {
+        "top" : 675,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 787,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 839,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 675,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 675,
+        "left" : 578,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 65,
+        "height" : 64
+      }, {
+        "top" : 675,
+        "left" : 643,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 69,
+        "height" : 64
+      }, {
+        "top" : 675,
+        "left" : 712,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]",
+        "width" : 82,
+        "height" : 64
+      }, {
+        "top" : 675,
+        "left" : 886,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[5]/A[1]",
+        "width" : 113,
+        "height" : 64
+      }, {
+        "top" : 433,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/SECTION[1]/DIV[1]/DIV[1]/P[2]/A[1]",
+        "width" : 192,
+        "height" : 42
+      }, {
+        "top" : 707,
+        "left" : 517,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/SECTION[2]/DIV[1]/DIV[1]/A[1]",
+        "width" : 100,
+        "height" : 35
+      }, {
+        "top" : 675,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 707,
+        "left" : 617,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/SECTION[2]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 50,
+        "height" : 35
+      } ],
+      "fanIn" : 3,
+      "fanOut" : 4,
+      "id" : 28,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]" ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 22.0,
+      "cluster" : 28,
+      "timeAdded" : 1632292115609,
+      "nearestState" : "state1"
+    },
+    "state26" : {
+      "name" : "state26",
+      "url" : "http://localhost:4200/new",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 112,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 164,
+        "left" : -840,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 840,
+        "height" : 52
+      }, {
+        "top" : 0,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 180,
+        "height" : 64
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 333,
+        "left" : 891,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/UL[1]/LI[1]/DIV[1]/DIV[1]/SPAN[1]/BUTTON[1]",
+        "width" : 78,
+        "height" : 35
+      }, {
+        "top" : 385,
+        "left" : 891,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/UL[1]/LI[2]/DIV[1]/DIV[1]/SPAN[1]/BUTTON[1]",
+        "width" : 78,
+        "height" : 35
+      }, {
+        "top" : 436,
+        "left" : 230,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[1]",
+        "width" : 142,
+        "height" : 35
+      }, {
+        "top" : 524,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[1]",
+        "width" : 64,
+        "height" : 35
+      }, {
+        "top" : 524,
+        "left" : 297,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[2]",
+        "width" : 82,
+        "height" : 35
+      } ],
+      "fanIn" : 8,
+      "fanOut" : 4,
+      "id" : 26,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 8.0,
+      "cluster" : 6,
+      "timeAdded" : 1632292107513,
+      "nearestState" : "state6"
+    },
+    "state48" : {
+      "name" : "state48",
+      "url" : "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 80,
+        "left" : 894,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/A[1]",
+        "width" : 90,
+        "height" : 42
+      }, {
+        "top" : 131,
+        "left" : 215,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 94,
+        "height" : 43
+      }, {
+        "top" : 131,
+        "left" : 308,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 126,
+        "height" : 43
+      }, {
+        "top" : 814,
+        "left" : 1124,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[4]/A[1]",
+        "width" : 56,
+        "height" : 56
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 80,
+        "left" : 199,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 128,
+        "height" : 51
+      }, {
+        "top" : 80,
+        "left" : 783,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/BUTTON[1]",
+        "width" : 108,
+        "height" : 42
+      }, {
+        "top" : 44,
+        "left" : 866,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[4]/FORM[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 18,
+        "height" : 24
+      }, {
+        "top" : 278,
+        "left" : 316,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[4]/FORM[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[1]",
+        "width" : 148,
+        "height" : 35
+      }, {
+        "top" : 278,
+        "left" : 826,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[4]/FORM[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[2]",
+        "width" : 58,
+        "height" : 35
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 3,
+      "id" : 48,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/BUTTON[2]" ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 36.0,
+      "cluster" : 48,
+      "timeAdded" : 1632292195798,
+      "nearestState" : "state35"
+    }
+  },
+  "edges" : [ {
+    "from" : "state1",
+    "to" : "state6",
+    "text" : "New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[4]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=New Event, attributes={anyaccess=none, href=, title=Create New Event}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state6",
+    "to" : "state1",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand ember-view, href=/, id=ember637, title=SplittyPie Home Page}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state1",
+    "to" : "state6",
+    "text" : "Create New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/SECTION[1]/DIV[1]/DIV[1]/P[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Create New Event, attributes={anyaccess=none, class=btn btn-lg btn-success ember-view, href=/new, id=ember728}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state6",
+    "to" : "state1",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand ember-view, href=/, id=ember662}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state1",
+    "to" : "state6",
+    "text" : "New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=New Event, attributes={class=ember-view, href=/new, id=ember644}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state6",
+    "to" : "state15",
+    "text" : "Add Participant",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add Participant, attributes={class=btn btn-primary add-user, data-ember-action=, data-ember-action-875=875, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state15",
+    "to" : "state1",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand ember-view, href=/, id=ember685, title=SplittyPie Home Page}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state15",
+    "to" : "state6",
+    "text" : "New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=New Event, attributes={class=active ember-view, href=/new, id=ember700}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state22",
+    "to" : "state23",
+    "text" : "JAMoJeTu",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=JAMoJeTu, attributes={class=ember-view, href=/-MkBB9oJUtZ5EEqw1exS, id=ember984}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state23",
+    "to" : "state26",
+    "text" : "New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=New Event, attributes={class=ember-view, href=/new, id=ember739}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state23",
+    "to" : "state28",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand ember-view, href=/, id=ember757}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state28",
+    "to" : "state23",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand active ember-view, href=/, id=ember714, title=SplittyPie Home Page}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state23",
+    "to" : "state30",
+    "text" : "vOxhyyUD",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=vOxhyyUD, attributes={class=btn btn-default, data-ember-action=, data-ember-action-760=760}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state30",
+    "to" : "state32",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-btn btn btn-link ember-view, href=/-MkBB9oJUtZ5EEqw1exS/edit, id=ember848, title=Edit Event}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state32",
+    "to" : "state33",
+    "text" : "Delete Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/DIV[1]/DIV[4]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Delete Event, attributes={anyaccess=none, class=btn btn-danger delete-event, data-ember-action=, data-ember-action-870=870}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state33",
+    "to" : "state32",
+    "text" : "×",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=×, attributes={aria-hidden=true, aria-label=Dismiss, class=close, data-dismiss=modal, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state32",
+    "to" : "state35",
+    "text" : "Save",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Save, attributes={anyaccess=none, class=btn btn-success save-event, data-ember-action=, data-ember-action-871=871, type=submit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state35",
+    "to" : "state30",
+    "text" : "lrTgfECd",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=lrTgfECd, attributes={anyaccess=none, data-ember-action=, data-ember-action-1126=1126, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state30",
+    "to" : "state26",
+    "text" : "Add New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add New Event, attributes={class=ember-view, href=/new, id=ember869}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state26",
+    "to" : "state30",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand ember-view, href=/, id=ember722, title=SplittyPie Home Page}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state30",
+    "to" : "state32",
+    "text" : "Edit",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Edit, attributes={class=btn btn-link btn-lg ember-view, href=/-MkBB9oJUtZ5EEqw1exS/edit, id=ember871}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state32",
+    "to" : "state30",
+    "text" : "Cancel",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Cancel, attributes={anyaccess=none, class=btn btn-link ember-view, id=ember872}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state30",
+    "to" : "state42",
+    "text" : "Transactions",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Transactions, attributes={href=, title=Transactions}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state42",
+    "to" : "state44",
+    "text" : "Share",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Share, attributes={anyaccess=none, class=btn btn-link btn-lg, data-ember-action=, data-ember-action-1105=1105}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state44",
+    "to" : "state42",
+    "text" : "×",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=×, attributes={aria-hidden=true, aria-label=Close, class=close, data-dismiss=modal, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state42",
+    "to" : "state28",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand ember-view, href=/, id=ember749}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state28",
+    "to" : "state30",
+    "text" : "JAMoJeTu",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=JAMoJeTu, attributes={class=ember-view, href=/-MkBB9oJUtZ5EEqw1exS, id=ember729}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state30",
+    "to" : "state48",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[4]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=btn btn-primary btn-circle btn-add-transaction, data-ember-action=, data-ember-action-985=985, href=#, title=Add New Transaction}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state48",
+    "to" : "state30",
+    "text" : "×",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[4]/FORM[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=×, attributes={aria-hidden=true, aria-label=Dismiss, class=close, data-dismiss=modal, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state28",
+    "to" : "state26",
+    "text" : "New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=New Event, attributes={class=ember-view, href=/new, id=ember738}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state26",
+    "to" : "state30",
+    "text" : "JAMoJeTu",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=JAMoJeTu, attributes={class=ember-view, href=/-MkBB9oJUtZ5EEqw1exS, id=ember738}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state28",
+    "to" : "state63",
+    "text" : "New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[2]/UL[1]/LI[5]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=New Event, attributes={href=, title=Create New Event}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state63",
+    "to" : "state30",
+    "text" : "llylfXdd",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=llylfXdd, attributes={class=ember-view, href=/-MkBB9oJUtZ5EEqw1exS, id=ember730}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state35",
+    "to" : "state30",
+    "text" : "×",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=×, attributes={class=close, data-ember-action=, data-ember-action-1266=1266}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state48",
+    "to" : "state75",
+    "text" : "Add With Details",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[4]/FORM[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add With Details, attributes={class=btn btn-default pull-left btn-add-with-details, data-dismiss=modal, data-ember-action=, data-ember-action-1120=1120, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state75",
+    "to" : "state76",
+    "text" : "Save",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Save, attributes={class=btn btn-success save-transaction, data-ember-action=, data-ember-action-1394=1394, type=submit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state42",
+    "to" : "state32",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-btn btn btn-link ember-view, href=/-MkBB9oJUtZ5EEqw1exS/edit, id=ember1097, title=Edit Event}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state32",
+    "to" : "state30",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand ember-view, href=/, id=ember741, title=SplittyPie Home Page}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state48",
+    "to" : "state95",
+    "text" : "Add",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[4]/FORM[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add, attributes={class=btn btn-primary btn-add, data-dismiss=modal, data-ember-action=, data-ember-action-1121=1121, disabled=, type=submit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state42",
+    "to" : "state26",
+    "text" : "Add New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add New Event, attributes={anyaccess=none, class=ember-view, href=/new, id=ember1104}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state26",
+    "to" : "state104",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand ember-view, href=/, id=ember764}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state104",
+    "to" : "state30",
+    "text" : "llylfXdd",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/SECTION[2]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=llylfXdd, attributes={anyaccess=none, class=btn btn-default ember-view, href=/-MkBB9oJUtZ5EEqw1exS, id=ember942}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state109",
+    "to" : "state30",
+    "text" : "llylfXdd",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=llylfXdd, attributes={class=ember-view, href=/-MkBB9oJUtZ5EEqw1exS, id=ember738}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state109",
+    "to" : "state104",
+    "text" : "×",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=×, attributes={aria-hidden=true, aria-label=Dismiss, class=close, data-dismiss=modal, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state104",
+    "to" : "state30",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand active ember-view, href=/, id=ember722, title=SplittyPie Home Page}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state109",
+    "to" : "state121",
+    "text" : "Yes, don't show this message again",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Yes, don't show this message again, attributes={class=btn btn-primary, data-ember-action=, data-ember-action-961=961, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state121",
+    "to" : "state1",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand active ember-view, href=/, id=ember722, title=SplittyPie Home Page}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state6",
+    "to" : "state125",
+    "text" : "Save",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Save, attributes={class=btn btn-success save-event, data-ember-action=, data-ember-action-876=876, type=submit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state104",
+    "to" : "state121",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/SECTION[2]/DIV[1]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=, attributes={anyaccess=none, aria-label=Remove event reference locally, class=btn btn-default, data-ember-action=, data-ember-action-943=943, title=Remove reference from this computer. The event will still be reachable by url.}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state1",
+    "to" : "state6",
+    "text" : "Add New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add New Event, attributes={class=ember-view, href=/new, id=ember869}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state1",
+    "to" : "state142",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/NAV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-btn btn btn-link ember-view, href=/-MkBB9oJUtZ5EEqw1exS/edit, id=ember848, title=Edit Event}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state142",
+    "to" : "state1",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand ember-view, href=/, id=ember726, title=SplittyPie Home Page}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state142",
+    "to" : "state6",
+    "text" : "New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=New Event, attributes={class=ember-view, href=/new, id=ember741}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state142",
+    "to" : "state153",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand ember-view, href=/, id=ember759}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state153",
+    "to" : "state1",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand active ember-view, href=/, id=ember726, title=SplittyPie Home Page}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state142",
+    "to" : "state153",
+    "text" : "Home page",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/P[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Home page, attributes={class=ember-view, href=/, id=ember761}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state153",
+    "to" : "state6",
+    "text" : "New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=New Event, attributes={class=ember-view, href=/new, id=ember741}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state6",
+    "to" : "state1",
+    "text" : "Cancel",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Cancel, attributes={class=btn btn-link ember-view, id=ember877}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state125",
+    "to" : "state104",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={anyaccess=none, class=navbar-brand ember-view, href=/, id=ember716}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state104",
+    "to" : "state170",
+    "text" : "llylfXdd",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=llylfXdd, attributes={class=ember-view, href=/-MkBB9oJUtZ5EEqw1exS, id=ember738}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state170",
+    "to" : "state30",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand, href=/, title=SplittyPie Home}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state104",
+    "to" : "state26",
+    "text" : "New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=New Event, attributes={class=ember-view, href=/new, id=ember756}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state125",
+    "to" : "state30",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand ember-view, href=/, id=ember691, title=SplittyPie Home Page}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state125",
+    "to" : "state170",
+    "text" : "JAMoJeTu",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=JAMoJeTu, attributes={class=active ember-view, href=/-MkBCSZ8ER2sAWDPJduB, id=ember1086}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state125",
+    "to" : "state26",
+    "text" : "New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=New Event, attributes={class=ember-view, href=/new, id=ember698}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state63",
+    "to" : "state26",
+    "text" : "New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=New Event, attributes={class=active ember-view, href=/new, id=ember731}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state42",
+    "to" : "state215",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[4]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=btn btn-primary btn-circle btn-add-transaction, data-ember-action=, data-ember-action-1124=1124, href=#, title=Add New Transaction}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state215",
+    "to" : "state30",
+    "text" : "JAMoJeTu",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=JAMoJeTu, attributes={class=active ember-view, href=/-MkBD60aXheGZhwD3FMl, id=ember730}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state215",
+    "to" : "state75",
+    "text" : "Add With Details",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[4]/FORM[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add With Details, attributes={anyaccess=action, class=btn btn-default pull-left btn-add-with-details, data-dismiss=modal, data-ember-action=, data-ember-action-1173=1173, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state75",
+    "to" : "state42",
+    "text" : "Cancel",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Cancel, attributes={class=btn btn-link ember-view, id=ember1395}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state42",
+    "to" : "state30",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand ember-view, href=/, id=ember715, title=SplittyPie Home Page}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state215",
+    "to" : "state226",
+    "text" : "Add",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[4]/FORM[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add, attributes={anyaccess=action, class=btn btn-primary btn-add, data-dismiss=modal, data-ember-action=, data-ember-action-1174=1174, disabled=, type=submit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state42",
+    "to" : "state170",
+    "text" : "llylfXdd",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=llylfXdd, attributes={class=active ember-view, href=/-MkBB9oJUtZ5EEqw1exS, id=ember730}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state42",
+    "to" : "state26",
+    "text" : "New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=New Event, attributes={class=ember-view, href=/new, id=ember731}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state121",
+    "to" : "state6",
+    "text" : "New Event",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=New Event, attributes={class=ember-view, href=/new, id=ember756}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state26",
+    "to" : "state30",
+    "text" : "Cancel",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[3]/MAIN[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Cancel, attributes={anyaccess=none, class=btn btn-link ember-view, id=ember852}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state30",
+    "to" : "state28",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[3]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=navbar-brand ember-view, href=/, id=ember757}}",
+    "eventType" : "click"
+  } ],
+  "statistics" : {
+    "duration" : "15 minutes 8 seconds",
+    "crawlPaths" : 47,
+    "averageDomSize" : "34.294 kB",
+    "edges" : 77,
+    "startDate" : "2021-09-22 01:26:47 CDT",
+    "stateStats" : {
+      "leastFanOut" : {
+        "id" : "state95",
+        "count" : 0
+      },
+      "leastFanIn" : {
+        "id" : "state109",
+        "count" : 0
+      },
+      "mostFanOut" : {
+        "id" : "state42",
+        "count" : 8
+      },
+      "mostFanIn" : {
+        "id" : "state30",
+        "count" : 18
+      },
+      "totalNumberOfStates" : 28,
+      "urls" : {
+        "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS/transactions/new?amount=null&date=2021-09-22&name=nvgYQTCl" : [ "state75", "state76" ],
+        "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS" : [ "state30", "state95", "state170", "state35", "state48" ],
+        "http://localhost:4200/new" : [ "state6", "state15", "state63", "state22", "state26" ],
+        "http://localhost:4200/" : [ "state1", "state153", "state104", "state109", "state121", "state28" ],
+        "http://localhost:4200/-MkBCSZ8ER2sAWDPJduB" : [ "state125" ],
+        "http://localhost:4200/-MkBD60aXheGZhwD3FMl/transactions" : [ "state226", "state215" ],
+        "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS/edit" : [ "state33", "state32", "state142" ],
+        "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS/transactions" : [ "state42", "state44" ],
+        "http://localhost:4200" : [ "index" ],
+        "http://localhost:4200/-MkBB9oJUtZ5EEqw1exS/who-are-you" : [ "state23" ]
+      }
+    },
+    "failedEvents" : 44
+  },
+  "exitStatus" : "EXHAUSTED"
+}

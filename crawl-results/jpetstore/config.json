@@ -1,0 +1,2717 @@
+{
+  "url" : "http://localhost:8080/jpetstore/",
+  "basicAuthUrl" : null,
+  "browserConfig" : {
+    "browserType" : "CHROME_HEADLESS",
+    "numberOfBrowsers" : 1,
+    "browserBuilder" : { },
+    "remoteHubUrl" : null,
+    "browserOptions" : {
+      "headless" : false,
+      "pixelDensity" : 2,
+      "profile" : null
+    },
+    "defaultBuilder" : true,
+    "langOrNull" : null
+  },
+  "plugins" : [ "CrawlOverview", "TestSuiteGenerator", "TestSuiteGenerator", "FragmentationPlugin" ],
+  "proxyConfiguration" : {
+    "port" : -1,
+    "hostname" : "none",
+    "type" : "NOTHING"
+  },
+  "crawlRules" : {
+    "crawlEvents" : [ "click" ],
+    "invariants" : [ ],
+    "oracleComparators" : [ {
+      "preConditions" : [ ],
+      "id" : "DummyComparator",
+      "oracle" : { }
+    } ],
+    "ignoredFrameIdentifiers" : [ ],
+    "preCrawlConfig" : {
+      "waitConditions" : [ ],
+      "crawlConditions" : [ ],
+      "includedElements" : [ {
+        "tagName" : "A",
+        "id" : "id294714524",
+        "eventType" : "click",
+        "eventableCondition" : null,
+        "withXpathExpression" : null
+      }, {
+        "tagName" : "BUTTON",
+        "id" : "id241798218",
+        "eventType" : "click",
+        "eventableCondition" : null,
+        "withXpathExpression" : null
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id378279408",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id378279408",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@type='submit']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//INPUT[@type='submit']"
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id53234206",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id53234206",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@type='button']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//INPUT[@type='button']"
+      }, {
+        "tagName" : "A",
+        "id" : "id357442299",
+        "eventType" : "click",
+        "eventableCondition" : null,
+        "withXpathExpression" : null
+      } ],
+      "excludedElements" : [ ],
+      "filterAttributeNames" : [ "closure_hashcode_(\\w)*", "jquery[0-9]+" ]
+    },
+    "formFillMode" : "NORMAL",
+    "formFillOrder" : "VISUAL",
+    "inputSpecification" : {
+      "formInputs" : {
+        "name account.address2" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address2",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "apt 223",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name username" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name repeatedPassword" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "repeatedPassword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name account.lastName" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.lastName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "L",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name password" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name account.phone" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.phone",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "5122005208",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name account.country" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.country",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "US",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name account.city" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.city",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Austin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name account.zip" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.zip",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "78705",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name keyword" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "keyword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Bulldog",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name account.email" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "yul@utexas.edu",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name account.firstName" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.firstName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Y",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name account.state" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.state",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "TX",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name account.address1" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address1",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "27 nu st",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }
+      },
+      "forms" : [ {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      }, {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "repeatedPassword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.firstName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Y",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.lastName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "L",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "yul@utexas.edu",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.phone",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "5122005208",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address1",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "27 nu st",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address2",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "apt 223",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.city",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Austin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.state",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "TX",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.zip",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "78705",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.country",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "US",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      }, {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "keyword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Bulldog",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      } ],
+      "crawlElements" : [ {
+        "tagName" : "INPUT",
+        "id" : "id196499319",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id196499319",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@value='Login']",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//INPUT[@value='Login']"
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id188840658",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id188840658",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@value='Save Account Information']",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "repeatedPassword",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.firstName",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Y",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.lastName",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "L",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "yul@utexas.edu",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.phone",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "5122005208",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.address1",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "27 nu st",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.address2",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "apt 223",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.city",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Austin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.state",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "TX",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.zip",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "78705",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.country",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "US",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "repeatedPassword",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.firstName",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Y",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.lastName",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "L",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "yul@utexas.edu",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.phone",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "5122005208",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.address1",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "27 nu st",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.address2",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "apt 223",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.city",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Austin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.state",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "TX",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.zip",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "78705",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.country",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "US",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "repeatedPassword",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.firstName",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Y",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.lastName",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "L",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "yul@utexas.edu",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.phone",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "5122005208",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.address1",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "27 nu st",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.address2",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "apt 223",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.city",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Austin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.state",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "TX",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.zip",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "78705",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.country",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "US",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "repeatedPassword",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.firstName",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Y",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.lastName",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "L",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "yul@utexas.edu",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.phone",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "5122005208",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.address1",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "27 nu st",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.address2",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "apt 223",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.city",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Austin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.state",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "TX",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.zip",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "78705",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.country",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "US",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "repeatedPassword",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.firstName",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Y",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.lastName",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "L",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "yul@utexas.edu",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.phone",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "5122005208",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.address1",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "27 nu st",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.address2",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "apt 223",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.city",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Austin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.state",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "TX",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.zip",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "78705",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "account.country",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "US",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//INPUT[@value='Save Account Information']"
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id243362108",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id243362108",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@value='Search']",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "keyword",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Bulldog",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "keyword",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Bulldog",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "keyword",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Bulldog",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "keyword",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Bulldog",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "keyword",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Bulldog",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//INPUT[@value='Search']"
+      } ]
+    },
+    "testInvariantsWhileCrawling" : true,
+    "clickOnce" : true,
+    "randomizeCandidateElements" : false,
+    "crawlFrames" : false,
+    "crawlHiddenAnchors" : false,
+    "waitAfterReloadUrl" : 500,
+    "waitAfterEvent" : 500,
+    "followExternalLinks" : false,
+    "crawlPriorityMode" : "NORMAL",
+    "crawlNearDuplicates" : true,
+    "delayNearDuplicateCrawling" : true,
+    "applyNonSelAdvantage" : false,
+    "avoidUnrelatedBacktracking" : false,
+    "useEquivalentReset" : false,
+    "avoidDifferentBacktracking" : true,
+    "skipExploredActions" : false,
+    "maxRepeatExploredActions" : 3,
+    "usefulFragmentRules" : {
+      "thresholdWidth" : 50.0,
+      "thresholdHeight" : 50.0,
+      "subtreeWidth_and" : 1,
+      "subtreeWidth_or" : 4
+    },
+    "restoreConnectedEdges" : true,
+    "allCrawlElements" : [ {
+      "tagName" : "A",
+      "id" : "id294714524",
+      "eventType" : "click",
+      "eventableCondition" : null,
+      "withXpathExpression" : null
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id241798218",
+      "eventType" : "click",
+      "eventableCondition" : null,
+      "withXpathExpression" : null
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id378279408",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id378279408",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@type='submit']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//INPUT[@type='submit']"
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id53234206",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id53234206",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@type='button']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//INPUT[@type='button']"
+    }, {
+      "tagName" : "A",
+      "id" : "id357442299",
+      "eventType" : "click",
+      "eventableCondition" : null,
+      "withXpathExpression" : null
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id196499319",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id196499319",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@value='Login']",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//INPUT[@value='Login']"
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id188840658",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id188840658",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@value='Save Account Information']",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "repeatedPassword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.firstName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Y",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.lastName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "L",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "yul@utexas.edu",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.phone",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "5122005208",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address1",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "27 nu st",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address2",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "apt 223",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.city",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Austin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.state",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "TX",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.zip",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "78705",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.country",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "US",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "repeatedPassword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.firstName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Y",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.lastName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "L",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "yul@utexas.edu",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.phone",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "5122005208",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address1",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "27 nu st",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address2",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "apt 223",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.city",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Austin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.state",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "TX",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.zip",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "78705",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.country",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "US",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "repeatedPassword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.firstName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Y",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.lastName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "L",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "yul@utexas.edu",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.phone",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "5122005208",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address1",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "27 nu st",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address2",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "apt 223",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.city",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Austin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.state",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "TX",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.zip",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "78705",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.country",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "US",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "repeatedPassword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.firstName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Y",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.lastName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "L",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "yul@utexas.edu",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.phone",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "5122005208",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address1",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "27 nu st",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address2",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "apt 223",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.city",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Austin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.state",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "TX",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.zip",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "78705",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.country",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "US",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "repeatedPassword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.firstName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Y",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.lastName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "L",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "yul@utexas.edu",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.phone",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "5122005208",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address1",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "27 nu st",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address2",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "apt 223",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.city",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Austin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.state",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "TX",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.zip",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "78705",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.country",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "US",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "repeatedPassword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.firstName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Y",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.lastName",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "L",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "yul@utexas.edu",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.phone",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "5122005208",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address1",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "27 nu st",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.address2",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "apt 223",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.city",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Austin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.state",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "TX",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.zip",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "78705",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "account.country",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "US",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//INPUT[@value='Save Account Information']"
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id243362108",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id243362108",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@value='Search']",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "keyword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Bulldog",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "keyword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Bulldog",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "keyword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Bulldog",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "keyword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Bulldog",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "keyword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Bulldog",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "keyword",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Bulldog",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//INPUT[@value='Search']"
+    } ]
+  },
+  "maximumStates" : 0,
+  "maximumRuntime" : 3600000,
+  "maximumDepth" : 0,
+  "stateVertexFactory" : { },
+  "siteDir" : "/Users/liuyu/projects/tackle-test-generator-ui-level/testlabeling/crawljax_frag/out/jpetstore/jpetstore_HYBRID_DOM_-1.0_60mins/localhost",
+  "outputDir" : "/Users/liuyu/projects/tackle-test-generator-ui-level/testlabeling/crawljax_frag/out/jpetstore/jpetstore_HYBRID_DOM_-1.0_60mins/localhost/crawl0"
+}

@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state27</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/mrbs/web/edit_entry.php?room=5&area=2&year=2022&month=3&day=13&hour=7&minute=0'>http://localhost:3000/mrbs/web/edit_entry.php?room=5&area=2&year=2022&month=3&day=13&hour=7&minute=0</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>11</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>9</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>44</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state10</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>117.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>true</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>27</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>xpath /HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[1]/FIELDSET[2]/DIV[1]/INPUT[1], xpath /HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[1]/FIELDSET[2]/DIV[2]/INPUT[1]</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state27.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 608px; top: 32px; width: 29px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 668px; top: 32px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 744px; top: 32px; width: 41px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/FORM[1]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 838px; top: 32px; width: 47px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[7]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 1009px; top: 18px; width: 183px; height: 25px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state28.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[9]/DIV[1]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state37.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[9]/DIV[1]/UL[1]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state37.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 23px; top: 813px; width: 63px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 140px; top: 813px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 191px; top: 813px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 243px; top: 813px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 295px; top: 813px; width: 44px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 347px; top: 813px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 398px; top: 813px; width: 44px; height: 17px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state30.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[7]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 458px; top: 813px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[8]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 517px; top: 813px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[9]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 569px; top: 813px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[10]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 621px; top: 813px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[11]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 673px; top: 813px; width: 44px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[12]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 725px; top: 813px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[13]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 776px; top: 813px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[14]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 828px; top: 813px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 23px; top: 828px; width: 73px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 140px; top: 828px; width: 43px; height: 17px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state94.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: 191px; top: 828px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[3]" class='hovers'
+				style="position: absolute; z-index: 10; left: 243px; top: 828px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[4]" class='hovers'
+				style="position: absolute; z-index: 10; left: 295px; top: 828px; width: 44px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 355px; top: 828px; width: 43px; height: 17px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state56.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[5]" class='hovers'
+				style="position: absolute; z-index: 10; left: 414px; top: 828px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[6]" class='hovers'
+				style="position: absolute; z-index: 10; left: 466px; top: 828px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[7]" class='hovers'
+				style="position: absolute; z-index: 10; left: 518px; top: 828px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[8]" class='hovers'
+				style="position: absolute; z-index: 10; left: 569px; top: 828px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 23px; top: 843px; width: 78px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 140px; top: 843px; width: 57px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: 205px; top: 843px; width: 57px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 279px; top: 843px; width: 57px; height: 17px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state44.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[3]" class='hovers'
+				style="position: absolute; z-index: 10; left: 353px; top: 843px; width: 57px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[4]" class='hovers'
+				style="position: absolute; z-index: 20; left: 419px; top: 843px; width: 59px; height: 17px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state75.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[5]" class='hovers'
+				style="position: absolute; z-index: 20; left: 487px; top: 843px; width: 58px; height: 17px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state32.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[6]" class='hovers'
+				style="position: absolute; z-index: 10; left: 554px; top: 843px; width: 54px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[7]" class='hovers'
+				style="position: absolute; z-index: 10; left: 616px; top: 843px; width: 60px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[8]" class='hovers'
+				style="position: absolute; z-index: 10; left: 684px; top: 843px; width: 58px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[1]/FIELDSET[2]/DIV[1]/INPUT[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 108px; top: 764px; width: 47px; height: 23px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[1]/FIELDSET[2]/DIV[2]/INPUT[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 166px; top: 764px; width: 48px; height: 23px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;
+  
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Meeting Room Booking System&lt;/title&gt;
+  
+      &lt;link href=&quot;jquery/ui/css/sunny/jquery-ui-1.8.16.custom.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    
+    &lt;link href=&quot;jquery/datatables/css/mrbs-page.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;jquery/datatables/css/mrbs-table.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;jquery/datatables/css/ColReorder.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;jquery/datatables/css/ColVis.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs.css.php&quot; type=&quot;text/css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;print&quot; href=&quot;css/mrbs-print.css.php&quot; type=&quot;text/css&quot;&gt;
+    &lt;!--[if IE]&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs-ie.css&quot; type=&quot;text/css&quot;&gt;
+    &lt;![endif]--&gt;
+        &lt;!--[if IE 8]&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs-ie8.css&quot; type=&quot;text/css&quot;&gt;
+    &lt;![endif]--&gt;
+    &lt;!--[if lte IE 8]&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs-ielte8.css&quot; type=&quot;text/css&quot;&gt;
+    &lt;![endif]--&gt;
+    &lt;!--[if lte IE 7]&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs-ielte7.css.php&quot; type=&quot;text/css&quot;&gt;
+    &lt;![endif]--&gt;
+    &lt;!--[if lte IE 6]&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs-ielte6.css&quot; type=&quot;text/css&quot;&gt;
+    &lt;![endif]--&gt;
+    
+    &lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt;
+    
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery/ui/jquery-ui-1.8.22.custom.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery/ui/jquery-ui-i18n.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery/ui/jquery-ui-datepicker-en.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery/ui/jquery-ui-datepicker-en-US.js&quot;&gt;&lt;/script&gt;
+     
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE6 = false;
+  //]]&gt;
+&lt;/script&gt;
+&lt;!--[if lte IE 6]&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE6 = true;
+  //]]&gt;
+&lt;/script&gt;
+&lt;![endif]--&gt;
+    
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE7 = false;
+  //]]&gt;
+&lt;/script&gt;
+&lt;!--[if lte IE 7]&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE7 = true;
+  //]]&gt;
+&lt;/script&gt;
+&lt;![endif]--&gt;
+    
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE8 = false;
+  //]]&gt;
+&lt;/script&gt;
+&lt;!--[if lte IE 8]&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE8 = true;
+  //]]&gt;
+&lt;/script&gt;
+&lt;![endif]--&gt;
+    
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+    function init(params)
+  {
+  }
+  //]]&gt;
+&lt;/script&gt;
+    
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/edit_entry.js.php?area=2&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/functions.js.php?area=2&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/datepicker.js.php?area=2&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/general.js.php?area=2&quot;&gt;&lt;/script&gt;
+    
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+//&lt;![CDATA[
+
+
+
+
+
+$(window).load(function() {
+
+  var args = {day: '13',
+              month: '3',
+              year: '2022',
+              area: '2',
+              room: '5',
+              page: 'edit_entry'};
+    init(args);
+
+});
+
+
+//]]&gt;
+&lt;/script&gt;  
+  &lt;/head&gt;
+  
+  &lt;body class=&quot;edit_entry js&quot;&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+      //&lt;![CDATA[
+      $('body').addClass('js').removeClass('non_js');
+      //]]&gt;
+    &lt;/script&gt; 
+
+    &lt;div class=&quot;screenonly&quot;&gt;
+
+[Warning: Server failed to set locale to 'en_US.UTF-8']
+  &lt;table id=&quot;banner&quot;&gt;
+    &lt;tbody&gt;&lt;tr&gt;
+      &lt;td id=&quot;company&quot;&gt;
+        &lt;div&gt;
+          &lt;div id=&quot;logo&quot;&gt;
+&lt;span&gt;Your Company&lt;/span&gt;
+&lt;/div&gt;
+          &lt;div id=&quot;mrbs&quot;&gt;
+            &lt;a href=&quot;index.php&quot;&gt;Meeting Room Booking System&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/td&gt;
+      &lt;td&gt;
+        &lt;form action=&quot;day.php&quot; method=&quot;get&quot; id=&quot;Form1&quot;&gt;
+          &lt;div&gt;
+            &lt;span id=&quot;dateselector&quot;&gt;&lt;input class=&quot;date hasDatepicker&quot; type=&quot;text&quot; id=&quot;datepicker&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt&quot; name=&quot;_alt&quot; value=&quot;2022-3-13&quot; disabled=&quot;disabled&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_day&quot; name=&quot;day&quot; value=&quot;13&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_month&quot; name=&quot;month&quot; value=&quot;3&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_year&quot; name=&quot;year&quot; value=&quot;2022&quot;&gt;
+&lt;/span&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+
+  $(function() {
+    $(&quot;#datepicker&quot;).datepicker({yearRange: '2016:2027',
+                                                       altField: '#datepicker_alt'
+                                                       , onClose: function(dateText, inst) {datepicker_close(dateText, inst, 'Form1');}                                                      });
+        var initial_date = new Date(2022, 2, 13);
+    var dateFormat = $(&quot;#datepicker&quot;).datepicker( &quot;option&quot;, &quot;dateFormat&quot; );
+    document.getElementById('datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('datepicker_alt_day').value = 13;
+    document.getElementById('datepicker_alt_month').value = 3;
+    document.getElementById('datepicker_alt_year').value = 2022;
+    $(&quot;.ui-datepicker&quot;).draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('dateselector');
+  var datepicker_html = '&lt;input class=&quot;date&quot; type=&quot;text&quot; id=&quot;datepicker&quot;&gt;\n';
+    datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt&quot;'
+  datepicker_html += ' name=&quot;_alt&quot;';
+  datepicker_html += ' value=&quot;2022-3-13&quot;';
+  datepicker_html += ' disabled=&quot;disabled&quot;&gt;\n';
+    datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_day&quot; name=&quot;day&quot;&gt;\n';
+  datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_month&quot; name=&quot;month&quot;&gt;\n';
+  datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_year&quot; name=&quot;year&quot;&gt;\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  &lt;/script&gt;
+  &lt;input type=&quot;hidden&quot; name=&quot;area&quot; value=&quot;2&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;room&quot; value=&quot;5&quot;&gt;
+&lt;input type=&quot;submit&quot; value=&quot;goto&quot;&gt;
+           &lt;/div&gt;
+        &lt;/form&gt;
+              &lt;/td&gt;
+      &lt;td&gt;
+&lt;a href=&quot;help.php?day=13&amp;amp;month=3&amp;amp;year=2022&amp;amp;area=2&amp;amp;room=5&quot;&gt;Help&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&quot;admin.php?day=13&amp;amp;month=3&amp;amp;year=2022&amp;amp;area=2&amp;amp;room=5&quot;&gt;Rooms&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&quot;report.php?day=13&amp;amp;month=3&amp;amp;year=2022&amp;amp;area=2&amp;amp;room=5&quot;&gt;Report&lt;/a&gt;
+&lt;/td&gt;
+      
+      &lt;td&gt;
+        &lt;form id=&quot;header_search&quot; method=&quot;get&quot; action=&quot;search.php&quot;&gt;
+          &lt;div&gt;
+            &lt;a href=&quot;search.php?advanced=1&quot;&gt;Search:&lt;/a&gt;
+            &lt;input type=&quot;search&quot; name=&quot;search_str&quot; value=&quot;&quot; required=&quot;&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;day&quot; value=&quot;13&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;month&quot; value=&quot;3&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;year&quot; value=&quot;2022&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;area&quot; value=&quot;2&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;room&quot; value=&quot;5&quot;&gt;
+          &lt;/div&gt;
+        &lt;input type=&quot;hidden&quot; name=&quot;datatable&quot; value=&quot;1&quot;&gt;&lt;/form&gt;
+      &lt;/td&gt;
+      &lt;td&gt;
+&lt;div id=&quot;logon_box&quot;&gt;
+
+                &lt;a href=&quot;report.php?from_day=13&amp;amp;from_month=3&amp;amp;from_year=2022&amp;amp;to_day=1&amp;amp;to_month=12&amp;amp;to_year=2030&amp;amp;areamatch=&amp;amp;roommatch=&amp;amp;namematch=&amp;amp;descrmatch=&amp;amp;summarize=1&amp;amp;sortby=r&amp;amp;display=d&amp;amp;sumby=d&amp;amp;creatormatch=administrator&quot; title=&quot;Click to display all my upcoming entries&quot;&gt;You are administrator&lt;/a&gt;
+                &lt;form method=&quot;post&quot; action=&quot;admin.php&quot;&gt;
+                  &lt;div&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;TargetURL&quot; value=&quot;edit_entry.php?room=5&amp;amp;area=2&amp;amp;year=2022&amp;amp;month=3&amp;amp;day=13&amp;amp;hour=7&amp;amp;minute=0&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;Action&quot; value=&quot;SetName&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;NewUserName&quot; value=&quot;&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;NewUserPassword&quot; value=&quot;&quot;&gt;
+                    &lt;input type=&quot;submit&quot; value=&quot; Log Off &quot;&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;contents&quot;&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+//&lt;![CDATA[
+
+var currentArea = 2;
+var areas = [];
+areas[1] = [];
+areas[1]['id'] = 1;
+areas[1]['area_name'] = 'Building 1';
+areas[1]['resolution'] = 1800;
+areas[1]['default_duration'] = 3600;
+areas[1]['enable_periods'] = false;
+areas[1]['morningstarts'] = 7;
+areas[1]['morningstarts_minutes'] = 0;
+areas[1]['eveningends'] = 18;
+areas[1]['eveningends_minutes'] = 30;
+areas[1]['max_duration_enabled'] = false;
+areas[1]['max_duration_secs'] = 7200;
+areas[1]['max_duration_periods'] = 2;
+areas[1]['max_duration_qty'] = 2;
+areas[1]['max_duration_units'] = 'hours';
+areas[2] = [];
+areas[2]['id'] = 2;
+areas[2]['area_name'] = 'Building 2';
+areas[2]['resolution'] = 1800;
+areas[2]['default_duration'] = 3600;
+areas[2]['enable_periods'] = false;
+areas[2]['morningstarts'] = 7;
+areas[2]['morningstarts_minutes'] = 0;
+areas[2]['eveningends'] = 18;
+areas[2]['eveningends_minutes'] = 30;
+areas[2]['max_duration_enabled'] = false;
+areas[2]['max_duration_secs'] = 7200;
+areas[2]['max_duration_periods'] = 2;
+areas[2]['max_duration_qty'] = 2;
+areas[2]['max_duration_units'] = 'hours';
+
+// set up some global variables for use by OnAllDayClick(). 
+var old_start, old_end;
+
+// Executed when the user clicks on the all_day checkbox.
+function OnAllDayClick(el)
+{
+  var form = document.forms[&quot;main&quot;];
+  if (form)
+  {
+    var startSelect = form[&quot;start_seconds&quot; + currentArea];
+    var endSelect = form[&quot;end_seconds&quot; + currentArea];
+    var allDay = form[&quot;all_day&quot; + currentArea];
+    var i;
+    if (allDay.checked) // If checking the box...
+    {
+            old_start = startSelect.options[startSelect.selectedIndex].value;
+      startSelect.selectedIndex = 0;
+      startSelect.disabled = true;
+    
+      old_end = endSelect.options[endSelect.selectedIndex].value;
+      endSelect.selectedIndex = endSelect.options.length - 1;
+      endSelect.disabled = true;
+    }
+    else      {
+      startSelect.disabled = false;
+      for (i=0; i&lt;startSelect.options.length; i++)
+      {
+        if (startSelect.options[i].value == old_start)
+        {
+          startSelect.options.selectedIndex = i;
+          break;
+        }
+      }     
+      endSelect.disabled = false;
+      for (i=0; i&lt;endSelect.options.length; i++)
+      {
+        if (endSelect.options[i].value == old_end)
+        {
+          endSelect.options.selectedIndex = i;
+          break;
+        }
+      } 
+      prevStartValue = undefined;      }
+    adjustSlotSelectors(form);   }
+}
+//]]&gt;
+&lt;/script&gt;
+
+
+
+&lt;form class=&quot;form_general&quot; id=&quot;main&quot; action=&quot;edit_entry_handler.php&quot; method=&quot;post&quot;&gt;
+  &lt;fieldset&gt;
+  &lt;legend&gt;Add Entry&lt;/legend&gt;
+
+&lt;div id=&quot;div_name&quot;&gt;
+&lt;label for=&quot;name&quot;&gt;Brief description:&lt;/label&gt;
+&lt;input type=&quot;text&quot; required=&quot;&quot; pattern=&quot;\s*\S+.*&quot; id=&quot;name&quot; name=&quot;name&quot; maxlength=&quot;80&quot; value=&quot;&quot;&gt;
+&lt;/div&gt;
+&lt;div id=&quot;div_description&quot;&gt;
+&lt;label for=&quot;description&quot;&gt;Full description:&lt;br&gt;&amp;nbsp;&amp;nbsp;(Number of people,&lt;br&gt;&amp;nbsp;&amp;nbsp;Internal/External etc.)&lt;/label&gt;
+&lt;textarea id=&quot;description&quot; name=&quot;description&quot; rows=&quot;8&quot; cols=&quot;40&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div id=&quot;div_start_date&quot;&gt;
+&lt;label&gt;Start:&lt;/label&gt;
+&lt;span id=&quot;start_dateselector&quot;&gt;&lt;input class=&quot;date hasDatepicker&quot; type=&quot;text&quot; id=&quot;start_datepicker&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;start_datepicker_alt&quot; name=&quot;start__alt&quot; value=&quot;2022-3-13&quot; disabled=&quot;disabled&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;start_datepicker_alt_day&quot; name=&quot;start_day&quot; value=&quot;13&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;start_datepicker_alt_month&quot; name=&quot;start_month&quot; value=&quot;3&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;start_datepicker_alt_year&quot; name=&quot;start_year&quot; value=&quot;2022&quot;&gt;
+&lt;/span&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+
+  $(function() {
+    $(&quot;#start_datepicker&quot;).datepicker({yearRange: '2016:2027',
+                                                       altField: '#start_datepicker_alt'
+                                                                                                             });
+        var initial_date = new Date(2022, 2, 13);
+    var dateFormat = $(&quot;#start_datepicker&quot;).datepicker( &quot;option&quot;, &quot;dateFormat&quot; );
+    document.getElementById('start_datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('start_datepicker_alt_day').value = 13;
+    document.getElementById('start_datepicker_alt_month').value = 3;
+    document.getElementById('start_datepicker_alt_year').value = 2022;
+    $(&quot;.ui-datepicker&quot;).draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('start_dateselector');
+  var datepicker_html = '&lt;input class=&quot;date&quot; type=&quot;text&quot; id=&quot;start_datepicker&quot;&gt;\n';
+    datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;start_datepicker_alt&quot;'
+  datepicker_html += ' name=&quot;start__alt&quot;';
+  datepicker_html += ' value=&quot;2022-3-13&quot;';
+  datepicker_html += ' disabled=&quot;disabled&quot;&gt;\n';
+    datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;start_datepicker_alt_day&quot; name=&quot;start_day&quot;&gt;\n';
+  datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;start_datepicker_alt_month&quot; name=&quot;start_month&quot;&gt;\n';
+  datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;start_datepicker_alt_year&quot; name=&quot;start_year&quot;&gt;\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  &lt;/script&gt;
+  &lt;select style=&quot;display: none&quot; disabled=&quot;disabled&quot; id=&quot;start_seconds1&quot; name=&quot;start_seconds&quot; onchange=&quot;adjustSlotSelectors(this.form)&quot;&gt;
+&lt;option value=&quot;25200&quot; selected=&quot;selected&quot;&gt;07:00&lt;/option&gt;
+&lt;option value=&quot;27000&quot;&gt;07:30&lt;/option&gt;
+&lt;option value=&quot;28800&quot;&gt;08:00&lt;/option&gt;
+&lt;option value=&quot;30600&quot;&gt;08:30&lt;/option&gt;
+&lt;option value=&quot;32400&quot;&gt;09:00&lt;/option&gt;
+&lt;option value=&quot;34200&quot;&gt;09:30&lt;/option&gt;
+&lt;option value=&quot;36000&quot;&gt;10:00&lt;/option&gt;
+&lt;option value=&quot;37800&quot;&gt;10:30&lt;/option&gt;
+&lt;option value=&quot;39600&quot;&gt;11:00&lt;/option&gt;
+&lt;option value=&quot;41400&quot;&gt;11:30&lt;/option&gt;
+&lt;option value=&quot;43200&quot;&gt;12:00&lt;/option&gt;
+&lt;option value=&quot;45000&quot;&gt;12:30&lt;/option&gt;
+&lt;option value=&quot;46800&quot;&gt;13:00&lt;/option&gt;
+&lt;option value=&quot;48600&quot;&gt;13:30&lt;/option&gt;
+&lt;option value=&quot;50400&quot;&gt;14:00&lt;/option&gt;
+&lt;option value=&quot;52200&quot;&gt;14:30&lt;/option&gt;
+&lt;option value=&quot;54000&quot;&gt;15:00&lt;/option&gt;
+&lt;option value=&quot;55800&quot;&gt;15:30&lt;/option&gt;
+&lt;option value=&quot;57600&quot;&gt;16:00&lt;/option&gt;
+&lt;option value=&quot;59400&quot;&gt;16:30&lt;/option&gt;
+&lt;option value=&quot;61200&quot;&gt;17:00&lt;/option&gt;
+&lt;option value=&quot;63000&quot;&gt;17:30&lt;/option&gt;
+&lt;option value=&quot;64800&quot;&gt;18:00&lt;/option&gt;
+&lt;option value=&quot;66600&quot;&gt;18:30&lt;/option&gt;
+&lt;/select&gt;
+&lt;div class=&quot;group&quot;&gt;
+&lt;div id=&quot;ad1&quot; style=&quot;display: none&quot;&gt;
+&lt;input id=&quot;all_day1&quot; class=&quot;all_day checkbox&quot; name=&quot;all_day&quot; type=&quot;checkbox&quot; value=&quot;yes&quot; onclick=&quot;OnAllDayClick(this)&quot; disabled=&quot;disabled&quot;&gt;
+&lt;label for=&quot;all_day1&quot;&gt;All day&lt;/label&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;select id=&quot;start_seconds2&quot; name=&quot;start_seconds&quot; onchange=&quot;adjustSlotSelectors(this.form)&quot; style=&quot;width: 137px;&quot;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;option value=&quot;25200&quot;&gt;07:00&lt;/option&gt;&lt;option value=&quot;27000&quot;&gt;07:30&lt;/option&gt;&lt;option value=&quot;28800&quot;&gt;08:00&lt;/option&gt;&lt;option value=&quot;30600&quot;&gt;08:30&lt;/option&gt;&lt;option value=&quot;32400&quot;&gt;09:00&lt;/option&gt;&lt;option value=&quot;34200&quot;&gt;09:30&lt;/option&gt;&lt;option value=&quot;36000&quot;&gt;10:00&lt;/option&gt;&lt;option value=&quot;37800&quot;&gt;10:30&lt;/option&gt;&lt;option value=&quot;39600&quot;&gt;11:00&lt;/option&gt;&lt;option value=&quot;41400&quot;&gt;11:30&lt;/option&gt;&lt;option value=&quot;43200&quot;&gt;12:00&lt;/option&gt;&lt;option value=&quot;45000&quot;&gt;12:30&lt;/option&gt;&lt;option value=&quot;46800&quot;&gt;13:00&lt;/option&gt;&lt;option value=&quot;48600&quot;&gt;13:30&lt;/option&gt;&lt;option value=&quot;50400&quot;&gt;14:00&lt;/option&gt;&lt;option value=&quot;52200&quot;&gt;14:30&lt;/option&gt;&lt;option value=&quot;54000&quot;&gt;15:00&lt;/option&gt;&lt;option value=&quot;55800&quot;&gt;15:30&lt;/option&gt;&lt;option value=&quot;57600&quot;&gt;16:00&lt;/option&gt;&lt;option value=&quot;59400&quot;&gt;16:30&lt;/option&gt;&lt;option value=&quot;61200&quot;&gt;17:00&lt;/option&gt;&lt;option value=&quot;63000&quot;&gt;17:30&lt;/option&gt;&lt;option value=&quot;64800&quot;&gt;18:00&lt;/option&gt;&lt;option value=&quot;66600&quot;&gt;18:30&lt;/option&gt;&lt;/select&gt;
+&lt;div class=&quot;group&quot;&gt;
+&lt;div id=&quot;ad2&quot;&gt;
+&lt;input id=&quot;all_day2&quot; class=&quot;all_day checkbox&quot; name=&quot;all_day&quot; type=&quot;checkbox&quot; value=&quot;yes&quot; onclick=&quot;OnAllDayClick(this)&quot;&gt;
+&lt;label for=&quot;all_day2&quot;&gt;All day&lt;/label&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;div_end_date&quot;&gt;
+&lt;label&gt;End:&lt;/label&gt;
+&lt;div&gt;
+&lt;span id=&quot;end_dateselector&quot;&gt;&lt;input class=&quot;date hasDatepicker&quot; type=&quot;text&quot; id=&quot;end_datepicker&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;end_datepicker_alt&quot; name=&quot;end__alt&quot; value=&quot;2022-3-13&quot; disabled=&quot;disabled&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;end_datepicker_alt_day&quot; name=&quot;end_day&quot; value=&quot;13&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;end_datepicker_alt_month&quot; name=&quot;end_month&quot; value=&quot;3&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;end_datepicker_alt_year&quot; name=&quot;end_year&quot; value=&quot;2022&quot;&gt;
+&lt;/span&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+
+  $(function() {
+    $(&quot;#end_datepicker&quot;).datepicker({yearRange: '2016:2027',
+                                                       altField: '#end_datepicker_alt'
+                                                                                                             });
+        var initial_date = new Date(2022, 2, 13);
+    var dateFormat = $(&quot;#end_datepicker&quot;).datepicker( &quot;option&quot;, &quot;dateFormat&quot; );
+    document.getElementById('end_datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('end_datepicker_alt_day').value = 13;
+    document.getElementById('end_datepicker_alt_month').value = 3;
+    document.getElementById('end_datepicker_alt_year').value = 2022;
+    $(&quot;.ui-datepicker&quot;).draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('end_dateselector');
+  var datepicker_html = '&lt;input class=&quot;date&quot; type=&quot;text&quot; id=&quot;end_datepicker&quot;&gt;\n';
+    datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;end_datepicker_alt&quot;'
+  datepicker_html += ' name=&quot;end__alt&quot;';
+  datepicker_html += ' value=&quot;2022-3-13&quot;';
+  datepicker_html += ' disabled=&quot;disabled&quot;&gt;\n';
+    datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;end_datepicker_alt_day&quot; name=&quot;end_day&quot;&gt;\n';
+  datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;end_datepicker_alt_month&quot; name=&quot;end_month&quot;&gt;\n';
+  datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;end_datepicker_alt_year&quot; name=&quot;end_year&quot;&gt;\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  &lt;/script&gt;
+  &lt;/div&gt;
+&lt;select style=&quot;display: none&quot; disabled=&quot;disabled&quot; id=&quot;end_seconds1&quot; name=&quot;end_seconds&quot; onchange=&quot;adjustSlotSelectors(this.form)&quot;&gt;
+&lt;option value=&quot;25200&quot;&gt;07:00&lt;/option&gt;
+&lt;option value=&quot;27000&quot;&gt;07:30&lt;/option&gt;
+&lt;option value=&quot;28800&quot; selected=&quot;selected&quot;&gt;08:00&lt;/option&gt;
+&lt;option value=&quot;30600&quot;&gt;08:30&lt;/option&gt;
+&lt;option value=&quot;32400&quot;&gt;09:00&lt;/option&gt;
+&lt;option value=&quot;34200&quot;&gt;09:30&lt;/option&gt;
+&lt;option value=&quot;36000&quot;&gt;10:00&lt;/option&gt;
+&lt;option value=&quot;37800&quot;&gt;10:30&lt;/option&gt;
+&lt;option value=&quot;39600&quot;&gt;11:00&lt;/option&gt;
+&lt;option value=&quot;41400&quot;&gt;11:30&lt;/option&gt;
+&lt;option value=&quot;43200&quot;&gt;12:00&lt;/option&gt;
+&lt;option value=&quot;45000&quot;&gt;12:30&lt;/option&gt;
+&lt;option value=&quot;46800&quot;&gt;13:00&lt;/option&gt;
+&lt;option value=&quot;48600&quot;&gt;13:30&lt;/option&gt;
+&lt;option value=&quot;50400&quot;&gt;14:00&lt;/option&gt;
+&lt;option value=&quot;52200&quot;&gt;14:30&lt;/option&gt;
+&lt;option value=&quot;54000&quot;&gt;15:00&lt;/option&gt;
+&lt;option value=&quot;55800&quot;&gt;15:30&lt;/option&gt;
+&lt;option value=&quot;57600&quot;&gt;16:00&lt;/option&gt;
+&lt;option value=&quot;59400&quot;&gt;16:30&lt;/option&gt;
+&lt;option value=&quot;61200&quot;&gt;17:00&lt;/option&gt;
+&lt;option value=&quot;63000&quot;&gt;17:30&lt;/option&gt;
+&lt;option value=&quot;64800&quot;&gt;18:00&lt;/option&gt;
+&lt;option value=&quot;66600&quot;&gt;18:30&lt;/option&gt;
+&lt;option value=&quot;68400&quot;&gt;19:00&lt;/option&gt;
+&lt;/select&gt;
+&lt;select id=&quot;end_seconds2&quot; name=&quot;end_seconds&quot; onchange=&quot;adjustSlotSelectors(this.form)&quot; style=&quot;width: 137px;&quot;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;option value=&quot;27000&quot;&gt;07:30&amp;nbsp;&amp;nbsp;(30 minutes)&lt;/option&gt;&lt;option value=&quot;28800&quot;&gt;08:00&amp;nbsp;&amp;nbsp;(1 hour)&lt;/option&gt;&lt;option value=&quot;30600&quot;&gt;08:30&amp;nbsp;&amp;nbsp;(1.5 hours)&lt;/option&gt;&lt;option value=&quot;32400&quot;&gt;09:00&amp;nbsp;&amp;nbsp;(2 hours)&lt;/option&gt;&lt;option value=&quot;34200&quot;&gt;09:30&amp;nbsp;&amp;nbsp;(2.5 hours)&lt;/option&gt;&lt;option value=&quot;36000&quot;&gt;10:00&amp;nbsp;&amp;nbsp;(3 hours)&lt;/option&gt;&lt;option value=&quot;37800&quot;&gt;10:30&amp;nbsp;&amp;nbsp;(3.5 hours)&lt;/option&gt;&lt;option value=&quot;39600&quot;&gt;11:00&amp;nbsp;&amp;nbsp;(4 hours)&lt;/option&gt;&lt;option value=&quot;41400&quot;&gt;11:30&amp;nbsp;&amp;nbsp;(4.5 hours)&lt;/option&gt;&lt;option value=&quot;43200&quot;&gt;12:00&amp;nbsp;&amp;nbsp;(5 hours)&lt;/option&gt;&lt;option value=&quot;45000&quot;&gt;12:30&amp;nbsp;&amp;nbsp;(5.5 hours)&lt;/option&gt;&lt;option value=&quot;46800&quot;&gt;13:00&amp;nbsp;&amp;nbsp;(6 hours)&lt;/option&gt;&lt;option value=&quot;48600&quot;&gt;13:30&amp;nbsp;&amp;nbsp;(6.5 hours)&lt;/option&gt;&lt;option value=&quot;50400&quot;&gt;14:00&amp;nbsp;&amp;nbsp;(7 hours)&lt;/option&gt;&lt;option value=&quot;52200&quot;&gt;14:30&amp;nbsp;&amp;nbsp;(7.5 hours)&lt;/option&gt;&lt;option value=&quot;54000&quot;&gt;15:00&amp;nbsp;&amp;nbsp;(8 hours)&lt;/option&gt;&lt;option value=&quot;55800&quot;&gt;15:30&amp;nbsp;&amp;nbsp;(8.5 hours)&lt;/option&gt;&lt;option value=&quot;57600&quot;&gt;16:00&amp;nbsp;&amp;nbsp;(9 hours)&lt;/option&gt;&lt;option value=&quot;59400&quot;&gt;16:30&amp;nbsp;&amp;nbsp;(9.5 hours)&lt;/option&gt;&lt;option value=&quot;61200&quot;&gt;17:00&amp;nbsp;&amp;nbsp;(10 hours)&lt;/option&gt;&lt;option value=&quot;63000&quot;&gt;17:30&amp;nbsp;&amp;nbsp;(10.5 hours)&lt;/option&gt;&lt;option value=&quot;64800&quot;&gt;18:00&amp;nbsp;&amp;nbsp;(11 hours)&lt;/option&gt;&lt;option value=&quot;66600&quot;&gt;18:30&amp;nbsp;&amp;nbsp;(11.5 hours)&lt;/option&gt;&lt;option value=&quot;68400&quot;&gt;19:00&amp;nbsp;&amp;nbsp;(12 hours)&lt;/option&gt;&lt;/select&gt;
+&lt;span id=&quot;end_time_error&quot; class=&quot;error&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div id=&quot;div_areas&quot;&gt;
+&lt;label for=&quot;area&quot;&gt;Area:&lt;/label&gt;&lt;select id=&quot;area&quot; name=&quot;area&quot;&gt;&lt;option value=&quot;1&quot;&gt;Building 1&lt;/option&gt;&lt;option value=&quot;2&quot;&gt;Building 2&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;
+ 
+      &lt;script type=&quot;text/javascript&quot;&gt;
+      //&lt;![CDATA[
+      
+      var area = 2;
+      
+      function changeRooms( formObj )
+      {
+        areasObj = eval( &quot;formObj.area&quot; );
+
+        area = areasObj[areasObj.selectedIndex].value;
+        roomsObj = eval( &quot;formObj.elements['rooms']&quot; );
+
+        // remove all entries
+        roomsNum = roomsObj.length;
+        for (i=(roomsNum-1); i &gt;= 0; i--)
+        {
+          roomsObj.options[i] = null;
+        }
+        // add entries based on area selected
+        switch (area){
+          case &quot;1&quot;:
+roomsObj.options[0] = new Option(&quot;Room 4&quot;,4);
+roomsObj.options[1] = new Option(&quot;Room 1&quot;,1);
+roomsObj.options[2] = new Option(&quot;Room 3&quot;,3);
+roomsObj.options[3] = new Option(&quot;Room 2&quot;,2);
+roomsObj.options[0].selected = true;
+break;
+case &quot;2&quot;:
+roomsObj.options[0] = new Option(&quot;Room 6&quot;,10);
+roomsObj.options[1] = new Option(&quot;Room 3&quot;,7);
+roomsObj.options[2] = new Option(&quot;Room 5&quot;,9);
+roomsObj.options[3] = new Option(&quot;Room 2&quot;,6);
+roomsObj.options[4] = new Option(&quot;Room 4&quot;,8);
+roomsObj.options[5] = new Option(&quot;Room 1&quot;,5);
+roomsObj.options[0].selected = true;
+break;
+        } //switch
+        
+                var oldStartId = &quot;start_seconds&quot; + currentArea;
+        var oldEndId = &quot;end_seconds&quot; + currentArea;
+        var newStartId = &quot;start_seconds&quot; + area;
+        var newEndId = &quot;end_seconds&quot; + area;
+        var oldAllDayId = &quot;ad&quot; + currentArea;
+        var newAllDayId = &quot;ad&quot; + area;
+        var oldAreaStartValue = formObj[oldStartId].options[formObj[oldStartId].selectedIndex].value;
+        var oldAreaEndValue = formObj[oldEndId].options[formObj[oldEndId].selectedIndex].value;
+        $(&quot;#&quot; + oldStartId).hide()
+                           .attr('disabled', 'disabled');
+        $(&quot;#&quot; + oldEndId).hide()
+                         .attr('disabled', 'disabled');
+        $(&quot;#&quot; + newStartId).show()
+                           .removeAttr('disabled');
+        $(&quot;#&quot; + newEndId).show()
+                         .removeAttr('disabled');
+                         +        $(&quot;#&quot; + oldAllDayId).hide();
+        $(&quot;#&quot; + newAllDayId).show();
+        if($(&quot;#all_day&quot; + currentArea).attr('checked') == 'checked')
+        { 
+          $(&quot;#all_day&quot; + area).attr('checked', 'checked').removeAttr('disabled');
+        }
+        else
+        {
+          $(&quot;#all_day&quot; + area).removeAttr('checked').removeAttr('disabled');
+        }
+        $(&quot;#all_day&quot; + currentArea).removeAttr('disabled');
+        var oldArea = currentArea;
+        currentArea = area;
+        prevStartValue = undefined;
+        adjustSlotSelectors(formObj, oldArea, oldAreaStartValue, oldAreaEndValue);
+      }
+      
+      // Create area selector, only if we have Javascript
+      var div_areas = document.getElementById('div_areas');
+      // First of all create a label and insert it into the &lt;div&gt;
+      var area_label = document.createElement('label');
+      var area_label_text = document.createTextNode('Area:');
+      area_label.appendChild(area_label_text);
+      area_label.setAttribute('for', 'area');
+      div_areas.appendChild(area_label);
+      // Now give it a select box
+      var area_select = document.createElement('select');
+      area_select.setAttribute('id', 'area');
+      area_select.setAttribute('name', 'area');
+      area_select.onchange = function(){changeRooms(this.form)}; // setAttribute doesn't work for onChange with IE6
+      // populated with options
+      var option;
+      var option_text
+              option = document.createElement('option');
+        option.value = 1;
+        option_text = document.createTextNode('Building 1');
+                option.appendChild(option_text);
+        area_select.appendChild(option);
+                option = document.createElement('option');
+        option.value = 2;
+        option_text = document.createTextNode('Building 2');
+                  option.selected = true;
+                  option.appendChild(option_text);
+        area_select.appendChild(option);
+              // insert the &lt;select&gt; which we've just assembled into the &lt;div&gt;
+      div_areas.appendChild(area_select);
+      
+            
+      //]]&gt;
+      &lt;/script&gt;
+      
+      
+      &lt;div id=&quot;div_rooms&quot;&gt;
+&lt;label for=&quot;rooms&quot;&gt;Rooms:&lt;/label&gt;
+&lt;div class=&quot;group&quot;&gt;
+&lt;select id=&quot;rooms&quot; name=&quot;rooms[]&quot; required=&quot;&quot; multiple=&quot;multiple&quot; size=&quot;5&quot;&gt;
+&lt;option value=&quot;10&quot;&gt;Room 6&lt;/option&gt;
+&lt;option value=&quot;7&quot;&gt;Room 3&lt;/option&gt;
+&lt;option value=&quot;9&quot;&gt;Room 5&lt;/option&gt;
+&lt;option value=&quot;6&quot;&gt;Room 2&lt;/option&gt;
+&lt;option value=&quot;8&quot;&gt;Room 4&lt;/option&gt;
+&lt;option selected=&quot;selected&quot; value=&quot;5&quot;&gt;Room 1&lt;/option&gt;
+&lt;/select&gt;
+&lt;span&gt;Use Control-Click to select more than one room&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;div_type&quot;&gt;
+&lt;label for=&quot;type&quot;&gt;Type:&lt;/label&gt;
+&lt;select id=&quot;type&quot; name=&quot;type&quot;&gt;
+&lt;option value=&quot;E&quot;&gt;External&lt;/option&gt;
+&lt;option value=&quot;I&quot; selected=&quot;selected&quot;&gt;Internal&lt;/option&gt;
+&lt;/select&gt;
+&lt;/div&gt;
+&lt;div id=&quot;div_confirmation_status&quot;&gt;
+&lt;label&gt;Confirmation status:&lt;/label&gt;
+&lt;div class=&quot;group&quot;&gt;
+&lt;label&gt;&lt;input class=&quot;radio&quot; name=&quot;confirmed&quot; type=&quot;radio&quot; value=&quot;1&quot; checked=&quot;checked&quot;&gt;Confirmed&lt;/label&gt;
+&lt;label&gt;&lt;input class=&quot;radio&quot; name=&quot;confirmed&quot; type=&quot;radio&quot; value=&quot;0&quot;&gt;Tentative&lt;/label&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;fieldset id=&quot;rep_info&quot;&gt;
+&lt;legend&gt;&lt;/legend&gt;
+      &lt;div id=&quot;rep_type&quot;&gt;
+        &lt;label&gt;Repeat type:&lt;/label&gt;
+        &lt;div class=&quot;group&quot;&gt;
+                &lt;label&gt;&lt;input class=&quot;radio&quot; name=&quot;rep_type&quot; type=&quot;radio&quot; value=&quot;0&quot; checked=&quot;checked&quot;&gt;None&lt;/label&gt;
+      &lt;label&gt;&lt;input class=&quot;radio&quot; name=&quot;rep_type&quot; type=&quot;radio&quot; value=&quot;1&quot;&gt;Daily&lt;/label&gt;
+      &lt;label&gt;&lt;input class=&quot;radio&quot; name=&quot;rep_type&quot; type=&quot;radio&quot; value=&quot;2&quot;&gt;Weekly&lt;/label&gt;
+      &lt;label&gt;&lt;input class=&quot;radio&quot; name=&quot;rep_type&quot; type=&quot;radio&quot; value=&quot;3&quot;&gt;Monthly&lt;/label&gt;
+      &lt;label&gt;&lt;input class=&quot;radio&quot; name=&quot;rep_type&quot; type=&quot;radio&quot; value=&quot;4&quot;&gt;Yearly&lt;/label&gt;
+      &lt;label&gt;&lt;input class=&quot;radio&quot; name=&quot;rep_type&quot; type=&quot;radio&quot; value=&quot;5&quot;&gt;Monthly, corresponding day&lt;/label&gt;
+      &lt;label&gt;&lt;input class=&quot;radio&quot; name=&quot;rep_type&quot; type=&quot;radio&quot; value=&quot;6&quot;&gt;n-Weekly&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div id=&quot;rep_end_date&quot;&gt;
+        &lt;label&gt;Repeat end date:&lt;/label&gt;
+&lt;span id=&quot;rep_end_dateselector&quot;&gt;&lt;input class=&quot;date hasDatepicker&quot; type=&quot;text&quot; id=&quot;rep_end_datepicker&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;rep_end_datepicker_alt&quot; name=&quot;rep_end__alt&quot; value=&quot;2022-3-13&quot; disabled=&quot;disabled&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;rep_end_datepicker_alt_day&quot; name=&quot;rep_end_day&quot; value=&quot;13&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;rep_end_datepicker_alt_month&quot; name=&quot;rep_end_month&quot; value=&quot;3&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;rep_end_datepicker_alt_year&quot; name=&quot;rep_end_year&quot; value=&quot;2022&quot;&gt;
+&lt;/span&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+
+  $(function() {
+    $(&quot;#rep_end_datepicker&quot;).datepicker({yearRange: '2016:2027',
+                                                       altField: '#rep_end_datepicker_alt'
+                                                                                                             });
+        var initial_date = new Date(2022, 2, 13);
+    var dateFormat = $(&quot;#rep_end_datepicker&quot;).datepicker( &quot;option&quot;, &quot;dateFormat&quot; );
+    document.getElementById('rep_end_datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('rep_end_datepicker_alt_day').value = 13;
+    document.getElementById('rep_end_datepicker_alt_month').value = 3;
+    document.getElementById('rep_end_datepicker_alt_year').value = 2022;
+    $(&quot;.ui-datepicker&quot;).draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('rep_end_dateselector');
+  var datepicker_html = '&lt;input class=&quot;date&quot; type=&quot;text&quot; id=&quot;rep_end_datepicker&quot;&gt;\n';
+    datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;rep_end_datepicker_alt&quot;'
+  datepicker_html += ' name=&quot;rep_end__alt&quot;';
+  datepicker_html += ' value=&quot;2022-3-13&quot;';
+  datepicker_html += ' disabled=&quot;disabled&quot;&gt;\n';
+    datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;rep_end_datepicker_alt_day&quot; name=&quot;rep_end_day&quot;&gt;\n';
+  datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;rep_end_datepicker_alt_month&quot; name=&quot;rep_end_month&quot;&gt;\n';
+  datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;rep_end_datepicker_alt_year&quot; name=&quot;rep_end_year&quot;&gt;\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  &lt;/script&gt;
+        &lt;/div&gt;
+      
+      &lt;div id=&quot;rep_day&quot;&gt;
+        &lt;label&gt;Repeat day:&lt;br&gt;(for weekly or n-weekly)&lt;/label&gt;
+        &lt;div class=&quot;group&quot;&gt;
+                &lt;label&gt;&lt;input class=&quot;checkbox&quot; name=&quot;rep_day[]&quot; value=&quot;0&quot; type=&quot;checkbox&quot;&gt;Sunday&lt;/label&gt;
+      &lt;label&gt;&lt;input class=&quot;checkbox&quot; name=&quot;rep_day[]&quot; value=&quot;1&quot; type=&quot;checkbox&quot;&gt;Monday&lt;/label&gt;
+      &lt;label&gt;&lt;input class=&quot;checkbox&quot; name=&quot;rep_day[]&quot; value=&quot;2&quot; type=&quot;checkbox&quot;&gt;Tuesday&lt;/label&gt;
+      &lt;label&gt;&lt;input class=&quot;checkbox&quot; name=&quot;rep_day[]&quot; value=&quot;3&quot; type=&quot;checkbox&quot;&gt;Wednesday&lt;/label&gt;
+      &lt;label&gt;&lt;input class=&quot;checkbox&quot; name=&quot;rep_day[]&quot; value=&quot;4&quot; type=&quot;checkbox&quot;&gt;Thursday&lt;/label&gt;
+      &lt;label&gt;&lt;input class=&quot;checkbox&quot; name=&quot;rep_day[]&quot; value=&quot;5&quot; type=&quot;checkbox&quot;&gt;Friday&lt;/label&gt;
+      &lt;label&gt;&lt;input class=&quot;checkbox&quot; name=&quot;rep_day[]&quot; value=&quot;6&quot; type=&quot;checkbox&quot;&gt;Saturday&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+     
+      &lt;div&gt;
+&lt;label for=&quot;rep_num_weeks&quot;&gt;Number of weeks:&lt;br&gt;(for n-weekly)&lt;/label&gt;
+&lt;input type=&quot;number&quot; min=&quot;2&quot; step=&quot;1&quot; id=&quot;rep_num_weeks&quot; name=&quot;rep_num_weeks&quot;&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;label for=&quot;skip&quot;&gt;Skip past conflicts:&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; id=&quot;skip&quot; name=&quot;skip&quot; value=&quot;1&quot;&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;returl&quot; value=&quot;http://localhost:3000/mrbs/web/month.php?year=2022&amp;amp;month=03&amp;amp;day=21&amp;amp;area=2&amp;amp;room=5&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;create_by&quot; value=&quot;administrator&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;rep_id&quot; value=&quot;0&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;edit_type&quot; value=&quot;series&quot;&gt;
+    &lt;fieldset class=&quot;submit_buttons&quot;&gt;
+&lt;legend&gt;&lt;/legend&gt;
+&lt;div id=&quot;edit_entry_submit_back&quot;&gt;
+&lt;input class=&quot;submit&quot; type=&quot;submit&quot; name=&quot;back_button&quot; value=&quot;Back&quot; formnovalidate=&quot;&quot;&gt;
+&lt;/div&gt;
+&lt;div id=&quot;edit_entry_submit_save&quot;&gt;
+&lt;input class=&quot;submit default_action&quot; type=&quot;submit&quot; name=&quot;save_button&quot; value=&quot;Save&quot;&gt;
+&lt;/div&gt;
+&lt;div id=&quot;conflict_check&quot; class=&quot;good&quot; title=&quot;No scheduling conflicts&quot;&gt;✔&lt;/div&gt;
+&lt;div id=&quot;policy_check&quot; class=&quot;good&quot; title=&quot;No policy conflicts&quot;&gt;✔&lt;/div&gt;
+&lt;/fieldset&gt;&lt;div id=&quot;check_results&quot; style=&quot;display: none&quot;&gt;
+&lt;div id=&quot;check_tabs&quot;&gt;
+&lt;ul id=&quot;details_tabs&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#schedule_details&quot;&gt;Schedule&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#policy_details&quot;&gt;Policy&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&quot;ui-tab-dialog-close&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&quot;schedule_details&quot;&gt;No scheduling conflicts&lt;/div&gt;
+&lt;div id=&quot;policy_details&quot;&gt;No policy conflicts&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+
+&lt;/div&gt;&lt;div class=&quot;screenonly trailer&quot; id=&quot;trailer&quot;&gt;
+&lt;div id=&quot;viewday&quot;&gt;
+&lt;div class=&quot;trailer_label&quot;&gt;
+&lt;a href=&quot;day.php?year=2022&amp;amp;month=3&amp;amp;day=13&amp;amp;area=Array&amp;amp;room=5&quot;&gt;View Day:&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;trailer_links&quot;&gt;
+&lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=03&amp;amp;day=07&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 07&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=03&amp;amp;day=08&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 08&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=03&amp;amp;day=09&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 09&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=03&amp;amp;day=10&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 10&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=03&amp;amp;day=11&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 11&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=03&amp;amp;day=12&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 12&lt;/a&gt;&lt;/span&gt;
+ | &lt;span class=&quot;current&quot;&gt;[ &lt;a href=&quot;day.php?year=2022&amp;amp;month=03&amp;amp;day=13&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 13&lt;/a&gt; ]&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=03&amp;amp;day=14&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 14&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=03&amp;amp;day=15&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 15&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=03&amp;amp;day=16&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 16&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=03&amp;amp;day=17&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 17&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=03&amp;amp;day=18&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 18&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=03&amp;amp;day=19&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 19&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2022&amp;amp;month=03&amp;amp;day=20&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 20&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;viewweek&quot;&gt;
+&lt;div class=&quot;trailer_label&quot;&gt;
+&lt;a href=&quot;week.php?year=2022&amp;amp;month=3&amp;amp;day=13&amp;amp;area=Array&amp;amp;room=5&quot;&gt;View Week:&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;trailer_links&quot;&gt;
+  &lt;a href=&quot;week.php?year=2022&amp;amp;month=02&amp;amp;day=13&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Feb 13&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2022&amp;amp;month=02&amp;amp;day=20&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Feb 20&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2022&amp;amp;month=02&amp;amp;day=27&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Feb 27&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2022&amp;amp;month=03&amp;amp;day=06&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 06&lt;/a&gt;
+ | &lt;span class=&quot;current&quot;&gt;
+[   &lt;a href=&quot;week.php?year=2022&amp;amp;month=03&amp;amp;day=13&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 13&lt;/a&gt;
+]&lt;/span&gt;
+ |   &lt;a href=&quot;week.php?year=2022&amp;amp;month=03&amp;amp;day=20&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 20&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2022&amp;amp;month=03&amp;amp;day=27&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 27&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2022&amp;amp;month=04&amp;amp;day=03&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Apr 03&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2022&amp;amp;month=04&amp;amp;day=10&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Apr 10&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;viewmonth&quot;&gt;
+&lt;div class=&quot;trailer_label&quot;&gt;
+&lt;a href=&quot;month.php?year=2022&amp;amp;month=3&amp;amp;day=13&amp;amp;area=Array&amp;amp;room=5&quot;&gt;View Month:&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;trailer_links&quot;&gt;
+  &lt;a href=&quot;month.php?year=2022&amp;amp;month=01&amp;amp;day=13&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Jan 2022&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=02&amp;amp;day=13&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Feb 2022&lt;/a&gt;
+ | &lt;span class=&quot;current&quot;&gt;
+[   &lt;a href=&quot;month.php?year=2022&amp;amp;month=03&amp;amp;day=13&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Mar 2022&lt;/a&gt;
+]&lt;/span&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=04&amp;amp;day=13&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Apr 2022&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=05&amp;amp;day=13&amp;amp;area=Array&amp;amp;room=5&quot;&gt;May 2022&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=06&amp;amp;day=13&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Jun 2022&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=07&amp;amp;day=13&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Jul 2022&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=08&amp;amp;day=13&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Aug 2022&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=09&amp;amp;day=13&amp;amp;area=Array&amp;amp;room=5&quot;&gt;Sep 2022&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+  
+
+&lt;div id=&quot;ui-datepicker-div&quot; class=&quot;ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-draggable&quot; style=&quot;position: relative;&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/FORM[1]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[7]/DIV[1]/A[1]</td>
+							<td><a href="state28.html">state28</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[9]/DIV[1]/UL[1]/LI[1]/A[1]</td>
+							<td><a href="state37.html">state37</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[9]/DIV[1]/UL[1]/LI[2]/A[1]</td>
+							<td><a href="state37.html">state37</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[6]/A[1]</td>
+							<td><a href="state30.html">state30</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[7]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[8]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[9]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[10]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[11]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[12]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[13]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[14]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[1]</td>
+							<td><a href="state94.html">state94</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[3]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[4]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/SPAN[1]/A[1]</td>
+							<td><a href="state56.html">state56</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[5]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[6]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[7]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[8]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/SPAN[1]/A[1]</td>
+							<td><a href="state44.html">state44</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[3]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[4]</td>
+							<td><a href="state75.html">state75</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[5]</td>
+							<td><a href="state32.html">state32</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[6]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[7]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[8]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[1]/FIELDSET[2]/DIV[1]/INPUT[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[1]/FIELDSET[2]/DIV[2]/INPUT[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state16</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/collabtive/admin.php?action=users'>http://localhost:3000/collabtive/admin.php?action=users</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>4</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>28</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state14</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>778.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>16</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[8]/DIV[1]/BUTTON[1], xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1], xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2], xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1], xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2], xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1], xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state16.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 107px; top: 82px; width: 59px; height: 47px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state14.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 165px; top: 82px; width: 59px; height: 47px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 125px; top: 185px; width: 708px; height: 37px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 775px; top: 192px; width: 21px; height: 28px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[8]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 169px; top: 269px; width: 34px; height: 34px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state13.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: -3px; top: -3px; width: 16px; height: 16px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state106.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 168px; top: 308px; width: 34px; height: 16px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state13.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[3]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 163px; top: 368px; width: 66px; height: 25px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 125px; top: 418px; width: 708px; height: 37px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[5]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 775px; top: 425px; width: 21px; height: 28px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 182px; top: 491px; width: 35px; height: 29px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 770px; top: 493px; width: 16px; height: 25px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[1]/TD[2]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 182px; top: 518px; width: 29px; height: 29px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[1]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 770px; top: 520px; width: 16px; height: 25px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[1]/TD[2]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 182px; top: 545px; width: 39px; height: 29px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[1]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 770px; top: 547px; width: 16px; height: 25px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/DIV[2]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 163px; top: 574px; width: 63px; height: 25px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[8]/DIV[1]/BUTTON[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;
+&lt;title&gt;User administration @ Collabtive&lt;/title&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;templates/standard/images/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; title=&quot;Collabtive Search&quot; href=&quot;manageajax.php?action=addfx-all&quot;&gt;
+&lt;link rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;My messages&quot; href=&quot;managerss.php?action=mymsgs-rss&amp;amp;user=1&quot;&gt;
+&lt;link rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;My tasks&quot; href=&quot;managerss.php?action=rss-tasks&amp;amp;user=1&quot;&gt;
+
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+//endcolor for close element flashing
+closeEndcolor = '#377814';
+//endcolor for delete element flashing
+deleteEndcolor = '#c62424';
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/prototype.php&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/ajax.php&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/jsval.php&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/chat.js&quot;&gt;&lt;/script&gt;
+     &lt;script type=&quot;text/javascript&quot;&gt;
+        function _jsVal_Language() {
+            this.err_enter = &quot;Please enter a valid value for \&quot;%FIELDNAME%\&quot;.&quot;;
+            this.err_form = &quot;Please enter valid values for:\n\n&quot;;
+            this.err_select = &quot;Please select a valid value in \&quot;%FIELDNAME%\&quot;.&quot;;
+        }
+&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/mycalendar.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;templates/standard/css/style_main.css&quot;&gt;
+
+
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;!--&lt;div id = &quot;jslog&quot; style = &quot;color:red;position:absolute;top:60%;right:5%;width:300px;border:1px solid;background-color:grey;&quot;&gt;&lt;/div&gt;--&gt;
+
+	&lt;div id=&quot;sitebody&quot;&gt;
+
+	&lt;div id=&quot;header-wrapper&quot;&gt;
+		&lt;div id=&quot;header&quot;&gt;
+			&lt;div class=&quot;header-in&quot;&gt;
+
+				&lt;div class=&quot;left&quot;&gt;
+					&lt;div class=&quot;logo&quot;&gt;
+						&lt;h1&gt;
+							&lt;a href=&quot;index.php&quot; title=&quot;Desktop&quot;&gt;&lt;img src=&quot;./templates/standard/images/logo-b.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+							&lt;span class=&quot;title&quot;&gt;Collabtive&lt;span class=&quot;subtitle&quot;&gt;/ Projectmanagement &lt;/span&gt;&lt;/span&gt;
+						&lt;/h1&gt;
+					&lt;/div&gt;
+
+				&lt;/div&gt; 
+				&lt;div class=&quot;right&quot;&gt;
+											&lt;ul id=&quot;mainmenue&quot;&gt;
+							&lt;li class=&quot;desktop&quot;&gt;&lt;a class=&quot;&quot; href=&quot;index.php&quot;&gt;&lt;span&gt;Desktop&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+														&lt;li class=&quot;profil-male&quot;&gt;&lt;a class=&quot;&quot; href=&quot;manageuser.php?action=profile&amp;amp;id=1&quot;&gt;&lt;span&gt;My account&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+							
+							 							&lt;li class=&quot;admin&quot;&gt;&lt;a class=&quot;active&quot; href=&quot;admin.php?action=projects&quot;&gt;&lt;span&gt;Administration&lt;/span&gt;&lt;span class=&quot;submenarrow&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+								&lt;div class=&quot;submen&quot;&gt;
+									&lt;ul&gt;
+										&lt;li class=&quot;project-settings&quot;&gt;&lt;a class=&quot;overview&quot; href=&quot;admin.php?action=projects&quot;&gt;&lt;span&gt;Project administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+										&lt;li class=&quot;user-settings&quot;&gt;&lt;a class=&quot;active&quot; href=&quot;admin.php?action=users&quot;&gt;&lt;span&gt;User administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+										&lt;li class=&quot;system-settings&quot;&gt;&lt;a class=&quot;system&quot; href=&quot;admin.php?action=system&quot;&gt;&lt;span&gt;System administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+									&lt;/ul&gt;
+								&lt;/div&gt;
+							&lt;/li&gt;
+							
+
+							&lt;li class=&quot;logout&quot;&gt;&lt;a href=&quot;manageuser.php?action=logout&quot;&gt;&lt;span&gt;Logout&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+									&lt;/div&gt; &lt;!-- Right End --&gt;
+
+
+
+			&lt;/div&gt; &lt;!-- Header-In End --&gt;
+		&lt;/div&gt; &lt;!-- Header End --&gt;
+	&lt;/div&gt; &lt;!-- Header-Wrapper End --&gt;
+
+
+	&lt;div id=&quot;contentwrapper&quot;&gt;
+
+&lt;div class=&quot;tabswrapper&quot;&gt;
+	&lt;ul class=&quot;tabs&quot;&gt;
+		&lt;li class=&quot;projects&quot;&gt;&lt;a href=&quot;admin.php?action=projects&quot;&gt;&lt;span&gt;Project administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;user&quot;&gt;&lt;a class=&quot;active&quot; href=&quot;admin.php?action=users&quot;&gt;&lt;span&gt;User administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;system-settings&quot;&gt;&lt;a href=&quot;admin.php?action=system&quot;&gt;&lt;span&gt;System administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;&lt;div id=&quot;content-left&quot;&gt;
+&lt;div id=&quot;content-left-in&quot;&gt;
+&lt;div class=&quot;user&quot;&gt;
+
+	&lt;div class=&quot;infowin_left&quot; style=&quot;display: none;&quot; id=&quot;systemmsg&quot;&gt;
+			&lt;/div&gt;
+	
+	&lt;script type=&quot;text/javascript&quot;&gt;
+	systemMsg('systemmsg');
+	 &lt;/script&gt;
+	
+
+&lt;h1&gt;Administration&lt;span&gt;/ User administration&lt;/span&gt;&lt;/h1&gt;
+
+	&lt;div class=&quot;headline&quot;&gt;
+				&lt;a href=&quot;javascript:void(0);&quot; id=&quot;block_files_toggle&quot; class=&quot;win_block&quot; onclick=&quot;toggleBlock('block_files');&quot;&gt;&lt;/a&gt;
+
+				&lt;div class=&quot;wintools&quot;&gt;
+										&lt;a class=&quot;add&quot; href=&quot;javascript:blindtoggle('form_member');&quot; id=&quot;addmember&quot; onclick=&quot;toggleClass(this,'add-active','add');toggleClass('add_butn_member','butn_link_active','butn_link');toggleClass('sm_member','smooth','nosmooth');&quot;&gt;&lt;span&gt;Add user&lt;/span&gt;&lt;/a&gt;
+									&lt;/div&gt;
+
+				&lt;h2&gt;
+					&lt;img src=&quot;./templates/standard/images/symbols/userlist.png&quot; alt=&quot;&quot;&gt;User administration
+				&lt;/h2&gt;
+
+			&lt;/div&gt;
+
+			&lt;div id=&quot;block_files&quot; class=&quot;blockwrapper&quot;&gt;
+													&lt;div id=&quot;form_member&quot; class=&quot;addmenue&quot; style=&quot;display:none;&quot;&gt;
+						&lt;div class=&quot;block_in_wrapper&quot;&gt;
+	&lt;form novalidate=&quot;&quot; class=&quot;main&quot; method=&quot;post&quot; action=&quot;admin.php?action=adduser&quot; onsubmit=&quot;return validateCompleteForm(this);&quot;&gt;
+		&lt;fieldset&gt;
+
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+				&lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; required=&quot;1&quot; realname=&quot;Name&quot;&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;label for=&quot;company&quot;&gt;Company:&lt;/label&gt;
+				&lt;input type=&quot;text&quot; name=&quot;company&quot; id=&quot;company&quot; realname=&quot;Company&quot;&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;label for=&quot;email&quot;&gt;E-Mail:&lt;/label&gt;
+				&lt;input type=&quot;text&quot; name=&quot;email&quot; id=&quot;email&quot; realname=&quot;E-Mail&quot;&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;label for=&quot;pass&quot;&gt;Password:&lt;/label&gt;
+				&lt;input type=&quot;text&quot; name=&quot;pass&quot; id=&quot;pass&quot; required=&quot;1&quot; realname=&quot;Password&quot;&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;label id=&quot;rate&quot;&gt;Hourly rate:&lt;/label&gt;
+				&lt;input type=&quot;text&quot; name=&quot;rate&quot; id=&quot;rate&quot;&gt;
+			&lt;/div&gt;
+
+			
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;label&gt;Role:&lt;/label&gt;
+				&lt;select name=&quot;role&quot; realname=&quot;Role&quot; required=&quot;1&quot; exclude=&quot;-1&quot; id=&quot;roleselect&quot;&gt;
+					&lt;option value=&quot;-1&quot; selected=&quot;selected&quot;&gt;Please choose&lt;/option&gt;
+											&lt;option value=&quot;3&quot; id=&quot;role3&quot;&gt;Client&lt;/option&gt;
+											&lt;option value=&quot;2&quot; id=&quot;role2&quot;&gt;User&lt;/option&gt;
+											&lt;option value=&quot;1&quot; id=&quot;role1&quot;&gt;Admin&lt;/option&gt;
+									&lt;/select&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;clear_both_b&quot;&gt;&lt;/div&gt;
+
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;label&gt;&amp;nbsp;&lt;/label&gt;
+				&lt;div class=&quot;butn&quot;&gt;
+					&lt;button type=&quot;submit&quot;&gt;Add&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;a href=&quot;javascript:blindtoggle('form_member');&quot; class=&quot;butn_link&quot;&gt;&lt;span&gt;Cancel&lt;/span&gt;&lt;/a&gt;
+			&lt;/div&gt;
+
+		&lt;/fieldset&gt;
+	&lt;/form&gt;
+&lt;/div&gt; 					&lt;/div&gt;
+				
+				&lt;div class=&quot;nosmooth&quot; id=&quot;sm_member&quot;&gt;
+					&lt;div class=&quot;contenttitle&quot;&gt;
+						&lt;div class=&quot;contenttitle_menue&quot;&gt;
+													&lt;/div&gt;
+						&lt;div class=&quot;contenttitle_in&quot;&gt;
+													&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;content_in_wrapper&quot;&gt;
+					&lt;div class=&quot;content_in_wrapper_in&quot;&gt;
+
+
+						&lt;div class=&quot;inwrapper&quot;&gt;
+							&lt;ul&gt;
+															&lt;li&gt;
+									&lt;div class=&quot;itemwrapper&quot; id=&quot;iw_1&quot;&gt;
+
+											&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+												&lt;tbody&gt;&lt;tr&gt;
+													&lt;td class=&quot;leftmen&quot; valign=&quot;top&quot;&gt;
+														&lt;div class=&quot;inmenue&quot;&gt;
+																													&lt;/div&gt;
+													&lt;/td&gt;
+													&lt;td class=&quot;thumb&quot;&gt;
+														&lt;a href=&quot;manageuser.php?action=profile&amp;amp;id=1&quot; title=&quot;admin&quot;&gt;
+																															&lt;img src=&quot;./templates/standard/images/symbols/user-icon-male.png&quot; alt=&quot;&quot;&gt;
+																													&lt;/a&gt;
+													&lt;/td&gt;
+													&lt;td class=&quot;rightmen&quot; valign=&quot;top&quot;&gt;
+														&lt;div class=&quot;inmenue&quot;&gt;
+
+																													&lt;a class=&quot;edit&quot; href=&quot;admin.php?action=editform&amp;amp;id=1&quot; title=&quot;Edit&quot;&gt;&lt;/a&gt;
+																												&lt;/div&gt;
+													&lt;/td&gt;
+												&lt;/tr&gt;
+												&lt;tr&gt;
+													&lt;td colspan=&quot;3&quot;&gt;
+														&lt;span class=&quot;name&quot;&gt;
+															&lt;a href=&quot;manageuser.php?action=profile&amp;amp;id=1&quot; title=&quot;admin&quot;&gt;
+																																	admin
+																															&lt;/a&gt;
+														&lt;/span&gt;
+													&lt;/td&gt;
+												&lt;/tr&gt;
+											&lt;/tbody&gt;&lt;/table&gt;
+
+											
+									&lt;/div&gt; 								&lt;/li&gt;
+							 
+							&lt;/ul&gt;
+						&lt;/div&gt; 
+
+
+			&lt;/div&gt; 
+			&lt;/div&gt; 
+
+			&lt;div class=&quot;staterow&quot;&gt;
+				&lt;div class=&quot;staterowin&quot;&gt;
+					
+				&lt;/div&gt;
+					&lt;div class=&quot;staterowin_right&quot;&gt; &lt;span&gt;  1&amp;nbsp; &lt;/span&gt;&lt;/div&gt;
+			&lt;/div&gt;
+
+
+			&lt;/div&gt; 			&lt;div class=&quot;tablemenue&quot;&gt;
+					&lt;div class=&quot;tablemenue-in&quot;&gt;
+												&lt;a class=&quot;butn_link&quot; href=&quot;javascript:blindtoggle('form_member');&quot; id=&quot;add_butn_member&quot; onclick=&quot;toggleClass(this,'butn_link_active','butn_link');toggleClass('addmember','add-active','add');toggleClass('sm_member','smooth','nosmooth');&quot;&gt;Add user&lt;/a&gt;
+											&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;/div&gt; 
+	&lt;div class=&quot;content-spacer&quot;&gt;&lt;/div&gt;
+
+	&lt;div class=&quot;headline&quot;&gt;
+
+				&lt;a href=&quot;javascript:void(0);&quot; id=&quot;acc-roles_toggle&quot; class=&quot;win_block&quot; onclick=&quot;toggleBlock('acc-roles');&quot;&gt;&lt;/a&gt;
+
+
+					&lt;div class=&quot;wintools&quot;&gt;
+						&lt;a id=&quot;addrolelink&quot; class=&quot;add&quot; href=&quot;javascript:blindtoggle('form_addmyroles');&quot; onclick=&quot;toggleClass(this,'add-active','add');toggleClass('add_butn_myroles','butn_link_active','butn_link');toggleClass('sm_myrolls','smooth','nosmooth');&quot;&gt;&lt;span&gt;Add role&lt;/span&gt;&lt;/a&gt;
+					&lt;/div&gt;
+
+				&lt;h2&gt;
+					&lt;img src=&quot;./templates/standard/images/symbols/userlist.png&quot; alt=&quot;&quot;&gt;Roles
+				&lt;/h2&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;block&quot; id=&quot;acc-roles&quot;&gt;
+
+							&lt;div id=&quot;form_addmyroles&quot; class=&quot;addmenue&quot; style=&quot;display:none;&quot;&gt;
+				&lt;div class=&quot;block_in_wrapper&quot;&gt;
+&lt;h2&gt;Add role&lt;/h2&gt;
+
+	&lt;form novalidate=&quot;&quot; class=&quot;main&quot; method=&quot;post&quot; action=&quot;manageroles.php?action=addrole&quot; onsubmit=&quot;return validateCompleteForm(this);&quot;&gt;
+	&lt;fieldset&gt;
+		&lt;div class=&quot;row&quot;&gt;&lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;&lt;input type=&quot;text&quot; class=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; required=&quot;1&quot; realname=&quot;Name&quot;&gt;&lt;/div&gt;
+		&lt;!--
+		&lt;div class=&quot;row&quot;&gt;&lt;label for=&quot;desc&quot;&gt;Description:&lt;/label&gt;&lt;div class=&quot;editor&quot;&gt;&lt;textarea name=&quot;desc&quot; id=&quot;desc&quot;  rows=&quot;3&quot; cols=&quot;1&quot; &gt;&lt;/textarea&gt;&lt;/div&gt;&lt;/div&gt;
+        --&gt;
+		&lt;div class=&quot;clear_both_b&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;row&quot;&gt;&lt;label&gt;Permissions:&lt;/label&gt;
+
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Projects&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[add]&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[edit]&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[del]&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[close]&quot;&gt;Close
+            &lt;/div&gt;
+
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Milestones&lt;/label&gt;
+            &lt;/div&gt;
+             &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[view]&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[add]&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[edit]&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[del]&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[close]&quot;&gt;Close
+            &lt;/div&gt;
+
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Tasks&lt;/label&gt;
+            &lt;/div&gt;
+             &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[view]&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[add]&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[edit]&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[del]&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[close]&quot;&gt;Close
+            &lt;/div&gt;
+
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Messages&lt;/label&gt;
+            &lt;/div&gt;
+             &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[view]&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[add]&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[edit]&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[del]&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[close]&quot;&gt;Answer
+            &lt;/div&gt;
+
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Files&lt;/label&gt;
+            &lt;/div&gt;
+             &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[del]&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[add]&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[edit]&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[del]&quot;&gt;Delete
+            &lt;/div&gt;
+
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Timetracker&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[view]&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[read]&quot;&gt;Read
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[add]&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[edit]&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[del]&quot;&gt;Delete
+            &lt;/div&gt;
+
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Chat&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_chat[add]&quot;&gt;Chat
+            &lt;/div&gt;
+
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Admin&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_admin[add]&quot;&gt;Administration
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+	    &lt;div class=&quot;clear_both_b&quot;&gt;&lt;/div&gt;
+
+		&lt;div class=&quot;row-butn-bottom&quot;&gt;
+		&lt;label&gt;&amp;nbsp;&lt;/label&gt;
+		&lt;button type=&quot;submit&quot; onfocus=&quot;this.blur();&quot;&gt;Add&lt;/button&gt;
+				&lt;button onclick=&quot;blindtoggle('form_addmyroles');toggleClass('addrolelink','add-active','add');return false;&quot;&gt;Cancel&lt;/button&gt;
+				&lt;/div&gt;
+
+
+	&lt;/fieldset&gt;
+	&lt;/form&gt;
+
+&lt;/div&gt; 				&lt;/div&gt;
+
+				&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+
+					&lt;thead&gt;
+						&lt;tr&gt;
+							&lt;th class=&quot;a&quot;&gt;&lt;/th&gt;
+							&lt;th class=&quot;b&quot;&gt;Name&lt;/th&gt;
+							&lt;th class=&quot;c&quot;&gt;&lt;/th&gt;
+							&lt;th class=&quot;tools&quot;&gt;&lt;/th&gt;
+						&lt;/tr&gt;
+					&lt;/thead&gt;
+
+					&lt;tfoot&gt;
+						&lt;tr&gt;
+							&lt;td colspan=&quot;5&quot;&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+					&lt;/tfoot&gt;
+
+					
+															&lt;tbody class=&quot;color-a&quot; id=&quot;role_3&quot;&gt;
+											&lt;tr&gt;
+							&lt;td&gt;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;div class=&quot;toggle-in&quot;&gt;
+								&lt;span class=&quot;acc-toggle&quot; onclick=&quot;accord_roles.activate($$('#acc-roles .accordion_toggle')[0]);toggleAccordeon('acc-roles',this);&quot;&gt;&lt;/span&gt;
+									&lt;a href=&quot;javascript:accord_roles.activate($$('#acc-roles .accordion_toggle')[0]);toggleAccordeon('acc-roles',this);&quot;&gt;
+										Client
+									&lt;/a&gt;
+								&lt;/div&gt;
+							&lt;/td&gt;
+							&lt;td&gt;&lt;/td&gt;
+							&lt;td class=&quot;tools&quot;&gt;
+							&lt;!--	&lt;a class=&quot;tool_edit&quot; href=&quot;manageproject.php?action=editform&amp;amp;id=3&quot; title=&quot;Edit&quot; &gt;&lt;/a&gt;--&gt;
+								&lt;a class=&quot;tool_del&quot; href=&quot;javascript:confirmfunction('Really delete this item?\nDeleting cannot be undone.','deleteElement(\'role_3\',\'manageroles.php?action=delrole&amp;amp;id=3\')');&quot; title=&quot;Delete&quot;&gt;&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+
+					&lt;tr class=&quot;acc&quot;&gt;
+					&lt;td&gt;&lt;/td&gt;
+							&lt;td colspan=&quot;4&quot;&gt;
+								&lt;div class=&quot;accordion_toggle&quot;&gt;&lt;/div&gt;
+								&lt;div class=&quot;accordion_content&quot; style=&quot;height: 0px; display: none;&quot;&gt;
+                                    	&lt;form class=&quot;main&quot; method=&quot;post&quot; action=&quot;manageroles.php?action=editrole&amp;amp;id=3&quot; onsubmit=&quot;return validateCompleteForm(this);&quot;&gt;
+	&lt;fieldset&gt;
+		&lt;div class=&quot;clear_both_b&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;row&quot;&gt;
+        &lt;label for=&quot;rolename&quot;&gt;Name:&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;rolename&quot; id=&quot;rolename&quot; value=&quot;Client&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;row&quot;&gt;&lt;label&gt;Permissions:&lt;/label&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Projects&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[add]&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[edit]&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[del]&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[close]&quot;&gt;Close
+            &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Milestones&lt;/label&gt;
+            &lt;/div&gt;
+             &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[view]&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[add]&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[edit]&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[del]&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[close]&quot;&gt;Close
+            &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Tasks&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[view]&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[add]&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[edit]&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[del]&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[close]&quot;&gt;Close
+            &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Messages&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[view]&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[add]&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[edit]&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[del]&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[close]&quot;&gt;Answer
+            &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Files&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[view]&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[add]&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[edit]&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[del]&quot;&gt;Delete
+            &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Timetracker&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[view]&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[read]&quot;&gt;Read
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[add]&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[edit]&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[del]&quot;&gt;Delete
+            &lt;/div&gt;
+
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Chat&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_chat[add]&quot;&gt;Chat
+            &lt;/div&gt;
+
+
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Admin&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_admin[add]&quot;&gt;Administration
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+	    &lt;div class=&quot;clear_both_b&quot;&gt;&lt;/div&gt;
+
+		&lt;div class=&quot;row-butn-bottom&quot;&gt;
+    	&lt;label&gt;&amp;nbsp;&lt;/label&gt;
+		&lt;button type=&quot;submit&quot; onfocus=&quot;this.blur();&quot;&gt;Edit&lt;/button&gt;
+		&lt;button onclick=&quot;javascript:accord_roles.activate($$('#acc-roles .accordion_toggle')[0]);toggleAccordeon('acc-roles',this);return false;&quot;&gt;Cancel&lt;/button&gt;
+		&lt;/div&gt;
+
+	&lt;/fieldset&gt;
+	&lt;/form&gt;
+    &lt;/div&gt;
+
+							&lt;/td&gt;
+						&lt;/tr&gt;
+					&lt;/tbody&gt;
+					
+															&lt;tbody class=&quot;color-b&quot; id=&quot;role_2&quot;&gt;
+											&lt;tr&gt;
+							&lt;td&gt;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;div class=&quot;toggle-in&quot;&gt;
+								&lt;span class=&quot;acc-toggle&quot; onclick=&quot;accord_roles.activate($$('#acc-roles .accordion_toggle')[1]);toggleAccordeon('acc-roles',this);&quot;&gt;&lt;/span&gt;
+									&lt;a href=&quot;javascript:accord_roles.activate($$('#acc-roles .accordion_toggle')[1]);toggleAccordeon('acc-roles',this);&quot;&gt;
+										User
+									&lt;/a&gt;
+								&lt;/div&gt;
+							&lt;/td&gt;
+							&lt;td&gt;&lt;/td&gt;
+							&lt;td class=&quot;tools&quot;&gt;
+							&lt;!--	&lt;a class=&quot;tool_edit&quot; href=&quot;manageproject.php?action=editform&amp;amp;id=2&quot; title=&quot;Edit&quot; &gt;&lt;/a&gt;--&gt;
+								&lt;a class=&quot;tool_del&quot; href=&quot;javascript:confirmfunction('Really delete this item?\nDeleting cannot be undone.','deleteElement(\'role_2\',\'manageroles.php?action=delrole&amp;amp;id=2\')');&quot; title=&quot;Delete&quot;&gt;&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+
+					&lt;tr class=&quot;acc&quot;&gt;
+					&lt;td&gt;&lt;/td&gt;
+							&lt;td colspan=&quot;4&quot;&gt;
+								&lt;div class=&quot;accordion_toggle&quot;&gt;&lt;/div&gt;
+								&lt;div class=&quot;accordion_content&quot; style=&quot;height: 0px; display: none;&quot;&gt;
+                                    	&lt;form class=&quot;main&quot; method=&quot;post&quot; action=&quot;manageroles.php?action=editrole&amp;amp;id=2&quot; onsubmit=&quot;return validateCompleteForm(this);&quot;&gt;
+	&lt;fieldset&gt;
+		&lt;div class=&quot;clear_both_b&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;row&quot;&gt;
+        &lt;label for=&quot;rolename&quot;&gt;Name:&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;rolename&quot; id=&quot;rolename&quot; value=&quot;User&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;row&quot;&gt;&lt;label&gt;Permissions:&lt;/label&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Projects&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[add]&quot; checked=&quot;&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[edit]&quot; checked=&quot;&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[del]&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[close]&quot;&gt;Close
+            &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Milestones&lt;/label&gt;
+            &lt;/div&gt;
+             &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[view]&quot; checked=&quot;&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[add]&quot; checked=&quot;&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[edit]&quot; checked=&quot;&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[del]&quot; checked=&quot;&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[close]&quot; checked=&quot;&quot;&gt;Close
+            &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Tasks&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[view]&quot; checked=&quot;&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[add]&quot; checked=&quot;&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[edit]&quot; checked=&quot;&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[del]&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[close]&quot; checked=&quot;&quot;&gt;Close
+            &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Messages&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[view]&quot; checked=&quot;&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[add]&quot; checked=&quot;&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[edit]&quot; checked=&quot;&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[del]&quot; checked=&quot;&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[close]&quot; checked=&quot;&quot;&gt;Answer
+            &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Files&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[view]&quot; checked=&quot;&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[add]&quot; checked=&quot;&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[edit]&quot; checked=&quot;&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[del]&quot; checked=&quot;&quot;&gt;Delete
+            &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Timetracker&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[view]&quot; checked=&quot;&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[read]&quot;&gt;Read
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[add]&quot; checked=&quot;&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[edit]&quot; checked=&quot;&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[del]&quot; checked=&quot;&quot;&gt;Delete
+            &lt;/div&gt;
+
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Chat&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_chat[add]&quot; checked=&quot;&quot;&gt;Chat
+            &lt;/div&gt;
+
+
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Admin&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_admin[add]&quot;&gt;Administration
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+	    &lt;div class=&quot;clear_both_b&quot;&gt;&lt;/div&gt;
+
+		&lt;div class=&quot;row-butn-bottom&quot;&gt;
+    	&lt;label&gt;&amp;nbsp;&lt;/label&gt;
+		&lt;button type=&quot;submit&quot; onfocus=&quot;this.blur();&quot;&gt;Edit&lt;/button&gt;
+		&lt;button onclick=&quot;javascript:accord_roles.activate($$('#acc-roles .accordion_toggle')[1]);toggleAccordeon('acc-roles',this);return false;&quot;&gt;Cancel&lt;/button&gt;
+		&lt;/div&gt;
+
+	&lt;/fieldset&gt;
+	&lt;/form&gt;
+    &lt;/div&gt;
+
+							&lt;/td&gt;
+						&lt;/tr&gt;
+					&lt;/tbody&gt;
+					
+															&lt;tbody class=&quot;color-a&quot; id=&quot;role_1&quot;&gt;
+											&lt;tr&gt;
+							&lt;td&gt;&lt;/td&gt;
+							&lt;td&gt;
+								&lt;div class=&quot;toggle-in&quot;&gt;
+								&lt;span class=&quot;acc-toggle&quot; onclick=&quot;accord_roles.activate($$('#acc-roles .accordion_toggle')[2]);toggleAccordeon('acc-roles',this);&quot;&gt;&lt;/span&gt;
+									&lt;a href=&quot;javascript:accord_roles.activate($$('#acc-roles .accordion_toggle')[2]);toggleAccordeon('acc-roles',this);&quot;&gt;
+										Admin
+									&lt;/a&gt;
+								&lt;/div&gt;
+							&lt;/td&gt;
+							&lt;td&gt;&lt;/td&gt;
+							&lt;td class=&quot;tools&quot;&gt;
+							&lt;!--	&lt;a class=&quot;tool_edit&quot; href=&quot;manageproject.php?action=editform&amp;amp;id=1&quot; title=&quot;Edit&quot; &gt;&lt;/a&gt;--&gt;
+								&lt;a class=&quot;tool_del&quot; href=&quot;javascript:confirmfunction('Really delete this item?\nDeleting cannot be undone.','deleteElement(\'role_1\',\'manageroles.php?action=delrole&amp;amp;id=1\')');&quot; title=&quot;Delete&quot;&gt;&lt;/a&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+
+					&lt;tr class=&quot;acc&quot;&gt;
+					&lt;td&gt;&lt;/td&gt;
+							&lt;td colspan=&quot;4&quot;&gt;
+								&lt;div class=&quot;accordion_toggle&quot;&gt;&lt;/div&gt;
+								&lt;div class=&quot;accordion_content&quot; style=&quot;height: 0px; display: none;&quot;&gt;
+                                    	&lt;form class=&quot;main&quot; method=&quot;post&quot; action=&quot;manageroles.php?action=editrole&amp;amp;id=1&quot; onsubmit=&quot;return validateCompleteForm(this);&quot;&gt;
+	&lt;fieldset&gt;
+		&lt;div class=&quot;clear_both_b&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;row&quot;&gt;
+        &lt;label for=&quot;rolename&quot;&gt;Name:&lt;/label&gt;
+        &lt;input type=&quot;text&quot; name=&quot;rolename&quot; id=&quot;rolename&quot; value=&quot;Admin&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;row&quot;&gt;&lt;label&gt;Permissions:&lt;/label&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Projects&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[add]&quot; checked=&quot;&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[edit]&quot; checked=&quot;&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[del]&quot; checked=&quot;&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_projects[close]&quot; checked=&quot;&quot;&gt;Close
+            &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Milestones&lt;/label&gt;
+            &lt;/div&gt;
+             &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[view]&quot; checked=&quot;&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[add]&quot; checked=&quot;&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[edit]&quot; checked=&quot;&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[del]&quot; checked=&quot;&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_milestones[close]&quot; checked=&quot;&quot;&gt;Close
+            &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Tasks&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[view]&quot; checked=&quot;&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[add]&quot; checked=&quot;&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[edit]&quot; checked=&quot;&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[del]&quot; checked=&quot;&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_tasks[close]&quot; checked=&quot;&quot;&gt;Close
+            &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Messages&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[view]&quot; checked=&quot;&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[add]&quot; checked=&quot;&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[edit]&quot; checked=&quot;&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[del]&quot; checked=&quot;&quot;&gt;Delete
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_messages[close]&quot; checked=&quot;&quot;&gt;Answer
+            &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Files&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[view]&quot; checked=&quot;&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[add]&quot; checked=&quot;&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[edit]&quot; checked=&quot;&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_files[del]&quot; checked=&quot;&quot;&gt;Delete
+            &lt;/div&gt;
+
+                        &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Timetracker&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[view]&quot; checked=&quot;&quot;&gt;View
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[read]&quot; checked=&quot;&quot;&gt;Read
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[add]&quot; checked=&quot;&quot;&gt;Add
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[edit]&quot; checked=&quot;&quot;&gt;Edit
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_timetracker[del]&quot; checked=&quot;&quot;&gt;Delete
+            &lt;/div&gt;
+
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Chat&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_chat[add]&quot; checked=&quot;&quot;&gt;Chat
+            &lt;/div&gt;
+
+
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;
+            &lt;label&gt;Admin&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;label&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;permissions_admin[add]&quot; checked=&quot;&quot;&gt;Administration
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+	    &lt;div class=&quot;clear_both_b&quot;&gt;&lt;/div&gt;
+
+		&lt;div class=&quot;row-butn-bottom&quot;&gt;
+    	&lt;label&gt;&amp;nbsp;&lt;/label&gt;
+		&lt;button type=&quot;submit&quot; onfocus=&quot;this.blur();&quot;&gt;Edit&lt;/button&gt;
+		&lt;button onclick=&quot;javascript:accord_roles.activate($$('#acc-roles .accordion_toggle')[2]);toggleAccordeon('acc-roles',this);return false;&quot;&gt;Cancel&lt;/button&gt;
+		&lt;/div&gt;
+
+	&lt;/fieldset&gt;
+	&lt;/form&gt;
+    &lt;/div&gt;
+
+							&lt;/td&gt;
+						&lt;/tr&gt;
+					&lt;/tbody&gt;
+					
+				&lt;/table&gt;
+				&lt;div class=&quot;tablemenue&quot;&gt;
+					&lt;div class=&quot;tablemenue-in&quot;&gt;
+												&lt;a class=&quot;butn_link&quot; href=&quot;javascript:blindtoggle('form_addmyroles');&quot; id=&quot;add_butn_myprojects&quot; onclick=&quot;toggleClass('addrolelink','add-active','add');toggleClass(this,'butn_link_active','butn_link');toggleClass('sm_myprojects','smooth','nosmooth');&quot;&gt;Add role&lt;/a&gt;
+						
+
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+		&lt;/div&gt; 
+
+	&lt;script type=&quot;text/javascript&quot;&gt;
+		var accord_roles = new accordion('acc-roles');
+	&lt;/script&gt;
+	
+
+&lt;div class=&quot;content-spacer&quot;&gt;&lt;/div&gt;
+
+&lt;/div&gt; &lt;/div&gt; 
+&lt;/div&gt; 
+&lt;div id=&quot;content-right&quot;&gt;
+
+
+		&lt;div class=&quot;content-right-in&quot;&gt;
+			&lt;h2&gt;&lt;a id=&quot;searchtoggle&quot; class=&quot;win-up&quot; href=&quot;javascript:blindtoggle('search');toggleClass('searchtoggle','win-up','win-down');&quot;&gt;Search&lt;/a&gt;&lt;/h2&gt;
+
+			&lt;form id=&quot;search&quot; method=&quot;get&quot; action=&quot;managesearch.php&quot; onsubmit=&quot;return validateStandard(this,'input_error');&quot;&gt;
+			&lt;fieldset&gt;
+				&lt;div class=&quot;row&quot;&gt;
+					&lt;input type=&quot;text&quot; class=&quot;text&quot; id=&quot;query&quot; name=&quot;query&quot; autocomplete=&quot;off&quot;&gt;
+				&lt;/div&gt;
+
+				&lt;div id=&quot;choices&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;action&quot; value=&quot;search&quot;&gt;
+
+				&lt;div id=&quot;indicator1&quot; style=&quot;display:none;&quot;&gt;&lt;img src=&quot;templates/standard/images/symbols/indicator_arrows.gif&quot; alt=&quot;Searching...&quot;&gt;&lt;/div&gt;
+
+				&lt;button type=&quot;submit&quot; title=&quot;Go!&quot;&gt;&lt;/button&gt;
+			&lt;/fieldset&gt;
+
+			&lt;/form&gt;
+	&lt;/div&gt;
+	
+
+		
+
+			
+		
+		&lt;div class=&quot;content-right-in&quot;&gt;
+			&lt;h2&gt;&lt;a id=&quot;onlinelisttoggle&quot; class=&quot;win-up&quot; href=&quot;javascript:blindtoggle('onlinelist');toggleClass('onlinelisttoggle','win-up','win-down');&quot;&gt;Online&lt;/a&gt;&lt;/h2&gt;
+
+			&lt;div id=&quot;onlinelist&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;a class=&quot;user&quot; href=&quot;manageuser.php?action=profile&amp;amp;id=1&quot;&gt;admin&lt;div&gt;&lt;img src=&quot;thumb.php?pic=templates/standard/images/no-avatar-male.jpg&amp;amp;width=90&quot;&gt;&lt;/div&gt; &lt;/a&gt; &lt;a class=&quot;chat-user&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+	&lt;/div&gt;
+
+
+		
+			  &lt;script type=&quot;text/javascript&quot;&gt;
+			  new Ajax.Autocompleter('query', 'choices', 'managesearch.php?action=ajaxsearch', {paramName:'query',minChars: 2,indicator: 'indicator1'});
+				 var on = new Ajax.PeriodicalUpdater(&quot;onlinelist&quot;,&quot;manageuser.php?action=onlinelist&quot;,{method:'get',evalScripts:true,frequency:35,decay:1.5});
+
+
+			&lt;/script&gt;
+		
+
+&lt;/div&gt;
+			&lt;/div&gt; 		&lt;/div&gt; 
+
+ &lt;div id=&quot;msgchk&quot; style=&quot;display:none;&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+		chkChat();
+&lt;/script&gt;
+
+
+	&lt;div id=&quot;footer-wrapper&quot;&gt;
+		&lt;div class=&quot;footer&quot;&gt;
+			&lt;div class=&quot;footer-in&quot;&gt;
+				&lt;a href=&quot;http://collabtive.o-dyn.de&quot;&gt;Collabtive 1.0&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+
+&lt;div id=&quot;modal_overlay&quot; style=&quot;position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9998; display: none;&quot;&gt;&lt;/div&gt;&lt;div id=&quot;modal_container&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;&lt;div id=&quot;modal_loading&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]</td>
+							<td><a href="state14.html">state14</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[8]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]</td>
+							<td><a href="state13.html">state13</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/DIV[1]/A[1]</td>
+							<td><a href="state106.html">state106</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/SPAN[1]/A[1]</td>
+							<td><a href="state13.html">state13</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[3]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[5]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[1]/TD[2]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[1]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[1]/TD[2]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[1]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/DIV[2]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[8]/DIV[1]/BUTTON[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

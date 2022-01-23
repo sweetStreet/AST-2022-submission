@@ -1,0 +1,1532 @@
+{
+  "nodes" : [ {
+    "name" : "state64",
+    "url" : "http://localhost:3000/collabtive/myprojects.php#",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 64,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 1.0,
+    "cluster" : 64,
+    "timeAdded" : 1633486706999,
+    "nearestState" : "state6"
+  }, {
+    "name" : "state41",
+    "url" : "http://localhost:3000/collabtive/manageuser.php?action=editform&id=1",
+    "candidateElements" : [ {
+      "top" : 85,
+      "left" : 110,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 57,
+      "height" : 45
+    }, {
+      "top" : 85,
+      "left" : 168,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[2]/A[1]",
+      "width" : 57,
+      "height" : 45
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 218,
+      "left" : 684,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[1]/DIV[1]/TABLE[1]/TBODY[2]/TR[1]/TD[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+      "width" : 88,
+      "height" : 22
+    }, {
+      "top" : 735,
+      "left" : 458,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[1]/DIV[1]/TABLE[1]/TBODY[21]/TR[1]/TD[2]/BUTTON[1]",
+      "width" : 38,
+      "height" : 22
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 41,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[1]/DIV[1]/TABLE[1]/TBODY[2]/TR[1]/TD[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 117.0,
+    "cluster" : 41,
+    "timeAdded" : 1633486627690,
+    "nearestState" : "state13"
+  }, {
+    "name" : "state6",
+    "url" : "http://localhost:3000/collabtive/myprojects.php",
+    "candidateElements" : [ {
+      "top" : 19,
+      "left" : 888,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+      "width" : 32,
+      "height" : 32
+    }, {
+      "top" : 19,
+      "left" : 926,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+      "width" : 32,
+      "height" : 32
+    }, {
+      "top" : 19,
+      "left" : 964,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]",
+      "width" : 32,
+      "height" : 32
+    }, {
+      "top" : 85,
+      "left" : 110,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 57,
+      "height" : 45
+    }, {
+      "top" : 188,
+      "left" : 128,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+      "width" : 706,
+      "height" : 35
+    }, {
+      "top" : 195,
+      "left" : 778,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+      "width" : 19,
+      "height" : 26
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[8]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[8]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[10]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[11]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[13]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[14]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[15]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[8]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 263,
+      "left" : 166,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/A[1]",
+      "width" : 77,
+      "height" : 23
+    }, {
+      "top" : 263,
+      "left" : 244,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/A[2]",
+      "width" : 99,
+      "height" : 23
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[2]",
+      "width" : 0,
+      "height" : 0
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 4,
+    "id" : 6,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[2]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 49.0,
+    "cluster" : 6,
+    "timeAdded" : 1633486466483,
+    "nearestState" : "state3"
+  }, {
+    "name" : "index",
+    "url" : "http://localhost:3000/collabtive",
+    "candidateElements" : [ {
+      "top" : 314,
+      "left" : 584,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[4]/BUTTON[1]",
+      "width" : 32,
+      "height" : 32
+    } ],
+    "fanIn" : 0,
+    "fanOut" : 1,
+    "id" : 0,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 0,
+    "timeAdded" : 1633486427484,
+    "nearestState" : "null"
+  }, {
+    "name" : "state2",
+    "url" : "http://localhost:3000/collabtive/index.php?mode=login",
+    "candidateElements" : [ {
+      "top" : 11,
+      "left" : 433,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/H1[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 19,
+      "left" : 888,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+      "width" : 32,
+      "height" : 32
+    }, {
+      "top" : 19,
+      "left" : 926,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+      "width" : 32,
+      "height" : 32
+    }, {
+      "top" : 19,
+      "left" : 964,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]",
+      "width" : 32,
+      "height" : 32
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[3]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 19,
+      "left" : 1002,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[4]/A[1]",
+      "width" : 32,
+      "height" : 32
+    }, {
+      "top" : 85,
+      "left" : 110,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 57,
+      "height" : 45
+    }, {
+      "top" : 354,
+      "left" : 128,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[1]/A[1]",
+      "width" : 706,
+      "height" : 35
+    }, {
+      "top" : 361,
+      "left" : 778,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/A[1]",
+      "width" : 19,
+      "height" : 26
+    }, {
+      "top" : 363,
+      "left" : 172,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[1]/H2[1]/A[1]",
+      "width" : 81,
+      "height" : 16
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[8]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[8]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[10]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[11]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[13]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[14]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[15]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[8]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 429,
+      "left" : 166,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[1]",
+      "width" : 77,
+      "height" : 23
+    }, {
+      "top" : 153,
+      "left" : 888,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/H2[1]/A[1]",
+      "width" : 184,
+      "height" : 16
+    }, {
+      "top" : 220,
+      "left" : 888,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[2]/H2[1]/A[1]",
+      "width" : 184,
+      "height" : 16
+    }, {
+      "top" : 242,
+      "left" : 888,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 168,
+      "height" : 23
+    }, {
+      "top" : 242,
+      "left" : 1056,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[2]",
+      "width" : 16,
+      "height" : 23
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[8]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[8]/DIV[1]/DIV[2]/DIV[1]/A[2]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[8]/DIV[2]/DIV[1]/DIV[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[8]/DIV[2]/DIV[1]/DIV[2]/A[2]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[8]/DIV[2]/DIV[1]/DIV[2]/A[3]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 226,
+      "left" : 172,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/BUTTON[1]",
+      "width" : 99,
+      "height" : 22
+    }, {
+      "top" : 260,
+      "left" : 172,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/DIV[3]/BUTTON[1]",
+      "width" : 104,
+      "height" : 22
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[2]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 174,
+      "left" : 1038,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/FORM[1]/FIELDSET[1]/BUTTON[1]",
+      "width" : 34,
+      "height" : 23
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 2,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 435.0,
+    "cluster" : 2,
+    "timeAdded" : 1633486437320,
+    "nearestState" : "index"
+  }, {
+    "name" : "state185",
+    "url" : "http://localhost:3000/collabtive/managetags.php?action=gettag&tag=&id=0",
+    "candidateElements" : [ {
+      "top" : 188,
+      "left" : 128,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+      "width" : 706,
+      "height" : 35
+    }, {
+      "top" : 272,
+      "left" : 172,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 32,
+      "height" : 31
+    }, {
+      "top" : 311,
+      "left" : 171,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/SPAN[1]/A[1]",
+      "width" : 32,
+      "height" : 14
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 2,
+    "id" : 185,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 113.0,
+    "cluster" : 185,
+    "timeAdded" : 1633487360106,
+    "nearestState" : "state13"
+  }, {
+    "name" : "state3",
+    "url" : "http://localhost:3000/collabtive/index.php",
+    "candidateElements" : [ {
+      "top" : 188,
+      "left" : 128,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 706,
+      "height" : 35
+    }, {
+      "top" : 195,
+      "left" : 778,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/A[1]",
+      "width" : 19,
+      "height" : 26
+    }, {
+      "top" : 197,
+      "left" : 172,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/H2[1]/A[1]",
+      "width" : 81,
+      "height" : 16
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[8]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[8]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[10]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[11]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[13]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[14]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[15]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[8]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 263,
+      "left" : 166,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[1]",
+      "width" : 77,
+      "height" : 23
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[2]",
+      "width" : 0,
+      "height" : 0
+    } ],
+    "fanIn" : 4,
+    "fanOut" : 2,
+    "id" : 3,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[4]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[2]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[4]/BUTTON[1]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 44.0,
+    "cluster" : 3,
+    "timeAdded" : 1633486446814,
+    "nearestState" : "state2"
+  }, {
+    "name" : "state153",
+    "url" : "http://localhost:3000/collabtive/#",
+    "candidateElements" : [ {
+      "top" : 188,
+      "left" : 128,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 706,
+      "height" : 35
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 153,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 1.0,
+    "cluster" : 153,
+    "timeAdded" : 1633487093637,
+    "nearestState" : "state3"
+  }, {
+    "name" : "state178",
+    "url" : "http://localhost:3000/collabtive/admin.php?action=editform&id=1",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 178,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 1.0,
+    "cluster" : 178,
+    "timeAdded" : 1633487302924,
+    "nearestState" : "state106"
+  }, {
+    "name" : "state100",
+    "url" : "http://localhost:3000/collabtive/admin.php?action=projects#",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 100,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 1.0,
+    "cluster" : 100,
+    "timeAdded" : 1633486811104,
+    "nearestState" : "state14"
+  }, {
+    "name" : "state177",
+    "url" : "http://localhost:3000/collabtive/admin.php?action=users",
+    "candidateElements" : [ {
+      "top" : 496,
+      "left" : 166,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/DIV[2]/DIV[1]/A[1]",
+      "width" : 61,
+      "height" : 23
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 177,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 226.0,
+    "cluster" : 177,
+    "timeAdded" : 1633487274680,
+    "nearestState" : "state18"
+  }, {
+    "name" : "state18",
+    "url" : "http://localhost:3000/collabtive/admin.php?action=system",
+    "candidateElements" : [ {
+      "top" : 183,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 183,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 183,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[3]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 85,
+      "left" : 226,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[3]/A[1]",
+      "width" : 57,
+      "height" : 45
+    }, {
+      "top" : 188,
+      "left" : 128,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/A[1]",
+      "width" : 706,
+      "height" : 35
+    }, {
+      "top" : 546,
+      "left" : 128,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[5]/A[1]",
+      "width" : 706,
+      "height" : 35
+    }, {
+      "top" : 708,
+      "left" : 128,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[8]/A[1]",
+      "width" : 706,
+      "height" : 35
+    }, {
+      "top" : 153,
+      "left" : 888,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/H2[1]/A[1]",
+      "width" : 184,
+      "height" : 16
+    }, {
+      "top" : 220,
+      "left" : 888,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[2]/H2[1]/A[1]",
+      "width" : 184,
+      "height" : 16
+    }, {
+      "top" : 478,
+      "left" : 312,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[1]",
+      "width" : 39,
+      "height" : 22
+    }, {
+      "top" : 593,
+      "left" : 538,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+      "width" : 88,
+      "height" : 22
+    }, {
+      "top" : 640,
+      "left" : 312,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/BUTTON[1]",
+      "width" : 39,
+      "height" : 22
+    }, {
+      "top" : 969,
+      "left" : 312,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[9]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[8]/BUTTON[1]",
+      "width" : 39,
+      "height" : 22
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 0,
+    "id" : 18,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[9]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[8]/BUTTON[1]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 143.0,
+    "cluster" : 18,
+    "timeAdded" : 1633486534796,
+    "nearestState" : "state13"
+  }, {
+    "name" : "state106",
+    "url" : "http://localhost:3000/collabtive/admin.php?action=editform&id=1",
+    "candidateElements" : [ {
+      "top" : 43,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 43,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 43,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[3]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 43,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 153,
+      "left" : 888,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/H2[1]/A[1]",
+      "width" : 184,
+      "height" : 16
+    }, {
+      "top" : 220,
+      "left" : 888,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[2]/H2[1]/A[1]",
+      "width" : 184,
+      "height" : 16
+    }, {
+      "top" : 843,
+      "left" : 458,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[1]/DIV[1]/TABLE[1]/TBODY[25]/TR[1]/TD[2]/BUTTON[1]",
+      "width" : 38,
+      "height" : 22
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 106,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 27.0,
+    "cluster" : 106,
+    "timeAdded" : 1633486845348,
+    "nearestState" : "state41"
+  }, {
+    "name" : "state13",
+    "url" : "http://localhost:3000/collabtive/manageuser.php?action=profile&id=1",
+    "candidateElements" : [ {
+      "top" : 19,
+      "left" : 888,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+      "width" : 32,
+      "height" : 32
+    }, {
+      "top" : 19,
+      "left" : 926,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+      "width" : 32,
+      "height" : 32
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 85,
+      "left" : 110,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 57,
+      "height" : 45
+    }, {
+      "top" : 85,
+      "left" : 168,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[2]/A[1]",
+      "width" : 57,
+      "height" : 45
+    }, {
+      "top" : 147,
+      "left" : 795,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+      "width" : 30,
+      "height" : 26
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 257,
+      "left" : 458,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[1]/DIV[1]/TABLE[1]/TBODY[3]/TR[1]/TD[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 419,
+      "left" : 458,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[1]/DIV[1]/TABLE[1]/TBODY[9]/TR[1]/TD[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    } ],
+    "fanIn" : 6,
+    "fanOut" : 4,
+    "id" : 13,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 176.0,
+    "cluster" : 13,
+    "timeAdded" : 1633486489692,
+    "nearestState" : "index"
+  }, {
+    "name" : "state16",
+    "url" : "http://localhost:3000/collabtive/admin.php?action=users",
+    "candidateElements" : [ {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 85,
+      "left" : 110,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 57,
+      "height" : 45
+    }, {
+      "top" : 85,
+      "left" : 168,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[2]/A[1]",
+      "width" : 57,
+      "height" : 45
+    }, {
+      "top" : 188,
+      "left" : 128,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/A[1]",
+      "width" : 706,
+      "height" : 35
+    }, {
+      "top" : 195,
+      "left" : 778,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 19,
+      "height" : 26
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[8]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 272,
+      "left" : 172,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 32,
+      "height" : 32
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/DIV[1]/A[1]",
+      "width" : 14,
+      "height" : 14
+    }, {
+      "top" : 311,
+      "left" : 171,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/SPAN[1]/A[1]",
+      "width" : 32,
+      "height" : 14
+    }, {
+      "top" : 371,
+      "left" : 166,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[3]/DIV[1]/A[1]",
+      "width" : 64,
+      "height" : 23
+    }, {
+      "top" : 421,
+      "left" : 128,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[5]/A[1]",
+      "width" : 706,
+      "height" : 35
+    }, {
+      "top" : 428,
+      "left" : 778,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[5]/DIV[1]/A[1]",
+      "width" : 19,
+      "height" : 26
+    }, {
+      "top" : 494,
+      "left" : 185,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/DIV[1]/A[1]",
+      "width" : 33,
+      "height" : 27
+    }, {
+      "top" : 496,
+      "left" : 773,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]",
+      "width" : 14,
+      "height" : 23
+    }, {
+      "top" : 521,
+      "left" : 185,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[1]/TD[2]/DIV[1]/A[1]",
+      "width" : 27,
+      "height" : 27
+    }, {
+      "top" : 523,
+      "left" : 773,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[1]/TD[4]/A[1]",
+      "width" : 14,
+      "height" : 23
+    }, {
+      "top" : 548,
+      "left" : 185,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[1]/TD[2]/DIV[1]/A[1]",
+      "width" : 37,
+      "height" : 27
+    }, {
+      "top" : 550,
+      "left" : 773,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[1]/TD[4]/A[1]",
+      "width" : 14,
+      "height" : 23
+    }, {
+      "top" : 577,
+      "left" : 166,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/DIV[2]/DIV[1]/A[1]",
+      "width" : 61,
+      "height" : 23
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[8]/DIV[1]/BUTTON[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]",
+      "width" : 0,
+      "height" : 0
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 4,
+    "id" : 16,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[8]/DIV[1]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[2]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[6]/TABLE[1]/TBODY[3]/TR[2]/TD[2]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/BUTTON[2]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 778.0,
+    "cluster" : 16,
+    "timeAdded" : 1633486511512,
+    "nearestState" : "state14"
+  }, {
+    "name" : "state14",
+    "url" : "http://localhost:3000/collabtive/admin.php?action=projects",
+    "candidateElements" : [ {
+      "top" : 19,
+      "left" : 964,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]",
+      "width" : 32,
+      "height" : 32
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[3]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 85,
+      "left" : 110,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 57,
+      "height" : 45
+    }, {
+      "top" : 85,
+      "left" : 168,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[2]/A[1]",
+      "width" : 57,
+      "height" : 45
+    }, {
+      "top" : 85,
+      "left" : 226,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[3]/A[1]",
+      "width" : 57,
+      "height" : 45
+    }, {
+      "top" : 188,
+      "left" : 128,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/A[1]",
+      "width" : 706,
+      "height" : 35
+    }, {
+      "top" : 195,
+      "left" : 778,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 19,
+      "height" : 26
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[8]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[8]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[10]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[11]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[13]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[14]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[15]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[8]/TD[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 263,
+      "left" : 166,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[3]/DIV[1]/A[1]",
+      "width" : 77,
+      "height" : 23
+    }, {
+      "top" : 263,
+      "left" : 244,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[3]/DIV[1]/A[2]",
+      "width" : 99,
+      "height" : 23
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[2]",
+      "width" : 0,
+      "height" : 0
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 5,
+    "id" : 14,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[2]" ],
+    "hasNearDuplicate" : true,
+    "distToNearestState" : 11.0,
+    "cluster" : 14,
+    "timeAdded" : 1633486496100,
+    "nearestState" : "state6"
+  } ],
+  "links" : [ {
+    "source" : 0,
+    "target" : 2,
+    "text" : "",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=, attributes={class=loginbutn, evlist=false, onfocus=this.blur();, title=Login, type=submit}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 3,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=index.php, title=Desktop}}",
+    "eventType" : "click"
+  }, {
+    "source" : 3,
+    "target" : 6,
+    "text" : "My projects",
+    "element" : "Element{node=[A: null], tag=A, text=My projects, attributes={evlist=false, href=myprojects.php, title=My projects}}",
+    "eventType" : "click"
+  }, {
+    "source" : 6,
+    "target" : 3,
+    "text" : "Desktop",
+    "element" : "Element{node=[A: null], tag=A, text=Desktop, attributes={anyaccess=none, class=desktop, evlist=false, href=index.php}}",
+    "eventType" : "click"
+  }, {
+    "source" : 6,
+    "target" : 13,
+    "text" : "My account",
+    "element" : "Element{node=[A: null], tag=A, text=My account, attributes={anyaccess=none, class=profil, evlist=false, href=manageuser.php?action=profile&id=1}}",
+    "eventType" : "click"
+  }, {
+    "source" : 13,
+    "target" : 14,
+    "text" : "Project administration",
+    "element" : "Element{node=[A: null], tag=A, text=Project administration, attributes={anyaccess=none, class=overview, evlist=false, href=admin.php?action=projects}}",
+    "eventType" : "click"
+  }, {
+    "source" : 16,
+    "target" : 14,
+    "text" : "Project administration",
+    "element" : "Element{node=[A: null], tag=A, text=Project administration, attributes={evlist=false, href=admin.php?action=projects}}",
+    "eventType" : "click"
+  }, {
+    "source" : 14,
+    "target" : 18,
+    "text" : "System administration",
+    "element" : "Element{node=[A: null], tag=A, text=System administration, attributes={anyaccess=none, class=system, evlist=false, href=admin.php?action=system}}",
+    "eventType" : "click"
+  }, {
+    "source" : 14,
+    "target" : 16,
+    "text" : "User administration",
+    "element" : "Element{node=[A: null], tag=A, text=User administration, attributes={evlist=false, href=admin.php?action=users}}",
+    "eventType" : "click"
+  }, {
+    "source" : 16,
+    "target" : 13,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=manageuser.php?action=profile&id=1, title=admin}}",
+    "eventType" : "click"
+  }, {
+    "source" : 13,
+    "target" : 41,
+    "text" : "Edit",
+    "element" : "Element{node=[A: null], tag=A, text=Edit, attributes={evlist=false, href=manageuser.php?action=editform&id=1}}",
+    "eventType" : "click"
+  }, {
+    "source" : 41,
+    "target" : 13,
+    "text" : "My account",
+    "element" : "Element{node=[A: null], tag=A, text=My account, attributes={evlist=false, href=manageuser.php?action=profile&id=1}}",
+    "eventType" : "click"
+  }, {
+    "source" : 6,
+    "target" : 3,
+    "text" : "Desktop",
+    "element" : "Element{node=[A: null], tag=A, text=Desktop, attributes={evlist=false, href=index.php}}",
+    "eventType" : "click"
+  }, {
+    "source" : 6,
+    "target" : 64,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={accesskey=z, evlist=false, href=#, onfocus=tinyMCE.getInstanceById('desc').focus();, title=Jump to tool buttons - Alt+Q, Jump to editor - Alt-Z, Jump to element path - Alt-X}}",
+    "eventType" : "click"
+  }, {
+    "source" : 14,
+    "target" : 18,
+    "text" : "System administration",
+    "element" : "Element{node=[A: null], tag=A, text=System administration, attributes={evlist=false, href=admin.php?action=system}}",
+    "eventType" : "click"
+  }, {
+    "source" : 14,
+    "target" : 100,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={accesskey=z, evlist=false, href=#, onfocus=tinyMCE.getInstanceById('desc').focus();, title=Jump to tool buttons - Alt+Q, Jump to editor - Alt-Z, Jump to element path - Alt-X}}",
+    "eventType" : "click"
+  }, {
+    "source" : 16,
+    "target" : 106,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=edit, evlist=false, href=admin.php?action=editform&id=1, title=Edit}}",
+    "eventType" : "click"
+  }, {
+    "source" : 16,
+    "target" : 13,
+    "text" : "admin",
+    "element" : "Element{node=[A: null], tag=A, text=admin, attributes={evlist=false, href=manageuser.php?action=profile&id=1, title=admin}}",
+    "eventType" : "click"
+  }, {
+    "source" : 13,
+    "target" : 3,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=, target=_blank}}",
+    "eventType" : "click"
+  }, {
+    "source" : 3,
+    "target" : 153,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={accesskey=z, evlist=false, href=#, onfocus=tinyMCE.getInstanceById('desc').focus();, title=Jump to tool buttons - Alt+Q, Jump to editor - Alt-Z, Jump to element path - Alt-X}}",
+    "eventType" : "click"
+  }, {
+    "source" : 14,
+    "target" : 177,
+    "text" : "User administration",
+    "element" : "Element{node=[A: null], tag=A, text=User administration, attributes={anyaccess=none, class=users, evlist=false, href=admin.php?action=users}}",
+    "eventType" : "click"
+  }, {
+    "source" : 177,
+    "target" : 178,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={class=edit, evlist=false, href=admin.php?action=editform&id=1, title=Edit}}",
+    "eventType" : "click"
+  }, {
+    "source" : 13,
+    "target" : 185,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=managetags.php?action=gettag&tag=&id=0}}",
+    "eventType" : "click"
+  }, {
+    "source" : 185,
+    "target" : 13,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=manageuser.php?action=profile&id=1, title=admin}}",
+    "eventType" : "click"
+  }, {
+    "source" : 185,
+    "target" : 13,
+    "text" : "admin",
+    "element" : "Element{node=[A: null], tag=A, text=admin, attributes={evlist=false, href=manageuser.php?action=profile&id=1, title=admin}}",
+    "eventType" : "click"
+  } ]
+}

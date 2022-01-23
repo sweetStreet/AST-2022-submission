@@ -1,0 +1,471 @@
+<html><head>
+  
+  <meta charset="utf-8">
+  <title>Meeting Room Booking System</title>
+  
+      <link href="jquery/ui/css/sunny/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css">
+    
+    <link href="jquery/datatables/css/mrbs-page.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/mrbs-table.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/ColReorder.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/ColVis.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="css/mrbs.css.php" type="text/css">
+        <link rel="stylesheet" media="print" href="css/mrbs-print.css.php" type="text/css">
+    <!--[if IE]>
+    <link rel="stylesheet" href="css/mrbs-ie.css" type="text/css">
+    <![endif]-->
+        <!--[if IE 8]>
+    <link rel="stylesheet" href="css/mrbs-ie8.css" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/mrbs-ielte8.css" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="css/mrbs-ielte7.css.php" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="css/mrbs-ielte6.css" type="text/css">
+    <![endif]-->
+    
+    <meta name="robots" content="noindex">
+    
+<script type="text/javascript" src="jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-1.8.22.custom.min.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-i18n.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-datepicker-en.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-datepicker-en-US.js"></script>
+     
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE6 = false;
+  //]]>
+</script>
+<!--[if lte IE 6]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE6 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE7 = false;
+  //]]>
+</script>
+<!--[if lte IE 7]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE7 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE8 = false;
+  //]]>
+</script>
+<!--[if lte IE 8]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE8 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+    function init(params)
+  {
+  }
+  //]]>
+</script>
+    
+  <script type="text/javascript" src="jquery/datatables/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="jquery/datatables/js/ColReorder.min.js"></script>
+    <script type="text/javascript" src="jquery/datatables/js/ColVis.mrbs.min.js"></script>
+    <script type="text/javascript" src="jquery/datatables/js/FixedColumns.mrbs.js"></script>
+  <script type="text/javascript" src="jquery/datatables/js/plugins.js"></script>
+      
+  <script type="text/javascript" src="js/datatables.js.php?area=1"></script>
+
+    <script type="text/javascript" src="js/report.js.php?area=1"></script>
+  <script type="text/javascript" src="js/functions.js.php?area=1"></script>
+<script type="text/javascript" src="js/datepicker.js.php?area=1"></script>
+<script type="text/javascript" src="js/general.js.php?area=1"></script>
+    
+<script type="text/javascript">
+
+//<![CDATA[
+
+
+
+
+
+$(window).load(function() {
+
+  var args = {day: '30',
+              month: '9',
+              year: '2021',
+              area: '1',
+              room: '1',
+              page: 'report'};
+    init(args);
+
+});
+
+
+//]]>
+</script>  
+  </head>
+  
+  <body class="report js">
+    <script type="text/javascript">
+      //<![CDATA[
+      $('body').addClass('js').removeClass('non_js');
+      //]]>
+    </script> 
+
+    <div class="screenonly">
+
+[Warning: Server failed to set locale to 'en_US.UTF-8']
+  <table id="banner">
+    <tbody><tr>
+      <td id="company">
+        <div>
+          <div id="logo">
+<span>Your Company</span>
+</div>
+          <div id="mrbs">
+            <a href="index.php">Meeting Room Booking System</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <form action="day.php" method="get" id="Form1">
+          <div>
+            <span id="dateselector"><input class="date hasDatepicker" type="text" id="datepicker">
+<input type="hidden" id="datepicker_alt" name="_alt" value="2021-9-30" disabled="disabled">
+<input type="hidden" id="datepicker_alt_day" name="day" value="30">
+<input type="hidden" id="datepicker_alt_month" name="month" value="9">
+<input type="hidden" id="datepicker_alt_year" name="year" value="2021">
+</span>
+  <script type="text/javascript">
+
+  $(function() {
+    $("#datepicker").datepicker({yearRange: '2016:2026',
+                                                       altField: '#datepicker_alt'
+                                                       , onClose: function(dateText, inst) {datepicker_close(dateText, inst, 'Form1');}                                                      });
+        var initial_date = new Date(2021, 8, 30);
+    var dateFormat = $("#datepicker").datepicker( "option", "dateFormat" );
+    document.getElementById('datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('datepicker_alt_day').value = 30;
+    document.getElementById('datepicker_alt_month').value = 9;
+    document.getElementById('datepicker_alt_year').value = 2021;
+    $(".ui-datepicker").draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('dateselector');
+  var datepicker_html = '<input class="date" type="text" id="datepicker">\n';
+    datepicker_html += '<input type="hidden" id="datepicker_alt"'
+  datepicker_html += ' name="_alt"';
+  datepicker_html += ' value="2021-9-30"';
+  datepicker_html += ' disabled="disabled">\n';
+    datepicker_html += '<input type="hidden" id="datepicker_alt_day" name="day">\n';
+  datepicker_html += '<input type="hidden" id="datepicker_alt_month" name="month">\n';
+  datepicker_html += '<input type="hidden" id="datepicker_alt_year" name="year">\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  </script>
+  <input type="hidden" name="area" value="1">
+<input type="hidden" name="room" value="1">
+<input type="submit" value="goto">
+           </div>
+        </form>
+              </td>
+      <td>
+<a href="help.php?day=30&amp;month=9&amp;year=2021&amp;area=1&amp;room=1">Help</a>
+</td>
+<td>
+<a href="admin.php?day=30&amp;month=9&amp;year=2021&amp;area=1&amp;room=1">Rooms</a>
+</td>
+<td>
+<a href="report.php?day=30&amp;month=9&amp;year=2021&amp;area=1&amp;room=1">Report</a>
+</td>
+      
+      <td>
+        <form id="header_search" method="get" action="search.php">
+          <div>
+            <a href="search.php?advanced=1">Search:</a>
+            <input type="search" name="search_str" value="" required="">
+            <input type="hidden" name="day" value="30">
+            <input type="hidden" name="month" value="9">
+            <input type="hidden" name="year" value="2021">
+            <input type="hidden" name="area" value="1">
+<input type="hidden" name="room" value="1">
+          </div>
+        <input type="hidden" name="datatable" value="1"></form>
+      </td>
+      <td>
+<div id="logon_box">
+                <a href="">Unknown user</a>
+                <form method="post" action="admin.php">
+                  <div>
+                    <input type="hidden" name="TargetURL" value="report.php?day=30&amp;month=9&amp;year=2021&amp;area=1&amp;room=1">
+                    <input type="hidden" name="Action" value="QueryName">
+                    <input type="submit" value=" Log in ">
+                  </div>
+                </form>
+</div>
+</td>
+    </tr>
+  </tbody></table>
+</div>
+
+<div id="contents">
+  <div class="screenonly">
+ 
+    <form class="form_general" id="report_form" method="get" action="report.php">
+      <fieldset>
+      <legend>Report on Meetings</legend>
+      
+        <fieldset>
+        <legend>Search criteria</legend>
+      
+        <div id="div_report_start">
+          <label>Report start date:</label>
+<span id="from_dateselector"><input class="date hasDatepicker" type="text" id="from_datepicker">
+<input type="hidden" id="from_datepicker_alt" name="from__alt" value="2021-9-30" disabled="disabled">
+<input type="hidden" id="from_datepicker_alt_day" name="from_day" value="30">
+<input type="hidden" id="from_datepicker_alt_month" name="from_month" value="9">
+<input type="hidden" id="from_datepicker_alt_year" name="from_year" value="2021">
+</span>
+  <script type="text/javascript">
+
+  $(function() {
+    $("#from_datepicker").datepicker({yearRange: '2016:2026',
+                                                       altField: '#from_datepicker_alt'
+                                                                                                             });
+        var initial_date = new Date(2021, 8, 30);
+    var dateFormat = $("#from_datepicker").datepicker( "option", "dateFormat" );
+    document.getElementById('from_datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('from_datepicker_alt_day').value = 30;
+    document.getElementById('from_datepicker_alt_month').value = 9;
+    document.getElementById('from_datepicker_alt_year').value = 2021;
+    $(".ui-datepicker").draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('from_dateselector');
+  var datepicker_html = '<input class="date" type="text" id="from_datepicker">\n';
+    datepicker_html += '<input type="hidden" id="from_datepicker_alt"'
+  datepicker_html += ' name="from__alt"';
+  datepicker_html += ' value="2021-9-30"';
+  datepicker_html += ' disabled="disabled">\n';
+    datepicker_html += '<input type="hidden" id="from_datepicker_alt_day" name="from_day">\n';
+  datepicker_html += '<input type="hidden" id="from_datepicker_alt_month" name="from_month">\n';
+  datepicker_html += '<input type="hidden" id="from_datepicker_alt_year" name="from_year">\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  </script>
+          
+        </div>
+      
+        <div id="div_report_end">
+          <label>Report end date:</label>
+<span id="to_dateselector"><input class="date hasDatepicker" type="text" id="to_datepicker">
+<input type="hidden" id="to_datepicker_alt" name="to__alt" value="2021-11-29" disabled="disabled">
+<input type="hidden" id="to_datepicker_alt_day" name="to_day" value="29">
+<input type="hidden" id="to_datepicker_alt_month" name="to_month" value="11">
+<input type="hidden" id="to_datepicker_alt_year" name="to_year" value="2021">
+</span>
+  <script type="text/javascript">
+
+  $(function() {
+    $("#to_datepicker").datepicker({yearRange: '2016:2026',
+                                                       altField: '#to_datepicker_alt'
+                                                                                                             });
+        var initial_date = new Date(2021, 10, 29);
+    var dateFormat = $("#to_datepicker").datepicker( "option", "dateFormat" );
+    document.getElementById('to_datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('to_datepicker_alt_day').value = 29;
+    document.getElementById('to_datepicker_alt_month').value = 11;
+    document.getElementById('to_datepicker_alt_year').value = 2021;
+    $(".ui-datepicker").draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('to_dateselector');
+  var datepicker_html = '<input class="date" type="text" id="to_datepicker">\n';
+    datepicker_html += '<input type="hidden" id="to_datepicker_alt"'
+  datepicker_html += ' name="to__alt"';
+  datepicker_html += ' value="2021-11-29"';
+  datepicker_html += ' disabled="disabled">\n';
+    datepicker_html += '<input type="hidden" id="to_datepicker_alt_day" name="to_day">\n';
+  datepicker_html += '<input type="hidden" id="to_datepicker_alt_month" name="to_month">\n';
+  datepicker_html += '<input type="hidden" id="to_datepicker_alt_year" name="to_year">\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  </script>
+          </div>
+      
+        <div id="div_areamatch">                  
+          <label for="areamatch">Match area:</label>
+          <input type="text" id="areamatch" name="areamatch" value="" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+        </div>   
+      
+        <div id="div_roommatch">
+          <label for="roommatch">Match room:</label>
+          <input type="text" id="roommatch" name="roommatch" value="" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+        </div>
+      
+        <div id="div_typematch">
+          <label for="typematch">Match type:</label>
+          <select id="typematch" name="typematch[]" multiple="multiple" size="5">
+                              <option value="E">External</option>
+                  <option value="I">Internal</option>
+          </select>
+          <span>Use Control-Click to select more than one type</span>
+        </div>
+      
+        <div id="div_namematch">     
+          <label for="namematch">Match brief description:</label>
+          <input type="text" id="namematch" name="namematch" value="">
+        </div>   
+      
+        <div id="div_descrmatch">
+          <label for="descrmatch">Match full description:</label>
+          <input type="text" id="descrmatch" name="descrmatch" value="">
+        </div>
+      
+        <div id="div_creatormatch">
+          <label for="creatormatch">Created by:</label>
+          <input type="text" id="creatormatch" name="creatormatch" value="">
+        </div>
+        
+        <div id="div_confirmationstatus">
+<label>Confirmation status:</label>
+<div class="group">
+<label><input class="radio" type="radio" name="match_confirmed" value="2" checked="checked">All</label>
+<label><input class="radio" type="radio" name="match_confirmed" value="1">Confirmed</label>
+<label><input class="radio" type="radio" name="match_confirmed" value="0">Tentative</label>
+</div>
+</div>
+        </fieldset>
+      
+        <fieldset>
+        <legend>Output options</legend>
+        
+        <div id="div_output">
+<label>Output:</label>
+<div class="group">
+<label><input class="radio" type="radio" name="output" value="0" checked="checked">Report</label>
+<label><input class="radio" type="radio" name="output" value="1">Summary</label>
+</div>
+</div>
+<div id="div_format">
+<label>Format:</label>
+<div class="group">
+<label><input class="radio" type="radio" name="output_format" value="0" checked="checked">HTML</label>
+<label><input class="radio" type="radio" name="output_format" value="1">CSV</label>
+</div>
+</div>
+
+      
+        <div id="div_sortby"> 
+          <label>Sort report by:</label>
+          <div class="group">
+            <label>
+              <input class="radio" type="radio" name="sortby" value="r" checked="checked">Room            </label>
+            <label>
+              <input class="radio" type="radio" name="sortby" value="s">Start date/time            </label>
+          </div>
+        </div>
+      
+        <div id="div_sumby">
+          <label>Summarize by:</label>
+          <div class="group">
+            <label>
+              <input class="radio" type="radio" name="sumby" value="d" checked="checked">Brief description            </label>
+            <label>
+              <input class="radio" type="radio" name="sumby" value="c">Creator            </label>
+            <label>
+              <input class="radio" type="radio" name="sumby" value="t">Type            </label>
+          </div>
+        </div>
+        </fieldset>
+      
+        <div id="report_submit">
+          <input type="hidden" name="phase" value="2">
+          <input class="submit" type="submit" value="Run Report">
+        </div>
+        
+      
+      </fieldset>
+    <input type="hidden" name="datatable" value="1"></form>
+  </div>
+  </div><div class="screenonly trailer" id="trailer">
+<div id="viewday">
+<div class="trailer_label">
+<a href="day.php?year=2021&amp;month=9&amp;day=30&amp;area=1&amp;room=1">View Day:</a>
+</div>
+<div class="trailer_links">
+<span><a href="day.php?year=2021&amp;month=09&amp;day=24&amp;area=1&amp;room=1">Sep 24</a></span>
+ | <span><a href="day.php?year=2021&amp;month=09&amp;day=25&amp;area=1&amp;room=1">Sep 25</a></span>
+ | <span><a href="day.php?year=2021&amp;month=09&amp;day=26&amp;area=1&amp;room=1">Sep 26</a></span>
+ | <span><a href="day.php?year=2021&amp;month=09&amp;day=27&amp;area=1&amp;room=1">Sep 27</a></span>
+ | <span><a href="day.php?year=2021&amp;month=09&amp;day=28&amp;area=1&amp;room=1">Sep 28</a></span>
+ | <span><a href="day.php?year=2021&amp;month=09&amp;day=29&amp;area=1&amp;room=1">Sep 29</a></span>
+ | <span class="current">[ <a href="day.php?year=2021&amp;month=09&amp;day=30&amp;area=1&amp;room=1">Sep 30</a> ]</span>
+ | <span><a href="day.php?year=2021&amp;month=10&amp;day=01&amp;area=1&amp;room=1">Oct 01</a></span>
+ | <span><a href="day.php?year=2021&amp;month=10&amp;day=02&amp;area=1&amp;room=1">Oct 02</a></span>
+ | <span><a href="day.php?year=2021&amp;month=10&amp;day=03&amp;area=1&amp;room=1">Oct 03</a></span>
+ | <span><a href="day.php?year=2021&amp;month=10&amp;day=04&amp;area=1&amp;room=1">Oct 04</a></span>
+ | <span><a href="day.php?year=2021&amp;month=10&amp;day=05&amp;area=1&amp;room=1">Oct 05</a></span>
+ | <span><a href="day.php?year=2021&amp;month=10&amp;day=06&amp;area=1&amp;room=1">Oct 06</a></span>
+ | <span><a href="day.php?year=2021&amp;month=10&amp;day=07&amp;area=1&amp;room=1">Oct 07</a></span>
+</div>
+</div>
+<div id="viewweek">
+<div class="trailer_label">
+<a href="week.php?year=2021&amp;month=9&amp;day=30&amp;area=1&amp;room=1">View Week:</a>
+</div>
+<div class="trailer_links">
+  <a href="week.php?year=2021&amp;month=09&amp;day=02&amp;area=1&amp;room=1">Aug 29</a>
+ |   <a href="week.php?year=2021&amp;month=09&amp;day=09&amp;area=1&amp;room=1">Sep 05</a>
+ |   <a href="week.php?year=2021&amp;month=09&amp;day=16&amp;area=1&amp;room=1">Sep 12</a>
+ |   <a href="week.php?year=2021&amp;month=09&amp;day=23&amp;area=1&amp;room=1">Sep 19</a>
+ | <span class="current">
+[   <a href="week.php?year=2021&amp;month=09&amp;day=30&amp;area=1&amp;room=1">Sep 26</a>
+]</span>
+ |   <a href="week.php?year=2021&amp;month=10&amp;day=07&amp;area=1&amp;room=1">Oct 03</a>
+ |   <a href="week.php?year=2021&amp;month=10&amp;day=14&amp;area=1&amp;room=1">Oct 10</a>
+ |   <a href="week.php?year=2021&amp;month=10&amp;day=21&amp;area=1&amp;room=1">Oct 17</a>
+ |   <a href="week.php?year=2021&amp;month=10&amp;day=28&amp;area=1&amp;room=1">Oct 24</a>
+</div>
+</div>
+<div id="viewmonth">
+<div class="trailer_label">
+<a href="month.php?year=2021&amp;month=9&amp;day=30&amp;area=1&amp;room=1">View Month:</a>
+</div>
+<div class="trailer_links">
+  <a href="month.php?year=2021&amp;month=07&amp;day=30&amp;area=1&amp;room=1">Jul 2021</a>
+ |   <a href="month.php?year=2021&amp;month=08&amp;day=30&amp;area=1&amp;room=1">Aug 2021</a>
+ | <span class="current">
+[   <a href="month.php?year=2021&amp;month=09&amp;day=30&amp;area=1&amp;room=1">Sep 2021</a>
+]</span>
+ |   <a href="month.php?year=2021&amp;month=10&amp;day=30&amp;area=1&amp;room=1">Oct 2021</a>
+ |   <a href="month.php?year=2021&amp;month=11&amp;day=30&amp;area=1&amp;room=1">Nov 2021</a>
+ |   <a href="month.php?year=2021&amp;month=12&amp;day=30&amp;area=1&amp;room=1">Dec 2021</a>
+ |   <a href="month.php?year=2022&amp;month=01&amp;day=30&amp;area=1&amp;room=1">Jan 2022</a>
+ |   <a href="month.php?year=2022&amp;month=02&amp;day=28&amp;area=1&amp;room=1">Feb 2022</a>
+ |   <a href="month.php?year=2022&amp;month=03&amp;day=30&amp;area=1&amp;room=1">Mar 2022</a>
+</div>
+</div>
+</div>
+  
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-draggable" style="position: relative;"></div><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul></body></html>

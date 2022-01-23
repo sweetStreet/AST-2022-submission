@@ -1,0 +1,256 @@
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat" style=""><head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    	<meta name="language" content="en">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/ppma/css/general_enclosed_foundicons.css">
+        <link rel="stylesheet" href="/ppma/css/accessibility_foundicons.css">
+        <link rel="shortcut icon" href="/ppma/favicon.ico">
+
+        <!--[if lt IE 8]>
+            <link rel="stylesheet" href="/ppma/css/general_enclosed_foundicons_ie7.css">
+            <link rel="stylesheet" href="/ppma/css/accessibility_foundicons_ie7.css">
+        <![endif]-->
+        <link rel="stylesheet" href="/ppma/css/foundation.min.css">
+        <link rel="stylesheet" href="/ppma/css/app.css">
+                            	<link rel="stylesheet" type="text/css" href="/ppma/css/custom-theme/jquery-ui-1.9.2.custom.min.css">
+<link rel="stylesheet" type="text/css" href="/ppma/assets/a29bf504/tag-cloud.css">
+<script type="text/javascript" src="js/foundation.min.js"></script>
+<script type="text/javascript" src="/ppma/assets/4472cfae/jquery.ba-bbq.min.js"></script>
+<script type="text/javascript" src="/ppma/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script type="text/javascript" src="/ppma/js/zeroclipboard/dist/ZeroClipboard.min.js"></script>
+<script type="text/javascript" src="/ppma/js/ppma.min.js"></script>
+<title>PHP Password Manager - Entry</title>
+    </head>
+
+    <body>
+
+        
+    <div class="container">
+        
+        
+    <nav class="top-bar">
+        <ul>
+            <li class="name"><h1><a href="/ppma/index.php">PHP Password Manager</a></h1></li>
+        </ul>
+        <section>
+            <ul class="left">
+                <li class="has-dropdown">
+                    <a href="/ppma/index.php?r=entry/index">Entries</a>                    <ul class="dropdown">
+                        <li><a href="/ppma/index.php?r=entry/index">Overview</a></li>
+                        <li><a href="/ppma/index.php?r=entry/create">Create</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/ppma/index.php?r=import/csv">Import from CSV</a></li>
+                        <li><a href="/ppma/index.php?r=import/phppassmanager">Import from phpPasswordManager</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/ppma/index.php?r=export/csv">Export to CSV</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="/ppma/index.php?r=tag/index">Tags</a>                    <ul class="dropdown">
+                        <li><a href="/ppma/index.php?r=tag/index">Overview</a></li>
+                        <li><a href="/ppma/index.php?r=tag/create">Create</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a>Settings</a>
+                    <ul class="dropdown">
+                        <li><a href="/ppma/index.php?r=settings/application">General</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a>Profile</a>
+                    <ul class="dropdown">
+                        <li><a href="/ppma/index.php?r=settings/password">Change Password</a></li>
+                        <li><a href="/ppma/index.php?r=user/logout">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="right">
+
+                <li class="search">
+                    <form method="get">
+                        <input type="hidden" name="r" value="entry/index">
+                        <input type="search" name="q" value="" rel="http://localhost:3000/ppma/index.php?r=entry/searchName" class="ui-autocomplete-input" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                    </form>
+                </li>
+            </ul>
+        </section>
+    </nav>
+
+    <div class="row">
+        <div class="nine columns" role="content" id="content">
+                        
+<h1>Manage Entries</h1>
+
+<p>
+    You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
+    or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
+</p>
+
+    <div class="alert-box success">
+        The entry was created successfully.        <a href="" class="close">×</a>
+    </div>
+
+<p><a class="search-button">Advanced Search</a></p>
+<div class="search-form" style="display: none;">
+        <form id="yw0" action="/ppma/index.php?r=entry/index" method="get">
+<div style="display:none"><input type="hidden" value="entry/index" name="r"></div>
+            <label for="Entry_name">Name</label>            <input size="50" maxlength="255" name="Entry[name]" id="Entry_name" type="text">
+            <label for="Entry_url">URL</label>            <input size="50" maxlength="255" name="Entry[url]" id="Entry_url" type="text">
+            <label for="Entry_username">Username</label>            <input size="50" maxlength="255" name="Entry[username]" id="Entry_username" type="text">
+            <label for="Entry_tagList">Tags</label>            <input size="50" name="Entry[tagList]" id="Entry_tagList" type="text" value="">
+            <label for="Entry_comment">Comment</label>            <input size="50" name="Entry[comment]" id="Entry_comment" type="text">
+            <input class="secondary button radius" type="submit" name="yt0" value="Search">
+            <hr>
+
+    </form></div>
+
+<div class="row page-nav" style="padding-bottom: 10px">
+    <div class="ten columns" style="text-align: right; line-height: 2em">
+        Results per page:
+    </div>
+    <div class="two columns" style="line-height: 2em" data-url="/ppma/index.php?r=entry/index">
+        <select name="pageSize" id="pageSize">
+<option value="5">5</option>
+<option value="10" selected="selected">10</option>
+<option value="25">25</option>
+<option value="50">50</option>
+<option value="100">100</option>
+<option value="250">250</option>
+</select>    </div>
+</div>
+
+<div id="entries" class="grid-view">
+<div class="summary">Displaying 1-1 of 1 result.</div>
+<table class="items">
+<thead>
+<tr>
+<th id="entries_c0"><a class="sort-link asc" href="/ppma/index.php?r=entry/index&amp;Entry_sort=name.desc">Name</a></th><th id="entries_c1"><a class="sort-link" href="/ppma/index.php?r=entry/index&amp;Entry_sort=username">Username</a></th><th id="entries_c2">Tags</th><th class="button-column" id="entries_c3">&nbsp;</th></tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a class="update-entry" data-reveal-id="entry-form-modal" rel="/ppma/index.php?r=entry/getData&amp;id=7&amp;withPassword=1" href="/ppma/index.php?r=entry/update&amp;id=7&amp;returnUrl=%2Fppma%2Findex.php%3Fr%3Dentry%2Findex">Random Website</a></td><td>jdoe</td><td><a href="/ppma/index.php?r=entry/index&amp;Entry%5BtagList%5D=POFeABBy">POFeABBy</a></td><td class="button-column"><a title="Visit Website" target="_blank" href="nrzmfmkJ"><i class="foundicon-access-network"></i></a><a title="Copy Username" class="copy-to-clipboard" data-clipboard-text="123456" href="#"><i class="foundicon-address-book"></i></a><a title="Copy Password" class="copy-to-clipboard" data-clipboard-text="123456" href="#"><i class="foundicon-page"></i></a><a title="Update" data-reveal-id="entry-form-modal" class="update-entry" rel="/ppma/index.php?r=entry/getData&amp;id=7&amp;withPassword=1" href="/ppma/index.php?r=entry/update&amp;id=7&amp;returnUrl=%2Fppma%2Findex.php%3Fr%3Dentry%2Findex"><i class="foundicon-edit"></i></a><a title="Delete" class="delete" href="/ppma/index.php?r=entry/delete&amp;id=7"><i class="foundicon-remove"></i></a></td></tr>
+</tbody>
+</table>
+<div class="keys" style="display:none" title="/ppma/index.php?r=entry/index"><span>7</span></div>
+</div>        </div>
+
+        <aside class="three columns ui-sortable" rel="/ppma/index.php?r=settings/setSidebarPositions">
+
+    
+    
+                    
+                            <div id="tag-cloud" class="panel">
+
+    <h5>Tagcloud</h5>
+    <div class="settings"><i class="foundicon-settings"></i></div>
+
+                        <span class="weight-10">
+                <a href="/ppma/index.php?r=entry/index&amp;Entry%5BtagList%5D=POFeABBy">POFeABBy</a>            </span>
+            
+</div>
+            
+                    
+                                                
+<div id="most-viewed-entries" class="panel">
+
+    <h5>Most Viewed</h5>
+    <div class="settings"><i class="foundicon-settings"></i></div>
+
+            <ul>
+                            <li>
+                    <a data-reveal-id="entry-form-modal" rel="/ppma/index.php?r=entry/getData&amp;id=7&amp;withPassword=1" class="update-entry" title="has been viewed 0 time(s)" href="/ppma/index.php?r=entry/update&amp;id=7">Random Website</a>                </li>
+                    </ul>
+    
+</div>                
+            
+                    
+                                                
+<div id="recent-entries" class="panel">
+
+    <h5>Recent Entries</h5>
+    <div class="settings"><i class="foundicon-settings"></i></div>
+
+            <ul>
+                            <li>
+                    <a data-reveal-id="entry-form-modal" rel="/ppma/index.php?r=entry/getData&amp;id=7&amp;withPassword=1" class="update-entry" href="/ppma/index.php?r=entry/update&amp;id=7">Random Website</a>                </li>
+                    </ul>
+    
+</div>                
+            
+        
+    
+</aside>
+    </div>
+
+    <footer class="row">
+        <div class="twelve columns">
+            * <a href="http://sourceforge.net/projects/ppma/">ppma</a> (version 0.6.0)
+            powered by <a href="http://www.yiiframework.com/" target="_blank">yii framework</a> (version 1.1.15) and
+            <a href="http://foundation.zurb.com/" target="_blank">Foundation 3</a> (version 3.2)
+        </div>
+    </footer>
+
+    
+    </div>
+
+
+        
+<div id="entry-form-modal" class="reveal-modal medium open" style="top: 100px; opacity: 1; visibility: visible; display: block;">
+            <h2>Update entry</h2>
+        
+<form id="entry-form" action="/ppma/index.php?r=entry/update&amp;id=7&amp;returnUrl=%2Fppma%2Findex.php%3Fr%3Dentry%2Findex" method="post">
+    <input name="Entry[id]" id="Entry_id" type="hidden" value="7">
+    <label for="Entry_name">Name</label>    <input autocomplete="off" name="Entry[name]" id="Entry_name" type="text" maxlength="255">    
+    <label for="Entry_username">Username</label>    <input autocomplete="off" name="Entry[username]" id="Entry_username" type="text" maxlength="255">    
+    <label for="Entry_password" class="required">Password <span class="required">*</span></label>
+    <div class="row collapse">
+        <div class="ten columns">
+            <input autocomplete="off" required="required" name="Entry[password]" id="Entry_password" type="password" maxlength="255" value="">        </div>
+        <div class="one columns">
+            <span class="postfix button secondary expand copy-to-clipboard" data-clipboard-text="123456" title="copy password"><i class="foundicon-page"></i></span>
+        </div>
+        <div class="one columns">
+            <span class="postfix button secondary expand show-hide-password">
+                <i class="foundicon-access-eyeball"></i>
+            </span>
+        </div>
+    </div>
+    
+    <label for="Entry_url">URL</label>    <input name="Entry[url]" id="Entry_url" type="text" maxlength="255">    
+    <label for="Entry_tagList">Tags</label>    <input placeholder="separate by commas" name="Entry[tagList]" id="Entry_tagList" type="text" value="">    
+    <label for="Entry_comment">Comment</label>    <textarea rows="5" name="Entry[comment]" id="Entry_comment"></textarea>    
+    <input type="hidden" value="/ppma/index.php?r=entry/index" name="returnUrl" id="returnUrl">    <input class="button radius" type="submit" name="yt1" value="Save">
+</form>        <a class="close-reveal-modal">×</a>
+</div><div class="reveal-modal-bg" style="opacity: 0.8; display: block; cursor: pointer;"></div>    <script type="text/javascript" src="/ppma/assets/bfc7db05/gridview/jquery.yiigridview.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery(document).on('click','#entries a.delete',function() {
+	if(!confirm('Are you sure you want to delete this item?')) return false;
+	var th = this,
+		afterDelete = function(){};
+	jQuery('#entries').yiiGridView('update', {
+		type: 'POST',
+		url: jQuery(this).attr('href'),
+		success: function(data) {
+			jQuery('#entries').yiiGridView('update');
+			afterDelete(th, true, data);
+		},
+		error: function(XHR) {
+			return afterDelete(th, false, XHR);
+		}
+	});
+	return false;
+});
+jQuery('#entries').yiiGridView({'ajaxUpdate':false,'ajaxVar':'ajax','pagerClass':'pager','loadingClass':'grid-view-loading','filterClass':'filters','tableClass':'items','selectableRows':1,'enableHistory':false,'updateSelector':'{page}, {sort}','filterSelector':'{filter}','pageVar':'Entry_page'});
+
+					if(!window.location.hash)
+						jQuery('#Entry_name').focus();
+				
+});
+/*]]>*/
+</script>
+
+<ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="z-index: 1; display: none;"></ul></body></html>

@@ -1,0 +1,178 @@
+[
+  {
+    "xpath": "/HTML[1]/BODY[1]",
+    "id": 0,
+    "parentId": -1,
+    "rect": {
+      "x": 75,
+      "y": 0,
+      "width": 1050,
+      "height": 257
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]",
+    "id": 1,
+    "parentId": 0,
+    "rect": {
+      "x": 75,
+      "y": 0,
+      "width": 1050,
+      "height": 91
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]",
+    "id": 2,
+    "parentId": 1,
+    "rect": {
+      "x": 75,
+      "y": 0,
+      "width": 1050,
+      "height": 60
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/A[1]/IMG[1]",
+    "id": 3,
+    "parentId": 2,
+    "rect": {
+      "x": 75,
+      "y": 0,
+      "width": 287,
+      "height": 60
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]",
+    "id": 5,
+    "parentId": 2,
+    "rect": {
+      "x": 552,
+      "y": 0,
+      "width": 86,
+      "height": 60
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/DIV[1]/FORM[1]/INPUT[1]",
+    "id": 7,
+    "parentId": 2,
+    "rect": {
+      "x": 860,
+      "y": 26,
+      "width": 103,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/DIV[1]/FORM[1]/INPUT[2]",
+    "id": 9,
+    "parentId": 2,
+    "rect": {
+      "x": 977,
+      "y": 26,
+      "width": 42,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[4]",
+    "id": 12,
+    "parentId": 1,
+    "rect": {
+      "x": 75,
+      "y": 70,
+      "width": 1040,
+      "height": 21
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]",
+    "id": 15,
+    "parentId": 0,
+    "rect": {
+      "x": 82,
+      "y": 98,
+      "width": 1025,
+      "height": 151
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/P[1]",
+    "id": 16,
+    "parentId": 15,
+    "rect": {
+      "x": 97,
+      "y": 113,
+      "width": 995,
+      "height": 16
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/P[2]/INPUT[1]",
+    "id": 18,
+    "parentId": 15,
+    "rect": {
+      "x": 557,
+      "y": 162,
+      "width": 145,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/P[2]/INPUT[2]",
+    "id": 20,
+    "parentId": 15,
+    "rect": {
+      "x": 556,
+      "y": 183,
+      "width": 145,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]",
+    "id": 22,
+    "parentId": 15,
+    "rect": {
+      "x": 82,
+      "y": 218,
+      "width": 1025,
+      "height": 31
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/INPUT[1]",
+    "id": 23,
+    "parentId": 22,
+    "rect": {
+      "x": 581,
+      "y": 218,
+      "width": 27,
+      "height": 14
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+    "id": 25,
+    "parentId": 22,
+    "rect": {
+      "x": 661,
+      "y": 233,
+      "width": 90,
+      "height": 16
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/A[1]",
+    "id": 29,
+    "parentId": 0,
+    "rect": {
+      "x": 79,
+      "y": 284,
+      "width": 108,
+      "height": 16
+    }
+  }
+]

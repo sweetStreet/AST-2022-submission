@@ -1,0 +1,65 @@
+<html><head>
+	<link rel="stylesheet" type="text/css" href="/mantisbt/css/default.css">
+	<script type="text/javascript" language="JavaScript"><!--
+		if(document.layers) {document.write("<style>td{padding:0px;}<\/style>")}
+	// --></script>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma-directive" content="no-cache">
+	<meta http-equiv="Cache-Directive" content="no-cache">
+	<meta http-equiv="Expires" content="Sun, 03 Oct 2021 19:24:21 GMT">
+	<link rel="shortcut icon" href="/mantisbt/images/favicon.ico" type="image/x-icon">
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Text Search" href="http://localhost:3000/mantisbt/browser_search_plugin.php?type=text">	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Issue Id" href="http://localhost:3000/mantisbt/browser_search_plugin.php?type=id">	<title>MantisBT</title>
+<script type="text/javascript" src="/mantisbt/javascript/min/common.js"></script>
+<script language="javascript">var loading_lang = "Loading...";</script><script type="text/javascript" src="/mantisbt/javascript/min/ajax.js"></script>
+</head>
+<body>
+
+<table class="width100"><tbody><tr><td class="form-title">
+	<div class="center">
+		MantisBT - All Projects	</div>
+</td></tr></tbody></table>
+
+<br>
+
+<form method="post" action="view_all_set.php">
+<input type="hidden" name="type" value="1">
+<input type="hidden" name="print" value="1">
+<input type="hidden" name="offset" value="0">
+<input type="hidden" name="sort" value="">
+<input type="hidden" name="dir" value="">
+
+<table class="width100" cellpadding="2px">
+
+<tbody><tr>
+	<td colspan="9">
+<a href="print_all_bug_page_word.php?search=&amp;sort=&amp;dir=DESC&amp;type_page=word&amp;export=-1&amp;show_flag=0"><img src="http://localhost:3000/mantisbt/images/fileicons/doc.gif" border="0" align="absmiddle" alt="Word 2000"></a> <a href="print_all_bug_page_word.php?search=&amp;sort=&amp;dir=DESC&amp;type_page=html&amp;export=-1&amp;show_flag=0" target="_blank"><img src="http://localhost:3000/mantisbt/images/ie.gif" border="0" align="absmiddle" alt="Word View"></a> 	</td>
+</tr>
+</tbody></table>
+
+</form>
+
+<br>
+
+<form method="post" action="print_all_bug_page.php">
+<table class="width100" cellspacing="1" cellpadding="2px">
+<tbody><tr>
+	<td class="form-title" colspan="5.5">
+		Viewing Issues( 0 - 0 )	</td>
+	<td class="right" colspan="4.5">
+			</td>
+</tr>
+<tr class="row-category">
+	<td> &nbsp; </td><td><a href="view_all_set.php?sort=priority&amp;dir=&amp;type=2&amp;print=1">P</a></td><td><a href="view_all_set.php?sort=id&amp;dir=&amp;type=2&amp;print=1">ID</a></td><td> # </td><td><a href="view_all_set.php?sort=category_id&amp;dir=&amp;type=2&amp;print=1">Category</a></td><td><a href="view_all_set.php?sort=severity&amp;dir=&amp;type=2&amp;print=1">Severity</a></td><td><a href="view_all_set.php?sort=status&amp;dir=&amp;type=2&amp;print=1">Status</a></td><td><a href="view_all_set.php?sort=last_updated&amp;dir=&amp;type=2&amp;print=1">Updated</a></td><td><a href="view_all_set.php?sort=summary&amp;dir=&amp;type=2&amp;print=1">Summary</a></td></tr>
+<tr class="spacer">
+	<td colspan="9"></td>
+</tr>
+<input type="hidden" name="show_flag" value="1">
+</tbody></table>
+
+<br>
+
+<input type="submit" class="button" value="Display selected only">
+</form>
+</body></html>

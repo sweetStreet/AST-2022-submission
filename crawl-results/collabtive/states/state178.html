@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state178</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/collabtive/admin.php?action=editform&id=1'>http://localhost:3000/collabtive/admin.php?action=editform&id=1</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state106</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>1.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>178</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state178.png' /> 
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;
+&lt;title&gt;User administration @ Collabtive&lt;/title&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;templates/standard/images/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; title=&quot;Collabtive Search&quot; href=&quot;manageajax.php?action=addfx-all&quot;&gt;
+&lt;link rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;My messages&quot; href=&quot;managerss.php?action=mymsgs-rss&amp;amp;user=1&quot;&gt;
+&lt;link rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;My tasks&quot; href=&quot;managerss.php?action=rss-tasks&amp;amp;user=1&quot;&gt;
+
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+//endcolor for close element flashing
+closeEndcolor = '#377814';
+//endcolor for delete element flashing
+deleteEndcolor = '#c62424';
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/prototype.php&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/ajax.php&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/jsval.php&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/chat.js&quot;&gt;&lt;/script&gt;
+     &lt;script type=&quot;text/javascript&quot;&gt;
+        function _jsVal_Language() {
+            this.err_enter = &quot;Please enter a valid value for \&quot;%FIELDNAME%\&quot;.&quot;;
+            this.err_form = &quot;Please enter valid values for:\n\n&quot;;
+            this.err_select = &quot;Please select a valid value in \&quot;%FIELDNAME%\&quot;.&quot;;
+        }
+&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/mycalendar.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;templates/standard/css/style_main.css&quot;&gt;
+
+
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;!--&lt;div id = &quot;jslog&quot; style = &quot;color:red;position:absolute;top:60%;right:5%;width:300px;border:1px solid;background-color:grey;&quot;&gt;&lt;/div&gt;--&gt;
+
+	&lt;div id=&quot;sitebody&quot;&gt;
+
+	&lt;div id=&quot;header-wrapper&quot;&gt;
+		&lt;div id=&quot;header&quot;&gt;
+			&lt;div class=&quot;header-in&quot;&gt;
+
+				&lt;div class=&quot;left&quot;&gt;
+					&lt;div class=&quot;logo&quot;&gt;
+						&lt;h1&gt;
+							&lt;a href=&quot;index.php&quot; title=&quot;Desktop&quot;&gt;&lt;img src=&quot;./templates/standard/images/logo-b.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+							&lt;span class=&quot;title&quot;&gt;Collabtive&lt;span class=&quot;subtitle&quot;&gt;/ Projectmanagement &lt;/span&gt;&lt;/span&gt;
+						&lt;/h1&gt;
+					&lt;/div&gt;
+
+				&lt;/div&gt; 
+				&lt;div class=&quot;right&quot;&gt;
+											&lt;ul id=&quot;mainmenue&quot;&gt;
+							&lt;li class=&quot;desktop&quot;&gt;&lt;a class=&quot;&quot; href=&quot;index.php&quot;&gt;&lt;span&gt;Desktop&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+														&lt;li class=&quot;profil-male&quot;&gt;&lt;a class=&quot;&quot; href=&quot;manageuser.php?action=profile&amp;amp;id=1&quot;&gt;&lt;span&gt;My account&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+							
+							 							&lt;li class=&quot;admin&quot;&gt;&lt;a class=&quot;active&quot; href=&quot;admin.php?action=projects&quot;&gt;&lt;span&gt;Administration&lt;/span&gt;&lt;span class=&quot;submenarrow&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+								&lt;div class=&quot;submen&quot;&gt;
+									&lt;ul&gt;
+										&lt;li class=&quot;project-settings&quot;&gt;&lt;a class=&quot;&quot; href=&quot;admin.php?action=projects&quot;&gt;&lt;span&gt;Project administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+										&lt;li class=&quot;user-settings&quot;&gt;&lt;a class=&quot;&quot; href=&quot;admin.php?action=users&quot;&gt;&lt;span&gt;User administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+										&lt;li class=&quot;system-settings&quot;&gt;&lt;a class=&quot;&quot; href=&quot;admin.php?action=system&quot;&gt;&lt;span&gt;System administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+									&lt;/ul&gt;
+								&lt;/div&gt;
+							&lt;/li&gt;
+							
+
+							&lt;li class=&quot;logout&quot;&gt;&lt;a href=&quot;manageuser.php?action=logout&quot;&gt;&lt;span&gt;Logout&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+									&lt;/div&gt; &lt;!-- Right End --&gt;
+
+
+
+			&lt;/div&gt; &lt;!-- Header-In End --&gt;
+		&lt;/div&gt; &lt;!-- Header End --&gt;
+	&lt;/div&gt; &lt;!-- Header-Wrapper End --&gt;
+
+
+	&lt;div id=&quot;contentwrapper&quot;&gt;
+&lt;div class=&quot;tabswrapper&quot;&gt;
+	&lt;ul class=&quot;tabs&quot;&gt;
+		&lt;li class=&quot;projects&quot;&gt;&lt;a href=&quot;admin.php?action=projects&quot;&gt;&lt;span&gt;Project administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;user&quot;&gt;&lt;a class=&quot;active&quot; href=&quot;admin.php?action=users&quot;&gt;&lt;span&gt;User administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;system-settings&quot;&gt;&lt;a href=&quot;admin.php?action=system&quot;&gt;&lt;span&gt;System administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&quot;content-left&quot;&gt;
+	&lt;div id=&quot;content-left-in&quot;&gt;
+		&lt;div class=&quot;user&quot;&gt;
+
+			&lt;h1&gt;Edit user&lt;span&gt;/ admin&lt;/span&gt;&lt;/h1&gt;
+
+			&lt;div class=&quot;userwrapper&quot;&gt;
+				&lt;form novalidate=&quot;&quot; class=&quot;main&quot; method=&quot;post&quot; action=&quot;admin.php?action=edituser&amp;amp;id=1&quot; enctype=&quot;multipart/form-data&quot; onsubmit=&quot;return validateCompleteForm(this,'input_error');&quot;&gt;
+					&lt;fieldset&gt;
+
+						&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+							&lt;tbody&gt;&lt;tr&gt;
+								&lt;td class=&quot;avatarcell&quot; valign=&quot;top&quot;&gt;
+																														&lt;div class=&quot;avatar-profile&quot;&gt;&lt;img src=&quot;thumb.php?pic=templates/standard/images/no-avatar-male.jpg&amp;amp;width=122;&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+																			
+									&lt;div id=&quot;avatarbig&quot; style=&quot;display:none;&quot;&gt;
+										&lt;a href=&quot;javascript:Control.Modal.close();&quot;&gt;&lt;img src=&quot;thumb.php?pic=files/standard/avatar/&amp;amp;width=480&amp;amp;height=480;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+									&lt;/div&gt;
+								&lt;/td&gt;
+
+								&lt;td&gt;
+									&lt;div class=&quot;message&quot;&gt;
+										&lt;div class=&quot;block&quot;&gt;
+											&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+
+												&lt;colgroup&gt;
+													&lt;col class=&quot;a&quot;&gt;
+													&lt;col class=&quot;b&quot;&gt;
+												&lt;/colgroup&gt;
+
+												&lt;thead&gt;&lt;tr&gt;&lt;th colspan=&quot;2&quot;&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+												&lt;tfoot&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;
+
+												&lt;tbody class=&quot;color-a&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;name&quot;&gt;User:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;text&quot; value=&quot;admin&quot; name=&quot;name&quot; id=&quot;name&quot; required=&quot;1&quot; realname=&quot;Name&quot; tabindex=&quot;1&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-b&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;avatar&quot;&gt;Avatar:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;
+
+															&lt;div class=&quot;fileinput&quot;&gt;
+																&lt;input type=&quot;file&quot; class=&quot;file&quot; name=&quot;userfile&quot; id=&quot;avatar&quot; realname=&quot;File&quot; size=&quot;19&quot; onchange=&quot;thefile.value = this.value;&quot; tabindex=&quot;2&quot;&gt;
+																&lt;table class=&quot;faux&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+																	&lt;tbody&gt;&lt;tr&gt;
+																		&lt;td&gt;&lt;input type=&quot;text&quot; class=&quot;text-file&quot; name=&quot;thefile&quot; id=&quot;thefile&quot;&gt;&lt;/td&gt;
+																		&lt;td class=&quot;choose&quot;&gt;&lt;button class=&quot;inner&quot; onclick=&quot;return false;&quot;&gt;Please choose&lt;/button&gt;&lt;/td&gt;
+																	&lt;/tr&gt;
+																&lt;/tbody&gt;&lt;/table&gt;
+															&lt;/div&gt;
+														&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-a&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-b&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;company&quot;&gt;Company:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;
+															&lt;input type=&quot;text&quot; name=&quot;company&quot; id=&quot;company&quot; value=&quot;0&quot;&gt;
+														&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-a&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;email&quot;&gt;E-Mail:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;text&quot; value=&quot;&quot; name=&quot;email&quot; id=&quot;email&quot; regexp=&quot;EMAIL&quot; required=&quot;1&quot; realname=&quot;E-Mail&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-b&quot;&gt;
+												&lt;tr&gt;
+													&lt;td&gt;&lt;label for=&quot;rate&quot;&gt;Hourly rate:&lt;/label&gt;&lt;/td&gt;
+													&lt;td class=&quot;right&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;text&quot; value=&quot;0&quot; name=&quot;rate&quot; id=&quot;rate&quot;&gt;&lt;/td&gt;
+												&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-a&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;web&quot;&gt;URL:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;text&quot; name=&quot;web&quot; id=&quot;web&quot; realname=&quot;URL&quot; value=&quot;&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-b&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;tel1&quot;&gt;Phone:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;text&quot; value=&quot;&quot; name=&quot;tel1&quot; id=&quot;tel1&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-a&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;tel2&quot;&gt;Cell phone:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;text&quot; value=&quot;&quot; name=&quot;tel2&quot; id=&quot;tel2&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-b&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-a&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;address1&quot;&gt;Address:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;input type=&quot;text&quot; value=&quot;&quot; name=&quot;address1&quot; id=&quot;address1&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-b&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;zip&quot;&gt;Postcode:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;zip&quot; id=&quot;zip&quot; realname=&quot;Postcode&quot; value=&quot;&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-a&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;address2&quot;&gt;City:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;text&quot; value=&quot;&quot; name=&quot;address2&quot; id=&quot;address2&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-b&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;country&quot;&gt;Country:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;text&quot; value=&quot;&quot; name=&quot;country&quot; id=&quot;country&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-a&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;state&quot;&gt;State:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;text&quot; value=&quot;&quot; name=&quot;state&quot; id=&quot;state&quot; autocomplete=&quot;off&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-b&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-a&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;gender&quot;&gt;Gender:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;
+															&lt;select name=&quot;gender&quot; id=&quot;gender&quot; realname=&quot;Gender&quot;&gt;
+																																&lt;option value=&quot;&quot; selected=&quot;&quot;&gt;Please choose&lt;/option&gt;
+																																&lt;option value=&quot;m&quot;&gt;Male&lt;/option&gt;
+																&lt;option value=&quot;f&quot;&gt;Female&lt;/option&gt;
+															&lt;/select&gt;
+														&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-b&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;locale&quot;&gt;Locale:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;
+															&lt;select name=&quot;locale&quot; id=&quot;locale&quot;&gt;
+															&lt;option value=&quot;&quot; selected=&quot;selected&quot;&gt;Default&lt;/option&gt;
+																															&lt;option value=&quot;al&quot;&gt;Albanian (92%)&lt;/option&gt;
+																															&lt;option value=&quot;ar&quot;&gt;Arabic (100%)&lt;/option&gt;
+																															&lt;option value=&quot;bg&quot;&gt;Bulgarian (84%)&lt;/option&gt;
+																															&lt;option value=&quot;ca&quot;&gt;Catalan (89%)&lt;/option&gt;
+																															&lt;option value=&quot;cs&quot;&gt;Czech (94%)&lt;/option&gt;
+																															&lt;option value=&quot;da&quot;&gt;Danish (100%)&lt;/option&gt;
+																															&lt;option value=&quot;de&quot;&gt;German (100%)&lt;/option&gt;
+																															&lt;option value=&quot;el&quot;&gt;Greek (100%)&lt;/option&gt;
+																															&lt;option value=&quot;en&quot;&gt;English (100%)&lt;/option&gt;
+																															&lt;option value=&quot;es&quot;&gt;Spanish (100%)&lt;/option&gt;
+																															&lt;option value=&quot;et&quot;&gt;Estonian (97%)&lt;/option&gt;
+																															&lt;option value=&quot;fa&quot;&gt;Farsi (97%)&lt;/option&gt;
+																															&lt;option value=&quot;fi&quot;&gt;Finnish (97%)&lt;/option&gt;
+																															&lt;option value=&quot;fr&quot;&gt;French (100%)&lt;/option&gt;
+																															&lt;option value=&quot;gl&quot;&gt;Galician (47%)&lt;/option&gt;
+																															&lt;option value=&quot;he&quot;&gt;Hebrew (97%)&lt;/option&gt;
+																															&lt;option value=&quot;hr&quot;&gt;Croatian (97%)&lt;/option&gt;
+																															&lt;option value=&quot;hu&quot;&gt;Hungarian (100%)&lt;/option&gt;
+																															&lt;option value=&quot;id&quot;&gt;Indonesian (62%)&lt;/option&gt;
+																															&lt;option value=&quot;it&quot;&gt;Italian (100%)&lt;/option&gt;
+																															&lt;option value=&quot;ja&quot;&gt;Japanese (99%)&lt;/option&gt;
+																															&lt;option value=&quot;lt&quot;&gt;Lithuanian (99%)&lt;/option&gt;
+																															&lt;option value=&quot;nb&quot;&gt;Norwegian (Bokm&aring;l) (100%)&lt;/option&gt;
+																															&lt;option value=&quot;nl&quot;&gt;Dutch (97%)&lt;/option&gt;
+																															&lt;option value=&quot;nn&quot;&gt;Norwegian (Nynorsk) (86%)&lt;/option&gt;
+																															&lt;option value=&quot;pl&quot;&gt;Polish (100%)&lt;/option&gt;
+																															&lt;option value=&quot;pt&quot;&gt;Portuguese (100%)&lt;/option&gt;
+																															&lt;option value=&quot;pt_br&quot;&gt;Portuguese (Brazilian) (100%)&lt;/option&gt;
+																															&lt;option value=&quot;ro&quot;&gt;Romanian (100%)&lt;/option&gt;
+																															&lt;option value=&quot;ru&quot;&gt;Russian (100%)&lt;/option&gt;
+																															&lt;option value=&quot;se&quot;&gt;Swedish (100%)&lt;/option&gt;
+																															&lt;option value=&quot;sk&quot;&gt;Slovak (100%)&lt;/option&gt;
+																															&lt;option value=&quot;sl&quot;&gt;Slovenian (91%)&lt;/option&gt;
+																															&lt;option value=&quot;sr&quot;&gt;Serbian (100%)&lt;/option&gt;
+																															&lt;option value=&quot;tr&quot;&gt;Turkish (99%)&lt;/option&gt;
+																															&lt;option value=&quot;uk&quot;&gt;Ukranian (96%)&lt;/option&gt;
+																															&lt;option value=&quot;zh&quot;&gt;Chinese (94%)&lt;/option&gt;
+																															&lt;option value=&quot;zh_tw&quot;&gt;Taiwanese (91%)&lt;/option&gt;
+																														&lt;/select&gt;
+														&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;input type=&quot;hidden&quot; name=&quot;admin&quot; value=&quot;&quot;&gt;
+
+												&lt;tbody class=&quot;color-a&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;newpass&quot;&gt;New password:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;input type=&quot;password&quot; name=&quot;newpass&quot; id=&quot;newpass&quot; autocomplete=&quot;off&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-b&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;repeatpass&quot;&gt;Repeat password:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;input type=&quot;password&quot; name=&quot;repeatpass&quot; id=&quot;repeatpass&quot; autocomplete=&quot;off&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-a&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-b&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label for=&quot;tags&quot;&gt;Tags:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;tags&quot; id=&quot;tags&quot; realname=&quot;Tags&quot; value=&quot;&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-a&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;label&gt;Permissions:&lt;/label&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;
+															&lt;select name=&quot;role&quot;&gt;
+																															&lt;/select&gt;
+														&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-b&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+												&lt;tbody class=&quot;color-a&quot;&gt;
+													&lt;tr&gt;
+														&lt;td&gt;&lt;/td&gt;
+														&lt;td class=&quot;right&quot;&gt;
+															&lt;button type=&quot;submit&quot; onfocus=&quot;this.blur()&quot;&gt;Send&lt;/button&gt;
+														&lt;/td&gt;
+													&lt;/tr&gt;
+												&lt;/tbody&gt;
+
+											&lt;/table&gt;
+										&lt;/div&gt; 									&lt;/div&gt; 								&lt;/td&gt;
+							&lt;/tr&gt;
+						&lt;/tbody&gt;&lt;/table&gt;
+					&lt;/fieldset&gt;
+				&lt;/form&gt;
+
+				
+					&lt;script type=&quot;text/javascript&quot;&gt;
+						new Control.Modal('ausloeser',{
+						opacity: 0.8,
+						position: 'absolute',
+						width: 480,
+						height: 480,
+						fade:true,
+						containerClassName: 'pics',
+						overlayClassName: 'useroverlay'
+						});
+					&lt;/script&gt;
+				
+
+			&lt;/div&gt; 
+			&lt;div class=&quot;content-spacer&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt; 	&lt;/div&gt; &lt;/div&gt; 
+&lt;div id=&quot;content-right&quot;&gt;
+
+
+		&lt;div class=&quot;content-right-in&quot;&gt;
+			&lt;h2&gt;&lt;a id=&quot;searchtoggle&quot; class=&quot;win-up&quot; href=&quot;javascript:blindtoggle('search');toggleClass('searchtoggle','win-up','win-down');&quot;&gt;Search&lt;/a&gt;&lt;/h2&gt;
+
+			&lt;form id=&quot;search&quot; method=&quot;get&quot; action=&quot;managesearch.php&quot; onsubmit=&quot;return validateStandard(this,'input_error');&quot;&gt;
+			&lt;fieldset&gt;
+				&lt;div class=&quot;row&quot;&gt;
+					&lt;input type=&quot;text&quot; class=&quot;text&quot; id=&quot;query&quot; name=&quot;query&quot; autocomplete=&quot;off&quot;&gt;
+				&lt;/div&gt;
+
+				&lt;div id=&quot;choices&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;action&quot; value=&quot;search&quot;&gt;
+
+				&lt;div id=&quot;indicator1&quot; style=&quot;display:none;&quot;&gt;&lt;img src=&quot;templates/standard/images/symbols/indicator_arrows.gif&quot; alt=&quot;Searching...&quot;&gt;&lt;/div&gt;
+
+				&lt;button type=&quot;submit&quot; title=&quot;Go!&quot;&gt;&lt;/button&gt;
+			&lt;/fieldset&gt;
+
+			&lt;/form&gt;
+	&lt;/div&gt;
+	
+
+		
+
+			
+		
+		&lt;div class=&quot;content-right-in&quot;&gt;
+			&lt;h2&gt;&lt;a id=&quot;onlinelisttoggle&quot; class=&quot;win-up&quot; href=&quot;javascript:blindtoggle('onlinelist');toggleClass('onlinelisttoggle','win-up','win-down');&quot;&gt;Online&lt;/a&gt;&lt;/h2&gt;
+
+			&lt;div id=&quot;onlinelist&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;a class=&quot;user&quot; href=&quot;manageuser.php?action=profile&amp;amp;id=1&quot;&gt;admin&lt;div&gt;&lt;img src=&quot;thumb.php?pic=templates/standard/images/no-avatar-male.jpg&amp;amp;width=90&quot;&gt;&lt;/div&gt; &lt;/a&gt; &lt;a class=&quot;chat-user&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+	&lt;/div&gt;
+
+
+		
+			  &lt;script type=&quot;text/javascript&quot;&gt;
+			  new Ajax.Autocompleter('query', 'choices', 'managesearch.php?action=ajaxsearch', {paramName:'query',minChars: 2,indicator: 'indicator1'});
+				 var on = new Ajax.PeriodicalUpdater(&quot;onlinelist&quot;,&quot;manageuser.php?action=onlinelist&quot;,{method:'get',evalScripts:true,frequency:35,decay:1.5});
+
+
+			&lt;/script&gt;
+		
+
+&lt;/div&gt;
+			&lt;/div&gt; 		&lt;/div&gt; 
+
+ &lt;div id=&quot;msgchk&quot; style=&quot;display:none;&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+		chkChat();
+&lt;/script&gt;
+
+
+	&lt;div id=&quot;footer-wrapper&quot;&gt;
+		&lt;div class=&quot;footer&quot;&gt;
+			&lt;div class=&quot;footer-in&quot;&gt;
+				&lt;a href=&quot;http://collabtive.o-dyn.de&quot;&gt;Collabtive 1.0&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+
+&lt;div id=&quot;modal_overlay&quot; style=&quot;position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9998; display: none;&quot;&gt;&lt;/div&gt;&lt;div id=&quot;modal_container&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;&lt;div id=&quot;modal_loading&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

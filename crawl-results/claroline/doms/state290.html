@@ -1,0 +1,645 @@
+<html><head>
+<title>Claroline</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/HTML; charset=iso-8859-1">
+<meta name="generator" content="Claroline 1.11.10 - http://claroline.net">
+
+<link rel="stylesheet" type="text/css" href="/claroline11110/web/css/classic/main.css?1337668864" media="screen, projection, tv">
+<link rel="stylesheet" type="text/css" href="/claroline11110/web/css/print.css?1301589034" media="print">
+
+<link rel="top" href="/index.php" title="">
+<link href="http://www.claroline.net/documentation.htm" rel="Help">
+<link href="/claroline11110/CREDITS.txt" rel="Author">
+<link href="http://www.claroline.net" rel="Copyright">
+<link href="/claroline11110/claroline/../favicon.ico" rel="shortcut icon">
+
+<script type="text/javascript">
+    document.cookie="javascriptEnabled=true; path=/claroline11110";
+    function claro_session_loss_countdown(sessionLifeTime){
+    var chrono = setTimeout('claro_warn_of_session_loss()', sessionLifeTime * 1000);
+}
+
+function claro_warn_of_session_loss() {
+    alert('WARNING ! You have just lost your session on the server.\nCopy any text you are currently writing and paste it outside the browser');
+}
+</script>
+
+<script src="/claroline11110/web/js/jquery.js?1374567070" type="text/javascript"></script>
+<script src="/claroline11110/web/js/jquery.qtip.js?1371735614" type="text/javascript"></script>
+<script src="/claroline11110/web/js/claroline.js?1368605938" type="text/javascript"></script>
+<script src="/claroline11110/web/js/claroline.ui.js?1376037408" type="text/javascript"></script>
+<script src="/claroline11110/web/js/tooltitle.js?1311692694" type="text/javascript"></script>
+<script src="/claroline11110/web/js/course_form.js?1374824958" type="text/javascript"></script>
+
+<script type="text/javascript">
+var __ = (function(){
+
+    var translation = {
+    
+
+    };
+
+    return function(string) {
+        return translation[string] || string;
+    };
+
+})();
+</script>
+            
+
+</head>
+
+<body dir="ltr" onload="claro_session_loss_countdown(1440);" style="">
+<!-- $Id: banner.tpl.php 13151 2011-05-11 12:09:47Z abourguignon $ -->
+
+<!-- claroPage -->
+<div id="claroPage">
+
+<!-- Banner -->
+<div id="topBanner">
+
+<!-- Platform Banner -->
+<div id="platformBanner">
+    <div id="campusBannerLeft">
+        <span id="siteName">
+            <a href="/claroline11110/index.php" target="_top">
+                        Claroline                        </a>
+        </span>
+        
+        
+<!-- campusBannerLeft -->
+
+<!-- End of campusBannerLeft -->
+    </div>
+    <div id="campusBannerRight">
+        <span id="institution">
+                        
+                                                
+                    </span>
+        
+        
+<!-- campusBannerRight -->
+
+<!-- End of campusBannerRight -->
+    </div>
+    <div class="spacer"></div>
+</div>
+<!-- End of Platform Banner -->
+
+<!-- User Banner -->
+<div id="userBanner">
+    <div id="userBannerLeft">
+        <ul class="menu">
+                        <li><span><a href="/claroline11110/claroline/desktop/index.php" target="_top">My desktop</a></span></li>
+                        <li><span><a href="/claroline11110/claroline/messaging" target="_top">My messages</a></span></li>
+                        <li><span><a href="/claroline11110/claroline/admin/" target="_top">Platform administration</a></span></li>
+                        
+<!-- userBannerLeft -->
+
+<!-- End of userBannerLeft -->
+        </ul>
+        
+    </div>
+    
+    <div id="userBannerRight">
+        <ul class="menu">
+            <li class="userName">
+                John Doe            </li>
+                        <li><span><a href="/claroline11110/claroline/auth/profile.php" target="_top">Manage my account</a></span></li>
+                        <li><span><a href="/claroline11110/index.php?logout=true" target="_top">Logout</a></span></li>
+                        
+<!-- userBannerRight -->
+
+<!-- End of userBannerRight -->
+        </ul>
+        
+    </div>
+    
+    <div class="spacer"></div>
+</div>
+
+<!-- BreadcrumbLine  -->
+<div id="breadcrumbLine">
+    <hr>
+    <div class="breadcrumbTrails">
+        <ul class="breadCrumbs">
+<li class="breadCrumbsNode lastBreadCrumbsNode"><a href="/claroline11110/index.php" target="_top"><img src="/claroline11110/web/img/home.png?1232376376" alt="home">&nbsp;Claroline</a></li>
+</ul>
+    </div>
+    
+    <div id="toolViewOption">
+                            </div>
+    
+    <div class="spacer"></div>
+    <hr>
+</div>
+<!-- End of BreadcrumbLine  -->
+
+</div>
+<!-- End of topBanner -->
+<!-- $Id: body.tpl.php 14332 2012-11-23 10:08:10Z zefredz $ -->
+
+
+<!-- - - - - - - - - - - Claroline Body - - - - - - - - - -->
+<div id="claroBody">
+    
+    
+                
+
+<!-- Page content -->
+<div class="toolTitleBlock"><table><tbody><tr><td><h1 class="toolTitle mainTitle">Create a course website</h1>
+</td><td><ul class="commandList">
+</ul>
+</td></tr></tbody></table></div>
+<!-- $Id: course_form.tpl.php 14349 2012-12-14 09:54:02Z zefredz $ -->
+
+<form class="msform" id="courseSettings" method="post" action="/claroline11110/claroline/course/create.php">
+        <input type="hidden" name="cmd" value="exEdit">
+    <input type="hidden" name="course_id" value="">
+    <input type="hidden" name="course_isSourceCourse" value="">
+    <input type="hidden" name="course_sourceCourseId" value="">
+    <input type="hidden" name="claroFormId" value="615ce101c852a">
+    
+        
+    <p>
+        <a href="#" class="expand-all">Expand all</a> /
+        <a href="#" class="collapse-all">Collapse all</a>
+    </p>
+    
+    <!-- FIRST SECTION: basic settings -->
+    <fieldset class="collapsible" id="mandatories">
+        <legend>
+            <a href="#" class="doCollapse">Basic settings</a>
+        </legend>
+        <div class="collapsible-wrapper">
+            <dl>
+                
+                <!-- Course title -->
+                <dt>
+                    <label for="course_title">
+                        Course title                    </label>
+                                        <span class="required">*</span>
+                                    </dt>
+                <dd>
+                    <input type="text" name="course_title" id="course_title" value="" size="40">
+                                        <br>
+                    <span class="notice">e.g. <i>History of Literature</i></span>
+                                    </dd>
+                
+                <!-- Course code -->
+                <dt>
+                    <label for="course_officialCode">
+                        Code                    </label><span class="required">*</span>
+                </dt>
+                <dd>
+                    <input type="text" id="course_officialCode" name="course_officialCode" value="" maxlength="12">
+                                        <br>
+                    <span class="notice">max. 12 characters, ie.<em>ROM2121</em></span>
+                                    </dd>
+                
+                <!-- Course categories -->
+                <dt>
+                    <label>
+                        Categories                    </label>
+                </dt>
+                <dd>
+                    <table class="multiselect">
+                      <tbody><tr>
+                        <td>
+                            <label for="mslist1">
+                                Linked categories                            </label>
+                            <br>
+                            <select multiple="multiple" name="linked_categories[]" id="mslist1">
+                                                            </select>
+                        </td>
+                        <td class="arrows">
+                            <a href="#" class="msadd"><img src="/claroline11110/web/img/go_right.png?1232376376"></a>
+                            <br><br>
+                            <a href="#" class="msremove"><img src="/claroline11110/web/img/go_left.png?1232376376"></a>
+                        </td>
+                        <td>
+                            <label for="mslist2">
+                                Unlinked categories                            </label>
+                            <br>
+                            <select multiple="multiple" name="unlinked_categories[]" id="mslist2">
+                                <option value="2">Sciences</option>
+<option value="3">Economics</option>
+<option value="4">Humanities</option>
+                            </select>
+                        </td>
+                      </tr>
+                    </tbody></table>
+                    <span class="notice">
+                                                    Feel free not to associate courses to any categories.<br>
+                                                    
+                        The categories appearing in grey are invisible categories.                    </span>
+                </dd>
+                
+                <!-- Course language select box -->
+                <dt>
+                    <label for="course_language">
+                        Language                    </label><span class="required">*</span>
+                </dt>
+                <dd>
+                    <select name="course_language" id="course_language">
+<option value="english" selected="selected">English</option>
+</select>
+                </dd>
+                
+                <!-- Course titular -->
+                <dt>
+                    <label for="course_titular">
+                        Lecturer(s)                    </label>
+                </dt>
+                <dd>
+                    <input type="text" id="course_titular" name="course_titular" value="John Doe">
+                </dd>
+                
+                <!-- Course titular's email -->
+                <dt>
+                    <label for="course_email">
+                        Email                                            </label>
+                </dt>
+                <dd>
+                    <input type="text" id="course_email" name="course_email" value="jdoe@mydomain.net" maxlength="255">
+                </dd>
+                
+                <!-- Course access -->
+                <dt>
+                    Course access <span class="required">*</span>
+                </dt>
+                <dd>
+                    <img src="/claroline11110/web/img/access_open.png?1232376376" alt="open">
+                    <input type="radio" id="access_public" name="course_access" value="public" checked="checked">
+                    &nbsp;
+                    <label for="access_public">
+                        Access allowed to anybody (even without login)                    </label>
+                                        <br>
+                    <img src="/claroline11110/web/img/access_platform.png?1232376376" alt="open">
+                    <input type="radio" id="access_reserved" name="course_access" value="platform">
+                    &nbsp;
+                    <label for="access_reserved">
+                        Access allowed only to platform members (user registered to the platform)                    </label>
+                    <br>
+                    <img src="/claroline11110/web/img/access_locked.png?1232376376" alt="locked">
+                    <input type="radio" id="access_private" name="course_access" value="private">
+                    &nbsp;
+                    <label for="access_private">
+                                                    Access allowed only to course members (people on the user list)                                            </label>
+                </dd>
+                
+                <!-- Course registration + registration key -->
+                <dt>
+                    Registration settings <span class="required">*</span>
+                </dt>
+                <dd>
+                    <img src="/claroline11110/web/img/enroll_allowed.png?1232376376" alt="">
+                    <input type="radio" id="registration_true" name="course_registration" value="open" '="" checked="checked">
+                    &nbsp;
+                    <label for="registration_true">
+                        Allowed                    </label>
+                    
+                    <blockquote>
+                    <img src="/claroline11110/web/img/tick.png?1276266080" alt="">
+                    <input type="checkbox" id="registration_validation" name="registration_validation">
+                    &nbsp;
+                    <label for="registration_validation">
+                        Allowed with validation                    </label>
+                    <br>
+                    <img src="/claroline11110/web/img/enroll_key.png?1232376376" alt="">
+                    <input type="checkbox" id="registration_key" name="registration_key">
+                    &nbsp;
+                    <label for="registration_key">
+                        Allowed with enrolment key                    </label>
+                    &nbsp;
+                    <input type="text" id="course_registrationKey" name="course_registrationKey" value="">
+                    </blockquote>
+                    
+                    <img src="/claroline11110/web/img/enroll_forbidden.png?1232376376" alt="">
+                    <input type="radio" id="registration_false" name="course_registration" value="close">
+                    &nbsp;
+                    <label for="registration_false">
+                        Denied                    </label>
+                </dd>
+                
+                <!-- Course settings tips -->
+                <dt>
+                    &nbsp;
+                </dt>
+                <dd>
+                    <span class="notice">By default, all users registered to the platform can enrol to your course. If you want some confidentiality,
+the simplest way is to open registration during one week, ask the students to register themselves, then close registration and check for possible intruders in the user list.
+Another option is to define a registration key which will need to be entered by any student who wants to enrol to the course.</span>
+                </dd>
+                
+            </dl>
+        </div>
+    </fieldset>
+    
+    
+    <!-- SECOND SECTION: optionnal settings -->
+    <fieldset class="collapsible collapsed" id="options">
+        <legend>
+            <a href="#" class="doCollapse">Optionnal settings</a>
+        </legend>
+        <div class="collapsible-wrapper" style="display: none;">
+            <dl>
+                
+                <!-- Course department name -->
+                <dt>
+                    <label for="course_departmentName">
+                                                Department                    </label>
+                </dt>
+                <dd>
+                    <input type="text" name="course_departmentName" id="course_departmentName" value="" maxlength="30">
+                </dd>
+                
+                <!-- Course department url -->
+                <dt>
+                    <label for="course_extLinkUrl">
+                        Department URL                                            </label>
+                </dt>
+                <dd>
+                    <input type="text" name="course_extLinkUrl" id="course_extLinkUrl" value="" maxlength="180">
+                </dd>
+                
+            </dl>
+        </div>
+    </fieldset>
+    
+    <!-- THIRD SECTION: advanced options -->
+    <fieldset id="advancedInformation" class="collapsible collapsed">
+        <legend>
+            <a href="#" class="doCollapse">Advanced options</a>
+        </legend>
+        <div class="collapsible-wrapper" style="display: none;">
+            <dl>
+                
+                <!-- Visibility in category list -->
+                <dt>
+                    Course visibility                </dt>
+                <dd>
+                                
+                
+                    <img src="/claroline11110/web/img/visible.png?1232376376" alt="">
+                    <input type="radio" id="visibility_show" name="course_visibility" value="1" checked="checked">&nbsp;
+                    <label for="visibility_show">
+                        The course is shown in the courses listing                    </label>
+                    <br>
+                    <img src="/claroline11110/web/img/invisible.png?1232376376" alt="">
+                    <input type="radio" id="visibility_hidden" name="course_visibility" value="0">&nbsp;
+                    <label for="visibility_hidden">
+                        Visible only to people on the user list                    </label>
+                    
+                                    
+                </dd>
+                
+                <dt>
+                    Maximum number of students                </dt>
+                <dd>
+                    
+                                        
+                    <input type="text" name="course_userLimit" id="course_userLimit" value="0">
+                    <br>
+                    <span class="notice">
+                        Leave this field empty or use 0 if you don't want to limit the number of users in this course<br>
+                        This limit doesn't include course's tutors and managers                    </span>
+                    
+                                        
+                </dd>
+                
+            </dl>
+            
+                        
+                        <!-- Course status -->
+            <dl>
+                
+                <dt>
+                    Status                </dt>
+                <dd class="adminControl">
+                    
+                                        
+                        <input type="radio" id="course_status_enable" name="course_status_selection" value="enable" checked="checked">&nbsp;
+                        <label for="course_status_enable">
+                            Available                        </label>
+                        <br><br>
+
+                        <input type="radio" id="course_status_date" name="course_status_selection" value="date">&nbsp;
+                        <label for="course_status_date">
+                            Available&nbsp;from (included)
+                        </label>
+                        <select name="course_publicationDay" id="course_publicationDay" disabled="disabled">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6" selected="selected">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+&nbsp;<select name="course_publicationMonth" id="course_publicationMonth" disabled="disabled">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10" selected="selected">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+&nbsp;<select name="course_publicationYear" id="course_publicationYear" disabled="disabled">
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021" selected="selected">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+<option value="2026">2026</option>
+</select>
+&nbsp;
+                        <span class="notice">(d/m/y)</span>
+
+
+                        <blockquote>
+                            <input type="checkbox" id="useExpirationDate" name="useExpirationDate" value="true" disabled="disabled">
+                            <label for="useExpirationDate">
+                                to (included)
+                            </label>
+                            <select name="course_expirationDay" id="course_expirationDay" disabled="disabled">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6" selected="selected">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+&nbsp;<select name="course_expirationMonth" id="course_expirationMonth" disabled="disabled">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10" selected="selected">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+&nbsp;<select name="course_expirationYear" id="course_expirationYear" disabled="disabled">
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021" selected="selected">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+<option value="2026">2026</option>
+</select>
+&nbsp;
+                            <span class="notice">(d/m/y)</span>
+                        </blockquote>
+
+
+                        <input type="radio" id="course_status_disabled" name="course_status_selection" value="disable">&nbsp;
+                        <label for="course_status_disabled">
+                            Not available                        </label>
+
+
+                        <blockquote>
+
+                            
+
+                            <input type="radio" id="status_pending" name="course_status" value="pending" checked="checked" disabled="disabled">&nbsp;
+                            <label for="status_pending">
+                                Reactivable by course manager                            </label>
+
+
+                            
+                            <br>
+
+                                
+                                    <input type="radio" id="status_disable" name="course_status" value="disable" disabled="disabled">&nbsp;
+                                    <label for="status_disable">
+                                        Reactivable by administrator                                    </label>
+                                    <br>
+
+                                    <input type="radio" id="status_trash" name="course_status" value="trash" disabled="disabled">&nbsp;
+                                    <label for="status_trash">
+                                        Move to trash                                    </label>
+
+                                    
+                            
+                        </blockquote>
+
+                                            
+                                    
+                </dd>
+                
+            </dl>
+                    </div>
+    </fieldset>
+    
+    <dl>
+        <dt>
+            <input type="submit" name="changeProperties" value="Ok">&nbsp;
+            <a href="/claroline11110/index.php"><input type="button" onclick="document.location='/claroline11110/index.php';return false" value="Cancel"></a>
+        </dt>
+        <dd></dd>
+    </dl>
+</form>
+
+<p class="notice">
+    <span class="required">*</span> denotes required field</p><!-- End of Page Content -->
+
+
+    
+    <div class="spacer"></div>
+</div>
+<!-- - - - - - - - - - - End of Claroline Body  - - - - - - - - - - -->
+
+<!-- $Id: footer.tpl.php 12676 2010-10-20 14:59:33Z abourguignon $ -->
+
+
+<div id="campusFooter">
+    <hr>
+    <div id="campusFooterLeft">
+        
+<!-- campusFooterLeft -->
+
+<!-- End of campusFooterLeft -->
+            </div>
+    <div id="campusFooterRight">
+        
+<!-- campusFooterRight -->
+
+<!-- End of campusFooterRight -->
+        <div id="platformManager">Administrator for Claroline : <a href="mailto:jdoe@mydomain.net?subject=[Claroline]">John Doe</a></div>    </div>
+    <div id="campusFooterCenter">
+        
+<!-- campusFooterCenter -->
+
+<!-- End of campusFooterCenter -->
+        <span class="poweredBy">Powered by <a href="http://www.claroline.net" target="_blank">Claroline</a> © 2001 - 2013</span>    </div>
+</div>
+<!-- end of claroPage -->
+</div>
+
+
+</body></html>

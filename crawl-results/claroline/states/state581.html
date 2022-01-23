@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state581</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/claroline11110/claroline/course/index.php?cid=VMMMWIXG'>http://localhost:3000/claroline11110/claroline/course/index.php?cid=VMMMWIXG</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>4</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>4</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>27</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state391</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>91.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>581</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state581.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 12px; top: 91px; width: 67px; height: 17px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state582.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/UL[1]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 95px; top: 91px; width: 77px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[3]/DIV[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 1026px; top: 91px; width: 47px; height: 17px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state585.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 22px; top: 129px; width: 102px; height: 32px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/H2[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 171px; width: 151px; height: 30px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 234px; top: 403px; width: 12px; height: 22px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 225px; width: 133px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 24px; top: 244px; width: 128px; height: 17px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state589.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 24px; top: 263px; width: 65px; height: 17px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state613.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 282px; width: 107px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 301px; width: 80px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 320px; width: 77px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[7]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 339px; width: 101px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[8]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 358px; width: 94px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[9]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 377px; width: 65px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[10]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 396px; width: 64px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[11]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 415px; width: 55px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[12]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 434px; width: 46px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[13]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 453px; width: 49px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[2]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 111px; top: 487px; width: 88px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[3]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 521px; width: 91px; height: 14px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[3]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 538px; width: 110px; height: 14px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[3]/LI[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 555px; width: 156px; height: 14px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[3]/LI[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 24px; top: 572px; width: 74px; height: 14px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 255px; top: 221px; width: 240px; height: 28px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/UL[1]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 496px; top: 221px; width: 202px; height: 28px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/UL[1]/LI[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 700px; top: 221px; width: 208px; height: 28px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;
+&lt;title&gt;VMMMWIXG - Claroline&lt;/title&gt;
+&lt;meta http-equiv=&quot;Content-Script-Type&quot; content=&quot;text/javascript&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/HTML; charset=iso-8859-1&quot;&gt;
+&lt;meta name=&quot;generator&quot; content=&quot;Claroline 1.11.10 - http://claroline.net&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/claroline11110/web/css/classic/main.css?1337668864&quot; media=&quot;screen, projection, tv&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/claroline11110/web/css/print.css?1301589034&quot; media=&quot;print&quot;&gt;
+
+&lt;link rel=&quot;top&quot; href=&quot;/index.php&quot; title=&quot;&quot;&gt;
+&lt;link href=&quot;http://www.claroline.net/documentation.htm&quot; rel=&quot;Help&quot;&gt;
+&lt;link href=&quot;/claroline11110/CREDITS.txt&quot; rel=&quot;Author&quot;&gt;
+&lt;link href=&quot;http://www.claroline.net&quot; rel=&quot;Copyright&quot;&gt;
+&lt;link href=&quot;/claroline11110/claroline/../favicon.ico&quot; rel=&quot;shortcut icon&quot;&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    document.cookie=&quot;javascriptEnabled=true; path=/claroline11110&quot;;
+    function claro_session_loss_countdown(sessionLifeTime){
+    var chrono = setTimeout('claro_warn_of_session_loss()', sessionLifeTime * 1000);
+}
+
+function claro_warn_of_session_loss() {
+    alert('WARNING ! You have just lost your session on the server.\nCopy any text you are currently writing and paste it outside the browser');
+}
+&lt;/script&gt;
+
+&lt;script src=&quot;/claroline11110/web/js/jquery.js?1374567070&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/jquery.qtip.js?1371735614&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/claroline.js?1368605938&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/claroline.ui.js?1376037408&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;dWevfnOk - Claroline&quot; href=&quot;/claroline11110/claroline/backends/rss.php?cidReq=VMMMWIXG&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/claroline11110/web/css/coursehomepage.css?1312901372&quot; media=&quot;all&quot;&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+var __ = (function(){
+
+    var translation = {
+    
+
+    };
+
+    return function(string) {
+        return translation[string] || string;
+    };
+
+})();
+&lt;/script&gt;
+            
+
+&lt;/head&gt;
+
+&lt;body dir=&quot;ltr&quot; onload=&quot;claro_session_loss_countdown(1440);&quot; style=&quot;&quot;&gt;
+&lt;!-- $Id: banner.tpl.php 13151 2011-05-11 12:09:47Z abourguignon $ --&gt;
+
+&lt;!-- claroPage --&gt;
+&lt;div id=&quot;claroPage&quot;&gt;
+
+&lt;!-- Banner --&gt;
+&lt;div id=&quot;topBanner&quot;&gt;
+
+&lt;!-- Platform Banner --&gt;
+&lt;div id=&quot;platformBanner&quot;&gt;
+    &lt;div id=&quot;campusBannerLeft&quot;&gt;
+        &lt;span id=&quot;siteName&quot;&gt;
+            &lt;a href=&quot;/claroline11110/index.php&quot; target=&quot;_top&quot;&gt;
+                        Claroline                        &lt;/a&gt;
+        &lt;/span&gt;
+        
+        
+&lt;!-- campusBannerLeft --&gt;
+
+&lt;!-- End of campusBannerLeft --&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;campusBannerRight&quot;&gt;
+        &lt;span id=&quot;institution&quot;&gt;
+                        
+                                                
+                    &lt;/span&gt;
+        
+        
+&lt;!-- campusBannerRight --&gt;
+
+&lt;!-- End of campusBannerRight --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Platform Banner --&gt;
+
+&lt;!-- User Banner --&gt;
+&lt;div id=&quot;userBanner&quot;&gt;
+    &lt;div id=&quot;userBannerLeft&quot;&gt;
+        &lt;ul class=&quot;menu&quot;&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/desktop/index.php&quot; target=&quot;_top&quot;&gt;My desktop&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/messaging&quot; target=&quot;_top&quot;&gt;My messages&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/admin/&quot; target=&quot;_top&quot;&gt;Platform administration&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        
+&lt;!-- userBannerLeft --&gt;
+
+&lt;!-- End of userBannerLeft --&gt;
+        &lt;/ul&gt;
+        
+    &lt;/div&gt;
+    
+    &lt;div id=&quot;userBannerRight&quot;&gt;
+        &lt;ul class=&quot;menu&quot;&gt;
+            &lt;li class=&quot;userName&quot;&gt;
+                John Doe            &lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/auth/profile.php&quot; target=&quot;_top&quot;&gt;Manage my account&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/index.php?logout=true&quot; target=&quot;_top&quot;&gt;Logout&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        
+&lt;!-- userBannerRight --&gt;
+
+&lt;!-- End of userBannerRight --&gt;
+        &lt;/ul&gt;
+        
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- BreadcrumbLine  --&gt;
+&lt;div id=&quot;breadcrumbLine&quot;&gt;
+    &lt;hr&gt;
+    &lt;div class=&quot;breadcrumbTrails&quot;&gt;
+        &lt;ul class=&quot;breadCrumbs&quot;&gt;
+&lt;li class=&quot;breadCrumbsNode firstBreadCrumbsNode&quot;&gt;&lt;a href=&quot;/claroline11110/index.php&quot; target=&quot;_top&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/home.png?1232376376&quot; alt=&quot;home&quot;&gt;&amp;nbsp;Claroline&lt;/a&gt;&amp;nbsp;&amp;gt;&amp;nbsp;&lt;/li&gt;
+&lt;li class=&quot;breadCrumbsNode lastBreadCrumbsNode&quot;&gt;&lt;a href=&quot;/claroline11110/claroline/course/index.php?cid=VMMMWIXG&quot; target=&quot;_top&quot;&gt;VMMMWIXG&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    &lt;/div&gt;
+    
+    &lt;div id=&quot;toolViewOption&quot;&gt;
+                View mode : &lt;a href=&quot;/claroline11110/claroline/course/index.php?cid=VMMMWIXG&amp;amp;viewMode=STUDENT&amp;amp;cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;Student&lt;/a&gt; | &lt;b class=&quot;userName&quot;&gt;Course manager&lt;/b&gt;
+            &lt;/div&gt;
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+    &lt;hr&gt;
+&lt;/div&gt;
+&lt;!-- End of BreadcrumbLine  --&gt;
+
+&lt;/div&gt;
+&lt;!-- End of topBanner --&gt;
+&lt;!-- $Id: body.tpl.php 14332 2012-11-23 10:08:10Z zefredz $ --&gt;
+
+
+&lt;!-- - - - - - - - - - - Claroline Body - - - - - - - - - --&gt;
+&lt;div id=&quot;claroBody&quot;&gt;
+    
+    
+    
+        
+    &lt;ul class=&quot;coursesTabs&quot;&gt;
+                
+        &lt;li class=&quot;1                         current&quot;&gt;
+            &lt;a class=&quot;qtip&quot; href=&quot;/claroline11110/claroline/course/index.php?cid=VMMMWIXG&quot; title=&quot;dWevfnOk&quot;&gt;
+                VMMMWIXG            &lt;/a&gt;
+        &lt;/li&gt;
+        
+                
+            &lt;/ul&gt;
+    
+     &lt;!-- related course --&gt;
+    
+    &lt;div class=&quot;clearer&quot;&gt;&lt;/div&gt;
+    
+    &lt;div class=&quot;tabbedCourse&quot;&gt;
+        
+        &lt;div class=&quot;courseInfos&quot;&gt;
+            &lt;h2&gt;
+                &lt;a href=&quot;/claroline11110/claroline/course/index.php?cid=VMMMWIXG&quot;&gt;dWevfnOk&lt;/a&gt;            &lt;/h2&gt;
+            &lt;p&gt;
+                &lt;b&gt;VMMMWIXG&lt;/b&gt;&lt;br&gt;
+                jmznFgzO            &lt;/p&gt;
+            
+             &lt;!-- in a group --&gt;
+            
+                        
+            &lt;div class=&quot;clearer&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;clearer&quot;&gt;&lt;/div&gt;
+        
+        &lt;div class=&quot;courseContent&quot;&gt;
+            
+            &lt;div id=&quot;courseLeftSidebar&quot;&gt;
+                &lt;div class=&quot;toolList&quot;&gt;
+                    &lt;a href=&quot;#&quot; id=&quot;toggleLeftMenu&quot; class=&quot;qtip hide&quot; title=&quot;Display/hide course tool list&quot;&gt; &lt;/a&gt;
+                    &lt;!-- $Id: coursetoollist.tpl.php 13569 2011-09-09 12:42:41Z zefredz $ --&gt;
+
+    &lt;div id=&quot;courseToolListBlock&quot;&gt;
+    &lt;ul&gt;&lt;li&gt;&lt;a id=&quot;courseHomePage&quot; class=&quot;item currentTool&quot; href=&quot;/claroline11110/claroline/course/index.php?cid=VMMMWIXG&amp;amp;cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img class=&quot;clItemTool&quot; src=&quot;/claroline11110/web/img/coursehome.png?1337759898&quot; alt=&quot;&quot;&gt;&amp;nbsp;Course homepage&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;CLDSC&quot; class=&quot;item&quot; href=&quot;/claroline11110/claroline/course_description/index.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img class=&quot;clItemTool&quot; src=&quot;/claroline11110/claroline/course_description/icon.png&quot; alt=&quot;&quot;&gt;&amp;nbsp;Course description&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;CLCAL&quot; class=&quot;item&quot; href=&quot;/claroline11110/claroline/calendar/agenda.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img class=&quot;clItemTool&quot; src=&quot;/claroline11110/claroline/calendar/icon.png&quot; alt=&quot;&quot;&gt;&amp;nbsp;Agenda&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;CLANN&quot; class=&quot;item&quot; href=&quot;/claroline11110/claroline/announcements/announcements.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img class=&quot;clItemTool&quot; src=&quot;/claroline11110/claroline/announcements/icon.png&quot; alt=&quot;&quot;&gt;&amp;nbsp;Announcement&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;CLDOC&quot; class=&quot;item&quot; href=&quot;/claroline11110/claroline/document/document.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img class=&quot;clItemTool&quot; src=&quot;/claroline11110/claroline/document/icon.png&quot; alt=&quot;&quot;&gt;&amp;nbsp;Document&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;CLQWZ&quot; class=&quot;item&quot; href=&quot;/claroline11110/claroline/exercise/exercise.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img class=&quot;clItemTool&quot; src=&quot;/claroline11110/claroline/exercise/icon.png&quot; alt=&quot;&quot;&gt;&amp;nbsp;Exercises&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;CLLNP&quot; class=&quot;item&quot; href=&quot;/claroline11110/claroline/learnPath/learningPathList.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img class=&quot;clItemTool&quot; src=&quot;/claroline11110/claroline/learnPath/icon.png&quot; alt=&quot;&quot;&gt;&amp;nbsp;Learning Path&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;CLWRK&quot; class=&quot;item&quot; href=&quot;/claroline11110/claroline/work/work.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img class=&quot;clItemTool&quot; src=&quot;/claroline11110/claroline/work/icon.png&quot; alt=&quot;&quot;&gt;&amp;nbsp;Assignments&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;CLFRM&quot; class=&quot;item&quot; href=&quot;/claroline11110/claroline/phpbb/index.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img class=&quot;clItemTool&quot; src=&quot;/claroline11110/claroline/phpbb/icon.png&quot; alt=&quot;&quot;&gt;&amp;nbsp;Forums&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;CLGRP&quot; class=&quot;item&quot; href=&quot;/claroline11110/claroline/group/group.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img class=&quot;clItemTool&quot; src=&quot;/claroline11110/claroline/group/icon.png&quot; alt=&quot;&quot;&gt;&amp;nbsp;Groups&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;CLUSR&quot; class=&quot;item&quot; href=&quot;/claroline11110/claroline/user/user.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img class=&quot;clItemTool&quot; src=&quot;/claroline11110/claroline/user/icon.png&quot; alt=&quot;&quot;&gt;&amp;nbsp;Users&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;CLWIKI&quot; class=&quot;item&quot; href=&quot;/claroline11110/claroline/wiki/wiki.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img class=&quot;clItemTool&quot; src=&quot;/claroline11110/claroline/wiki/icon.png&quot; alt=&quot;&quot;&gt;&amp;nbsp;Wiki&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;CLCHAT&quot; class=&quot;item&quot; href=&quot;/claroline11110/module/CLCHAT/index.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img class=&quot;clItemTool&quot; src=&quot;/claroline11110/module/CLCHAT/icon.png&quot; alt=&quot;&quot;&gt;&amp;nbsp;Chat&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;
+        
+    &lt;br&gt;
+    
+    &lt;ul&gt;
+                
+        &lt;li&gt;&lt;img class=&quot;iconDefinitionList&quot; src=&quot;/claroline11110/web/img/hot.png?1232376376&quot; alt=&quot;New items&quot;&gt; New items (&lt;a href=&quot;/claroline11110/claroline/notification_date.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;to another date&lt;/a&gt;)
+&lt;/li&gt;
+        
+            &lt;/ul&gt;
+    
+    
+    &lt;br&gt;
+
+    &lt;ul id=&quot;courseManageToolList&quot;&gt;&lt;li&gt;&lt;a class=&quot;claroCmd&quot; href=&quot;/claroline11110/claroline/course/tools.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/edit.png?1232376376&quot; alt=&quot;&quot;&gt; Edit Tool list&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;claroCmd&quot; href=&quot;/claroline11110/claroline/course/settings.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/settings.png?1232376376&quot; alt=&quot;&quot;&gt; Course settings&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;claroCmd&quot; href=&quot;/claroline11110/claroline/course/create.php?course_sourceCourseId=1&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/duplicate.png?1272353078&quot; alt=&quot;&quot;&gt; Create a session course&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;claroCmd&quot; href=&quot;/claroline11110/claroline/tracking/courseReport.php?cidReset=true&amp;amp;cidReq=VMMMWIXG&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/statistics.png?1232376376&quot; alt=&quot;&quot;&gt; Statistics&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;    &lt;/div&gt;                &lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div id=&quot;courseRightContent&quot;&gt;
+                
+
+&lt;!-- Page content --&gt;
+&lt;!-- $Id: course_index.tpl.php 14314 2012-11-07 09:09:19Z zefredz $ --&gt;
+
+    &lt;div class=&quot;coursePortletList&quot;&gt;
+                
+                &lt;ul class=&quot;commandList&quot;&gt;
+                        &lt;li&gt;
+                &lt;a style=&quot;background-image: url(/claroline11110/web/img/add.png?1309882650); background-repeat: no-repeat; background-position: left center; padding-left: 20px;&quot; href=&quot;/claroline11110/claroline/course/index.php?portletCmd=exAdd&amp;amp;portletLabel=CLANN&amp;amp;cidReset=true&amp;amp;cidReq=VMMMWIXG&amp;amp;courseId=1&quot;&gt;
+                    Add a new portlet: Announcement                &lt;/a&gt;
+            &lt;/li&gt;
+                        &lt;li&gt;
+                &lt;a style=&quot;background-image: url(/claroline11110/web/img/add.png?1309882650); background-repeat: no-repeat; background-position: left center; padding-left: 20px;&quot; href=&quot;/claroline11110/claroline/course/index.php?portletCmd=exAdd&amp;amp;portletLabel=CLCAL&amp;amp;cidReset=true&amp;amp;cidReq=VMMMWIXG&amp;amp;courseId=1&quot;&gt;
+                    Add a new portlet: Calendar                &lt;/a&gt;
+            &lt;/li&gt;
+                        &lt;li&gt;
+                &lt;a style=&quot;background-image: url(/claroline11110/web/img/add.png?1309882650); background-repeat: no-repeat; background-position: left center; padding-left: 20px;&quot; href=&quot;/claroline11110/claroline/course/index.php?portletCmd=exAdd&amp;amp;portletLabel=CLTI&amp;amp;cidReset=true&amp;amp;cidReq=VMMMWIXG&amp;amp;courseId=1&quot;&gt;
+                    Add a new portlet: Headlines                &lt;/a&gt;
+            &lt;/li&gt;
+                    &lt;/ul&gt;
+                
+        You are on the course home page.&lt;br&gt;&lt;br&gt;On this page, you can :
+&lt;ul&gt;
+&lt;li&gt;add portlets to your course home page (see link above);&lt;/li&gt;
+&lt;li&gt;activate or deactivate tools (click on the 'Edit Tool list' button at bottom left);&lt;/li&gt;
+&lt;li&gt;change settings or view statistics (click on corresponding links at bottom).&lt;/li&gt;
+&lt;/ul&gt;    &lt;/div&gt;
+&lt;!-- End of Page Content --&gt;
+
+
+            &lt;/div&gt; &lt;!-- rightContent --&gt;
+            &lt;div class=&quot;clearer&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt; &lt;!-- courseContent --&gt;
+    &lt;/div&gt; &lt;!-- tabedCourse --&gt;
+
+
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- - - - - - - - - - - End of Claroline Body  - - - - - - - - - - --&gt;
+
+&lt;!-- $Id: footer.tpl.php 12676 2010-10-20 14:59:33Z abourguignon $ --&gt;
+
+
+&lt;div id=&quot;campusFooter&quot;&gt;
+    &lt;hr&gt;
+    &lt;div id=&quot;campusFooterLeft&quot;&gt;
+        
+&lt;!-- campusFooterLeft --&gt;
+
+&lt;!-- End of campusFooterLeft --&gt;
+        &lt;div id=&quot;courseManager&quot;&gt;Manager(s) for VMMMWIXG : &lt;a href=&quot;mailto:jdoe@mydomain.net?body=VMMMWIXG&amp;amp;subject=[Claroline]&quot;&gt;jmznFgzO&lt;/a&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div id=&quot;campusFooterRight&quot;&gt;
+        
+&lt;!-- campusFooterRight --&gt;
+
+&lt;!-- End of campusFooterRight --&gt;
+        &lt;div id=&quot;platformManager&quot;&gt;Administrator for Claroline : &lt;a href=&quot;mailto:jdoe@mydomain.net?subject=[Claroline]&quot;&gt;John Doe&lt;/a&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div id=&quot;campusFooterCenter&quot;&gt;
+        
+&lt;!-- campusFooterCenter --&gt;
+
+&lt;!-- End of campusFooterCenter --&gt;
+        &lt;span class=&quot;poweredBy&quot;&gt;Powered by &lt;a href=&quot;http://www.claroline.net&quot; target=&quot;_blank&quot;&gt;Claroline&lt;/a&gt; &copy; 2001 - 2013&lt;/span&gt;    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end of claroPage --&gt;
+&lt;/div&gt;
+
+
+&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/UL[1]/LI[1]/A[1]</td>
+							<td><a href="state582.html">state582</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/UL[1]/LI[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[3]/DIV[2]/A[1]</td>
+							<td><a href="state585.html">state585</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/H2[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]</td>
+							<td><a href="state589.html">state589</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]</td>
+							<td><a href="state613.html">state613</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[6]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[7]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[8]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[9]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[10]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[11]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[12]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[13]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[2]/LI[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[3]/LI[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[3]/LI[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[3]/LI[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/UL[3]/LI[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/UL[1]/LI[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/UL[1]/LI[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

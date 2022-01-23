@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state374</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/mantisbt/print_all_bug_page.php'>http://localhost:3000/mantisbt/print_all_bug_page.php</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>3</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>5</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>9</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state9</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>1.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>374</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state374.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 8px; top: 62px; width: 18px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: 28px; top: 62px; width: 18px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 62px; top: 134px; width: 12px; height: 18px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state12.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 123px; top: 134px; width: 20px; height: 18px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state16.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 307px; top: 134px; width: 69px; height: 18px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state20.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 510px; top: 134px; width: 64px; height: 18px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state261.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[7]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 677px; top: 134px; width: 50px; height: 18px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state376.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[8]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 830px; top: 134px; width: 65px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[9]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 1028px; top: 135px; width: 74px; height: 18px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/mantisbt/css/default.css&quot;&gt;
+	&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;&lt;!--
+		if(document.layers) {document.write(&quot;&lt;style&gt;td{padding:0px;}&lt;\/style&gt;&quot;)}
+	// --&gt;&lt;/script&gt;
+	&lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+	&lt;meta http-equiv=&quot;Pragma&quot; content=&quot;no-cache&quot;&gt;
+	&lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;no-cache&quot;&gt;
+	&lt;meta http-equiv=&quot;Pragma-directive&quot; content=&quot;no-cache&quot;&gt;
+	&lt;meta http-equiv=&quot;Cache-Directive&quot; content=&quot;no-cache&quot;&gt;
+	&lt;meta http-equiv=&quot;Expires&quot; content=&quot;Sun, 03 Oct 2021 19:47:38 GMT&quot;&gt;
+	&lt;link rel=&quot;shortcut icon&quot; href=&quot;/mantisbt/images/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+	&lt;link rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; title=&quot;MantisBT: Text Search&quot; href=&quot;http://localhost:3000/mantisbt/browser_search_plugin.php?type=text&quot;&gt;	&lt;link rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; title=&quot;MantisBT: Issue Id&quot; href=&quot;http://localhost:3000/mantisbt/browser_search_plugin.php?type=id&quot;&gt;	&lt;title&gt;MantisBT&lt;/title&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/mantisbt/javascript/min/common.js&quot;&gt;&lt;/script&gt;
+&lt;script language=&quot;javascript&quot;&gt;var loading_lang = &quot;Loading...&quot;;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/mantisbt/javascript/min/ajax.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;table class=&quot;width100&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;form-title&quot;&gt;
+	&lt;div class=&quot;center&quot;&gt;
+		MantisBT - All Projects	&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;br&gt;
+
+&lt;form method=&quot;post&quot; action=&quot;view_all_set.php&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;type&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;print&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;offset&quot; value=&quot;0&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;sort&quot; value=&quot;summary&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;dir&quot; value=&quot;ASC&quot;&gt;
+
+&lt;table class=&quot;width100&quot; cellpadding=&quot;2px&quot;&gt;
+
+&lt;tbody&gt;&lt;tr&gt;
+	&lt;td colspan=&quot;9&quot;&gt;
+&lt;a href=&quot;print_all_bug_page_word.php?search=&amp;amp;sort=summary&amp;amp;dir=DESC&amp;amp;type_page=word&amp;amp;export=-1&amp;amp;show_flag=0&quot;&gt;&lt;img src=&quot;http://localhost:3000/mantisbt/images/fileicons/doc.gif&quot; border=&quot;0&quot; align=&quot;absmiddle&quot; alt=&quot;Word 2000&quot;&gt;&lt;/a&gt; &lt;a href=&quot;print_all_bug_page_word.php?search=&amp;amp;sort=summary&amp;amp;dir=DESC&amp;amp;type_page=html&amp;amp;export=-1&amp;amp;show_flag=0&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://localhost:3000/mantisbt/images/ie.gif&quot; border=&quot;0&quot; align=&quot;absmiddle&quot; alt=&quot;Word View&quot;&gt;&lt;/a&gt; 	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;/form&gt;
+
+&lt;br&gt;
+
+&lt;form method=&quot;post&quot; action=&quot;print_all_bug_page.php&quot;&gt;
+&lt;table class=&quot;width100&quot; cellspacing=&quot;1&quot; cellpadding=&quot;2px&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+	&lt;td class=&quot;form-title&quot; colspan=&quot;5.5&quot;&gt;
+		Viewing Issues( 0 - 0 )	&lt;/td&gt;
+	&lt;td class=&quot;right&quot; colspan=&quot;4.5&quot;&gt;
+			&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;row-category&quot;&gt;
+	&lt;td&gt; &amp;nbsp; &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;view_all_set.php?sort=priority&amp;amp;dir=ASC&amp;amp;type=2&amp;amp;print=1&quot;&gt;P&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;view_all_set.php?sort=id&amp;amp;dir=ASC&amp;amp;type=2&amp;amp;print=1&quot;&gt;ID&lt;/a&gt;&lt;/td&gt;&lt;td&gt; # &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;view_all_set.php?sort=category_id&amp;amp;dir=ASC&amp;amp;type=2&amp;amp;print=1&quot;&gt;Category&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;view_all_set.php?sort=severity&amp;amp;dir=ASC&amp;amp;type=2&amp;amp;print=1&quot;&gt;Severity&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;view_all_set.php?sort=status&amp;amp;dir=ASC&amp;amp;type=2&amp;amp;print=1&quot;&gt;Status&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;view_all_set.php?sort=last_updated&amp;amp;dir=ASC&amp;amp;type=2&amp;amp;print=1&quot;&gt;Updated&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;view_all_set.php?sort=summary&amp;amp;dir=DESC&amp;amp;type=2&amp;amp;print=1&quot;&gt;Summary&lt;/a&gt;&lt;img src=&quot;http://localhost:3000/mantisbt/images/up.gif&quot; alt=&quot;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr class=&quot;spacer&quot;&gt;
+	&lt;td colspan=&quot;9&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;show_flag&quot; value=&quot;1&quot;&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;br&gt;
+
+&lt;input type=&quot;submit&quot; class=&quot;button&quot; value=&quot;Display selected only&quot;&gt;
+&lt;/form&gt;
+&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/A[1]</td>
+							<td><a href="state12.html">state12</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[3]/A[1]</td>
+							<td><a href="state16.html">state16</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[5]/A[1]</td>
+							<td><a href="state20.html">state20</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[6]/A[1]</td>
+							<td><a href="state261.html">state261</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[7]/A[1]</td>
+							<td><a href="state376.html">state376</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[8]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[9]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

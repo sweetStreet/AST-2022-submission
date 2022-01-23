@@ -1,0 +1,540 @@
+<HTML lang="en">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<META charset="utf-8">
+<META content="IE=edge" http-equiv="X-UA-Compatible">
+<META content="width=device-width, initial-scale=1" name="viewport">
+<META content="Trello tribute done in Elixir, Phoenix, React and Redux." name="description">
+<META content="ricardo@codeloveandboards.com" name="author">
+<TITLE>WfNvXFxe | Phoenix Trello</TITLE>
+<LINK href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<LINK href="/css/application.css" rel="stylesheet">
+<LINK href="/images/favicon.png" id="favicon" rel="icon" sizes="64x64" type="image/png">
+</HEAD>
+<BODY doc="8" imagecount="0" isdisplayed="false" isdividable="false" isvisualblock="false" linktextlength="0" pcount="0" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<MAIN id="main_container" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" role="main">
+<DIV data-reactid=".0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<DIV class="application-container" data-reactid=".0.0" id="authentication_container" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER class="main-header" data-reactid=".0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<NAV data-reactid=".0.0.0.0" id="boards_nav" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<UL data-reactid=".0.0.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<LI data-reactid=".0.0.0.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A data-reactid=".0.0.0.0.0.0.0" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"><I class="fa fa-columns" data-reactid=".0.0.0.0.0.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></I><SPAN data-reactid=".0.0.0.0.0.0.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"> Boards</SPAN></A>
+</LI>
+</UL>
+</NAV>
+<A data-reactid=".0.0.0.1" href="/" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"><SPAN class="logo" data-reactid=".0.0.0.1.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></SPAN></A>
+<NAV class="right" data-reactid=".0.0.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<UL data-reactid=".0.0.0.2.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<LI data-reactid=".0.0.0.2.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="current-user" data-reactid=".0.0.0.2.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"><IMG alt="Gravatar for john@phoenix-trello.com" class="react-gravatar react-gravatar" data-reactid=".0.0.0.2.0.0.0.0" height="50" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" src="//www.gravatar.com/avatar/6a88cfcf7b76267b129b8dc477c4105e?d=retro&amp;r=g&amp;s=50" srcset="//www.gravatar.com/avatar/6a88cfcf7b76267b129b8dc477c4105e?d=retro&amp;r=g&amp;s=100 2x" width="50"><SPAN data-reactid=".0.0.0.2.0.0.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></SPAN><SPAN data-reactid=".0.0.0.2.0.0.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">John Doe</SPAN></A>
+</LI>
+<LI data-reactid=".0.0.0.2.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A data-reactid=".0.0.0.2.0.1.0" href="#" id="crawler-sign-out" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"><I class="fa fa-sign-out" data-reactid=".0.0.0.2.0.1.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></I><SPAN data-reactid=".0.0.0.2.0.1.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"> Sign out</SPAN></A>
+</LI>
+</UL>
+</NAV>
+</HEADER>
+<DIV class="main-container" data-reactid=".0.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<DIV class="view-container boards show" data-reactid=".0.0.1.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER class="view-header" data-reactid=".0.0.1.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H3 data-reactid=".0.0.1.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">WfNvXFxe</H3>
+<UL class="board-users" data-reactid=".0.0.1.0.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<SPAN data-reactid=".0.0.1.0.0.1.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<LI class="connected" data-reactid=".0.0.1.0.0.1.0.$=10=2$34" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<IMG alt="Gravatar for john@phoenix-trello.com" class="react-gravatar react-gravatar" data-reactid=".0.0.1.0.0.1.0.$=10=2$34.0" height="50" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" src="//www.gravatar.com/avatar/6a88cfcf7b76267b129b8dc477c4105e?d=retro&amp;r=g&amp;s=50" srcset="//www.gravatar.com/avatar/6a88cfcf7b76267b129b8dc477c4105e?d=retro&amp;r=g&amp;s=100 2x" width="50"></LI>
+<LI class="" data-reactid=".0.0.1.0.0.1.0.$=11" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.0.1.0.$=11.0" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"><I class="fa fa-plus" data-reactid=".0.0.1.0.0.1.0.$=11.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></I></A>
+</LI>
+</SPAN>
+</UL>
+</HEADER>
+<DIV class="canvas-wrapper" data-reactid=".0.0.1.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<DIV class="canvas" data-reactid=".0.0.1.0.1.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<DIV class="lists-wrapper" data-reactid=".0.0.1.0.1.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$1" draggable="true" id="list_1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$1.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$1.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$1.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$1.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$1.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$1.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$2" draggable="true" id="list_2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$2.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$2.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$2.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$2.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$2.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$2.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$3" draggable="true" id="list_3" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$3.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$3.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$3.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$3.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$3.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$3.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$4" draggable="true" id="list_4" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$4.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$4.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$4.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$4.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$4.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$4.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$5" draggable="true" id="list_5" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$5.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$5.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$5.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$5.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$5.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$5.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$6" draggable="true" id="list_6" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$6.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$6.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$6.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$6.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$6.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$6.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$7" draggable="true" id="list_7" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$7.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$7.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$7.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$7.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$7.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$7.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$8" draggable="true" id="list_8" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$8.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$8.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$8.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$8.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$8.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$8.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$9" draggable="true" id="list_9" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$9.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$9.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$9.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$9.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$9.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$9.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$10" draggable="true" id="list_10" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$10.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$10.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$10.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$10.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$10.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$10.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$11" draggable="true" id="list_11" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$11.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$11.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$11.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$11.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$11.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$11.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$12" draggable="true" id="list_12" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$12.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$12.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$12.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$12.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$12.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$12.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$13" draggable="true" id="list_13" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$13.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$13.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$13.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$13.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$13.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$13.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$14" draggable="true" id="list_14" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$14.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$14.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$14.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$14.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$14.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$14.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$15" draggable="true" id="list_15" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$15.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$15.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$15.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$15.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$15.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$15.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$16" draggable="true" id="list_16" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$16.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$16.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$16.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$16.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$16.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$16.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$17" draggable="true" id="list_17" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$17.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$17.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$17.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$17.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$17.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$17.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$18" draggable="true" id="list_18" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$18.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$18.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$18.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$18.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$18.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$18.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$19" draggable="true" id="list_19" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$19.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$19.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$19.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$19.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$19.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$19.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$20" draggable="true" id="list_20" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$20.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$20.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$20.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$20.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$20.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$20.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$21" draggable="true" id="list_21" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$21.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$21.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$21.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$21.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$21.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$21.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$22" draggable="true" id="list_22" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$22.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$22.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$22.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$22.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$22.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$22.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$23" draggable="true" id="list_23" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$23.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$23.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$23.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$23.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$23.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$23.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$24" draggable="true" id="list_24" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$24.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$24.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$24.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$24.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$24.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$24.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$25" draggable="true" id="list_25" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$25.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$25.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$25.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$25.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$25.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$25.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$26" draggable="true" id="list_26" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$26.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$26.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$26.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$26.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$26.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$26.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$27" draggable="true" id="list_27" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$27.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$27.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$27.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$27.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$27.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$27.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$28" draggable="true" id="list_28" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$28.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$28.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$28.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$28.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$28.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$28.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$29" draggable="true" id="list_29" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$29.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$29.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$29.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$29.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$29.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$29.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$30" draggable="true" id="list_30" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$30.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$30.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$30.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$30.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$30.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$30.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$31" draggable="true" id="list_31" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$31.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$31.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$31.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$31.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$31.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$31.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$32" draggable="true" id="list_32" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$32.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$32.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$32.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$32.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$32.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$32.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$33" draggable="true" id="list_33" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$33.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$33.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$33.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$33.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$33.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$33.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$34" draggable="true" id="list_34" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$34.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$34.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$34.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$34.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$34.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$34.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$35" draggable="true" id="list_35" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$35.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$35.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$35.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$35.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$35.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$35.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$36" draggable="true" id="list_36" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$36.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$36.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$36.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$36.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$36.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$36.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$37" draggable="true" id="list_37" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$37.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$37.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$37.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$37.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$37.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$37.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$38" draggable="true" id="list_38" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$38.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$38.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$38.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$38.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$38.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$38.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$39" draggable="true" id="list_39" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$39.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$39.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$39.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$39.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$39.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$39.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$40" draggable="true" id="list_40" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$40.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$40.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$40.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$40.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$40.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$40.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$41" draggable="true" id="list_41" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$41.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$41.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$41.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$41.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$41.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$41.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list" data-reactid=".0.0.1.0.1.0.0.0:$42" draggable="true" id="list_42" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" style="display:block;">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.0:$42.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<HEADER data-reactid=".0.0.1.0.1.0.0.0:$42.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<H4 data-reactid=".0.0.1.0.1.0.0.0:$42.0.0.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">updated list</H4>
+</HEADER>
+<DIV class="cards-wrapper" data-reactid=".0.0.1.0.1.0.0.0:$42.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"></DIV>
+<FOOTER data-reactid=".0.0.1.0.1.0.0.0:$42.0.2" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<A class="add-new" data-reactid=".0.0.1.0.1.0.0.0:$42.0.2.1" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Add a new card...</A>
+</FOOTER>
+</DIV>
+</DIV>
+<DIV class="list form" data-reactid=".0.0.1.0.1.0.0.1" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<DIV class="inner" data-reactid=".0.0.1.0.1.0.0.1.0" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<FORM data-reactid=".0.0.1.0.1.0.0.1.0.0" id="new_list_form" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<INPUT data-reactid=".0.0.1.0.1.0.0.1.0.0.0" id="list_name" isdisplayed="false" placeholder="Add a new list..." rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" required="" type="text" value=""><BUTTON data-reactid=".0.0.1.0.1.0.0.1.0.0.2" diraccess="action" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" type="submit">Save list</BUTTON><SPAN data-reactid=".0.0.1.0.1.0.0.1.0.0.3" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"> or </SPAN><A data-reactid=".0.0.1.0.1.0.0.1.0.0.4" diraccess="action" href="#" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">cancel</A>
+</FORM>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+</MAIN>
+<FOOTER id="main_footer" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">
+<SMALL isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}"><A href="https://trello.com/" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" target="_blank">Trello</A> tribute for educational purposes
+        crafted with &hearts; for <A href="https://diacode.com/" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">Diacode</A>
+        by <A href="https://twitter.com/bigardone" isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}">@bigardone</A></SMALL>
+</FOOTER>
+<IFRAME isdisplayed="false" rectangle="{&quot;x&quot;:-1,&quot;y&quot;:-1,&quot;width&quot;:-1,&quot;height&quot;:-1}" src="/phoenix/live_reload/frame" style="display: none;"></IFRAME>
+</BODY>
+</HTML>

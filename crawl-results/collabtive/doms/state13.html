@@ -1,0 +1,269 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>User profile @ Collabtive</title>
+<link rel="shortcut icon" href="templates/standard/images/favicon.ico" type="image/x-icon">
+<link rel="search" type="application/opensearchdescription+xml" title="Collabtive Search" href="manageajax.php?action=addfx-all">
+<link rel="alternate" type="application/rss+xml" title="My messages" href="managerss.php?action=mymsgs-rss&amp;user=1">
+<link rel="alternate" type="application/rss+xml" title="My tasks" href="managerss.php?action=rss-tasks&amp;user=1">
+
+
+<script type="text/javascript">
+//endcolor for close element flashing
+closeEndcolor = '#377814';
+//endcolor for delete element flashing
+deleteEndcolor = '#c62424';
+</script>
+<script type="text/javascript" src="include/js/prototype.php"></script>
+<script type="text/javascript" src="include/js/ajax.php"></script>
+<script type="text/javascript" src="include/js/jsval.php"></script>
+<script type="text/javascript" src="include/js/chat.js"></script>
+     <script type="text/javascript">
+        function _jsVal_Language() {
+            this.err_enter = "Please enter a valid value for \"%FIELDNAME%\".";
+            this.err_form = "Please enter valid values for:\n\n";
+            this.err_select = "Please select a valid value in \"%FIELDNAME%\".";
+        }
+</script>
+
+<script type="text/javascript" src="include/js/mycalendar.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="templates/standard/css/style_main.css">
+
+
+</head>
+<body>
+
+<!--<div id = "jslog" style = "color:red;position:absolute;top:60%;right:5%;width:300px;border:1px solid;background-color:grey;"></div>-->
+
+	<div id="sitebody">
+
+	<div id="header-wrapper">
+		<div id="header">
+			<div class="header-in">
+
+				<div class="left">
+					<div class="logo">
+						<h1>
+							<a href="index.php" title="Desktop"><img src="./templates/standard/images/logo-b.png" alt=""></a>
+							<span class="title">Collabtive<span class="subtitle">/ Projectmanagement </span></span>
+						</h1>
+					</div>
+
+				</div> 
+				<div class="right">
+											<ul id="mainmenue">
+							<li class="desktop"><a class="" href="index.php"><span>Desktop</span></a></li>
+
+														<li class="profil-male"><a class="active" href="manageuser.php?action=profile&amp;id=1"><span>My account</span></a></li>
+							
+							 							<li class="admin"><a class="" href="admin.php?action=projects"><span>Administration</span><span class="submenarrow"></span></a>
+								<div class="submen">
+									<ul>
+										<li class="project-settings"><a class="overview" href="admin.php?action=projects"><span>Project administration</span></a></li>
+										<li class="user-settings"><a class="users_active" href="admin.php?action=users"><span>User administration</span></a></li>
+										<li class="system-settings"><a class="" href="admin.php?action=system"><span>System administration</span></a></li>
+									</ul>
+								</div>
+							</li>
+							
+
+							<li class="logout"><a href="manageuser.php?action=logout"><span>Logout</span></a></li>
+						</ul>
+									</div> <!-- Right End -->
+
+
+
+			</div> <!-- Header-In End -->
+		</div> <!-- Header End -->
+	</div> <!-- Header-Wrapper End -->
+
+
+	<div id="contentwrapper">
+<div class="tabswrapper">
+	<ul class="tabs">
+									<li class="user-male"><a class="active" href="manageuser.php?action=profile&amp;id=1"><span>My account</span></a></li>
+										<li class="edit-male"><a href="manageuser.php?action=editform&amp;id=1"><span>Edit</span></a></li>
+						</ul>
+</div>
+<div id="content-left">
+	<div id="content-left-in">
+		<div class="user">
+
+			<h1>User profile<span>/ admin</span></h1>
+
+			<div class="export-main">
+				<a class="export"><span>Export</span></a>
+				<div class="export-in" style="width:32px;left: -32px;"> 											<a class="vcardmale" href="manageuser.php?action=vcard&amp;id=1"><span>vCard</span></a>
+									</div>
+			</div>
+
+			<div class="userwrapper">
+
+				<table cellpadding="0" cellspacing="0" border="0">
+					<tbody><tr>
+						<td class="avatarcell" valign="top">
+																								<div class="avatar-profile">
+										<img src="thumb.php?pic=templates/standard/images/no-avatar-male.jpg&amp;width=122;" alt="">
+									</div>
+																						<div id="avatarbig" style="display:none;">
+								<a href="javascript:Control.Modal.close();"><img src="thumb.php?pic=files/standard/avatar/&amp;width=480&amp;height=480;" alt=""></a>
+							</div>
+						</td>
+						<td>
+							<div class="message">
+								<div class="block">
+
+									<table cellpadding="0" cellspacing="0" border="0">
+										<colgroup>
+											<col class="a">
+											<col class="b">
+										</colgroup>
+
+										<thead><tr><th colspan="2"></th></tr></thead>
+										<tfoot><tr><td colspan="2"></td></tr></tfoot>
+
+										<tbody class="color-b">
+											<tr>
+												<td><strong>Company:</strong></td>
+												<td class="right"></td>
+											</tr>
+										</tbody>
+
+										<tbody class="color-a">
+											<tr>
+												<td><strong>E-Mail:</strong></td>
+												<td class="right"><a href="mailto:"></a></td>
+											</tr>
+										</tbody>
+
+										<tbody class="color-b">
+											<tr>
+												<td><strong>URL:</strong></td>
+												<td class="right"><a href="" target="_blank"></a></td>
+											</tr>
+										</tbody>
+
+										<tbody class="color-a">
+											<tr>
+												<td><strong>Phone:</strong></td>
+												<td class="right"></td>
+											</tr>
+										</tbody>
+
+										<tbody class="color-b">
+											<tr>
+												<td><strong>Cell phone:</strong></td>
+												<td class="right"></td>
+											</tr>
+										</tbody>
+
+										<tbody class="color-a">
+											<tr>
+												<td><strong>Address:</strong></td>
+												<td class="right"></td>
+											</tr>
+										</tbody>
+
+										<tbody class="color-b">
+											<tr>
+												<td><strong>Postcode / City:</strong></td>
+												<td class="right"> </td>
+											</tr>
+										</tbody>
+
+										<tbody class="color-a">
+											<tr>
+																									<td><strong>Country:</strong></td>
+													<td class="right"></td>
+																							</tr>
+										</tbody>
+
+										<tbody class="color-b">
+											<tr>
+												<td><strong>Tags:</strong></td>
+												<td class="right">
+																											<a href="managetags.php?action=gettag&amp;tag=&amp;id=0"></a>
+																									</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div> 							</div> 						</td>
+					</tr>
+				</tbody></table>
+			</div> 		</div> 		<div class="content-spacer"></div>
+
+		 
+				<div class="content-spacer"></div>
+
+		
+			<script type="text/javascript">
+				var accord_tracker = new accordion('acc-tracker');
+			</script>
+		
+
+	</div> </div> 
+<div id="content-right">
+
+
+		<div class="content-right-in">
+			<h2><a id="searchtoggle" class="win-up" href="javascript:blindtoggle('search');toggleClass('searchtoggle','win-up','win-down');">Search</a></h2>
+
+			<form id="search" method="get" action="managesearch.php" onsubmit="return validateStandard(this,'input_error');">
+			<fieldset>
+				<div class="row">
+					<input type="text" class="text" id="query" name="query" autocomplete="off">
+				</div>
+
+				<div id="choices" style="display: none;"></div>
+				<input type="hidden" name="action" value="search">
+
+				<div id="indicator1" style="display:none;"><img src="templates/standard/images/symbols/indicator_arrows.gif" alt="Searching..."></div>
+
+				<button type="submit" title="Go!"></button>
+			</fieldset>
+
+			</form>
+	</div>
+	
+
+		
+
+			
+		
+		<div class="content-right-in">
+			<h2><a id="onlinelisttoggle" class="win-up" href="javascript:blindtoggle('onlinelist');toggleClass('onlinelisttoggle','win-up','win-down');">Online</a></h2>
+
+			<div id="onlinelist"><ul><li><a class="user" href="manageuser.php?action=profile&amp;id=1">admin<div><img src="thumb.php?pic=templates/standard/images/no-avatar-male.jpg&amp;width=90"></div> </a> <a class="chat-user"></a></li></ul></div>
+	</div>
+
+
+		
+			  <script type="text/javascript">
+			  new Ajax.Autocompleter('query', 'choices', 'managesearch.php?action=ajaxsearch', {paramName:'query',minChars: 2,indicator: 'indicator1'});
+				 var on = new Ajax.PeriodicalUpdater("onlinelist","manageuser.php?action=onlinelist",{method:'get',evalScripts:true,frequency:35,decay:1.5});
+
+
+			</script>
+		
+
+</div>
+			</div> 		</div> 
+
+ <div id="msgchk" style="display:none;"></div>
+<script type="text/javascript">
+		chkChat();
+</script>
+
+
+	<div id="footer-wrapper">
+		<div class="footer">
+			<div class="footer-in">
+				<a href="http://collabtive.o-dyn.de">Collabtive 1.0</a>
+			</div>
+		</div>
+	</div>
+
+
+<div id="modal_overlay" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9998; display: none;"></div><div id="modal_container" style="display: none;"></div><div id="modal_loading" style="display: none;"></div></body></html>

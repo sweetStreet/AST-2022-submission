@@ -1,0 +1,1833 @@
+{
+  "url" : "http://localhost:3000/claroline11110/",
+  "basicAuthUrl" : null,
+  "browserConfig" : {
+    "browserType" : "CHROME_HEADLESS",
+    "numberOfBrowsers" : 1,
+    "browserBuilder" : { },
+    "remoteHubUrl" : null,
+    "browserOptions" : {
+      "headless" : false,
+      "pixelDensity" : 2,
+      "profile" : null
+    },
+    "defaultBuilder" : true,
+    "langOrNull" : null
+  },
+  "plugins" : [ "CrawlOverview", "ClarolineCleanup", "TestSuiteGenerator", "FragmentationPlugin" ],
+  "proxyConfiguration" : {
+    "port" : -1,
+    "hostname" : "none",
+    "type" : "NOTHING"
+  },
+  "crawlRules" : {
+    "crawlEvents" : [ "click" ],
+    "invariants" : [ ],
+    "oracleComparators" : [ {
+      "preConditions" : [ ],
+      "id" : "DummyComparator",
+      "oracle" : { }
+    } ],
+    "ignoredFrameIdentifiers" : [ ],
+    "preCrawlConfig" : {
+      "waitConditions" : [ ],
+      "crawlConditions" : [ ],
+      "includedElements" : [ {
+        "tagName" : "A",
+        "id" : "id569457740",
+        "eventType" : "click",
+        "eventableCondition" : null,
+        "withXpathExpression" : null
+      }, {
+        "tagName" : "BUTTON",
+        "id" : "id1228414696",
+        "eventType" : "click",
+        "eventableCondition" : null,
+        "withXpathExpression" : null
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id913454766",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id913454766",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@type='submit']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//INPUT[@type='submit']"
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id2040862523",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id2040862523",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@type='button']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//INPUT[@type='button']"
+      } ],
+      "excludedElements" : [ {
+        "tagName" : "A",
+        "id" : "id1369331487",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1369331487",
+          "conditions" : [ ],
+          "inXPath" : "//A[text()='php-addressbook']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//A[text()='php-addressbook']"
+      }, {
+        "tagName" : "A",
+        "id" : "id1490603162",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1490603162",
+          "conditions" : [ ],
+          "inXPath" : "//A[text()='v9.0.0.1']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//A[text()='v9.0.0.1']"
+      } ],
+      "filterAttributeNames" : [ "closure_hashcode_(\\w)*", "jquery[0-9]+" ]
+    },
+    "formFillMode" : "RANDOM",
+    "formFillOrder" : "NORMAL",
+    "inputSpecification" : {
+      "formInputs" : {
+        "name byear" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "byear",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name bday" : {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bday",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "18",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name address" : {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "address",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "1165 The Castings",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name bmonth" : {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bmonth",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name password" : {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name firstname" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "firstname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Andrea",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name email" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "astocco@ece.ubc.ca",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "id course_email" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "course_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe@mydomain.net",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name login" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "login",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name lastname" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "lastname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Stocco",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }
+      },
+      "forms" : [ {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "login",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      }, {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "firstname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Andrea",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "lastname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Stocco",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "address",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "1165 The Castings",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "astocco@ece.ubc.ca",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bday",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "18",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bmonth",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "byear",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      }, {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "course_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe@mydomain.net",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      } ],
+      "crawlElements" : [ {
+        "tagName" : "BUTTON",
+        "id" : "id1096303712",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1096303712",
+          "conditions" : [ ],
+          "inXPath" : "//BUTTON[@type='submit']",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "login",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "login",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "login",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "login",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "login",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//BUTTON[@type='submit']"
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id1761508715",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1761508715",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@value='Enter']",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "firstname",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Andrea",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "lastname",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Stocco",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXTAREA",
+            "identification" : {
+              "how" : "name",
+              "value" : "address",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "1165 The Castings",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "astocco@ece.ubc.ca",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "SELECT",
+            "identification" : {
+              "how" : "name",
+              "value" : "bday",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "18",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "SELECT",
+            "identification" : {
+              "how" : "name",
+              "value" : "bmonth",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "August",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "byear",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "August",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "firstname",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Andrea",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "lastname",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Stocco",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXTAREA",
+            "identification" : {
+              "how" : "name",
+              "value" : "address",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "1165 The Castings",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "astocco@ece.ubc.ca",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "SELECT",
+            "identification" : {
+              "how" : "name",
+              "value" : "bday",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "18",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "SELECT",
+            "identification" : {
+              "how" : "name",
+              "value" : "bmonth",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "August",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "byear",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "August",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "firstname",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Andrea",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "lastname",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Stocco",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXTAREA",
+            "identification" : {
+              "how" : "name",
+              "value" : "address",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "1165 The Castings",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "astocco@ece.ubc.ca",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "SELECT",
+            "identification" : {
+              "how" : "name",
+              "value" : "bday",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "18",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "SELECT",
+            "identification" : {
+              "how" : "name",
+              "value" : "bmonth",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "August",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "byear",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "August",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "firstname",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Andrea",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "lastname",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Stocco",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXTAREA",
+            "identification" : {
+              "how" : "name",
+              "value" : "address",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "1165 The Castings",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "astocco@ece.ubc.ca",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "SELECT",
+            "identification" : {
+              "how" : "name",
+              "value" : "bday",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "18",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "SELECT",
+            "identification" : {
+              "how" : "name",
+              "value" : "bmonth",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "August",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "byear",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "August",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "firstname",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Andrea",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "lastname",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Stocco",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXTAREA",
+            "identification" : {
+              "how" : "name",
+              "value" : "address",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "1165 The Castings",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "astocco@ece.ubc.ca",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "SELECT",
+            "identification" : {
+              "how" : "name",
+              "value" : "bday",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "18",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "SELECT",
+            "identification" : {
+              "how" : "name",
+              "value" : "bmonth",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "August",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "byear",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "August",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//INPUT[@value='Enter']"
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id1563984863",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1563984863",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@value='Ok']",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "course_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "jdoe@mydomain.net",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "course_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "jdoe@mydomain.net",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "course_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "jdoe@mydomain.net",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "course_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "jdoe@mydomain.net",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "course_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "jdoe@mydomain.net",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//INPUT[@value='Ok']"
+      } ]
+    },
+    "testInvariantsWhileCrawling" : true,
+    "clickOnce" : true,
+    "randomizeCandidateElements" : false,
+    "crawlFrames" : false,
+    "crawlHiddenAnchors" : true,
+    "waitAfterReloadUrl" : 500,
+    "waitAfterEvent" : 500,
+    "followExternalLinks" : false,
+    "crawlPriorityMode" : "NORMAL",
+    "crawlNearDuplicates" : true,
+    "delayNearDuplicateCrawling" : true,
+    "applyNonSelAdvantage" : true,
+    "avoidUnrelatedBacktracking" : false,
+    "useEquivalentReset" : false,
+    "avoidDifferentBacktracking" : false,
+    "skipExploredActions" : true,
+    "maxRepeatExploredActions" : 2,
+    "usefulFragmentRules" : {
+      "thresholdWidth" : 50.0,
+      "thresholdHeight" : 50.0,
+      "subtreeWidth_and" : 1,
+      "subtreeWidth_or" : 4
+    },
+    "restoreConnectedEdges" : true,
+    "allCrawlElements" : [ {
+      "tagName" : "A",
+      "id" : "id569457740",
+      "eventType" : "click",
+      "eventableCondition" : null,
+      "withXpathExpression" : null
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id1228414696",
+      "eventType" : "click",
+      "eventableCondition" : null,
+      "withXpathExpression" : null
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id913454766",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id913454766",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@type='submit']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//INPUT[@type='submit']"
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id2040862523",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id2040862523",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@type='button']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//INPUT[@type='button']"
+    }, {
+      "tagName" : "A",
+      "id" : "id1369331487",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1369331487",
+        "conditions" : [ ],
+        "inXPath" : "//A[text()='php-addressbook']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//A[text()='php-addressbook']"
+    }, {
+      "tagName" : "A",
+      "id" : "id1490603162",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1490603162",
+        "conditions" : [ ],
+        "inXPath" : "//A[text()='v9.0.0.1']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//A[text()='v9.0.0.1']"
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id1096303712",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1096303712",
+        "conditions" : [ ],
+        "inXPath" : "//BUTTON[@type='submit']",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "login",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "login",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "login",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "login",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "login",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "login",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//BUTTON[@type='submit']"
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id1761508715",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1761508715",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@value='Enter']",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "firstname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Andrea",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "lastname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Stocco",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "address",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "1165 The Castings",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "astocco@ece.ubc.ca",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bday",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "18",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bmonth",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "byear",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "firstname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Andrea",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "lastname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Stocco",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "address",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "1165 The Castings",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "astocco@ece.ubc.ca",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bday",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "18",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bmonth",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "byear",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "firstname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Andrea",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "lastname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Stocco",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "address",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "1165 The Castings",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "astocco@ece.ubc.ca",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bday",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "18",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bmonth",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "byear",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "firstname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Andrea",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "lastname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Stocco",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "address",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "1165 The Castings",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "astocco@ece.ubc.ca",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bday",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "18",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bmonth",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "byear",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "firstname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Andrea",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "lastname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Stocco",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "address",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "1165 The Castings",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "astocco@ece.ubc.ca",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bday",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "18",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bmonth",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "byear",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "firstname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Andrea",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "lastname",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Stocco",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "address",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "1165 The Castings",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "astocco@ece.ubc.ca",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bday",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "18",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "bmonth",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "byear",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "August",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//INPUT[@value='Enter']"
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id1563984863",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1563984863",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@value='Ok']",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "course_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe@mydomain.net",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "course_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe@mydomain.net",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "course_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe@mydomain.net",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "course_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe@mydomain.net",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "course_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe@mydomain.net",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "course_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe@mydomain.net",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//INPUT[@value='Ok']"
+    } ]
+  },
+  "maximumStates" : 0,
+  "maximumRuntime" : 3600000,
+  "maximumDepth" : 0,
+  "stateVertexFactory" : { },
+  "siteDir" : "/Users/liuyu/projects/tackle-test-generator-ui-level/testlabeling/crawljax_frag/out/claroline/claroline_HYBRID_DOM_-1.0_60mins/localhost",
+  "outputDir" : "/Users/liuyu/projects/tackle-test-generator-ui-level/testlabeling/crawljax_frag/out/claroline/claroline_HYBRID_DOM_-1.0_60mins/localhost/crawl1"
+}

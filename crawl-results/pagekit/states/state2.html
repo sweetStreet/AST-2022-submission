@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state2</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/pagekit/index.php/admin/login'>http://localhost:3000/pagekit/index.php/admin/login</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>3</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>index</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>20.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/UL[1]/LI[2]/A[1], xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/P[1]/BUTTON[1]</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state2.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/UL[1]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/P[1]/BUTTON[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[2]/DIV[1]/P[1]/BUTTON[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 422px; top: 523px; width: 352px; height: 57px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html class=&quot;tm-background uk-height-viewport uk-notouch&quot;&gt;&lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+        &lt;link href=&quot;/pagekit/app/system/modules/theme/favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot;&gt;
+        &lt;link href=&quot;/pagekit/app/system/modules/theme/apple_touch_icon.png&quot; rel=&quot;apple-touch-icon-precomposed&quot;&gt;
+                &lt;meta name=&quot;generator&quot; content=&quot;Pagekit&quot;&gt;
+        &lt;link href=&quot;/pagekit/app/system/modules/theme/favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot;&gt;
+        &lt;link href=&quot;/pagekit/app/system/modules/theme/apple_touch_icon.png&quot; rel=&quot;apple-touch-icon-precomposed&quot;&gt;
+        &lt;title&gt;Login | Testing&lt;/title&gt;
+        &lt;link href=&quot;/pagekit/app/system/modules/theme/css/theme.css?v=d10d&quot; rel=&quot;stylesheet&quot;&gt;
+        &lt;script&gt;var $pagekit = {&quot;url&quot;:&quot;\/pagekit\/index.php&quot;,&quot;csrf&quot;:&quot;c0c5c4b637a86e3c2f955843130e390f12d74122&quot;};&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/jquery/dist/jquery.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/uikit.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/system/modules/theme/js/login.js?v=d10d&quot;&gt;&lt;/script&gt;
+                    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;div class=&quot;uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-text-center&quot;&gt;
+            &lt;div class=&quot;tm-container tm-container-small&quot;&gt;
+
+                &lt;img class=&quot;uk-margin-large-bottom&quot; src=&quot;/pagekit/app/system/assets/images/pagekit-logo-text.svg&quot; alt=&quot;Pagekit&quot;&gt;
+
+                &lt;div class=&quot;pk-system-messages&quot;&gt;&lt;/div&gt;
+                &lt;form class=&quot;js-login js-toggle uk-form tm-form uk-hidden&quot; action=&quot;/pagekit/index.php/user/authenticate&quot; method=&quot;post&quot; aria-hidden=&quot;false&quot;&gt;
+
+                    &lt;div class=&quot;uk-panel uk-panel-box&quot;&gt;
+
+                        &lt;div class=&quot;uk-form-row&quot;&gt;
+                            &lt;input class=&quot;uk-form-large uk-width-1-1&quot; type=&quot;text&quot; name=&quot;credentials[username]&quot; value=&quot;&quot; placeholder=&quot;Username&quot; autofocus=&quot;&quot;&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;uk-form-row&quot;&gt;
+                            &lt;input class=&quot;uk-form-large uk-width-1-1&quot; type=&quot;password&quot; name=&quot;credentials[password]&quot; value=&quot;&quot; placeholder=&quot;Password&quot;&gt;
+                        &lt;/div&gt;
+
+                        &lt;p class=&quot;uk-form-row tm-panel-marginless-bottom&quot;&gt;
+                            &lt;button class=&quot;uk-button uk-button-primary uk-button-large uk-width-1-1&quot;&gt;Login&lt;/button&gt;
+                        &lt;/p&gt;
+
+                        &lt;input type=&quot;hidden&quot; name=&quot;_csrf&quot; value=&quot;c0c5c4b637a86e3c2f955843130e390f12d74122&quot;&gt;                        &lt;input type=&quot;hidden&quot; name=&quot;redirect&quot; value=&quot;/pagekit/index.php/admin&quot;&gt;
+
+                    &lt;/div&gt;
+
+                    &lt;ul class=&quot;uk-list uk-contrast&quot;&gt;
+                        &lt;li&gt;&lt;label class=&quot;uk-form&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;remember_me&quot;&gt; Remember Me&lt;/label&gt;&lt;/li&gt;
+                        &lt;li class=&quot;uk-margin-small-top&quot;&gt; Forgot Password? &lt;a class=&quot;uk-link&quot; data-uk-toggle=&quot;{ target: '.js-toggle' }&quot;&gt;Request Password&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+
+                &lt;/form&gt;
+
+                &lt;form class=&quot;js-toggle uk-form tm-form&quot; action=&quot;/pagekit/index.php/user/resetpassword/request&quot; method=&quot;post&quot; aria-hidden=&quot;true&quot;&gt;
+
+                    &lt;div class=&quot;uk-panel uk-panel-box&quot;&gt;
+
+                        &lt;div class=&quot;uk-form-row&quot;&gt;
+                            &lt;input class=&quot;uk-form-large uk-width-1-1&quot; type=&quot;text&quot; name=&quot;email&quot; value=&quot;&quot; placeholder=&quot;Email&quot; required=&quot;&quot;&gt;
+                        &lt;/div&gt;
+
+                        &lt;p class=&quot;uk-form-row tm-panel-marginless-bottom&quot;&gt;
+                            &lt;button class=&quot;uk-button uk-button-primary uk-button-large uk-width-1-1&quot;&gt;Reset Password&lt;/button&gt;
+                        &lt;/p&gt;
+
+                        &lt;input type=&quot;hidden&quot; name=&quot;_csrf&quot; value=&quot;c0c5c4b637a86e3c2f955843130e390f12d74122&quot;&gt;                    &lt;/div&gt;
+
+                &lt;/form&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    
+
+&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/UL[1]/LI[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/P[1]/BUTTON[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[2]/DIV[1]/P[1]/BUTTON[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

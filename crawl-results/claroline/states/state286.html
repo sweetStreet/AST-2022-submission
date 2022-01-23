@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state286</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/claroline11110/claroline/admin/admin_profile.php?uidToEdit=1&cfrom=ulist'>http://localhost:3000/claroline11110/claroline/admin/admin_profile.php?uidToEdit=1&cfrom=ulist</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>3</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>10</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state81</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>29.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>286</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state286.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/UL[1]/LI[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 258px; top: 91px; width: 77px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 229px; top: 126px; width: 165px; height: 28px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state287.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/UL[1]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 395px; top: 126px; width: 291px; height: 28px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/UL[1]/LI[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 688px; top: 126px; width: 128px; height: 28px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state379.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/UL[1]/LI[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 817px; top: 126px; width: 101px; height: 28px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state483.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/UL[1]/LI[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 920px; top: 126px; width: 181px; height: 28px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/UL[1]/LI[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 229px; top: 155px; width: 131px; height: 28px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/DL[1]/DT[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 47px; top: 966px; width: 59px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/DL[1]/DT[1]/INPUT[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 12px; top: 964px; width: 34px; height: 21px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/DL[1]/DT[1]/A[1]/INPUT[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 47px; top: 964px; width: 59px; height: 21px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;
+&lt;title&gt;Claroline&lt;/title&gt;
+&lt;meta http-equiv=&quot;Content-Script-Type&quot; content=&quot;text/javascript&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/HTML; charset=iso-8859-1&quot;&gt;
+&lt;meta name=&quot;generator&quot; content=&quot;Claroline 1.11.10 - http://claroline.net&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/claroline11110/web/css/classic/main.css?1337668864&quot; media=&quot;screen, projection, tv&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/claroline11110/web/css/print.css?1301589034&quot; media=&quot;print&quot;&gt;
+
+&lt;link rel=&quot;top&quot; href=&quot;/index.php&quot; title=&quot;&quot;&gt;
+&lt;link href=&quot;http://www.claroline.net/documentation.htm&quot; rel=&quot;Help&quot;&gt;
+&lt;link href=&quot;/claroline11110/CREDITS.txt&quot; rel=&quot;Author&quot;&gt;
+&lt;link href=&quot;http://www.claroline.net&quot; rel=&quot;Copyright&quot;&gt;
+&lt;link href=&quot;/claroline11110/claroline/../favicon.ico&quot; rel=&quot;shortcut icon&quot;&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    document.cookie=&quot;javascriptEnabled=true; path=/claroline11110&quot;;
+    function claro_session_loss_countdown(sessionLifeTime){
+    var chrono = setTimeout('claro_warn_of_session_loss()', sessionLifeTime * 1000);
+}
+
+function claro_warn_of_session_loss() {
+    alert('WARNING ! You have just lost your session on the server.\nCopy any text you are currently writing and paste it outside the browser');
+}
+&lt;/script&gt;
+
+&lt;script src=&quot;/claroline11110/web/js/jquery.js?1374567070&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/jquery.qtip.js?1371735614&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/claroline.js?1368605938&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/claroline.ui.js?1376037408&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/tooltitle.js?1311692694&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+var __ = (function(){
+
+    var translation = {
+    
+
+    };
+
+    return function(string) {
+        return translation[string] || string;
+    };
+
+})();
+&lt;/script&gt;
+            
+
+&lt;/head&gt;
+
+&lt;body dir=&quot;ltr&quot; onload=&quot;claro_session_loss_countdown(1440);&quot; style=&quot;&quot;&gt;
+&lt;!-- $Id: banner.tpl.php 13151 2011-05-11 12:09:47Z abourguignon $ --&gt;
+
+&lt;!-- claroPage --&gt;
+&lt;div id=&quot;claroPage&quot;&gt;
+
+&lt;!-- Banner --&gt;
+&lt;div id=&quot;topBanner&quot;&gt;
+
+&lt;!-- Platform Banner --&gt;
+&lt;div id=&quot;platformBanner&quot;&gt;
+    &lt;div id=&quot;campusBannerLeft&quot;&gt;
+        &lt;span id=&quot;siteName&quot;&gt;
+            &lt;a href=&quot;/claroline11110/index.php&quot; target=&quot;_top&quot;&gt;
+                        Claroline                        &lt;/a&gt;
+        &lt;/span&gt;
+        
+        
+&lt;!-- campusBannerLeft --&gt;
+
+&lt;!-- End of campusBannerLeft --&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;campusBannerRight&quot;&gt;
+        &lt;span id=&quot;institution&quot;&gt;
+                        
+                                                
+                    &lt;/span&gt;
+        
+        
+&lt;!-- campusBannerRight --&gt;
+
+&lt;!-- End of campusBannerRight --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Platform Banner --&gt;
+
+&lt;!-- User Banner --&gt;
+&lt;div id=&quot;userBanner&quot;&gt;
+    &lt;div id=&quot;userBannerLeft&quot;&gt;
+        &lt;ul class=&quot;menu&quot;&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/desktop/index.php&quot; target=&quot;_top&quot;&gt;My desktop&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/messaging&quot; target=&quot;_top&quot;&gt;My messages&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/admin/&quot; target=&quot;_top&quot;&gt;Platform administration&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        
+&lt;!-- userBannerLeft --&gt;
+
+&lt;!-- End of userBannerLeft --&gt;
+        &lt;/ul&gt;
+        
+    &lt;/div&gt;
+    
+    &lt;div id=&quot;userBannerRight&quot;&gt;
+        &lt;ul class=&quot;menu&quot;&gt;
+            &lt;li class=&quot;userName&quot;&gt;
+                John Doe            &lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/auth/profile.php&quot; target=&quot;_top&quot;&gt;Manage my account&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/index.php?logout=true&quot; target=&quot;_top&quot;&gt;Logout&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        
+&lt;!-- userBannerRight --&gt;
+
+&lt;!-- End of userBannerRight --&gt;
+        &lt;/ul&gt;
+        
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- BreadcrumbLine  --&gt;
+&lt;div id=&quot;breadcrumbLine&quot;&gt;
+    &lt;hr&gt;
+    &lt;div class=&quot;breadcrumbTrails&quot;&gt;
+        &lt;ul class=&quot;breadCrumbs&quot;&gt;
+&lt;li class=&quot;breadCrumbsNode firstBreadCrumbsNode&quot;&gt;&lt;a href=&quot;/claroline11110/index.php&quot; target=&quot;_top&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/home.png?1232376376&quot; alt=&quot;home&quot;&gt;&amp;nbsp;Claroline&lt;/a&gt;&amp;nbsp;&amp;gt;&amp;nbsp;&lt;/li&gt;
+&lt;li class=&quot;breadCrumbsNode&quot;&gt;&lt;a href=&quot;/claroline11110/claroline/admin/&quot; target=&quot;_top&quot;&gt;Administration&lt;/a&gt;&amp;nbsp;&amp;gt;&amp;nbsp;&lt;/li&gt;
+&lt;li class=&quot;breadCrumbsNode&quot;&gt;&lt;a href=&quot;/claroline11110/claroline/admin/admin_users.php&quot; target=&quot;_top&quot;&gt;User list&lt;/a&gt;&amp;nbsp;&amp;gt;&amp;nbsp;&lt;/li&gt;
+&lt;li class=&quot;breadCrumbsNode lastBreadCrumbsNode&quot;&gt;&lt;a href=&quot;/claroline11110/claroline/admin/admin_profile.php?uidToEdit=1&amp;amp;cfrom=ulist&quot; target=&quot;_top&quot;&gt;User settings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    &lt;/div&gt;
+    
+    &lt;div id=&quot;toolViewOption&quot;&gt;
+                            &lt;/div&gt;
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+    &lt;hr&gt;
+&lt;/div&gt;
+&lt;!-- End of BreadcrumbLine  --&gt;
+
+&lt;/div&gt;
+&lt;!-- End of topBanner --&gt;
+&lt;!-- $Id: body.tpl.php 14332 2012-11-23 10:08:10Z zefredz $ --&gt;
+
+
+&lt;!-- - - - - - - - - - - Claroline Body - - - - - - - - - --&gt;
+&lt;div id=&quot;claroBody&quot;&gt;
+    
+    
+                
+
+&lt;!-- Page content --&gt;
+&lt;div class=&quot;toolTitleBlock&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;h1 class=&quot;toolTitle mainTitle&quot;&gt;User settings&lt;/h1&gt;
+&lt;/td&gt;&lt;td&gt;&lt;ul class=&quot;commandList&quot;&gt;
+&lt;li&gt;&lt;a style=&quot;background-image: url(/claroline11110/web/img/enroll.png?1232376376); background-repeat: no-repeat; background-position: left center; padding-left: 20px;&quot; href=&quot;../auth/courses.php?cmd=rqReg&amp;amp;uidToEdit=1&amp;amp;fromAdmin=settings&amp;amp;category=&quot;&gt;Enrol to a new course&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a style=&quot;background-image: url(/claroline11110/web/img/mail_close.png?1232376376); background-repeat: no-repeat; background-position: left center; padding-left: 20px;&quot; href=&quot;../auth/lostPassword.php?Femail=jdoe%40mydomain.net&amp;amp;searchPassword=1&quot;&gt;Send account information to user by email&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a style=&quot;background-image: url(/claroline11110/web/img/course.png?1232376376); background-repeat: no-repeat; background-position: left center; padding-left: 20px;&quot; href=&quot;adminusercourses.php?uidToEdit=1&quot;&gt;User course list&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a style=&quot;background-image: url(/claroline11110/web/img/deluser.png?1232376376); background-repeat: no-repeat; background-position: left center; padding-left: 20px;&quot; href=&quot;adminuserdeleted.php?uidToEdit=1&amp;amp;cmd=rqDelete&quot;&gt;Delete user&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;../messaging/sendmessage.php?cmd=rqMessageToUser&amp;amp;userId=1&quot;&gt;Send a message to the user&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a style=&quot;background-image: url(/claroline11110/web/img/back.png?1306428622); background-repeat: no-repeat; background-position: left center; padding-left: 20px;&quot; href=&quot;admin_users.php&quot;&gt;Back to user list&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;span class=&quot;toolTitle subTitle&quot;&gt;John Doe&lt;/span&gt;
+&lt;/div&gt;
+&lt;!-- $Id: user_form.tpl.php 14314 2012-11-07 09:09:19Z zefredz $ --&gt;
+
+&lt;form id=&quot;userSettings&quot; method=&quot;post&quot; action=&quot;/claroline11110/claroline/admin/admin_profile.php&quot; enctype=&quot;multipart/form-data&quot;&gt;
+        &lt;input type=&quot;hidden&quot; id=&quot;cmd&quot; name=&quot;cmd&quot; value=&quot;registration&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;claroFormId&quot; value=&quot;615ce0dcd1b02&quot;&gt;
+    
+        &lt;input type=&quot;hidden&quot; id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; value=&quot;07ea8fbad1c97af49c6cfc8e8fbc2a34&quot;&gt;
+        
+        
+        &lt;input type=&quot;hidden&quot; id=&quot;uidToEdit&quot; name=&quot;uidToEdit&quot; value=&quot;1&quot;&gt;
+        
+    
+    
+    &lt;!-- FIRST SECTION: personal informations --&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;
+            Personal informations        &lt;/legend&gt;
+        
+        &lt;dl&gt;
+            &lt;dt&gt;
+                &lt;label for=&quot;lastname&quot;&gt;
+                    Name                    &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/dt&gt;
+            &lt;dd&gt;
+                                
+                    &lt;input type=&quot;text&quot; id=&quot;lastname&quot; name=&quot;lastname&quot; value=&quot;Doe&quot;&gt;
+                
+                            &lt;/dd&gt;
+            &lt;dt&gt;
+                &lt;label for=&quot;firstname&quot;&gt;
+                    First name                    &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/dt&gt;
+            &lt;dd&gt;
+                                
+                    &lt;input type=&quot;text&quot; id=&quot;firstname&quot; name=&quot;firstname&quot; value=&quot;John&quot;&gt;
+                
+                            &lt;/dd&gt;
+            
+                        
+                &lt;dt&gt;
+                    &lt;label for=&quot;officialCode&quot;&gt;
+                        Administrative code
+                                            &lt;/label&gt;
+                &lt;/dt&gt;
+            
+                                
+                    &lt;dd&gt;
+                        &lt;input type=&quot;text&quot; id=&quot;officialCode&quot; name=&quot;officialCode&quot; value=&quot;&quot;&gt;
+                    &lt;/dd&gt;
+                
+                                    
+                        
+                        
+                            
+                &lt;dt&gt;
+                    &lt;label for=&quot;picture&quot;&gt;
+                        User picture                    &lt;/label&gt;
+                &lt;/dt&gt;
+            
+                
+                &lt;dd&gt;
+                    &lt;input type=&quot;file&quot; name=&quot;picture&quot; id=&quot;picture&quot;&gt;&lt;br&gt;
+                    &lt;span class=&quot;notice&quot;&gt;
+                        max size 150x200, 102400 bytes                    &lt;/span&gt;
+                &lt;/dd&gt;
+
+                            
+                            
+        &lt;/dl&gt;
+        
+    &lt;/fieldset&gt;
+    
+    
+    
+    &lt;!-- SECOND SECTION: platform's account --&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;
+            User account        &lt;/legend&gt;
+        
+        &lt;dl&gt;
+            
+                        
+            
+                &lt;dt&gt;
+                    User id                &lt;/dt&gt;
+                &lt;dd&gt;
+                    1                &lt;/dd&gt;
+
+            
+            
+                &lt;dt&gt;
+                    &lt;label for=&quot;username&quot;&gt;
+                        Username                        &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;
+                    &lt;/label&gt;
+                &lt;/dt&gt;
+                &lt;dd&gt;
+                                        
+                        &lt;input type=&quot;text&quot; name=&quot;username&quot; id=&quot;username&quot; value=&quot;admin&quot;&gt;
+                    
+                                    &lt;/dd&gt;
+                
+            
+            
+                
+                    &lt;dt&gt;&amp;nbsp;&lt;/dt&gt;
+                    &lt;dd&gt;
+                        &lt;p class=&quot;notice&quot;&gt;Enter new password twice to change, leave empty to keep it&lt;/p&gt;
+                    &lt;/dd&gt;
+                    
+                    &lt;dt&gt;
+                        &lt;label for=&quot;old_password&quot;&gt;
+                            Old password                        &lt;/label&gt;
+                    &lt;/dt&gt;
+                    &lt;dd&gt;
+                        &lt;input type=&quot;password&quot; autocomplete=&quot;off&quot; name=&quot;old_password&quot; id=&quot;old_password&quot;&gt;
+                    &lt;/dd&gt;
+
+                
+                &lt;dt&gt;
+                    &lt;label for=&quot;password&quot;&gt;
+
+                    New password
+                    &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;/dt&gt;
+                &lt;dd&gt;
+                    &lt;input type=&quot;password&quot; autocomplete=&quot;off&quot; name=&quot;password&quot; id=&quot;password&quot;&gt;
+                &lt;/dd&gt;
+                
+                &lt;dt&gt;
+                    &lt;label for=&quot;password_conf&quot;&gt;
+
+                    New password
+                    (Confirmation)
+                    &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;
+                    &lt;/label&gt;
+                &lt;/dt&gt;
+                &lt;dd&gt;
+                    &lt;input type=&quot;password&quot; autocomplete=&quot;off&quot; name=&quot;password_conf&quot; id=&quot;password_conf&quot;&gt;
+                &lt;/dd&gt;
+
+                            
+                        &lt;dt&gt;
+                &lt;label for=&quot;authSource&quot;&gt;
+                    Authentication source                &lt;/label&gt;
+            &lt;/dt&gt;
+            &lt;dd&gt;
+                
+                                
+                    &lt;select id=&quot;authSourceSelector&quot; name=&quot;authSource&quot;&gt;
+                    
+                                            
+                                            
+                                                
+                            &lt;option value=&quot;claroline&quot; selected=&quot;selected&quot;&gt;
+                                claroline                            &lt;/option&gt;
+                            
+                                                        
+                                                    
+                                            
+                                                    
+                            &lt;option value=&quot;disabled&quot;&gt;
+                                disabled                            &lt;/option&gt;
+                            
+                                                    
+                                            
+                                                    
+                            &lt;option value=&quot;temp&quot;&gt;
+                                temp                            &lt;/option&gt;
+                            
+                                                    
+                                                
+                                                
+                    &lt;/select&gt;
+                            &lt;/dd&gt;
+                            
+        &lt;/dl&gt;
+    &lt;/fieldset&gt;
+    
+    
+    
+    &lt;!-- THIRD SECTION: others informations --&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;
+            Other informations        &lt;/legend&gt;
+        
+        &lt;dl&gt;
+            &lt;dt&gt;
+                &lt;label for=&quot;email&quot;&gt;
+                    Email                &lt;/label&gt;
+            
+                                    
+            &lt;/dt&gt;
+            &lt;dd&gt;                
+                                
+                    &lt;input type=&quot;text&quot; name=&quot;email&quot; id=&quot;email&quot; value=&quot;jdoe@mydomain.net&quot;&gt;
+                
+                                    
+            &lt;/dd&gt;
+            &lt;dt&gt;
+                &lt;label for=&quot;phone&quot;&gt;
+                    Phone                &lt;/label&gt;
+            &lt;/dt&gt;
+            &lt;dd&gt;                
+                                
+                    &lt;input type=&quot;text&quot; value=&quot;&quot; name=&quot;phone&quot; id=&quot;phone&quot;&gt;
+                
+                            &lt;/dd&gt;
+            &lt;dt&gt;
+                &lt;label for=&quot;skype&quot;&gt;
+                    Skype account                &lt;/label&gt;
+            &lt;/dt&gt;
+            &lt;dd&gt;
+                                
+                    &lt;input type=&quot;text&quot; value=&quot;&quot; name=&quot;skype&quot; id=&quot;skype&quot;&gt;
+                
+                            &lt;/dd&gt;
+            
+        &lt;/dl&gt;
+    &lt;/fieldset&gt;
+    
+    
+    
+    &lt;!-- FOURTH SECTION: permissions --&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;
+            Permissions        &lt;/legend&gt;
+        
+        &lt;dl&gt;
+            &lt;dt&gt;
+                Platform role            &lt;/dt&gt;
+            &lt;dd&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;platformRole&quot; id=&quot;student&quot; value=&quot;student&quot;&gt;&lt;label for=&quot;student&quot;&gt;Follow courses (student)&lt;/label&gt;&lt;br&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;platformRole&quot; id=&quot;courseManager&quot; value=&quot;courseManager&quot;&gt;&lt;label for=&quot;courseManager&quot;&gt;Create courses (teacher)&lt;/label&gt;&lt;br&gt;
+                
+                                    &lt;span class=&quot;adminControl&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;platformRole&quot; id=&quot;platformAdmin&quot; value=&quot;platformAdmin&quot; checked=&quot;checked&quot;&gt;&lt;label for=&quot;platformAdmin&quot;&gt;Manage platform (administrator)&lt;/label&gt;&lt;/span&gt;
+                            &lt;/dd&gt;
+            
+                    &lt;/dl&gt;
+    &lt;/fieldset&gt;
+    &lt;dl&gt;
+        &lt;dt&gt;
+            &lt;input type=&quot;submit&quot; name=&quot;applyChange&quot; id=&quot;applyChange&quot; value=&quot;Ok&quot;&gt;
+            
+                            
+            &lt;a href=&quot;http://localhost:3000/claroline11110/claroline/admin/admin_users.php&quot;&gt;&lt;input type=&quot;button&quot; onclick=&quot;document.location='http://localhost:3000/claroline11110/claroline/admin/admin_users.php';return false&quot; value=&quot;Cancel&quot;&gt;&lt;/a&gt;
+        &lt;/dt&gt;
+        &lt;dd&gt;&lt;/dd&gt;
+    &lt;/dl&gt;
+&lt;/form&gt;
+
+&lt;p class=&quot;notice&quot;&gt;
+    &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt; denotes required field&lt;/p&gt;&lt;!-- End of Page Content --&gt;
+
+
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- - - - - - - - - - - End of Claroline Body  - - - - - - - - - - --&gt;
+
+&lt;!-- $Id: footer.tpl.php 12676 2010-10-20 14:59:33Z abourguignon $ --&gt;
+
+
+&lt;div id=&quot;campusFooter&quot;&gt;
+    &lt;hr&gt;
+    &lt;div id=&quot;campusFooterLeft&quot;&gt;
+        
+&lt;!-- campusFooterLeft --&gt;
+
+&lt;!-- End of campusFooterLeft --&gt;
+            &lt;/div&gt;
+    &lt;div id=&quot;campusFooterRight&quot;&gt;
+        
+&lt;!-- campusFooterRight --&gt;
+
+&lt;!-- End of campusFooterRight --&gt;
+        &lt;div id=&quot;platformManager&quot;&gt;Administrator for Claroline : &lt;a href=&quot;mailto:jdoe@mydomain.net?subject=[Claroline]&quot;&gt;John Doe&lt;/a&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div id=&quot;campusFooterCenter&quot;&gt;
+        
+&lt;!-- campusFooterCenter --&gt;
+
+&lt;!-- End of campusFooterCenter --&gt;
+        &lt;span class=&quot;poweredBy&quot;&gt;Powered by &lt;a href=&quot;http://www.claroline.net&quot; target=&quot;_blank&quot;&gt;Claroline&lt;/a&gt; &copy; 2001 - 2013&lt;/span&gt;    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end of claroPage --&gt;
+&lt;/div&gt;
+
+
+&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/UL[1]/LI[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/UL[1]/LI[1]/A[1]</td>
+							<td><a href="state287.html">state287</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/UL[1]/LI[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/UL[1]/LI[3]/A[1]</td>
+							<td><a href="state379.html">state379</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/UL[1]/LI[4]/A[1]</td>
+							<td><a href="state483.html">state483</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/UL[1]/LI[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/UL[1]/LI[6]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/DL[1]/DT[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/DL[1]/DT[1]/INPUT[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/DL[1]/DT[1]/A[1]/INPUT[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

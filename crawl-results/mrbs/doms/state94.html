@@ -1,0 +1,1706 @@
+<html><head>
+  
+  <meta charset="utf-8">
+  <title>Meeting Room Booking System</title>
+  
+      <link href="jquery/ui/css/sunny/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css">
+    
+    <link href="jquery/datatables/css/mrbs-page.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/mrbs-table.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/ColReorder.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/ColVis.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="css/mrbs.css.php" type="text/css">
+        <link rel="stylesheet" media="print" href="css/mrbs-print.css.php" type="text/css">
+    <!--[if IE]>
+    <link rel="stylesheet" href="css/mrbs-ie.css" type="text/css">
+    <![endif]-->
+        <!--[if IE 8]>
+    <link rel="stylesheet" href="css/mrbs-ie8.css" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/mrbs-ielte8.css" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="css/mrbs-ielte7.css.php" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="css/mrbs-ielte6.css" type="text/css">
+    <![endif]-->
+    
+    <meta name="robots" content="noindex">
+    
+<script type="text/javascript" src="jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-1.8.22.custom.min.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-i18n.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-datepicker-en.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-datepicker-en-US.js"></script>
+     
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE6 = false;
+  //]]>
+</script>
+<!--[if lte IE 6]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE6 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE7 = false;
+  //]]>
+</script>
+<!--[if lte IE 7]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE7 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE8 = false;
+  //]]>
+</script>
+<!--[if lte IE 8]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE8 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+    function init(params)
+  {
+  }
+  //]]>
+</script>
+    
+  <script type="text/javascript" src="js/resizable.js.php?area=2"></script>
+  <script type="text/javascript" src="js/multiple.js.php?area=2"></script>
+  <script type="text/javascript" src="js/refresh.js.php?area=2"></script>
+    <script type="text/javascript" src="js/cell_click.js.php?area=2"></script>
+  <script type="text/javascript" src="js/functions.js.php?area=2"></script>
+<script type="text/javascript" src="js/datepicker.js.php?area=2"></script>
+<script type="text/javascript" src="js/general.js.php?area=2"></script>
+    
+<script type="text/javascript">
+
+//<![CDATA[
+
+
+
+
+
+$(window).load(function() {
+
+  var args = {day: '13',
+              month: '2',
+              year: '2022',
+              area: '2',
+              room: '5',
+              page: 'week'};
+    init(args);
+
+});
+
+
+//]]>
+</script>  
+  </head>
+  
+  <body class="week js">
+    <script type="text/javascript">
+      //<![CDATA[
+      $('body').addClass('js').removeClass('non_js');
+      //]]>
+    </script> 
+
+    <div class="screenonly">
+
+[Warning: Server failed to set locale to 'en_US.UTF-8']
+  <table id="banner">
+    <tbody><tr>
+      <td id="company">
+        <div>
+          <div id="logo">
+<span>Your Company</span>
+</div>
+          <div id="mrbs">
+            <a href="index.php">Meeting Room Booking System</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <form action="day.php" method="get" id="Form1">
+          <div>
+            <span id="dateselector"><input class="date hasDatepicker" type="text" id="datepicker">
+<input type="hidden" id="datepicker_alt" name="_alt" value="2022-2-13" disabled="disabled">
+<input type="hidden" id="datepicker_alt_day" name="day" value="13">
+<input type="hidden" id="datepicker_alt_month" name="month" value="2">
+<input type="hidden" id="datepicker_alt_year" name="year" value="2022">
+</span>
+  <script type="text/javascript">
+
+  $(function() {
+    $("#datepicker").datepicker({yearRange: '2016:2027',
+                                                       altField: '#datepicker_alt'
+                                                       , onClose: function(dateText, inst) {datepicker_close(dateText, inst, 'Form1');}                                                      });
+        var initial_date = new Date(2022, 1, 13);
+    var dateFormat = $("#datepicker").datepicker( "option", "dateFormat" );
+    document.getElementById('datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('datepicker_alt_day').value = 13;
+    document.getElementById('datepicker_alt_month').value = 2;
+    document.getElementById('datepicker_alt_year').value = 2022;
+    $(".ui-datepicker").draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('dateselector');
+  var datepicker_html = '<input class="date" type="text" id="datepicker">\n';
+    datepicker_html += '<input type="hidden" id="datepicker_alt"'
+  datepicker_html += ' name="_alt"';
+  datepicker_html += ' value="2022-2-13"';
+  datepicker_html += ' disabled="disabled">\n';
+    datepicker_html += '<input type="hidden" id="datepicker_alt_day" name="day">\n';
+  datepicker_html += '<input type="hidden" id="datepicker_alt_month" name="month">\n';
+  datepicker_html += '<input type="hidden" id="datepicker_alt_year" name="year">\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  </script>
+  <input type="hidden" name="area" value="2">
+<input type="hidden" name="room" value="5">
+<input type="submit" value="goto">
+           </div>
+        </form>
+              </td>
+      <td>
+<a href="help.php?day=13&amp;month=2&amp;year=2022&amp;area=2&amp;room=5">Help</a>
+</td>
+<td>
+<a href="admin.php?day=13&amp;month=2&amp;year=2022&amp;area=2&amp;room=5">Rooms</a>
+</td>
+<td>
+<a href="report.php?day=13&amp;month=2&amp;year=2022&amp;area=2&amp;room=5">Report</a>
+</td>
+      
+      <td>
+        <form id="header_search" method="get" action="search.php">
+          <div>
+            <a href="search.php?advanced=1">Search:</a>
+            <input type="search" name="search_str" value="" required="">
+            <input type="hidden" name="day" value="13">
+            <input type="hidden" name="month" value="2">
+            <input type="hidden" name="year" value="2022">
+            <input type="hidden" name="area" value="2">
+<input type="hidden" name="room" value="5">
+          </div>
+        <input type="hidden" name="datatable" value="1"></form>
+      </td>
+      <td>
+<div id="logon_box">
+
+                <a href="report.php?from_day=13&amp;from_month=2&amp;from_year=2022&amp;to_day=1&amp;to_month=12&amp;to_year=2030&amp;areamatch=&amp;roommatch=&amp;namematch=&amp;descrmatch=&amp;summarize=1&amp;sortby=r&amp;display=d&amp;sumby=d&amp;creatormatch=administrator" title="Click to display all my upcoming entries">You are administrator</a>
+                <form method="post" action="admin.php">
+                  <div>
+                    <input type="hidden" name="TargetURL" value="week.php?year=2022&amp;month=02&amp;day=13&amp;area=2&amp;room=5">
+                    <input type="hidden" name="Action" value="SetName">
+                    <input type="hidden" name="NewUserName" value="">
+                    <input type="hidden" name="NewUserPassword" value="">
+                    <input type="submit" value=" Log Off ">
+                  </div>
+                </form>
+</div>
+</td>
+    </tr>
+  </tbody></table>
+</div>
+
+<div id="contents">
+<div id="dwm_header" class="screenonly">
+<div id="dwm_areas">
+<h3>Areas</h3>
+<ul>
+<li><a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=1"><span>Building 1</span></a></li>
+<li><a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2"><span class="current">Building 2</span></a></li>
+</ul>
+</div>
+<div id="dwm_rooms">
+<h3>Rooms</h3><ul>
+<li><a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5"><span class="current">Room 1</span></a></li>
+<li><a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=6"><span>Room 2</span></a></li>
+<li><a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=7"><span>Room 3</span></a></li>
+<li><a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=8"><span>Room 4</span></a></li>
+<li><a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=9"><span>Room 5</span></a></li>
+<li><a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=10"><span>Room 6</span></a></li>
+</ul>
+</div>
+<div id="cals" class="screenonly">
+<div id="cal_last">
+<table class="calendar">
+<thead>
+<tr>
+<th colspan="7"><a href="month.php?year=2022&amp;month=01&amp;day=13&amp;area=2&amp;room=5">January&nbsp;2022</a></th>
+</tr>
+<tr>
+<th>Sun</th>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+<th>Sat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=1&amp;area=2&amp;room=5">1</a></td>
+</tr>
+<tr>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=2&amp;area=2&amp;room=5">2</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=3&amp;area=2&amp;room=5">3</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=4&amp;area=2&amp;room=5">4</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=5&amp;area=2&amp;room=5">5</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=6&amp;area=2&amp;room=5">6</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=7&amp;area=2&amp;room=5">7</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=8&amp;area=2&amp;room=5">8</a></td>
+</tr>
+<tr>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=9&amp;area=2&amp;room=5">9</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=10&amp;area=2&amp;room=5">10</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=11&amp;area=2&amp;room=5">11</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=12&amp;area=2&amp;room=5">12</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=13&amp;area=2&amp;room=5">13</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=14&amp;area=2&amp;room=5">14</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=15&amp;area=2&amp;room=5">15</a></td>
+</tr>
+<tr>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=16&amp;area=2&amp;room=5">16</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=17&amp;area=2&amp;room=5">17</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=18&amp;area=2&amp;room=5">18</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=19&amp;area=2&amp;room=5">19</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=20&amp;area=2&amp;room=5">20</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=21&amp;area=2&amp;room=5">21</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=22&amp;area=2&amp;room=5">22</a></td>
+</tr>
+<tr>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=23&amp;area=2&amp;room=5">23</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=24&amp;area=2&amp;room=5">24</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=25&amp;area=2&amp;room=5">25</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=26&amp;area=2&amp;room=5">26</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=27&amp;area=2&amp;room=5">27</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=28&amp;area=2&amp;room=5">28</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=29&amp;area=2&amp;room=5">29</a></td>
+</tr>
+<tr>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=30&amp;area=2&amp;room=5">30</a></td>
+<td><a href="week.php?year=2022&amp;month=01&amp;day=31&amp;area=2&amp;room=5">31</a></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="cal_this">
+<table class="calendar">
+<thead>
+<tr>
+<th colspan="7"><a href="month.php?year=2022&amp;month=02&amp;day=13&amp;area=2&amp;room=5">February&nbsp;2022</a></th>
+</tr>
+<tr>
+<th>Sun</th>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+<th>Sat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=1&amp;area=2&amp;room=5">1</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=2&amp;area=2&amp;room=5">2</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=3&amp;area=2&amp;room=5">3</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=4&amp;area=2&amp;room=5">4</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=5&amp;area=2&amp;room=5">5</a></td>
+</tr>
+<tr>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=6&amp;area=2&amp;room=5">6</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=7&amp;area=2&amp;room=5">7</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=8&amp;area=2&amp;room=5">8</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=9&amp;area=2&amp;room=5">9</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=10&amp;area=2&amp;room=5">10</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=11&amp;area=2&amp;room=5">11</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=12&amp;area=2&amp;room=5">12</a></td>
+</tr>
+<tr>
+<td id="sticky_day"><a class="current" href="week.php?year=2022&amp;month=02&amp;day=13&amp;area=2&amp;room=5">13</a></td>
+<td><a class="current" href="week.php?year=2022&amp;month=02&amp;day=14&amp;area=2&amp;room=5">14</a></td>
+<td><a class="current" href="week.php?year=2022&amp;month=02&amp;day=15&amp;area=2&amp;room=5">15</a></td>
+<td><a class="current" href="week.php?year=2022&amp;month=02&amp;day=16&amp;area=2&amp;room=5">16</a></td>
+<td><a class="current" href="week.php?year=2022&amp;month=02&amp;day=17&amp;area=2&amp;room=5">17</a></td>
+<td><a class="current" href="week.php?year=2022&amp;month=02&amp;day=18&amp;area=2&amp;room=5">18</a></td>
+<td><a class="current" href="week.php?year=2022&amp;month=02&amp;day=19&amp;area=2&amp;room=5">19</a></td>
+</tr>
+<tr>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=20&amp;area=2&amp;room=5">20</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=21&amp;area=2&amp;room=5">21</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=22&amp;area=2&amp;room=5">22</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=23&amp;area=2&amp;room=5">23</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=24&amp;area=2&amp;room=5">24</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=25&amp;area=2&amp;room=5">25</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=26&amp;area=2&amp;room=5">26</a></td>
+</tr>
+<tr>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=27&amp;area=2&amp;room=5">27</a></td>
+<td><a href="week.php?year=2022&amp;month=02&amp;day=28&amp;area=2&amp;room=5">28</a></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="cal_next">
+<table class="calendar">
+<thead>
+<tr>
+<th colspan="7"><a href="month.php?year=2022&amp;month=03&amp;day=13&amp;area=2&amp;room=5">March&nbsp;2022</a></th>
+</tr>
+<tr>
+<th>Sun</th>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+<th>Sat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=1&amp;area=2&amp;room=5">1</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=2&amp;area=2&amp;room=5">2</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=3&amp;area=2&amp;room=5">3</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=4&amp;area=2&amp;room=5">4</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=5&amp;area=2&amp;room=5">5</a></td>
+</tr>
+<tr>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=6&amp;area=2&amp;room=5">6</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=7&amp;area=2&amp;room=5">7</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=8&amp;area=2&amp;room=5">8</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=9&amp;area=2&amp;room=5">9</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=10&amp;area=2&amp;room=5">10</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=11&amp;area=2&amp;room=5">11</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=12&amp;area=2&amp;room=5">12</a></td>
+</tr>
+<tr>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=13&amp;area=2&amp;room=5">13</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=14&amp;area=2&amp;room=5">14</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=15&amp;area=2&amp;room=5">15</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=16&amp;area=2&amp;room=5">16</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=17&amp;area=2&amp;room=5">17</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=18&amp;area=2&amp;room=5">18</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=19&amp;area=2&amp;room=5">19</a></td>
+</tr>
+<tr>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=20&amp;area=2&amp;room=5">20</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=21&amp;area=2&amp;room=5">21</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=22&amp;area=2&amp;room=5">22</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=23&amp;area=2&amp;room=5">23</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=24&amp;area=2&amp;room=5">24</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=25&amp;area=2&amp;room=5">25</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=26&amp;area=2&amp;room=5">26</a></td>
+</tr>
+<tr>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=27&amp;area=2&amp;room=5">27</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=28&amp;area=2&amp;room=5">28</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=29&amp;area=2&amp;room=5">29</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=30&amp;area=2&amp;room=5">30</a></td>
+<td><a href="week.php?year=2022&amp;month=03&amp;day=31&amp;area=2&amp;room=5">31</a></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="dwm">
+<h2>Building 2 - Room 1</h2>
+</div>
+
+<div class="screenonly">
+  <div class="date_nav">
+    <div class="date_before">
+      <a href="week.php?year=2022&amp;month=02&amp;day=06&amp;area=2&amp;room=5">
+          &lt;&lt;&nbsp;Go To Week Before
+      </a>
+    </div>
+    <div class="date_now">
+      <a href="week.php?area=2&amp;room=5">
+          Go To This Week
+      </a>
+    </div>
+    <div class="date_after">
+      <a href="week.php?year=2022&amp;month=02&amp;day=20&amp;area=2&amp;room=5">
+          Go To Week After&nbsp;&gt;&gt;
+      </a>
+    </div>
+  </div>
+</div>
+<table class="dwm_main" id="week_main" data-resolution="1800"><thead>
+<tr>
+<th class="first_last">Time:</th><th data-date="2022-2-13"><a href="day.php?year=2022&amp;month=02&amp;day=13&amp;area=2" title="View Day">Sun<br>Feb 13</a></th>
+<th data-date="2022-2-14"><a href="day.php?year=2022&amp;month=02&amp;day=14&amp;area=2" title="View Day">Mon<br>Feb 14</a></th>
+<th data-date="2022-2-15"><a href="day.php?year=2022&amp;month=02&amp;day=15&amp;area=2" title="View Day">Tue<br>Feb 15</a></th>
+<th data-date="2022-2-16"><a href="day.php?year=2022&amp;month=02&amp;day=16&amp;area=2" title="View Day">Wed<br>Feb 16</a></th>
+<th data-date="2022-2-17"><a href="day.php?year=2022&amp;month=02&amp;day=17&amp;area=2" title="View Day">Thu<br>Feb 17</a></th>
+<th data-date="2022-2-18"><a href="day.php?year=2022&amp;month=02&amp;day=18&amp;area=2" title="View Day">Fri<br>Feb 18</a></th>
+<th data-date="2022-2-19"><a href="day.php?year=2022&amp;month=02&amp;day=19&amp;area=2" title="View Day">Sat<br>Feb 19</a></th>
+</tr>
+</thead>
+<tbody>
+<tr class="even_row"><td class="row_labels" data-seconds="25200">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=700" title="Highlight this line">07:00</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=07&amp;minute=00&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=07&amp;minute=00&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=07&amp;minute=00&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=07&amp;minute=00&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=07&amp;minute=00&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=07&amp;minute=00&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=07&amp;minute=00&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="odd_row"><td class="row_labels" data-seconds="27000">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=730" title="Highlight this line">07:30</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=07&amp;minute=30&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=07&amp;minute=30&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=07&amp;minute=30&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=07&amp;minute=30&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=07&amp;minute=30&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=07&amp;minute=30&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=07&amp;minute=30&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="even_row"><td class="row_labels" data-seconds="28800">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=800" title="Highlight this line">08:00</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=08&amp;minute=00&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=08&amp;minute=00&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=08&amp;minute=00&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=08&amp;minute=00&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=08&amp;minute=00&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=08&amp;minute=00&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=08&amp;minute=00&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="odd_row"><td class="row_labels" data-seconds="30600">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=830" title="Highlight this line">08:30</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=08&amp;minute=30&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=08&amp;minute=30&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=08&amp;minute=30&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=08&amp;minute=30&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=08&amp;minute=30&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=08&amp;minute=30&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=08&amp;minute=30&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="even_row"><td class="row_labels" data-seconds="32400">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=900" title="Highlight this line">09:00</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=09&amp;minute=00&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=09&amp;minute=00&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=09&amp;minute=00&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=09&amp;minute=00&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=09&amp;minute=00&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=09&amp;minute=00&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=09&amp;minute=00&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="odd_row"><td class="row_labels" data-seconds="34200">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=930" title="Highlight this line">09:30</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=09&amp;minute=30&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=09&amp;minute=30&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=09&amp;minute=30&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=09&amp;minute=30&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=09&amp;minute=30&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=09&amp;minute=30&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=09&amp;minute=30&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="even_row"><td class="row_labels" data-seconds="36000">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1000" title="Highlight this line">10:00</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=10&amp;minute=00&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=10&amp;minute=00&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=10&amp;minute=00&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=10&amp;minute=00&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=10&amp;minute=00&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=10&amp;minute=00&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=10&amp;minute=00&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="odd_row"><td class="row_labels" data-seconds="37800">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1030" title="Highlight this line">10:30</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=10&amp;minute=30&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=10&amp;minute=30&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=10&amp;minute=30&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=10&amp;minute=30&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=10&amp;minute=30&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=10&amp;minute=30&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=10&amp;minute=30&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="even_row"><td class="row_labels" data-seconds="39600">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1100" title="Highlight this line">11:00</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=11&amp;minute=00&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=11&amp;minute=00&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=11&amp;minute=00&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=11&amp;minute=00&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=11&amp;minute=00&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=11&amp;minute=00&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=11&amp;minute=00&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="odd_row"><td class="row_labels" data-seconds="41400">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1130" title="Highlight this line">11:30</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=11&amp;minute=30&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=11&amp;minute=30&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=11&amp;minute=30&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=11&amp;minute=30&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=11&amp;minute=30&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=11&amp;minute=30&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=11&amp;minute=30&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="even_row"><td class="row_labels" data-seconds="43200">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1200" title="Highlight this line">12:00</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=12&amp;minute=00&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=12&amp;minute=00&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=12&amp;minute=00&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=12&amp;minute=00&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=12&amp;minute=00&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=12&amp;minute=00&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=12&amp;minute=00&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="odd_row"><td class="row_labels" data-seconds="45000">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1230" title="Highlight this line">12:30</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=12&amp;minute=30&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=12&amp;minute=30&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=12&amp;minute=30&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=12&amp;minute=30&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=12&amp;minute=30&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=12&amp;minute=30&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=12&amp;minute=30&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="even_row"><td class="row_labels" data-seconds="46800">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1300" title="Highlight this line">13:00</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=13&amp;minute=00&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=13&amp;minute=00&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=13&amp;minute=00&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=13&amp;minute=00&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=13&amp;minute=00&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=13&amp;minute=00&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=13&amp;minute=00&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="odd_row"><td class="row_labels" data-seconds="48600">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1330" title="Highlight this line">13:30</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=13&amp;minute=30&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=13&amp;minute=30&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=13&amp;minute=30&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=13&amp;minute=30&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=13&amp;minute=30&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=13&amp;minute=30&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=13&amp;minute=30&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="even_row"><td class="row_labels" data-seconds="50400">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1400" title="Highlight this line">14:00</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=14&amp;minute=00&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=14&amp;minute=00&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=14&amp;minute=00&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=14&amp;minute=00&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=14&amp;minute=00&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=14&amp;minute=00&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=14&amp;minute=00&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="odd_row"><td class="row_labels" data-seconds="52200">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1430" title="Highlight this line">14:30</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=14&amp;minute=30&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=14&amp;minute=30&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=14&amp;minute=30&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=14&amp;minute=30&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=14&amp;minute=30&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=14&amp;minute=30&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=14&amp;minute=30&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="even_row"><td class="row_labels" data-seconds="54000">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1500" title="Highlight this line">15:00</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=15&amp;minute=00&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=15&amp;minute=00&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=15&amp;minute=00&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=15&amp;minute=00&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=15&amp;minute=00&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=15&amp;minute=00&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=15&amp;minute=00&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="odd_row"><td class="row_labels" data-seconds="55800">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1530" title="Highlight this line">15:30</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=15&amp;minute=30&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=15&amp;minute=30&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=15&amp;minute=30&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=15&amp;minute=30&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=15&amp;minute=30&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=15&amp;minute=30&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=15&amp;minute=30&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="even_row"><td class="row_labels" data-seconds="57600">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1600" title="Highlight this line">16:00</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=16&amp;minute=00&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=16&amp;minute=00&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=16&amp;minute=00&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=16&amp;minute=00&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=16&amp;minute=00&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=16&amp;minute=00&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=16&amp;minute=00&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="odd_row"><td class="row_labels" data-seconds="59400">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1630" title="Highlight this line">16:30</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=16&amp;minute=30&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=16&amp;minute=30&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=16&amp;minute=30&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=16&amp;minute=30&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=16&amp;minute=30&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=16&amp;minute=30&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=16&amp;minute=30&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="even_row"><td class="row_labels" data-seconds="61200">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1700" title="Highlight this line">17:00</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=17&amp;minute=00&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=17&amp;minute=00&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=17&amp;minute=00&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=17&amp;minute=00&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=17&amp;minute=00&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=17&amp;minute=00&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=17&amp;minute=00&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="odd_row"><td class="row_labels" data-seconds="63000">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1730" title="Highlight this line">17:30</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=17&amp;minute=30&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=17&amp;minute=30&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=17&amp;minute=30&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=17&amp;minute=30&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=17&amp;minute=30&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=17&amp;minute=30&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=17&amp;minute=30&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="even_row"><td class="row_labels" data-seconds="64800">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1800" title="Highlight this line">18:00</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=18&amp;minute=00&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=18&amp;minute=00&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=18&amp;minute=00&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=18&amp;minute=00&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=18&amp;minute=00&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=18&amp;minute=00&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=18&amp;minute=00&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+<tr class="odd_row"><td class="row_labels" data-seconds="66600">
+<div class="celldiv slots1">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5&amp;timetohighlight=1830" title="Highlight this line">18:30</a>
+</div></td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=18&amp;minute=30&amp;year=2022&amp;month=02&amp;day=13">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=18&amp;minute=30&amp;year=2022&amp;month=02&amp;day=14">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=18&amp;minute=30&amp;year=2022&amp;month=02&amp;day=15">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=18&amp;minute=30&amp;year=2022&amp;month=02&amp;day=16">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=18&amp;minute=30&amp;year=2022&amp;month=02&amp;day=17">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=18&amp;minute=30&amp;year=2022&amp;month=02&amp;day=18">
+</a>
+</div>
+</td>
+<td class="new">
+<div class="celldiv slots1">
+<a href="edit_entry.php?room=5&amp;area=2&amp;hour=18&amp;minute=30&amp;year=2022&amp;month=02&amp;day=19">
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<div class="screenonly">
+  <div class="date_nav">
+    <div class="date_before">
+      <a href="week.php?year=2022&amp;month=02&amp;day=06&amp;area=2&amp;room=5">
+          &lt;&lt;&nbsp;Go To Week Before
+      </a>
+    </div>
+    <div class="date_now">
+      <a href="week.php?area=2&amp;room=5">
+          Go To This Week
+      </a>
+    </div>
+    <div class="date_after">
+      <a href="week.php?year=2022&amp;month=02&amp;day=20&amp;area=2&amp;room=5">
+          Go To Week After&nbsp;&gt;&gt;
+      </a>
+    </div>
+  </div>
+</div>
+<table id="colour_key"><tbody><tr>
+<td class="E">
+<div class="celldiv slots1" title="External">
+External</div></td>
+<td class="I">
+<div class="celldiv slots1" title="Internal">
+Internal</div></td>
+</tr></tbody></table>
+</div><div class="screenonly trailer" id="trailer">
+<div id="viewday">
+<div class="trailer_label">
+<a href="day.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5">View Day:</a>
+</div>
+<div class="trailer_links">
+<span><a href="day.php?year=2022&amp;month=02&amp;day=07&amp;area=2&amp;room=5">Feb 07</a></span>
+ | <span><a href="day.php?year=2022&amp;month=02&amp;day=08&amp;area=2&amp;room=5">Feb 08</a></span>
+ | <span><a href="day.php?year=2022&amp;month=02&amp;day=09&amp;area=2&amp;room=5">Feb 09</a></span>
+ | <span><a href="day.php?year=2022&amp;month=02&amp;day=10&amp;area=2&amp;room=5">Feb 10</a></span>
+ | <span><a href="day.php?year=2022&amp;month=02&amp;day=11&amp;area=2&amp;room=5">Feb 11</a></span>
+ | <span><a href="day.php?year=2022&amp;month=02&amp;day=12&amp;area=2&amp;room=5">Feb 12</a></span>
+ | <span class="current">[ <a href="day.php?year=2022&amp;month=02&amp;day=13&amp;area=2&amp;room=5">Feb 13</a> ]</span>
+ | <span><a href="day.php?year=2022&amp;month=02&amp;day=14&amp;area=2&amp;room=5">Feb 14</a></span>
+ | <span><a href="day.php?year=2022&amp;month=02&amp;day=15&amp;area=2&amp;room=5">Feb 15</a></span>
+ | <span><a href="day.php?year=2022&amp;month=02&amp;day=16&amp;area=2&amp;room=5">Feb 16</a></span>
+ | <span><a href="day.php?year=2022&amp;month=02&amp;day=17&amp;area=2&amp;room=5">Feb 17</a></span>
+ | <span><a href="day.php?year=2022&amp;month=02&amp;day=18&amp;area=2&amp;room=5">Feb 18</a></span>
+ | <span><a href="day.php?year=2022&amp;month=02&amp;day=19&amp;area=2&amp;room=5">Feb 19</a></span>
+ | <span><a href="day.php?year=2022&amp;month=02&amp;day=20&amp;area=2&amp;room=5">Feb 20</a></span>
+</div>
+</div>
+<div id="viewweek">
+<div class="trailer_label">
+<a href="week.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5">View Week:</a>
+</div>
+<div class="trailer_links">
+  <a href="week.php?year=2022&amp;month=01&amp;day=16&amp;area=2&amp;room=5">Jan 16</a>
+ |   <a href="week.php?year=2022&amp;month=01&amp;day=23&amp;area=2&amp;room=5">Jan 23</a>
+ |   <a href="week.php?year=2022&amp;month=01&amp;day=30&amp;area=2&amp;room=5">Jan 30</a>
+ |   <a href="week.php?year=2022&amp;month=02&amp;day=06&amp;area=2&amp;room=5">Feb 06</a>
+ | <span class="current">
+[   <a href="week.php?year=2022&amp;month=02&amp;day=13&amp;area=2&amp;room=5">Feb 13</a>
+]</span>
+ |   <a href="week.php?year=2022&amp;month=02&amp;day=20&amp;area=2&amp;room=5">Feb 20</a>
+ |   <a href="week.php?year=2022&amp;month=02&amp;day=27&amp;area=2&amp;room=5">Feb 27</a>
+ |   <a href="week.php?year=2022&amp;month=03&amp;day=06&amp;area=2&amp;room=5">Mar 06</a>
+ |   <a href="week.php?year=2022&amp;month=03&amp;day=13&amp;area=2&amp;room=5">Mar 13</a>
+</div>
+</div>
+<div id="viewmonth">
+<div class="trailer_label">
+<a href="month.php?year=2022&amp;month=2&amp;day=13&amp;area=2&amp;room=5">View Month:</a>
+</div>
+<div class="trailer_links">
+  <a href="month.php?year=2021&amp;month=12&amp;day=13&amp;area=2&amp;room=5">Dec 2021</a>
+ |   <a href="month.php?year=2022&amp;month=01&amp;day=13&amp;area=2&amp;room=5">Jan 2022</a>
+ | <span class="current">
+[   <a href="month.php?year=2022&amp;month=02&amp;day=13&amp;area=2&amp;room=5">Feb 2022</a>
+]</span>
+ |   <a href="month.php?year=2022&amp;month=03&amp;day=13&amp;area=2&amp;room=5">Mar 2022</a>
+ |   <a href="month.php?year=2022&amp;month=04&amp;day=13&amp;area=2&amp;room=5">Apr 2022</a>
+ |   <a href="month.php?year=2022&amp;month=05&amp;day=13&amp;area=2&amp;room=5">May 2022</a>
+ |   <a href="month.php?year=2022&amp;month=06&amp;day=13&amp;area=2&amp;room=5">Jun 2022</a>
+ |   <a href="month.php?year=2022&amp;month=07&amp;day=13&amp;area=2&amp;room=5">Jul 2022</a>
+ |   <a href="month.php?year=2022&amp;month=08&amp;day=13&amp;area=2&amp;room=5">Aug 2022</a>
+</div>
+</div>
+</div>
+  
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-draggable" style="position: relative;"></div></body></html>

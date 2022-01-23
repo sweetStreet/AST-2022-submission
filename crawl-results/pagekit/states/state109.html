@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state109</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/pagekit/index.php/admin/site/page'>http://localhost:3000/pagekit/index.php/admin/site/page</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>4</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state81</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>11.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>109</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state109.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 22px; top: 314px; width: 252px; height: 38px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state110.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 22px; top: 350px; width: 252px; height: 38px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/P[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 22px; top: 406px; width: 98px; height: 37px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html lang=&quot;he-IL&quot; class=&quot;uk-notouch&quot;&gt;&lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+        &lt;link href=&quot;//fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;amp;subset=latin,latin-ext&quot; rel=&quot;stylesheet&quot;&gt;
+                                &lt;meta name=&quot;generator&quot; content=&quot;Pagekit&quot;&gt;
+        &lt;link href=&quot;/pagekit/app/system/modules/theme/favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot;&gt;
+        &lt;link href=&quot;/pagekit/app/system/modules/theme/apple_touch_icon.png&quot; rel=&quot;apple-touch-icon-precomposed&quot;&gt;
+        &lt;title&gt;עמודים | Testing&lt;/title&gt;
+        &lt;link href=&quot;/pagekit/app/system/modules/theme/css/theme.css?v=d10d&quot; rel=&quot;stylesheet&quot;&gt;
+        &lt;script&gt;var $data = {&quot;config&quot;:{&quot;menus&quot;:[]},&quot;types&quot;:[{&quot;name&quot;:&quot;@page&quot;,&quot;label&quot;:&quot;Page&quot;,&quot;controller&quot;:&quot;Pagekit\\Site\\Controller\\PageController::indexAction&quot;,&quot;id&quot;:&quot;page&quot;},{&quot;label&quot;:&quot;Link&quot;,&quot;frontpage&quot;:false,&quot;id&quot;:&quot;link&quot;}]};&lt;/script&gt;
+        &lt;script&gt;var $pagekit = {&quot;editor&quot;:&quot;html&quot;,&quot;storage&quot;:&quot;\/cJCyhjlR&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;admin&quot;,&quot;email&quot;:&quot;asd@asd.com&quot;,&quot;username&quot;:&quot;admin&quot;},&quot;menu&quot;:[{&quot;id&quot;:&quot;system: marketplace&quot;,&quot;label&quot;:&quot;Marketplace&quot;,&quot;parent&quot;:&quot;root&quot;,&quot;priority&quot;:125,&quot;icon&quot;:&quot;\/pagekit\/app\/installer\/assets\/images\/icon-marketplace.svg&quot;,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/marketplace\/extensions&quot;,&quot;access&quot;:&quot;system: manage packages&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: marketplace extensions&quot;,&quot;label&quot;:&quot;Extensions&quot;,&quot;parent&quot;:&quot;system: marketplace&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/marketplace\/extensions&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: marketplace themes&quot;,&quot;label&quot;:&quot;Themes&quot;,&quot;parent&quot;:&quot;system: marketplace&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/marketplace\/themes&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: extensions&quot;,&quot;label&quot;:&quot;Extensions&quot;,&quot;parent&quot;:&quot;system: system&quot;,&quot;priority&quot;:5,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/package\/extensions&quot;,&quot;access&quot;:&quot;system: manage packages&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: themes&quot;,&quot;label&quot;:&quot;Themes&quot;,&quot;parent&quot;:&quot;system: system&quot;,&quot;priority&quot;:10,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/package\/themes&quot;,&quot;access&quot;:&quot;system: manage packages&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: update&quot;,&quot;label&quot;:&quot;Update&quot;,&quot;parent&quot;:&quot;system: system&quot;,&quot;priority&quot;:25,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/update&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;site: widgets&quot;,&quot;label&quot;:&quot;Widgets&quot;,&quot;parent&quot;:&quot;site&quot;,&quot;priority&quot;:20,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/site\/widget&quot;,&quot;access&quot;:&quot;system: manage widgets&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;dashboard&quot;,&quot;label&quot;:&quot;Dashboard&quot;,&quot;parent&quot;:&quot;root&quot;,&quot;priority&quot;:100,&quot;icon&quot;:&quot;\/pagekit\/app\/system\/modules\/dashboard\/assets\/images\/icon-dashboard.svg&quot;,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/dashboard&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: storage&quot;,&quot;label&quot;:&quot;Storage&quot;,&quot;parent&quot;:&quot;site&quot;,&quot;priority&quot;:20,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/site\/storage&quot;,&quot;access&quot;:&quot;system: manage storage&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: info&quot;,&quot;label&quot;:&quot;Info&quot;,&quot;parent&quot;:&quot;system: system&quot;,&quot;priority&quot;:30,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/info&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: system&quot;,&quot;label&quot;:&quot;System&quot;,&quot;parent&quot;:&quot;root&quot;,&quot;priority&quot;:120,&quot;icon&quot;:&quot;\/pagekit\/app\/system\/modules\/settings\/assets\/images\/icon-settings.svg&quot;,&quot;access&quot;:&quot;system: access settings&quot;,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/settings&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: settings&quot;,&quot;label&quot;:&quot;Settings&quot;,&quot;parent&quot;:&quot;system: system&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/settings&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;site&quot;,&quot;label&quot;:&quot;Site&quot;,&quot;parent&quot;:&quot;root&quot;,&quot;priority&quot;:105,&quot;icon&quot;:&quot;\/pagekit\/app\/system\/modules\/site\/assets\/images\/icon-site.svg&quot;,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/site\/page&quot;,&quot;access&quot;:&quot;site: manage site || system: manage widgets || system: manage storage || system: access settings&quot;,&quot;active&quot;:true},{&quot;id&quot;:&quot;site: pages&quot;,&quot;label&quot;:&quot;Pages&quot;,&quot;parent&quot;:&quot;site&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/site\/page&quot;,&quot;access&quot;:&quot;site: manage site&quot;,&quot;active&quot;:true},{&quot;id&quot;:&quot;site: settings&quot;,&quot;label&quot;:&quot;Settings&quot;,&quot;parent&quot;:&quot;site&quot;,&quot;priority&quot;:30,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/site\/settings&quot;,&quot;access&quot;:&quot;system: access settings&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;user&quot;,&quot;label&quot;:&quot;Users&quot;,&quot;parent&quot;:&quot;root&quot;,&quot;priority&quot;:115,&quot;icon&quot;:&quot;\/pagekit\/app\/system\/modules\/user\/assets\/images\/icon-users.svg&quot;,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/user&quot;,&quot;active&quot;:false,&quot;access&quot;:&quot;user: manage users || user: manage user permissions || system: access settings&quot;},{&quot;id&quot;:&quot;user: users&quot;,&quot;label&quot;:&quot;List&quot;,&quot;parent&quot;:&quot;user&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/user&quot;,&quot;active&quot;:false,&quot;access&quot;:&quot;user: manage users&quot;},{&quot;id&quot;:&quot;user: permissions&quot;,&quot;label&quot;:&quot;Permissions&quot;,&quot;parent&quot;:&quot;user&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/user\/permissions&quot;,&quot;access&quot;:&quot;user: manage user permissions&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;user: roles&quot;,&quot;label&quot;:&quot;Roles&quot;,&quot;parent&quot;:&quot;user&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/user\/roles&quot;,&quot;access&quot;:&quot;user: manage user permissions&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;user: settings&quot;,&quot;label&quot;:&quot;Settings&quot;,&quot;parent&quot;:&quot;user&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/user\/settings&quot;,&quot;access&quot;:&quot;system: access settings&quot;,&quot;active&quot;:false}],&quot;url&quot;:&quot;\/pagekit\/index.php&quot;,&quot;csrf&quot;:&quot;35ddb0d05733f92bf9a50028e2520dd59e70de75&quot;};&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/vue/dist/vue.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/jquery/dist/jquery.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/lodash/lodash.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/index.php/system/intl/he_IL?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/system/app/bundle/vue.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/system/modules/user/app/bundle/interceptor.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/uikit.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/nestable.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/system/modules/site/app/bundle/index.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/notify.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/tooltip.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/sticky.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/sortable.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/pagination.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/form-select.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/system/modules/theme/js/theme.js?v=d10d&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body style=&quot;&quot;&gt;
+
+        &lt;header id=&quot;header&quot; class=&quot;tm-header&quot;&gt;
+            &lt;div class=&quot;uk-container uk-container-center&quot;&gt;
+
+                &lt;div class=&quot;tm-headerbar uk-flex uk-flex-space-between uk-flex-middle uk-hidden-small&quot;&gt;
+                    &lt;div class=&quot;tm-headerbar-primary&quot; data-uk-dropdown=&quot;{mode:'click', preventflip: 'y'}&quot;&gt;
+
+                        &lt;div class=&quot;tm-cursor-pointer uk-flex uk-flex-middle&quot;&gt;
+                            &lt;i class=&quot;tm-icon-menu&quot;&gt;&lt;/i&gt;
+                            &lt;h1 class=&quot;tm-heading&quot;&gt;Site&lt;/h1&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;uk-dropdown uk-dropdown-navbar tm-dropdown&quot;&gt;
+                            &lt;ul id=&quot;js-appnav&quot; class=&quot;uk-sortable uk-grid uk-grid-small uk-grid-width-1-3&quot; data-url=&quot;/pagekit/index.php/admin/adminmenu&quot; data-uk-sortable=&quot;{ dragCustomClass: 'tm-sortable-dragged', handleClass: 'uk-panel' }&quot;&gt;
+                                &lt;li data-id=&quot;dashboard&quot;&gt;
+                                    &lt;a class=&quot;uk-panel tm-panel-icon&quot; href=&quot;/pagekit/index.php/admin/dashboard&quot;&gt;
+                                        &lt;img width=&quot;50&quot; height=&quot;50&quot; alt=&quot;ניהול&quot; src=&quot;/pagekit/app/system/modules/dashboard/assets/images/icon-dashboard.svg&quot;&gt;
+                                        &lt;p&gt;ניהול&lt;/p&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;&lt;li data-id=&quot;site&quot;&gt;
+                                    &lt;a class=&quot;uk-panel tm-panel-icon&quot; href=&quot;/pagekit/index.php/admin/site/page&quot;&gt;
+                                        &lt;img width=&quot;50&quot; height=&quot;50&quot; alt=&quot;Site&quot; src=&quot;/pagekit/app/system/modules/site/assets/images/icon-site.svg&quot;&gt;
+                                        &lt;p&gt;Site&lt;/p&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;&lt;li data-id=&quot;user&quot;&gt;
+                                    &lt;a class=&quot;uk-panel tm-panel-icon&quot; href=&quot;/pagekit/index.php/admin/user&quot;&gt;
+                                        &lt;img width=&quot;50&quot; height=&quot;50&quot; alt=&quot;משתמשים&quot; src=&quot;/pagekit/app/system/modules/user/assets/images/icon-users.svg&quot;&gt;
+                                        &lt;p&gt;משתמשים&lt;/p&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;&lt;li data-id=&quot;system: system&quot;&gt;
+                                    &lt;a class=&quot;uk-panel tm-panel-icon&quot; href=&quot;/pagekit/index.php/admin/system/settings&quot;&gt;
+                                        &lt;img width=&quot;50&quot; height=&quot;50&quot; alt=&quot;מערכת&quot; src=&quot;/pagekit/app/system/modules/settings/assets/images/icon-settings.svg&quot;&gt;
+                                        &lt;p&gt;מערכת&lt;/p&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;&lt;li data-id=&quot;system: marketplace&quot;&gt;
+                                    &lt;a class=&quot;uk-panel tm-panel-icon&quot; href=&quot;/pagekit/index.php/admin/system/marketplace/extensions&quot;&gt;
+                                        &lt;img width=&quot;50&quot; height=&quot;50&quot; alt=&quot;שוק&quot; src=&quot;/pagekit/app/installer/assets/images/icon-marketplace.svg&quot;&gt;
+                                        &lt;p&gt;שוק&lt;/p&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                    &lt;div class=&quot;tm-contrast&quot;&gt;
+
+                        &lt;ul class=&quot;uk-grid uk-grid-small uk-flex-middle&quot;&gt;
+                            &lt;li&gt;&lt;a class=&quot;tm-icon-help&quot; href=&quot;https://gitter.im/pagekit/pagekit&quot; target=&quot;_blank&quot; title=&quot;Get Help&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class=&quot;tm-icon-visit&quot; target=&quot;_blank&quot; href=&quot;/pagekit/index.php/&quot; title=&quot;צפה באתר&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class=&quot;tm-icon-logout&quot; href=&quot;/pagekit/index.php/user/logout?redirect=admin/login&quot; title=&quot;התנתק&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;uk-margin-small-left&quot;&gt;&lt;a href=&quot;/pagekit/index.php/admin/user/edit?id=1&quot; title=&quot;Profile&quot;&gt;&lt;img class=&quot;uk-border-circle uk-margin-small-right&quot; height=&quot;32&quot; width=&quot;32&quot; title=&quot;admin&quot; src=&quot;data:image/png;base64,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&quot;&gt; &lt;span&gt;admin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;nav class=&quot;uk-navbar tm-navbar uk-hidden-small&quot;&gt;
+                    &lt;ul class=&quot;uk-navbar-nav&quot;&gt;
+                        &lt;li class=&quot;uk-active&quot;&gt;
+                            &lt;a href=&quot;/pagekit/index.php/admin/site/page&quot;&gt;עמודים&lt;/a&gt;
+                        &lt;/li&gt;&lt;li&gt;
+                            &lt;a href=&quot;/pagekit/index.php/admin/site/widget&quot;&gt;וידג'טים&lt;/a&gt;
+                        &lt;/li&gt;&lt;li&gt;
+                            &lt;a href=&quot;/pagekit/index.php/admin/site/storage&quot;&gt;אחסון&lt;/a&gt;
+                        &lt;/li&gt;&lt;li&gt;
+                            &lt;a href=&quot;/pagekit/index.php/admin/site/settings&quot;&gt;הגדרות&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+
+                &lt;div class=&quot;tm-headerbar uk-flex uk-flex-space-between uk-flex-middle uk-visible-small&quot;&gt;
+                    &lt;a class=&quot;tm-icon-menu&quot; href=&quot;#offcanvas&quot; data-uk-offcanvas=&quot;&quot;&gt;&lt;/a&gt;
+
+                    &lt;h1 class=&quot;tm-heading uk-h3&quot;&gt;Site&lt;/h1&gt;
+
+                    &lt;a href=&quot;#offcanvas-flip&quot; data-uk-offcanvas=&quot;&quot;&gt;
+                        &lt;img class=&quot;uk-border-circle&quot; height=&quot;32&quot; width=&quot;32&quot; alt=&quot;admin&quot; src=&quot;data:image/png;base64,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&quot;&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/header&gt;
+
+        &lt;main class=&quot;tm-main uk-container uk-container-center&quot;&gt;
+            
+&lt;div id=&quot;site&quot; class=&quot;uk-form&quot;&gt;
+
+    &lt;div class=&quot;uk-grid pk-grid-large&quot; data-uk-grid-margin=&quot;&quot;&gt;
+        &lt;div class=&quot;pk-width-sidebar uk-row-first&quot;&gt;
+
+            &lt;div class=&quot;uk-panel&quot;&gt;
+
+                &lt;ul class=&quot;uk-nav uk-nav-side&quot;&gt;
+                    &lt;li class=&quot;uk-visible-hover uk-active&quot;&gt;
+                        &lt;a&gt;Main&lt;/a&gt;
+                        &lt;ul class=&quot;uk-subnav pk-subnav-icon&quot;&gt;
+                            &lt;li&gt;&lt;a class=&quot;pk-icon-edit pk-icon-hover&quot; data-uk-tooltip=&quot;{delay: 500}&quot; title=&quot;Edit&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class=&quot;pk-icon-delete pk-icon-hover&quot; data-uk-tooltip=&quot;{delay: 500}&quot; title=&quot;Delete&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;&lt;li class=&quot;uk-visible-hover uk-nav-divider&quot;&gt;
+                        
+                        
+                    &lt;/li&gt;&lt;li class=&quot;uk-visible-hover&quot;&gt;
+                        &lt;a&gt;Not Linked&lt;/a&gt;
+                        
+                    &lt;/li&gt;&lt;li class=&quot;uk-visible-hover&quot;&gt;
+                        &lt;a&gt;Trash&lt;/a&gt;
+                        
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+
+                &lt;p&gt;
+                    &lt;a class=&quot;uk-button&quot;&gt;הוסף תפריט&lt;/a&gt;
+                &lt;/p&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;pk-width-content&quot;&gt;
+
+            &lt;div class=&quot;uk-margin uk-flex uk-flex-space-between uk-flex-wrap&quot; data-uk-margin=&quot;&quot;&gt;
+                &lt;div class=&quot;uk-flex uk-flex-middle uk-flex-wrap&quot; data-uk-margin=&quot;&quot;&gt;
+
+                    &lt;h2 class=&quot;uk-margin-remove&quot;&gt;Main&lt;/h2&gt;
+
+                    &lt;div class=&quot;uk-margin-left&quot; style=&quot;display: none;&quot;&gt;
+                        &lt;ul class=&quot;uk-subnav pk-subnav-icon&quot;&gt;
+                            &lt;li&gt;&lt;a class=&quot;pk-icon-check pk-icon-hover&quot; data-uk-tooltip=&quot;{delay: 500}&quot; title=&quot;Publish&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class=&quot;pk-icon-block pk-icon-hover&quot; data-uk-tooltip=&quot;{delay: 500}&quot; title=&quot;Unpublish&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li data-uk-dropdown=&quot;{ mode: 'click' }&quot;&gt;
+                                &lt;a class=&quot;pk-icon-move pk-icon-hover&quot; data-uk-tooltip=&quot;{delay: 500}&quot; title=&quot;Move&quot;&gt;&lt;/a&gt;
+                                &lt;div class=&quot;uk-dropdown uk-dropdown-small&quot;&gt;
+                                    &lt;ul class=&quot;uk-nav uk-nav-dropdown&quot;&gt;
+                                        &lt;li&gt;&lt;a&gt;Main&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a&gt;Not Linked&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;&lt;a class=&quot;pk-icon-delete pk-icon-hover&quot; data-uk-tooltip=&quot;{delay: 500}&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+                &lt;div class=&quot;uk-position-relative&quot; data-uk-margin=&quot;&quot;&gt;
+
+                    &lt;div data-uk-dropdown=&quot;{ mode: 'click' }&quot;&gt;
+                        &lt;a class=&quot;uk-button uk-button-primary&quot;&gt;הוסף עמוד&lt;/a&gt;
+                        &lt;div class=&quot;uk-dropdown uk-dropdown-small uk-dropdown-flip&quot;&gt;
+                            &lt;ul class=&quot;uk-nav uk-nav-dropdown&quot;&gt;
+                                &lt;li&gt;
+                                    &lt;a href=&quot;/pagekit/index.php/admin/site/page/edit?id=link&amp;amp;menu=main&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;&lt;li&gt;
+                                    &lt;a href=&quot;/pagekit/index.php/admin/site/page/edit?id=page&amp;amp;menu=main&quot;&gt;Page&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;uk-overflow-container&quot;&gt;
+
+                &lt;div class=&quot;pk-table-fake pk-table-fake-header pk-table-fake-border&quot;&gt;
+                    &lt;div class=&quot;pk-table-width-minimum pk-table-fake-nestable-padding&quot;&gt;&lt;input type=&quot;checkbox&quot; number=&quot;&quot;&gt;&lt;/div&gt;
+                    &lt;div class=&quot;pk-table-min-width-100&quot;&gt;כותרת&lt;/div&gt;
+                    &lt;div class=&quot;pk-table-width-100 uk-text-center&quot;&gt;מצב&lt;/div&gt;
+                    &lt;div class=&quot;pk-table-width-100&quot;&gt;סוג&lt;/div&gt;
+                    &lt;div class=&quot;pk-table-width-150&quot;&gt;כתובת&lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;ul class=&quot;uk-nestable uk-margin-remove uk-nestable-empty&quot; style=&quot;display: none;&quot;&gt;
+                    
+                &lt;/ul&gt;
+
+            &lt;/div&gt;
+
+            &lt;h3 class=&quot;uk-h1 uk-text-muted uk-text-center&quot; style=&quot;&quot;&gt;לא נמצאו עמודים.&lt;/h3&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    
+
+&lt;/div&gt;
+
+&lt;script id=&quot;node&quot; type=&quot;text/template&quot;&gt;
+
+    &lt;li class=&quot;uk-nestable-item check-item&quot; :class=&quot;{'uk-parent': tree[node.id], 'uk-active': $root.isSelected(node)}&quot; :data-id=&quot;node.id&quot;&gt;
+        &lt;div class=&quot;uk-nestable-panel pk-table-fake uk-form uk-visible-hover&quot;&gt;
+            &lt;div class=&quot;pk-table-width-minimum pk-table-collapse&quot;&gt;
+                &lt;div class=&quot;uk-nestable-toggle&quot; data-nestable-action=&quot;toggle&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pk-table-width-minimum&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;id&quot; :value=&quot;node.id&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;pk-table-min-width-100&quot;&gt;
+                &lt;a :href=&quot;$url.route('admin/site/page/edit', { id: node.id })&quot;&gt;{{ node.title }}&lt;/a&gt;
+                &lt;span class=&quot;uk-text-muted uk-text-small uk-margin-small-left&quot; v-if=&quot;node.data.menu_hide&quot;&gt;{{ 'Hidden' | trans }}&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pk-table-width-minimum&quot;&gt;
+                &lt;a class=&quot;pk-icon-home pk-icon-hover uk-invisible&quot; :title=&quot;'Set as frontpage' | trans&quot; data-uk-tooltip=&quot;{delay: 500}&quot; v-if=&quot;!isFrontpage &amp;&amp; node.status &amp;&amp; type.frontpage !== false&quot; @click=&quot;setFrontpage&quot;&gt;&lt;/a&gt;
+                &lt;i class=&quot;pk-icon-home-active pk-icon-muted uk-float-right&quot; :title=&quot;'Frontpage' | trans&quot; v-if=&quot;isFrontpage&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pk-table-width-100 uk-text-center&quot;&gt;
+                &lt;td class=&quot;uk-text-center&quot;&gt;
+                    &lt;a :class=&quot;{'pk-icon-circle-danger': !node.status, 'pk-icon-circle-success': node.status}&quot; @click=&quot;toggleStatus&quot;&gt;&lt;/a&gt;
+                &lt;/td&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pk-table-width-100&quot;&gt;{{ type.label }}&lt;/div&gt;
+            &lt;div class=&quot;pk-table-width-150 pk-table-max-width-150 uk-text-truncate&quot;&gt;
+                &lt;a :title=&quot;node.url&quot; target=&quot;_blank&quot; :href=&quot;$url.route(node.url.substr(1))&quot; v-if=&quot;node.accessible &amp;&amp; node.url&quot;&gt;{{ decodeURI(node.url) }}&lt;/a&gt;
+                &lt;span v-else&gt;{{ node.path }}&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;ul class=&quot;uk-nestable-list&quot; v-show=&quot;tree[node.id]&quot;&gt;
+            &lt;node v-for=&quot;node in tree[node.id]&quot; :tree=&quot;tree&quot; :node=&quot;node&quot;&gt;&lt;/node&gt;
+        &lt;/ul&gt;
+
+    &lt;/li&gt;
+
+&lt;/script&gt;
+        &lt;/main&gt;
+
+        &lt;div class=&quot;uk-hidden&quot;&gt;&lt;div class=&quot;pk-system-messages&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+
+        &lt;div id=&quot;offcanvas&quot; class=&quot;uk-offcanvas&quot;&gt;
+            &lt;div class=&quot;uk-offcanvas-bar&quot;&gt;
+
+                &lt;ul class=&quot;uk-nav uk-nav-offcanvas&quot;&gt;
+                    &lt;li class=&quot;uk-nav-header&quot;&gt;Site&lt;/li&gt;
+                    &lt;li class=&quot;uk-active&quot;&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/site/page&quot;&gt;עמודים&lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/site/widget&quot;&gt;וידג'טים&lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/site/storage&quot;&gt;אחסון&lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/site/settings&quot;&gt;הגדרות&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;uk-nav-divider&quot;&gt;&lt;/li&gt;
+                    &lt;li class=&quot;uk-nav-header&quot;&gt;הרחבות&lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/dashboard&quot;&gt;
+                            &lt;img class=&quot;uk-margin-small-right&quot; width=&quot;34&quot; height=&quot;34&quot; alt=&quot;ניהול&quot; src=&quot;/pagekit/app/system/modules/dashboard/assets/images/icon-dashboard.svg&quot;&gt; ניהול
+                        &lt;/a&gt;
+                    &lt;/li&gt;&lt;li class=&quot;uk-active&quot;&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/site/page&quot;&gt;
+                            &lt;img class=&quot;uk-margin-small-right&quot; width=&quot;34&quot; height=&quot;34&quot; alt=&quot;Site&quot; src=&quot;/pagekit/app/system/modules/site/assets/images/icon-site.svg&quot;&gt; Site
+                        &lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/user&quot;&gt;
+                            &lt;img class=&quot;uk-margin-small-right&quot; width=&quot;34&quot; height=&quot;34&quot; alt=&quot;משתמשים&quot; src=&quot;/pagekit/app/system/modules/user/assets/images/icon-users.svg&quot;&gt; משתמשים
+                        &lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/system/settings&quot;&gt;
+                            &lt;img class=&quot;uk-margin-small-right&quot; width=&quot;34&quot; height=&quot;34&quot; alt=&quot;מערכת&quot; src=&quot;/pagekit/app/system/modules/settings/assets/images/icon-settings.svg&quot;&gt; מערכת
+                        &lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/system/marketplace/extensions&quot;&gt;
+                            &lt;img class=&quot;uk-margin-small-right&quot; width=&quot;34&quot; height=&quot;34&quot; alt=&quot;שוק&quot; src=&quot;/pagekit/app/installer/assets/images/icon-marketplace.svg&quot;&gt; שוק
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div id=&quot;offcanvas-flip&quot; class=&quot;uk-offcanvas&quot;&gt;
+            &lt;div class=&quot;uk-offcanvas-bar uk-offcanvas-bar-flip&quot;&gt;
+
+                &lt;ul class=&quot;uk-nav uk-nav-offcanvas&quot;&gt;
+                    &lt;li class=&quot;uk-nav-header&quot;&gt;admin&lt;/li&gt;
+                    &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;/pagekit/index.php/&quot;&gt;צפה באתר&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;/pagekit/index.php/admin/user/edit?id=1&quot;&gt;הגדרות&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;/pagekit/index.php/user/logout?redirect=admin/login&quot;&gt;התנתק&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    
+
+&lt;div class=&quot;uk-modal&quot; aria-hidden=&quot;false&quot;&gt;
+    &lt;div class=&quot;uk-modal-dialog&quot;&gt;
+        
+    &lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;uk-tooltip&quot; style=&quot;top: -2000px; visibility: hidden; display: none;&quot;&gt;&lt;div class=&quot;uk-tooltip-inner&quot;&gt;Delete&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;uk-notify uk-notify-top-center&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]</td>
+							<td><a href="state110.html">state110</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/P[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state8</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:8080/jpetstore/help.html'>http://localhost:8080/jpetstore/help.html</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>21</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>index</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>99.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>8</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>xpath /HTML[1]/BODY[1]/DIV[1]/H2[1]/A[1], xpath /HTML[1]/BODY[1]/DIV[1]/H2[2]/A[1], xpath /HTML[1]/BODY[1]/DIV[1]/H4[1]/A[1], xpath /HTML[1]/BODY[1]/DIV[1]/H4[2]/A[1], xpath /HTML[1]/BODY[1]/DIV[1]/H2[4]/A[1], xpath /HTML[1]/BODY[1]/DIV[1]/H4[3]/A[1], xpath /HTML[1]/BODY[1]/DIV[1]/H4[4]/A[1], xpath /HTML[1]/BODY[1]/DIV[1]/H4[5]/A[1], xpath /HTML[1]/BODY[1]/DIV[1]/H2[5]/A[1]</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state8.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 111px; top: 180px; width: 72px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 111px; top: 196px; width: 65px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 111px; top: 212px; width: 214px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 111px; top: 228px; width: 138px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 111px; top: 244px; width: 143px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 111px; top: 260px; width: 203px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[7]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 111px; top: 276px; width: 182px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[8]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 111px; top: 292px; width: 208px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[9]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 111px; top: 308px; width: 96px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[10]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 111px; top: 324px; width: 128px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[11]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 111px; top: 340px; width: 91px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/H2[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 71px; top: 377px; width: 2px; height: 27px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/H2[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 71px; top: 495px; width: 2px; height: 27px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/H2[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 71px; top: 648px; width: 25px; height: 50px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/H4[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 71px; top: 759px; width: 2px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/H4[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 71px; top: 967px; width: 2px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/H2[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 71px; top: 1069px; width: 2px; height: 27px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/H4[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 71px; top: 1112px; width: 2px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/H4[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 71px; top: 1304px; width: 2px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/H4[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 71px; top: 1450px; width: 2px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/H2[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 71px; top: 1661px; width: 2px; height: 27px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head&gt;
+  &lt;title&gt;JPetStore Demo&lt;/title&gt;
+  &lt;link rel=&quot;StyleSheet&quot; href=&quot;css/jpetstore.css&quot; type=&quot;text/css&quot; media=&quot;screen&quot;&gt; 
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;div id=&quot;Content&quot;&gt;
+
+&lt;h1&gt;JPetStore Demo&lt;/h1&gt;
+
+&lt;p&gt;
+  The JPetStore Demo is an online pet store. Like most e-stores, you can browse
+  and search the product catalog, choose items to add to a shopping cart, amend
+  the shopping cart, and order the items in the shopping cart. You can perform
+  many of these actions without registering with or logging into the
+  application. However, before you can order items you must log in (sign in) to
+  the application. In order to sign in, you must have an account with the
+  application, which is created when you register (sign up) with the
+  application.
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#SigningUp&quot;&gt;Signing Up&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#SigningIn&quot;&gt;Signing In&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#Catalog&quot;&gt;Working with the Product Catalog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#CatalogBrowsing&quot;&gt;Browsing the Catalog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#CatalogSearching&quot;&gt;Searching the Catalog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ShoppingCart&quot;&gt;Working with the Shopping Cart&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ShoppingCartAdd&quot;&gt;Adding and Removing Items&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ShoppingCartUpdate&quot;&gt;Updating the Quantity of an Item&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#Ordering&quot;&gt;Ordering Items&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#OrderReview&quot;&gt;Reviewing an Order&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#Issues&quot;&gt;Known Issues&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;&lt;a id=&quot;SigningUp&quot; name=&quot;SigningUp&quot;&gt;&lt;/a&gt;Signing Up&lt;/h2&gt;
+
+&lt;p&gt;
+  To sign up, click the Sign-in link at the right end of the banner. Next,
+  click the New User link in the resulting page. Among other information, the
+  signup page requires you to provide a user identifier and password. This
+  information is used to identify your account and must be provided when
+  signing in.
+&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;SigningIn&quot; name=&quot;SigningIn&quot;&gt;&lt;/a&gt;Signing In&lt;/h2&gt;
+
+&lt;p&gt;
+  You sign in to the application by clicking the Sign-in link at the right end
+  of the banner, filling in the user identifier and password, and clicking the
+  Submit button.
+&lt;/p&gt;
+
+&lt;p&gt;
+  You will also be redirected to the signin page when you try to place an
+  order and you have not signed in. Once you have signed in, you can return to
+  your shopping session by clicking the shopping cart icon at the right end of
+  the banner.
+&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;Catalog&quot; name=&quot;Catalog&quot;&gt;&lt;/a&gt;Working with the Product Catalog&lt;/h2&gt;
+
+&lt;p&gt;This section describes how to browse and search the product catalog.&lt;/p&gt;
+
+&lt;h4&gt;&lt;a id=&quot;CatalogBrowsing&quot; name=&quot;CatalogBrowsing&quot;&gt;&lt;/a&gt;Browsing the Catalog&lt;/h4&gt;
+
+&lt;p&gt;
+  The pet store catalog is organized hierarchically as follows: categories,
+  products, items.
+&lt;/p&gt;
+
+&lt;p&gt;
+  You list the pets in a category by clicking on the category name in the
+  left column of the main page, or by clicking on the picture representing the
+  category.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Once you select a category, the pet store will display a list of products
+  within a category. Selecting a product displays a list of items and their
+  prices. Selecting a product item displays a text and visual description of
+  the item and the number of that item in stock.
+&lt;/p&gt;
+
+&lt;h4&gt;&lt;a id=&quot;CatalogSearching&quot; name=&quot;CatalogSearching&quot;&gt;&lt;/a&gt;Searching the Catalog&lt;/h4&gt;
+
+&lt;p&gt;
+  You search for products by typing the product name in search field in the
+  middle of the banner.
+&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;ShoppingCart&quot; name=&quot;ShoppingCart&quot;&gt;&lt;/a&gt;Working with the Shopping Cart&lt;/h2&gt;
+
+&lt;h4&gt;&lt;a id=&quot;ShoppingCartAdd&quot; name=&quot;ShoppingCartAdd&quot;&gt;&lt;/a&gt;Adding and Removing Items&lt;/h4&gt;
+
+&lt;p&gt;
+  You add an item to your shopping cart by clicking the Add to Cart button to
+  the right of an item. This action also displays your shopping cart.
+&lt;/p&gt;
+
+&lt;p&gt;
+  You can remove the item by clicking the Remove button to the left of the
+  item.
+&lt;/p&gt;
+
+&lt;p&gt;
+  To continue shopping, you select a product category from the list under
+  the banner.
+&lt;/p&gt;
+
+&lt;h4&gt;&lt;a id=&quot;ShoppingCartUpdate&quot; name=&quot;ShoppingCartUpdate&quot;&gt;&lt;/a&gt;Updating the Quantity of an Item&lt;/h4&gt;
+
+&lt;p&gt;
+  You adjust the quantity of an item by typing the quantity in the item's
+  Quantity field in the shopping cart and clicking the Update button.
+&lt;/p&gt;
+
+&lt;p&gt;
+  If the quantity of items requested is greater than that in stock, the In
+  Stock field in the shopping cart will show that the item is backordered.
+&lt;/p&gt;
+
+&lt;h4&gt;&lt;a id=&quot;Ordering&quot; name=&quot;Ordering&quot;&gt;&lt;/a&gt;Ordering Items&lt;/h4&gt;
+
+&lt;p&gt;
+  You order the items in the shopping cart by selecting the Proceed to Checkout
+  button. The pet store will display a read-only list of the shopping cart
+  contents. To proceed with the checkout, click the Continue button.
+&lt;/p&gt;
+
+&lt;p&gt;
+  If you have not signed in, the application will display the signin page,
+  where you will need to provide your account name and password. Otherwise, the
+  application will display a page requesting payment and shipping information.
+  When you have filled in the required information, you click the Submit
+  button, and the application will display a read-only page containing your
+  billing and shipping address. If you need to change any information,
+  click your browser's Back button and enter the correct information. To
+  complete the order, you click the Continue button.
+&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;OrderReview&quot; name=&quot;OrderReview&quot;&gt;&lt;/a&gt;Reviewing An Order&lt;/h2&gt;
+
+&lt;p&gt;
+  The final screen contains your order information.
+&lt;/p&gt;
+
+&lt;p&gt;
+  The application can be set up to send email confirmation of orders.
+  This option can only be set when the application is deployed. See the
+  installation instructions for further information.
+&lt;/p&gt;
+
+
+&lt;p&gt;&lt;sub&gt;Copyright www.mybatis.org&lt;/sub&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+
+
+&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[6]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[7]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[8]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[9]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[10]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[11]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/H2[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/H2[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/H2[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/H4[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/H4[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/H2[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/H4[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/H4[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/H4[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/H2[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

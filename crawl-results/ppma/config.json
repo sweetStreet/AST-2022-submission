@@ -1,0 +1,1534 @@
+{
+  "url" : "http://localhost:3000/ppma",
+  "basicAuthUrl" : null,
+  "browserConfig" : {
+    "browserType" : "CHROME_HEADLESS",
+    "numberOfBrowsers" : 1,
+    "browserBuilder" : { },
+    "remoteHubUrl" : null,
+    "browserOptions" : {
+      "headless" : false,
+      "pixelDensity" : 2,
+      "profile" : null
+    },
+    "defaultBuilder" : true,
+    "langOrNull" : null
+  },
+  "plugins" : [ "CrawlOverview", "TestSuiteGenerator", "FragmentationPlugin" ],
+  "proxyConfiguration" : {
+    "port" : -1,
+    "hostname" : "none",
+    "type" : "NOTHING"
+  },
+  "crawlRules" : {
+    "crawlEvents" : [ "click" ],
+    "invariants" : [ ],
+    "oracleComparators" : [ {
+      "preConditions" : [ ],
+      "id" : "DummyComparator",
+      "oracle" : { }
+    } ],
+    "ignoredFrameIdentifiers" : [ ],
+    "preCrawlConfig" : {
+      "waitConditions" : [ ],
+      "crawlConditions" : [ ],
+      "includedElements" : [ {
+        "tagName" : "A",
+        "id" : "id1249013452",
+        "eventType" : "click",
+        "eventableCondition" : null,
+        "withXpathExpression" : null
+      }, {
+        "tagName" : "BUTTON",
+        "id" : "id275595273",
+        "eventType" : "click",
+        "eventableCondition" : null,
+        "withXpathExpression" : null
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id566998105",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id566998105",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@type='submit']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//INPUT[@type='submit']"
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id295883637",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id295883637",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@type='button']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//INPUT[@type='button']"
+      } ],
+      "excludedElements" : [ {
+        "tagName" : "A",
+        "id" : "id1216338819",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1216338819",
+          "conditions" : [ ],
+          "inXPath" : "//A[text()='Export to CSV']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//A[text()='Export to CSV']"
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id845719437",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id845719437",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@id='upload-file']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//INPUT[@id='upload-file']"
+      } ],
+      "filterAttributeNames" : [ "closure_hashcode_(\\w)*", "jquery[0-9]+" ]
+    },
+    "formFillMode" : "RANDOM",
+    "formFillOrder" : "NORMAL",
+    "inputSpecification" : {
+      "formInputs" : {
+        "name Entry_tagList" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_tagList",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "mytag1",
+            "checked" : true
+          }, {
+            "value" : "mytag2",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "id LoginForm_username" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name Entry_url" : {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_url",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "http://example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name Entry_comment" : {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_comment",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Comment 1",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "id Entry_password" : {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123456",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "id Entry_name" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Website",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "id LoginForm_password" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "id Entry_username" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }
+      },
+      "forms" : [ {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      }, {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Website",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123456",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_url",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "http://example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_tagList",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "mytag1",
+            "checked" : true
+          }, {
+            "value" : "mytag2",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_comment",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Comment 1",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      } ],
+      "crawlElements" : [ {
+        "tagName" : "A",
+        "id" : "id1679665968",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1679665968",
+          "conditions" : [ ],
+          "inXPath" : "//*[@id=\"login-form\"]/DIV[1]/DIV[2]/A[1]",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "LoginForm_username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "LoginForm_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "LoginForm_username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "LoginForm_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "LoginForm_username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "LoginForm_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "LoginForm_username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "LoginForm_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "LoginForm_username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "LoginForm_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//*[@id=\"login-form\"]/div[1]/div[2]/a[1]"
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id53179548",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id53179548",
+          "conditions" : [ ],
+          "inXPath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/INPUT[7]",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "Entry_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Random Website",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "Entry_username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "jdoe",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "id",
+              "value" : "Entry_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123456",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXTAREA",
+            "identification" : {
+              "how" : "name",
+              "value" : "Entry_url",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "http://example.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "Entry_tagList",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "mytag1",
+              "checked" : true
+            }, {
+              "value" : "mytag2",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "SELECT",
+            "identification" : {
+              "how" : "name",
+              "value" : "Entry_comment",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Random Comment 1",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "Entry_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Random Website",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "Entry_username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "jdoe",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "id",
+              "value" : "Entry_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123456",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXTAREA",
+            "identification" : {
+              "how" : "name",
+              "value" : "Entry_url",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "http://example.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "Entry_tagList",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "mytag1",
+              "checked" : true
+            }, {
+              "value" : "mytag2",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "SELECT",
+            "identification" : {
+              "how" : "name",
+              "value" : "Entry_comment",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Random Comment 1",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "Entry_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Random Website",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "Entry_username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "jdoe",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "id",
+              "value" : "Entry_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123456",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXTAREA",
+            "identification" : {
+              "how" : "name",
+              "value" : "Entry_url",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "http://example.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "Entry_tagList",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "mytag1",
+              "checked" : true
+            }, {
+              "value" : "mytag2",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "SELECT",
+            "identification" : {
+              "how" : "name",
+              "value" : "Entry_comment",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Random Comment 1",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "Entry_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Random Website",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "Entry_username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "jdoe",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "id",
+              "value" : "Entry_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123456",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXTAREA",
+            "identification" : {
+              "how" : "name",
+              "value" : "Entry_url",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "http://example.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "Entry_tagList",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "mytag1",
+              "checked" : true
+            }, {
+              "value" : "mytag2",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "SELECT",
+            "identification" : {
+              "how" : "name",
+              "value" : "Entry_comment",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Random Comment 1",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "Entry_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Random Website",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "Entry_username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "jdoe",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "id",
+              "value" : "Entry_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "123456",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXTAREA",
+            "identification" : {
+              "how" : "name",
+              "value" : "Entry_url",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "http://example.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "Entry_tagList",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "mytag1",
+              "checked" : true
+            }, {
+              "value" : "mytag2",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "SELECT",
+            "identification" : {
+              "how" : "name",
+              "value" : "Entry_comment",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "Random Comment 1",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/INPUT[7]"
+      } ]
+    },
+    "testInvariantsWhileCrawling" : true,
+    "clickOnce" : true,
+    "randomizeCandidateElements" : false,
+    "crawlFrames" : false,
+    "crawlHiddenAnchors" : true,
+    "waitAfterReloadUrl" : 500,
+    "waitAfterEvent" : 500,
+    "followExternalLinks" : false,
+    "crawlPriorityMode" : "NORMAL",
+    "crawlNearDuplicates" : true,
+    "delayNearDuplicateCrawling" : true,
+    "applyNonSelAdvantage" : true,
+    "avoidUnrelatedBacktracking" : true,
+    "useEquivalentReset" : false,
+    "avoidDifferentBacktracking" : true,
+    "skipExploredActions" : false,
+    "maxRepeatExploredActions" : 3,
+    "usefulFragmentRules" : {
+      "thresholdWidth" : 100.0,
+      "thresholdHeight" : 100.0,
+      "subtreeWidth_and" : 2,
+      "subtreeWidth_or" : 4
+    },
+    "restoreConnectedEdges" : false,
+    "allCrawlElements" : [ {
+      "tagName" : "A",
+      "id" : "id1249013452",
+      "eventType" : "click",
+      "eventableCondition" : null,
+      "withXpathExpression" : null
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id275595273",
+      "eventType" : "click",
+      "eventableCondition" : null,
+      "withXpathExpression" : null
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id566998105",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id566998105",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@type='submit']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//INPUT[@type='submit']"
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id295883637",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id295883637",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@type='button']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//INPUT[@type='button']"
+    }, {
+      "tagName" : "A",
+      "id" : "id1216338819",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1216338819",
+        "conditions" : [ ],
+        "inXPath" : "//A[text()='Export to CSV']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//A[text()='Export to CSV']"
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id845719437",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id845719437",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@id='upload-file']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//INPUT[@id='upload-file']"
+    }, {
+      "tagName" : "A",
+      "id" : "id1679665968",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1679665968",
+        "conditions" : [ ],
+        "inXPath" : "//*[@id=\"login-form\"]/DIV[1]/DIV[2]/A[1]",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "LoginForm_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//*[@id=\"login-form\"]/div[1]/div[2]/a[1]"
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id53179548",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id53179548",
+        "conditions" : [ ],
+        "inXPath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/INPUT[7]",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Website",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123456",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_url",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "http://example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_tagList",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "mytag1",
+            "checked" : true
+          }, {
+            "value" : "mytag2",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_comment",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Comment 1",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Website",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123456",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_url",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "http://example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_tagList",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "mytag1",
+            "checked" : true
+          }, {
+            "value" : "mytag2",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_comment",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Comment 1",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Website",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123456",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_url",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "http://example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_tagList",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "mytag1",
+            "checked" : true
+          }, {
+            "value" : "mytag2",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_comment",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Comment 1",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Website",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123456",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_url",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "http://example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_tagList",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "mytag1",
+            "checked" : true
+          }, {
+            "value" : "mytag2",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_comment",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Comment 1",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Website",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123456",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_url",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "http://example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_tagList",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "mytag1",
+            "checked" : true
+          }, {
+            "value" : "mytag2",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_comment",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Comment 1",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Website",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "jdoe",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "Entry_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "123456",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_url",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "http://example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_tagList",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "mytag1",
+            "checked" : true
+          }, {
+            "value" : "mytag2",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "SELECT",
+          "identification" : {
+            "how" : "name",
+            "value" : "Entry_comment",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "Random Comment 1",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/INPUT[7]"
+    } ]
+  },
+  "maximumStates" : 0,
+  "maximumRuntime" : 3600000,
+  "maximumDepth" : 0,
+  "stateVertexFactory" : { },
+  "siteDir" : "/Users/liuyu/projects/tackle-test-generator-ui-level/testlabeling/crawljax_frag/out/ppma/ppma_HYBRID_DOM_-1.0_60mins/localhost",
+  "outputDir" : "/Users/liuyu/projects/tackle-test-generator-ui-level/testlabeling/crawljax_frag/out/ppma/ppma_HYBRID_DOM_-1.0_60mins/localhost/crawl0"
+}

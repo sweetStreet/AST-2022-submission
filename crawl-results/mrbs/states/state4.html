@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state4</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/mrbs/web/search.php?advanced=1'>http://localhost:3000/mrbs/web/search.php?advanced=1</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>39</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state3</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>264.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>4</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state4.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 639px; top: 32px; width: 29px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 702px; top: 32px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 783px; top: 32px; width: 41px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 23px; top: 243px; width: 63px; height: 17px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='index.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 140px; top: 243px; width: 44px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 192px; top: 243px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 245px; top: 243px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 295px; top: 243px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 345px; top: 243px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 396px; top: 243px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[7]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 454px; top: 243px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[8]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 512px; top: 243px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[9]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 563px; top: 243px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[10]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 613px; top: 243px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[11]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 663px; top: 243px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[12]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 714px; top: 243px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[13]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 764px; top: 243px; width: 41px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[14]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 814px; top: 243px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 23px; top: 258px; width: 73px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 140px; top: 258px; width: 44px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: 192px; top: 258px; width: 43px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[3]" class='hovers'
+				style="position: absolute; z-index: 10; left: 245px; top: 258px; width: 44px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[4]" class='hovers'
+				style="position: absolute; z-index: 10; left: 297px; top: 258px; width: 44px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 358px; top: 258px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[5]" class='hovers'
+				style="position: absolute; z-index: 10; left: 416px; top: 258px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[6]" class='hovers'
+				style="position: absolute; z-index: 10; left: 466px; top: 258px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[7]" class='hovers'
+				style="position: absolute; z-index: 10; left: 517px; top: 258px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[8]" class='hovers'
+				style="position: absolute; z-index: 10; left: 567px; top: 258px; width: 42px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 23px; top: 273px; width: 78px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 140px; top: 273px; width: 60px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: 208px; top: 273px; width: 59px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 283px; top: 273px; width: 57px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[3]" class='hovers'
+				style="position: absolute; z-index: 10; left: 356px; top: 273px; width: 59px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[4]" class='hovers'
+				style="position: absolute; z-index: 10; left: 423px; top: 273px; width: 58px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[5]" class='hovers'
+				style="position: absolute; z-index: 10; left: 490px; top: 273px; width: 57px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[6]" class='hovers'
+				style="position: absolute; z-index: 10; left: 556px; top: 273px; width: 58px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[7]" class='hovers'
+				style="position: absolute; z-index: 10; left: 622px; top: 273px; width: 57px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[8]" class='hovers'
+				style="position: absolute; z-index: 10; left: 688px; top: 273px; width: 57px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[3]/INPUT[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 140px; top: 204px; width: 59px; height: 23px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;
+  
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Meeting Room Booking System&lt;/title&gt;
+  
+      &lt;link href=&quot;jquery/ui/css/sunny/jquery-ui-1.8.16.custom.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    
+    &lt;link href=&quot;jquery/datatables/css/mrbs-page.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;jquery/datatables/css/mrbs-table.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;jquery/datatables/css/ColReorder.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;jquery/datatables/css/ColVis.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs.css.php&quot; type=&quot;text/css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;print&quot; href=&quot;css/mrbs-print.css.php&quot; type=&quot;text/css&quot;&gt;
+    &lt;!--[if IE]&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs-ie.css&quot; type=&quot;text/css&quot;&gt;
+    &lt;![endif]--&gt;
+        &lt;!--[if IE 8]&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs-ie8.css&quot; type=&quot;text/css&quot;&gt;
+    &lt;![endif]--&gt;
+    &lt;!--[if lte IE 8]&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs-ielte8.css&quot; type=&quot;text/css&quot;&gt;
+    &lt;![endif]--&gt;
+    &lt;!--[if lte IE 7]&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs-ielte7.css.php&quot; type=&quot;text/css&quot;&gt;
+    &lt;![endif]--&gt;
+    &lt;!--[if lte IE 6]&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/mrbs-ielte6.css&quot; type=&quot;text/css&quot;&gt;
+    &lt;![endif]--&gt;
+    
+    &lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt;
+    
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery/jquery-1.7.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery/ui/jquery-ui-1.8.22.custom.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery/ui/jquery-ui-i18n.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery/ui/jquery-ui-datepicker-en.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jquery/ui/jquery-ui-datepicker-en-US.js&quot;&gt;&lt;/script&gt;
+     
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE6 = false;
+  //]]&gt;
+&lt;/script&gt;
+&lt;!--[if lte IE 6]&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE6 = true;
+  //]]&gt;
+&lt;/script&gt;
+&lt;![endif]--&gt;
+    
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE7 = false;
+  //]]&gt;
+&lt;/script&gt;
+&lt;!--[if lte IE 7]&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE7 = true;
+  //]]&gt;
+&lt;/script&gt;
+&lt;![endif]--&gt;
+    
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE8 = false;
+  //]]&gt;
+&lt;/script&gt;
+&lt;!--[if lte IE 8]&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+  var lteIE8 = true;
+  //]]&gt;
+&lt;/script&gt;
+&lt;![endif]--&gt;
+    
+&lt;script type=&quot;text/javascript&quot;&gt;
+  //&lt;![CDATA[
+    function init(params)
+  {
+  }
+  //]]&gt;
+&lt;/script&gt;
+    
+  &lt;script type=&quot;text/javascript&quot; src=&quot;jquery/datatables/js/jquery.dataTables.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;jquery/datatables/js/ColReorder.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;jquery/datatables/js/ColVis.mrbs.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;jquery/datatables/js/FixedColumns.mrbs.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;jquery/datatables/js/plugins.js&quot;&gt;&lt;/script&gt;
+      
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/datatables.js.php?area=1&quot;&gt;&lt;/script&gt;
+
+    &lt;script type=&quot;text/javascript&quot; src=&quot;js/search.js.php?area=1&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/functions.js.php?area=1&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/datepicker.js.php?area=1&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/general.js.php?area=1&quot;&gt;&lt;/script&gt;
+    
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+//&lt;![CDATA[
+
+
+
+
+
+$(window).load(function() {
+
+  var args = {day: '05',
+              month: '10',
+              year: '2021',
+              area: '1',
+              room: '1',
+              page: 'search'};
+    init(args);
+
+});
+
+
+//]]&gt;
+&lt;/script&gt;  
+  &lt;/head&gt;
+  
+  &lt;body class=&quot;search js&quot;&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+      //&lt;![CDATA[
+      $('body').addClass('js').removeClass('non_js');
+      //]]&gt;
+    &lt;/script&gt; 
+
+    &lt;div class=&quot;screenonly&quot;&gt;
+
+[Warning: Server failed to set locale to 'en_US.UTF-8']
+  &lt;table id=&quot;banner&quot;&gt;
+    &lt;tbody&gt;&lt;tr&gt;
+      &lt;td id=&quot;company&quot;&gt;
+        &lt;div&gt;
+          &lt;div id=&quot;logo&quot;&gt;
+&lt;span&gt;Your Company&lt;/span&gt;
+&lt;/div&gt;
+          &lt;div id=&quot;mrbs&quot;&gt;
+            &lt;a href=&quot;index.php&quot;&gt;Meeting Room Booking System&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/td&gt;
+      &lt;td&gt;
+        &lt;form action=&quot;day.php&quot; method=&quot;get&quot; id=&quot;Form1&quot;&gt;
+          &lt;div&gt;
+            &lt;span id=&quot;dateselector&quot;&gt;&lt;input class=&quot;date hasDatepicker&quot; type=&quot;text&quot; id=&quot;datepicker&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt&quot; name=&quot;_alt&quot; value=&quot;2021-10-5&quot; disabled=&quot;disabled&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_day&quot; name=&quot;day&quot; value=&quot;5&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_month&quot; name=&quot;month&quot; value=&quot;10&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_year&quot; name=&quot;year&quot; value=&quot;2021&quot;&gt;
+&lt;/span&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+
+  $(function() {
+    $(&quot;#datepicker&quot;).datepicker({yearRange: '2016:2026',
+                                                       altField: '#datepicker_alt'
+                                                       , onClose: function(dateText, inst) {datepicker_close(dateText, inst, 'Form1');}                                                      });
+        var initial_date = new Date(2021, 9, 5);
+    var dateFormat = $(&quot;#datepicker&quot;).datepicker( &quot;option&quot;, &quot;dateFormat&quot; );
+    document.getElementById('datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('datepicker_alt_day').value = 5;
+    document.getElementById('datepicker_alt_month').value = 10;
+    document.getElementById('datepicker_alt_year').value = 2021;
+    $(&quot;.ui-datepicker&quot;).draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('dateselector');
+  var datepicker_html = '&lt;input class=&quot;date&quot; type=&quot;text&quot; id=&quot;datepicker&quot;&gt;\n';
+    datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt&quot;'
+  datepicker_html += ' name=&quot;_alt&quot;';
+  datepicker_html += ' value=&quot;2021-10-5&quot;';
+  datepicker_html += ' disabled=&quot;disabled&quot;&gt;\n';
+    datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_day&quot; name=&quot;day&quot;&gt;\n';
+  datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_month&quot; name=&quot;month&quot;&gt;\n';
+  datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;datepicker_alt_year&quot; name=&quot;year&quot;&gt;\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  &lt;/script&gt;
+  &lt;input type=&quot;hidden&quot; name=&quot;area&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;room&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;submit&quot; value=&quot;goto&quot;&gt;
+           &lt;/div&gt;
+        &lt;/form&gt;
+              &lt;/td&gt;
+      &lt;td&gt;
+&lt;a href=&quot;help.php?day=05&amp;amp;month=10&amp;amp;year=2021&amp;amp;area=1&amp;amp;room=1&quot;&gt;Help&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&quot;admin.php?day=05&amp;amp;month=10&amp;amp;year=2021&amp;amp;area=1&amp;amp;room=1&quot;&gt;Rooms&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&quot;report.php?day=05&amp;amp;month=10&amp;amp;year=2021&amp;amp;area=1&amp;amp;room=1&quot;&gt;Report&lt;/a&gt;
+&lt;/td&gt;
+      
+      &lt;td&gt;
+        &lt;form id=&quot;header_search&quot; method=&quot;get&quot; action=&quot;search.php&quot;&gt;
+          &lt;div&gt;
+            &lt;a href=&quot;search.php?advanced=1&quot;&gt;Search:&lt;/a&gt;
+            &lt;input type=&quot;search&quot; name=&quot;search_str&quot; value=&quot;&quot; required=&quot;&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;day&quot; value=&quot;05&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;month&quot; value=&quot;10&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;year&quot; value=&quot;2021&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;area&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;room&quot; value=&quot;1&quot;&gt;
+          &lt;/div&gt;
+        &lt;input type=&quot;hidden&quot; name=&quot;datatable&quot; value=&quot;1&quot;&gt;&lt;/form&gt;
+      &lt;/td&gt;
+      &lt;td&gt;
+&lt;div id=&quot;logon_box&quot;&gt;
+                &lt;a href=&quot;&quot;&gt;Unknown user&lt;/a&gt;
+                &lt;form method=&quot;post&quot; action=&quot;admin.php&quot;&gt;
+                  &lt;div&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;TargetURL&quot; value=&quot;search.php?advanced=1&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;Action&quot; value=&quot;QueryName&quot;&gt;
+                    &lt;input type=&quot;submit&quot; value=&quot; Log in &quot;&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;contents&quot;&gt;
+    &lt;form class=&quot;form_general&quot; id=&quot;search_form&quot; method=&quot;get&quot; action=&quot;search.php&quot;&gt;
+      &lt;fieldset&gt;
+      &lt;legend&gt;Advanced search&lt;/legend&gt;
+        &lt;div id=&quot;div_search_str&quot;&gt;
+          &lt;label for=&quot;search_str&quot;&gt;Search For:&lt;/label&gt;
+          &lt;input type=&quot;search&quot; id=&quot;search_str&quot; name=&quot;search_str&quot; required=&quot;&quot;&gt;
+        &lt;/div&gt;   
+        &lt;div id=&quot;div_search_from&quot;&gt;
+          &lt;label&gt;From:&lt;/label&gt;
+&lt;span id=&quot;from_dateselector&quot;&gt;&lt;input class=&quot;date hasDatepicker&quot; type=&quot;text&quot; id=&quot;from_datepicker&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;from_datepicker_alt&quot; name=&quot;from__alt&quot; value=&quot;2021-10-5&quot; disabled=&quot;disabled&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;from_datepicker_alt_day&quot; name=&quot;from_day&quot; value=&quot;5&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;from_datepicker_alt_month&quot; name=&quot;from_month&quot; value=&quot;10&quot;&gt;
+&lt;input type=&quot;hidden&quot; id=&quot;from_datepicker_alt_year&quot; name=&quot;from_year&quot; value=&quot;2021&quot;&gt;
+&lt;/span&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+
+  $(function() {
+    $(&quot;#from_datepicker&quot;).datepicker({yearRange: '2016:2026',
+                                                       altField: '#from_datepicker_alt'
+                                                                                                             });
+        var initial_date = new Date(2021, 9, 5);
+    var dateFormat = $(&quot;#from_datepicker&quot;).datepicker( &quot;option&quot;, &quot;dateFormat&quot; );
+    document.getElementById('from_datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('from_datepicker_alt_day').value = 5;
+    document.getElementById('from_datepicker_alt_month').value = 10;
+    document.getElementById('from_datepicker_alt_year').value = 2021;
+    $(&quot;.ui-datepicker&quot;).draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('from_dateselector');
+  var datepicker_html = '&lt;input class=&quot;date&quot; type=&quot;text&quot; id=&quot;from_datepicker&quot;&gt;\n';
+    datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;from_datepicker_alt&quot;'
+  datepicker_html += ' name=&quot;from__alt&quot;';
+  datepicker_html += ' value=&quot;2021-10-5&quot;';
+  datepicker_html += ' disabled=&quot;disabled&quot;&gt;\n';
+    datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;from_datepicker_alt_day&quot; name=&quot;from_day&quot;&gt;\n';
+  datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;from_datepicker_alt_month&quot; name=&quot;from_month&quot;&gt;\n';
+  datepicker_html += '&lt;input type=&quot;hidden&quot; id=&quot;from_datepicker_alt_year&quot; name=&quot;from_year&quot;&gt;\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  &lt;/script&gt;
+          &lt;/div&gt; 
+        &lt;div id=&quot;search_submit&quot;&gt;
+          &lt;input class=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Search&quot;&gt;
+        &lt;/div&gt;
+      &lt;/fieldset&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;datatable&quot; value=&quot;1&quot;&gt;&lt;/form&gt;
+    &lt;/div&gt;&lt;div class=&quot;screenonly trailer&quot; id=&quot;trailer&quot;&gt;
+&lt;div id=&quot;viewday&quot;&gt;
+&lt;div class=&quot;trailer_label&quot;&gt;
+&lt;a href=&quot;day.php?year=2021&amp;amp;month=10&amp;amp;day=05&amp;amp;area=1&amp;amp;room=1&quot;&gt;View Day:&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;trailer_links&quot;&gt;
+&lt;span&gt;&lt;a href=&quot;day.php?year=2021&amp;amp;month=09&amp;amp;day=29&amp;amp;area=1&amp;amp;room=1&quot;&gt;Sep 29&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2021&amp;amp;month=09&amp;amp;day=30&amp;amp;area=1&amp;amp;room=1&quot;&gt;Sep 30&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2021&amp;amp;month=10&amp;amp;day=01&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 01&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2021&amp;amp;month=10&amp;amp;day=02&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 02&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2021&amp;amp;month=10&amp;amp;day=03&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 03&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2021&amp;amp;month=10&amp;amp;day=04&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 04&lt;/a&gt;&lt;/span&gt;
+ | &lt;span class=&quot;current&quot;&gt;[ &lt;a href=&quot;day.php?year=2021&amp;amp;month=10&amp;amp;day=05&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 05&lt;/a&gt; ]&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2021&amp;amp;month=10&amp;amp;day=06&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 06&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2021&amp;amp;month=10&amp;amp;day=07&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 07&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2021&amp;amp;month=10&amp;amp;day=08&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 08&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2021&amp;amp;month=10&amp;amp;day=09&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 09&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2021&amp;amp;month=10&amp;amp;day=10&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 10&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2021&amp;amp;month=10&amp;amp;day=11&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 11&lt;/a&gt;&lt;/span&gt;
+ | &lt;span&gt;&lt;a href=&quot;day.php?year=2021&amp;amp;month=10&amp;amp;day=12&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 12&lt;/a&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;viewweek&quot;&gt;
+&lt;div class=&quot;trailer_label&quot;&gt;
+&lt;a href=&quot;week.php?year=2021&amp;amp;month=10&amp;amp;day=05&amp;amp;area=1&amp;amp;room=1&quot;&gt;View Week:&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;trailer_links&quot;&gt;
+  &lt;a href=&quot;week.php?year=2021&amp;amp;month=09&amp;amp;day=07&amp;amp;area=1&amp;amp;room=1&quot;&gt;Sep 05&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2021&amp;amp;month=09&amp;amp;day=14&amp;amp;area=1&amp;amp;room=1&quot;&gt;Sep 12&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2021&amp;amp;month=09&amp;amp;day=21&amp;amp;area=1&amp;amp;room=1&quot;&gt;Sep 19&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2021&amp;amp;month=09&amp;amp;day=28&amp;amp;area=1&amp;amp;room=1&quot;&gt;Sep 26&lt;/a&gt;
+ | &lt;span class=&quot;current&quot;&gt;
+[   &lt;a href=&quot;week.php?year=2021&amp;amp;month=10&amp;amp;day=05&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 03&lt;/a&gt;
+]&lt;/span&gt;
+ |   &lt;a href=&quot;week.php?year=2021&amp;amp;month=10&amp;amp;day=12&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 10&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2021&amp;amp;month=10&amp;amp;day=19&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 17&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2021&amp;amp;month=10&amp;amp;day=26&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 24&lt;/a&gt;
+ |   &lt;a href=&quot;week.php?year=2021&amp;amp;month=11&amp;amp;day=02&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 31&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;viewmonth&quot;&gt;
+&lt;div class=&quot;trailer_label&quot;&gt;
+&lt;a href=&quot;month.php?year=2021&amp;amp;month=10&amp;amp;day=05&amp;amp;area=1&amp;amp;room=1&quot;&gt;View Month:&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;trailer_links&quot;&gt;
+  &lt;a href=&quot;month.php?year=2021&amp;amp;month=08&amp;amp;day=05&amp;amp;area=1&amp;amp;room=1&quot;&gt;Aug 2021&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2021&amp;amp;month=09&amp;amp;day=05&amp;amp;area=1&amp;amp;room=1&quot;&gt;Sep 2021&lt;/a&gt;
+ | &lt;span class=&quot;current&quot;&gt;
+[   &lt;a href=&quot;month.php?year=2021&amp;amp;month=10&amp;amp;day=05&amp;amp;area=1&amp;amp;room=1&quot;&gt;Oct 2021&lt;/a&gt;
+]&lt;/span&gt;
+ |   &lt;a href=&quot;month.php?year=2021&amp;amp;month=11&amp;amp;day=05&amp;amp;area=1&amp;amp;room=1&quot;&gt;Nov 2021&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2021&amp;amp;month=12&amp;amp;day=05&amp;amp;area=1&amp;amp;room=1&quot;&gt;Dec 2021&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=01&amp;amp;day=05&amp;amp;area=1&amp;amp;room=1&quot;&gt;Jan 2022&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=02&amp;amp;day=05&amp;amp;area=1&amp;amp;room=1&quot;&gt;Feb 2022&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=03&amp;amp;day=05&amp;amp;area=1&amp;amp;room=1&quot;&gt;Mar 2022&lt;/a&gt;
+ |   &lt;a href=&quot;month.php?year=2022&amp;amp;month=04&amp;amp;day=05&amp;amp;area=1&amp;amp;room=1&quot;&gt;Apr 2022&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+  
+
+&lt;div id=&quot;ui-datepicker-div&quot; class=&quot;ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-draggable&quot; style=&quot;position: relative;&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/A[1]</td>
+							<td><a href="index.html">index</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[6]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[7]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[8]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[9]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[10]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[11]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[12]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[13]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[14]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[3]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[4]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/SPAN[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[5]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[6]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[7]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[2]/DIV[2]/A[8]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/SPAN[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[3]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[4]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[5]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[6]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[7]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[3]/DIV[2]/A[8]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[3]/INPUT[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

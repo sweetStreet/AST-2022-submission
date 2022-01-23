@@ -1,0 +1,282 @@
+<html><head>
+<title>User list - Claroline</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/HTML; charset=iso-8859-1">
+<meta name="generator" content="Claroline 1.11.10 - http://claroline.net">
+
+<link rel="stylesheet" type="text/css" href="/claroline11110/web/css/classic/main.css?1337668864" media="screen, projection, tv">
+<link rel="stylesheet" type="text/css" href="/claroline11110/web/css/print.css?1301589034" media="print">
+
+<link rel="top" href="/index.php" title="">
+<link href="http://www.claroline.net/documentation.htm" rel="Help">
+<link href="/claroline11110/CREDITS.txt" rel="Author">
+<link href="http://www.claroline.net" rel="Copyright">
+<link href="/claroline11110/claroline/../favicon.ico" rel="shortcut icon">
+
+<script type="text/javascript">
+    document.cookie="javascriptEnabled=true; path=/claroline11110";
+    function claro_session_loss_countdown(sessionLifeTime){
+    var chrono = setTimeout('claro_warn_of_session_loss()', sessionLifeTime * 1000);
+}
+
+function claro_warn_of_session_loss() {
+    alert('WARNING ! You have just lost your session on the server.\nCopy any text you are currently writing and paste it outside the browser');
+}
+</script>
+
+<script src="/claroline11110/web/js/jquery.js?1374567070" type="text/javascript"></script>
+<script src="/claroline11110/web/js/jquery.qtip.js?1371735614" type="text/javascript"></script>
+<script src="/claroline11110/web/js/claroline.js?1368605938" type="text/javascript"></script>
+<script src="/claroline11110/web/js/claroline.ui.js?1376037408" type="text/javascript"></script>
+<script src="/claroline11110/web/js/admin.js?1367827884" type="text/javascript"></script>
+<script src="/claroline11110/web/js/admin_users.js?1329306794" type="text/javascript"></script>
+<script src="/claroline11110/web/js/tooltitle.js?1311692694" type="text/javascript"></script>
+
+<script type="text/javascript">
+var __ = (function(){
+
+    var translation = {
+    "Are you sure to delete %name ?" : 'Are you sure to delete %name ?'
+
+    };
+
+    return function(string) {
+        return translation[string] || string;
+    };
+
+})();
+</script>
+            
+
+</head>
+
+<body dir="ltr" onload="claro_session_loss_countdown(1440);" style="">
+<!-- $Id: banner.tpl.php 13151 2011-05-11 12:09:47Z abourguignon $ -->
+
+<!-- claroPage -->
+<div id="claroPage">
+
+<!-- Banner -->
+<div id="topBanner">
+
+<!-- Platform Banner -->
+<div id="platformBanner">
+    <div id="campusBannerLeft">
+        <span id="siteName">
+            <a href="/claroline11110/index.php" target="_top">
+                        Claroline                        </a>
+        </span>
+        
+        
+<!-- campusBannerLeft -->
+
+<!-- End of campusBannerLeft -->
+    </div>
+    <div id="campusBannerRight">
+        <span id="institution">
+                        
+                                                
+                    </span>
+        
+        
+<!-- campusBannerRight -->
+
+<!-- End of campusBannerRight -->
+    </div>
+    <div class="spacer"></div>
+</div>
+<!-- End of Platform Banner -->
+
+<!-- User Banner -->
+<div id="userBanner">
+    <div id="userBannerLeft">
+        <ul class="menu">
+                        <li><span><a href="/claroline11110/claroline/desktop/index.php" target="_top">My desktop</a></span></li>
+                        <li><span><a href="/claroline11110/claroline/messaging" target="_top">My messages</a></span></li>
+                        <li><span><a href="/claroline11110/claroline/admin/" target="_top">Platform administration</a></span></li>
+                        
+<!-- userBannerLeft -->
+
+<!-- End of userBannerLeft -->
+        </ul>
+        
+    </div>
+    
+    <div id="userBannerRight">
+        <ul class="menu">
+            <li class="userName">
+                John Doe            </li>
+                        <li><span><a href="/claroline11110/claroline/auth/profile.php" target="_top">Manage my account</a></span></li>
+                        <li><span><a href="/claroline11110/index.php?logout=true" target="_top">Logout</a></span></li>
+                        
+<!-- userBannerRight -->
+
+<!-- End of userBannerRight -->
+        </ul>
+        
+    </div>
+    
+    <div class="spacer"></div>
+</div>
+
+<!-- BreadcrumbLine  -->
+<div id="breadcrumbLine">
+    <hr>
+    <div class="breadcrumbTrails">
+        <ul class="breadCrumbs">
+<li class="breadCrumbsNode firstBreadCrumbsNode"><a href="/claroline11110/index.php" target="_top"><img src="/claroline11110/web/img/home.png?1232376376" alt="home">&nbsp;Claroline</a>&nbsp;&gt;&nbsp;</li>
+<li class="breadCrumbsNode"><a href="/claroline11110/claroline/admin/" target="_top">Administration</a>&nbsp;&gt;&nbsp;</li>
+<li class="breadCrumbsNode lastBreadCrumbsNode"><a href="/claroline11110/claroline/admin/admin_users.php" target="_top">User list</a></li>
+</ul>
+    </div>
+    
+    <div id="toolViewOption">
+                            </div>
+    
+    <div class="spacer"></div>
+    <hr>
+</div>
+<!-- End of BreadcrumbLine  -->
+
+</div>
+<!-- End of topBanner -->
+<!-- $Id: body.tpl.php 14332 2012-11-23 10:08:10Z zefredz $ -->
+
+
+<!-- - - - - - - - - - - Claroline Body - - - - - - - - - -->
+<div id="claroBody">
+    
+    
+                
+
+<!-- Page content -->
+<div class="toolTitleBlock"><table><tbody><tr><td><h1 class="toolTitle mainTitle">User list</h1>
+</td><td><ul class="commandList">
+<li><a style="background-image: url(/claroline11110/web/img/user.png?1232376376); background-repeat: no-repeat; background-position: left center; padding-left: 20px;" href="adminaddnewuser.php">Create user</a></li>
+<li><a style="background-image: url(/claroline11110/web/img/locked.png?1232376376); background-repeat: no-repeat; background-position: left center; padding-left: 20px;" href="/claroline11110/claroline/admin/admin_users.php?cmd=rqResetAllPasswords">Reset all user passwords</a></li>
+</ul>
+</td></tr></tbody></table></div>
+<div class="claroDialogBox boxError">
+<div class="claroDialogMsg msgError">You can not change your own settings!</div></div>
+
+<table width="100%">
+<tbody><tr>
+<td align="right">
+<form action="/claroline11110/claroline/admin/admin_users.php">
+<label for="search">Make new search :   </label>
+<input type="text" value="" name="search" id="search">
+<input type="submit" value=" Ok ">
+<input type="hidden" name="newsearch" value="yes">
+&nbsp;[<a class="claroCmd" href="advanced_user_search.php?action=all">Advanced</a>]
+</form>
+</td>
+</tr>
+<tr></tr></tbody></table>
+
+
+
+<div class="claroPager">
+<span class="pagerBefore">
+&nbsp;
+</span>
+<span class="pagerPages">
+
+</span>
+<span class="pagerAfter">
+&nbsp;
+</span>
+</div>
+
+<table class="claroTable emphaseLine" width="100%" border="0" cellspacing="2">
+<thead>
+<tr class="headerX" align="center" valign="top">
+<th scope="col" id="c0"><a href="/claroline11110/claroline/admin/admin_users.php?sort=user_id&amp;dir=4">No.</a></th>
+<th scope="col" id="c1"><a href="/claroline11110/claroline/admin/admin_users.php?sort=name&amp;dir=3">Name</a></th>
+<th scope="col" id="c2"><a href="/claroline11110/claroline/admin/admin_users.php?sort=firstname&amp;dir=4">First name</a></th>
+<th scope="col" id="c3"><a href="/claroline11110/claroline/admin/admin_users.php?sort=officialCode&amp;dir=4">Administrative code</a></th>
+<th scope="col" id="c4"><a href="/claroline11110/claroline/admin/admin_users.php?sort=email&amp;dir=4">Email</a></th>
+<th scope="col" id="c5"><a href="/claroline11110/claroline/admin/admin_users.php?sort=isCourseCreator&amp;dir=4">Status</a></th>
+<th scope="col" id="c6">User settings</th>
+<th scope="col" id="c7">Classes</th>
+<th scope="col" id="c8">Courses</th>
+<th scope="col" id="c9">Delete</th>
+<th scope="col" id="c10">Login as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td headers="c0 L0" align="center">1</td>
+<td scope="row" id="L0" headers="c1">Doe</td>
+<td headers="c2 L0">John</td>
+<td headers="c3 L0" align="center"> - </td>
+<td headers="c4 L0"><a href="mailto:jdoe@mydomain.net" class="email">jdoe@mydomain.net</a></td>
+<td headers="c5 L0">User<br><span class="highlight">Administrator</span></td>
+<td headers="c6 L0" align="center"><a href="admin_profile.php?uidToEdit=1&amp;cfrom=ulist"><img src="/claroline11110/web/img/usersetting.png?1232376376" alt="User settings"></a></td>
+<td headers="c7 L0"><span class="showUserClasses"><span class="1"></span>
+0 class(es)
+</span>
+</td>
+<td headers="c8 L0"><a class="showUserCourses" href="adminusercourses.php?uidToEdit=1&amp;cfrom=ulist"><span class="1"></span>
+0 course(s)
+</a>
+</td>
+<td headers="c9 L0" align="center"><a href="/claroline11110/claroline/admin/admin_users.php?cmd=exDelete&amp;user_id=1&amp;offset=0" onclick="return ADMIN.confirmationDel('John Doe (1)');">
+<img src="/claroline11110/web/img/delete.png?1232376376" alt="Delete">
+</a> 
+</td>
+<td headers="c10 L0" align="center"> - </td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="claroPager">
+<span class="pagerBefore">
+&nbsp;
+</span>
+<span class="pagerPages">
+
+</span>
+<span class="pagerAfter">
+&nbsp;
+</span>
+</div>
+
+<!-- End of Page Content -->
+
+
+    
+    <div class="spacer"></div>
+</div>
+<!-- - - - - - - - - - - End of Claroline Body  - - - - - - - - - - -->
+
+<!-- $Id: footer.tpl.php 12676 2010-10-20 14:59:33Z abourguignon $ -->
+
+
+<div id="campusFooter">
+    <hr>
+    <div id="campusFooterLeft">
+        
+<!-- campusFooterLeft -->
+
+<!-- End of campusFooterLeft -->
+            </div>
+    <div id="campusFooterRight">
+        
+<!-- campusFooterRight -->
+
+<!-- End of campusFooterRight -->
+        <div id="platformManager">Administrator for Claroline : <a href="mailto:jdoe@mydomain.net?subject=[Claroline]">John Doe</a></div>    </div>
+    <div id="campusFooterCenter">
+        
+<!-- campusFooterCenter -->
+
+<!-- End of campusFooterCenter -->
+        <span class="poweredBy">Powered by <a href="http://www.claroline.net" target="_blank">Claroline</a> © 2001 - 2013</span>    </div>
+</div>
+<!-- end of claroPage -->
+</div>
+
+
+</body></html>

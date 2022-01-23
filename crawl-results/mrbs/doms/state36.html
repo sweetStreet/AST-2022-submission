@@ -1,0 +1,425 @@
+<html><head>
+  
+  <meta charset="utf-8">
+  <title>Meeting Room Booking System</title>
+  
+      <link href="jquery/ui/css/sunny/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css">
+    
+    <link href="jquery/datatables/css/mrbs-page.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/mrbs-table.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/ColReorder.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/ColVis.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="css/mrbs.css.php" type="text/css">
+        <link rel="stylesheet" media="print" href="css/mrbs-print.css.php" type="text/css">
+    <!--[if IE]>
+    <link rel="stylesheet" href="css/mrbs-ie.css" type="text/css">
+    <![endif]-->
+        <!--[if IE 8]>
+    <link rel="stylesheet" href="css/mrbs-ie8.css" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/mrbs-ielte8.css" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="css/mrbs-ielte7.css.php" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="css/mrbs-ielte6.css" type="text/css">
+    <![endif]-->
+    
+    <meta name="robots" content="noindex">
+    
+<script type="text/javascript" src="jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-1.8.22.custom.min.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-i18n.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-datepicker-en.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-datepicker-en-US.js"></script>
+     
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE6 = false;
+  //]]>
+</script>
+<!--[if lte IE 6]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE6 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE7 = false;
+  //]]>
+</script>
+<!--[if lte IE 7]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE7 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE8 = false;
+  //]]>
+</script>
+<!--[if lte IE 8]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE8 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+    function init(params)
+  {
+  }
+  //]]>
+</script>
+    
+  <script type="text/javascript" src="jquery/datatables/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="jquery/datatables/js/ColReorder.min.js"></script>
+    <script type="text/javascript" src="jquery/datatables/js/ColVis.mrbs.min.js"></script>
+    <script type="text/javascript" src="jquery/datatables/js/FixedColumns.mrbs.js"></script>
+  <script type="text/javascript" src="jquery/datatables/js/plugins.js"></script>
+      
+  <script type="text/javascript" src="js/datatables.js.php?area=1"></script>
+
+    <script type="text/javascript" src="js/admin.js.php?area=1"></script>
+  <script type="text/javascript" src="js/functions.js.php?area=1"></script>
+<script type="text/javascript" src="js/datepicker.js.php?area=1"></script>
+<script type="text/javascript" src="js/general.js.php?area=1"></script>
+    
+<script type="text/javascript">
+
+//<![CDATA[
+
+
+
+
+
+$(window).load(function() {
+
+  var args = {day: '13',
+              month: '6',
+              year: '2022',
+              area: '1',
+              room: '1',
+              page: 'admin'};
+    init(args);
+
+});
+
+
+//]]>
+</script>  
+  </head>
+  
+  <body class="admin js">
+    <script type="text/javascript">
+      //<![CDATA[
+      $('body').addClass('js').removeClass('non_js');
+      //]]>
+    </script> 
+
+    <div class="screenonly">
+
+[Warning: Server failed to set locale to 'en_US.UTF-8']
+  <table id="banner">
+    <tbody><tr>
+      <td id="company">
+        <div>
+          <div id="logo">
+<span>Your Company</span>
+</div>
+          <div id="mrbs">
+            <a href="index.php">Meeting Room Booking System</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <form action="day.php" method="get" id="Form1">
+          <div>
+            <span id="dateselector"><input class="date hasDatepicker" type="text" id="datepicker">
+<input type="hidden" id="datepicker_alt" name="_alt" value="2022-6-13" disabled="disabled">
+<input type="hidden" id="datepicker_alt_day" name="day" value="13">
+<input type="hidden" id="datepicker_alt_month" name="month" value="6">
+<input type="hidden" id="datepicker_alt_year" name="year" value="2022">
+</span>
+  <script type="text/javascript">
+
+  $(function() {
+    $("#datepicker").datepicker({yearRange: '2016:2027',
+                                                       altField: '#datepicker_alt'
+                                                       , onClose: function(dateText, inst) {datepicker_close(dateText, inst, 'Form1');}                                                      });
+        var initial_date = new Date(2022, 5, 13);
+    var dateFormat = $("#datepicker").datepicker( "option", "dateFormat" );
+    document.getElementById('datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('datepicker_alt_day').value = 13;
+    document.getElementById('datepicker_alt_month').value = 6;
+    document.getElementById('datepicker_alt_year').value = 2022;
+    $(".ui-datepicker").draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('dateselector');
+  var datepicker_html = '<input class="date" type="text" id="datepicker">\n';
+    datepicker_html += '<input type="hidden" id="datepicker_alt"'
+  datepicker_html += ' name="_alt"';
+  datepicker_html += ' value="2022-6-13"';
+  datepicker_html += ' disabled="disabled">\n';
+    datepicker_html += '<input type="hidden" id="datepicker_alt_day" name="day">\n';
+  datepicker_html += '<input type="hidden" id="datepicker_alt_month" name="month">\n';
+  datepicker_html += '<input type="hidden" id="datepicker_alt_year" name="year">\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  </script>
+  <input type="hidden" name="area" value="1">
+<input type="hidden" name="room" value="1">
+<input type="submit" value="goto">
+           </div>
+        </form>
+              </td>
+      <td>
+<a href="help.php?day=13&amp;month=6&amp;year=2022&amp;area=1&amp;room=1">Help</a>
+</td>
+<td>
+<a href="admin.php?day=13&amp;month=6&amp;year=2022&amp;area=1&amp;room=1">Rooms</a>
+</td>
+<td>
+<a href="report.php?day=13&amp;month=6&amp;year=2022&amp;area=1&amp;room=1">Report</a>
+</td>
+      
+      <td>
+        <form id="header_search" method="get" action="search.php">
+          <div>
+            <a href="search.php?advanced=1">Search:</a>
+            <input type="search" name="search_str" value="" required="">
+            <input type="hidden" name="day" value="13">
+            <input type="hidden" name="month" value="6">
+            <input type="hidden" name="year" value="2022">
+            <input type="hidden" name="area" value="1">
+<input type="hidden" name="room" value="1">
+          </div>
+        <input type="hidden" name="datatable" value="1"></form>
+      </td>
+      <td>
+<div id="logon_box">
+
+                <a href="report.php?from_day=13&amp;from_month=6&amp;from_year=2022&amp;to_day=1&amp;to_month=12&amp;to_year=2030&amp;areamatch=&amp;roommatch=&amp;namematch=&amp;descrmatch=&amp;summarize=1&amp;sortby=r&amp;display=d&amp;sumby=d&amp;creatormatch=administrator" title="Click to display all my upcoming entries">You are administrator</a>
+                <form method="post" action="admin.php">
+                  <div>
+                    <input type="hidden" name="TargetURL" value="admin.php?day=13&amp;month=6&amp;year=2022&amp;area=1&amp;room=1">
+                    <input type="hidden" name="Action" value="SetName">
+                    <input type="hidden" name="NewUserName" value="">
+                    <input type="hidden" name="NewUserPassword" value="">
+                    <input type="submit" value=" Log Off ">
+                  </div>
+                </form>
+</div>
+</td>
+    </tr>
+  </tbody></table>
+</div>
+
+<div id="contents">
+<h2>Room Details</h2>
+<div id="area_form">
+<form id="areaChangeForm" method="get" action="/mrbs/web/admin.php">
+<fieldset>
+<legend></legend>
+<label id="area_label" for="area_select">Area:</label>
+<select class="room_area_select" id="area_select" name="area" onchange="this.form.submit()"><optgroup label="Enabled">
+<option selected="selected" value="1">Building 1</option><option value="2">Building 2</option></optgroup>
+</select>
+<input type="hidden" name="day" value="13">
+<input type="hidden" name="month" value="6">
+<input type="hidden" name="year" value="2022">
+<input type="submit" name="change" class="js_none" value="Change">
+<input type="image" class="button" name="edit" src="images/edit.png" title="Edit" alt="Edit">
+<input type="image" class="button" name="delete" src="images/delete.png" title="Delete" alt="Delete">
+</fieldset>
+</form>
+  <form id="add_area" class="form_admin" action="add.php" method="post">
+    <fieldset>
+    <legend>Add Area</legend>
+        
+      <input type="hidden" name="type" value="area">
+
+      <div>
+        <label for="area_name">Name:</label>
+        <input type="text" id="area_name" name="name" maxlength="30">
+      </div>
+          
+      <div>
+        <input type="submit" class="submit" value="Add Area">
+      </div>
+
+    </fieldset>
+  </form>
+  </div><div id="custom_html">
+</div>
+<h2>
+Rooms in Building 1</h2>
+<div id="room_form">
+<div id="room_info" class="datatable_container" style="visibility: visible;">
+<div class="dataTables_wrapper" id="rooms_table_wrapper"><div class="ColVis TableTools"><button class="ColVis_Button TableTools_Button ColVis_MasterButton"><span>Show / hide columns</span></button></div><div class="clear"></div><div id="rooms_table_length" class="dataTables_length"><label>Show <select size="1" name="rooms_table_length"><option value="10">10</option><option value="25" selected="selected">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div class="dataTables_filter" id="rooms_table_filter"><label>Search: <input type="text"></label></div><div id="rooms_table_processing" class="dataTables_processing" style="visibility: hidden;">Processing...</div><div class="DTFC_ScrollWrapper" style="position: relative; clear: both; height: 150px;"><div class="DTFC_RightWrapper" style="position: absolute; top: 0px; left: 1108px; width: 40px; height: 150px;"><div class="DTFC_RightHeadWrapper" style="position:relative; top:0; left:0; overflow:hidden;"><table class="admin_table display DTFC_Cloned" style="margin-left: 0px; width: 100%;"><thead><tr style="height: 33px;"><th class="sorting" rowspan="1" colspan="1" style="width: 22px;">&nbsp;</th></tr></thead></table></div><div class="DTFC_RightBodyWrapper" style="position: relative; top: 0px; left: 0px; overflow: hidden; height: 116px;"><table class="admin_table display DTFC_Cloned" style="margin-left: 0px; width: 100%; padding-bottom: 0px; margin-bottom: 0px;"><thead>
+<tr style="height: 0px;"></tr>
+</thead>
+
+
+<tbody><tr class="odd" style="height: 29px;"><td style="width: 89px;"><div>
+<a href="del.php?type=room&amp;area=1&amp;room=1">
+<img src="images/delete.png" width="16" height="16" alt="Delete" title="Delete">
+</a>
+</div></td></tr><tr class="even" style="height: 29px;"><td style="width: 89px;"><div>
+<a href="del.php?type=room&amp;area=1&amp;room=2">
+<img src="images/delete.png" width="16" height="16" alt="Delete" title="Delete">
+</a>
+</div></td></tr><tr class="odd" style="height: 29px;"><td style="width: 89px;"><div>
+<a href="del.php?type=room&amp;area=1&amp;room=3">
+<img src="images/delete.png" width="16" height="16" alt="Delete" title="Delete">
+</a>
+</div></td></tr><tr class="even" style="height: 29px;"><td style="width: 89px;"><div>
+<a href="del.php?type=room&amp;area=1&amp;room=4">
+<img src="images/delete.png" width="16" height="16" alt="Delete" title="Delete">
+</a>
+</div></td></tr></tbody></table></div><div class="DTFC_RightFootWrapper" style="position:relative; top:0; left:0; overflow:hidden;"></div></div><div class="DTFC_LeftWrapper" style="position: absolute; top: 0px; left: 0px; width: 151px; height: 150px;"><div class="DTFC_LeftHeadWrapper" style="position:relative; top:0; left:0; overflow:hidden;"><table class="admin_table display DTFC_Cloned" style="margin-left: 0px; width: 100%;"><thead><tr style="height: 33px;"><th class="sorting_asc" rowspan="1" colspan="1" style="width: 133px;">Name</th></tr></thead></table></div><div class="DTFC_LeftBodyWrapper" style="position: relative; top: 0px; left: 0px; overflow: hidden; height: 116px;"><table class="admin_table display DTFC_Cloned" style="margin-left: 0px; width: 100%; padding-bottom: 0px; margin-bottom: 0px;"><thead>
+<tr style="height: 0px;"></tr>
+</thead>
+
+
+<tbody><tr class="odd" style="height: 29px;"><td class=" sorting_1" style="width: 151px;"><div><a title="Room 1" href="edit_area_room.php?change_room=1&amp;phase=1&amp;room=1">Room 1</a></div></td></tr><tr class="even" style="height: 29px;"><td class=" sorting_1" style="width: 151px;"><div><a title="Room 2" href="edit_area_room.php?change_room=1&amp;phase=1&amp;room=2">Room 2</a></div></td></tr><tr class="odd" style="height: 29px;"><td class=" sorting_1" style="width: 151px;"><div><a title="Room 3" href="edit_area_room.php?change_room=1&amp;phase=1&amp;room=3">Room 3</a></div></td></tr><tr class="even" style="height: 29px;"><td class=" sorting_1" style="width: 151px;"><div><a title="Room 4" href="edit_area_room.php?change_room=1&amp;phase=1&amp;room=4">Room 4</a></div></td></tr></tbody></table></div><div class="DTFC_LeftFootWrapper" style="position:relative; top:0; left:0; overflow:hidden;"></div></div><div class="dataTables_scroll" style="position: absolute; top: 0px; left: 151px; width: 957px;"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner" style="width: 956px;"><table class="admin_table display" style="margin-left: 0px; width: 956px;"><thead>
+<tr style="height: 33px;"><th class="sorting" rowspan="1" colspan="1" style="width: 158px;">Enabled</th><th class="sorting" rowspan="1" colspan="1" style="width: 202px;">Description</th><th class="sorting" rowspan="1" colspan="1" style="width: 166px;">Capacity</th><th class="sorting" rowspan="1" colspan="1" style="width: 297px;">Room admin email</th></tr>
+</thead></table></div></div><div class="dataTables_scrollBody" style="overflow: auto; width: 100%;"><table id="rooms_table" class="admin_table display" style="margin-left: 0px; width: 956px;"><thead>
+<tr style="height: 0px;"><th class="sorting" rowspan="1" colspan="1" style="width: 158px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"></th><th class="sorting" rowspan="1" colspan="1" style="width: 202px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"></th><th class="sorting" rowspan="1" colspan="1" style="width: 166px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"></th><th class="sorting" rowspan="1" colspan="1" style="width: 297px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"></th></tr>
+</thead>
+
+
+<tbody><tr class="odd" style="height: 29px;">
+
+<td class="boolean"><div><img src="images/check.png" alt="check mark" width="16" height="16"></div></td>
+<td><div></div></td>
+<td class="int"><div>8</div></td>
+<td><div></div></td>
+
+</tr><tr class="even" style="height: 29px;">
+
+<td class="boolean"><div><img src="images/check.png" alt="check mark" width="16" height="16"></div></td>
+<td><div></div></td>
+<td class="int"><div>8</div></td>
+<td><div></div></td>
+
+</tr><tr class="odd" style="height: 29px;">
+
+<td class="boolean"><div><img src="images/check.png" alt="check mark" width="16" height="16"></div></td>
+<td><div></div></td>
+<td class="int"><div>8</div></td>
+<td><div></div></td>
+
+</tr><tr class="even" style="height: 29px;">
+
+<td class="boolean"><div><img src="images/check.png" alt="check mark" width="16" height="16"></div></td>
+<td><div></div></td>
+<td class="int"><div>8</div></td>
+<td><div></div></td>
+
+</tr></tbody></table></div></div></div><div class="dataTables_info" id="rooms_table_info">Showing 1 to 4 of 4 entries</div><div class="dataTables_paginate paging_full_numbers" id="rooms_table_paginate"><span class="first paginate_button paginate_button_disabled" id="rooms_table_first">First</span><span class="previous paginate_button paginate_button_disabled" id="rooms_table_previous">Previous</span><span><span class="paginate_active">1</span></span><span class="next paginate_button paginate_button_disabled" id="rooms_table_next">Next</span><span class="last paginate_button paginate_button_disabled" id="rooms_table_last">Last</span></div></div>
+</div>
+    <form id="add_room" class="form_admin" action="add.php" method="post">
+      <fieldset>
+      <legend>Add Room</legend>
+        
+        <input type="hidden" name="type" value="room">
+        <input type="hidden" name="area" value="1">
+        
+        <div>
+          <label for="room_name">Name:</label>
+          <input type="text" id="room_name" name="name" maxlength="25">
+        </div>
+        
+        <div>
+          <label for="room_description">Description:</label>
+          <input type="text" id="room_description" name="description" maxlength="60">
+        </div>
+        
+        <div>
+          <label for="room_capacity">Capacity:</label>
+          <input type="text" id="room_capacity" name="capacity">
+        </div>
+       
+        <div>
+          <input type="submit" class="submit" value="Add Room">
+        </div>
+        
+      </fieldset>
+    </form>
+  </div>
+</div><div class="screenonly trailer" id="trailer">
+<div id="viewday">
+<div class="trailer_label">
+<a href="day.php?year=2022&amp;month=6&amp;day=13&amp;area=1&amp;room=1">View Day:</a>
+</div>
+<div class="trailer_links">
+<span><a href="day.php?year=2022&amp;month=06&amp;day=07&amp;area=1&amp;room=1">Jun 07</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=08&amp;area=1&amp;room=1">Jun 08</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=09&amp;area=1&amp;room=1">Jun 09</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=10&amp;area=1&amp;room=1">Jun 10</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=11&amp;area=1&amp;room=1">Jun 11</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=12&amp;area=1&amp;room=1">Jun 12</a></span>
+ | <span class="current">[ <a href="day.php?year=2022&amp;month=06&amp;day=13&amp;area=1&amp;room=1">Jun 13</a> ]</span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=14&amp;area=1&amp;room=1">Jun 14</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=15&amp;area=1&amp;room=1">Jun 15</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=16&amp;area=1&amp;room=1">Jun 16</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=17&amp;area=1&amp;room=1">Jun 17</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=18&amp;area=1&amp;room=1">Jun 18</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=19&amp;area=1&amp;room=1">Jun 19</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=20&amp;area=1&amp;room=1">Jun 20</a></span>
+</div>
+</div>
+<div id="viewweek">
+<div class="trailer_label">
+<a href="week.php?year=2022&amp;month=6&amp;day=13&amp;area=1&amp;room=1">View Week:</a>
+</div>
+<div class="trailer_links">
+  <a href="week.php?year=2022&amp;month=05&amp;day=16&amp;area=1&amp;room=1">May 15</a>
+ |   <a href="week.php?year=2022&amp;month=05&amp;day=23&amp;area=1&amp;room=1">May 22</a>
+ |   <a href="week.php?year=2022&amp;month=05&amp;day=30&amp;area=1&amp;room=1">May 29</a>
+ |   <a href="week.php?year=2022&amp;month=06&amp;day=06&amp;area=1&amp;room=1">Jun 05</a>
+ | <span class="current">
+[   <a href="week.php?year=2022&amp;month=06&amp;day=13&amp;area=1&amp;room=1">Jun 12</a>
+]</span>
+ |   <a href="week.php?year=2022&amp;month=06&amp;day=20&amp;area=1&amp;room=1">Jun 19</a>
+ |   <a href="week.php?year=2022&amp;month=06&amp;day=27&amp;area=1&amp;room=1">Jun 26</a>
+ |   <a href="week.php?year=2022&amp;month=07&amp;day=04&amp;area=1&amp;room=1">Jul 03</a>
+ |   <a href="week.php?year=2022&amp;month=07&amp;day=11&amp;area=1&amp;room=1">Jul 10</a>
+</div>
+</div>
+<div id="viewmonth">
+<div class="trailer_label">
+<a href="month.php?year=2022&amp;month=6&amp;day=13&amp;area=1&amp;room=1">View Month:</a>
+</div>
+<div class="trailer_links">
+  <a href="month.php?year=2022&amp;month=04&amp;day=13&amp;area=1&amp;room=1">Apr 2022</a>
+ |   <a href="month.php?year=2022&amp;month=05&amp;day=13&amp;area=1&amp;room=1">May 2022</a>
+ | <span class="current">
+[   <a href="month.php?year=2022&amp;month=06&amp;day=13&amp;area=1&amp;room=1">Jun 2022</a>
+]</span>
+ |   <a href="month.php?year=2022&amp;month=07&amp;day=13&amp;area=1&amp;room=1">Jul 2022</a>
+ |   <a href="month.php?year=2022&amp;month=08&amp;day=13&amp;area=1&amp;room=1">Aug 2022</a>
+ |   <a href="month.php?year=2022&amp;month=09&amp;day=13&amp;area=1&amp;room=1">Sep 2022</a>
+ |   <a href="month.php?year=2022&amp;month=10&amp;day=13&amp;area=1&amp;room=1">Oct 2022</a>
+ |   <a href="month.php?year=2022&amp;month=11&amp;day=13&amp;area=1&amp;room=1">Nov 2022</a>
+ |   <a href="month.php?year=2022&amp;month=12&amp;day=13&amp;area=1&amp;room=1">Dec 2022</a>
+</div>
+</div>
+</div>
+  
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-draggable" style="position: relative;"></div></body></html>

@@ -1,0 +1,862 @@
+{
+  "states" : {
+    "state9" : {
+      "name" : "state9",
+      "url" : "http://localhost:3000/",
+      "candidateElements" : [ {
+        "top" : 200,
+        "left" : 817,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/DIV[1]/A[1]",
+        "width" : 66,
+        "height" : 30
+      }, {
+        "top" : 151,
+        "left" : 316,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[3]/INPUT[1]",
+        "width" : 74,
+        "height" : 34
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 9,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 8.0,
+      "cluster" : 9,
+      "timeAdded" : 1632363385253,
+      "nearestState" : "state4"
+    },
+    "state5" : {
+      "name" : "state5",
+      "url" : "http://localhost:3000/",
+      "candidateElements" : [ {
+        "top" : 249,
+        "left" : 662,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/A[1]",
+        "width" : 67,
+        "height" : 30
+      }, {
+        "top" : 249,
+        "left" : 737,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/A[2]",
+        "width" : 146,
+        "height" : 30
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 44,
+        "height" : 34
+      }, {
+        "top" : 200,
+        "left" : 316,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[4]/INPUT[1]",
+        "width" : 69,
+        "height" : 34
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 2,
+      "id" : 5,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 9.0,
+      "cluster" : 5,
+      "timeAdded" : 1632363367660,
+      "nearestState" : "state4"
+    },
+    "index" : {
+      "name" : "index",
+      "url" : "http://localhost:3000/",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 123,
+        "height" : 46
+      }, {
+        "top" : 0,
+        "left" : 765,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 68,
+        "height" : 45
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 964,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[6]/A[1]",
+        "width" : 82,
+        "height" : 45
+      }, {
+        "top" : 0,
+        "left" : 1046,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[7]/A[1]",
+        "width" : 73,
+        "height" : 45
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[8]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[9]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 660,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+        "width" : 263,
+        "height" : 161
+      }, {
+        "top" : 660,
+        "left" : 322,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[2]/DIV[2]/A[1]",
+        "width" : 263,
+        "height" : 161
+      }, {
+        "top" : 660,
+        "left" : 615,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[2]/DIV[3]/A[1]",
+        "width" : 263,
+        "height" : 161
+      }, {
+        "top" : 660,
+        "left" : 907,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[2]/DIV[4]/A[1]",
+        "width" : 263,
+        "height" : 161
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 44,
+        "height" : 34
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/P[2]/INPUT[1]",
+        "width" : 0,
+        "height" : 0
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 1,
+      "id" : 0,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]" ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : 0,
+      "timeAdded" : 1632363337365,
+      "nearestState" : "null"
+    },
+    "state7" : {
+      "name" : "state7",
+      "url" : "http://localhost:3000/",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 123,
+        "height" : 46
+      }, {
+        "top" : 0,
+        "left" : 765,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 68,
+        "height" : 45
+      }, {
+        "top" : 0,
+        "left" : 964,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[6]/A[1]",
+        "width" : 82,
+        "height" : 45
+      }, {
+        "top" : 0,
+        "left" : 1046,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[7]/A[1]",
+        "width" : 73,
+        "height" : 45
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 7,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 1.0,
+      "cluster" : 7,
+      "timeAdded" : 1632363377296,
+      "nearestState" : "index"
+    },
+    "state4" : {
+      "name" : "state4",
+      "url" : "http://localhost:3000/",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 123,
+        "height" : 46
+      }, {
+        "top" : 0,
+        "left" : 765,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 68,
+        "height" : 45
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 964,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[6]/A[1]",
+        "width" : 82,
+        "height" : 45
+      }, {
+        "top" : 0,
+        "left" : 1046,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[7]/A[1]",
+        "width" : 73,
+        "height" : 45
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[8]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[9]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 660,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+        "width" : 263,
+        "height" : 161
+      }, {
+        "top" : 660,
+        "left" : 322,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[2]/DIV[2]/A[1]",
+        "width" : 263,
+        "height" : 161
+      }, {
+        "top" : 660,
+        "left" : 615,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[2]/DIV[3]/A[1]",
+        "width" : 263,
+        "height" : 161
+      }, {
+        "top" : 660,
+        "left" : 907,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[2]/DIV[4]/A[1]",
+        "width" : 263,
+        "height" : 161
+      }, {
+        "top" : 298,
+        "left" : 824,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/DIV[1]/A[1]",
+        "width" : 59,
+        "height" : 30
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 44,
+        "height" : 34
+      }, {
+        "top" : 44,
+        "left" : 871,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 13,
+        "height" : 21
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/P[2]/INPUT[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 249,
+        "left" : 316,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/INPUT[1]",
+        "width" : 76,
+        "height" : 34
+      } ],
+      "fanIn" : 3,
+      "fanOut" : 3,
+      "id" : 4,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[8]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[9]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[2]/DIV[1]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[2]/DIV[2]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[2]/DIV[3]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[2]/DIV[4]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/P[2]/INPUT[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[7]/A[1]" ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 37.0,
+      "cluster" : 4,
+      "timeAdded" : 1632363350732,
+      "nearestState" : "index"
+    },
+    "state18" : {
+      "name" : "state18",
+      "url" : "http://localhost:3000/wallets",
+      "candidateElements" : [ ],
+      "fanIn" : 0,
+      "fanOut" : 0,
+      "id" : 18,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 1.0,
+      "cluster" : 18,
+      "timeAdded" : 1632363461948,
+      "nearestState" : "state14"
+    },
+    "state13" : {
+      "name" : "state13",
+      "url" : "http://localhost:3000/wallets",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : 685,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 75,
+        "height" : 45
+      }, {
+        "top" : 0,
+        "left" : 760,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]",
+        "width" : 66,
+        "height" : 45
+      }, {
+        "top" : 0,
+        "left" : 958,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[8]/A[1]",
+        "width" : 81,
+        "height" : 45
+      }, {
+        "top" : 0,
+        "left" : 1039,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[9]/A[1]",
+        "width" : 81,
+        "height" : 45
+      }, {
+        "top" : 65,
+        "left" : 45,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 38,
+        "height" : 16
+      }, {
+        "top" : 127,
+        "left" : 173,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 34,
+        "height" : 22
+      }, {
+        "top" : 165,
+        "left" : 923,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 231,
+        "height" : 40
+      }, {
+        "top" : 207,
+        "left" : 923,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 231,
+        "height" : 40
+      }, {
+        "top" : 337,
+        "left" : 923,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 231,
+        "height" : 40
+      }, {
+        "top" : 379,
+        "left" : 923,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 231,
+        "height" : 40
+      }, {
+        "top" : 421,
+        "left" : 923,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/UL[1]/LI[3]/A[1]",
+        "width" : 231,
+        "height" : 40
+      }, {
+        "top" : 200,
+        "left" : 316,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[4]/INPUT[1]",
+        "width" : 52,
+        "height" : 34
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 13,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/UL[1]/LI[1]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/UL[1]/LI[2]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/UL[1]/LI[3]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/UL[1]/LI[1]/A[1]" ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 27.0,
+      "cluster" : 13,
+      "timeAdded" : 1632363410426,
+      "nearestState" : "state12"
+    },
+    "state12" : {
+      "name" : "state12",
+      "url" : "http://localhost:3000/wallets",
+      "candidateElements" : [ {
+        "top" : 65,
+        "left" : 45,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 38,
+        "height" : 16
+      }, {
+        "top" : 127,
+        "left" : 173,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 34,
+        "height" : 22
+      }, {
+        "top" : 165,
+        "left" : 923,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 231,
+        "height" : 40
+      }, {
+        "top" : 207,
+        "left" : 923,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 231,
+        "height" : 40
+      }, {
+        "top" : 337,
+        "left" : 923,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 231,
+        "height" : 40
+      }, {
+        "top" : 379,
+        "left" : 923,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 231,
+        "height" : 40
+      }, {
+        "top" : 421,
+        "left" : 923,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/UL[1]/LI[3]/A[1]",
+        "width" : 231,
+        "height" : 40
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 12,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 2.0,
+      "cluster" : 12,
+      "timeAdded" : 1632363401361,
+      "nearestState" : "state11"
+    },
+    "state11" : {
+      "name" : "state11",
+      "url" : "http://localhost:3000/wallets",
+      "candidateElements" : [ {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 685,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 75,
+        "height" : 45
+      }, {
+        "top" : 0,
+        "left" : 760,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]",
+        "width" : 66,
+        "height" : 45
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[6]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[7]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 958,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[8]/A[1]",
+        "width" : 81,
+        "height" : 45
+      }, {
+        "top" : 0,
+        "left" : 1039,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[9]/A[1]",
+        "width" : 81,
+        "height" : 45
+      }, {
+        "top" : 65,
+        "left" : 45,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 38,
+        "height" : 16
+      }, {
+        "top" : 127,
+        "left" : 173,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 34,
+        "height" : 22
+      }, {
+        "top" : 165,
+        "left" : 923,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 231,
+        "height" : 40
+      }, {
+        "top" : 207,
+        "left" : 923,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 231,
+        "height" : 40
+      }, {
+        "top" : 337,
+        "left" : 923,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 231,
+        "height" : 40
+      }, {
+        "top" : 379,
+        "left" : 923,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 231,
+        "height" : 40
+      }, {
+        "top" : 421,
+        "left" : 923,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/UL[1]/LI[3]/A[1]",
+        "width" : 231,
+        "height" : 40
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 11,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 67.0,
+      "cluster" : 11,
+      "timeAdded" : 1632363393787,
+      "nearestState" : "state7"
+    },
+    "state17" : {
+      "name" : "state17",
+      "url" : "http://localhost:3000/wallets",
+      "candidateElements" : [ {
+        "top" : 111,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 848,
+        "height" : 46
+      }, {
+        "top" : 167,
+        "left" : 46,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 52,
+        "height" : 34
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 17,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 21.0,
+      "cluster" : 17,
+      "timeAdded" : 1632363449448,
+      "nearestState" : "state13"
+    },
+    "state15" : {
+      "name" : "state15",
+      "url" : "http://localhost:3000/wallets/1",
+      "candidateElements" : [ {
+        "top" : 65,
+        "left" : 45,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 38,
+        "height" : 16
+      }, {
+        "top" : 65,
+        "left" : 105,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 45,
+        "height" : 16
+      }, {
+        "top" : 245,
+        "left" : 1087,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+        "width" : 67,
+        "height" : 17
+      }, {
+        "top" : 122,
+        "left" : 701,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/H3[1]/SPAN[2]/A[1]",
+        "width" : 62,
+        "height" : 22
+      }, {
+        "top" : 373,
+        "left" : 826,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/DIV[2]/A[1]",
+        "width" : 328,
+        "height" : 34
+      }, {
+        "top" : 209,
+        "left" : 826,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/BUTTON[1]",
+        "width" : 328,
+        "height" : 34
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/BUTTON[1]",
+        "width" : 16,
+        "height" : 6
+      }, {
+        "top" : 255,
+        "left" : 46,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/BUTTON[1]",
+        "width" : 718,
+        "height" : 30
+      }, {
+        "top" : 144,
+        "left" : 46,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/INPUT[1]",
+        "width" : 718,
+        "height" : 34
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/INPUT[2]",
+        "width" : 748,
+        "height" : 34
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 15,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 62.0,
+      "cluster" : 15,
+      "timeAdded" : 1632363439706,
+      "nearestState" : "state11"
+    },
+    "state14" : {
+      "name" : "state14",
+      "url" : "http://localhost:3000/wallets",
+      "candidateElements" : [ {
+        "top" : 111,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 848,
+        "height" : 46
+      }, {
+        "top" : 167,
+        "left" : 46,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 52,
+        "height" : 34
+      }, {
+        "top" : 122,
+        "left" : 560,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]/DIV[2]/BUTTON[1]",
+        "width" : 52,
+        "height" : 22
+      }, {
+        "top" : 122,
+        "left" : 616,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]/DIV[2]/BUTTON[2]",
+        "width" : 48,
+        "height" : 22
+      }, {
+        "top" : 122,
+        "left" : 669,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]/DIV[2]/BUTTON[3]",
+        "width" : 126,
+        "height" : 22
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 2,
+      "id" : 14,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 21.0,
+      "cluster" : 14,
+      "timeAdded" : 1632363431627,
+      "nearestState" : "state12"
+    }
+  },
+  "edges" : [ {
+    "from" : "index",
+    "to" : "state4",
+    "text" : "Register",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[6]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Register, attributes={data-i18n=Register, href=/user/registration}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state4",
+    "to" : "state5",
+    "text" : "Sign In",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Sign In, attributes={class=btn btn-default btn-sm, href=http://localhost:3000/user/signin}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state5",
+    "to" : "state4",
+    "text" : "Register",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Register, attributes={class=btn btn-default btn-sm, href=http://localhost:3000/user/registration}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state4",
+    "to" : "state7",
+    "text" : "×",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=×, attributes={aria-hidden=true, class=close, data-dismiss=modal, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state7",
+    "to" : "state5",
+    "text" : "Sign In",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[7]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Sign In, attributes={anyaccess=none, class=signin_caller, data-i18n=Sign In, href=/user/signin}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state5",
+    "to" : "state9",
+    "text" : "Restore your password",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/A[2]",
+    "element" : "Element{node=[A: null], tag=A, text=Restore your password, attributes={class=btn btn-default btn-sm, href=http://localhost:3000/user/restore}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state9",
+    "to" : "state4",
+    "text" : "Register",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Register, attributes={class=btn btn-default btn-sm, href=http://localhost:3000/user/registration}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state4",
+    "to" : "state11",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[5]/INPUT[1]",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={class=btn btn-primary pull-left, data-loading-text=Registration..., id=registration_modal_form_submit, type=submit, value=Sign Up}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state12",
+    "text" : "Home",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Home, attributes={href=http://localhost:3000}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state12",
+    "to" : "state13",
+    "text" : "Add",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add, attributes={anyaccess=none, class=btn btn-primary btn-xs, href=http://localhost:3000/wallets/add, id=add_wallet_button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state13",
+    "to" : "state14",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[4]/INPUT[1]",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={class=btn btn-primary pull-left, data-loading-text=Saving..., id=add_wallet_modal_form_submit, type=submit, value=Add}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state14",
+    "to" : "state15",
+    "text" : "0.00 RSDHideEditManage AccessesWXlLXGIt",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=0.00 RSDHideEditManage AccessesWXlLXGIt, attributes={class=list-group-item item, data-id=1, href=http://localhost:3000/wallets/1}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state15",
+    "to" : "state14",
+    "text" : "Home",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Home, attributes={href=http://localhost:3000}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state14",
+    "to" : "state17",
+    "text" : "Add",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add, attributes={class=btn btn-primary, href=http://localhost:3000/wallets/add, id=add_wallet_button}}",
+    "eventType" : "click"
+  } ],
+  "statistics" : {
+    "duration" : "2 minutes 26 seconds",
+    "crawlPaths" : 1,
+    "averageDomSize" : "10.303 kB",
+    "edges" : 14,
+    "startDate" : "2021-09-22 21:15:31 CDT",
+    "stateStats" : {
+      "leastFanOut" : {
+        "id" : "state18",
+        "count" : 0
+      },
+      "leastFanIn" : {
+        "id" : "index",
+        "count" : 0
+      },
+      "mostFanOut" : {
+        "id" : "state4",
+        "count" : 3
+      },
+      "mostFanIn" : {
+        "id" : "state4",
+        "count" : 3
+      },
+      "totalNumberOfStates" : 12,
+      "urls" : {
+        "http://localhost:3000/" : [ "state9", "state5", "index", "state7", "state4" ],
+        "http://localhost:3000/wallets" : [ "state18", "state13", "state12", "state11", "state17", "state14" ],
+        "http://localhost:3000/wallets/1" : [ "state15" ]
+      }
+    },
+    "failedEvents" : 18
+  },
+  "exitStatus" : "EXHAUSTED"
+}

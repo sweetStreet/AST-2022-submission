@@ -1,0 +1,755 @@
+{
+  "states" : {
+    "state6" : {
+      "name" : "state6",
+      "url" : "http://localhost:4000/session/S1gMit9NY",
+      "candidateElements" : [ {
+        "top" : 267,
+        "left" : 18,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 88,
+        "height" : 36
+      }, {
+        "top" : 150,
+        "left" : 447,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]",
+        "width" : 332,
+        "height" : 35
+      }, {
+        "top" : 150,
+        "left" : 847,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]",
+        "width" : 332,
+        "height" : 35
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 6,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 14.0,
+      "cluster" : 6,
+      "timeAdded" : 1633487632104,
+      "nearestState" : "state5"
+    },
+    "state5" : {
+      "name" : "state5",
+      "url" : "http://localhost:4000/session/S1gMit9NY",
+      "candidateElements" : [ {
+        "top" : 12,
+        "left" : 1118,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]/BUTTON[1]",
+        "width" : 36,
+        "height" : 36
+      }, {
+        "top" : 12,
+        "left" : 1154,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]",
+        "width" : 36,
+        "height" : 36
+      }, {
+        "top" : 150,
+        "left" : 48,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]",
+        "width" : 332,
+        "height" : 35
+      }, {
+        "top" : 150,
+        "left" : 447,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]",
+        "width" : 332,
+        "height" : 35
+      }, {
+        "top" : 150,
+        "left" : 847,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]",
+        "width" : 332,
+        "height" : 35
+      }, {
+        "top" : 99,
+        "left" : 521,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/SPAN[1]",
+        "width" : 156,
+        "height" : 21
+      }, {
+        "top" : 102,
+        "left" : 664,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/SPAN[1]/SPAN[1]",
+        "width" : 14,
+        "height" : 14
+      } ],
+      "fanIn" : 4,
+      "fanOut" : 5,
+      "id" : 5,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 40.0,
+      "cluster" : 5,
+      "timeAdded" : 1633487625272,
+      "nearestState" : "index"
+    },
+    "index" : {
+      "name" : "index",
+      "url" : "http://localhost:4000",
+      "candidateElements" : [ {
+        "top" : 13,
+        "left" : 34,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 185,
+        "height" : 37
+      }, {
+        "top" : 268,
+        "left" : 350,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 105,
+        "height" : 36
+      }, {
+        "top" : 120,
+        "left" : 350,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+        "width" : 500,
+        "height" : 53
+      }, {
+        "top" : 128,
+        "left" : 350,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]",
+        "width" : 500,
+        "height" : 36
+      }, {
+        "top" : 128,
+        "left" : 350,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+        "width" : 32,
+        "height" : 32
+      }, {
+        "top" : 128,
+        "left" : 350,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+        "width" : 32,
+        "height" : 32
+      }, {
+        "top" : 128,
+        "left" : 350,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]",
+        "width" : 500,
+        "height" : 36
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 1,
+      "id" : 0,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : -1.0,
+      "cluster" : 0,
+      "timeAdded" : 1633487611344,
+      "nearestState" : "null"
+    },
+    "state8" : {
+      "name" : "state8",
+      "url" : "http://localhost:4000/session/S1gMit9NY",
+      "candidateElements" : [ {
+        "top" : 452,
+        "left" : 48,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/BUTTON[1]",
+        "width" : 212,
+        "height" : 36
+      }, {
+        "top" : 520,
+        "left" : 1133,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/NAV[1]/BUTTON[1]",
+        "width" : 34,
+        "height" : 36
+      }, {
+        "top" : 150,
+        "left" : 48,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]",
+        "width" : 332,
+        "height" : 35
+      }, {
+        "top" : 150,
+        "left" : 447,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]",
+        "width" : 332,
+        "height" : 35
+      }, {
+        "top" : 150,
+        "left" : 847,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]",
+        "width" : 332,
+        "height" : 35
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 8,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 20.0,
+      "cluster" : 8,
+      "timeAdded" : 1633487640418,
+      "nearestState" : "state5"
+    },
+    "state3" : {
+      "name" : "state3",
+      "url" : "http://localhost:4000/",
+      "candidateElements" : [ {
+        "top" : 13,
+        "left" : 34,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]",
+        "width" : 185,
+        "height" : 37
+      }, {
+        "top" : 417,
+        "left" : 48,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+        "width" : 1104,
+        "height" : 36
+      }, {
+        "top" : 284,
+        "left" : 36,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]/LABEL[1]",
+        "width" : 75,
+        "height" : 48
+      }, {
+        "top" : 284,
+        "left" : 110,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]/LABEL[2]",
+        "width" : 96,
+        "height" : 48
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 1,
+      "id" : 3,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 38.0,
+      "cluster" : 3,
+      "timeAdded" : 1633487619611,
+      "nearestState" : "index"
+    },
+    "state18" : {
+      "name" : "state18",
+      "url" : "http://localhost:4000/",
+      "candidateElements" : [ ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 18,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 2.0,
+      "cluster" : 18,
+      "timeAdded" : 1633487678643,
+      "nearestState" : "state3"
+    },
+    "state35" : {
+      "name" : "state35",
+      "url" : "http://localhost:4000/session/HJaUstcVK",
+      "candidateElements" : [ {
+        "top" : 262,
+        "left" : 961,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+        "width" : 90,
+        "height" : 36
+      }, {
+        "top" : 262,
+        "left" : 1051,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+        "width" : 100,
+        "height" : 36
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 2,
+      "id" : 35,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 32.0,
+      "cluster" : 35,
+      "timeAdded" : 1633487710950,
+      "nearestState" : "state11"
+    },
+    "state57" : {
+      "name" : "state57",
+      "url" : "http://localhost:4000/session/B1FKjYcEY",
+      "candidateElements" : [ {
+        "top" : 150,
+        "left" : 48,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]",
+        "width" : 332,
+        "height" : 35
+      }, {
+        "top" : 150,
+        "left" : 447,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]",
+        "width" : 332,
+        "height" : 35
+      }, {
+        "top" : 150,
+        "left" : 847,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]",
+        "width" : 332,
+        "height" : 35
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 0,
+      "id" : 57,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 5.0,
+      "cluster" : 57,
+      "timeAdded" : 1633487747258,
+      "nearestState" : "state5"
+    },
+    "state12" : {
+      "name" : "state12",
+      "url" : "http://localhost:4000/",
+      "candidateElements" : [ {
+        "top" : 417,
+        "left" : 48,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+        "width" : 1104,
+        "height" : 36
+      }, {
+        "top" : 206,
+        "left" : 961,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+        "width" : 90,
+        "height" : 36
+      }, {
+        "top" : 206,
+        "left" : 1051,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+        "width" : 100,
+        "height" : 36
+      }, {
+        "top" : 284,
+        "left" : 110,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]/LABEL[2]",
+        "width" : 90,
+        "height" : 48
+      }, {
+        "top" : 284,
+        "left" : 200,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]/LABEL[3]",
+        "width" : 96,
+        "height" : 48
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 1,
+      "id" : 12,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]/LABEL[2]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]/LABEL[3]" ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 54.0,
+      "cluster" : 12,
+      "timeAdded" : 1633487657010,
+      "nearestState" : "index"
+    },
+    "state23" : {
+      "name" : "state23",
+      "url" : "http://localhost:4000/session/SyYHjYcNt",
+      "candidateElements" : [ {
+        "top" : 268,
+        "left" : 350,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 105,
+        "height" : 36
+      }, {
+        "top" : 262,
+        "left" : 961,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+        "width" : 90,
+        "height" : 36
+      }, {
+        "top" : 262,
+        "left" : 1051,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+        "width" : 100,
+        "height" : 36
+      }, {
+        "top" : 180,
+        "left" : 961,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]",
+        "width" : 239,
+        "height" : 56
+      }, {
+        "top" : 199,
+        "left" : 1033,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+        "width" : 111,
+        "height" : 18
+      }, {
+        "top" : 188,
+        "left" : 1144,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]",
+        "width" : 40,
+        "height" : 40
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 1,
+      "id" : 23,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 13.0,
+      "cluster" : 23,
+      "timeAdded" : 1633487688599,
+      "nearestState" : "state14"
+    },
+    "state11" : {
+      "name" : "state11",
+      "url" : "http://localhost:4000/session/S1gMit9NY",
+      "candidateElements" : [ {
+        "top" : 262,
+        "left" : 961,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+        "width" : 90,
+        "height" : 36
+      }, {
+        "top" : 262,
+        "left" : 1051,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+        "width" : 100,
+        "height" : 36
+      }, {
+        "top" : 150,
+        "left" : 48,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]",
+        "width" : 332,
+        "height" : 35
+      }, {
+        "top" : 150,
+        "left" : 447,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]",
+        "width" : 332,
+        "height" : 35
+      }, {
+        "top" : 150,
+        "left" : 847,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]",
+        "width" : 332,
+        "height" : 35
+      }, {
+        "top" : 20,
+        "left" : 971,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+        "width" : 219,
+        "height" : 53
+      }, {
+        "top" : 28,
+        "left" : 971,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]",
+        "width" : 219,
+        "height" : 36
+      }, {
+        "top" : 28,
+        "left" : 971,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+        "width" : 32,
+        "height" : 32
+      }, {
+        "top" : 28,
+        "left" : 971,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+        "width" : 32,
+        "height" : 32
+      }, {
+        "top" : 28,
+        "left" : 971,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]",
+        "width" : 219,
+        "height" : 36
+      }, {
+        "top" : 98,
+        "left" : 971,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]/SPAN[1]",
+        "width" : 36,
+        "height" : 14
+      }, {
+        "top" : 95,
+        "left" : 971,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]/SPAN[1]/SPAN[1]",
+        "width" : 20,
+        "height" : 20
+      }, {
+        "top" : 180,
+        "left" : 961,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]",
+        "width" : 239,
+        "height" : 56
+      }, {
+        "top" : 180,
+        "left" : 977,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]",
+        "width" : 56,
+        "height" : 56
+      }, {
+        "top" : 188,
+        "left" : 977,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]/SPAN[1]",
+        "width" : 40,
+        "height" : 40
+      }, {
+        "top" : 199,
+        "left" : 1033,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+        "width" : 111,
+        "height" : 18
+      }, {
+        "top" : 199,
+        "left" : 1033,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]/SPAN[1]",
+        "width" : 111,
+        "height" : 18
+      }, {
+        "top" : 188,
+        "left" : 1144,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]",
+        "width" : 40,
+        "height" : 40
+      }, {
+        "top" : 196,
+        "left" : 1160,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]/SPAN[1]",
+        "width" : 24,
+        "height" : 24
+      }, {
+        "top" : 196,
+        "left" : 1160,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]/SPAN[1]/SPAN[1]",
+        "width" : 24,
+        "height" : 24
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 4,
+      "id" : 11,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 58.0,
+      "cluster" : 11,
+      "timeAdded" : 1633487651320,
+      "nearestState" : "state8"
+    },
+    "state14" : {
+      "name" : "state14",
+      "url" : "http://localhost:4000/",
+      "candidateElements" : [ {
+        "top" : 268,
+        "left" : 350,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 105,
+        "height" : 36
+      }, {
+        "top" : 206,
+        "left" : 961,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+        "width" : 90,
+        "height" : 36
+      }, {
+        "top" : 206,
+        "left" : 1051,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+        "width" : 100,
+        "height" : 36
+      }, {
+        "top" : 120,
+        "left" : 350,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+        "width" : 500,
+        "height" : 53
+      }, {
+        "top" : 128,
+        "left" : 350,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]",
+        "width" : 500,
+        "height" : 36
+      }, {
+        "top" : 128,
+        "left" : 350,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+        "width" : 32,
+        "height" : 32
+      }, {
+        "top" : 128,
+        "left" : 350,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+        "width" : 32,
+        "height" : 32
+      }, {
+        "top" : 128,
+        "left" : 350,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]",
+        "width" : 500,
+        "height" : 36
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 0,
+      "id" : 14,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]" ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 37.0,
+      "cluster" : 14,
+      "timeAdded" : 1633487662962,
+      "nearestState" : "state12"
+    }
+  },
+  "edges" : [ {
+    "from" : "state3",
+    "to" : "state5",
+    "text" : "Create a new session",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Create a new session, attributes={class=theme__button___1iKuo theme__raised___ONZv6 theme__accent___3MS_k, data-react-toolbox=button, evlist=false, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state5",
+    "to" : "state6",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/INPUT[1]",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={anyaccess=none, class=theme__inputElement___27dyY, evlist=false, role=input, type=input, value=}}",
+    "eventType" : "enter"
+  }, {
+    "from" : "state6",
+    "to" : "state5",
+    "text" : "Delete",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Delete, attributes={class=theme__button___1iKuo theme__raised___ONZv6 theme__neutral___uDC3j Post__deleteButton___2cGsP, data-react-toolbox=button, evlist=false, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state5",
+    "to" : "state8",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=, attributes={class=theme__toggle___1Zy-o theme__neutral___uDC3j theme__inverse___2Z8iZ, data-react-toolbox=button, evlist=false, title=Invite, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state8",
+    "to" : "state5",
+    "text" : "Ok",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/NAV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Ok, attributes={class=theme__button___1iKuo theme__flat___2ui7t theme__neutral___uDC3j theme__button___3HGWm, data-react-toolbox=button, evlist=false, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state5",
+    "to" : "state11",
+    "text" : "menu",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=menu, attributes={class=theme__toggle___1Zy-o theme__neutral___uDC3j theme__inverse___2Z8iZ, data-react-toolbox=button, evlist=false, id=crawljax-menu, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state12",
+    "text" : "Leave",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Leave, attributes={class=theme__button___1iKuo theme__flat___2ui7t theme__accent___3MS_k, data-react-toolbox=button, evlist=false, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state12",
+    "to" : "state14",
+    "text" : "Logout",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Logout, attributes={class=theme__button___1iKuo theme__flat___2ui7t theme__accent___3MS_k, data-react-toolbox=button, evlist=false, id=crawljax-logout, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "index",
+    "to" : "state18",
+    "text" : "Let's start",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Let's start, attributes={class=theme__button___1iKuo theme__raised___ONZv6 theme__accent___3MS_k, data-react-toolbox=button, evlist=false, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state18",
+    "to" : "state5",
+    "text" : "Create a new session",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Create a new session, attributes={class=theme__button___1iKuo theme__raised___ONZv6 theme__accent___3MS_k, data-react-toolbox=button, evlist=false, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state23",
+    "text" : "Logout",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Logout, attributes={class=theme__button___1iKuo theme__flat___2ui7t theme__accent___3MS_k, data-react-toolbox=button, evlist=false, id=crawljax-logout, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state23",
+    "to" : "state14",
+    "text" : "Leave",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Leave, attributes={anyaccess=action, class=theme__button___1iKuo theme__flat___2ui7t theme__accent___3MS_k, data-react-toolbox=button, evlist=false, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state35",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]/SPAN[1]",
+    "element" : "Element{node=[SPAN: null], tag=SPAN, text=, attributes={class=theme__off___Ih3qa, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state35",
+    "to" : "state12",
+    "text" : "Leave",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Leave, attributes={anyaccess=action, class=theme__button___1iKuo theme__flat___2ui7t theme__accent___3MS_k, data-react-toolbox=button, evlist=false, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state35",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]/SPAN[1]/SPAN[1]",
+    "element" : "Element{node=[SPAN: null], tag=SPAN, text=, attributes={class=theme__thumb___3ryrT, evlist=false, role=thumb}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state35",
+    "to" : "state23",
+    "text" : "Logout",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Logout, attributes={anyaccess=action, class=theme__button___1iKuo theme__flat___2ui7t theme__accent___3MS_k, data-react-toolbox=button, evlist=false, id=crawljax-logout, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state5",
+    "to" : "state57",
+    "text" : "My Retrospective ",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/SPAN[1]",
+    "element" : "Element{node=[SPAN: null], tag=SPAN, text=My Retrospective , attributes={class=SessionName__name___3g4PI, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state5",
+    "to" : "state57",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/SPAN[1]/SPAN[1]",
+    "element" : "Element{node=[SPAN: null], tag=SPAN, text=, attributes={class=material-icons SessionName__editIcon___AOR2M, data-react-toolbox=font-icon, evlist=false}}",
+    "eventType" : "click"
+  } ],
+  "statistics" : {
+    "duration" : "2 minutes 33 seconds",
+    "crawlPaths" : 10,
+    "averageDomSize" : "59.235 kB",
+    "edges" : 18,
+    "startDate" : "2021-10-05 21:33:23 CDT",
+    "stateStats" : {
+      "leastFanOut" : {
+        "id" : "state57",
+        "count" : 0
+      },
+      "leastFanIn" : {
+        "id" : "index",
+        "count" : 0
+      },
+      "mostFanOut" : {
+        "id" : "state5",
+        "count" : 5
+      },
+      "mostFanIn" : {
+        "id" : "state5",
+        "count" : 4
+      },
+      "totalNumberOfStates" : 12,
+      "urls" : {
+        "http://localhost:4000/session/S1gMit9NY" : [ "state6", "state5", "state8", "state11" ],
+        "http://localhost:4000" : [ "index" ],
+        "http://localhost:4000/" : [ "state3", "state18", "state12", "state14" ],
+        "http://localhost:4000/session/HJaUstcVK" : [ "state35" ],
+        "http://localhost:4000/session/B1FKjYcEY" : [ "state57" ],
+        "http://localhost:4000/session/SyYHjYcNt" : [ "state23" ]
+      }
+    },
+    "failedEvents" : 7
+  },
+  "exitStatus" : "EXHAUSTED"
+}

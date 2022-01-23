@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "backtrackTarget": 0,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state0:-1index_2_state3state3_4_state5state5_5_state6state6_6_state5state5_7_state8state8_9_state5state5_10_state11state11_11_state12state12_13_state14"
+  },
+  {
+    "id": 2,
+    "backtrackTarget": 11,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state11:-1index_1000001_state18state18_1000002_state5state5_10_state11state11_23_state23state23_27_state14"
+  },
+  {
+    "id": 3,
+    "backtrackTarget": 11,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state11:-1index_1000001_state18state18_1000002_state5state5_10_state11state11_31_state35state35_32_state12"
+  },
+  {
+    "id": 4,
+    "backtrackTarget": 11,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state11:-1state18_1000002_state5state5_10_state11state11_35_state35state35_36_state23"
+  },
+  {
+    "id": 5,
+    "backtrackTarget": 11,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state11:-1index_1000001_state18state18_1000002_state5state5_10_state11"
+  },
+  {
+    "id": 6,
+    "backtrackTarget": 5,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state5:-1state18_1000002_state5state5_43_state57"
+  },
+  {
+    "id": 7,
+    "backtrackTarget": 5,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state5:-1state18_1000002_state5state5_44_state57"
+  },
+  {
+    "id": 8,
+    "backtrackTarget": 6,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state6:-1state18_1000002_state5state5_5_state6"
+  },
+  {
+    "id": 9,
+    "backtrackTarget": 8,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state8:-1state18_1000002_state5state5_7_state8"
+  },
+  {
+    "id": 10,
+    "backtrackTarget": 5,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state5:-1state18_1000002_state5"
+  }
+]
