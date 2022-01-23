@@ -51,3 +51,5 @@ buildNumber.properties
 .idea
 
 *.log
+
+__pycache__/
