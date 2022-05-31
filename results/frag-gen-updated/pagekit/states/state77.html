@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state77</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/pagekit/index.php/admin/system/settings'>http://localhost:3000/pagekit/index.php/admin/system/settings</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>3</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state75</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>46.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>77</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state77.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/MAIN[1]/FORM[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/MAIN[1]/FORM[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[2]/BUTTON[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 1082px; top: 247px; width: 92px; height: 37px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state78.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/MAIN[1]/FORM[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[3]/DIV[1]/P[2]/BUTTON[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 527px; top: 471px; width: 117px; height: 37px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html lang=&quot;en-GB&quot; class=&quot;uk-notouch&quot;&gt;&lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+        &lt;link href=&quot;//fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;amp;subset=latin,latin-ext&quot; rel=&quot;stylesheet&quot;&gt;
+                                &lt;meta name=&quot;generator&quot; content=&quot;Pagekit&quot;&gt;
+        &lt;link href=&quot;/pagekit/app/system/modules/theme/favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot;&gt;
+        &lt;link href=&quot;/pagekit/app/system/modules/theme/apple_touch_icon.png&quot; rel=&quot;apple-touch-icon-precomposed&quot;&gt;
+        &lt;title&gt;Settings | Testing&lt;/title&gt;
+        &lt;link href=&quot;/pagekit/app/system/modules/theme/css/theme.css?v=d10d&quot; rel=&quot;stylesheet&quot;&gt;
+        &lt;script&gt;var $caches = {&quot;auto&quot;:{&quot;name&quot;:&quot;Auto (File)&quot;,&quot;supported&quot;:true},&quot;apc&quot;:{&quot;name&quot;:&quot;APC&quot;,&quot;supported&quot;:false},&quot;xcache&quot;:{&quot;name&quot;:&quot;XCache&quot;,&quot;supported&quot;:false},&quot;file&quot;:{&quot;name&quot;:&quot;File&quot;,&quot;supported&quot;:true}};&lt;/script&gt;
+        &lt;script&gt;var $settings = {&quot;config&quot;:{&quot;system\/cache&quot;:{&quot;caches&quot;:{&quot;cache&quot;:{&quot;storage&quot;:&quot;auto&quot;}},&quot;nocache&quot;:false},&quot;system\/finder&quot;:{&quot;storage&quot;:&quot;&quot;},&quot;application&quot;:{&quot;debug&quot;:false},&quot;debug&quot;:{&quot;enabled&quot;:false}},&quot;options&quot;:{&quot;system\/finder&quot;:{&quot;extensions&quot;:&quot;bmp,gif,jpeg,jpg,mp4,ogg,pdf,png,svgz,svg,swf&quot;},&quot;system\/mail&quot;:{&quot;driver&quot;:&quot;mail&quot;,&quot;host&quot;:&quot;localhost&quot;,&quot;port&quot;:25,&quot;username&quot;:null,&quot;password&quot;:null,&quot;encryption&quot;:null,&quot;auth_mode&quot;:null,&quot;from_name&quot;:null,&quot;from_address&quot;:null},&quot;system&quot;:{&quot;site&quot;:{&quot;locale&quot;:&quot;en_GB&quot;},&quot;admin&quot;:{&quot;locale&quot;:&quot;en_GB&quot;}}}};&lt;/script&gt;
+        &lt;script&gt;var $mail = {&quot;ssl&quot;:true};&lt;/script&gt;
+        &lt;script&gt;var $system = {&quot;locales&quot;:{&quot;ar_EG&quot;:&quot;Arabic - Egypt&quot;,&quot;ar_SA&quot;:&quot;Arabic - Saudi Arabia&quot;,&quot;az_AZ&quot;:&quot;Azerbaijani - Azerbaijan&quot;,&quot;bn&quot;:&quot;Bengali&quot;,&quot;bg_BG&quot;:&quot;Bulgarian - Bulgaria&quot;,&quot;my_MM&quot;:&quot;Burmese - Myanmar (Burma)&quot;,&quot;ca_ES&quot;:&quot;Catalan - Spain&quot;,&quot;zh_CN&quot;:&quot;Chinese - China&quot;,&quot;zh_TW&quot;:&quot;Chinese - Taiwan&quot;,&quot;hr_HR&quot;:&quot;Croatian - Croatia&quot;,&quot;cs_CZ&quot;:&quot;Czech - Czech Republic&quot;,&quot;da_DK&quot;:&quot;Danish - Denmark&quot;,&quot;nl_NL&quot;:&quot;Dutch - Netherlands&quot;,&quot;en_HU&quot;:&quot;English - Hungary&quot;,&quot;en_GB&quot;:&quot;English - United Kingdom&quot;,&quot;en_US&quot;:&quot;English - United States&quot;,&quot;fi_FI&quot;:&quot;Finnish - Finland&quot;,&quot;fr_CA&quot;:&quot;French - Canada&quot;,&quot;fr_FR&quot;:&quot;French - France&quot;,&quot;fr_CH&quot;:&quot;French - Switzerland&quot;,&quot;gl_ES&quot;:&quot;Galician - Spain&quot;,&quot;ka_GE&quot;:&quot;Georgian - Georgia&quot;,&quot;de_AT&quot;:&quot;German - Austria&quot;,&quot;de_DE&quot;:&quot;German - Germany&quot;,&quot;de_CH&quot;:&quot;German - Switzerland&quot;,&quot;el_GR&quot;:&quot;Greek - Greece&quot;,&quot;he_IL&quot;:&quot;Hebrew - Israel&quot;,&quot;hu_HU&quot;:&quot;Hungarian - Hungary&quot;,&quot;id_ID&quot;:&quot;Indonesian - Indonesia&quot;,&quot;it_IT&quot;:&quot;Italian - Italy&quot;,&quot;ja&quot;:&quot;Japanese&quot;,&quot;ja_JP&quot;:&quot;Japanese - Japan&quot;,&quot;ku&quot;:&quot;Kurdish&quot;,&quot;lt_LT&quot;:&quot;Lithuanian - Lithuania&quot;,&quot;ms_MY&quot;:&quot;Malay - Malaysia&quot;,&quot;nb_NO&quot;:&quot;Norwegian Bokm\u00e5l - Norway&quot;,&quot;fa&quot;:&quot;Persian&quot;,&quot;fa_IR&quot;:&quot;Persian - Iran&quot;,&quot;pl_PL&quot;:&quot;Polish - Poland&quot;,&quot;pt_BR&quot;:&quot;Portuguese - Brazil&quot;,&quot;pt_PT&quot;:&quot;Portuguese - Portugal&quot;,&quot;ro_RO&quot;:&quot;Romanian - Romania&quot;,&quot;ru_RU&quot;:&quot;Russian - Russia&quot;,&quot;sr_RS&quot;:&quot;Serbian - Serbia&quot;,&quot;sk_SK&quot;:&quot;Slovak - Slovakia&quot;,&quot;sl_SI&quot;:&quot;Slovenian - Slovenia&quot;,&quot;so&quot;:&quot;Somali&quot;,&quot;es_CL&quot;:&quot;Spanish - Chile&quot;,&quot;es_CO&quot;:&quot;Spanish - Colombia&quot;,&quot;es_MX&quot;:&quot;Spanish - Mexico&quot;,&quot;es_ES&quot;:&quot;Spanish - Spain&quot;,&quot;sv_SE&quot;:&quot;Swedish - Sweden&quot;,&quot;tl_PH&quot;:&quot;Tagalog - Philippines&quot;,&quot;ta&quot;:&quot;Tamil&quot;,&quot;te_IN&quot;:&quot;Telugu - India&quot;,&quot;th&quot;:&quot;Thai&quot;,&quot;tr_TR&quot;:&quot;Turkish - Turkey&quot;,&quot;udm&quot;:&quot;Udmurt&quot;,&quot;uk_UA&quot;:&quot;Ukrainian - Ukraine&quot;,&quot;vi_VN&quot;:&quot;Vietnamese - Vietnam&quot;},&quot;sqlite&quot;:false};&lt;/script&gt;
+        &lt;script&gt;var $pagekit = {&quot;editor&quot;:&quot;html&quot;,&quot;storage&quot;:&quot;\/storage&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;admin&quot;,&quot;email&quot;:&quot;asd@asd.com&quot;,&quot;username&quot;:&quot;admin&quot;},&quot;menu&quot;:[{&quot;id&quot;:&quot;system: marketplace&quot;,&quot;label&quot;:&quot;Marketplace&quot;,&quot;parent&quot;:&quot;root&quot;,&quot;priority&quot;:125,&quot;icon&quot;:&quot;\/pagekit\/app\/installer\/assets\/images\/icon-marketplace.svg&quot;,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/marketplace\/extensions&quot;,&quot;access&quot;:&quot;system: manage packages&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: marketplace extensions&quot;,&quot;label&quot;:&quot;Extensions&quot;,&quot;parent&quot;:&quot;system: marketplace&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/marketplace\/extensions&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: marketplace themes&quot;,&quot;label&quot;:&quot;Themes&quot;,&quot;parent&quot;:&quot;system: marketplace&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/marketplace\/themes&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: extensions&quot;,&quot;label&quot;:&quot;Extensions&quot;,&quot;parent&quot;:&quot;system: system&quot;,&quot;priority&quot;:5,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/package\/extensions&quot;,&quot;access&quot;:&quot;system: manage packages&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: themes&quot;,&quot;label&quot;:&quot;Themes&quot;,&quot;parent&quot;:&quot;system: system&quot;,&quot;priority&quot;:10,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/package\/themes&quot;,&quot;access&quot;:&quot;system: manage packages&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: update&quot;,&quot;label&quot;:&quot;Update&quot;,&quot;parent&quot;:&quot;system: system&quot;,&quot;priority&quot;:25,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/update&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;site: widgets&quot;,&quot;label&quot;:&quot;Widgets&quot;,&quot;parent&quot;:&quot;site&quot;,&quot;priority&quot;:20,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/site\/widget&quot;,&quot;access&quot;:&quot;system: manage widgets&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;dashboard&quot;,&quot;label&quot;:&quot;Dashboard&quot;,&quot;parent&quot;:&quot;root&quot;,&quot;priority&quot;:100,&quot;icon&quot;:&quot;\/pagekit\/app\/system\/modules\/dashboard\/assets\/images\/icon-dashboard.svg&quot;,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/dashboard&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: storage&quot;,&quot;label&quot;:&quot;Storage&quot;,&quot;parent&quot;:&quot;site&quot;,&quot;priority&quot;:20,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/site\/storage&quot;,&quot;access&quot;:&quot;system: manage storage&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: info&quot;,&quot;label&quot;:&quot;Info&quot;,&quot;parent&quot;:&quot;system: system&quot;,&quot;priority&quot;:30,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/info&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: system&quot;,&quot;label&quot;:&quot;System&quot;,&quot;parent&quot;:&quot;root&quot;,&quot;priority&quot;:120,&quot;icon&quot;:&quot;\/pagekit\/app\/system\/modules\/settings\/assets\/images\/icon-settings.svg&quot;,&quot;access&quot;:&quot;system: access settings&quot;,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/settings&quot;,&quot;active&quot;:true},{&quot;id&quot;:&quot;system: settings&quot;,&quot;label&quot;:&quot;Settings&quot;,&quot;parent&quot;:&quot;system: system&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/settings&quot;,&quot;active&quot;:true},{&quot;id&quot;:&quot;site&quot;,&quot;label&quot;:&quot;Site&quot;,&quot;parent&quot;:&quot;root&quot;,&quot;priority&quot;:105,&quot;icon&quot;:&quot;\/pagekit\/app\/system\/modules\/site\/assets\/images\/icon-site.svg&quot;,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/site\/page&quot;,&quot;access&quot;:&quot;site: manage site || system: manage widgets || system: manage storage || system: access settings&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;site: pages&quot;,&quot;label&quot;:&quot;Pages&quot;,&quot;parent&quot;:&quot;site&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/site\/page&quot;,&quot;access&quot;:&quot;site: manage site&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;site: settings&quot;,&quot;label&quot;:&quot;Settings&quot;,&quot;parent&quot;:&quot;site&quot;,&quot;priority&quot;:30,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/site\/settings&quot;,&quot;access&quot;:&quot;system: access settings&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;user&quot;,&quot;label&quot;:&quot;Users&quot;,&quot;parent&quot;:&quot;root&quot;,&quot;priority&quot;:115,&quot;icon&quot;:&quot;\/pagekit\/app\/system\/modules\/user\/assets\/images\/icon-users.svg&quot;,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/user&quot;,&quot;active&quot;:false,&quot;access&quot;:&quot;user: manage users || user: manage user permissions || system: access settings&quot;},{&quot;id&quot;:&quot;user: users&quot;,&quot;label&quot;:&quot;List&quot;,&quot;parent&quot;:&quot;user&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/user&quot;,&quot;active&quot;:false,&quot;access&quot;:&quot;user: manage users&quot;},{&quot;id&quot;:&quot;user: permissions&quot;,&quot;label&quot;:&quot;Permissions&quot;,&quot;parent&quot;:&quot;user&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/user\/permissions&quot;,&quot;access&quot;:&quot;user: manage user permissions&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;user: roles&quot;,&quot;label&quot;:&quot;Roles&quot;,&quot;parent&quot;:&quot;user&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/user\/roles&quot;,&quot;access&quot;:&quot;user: manage user permissions&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;user: settings&quot;,&quot;label&quot;:&quot;Settings&quot;,&quot;parent&quot;:&quot;user&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/user\/settings&quot;,&quot;access&quot;:&quot;system: access settings&quot;,&quot;active&quot;:false}],&quot;url&quot;:&quot;\/pagekit\/index.php&quot;,&quot;csrf&quot;:&quot;363fd557d112ad8e8ba052ef901ef6941d015541&quot;};&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/vue/dist/vue.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/jquery/dist/jquery.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/lodash/lodash.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/index.php/system/intl/en_GB?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/system/app/bundle/vue.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/system/modules/user/app/bundle/interceptor.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/uikit.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/system/modules/settings/app/bundle/settings.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/system/modules/cache/app/bundle/settings.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/system/modules/mail/app/bundle/settings.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/notify.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/tooltip.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/sticky.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/sortable.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/pagination.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/form-select.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/system/modules/theme/js/theme.js?v=d10d&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;header id=&quot;header&quot; class=&quot;tm-header&quot;&gt;
+            &lt;div class=&quot;uk-container uk-container-center&quot;&gt;
+
+                &lt;div class=&quot;tm-headerbar uk-flex uk-flex-space-between uk-flex-middle uk-hidden-small&quot;&gt;
+                    &lt;div class=&quot;tm-headerbar-primary&quot; data-uk-dropdown=&quot;{mode:'click', preventflip: 'y'}&quot;&gt;
+
+                        &lt;div class=&quot;tm-cursor-pointer uk-flex uk-flex-middle&quot;&gt;
+                            &lt;i class=&quot;tm-icon-menu&quot;&gt;&lt;/i&gt;
+                            &lt;h1 class=&quot;tm-heading&quot;&gt;System&lt;/h1&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;uk-dropdown uk-dropdown-navbar tm-dropdown&quot;&gt;
+                            &lt;ul id=&quot;js-appnav&quot; class=&quot;uk-sortable uk-grid uk-grid-small uk-grid-width-1-3&quot; data-url=&quot;/pagekit/index.php/admin/adminmenu&quot; data-uk-sortable=&quot;{ dragCustomClass: 'tm-sortable-dragged', handleClass: 'uk-panel' }&quot;&gt;
+                                &lt;li data-id=&quot;dashboard&quot;&gt;
+                                    &lt;a class=&quot;uk-panel tm-panel-icon&quot; href=&quot;/pagekit/index.php/admin/dashboard&quot;&gt;
+                                        &lt;img width=&quot;50&quot; height=&quot;50&quot; alt=&quot;Dashboard&quot; src=&quot;/pagekit/app/system/modules/dashboard/assets/images/icon-dashboard.svg&quot;&gt;
+                                        &lt;p&gt;Dashboard&lt;/p&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;&lt;li data-id=&quot;site&quot;&gt;
+                                    &lt;a class=&quot;uk-panel tm-panel-icon&quot; href=&quot;/pagekit/index.php/admin/site/page&quot;&gt;
+                                        &lt;img width=&quot;50&quot; height=&quot;50&quot; alt=&quot;Site&quot; src=&quot;/pagekit/app/system/modules/site/assets/images/icon-site.svg&quot;&gt;
+                                        &lt;p&gt;Site&lt;/p&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;&lt;li data-id=&quot;user&quot;&gt;
+                                    &lt;a class=&quot;uk-panel tm-panel-icon&quot; href=&quot;/pagekit/index.php/admin/user&quot;&gt;
+                                        &lt;img width=&quot;50&quot; height=&quot;50&quot; alt=&quot;Users&quot; src=&quot;/pagekit/app/system/modules/user/assets/images/icon-users.svg&quot;&gt;
+                                        &lt;p&gt;Users&lt;/p&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;&lt;li data-id=&quot;system: system&quot;&gt;
+                                    &lt;a class=&quot;uk-panel tm-panel-icon&quot; href=&quot;/pagekit/index.php/admin/system/settings&quot;&gt;
+                                        &lt;img width=&quot;50&quot; height=&quot;50&quot; alt=&quot;System&quot; src=&quot;/pagekit/app/system/modules/settings/assets/images/icon-settings.svg&quot;&gt;
+                                        &lt;p&gt;System&lt;/p&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;&lt;li data-id=&quot;system: marketplace&quot;&gt;
+                                    &lt;a class=&quot;uk-panel tm-panel-icon&quot; href=&quot;/pagekit/index.php/admin/system/marketplace/extensions&quot;&gt;
+                                        &lt;img width=&quot;50&quot; height=&quot;50&quot; alt=&quot;Marketplace&quot; src=&quot;/pagekit/app/installer/assets/images/icon-marketplace.svg&quot;&gt;
+                                        &lt;p&gt;Marketplace&lt;/p&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                    &lt;div class=&quot;tm-contrast&quot;&gt;
+
+                        &lt;ul class=&quot;uk-grid uk-grid-small uk-flex-middle&quot;&gt;
+                            &lt;li&gt;&lt;a class=&quot;tm-icon-help&quot; href=&quot;https://gitter.im/pagekit/pagekit&quot; target=&quot;_blank&quot; title=&quot;Get Help&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class=&quot;tm-icon-visit&quot; target=&quot;_blank&quot; href=&quot;/pagekit/index.php/&quot; title=&quot;Visit Site&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class=&quot;tm-icon-logout&quot; href=&quot;/pagekit/index.php/user/logout?redirect=admin/login&quot; title=&quot;Logout&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;uk-margin-small-left&quot;&gt;&lt;a href=&quot;/pagekit/index.php/admin/user/edit?id=1&quot; title=&quot;Profile&quot;&gt;&lt;img class=&quot;uk-border-circle uk-margin-small-right&quot; height=&quot;32&quot; width=&quot;32&quot; title=&quot;admin&quot; src=&quot;data:image/png;base64,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&quot;&gt; &lt;span&gt;admin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;nav class=&quot;uk-navbar tm-navbar uk-hidden-small&quot;&gt;
+                    &lt;ul class=&quot;uk-navbar-nav&quot;&gt;
+                        &lt;li class=&quot;uk-active&quot;&gt;
+                            &lt;a href=&quot;/pagekit/index.php/admin/system/settings&quot;&gt;Settings&lt;/a&gt;
+                        &lt;/li&gt;&lt;li&gt;
+                            &lt;a href=&quot;/pagekit/index.php/admin/system/package/extensions&quot;&gt;Extensions&lt;/a&gt;
+                        &lt;/li&gt;&lt;li&gt;
+                            &lt;a href=&quot;/pagekit/index.php/admin/system/package/themes&quot;&gt;Themes&lt;/a&gt;
+                        &lt;/li&gt;&lt;li&gt;
+                            &lt;a href=&quot;/pagekit/index.php/admin/system/update&quot;&gt;Update&lt;/a&gt;
+                        &lt;/li&gt;&lt;li&gt;
+                            &lt;a href=&quot;/pagekit/index.php/admin/system/info&quot;&gt;Info&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+
+                &lt;div class=&quot;tm-headerbar uk-flex uk-flex-space-between uk-flex-middle uk-visible-small&quot;&gt;
+                    &lt;a class=&quot;tm-icon-menu&quot; href=&quot;#offcanvas&quot; data-uk-offcanvas=&quot;&quot;&gt;&lt;/a&gt;
+
+                    &lt;h1 class=&quot;tm-heading uk-h3&quot;&gt;System&lt;/h1&gt;
+
+                    &lt;a href=&quot;#offcanvas-flip&quot; data-uk-offcanvas=&quot;&quot;&gt;
+                        &lt;img class=&quot;uk-border-circle&quot; height=&quot;32&quot; width=&quot;32&quot; alt=&quot;admin&quot; src=&quot;data:image/png;base64,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&quot;&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/header&gt;
+
+        &lt;main class=&quot;tm-main uk-container uk-container-center&quot;&gt;
+            
+&lt;form id=&quot;settings&quot; class=&quot;uk-form uk-form-horizontal&quot;&gt;
+
+    &lt;div class=&quot;uk-grid pk-grid-large&quot; data-uk-grid-margin=&quot;&quot;&gt;
+        &lt;div class=&quot;pk-width-sidebar uk-row-first&quot;&gt;
+
+            &lt;div class=&quot;uk-panel&quot;&gt;
+
+                &lt;ul class=&quot;uk-nav uk-nav-side pk-nav-large&quot;&gt;
+                    &lt;li aria-expanded=&quot;false&quot; class=&quot;&quot;&gt;&lt;a&gt;&lt;i class=&quot;uk-icon-justify uk-icon-small uk-margin-right pk-icon-large-settings&quot;&gt;&lt;/i&gt; System&lt;/a&gt;&lt;/li&gt;&lt;li aria-expanded=&quot;false&quot; class=&quot;&quot;&gt;&lt;a&gt;&lt;i class=&quot;uk-icon-justify uk-icon-small uk-margin-right pk-icon-large-pin&quot;&gt;&lt;/i&gt; Localisation&lt;/a&gt;&lt;/li&gt;&lt;li aria-expanded=&quot;true&quot; class=&quot;uk-active&quot;&gt;&lt;a&gt;&lt;i class=&quot;uk-icon-justify uk-icon-small uk-margin-right pk-icon-large-bolt&quot;&gt;&lt;/i&gt; Cache&lt;/a&gt;&lt;/li&gt;&lt;li aria-expanded=&quot;false&quot;&gt;&lt;a&gt;&lt;i class=&quot;uk-icon-justify uk-icon-small uk-margin-right pk-icon-large-mail&quot;&gt;&lt;/i&gt; Mail&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;uk-tab-responsive uk-active uk-hidden&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;&lt;a&gt; Cache&lt;/a&gt;&lt;div class=&quot;uk-dropdown uk-dropdown-small&quot; aria-hidden=&quot;true&quot;&gt;&lt;ul class=&quot;uk-nav uk-nav-dropdown&quot;&gt;&lt;/ul&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;pk-width-content&quot;&gt;
+
+            &lt;ul class=&quot;uk-switcher uk-margin&quot;&gt;
+                &lt;li aria-hidden=&quot;true&quot; class=&quot;&quot;&gt;
+                    &lt;div class=&quot;uk-margin uk-flex uk-flex-space-between uk-flex-wrap&quot; data-uk-margin=&quot;&quot;&gt;
+    &lt;div data-uk-margin=&quot;&quot;&gt;
+        &lt;h2 class=&quot;uk-margin-remove&quot;&gt;System&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div data-uk-margin=&quot;&quot;&gt;
+        &lt;button class=&quot;uk-button uk-button-primary&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;uk-form-row&quot;&gt;
+    &lt;label for=&quot;form-storage&quot; class=&quot;uk-form-label&quot;&gt;Storage&lt;/label&gt;
+    &lt;div class=&quot;uk-form-controls&quot;&gt;
+        &lt;input id=&quot;form-storage&quot; class=&quot;uk-form-width-large&quot; type=&quot;text&quot; placeholder=&quot;/storage&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;uk-form-row&quot;&gt;
+    &lt;label for=&quot;form-fileextensions&quot; class=&quot;uk-form-label&quot;&gt;File Extensions&lt;/label&gt;
+    &lt;div class=&quot;uk-form-controls&quot;&gt;
+        &lt;input id=&quot;form-fileextensions&quot; class=&quot;uk-form-width-large&quot; type=&quot;text&quot;&gt;
+        &lt;p class=&quot;uk-form-help-block&quot;&gt;Allowed file extensions for the storage upload.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;uk-form-row&quot;&gt;
+    &lt;span class=&quot;uk-form-label&quot;&gt;Developer&lt;/span&gt;
+    &lt;div class=&quot;uk-form-controls uk-form-controls-text&quot;&gt;
+        &lt;p class=&quot;uk-form-controls-condensed&quot;&gt;
+            &lt;label&gt;&lt;input type=&quot;checkbox&quot; value=&quot;1&quot;&gt; Enable debug mode&lt;/label&gt;
+        &lt;/p&gt;
+        &lt;p class=&quot;uk-form-controls-condensed&quot;&gt;
+            &lt;label&gt;&lt;input type=&quot;checkbox&quot; value=&quot;1&quot; disabled=&quot;&quot;&gt; Enable debug toolbar&lt;/label&gt;
+        &lt;/p&gt;
+        &lt;p class=&quot;uk-form-help-block&quot;&gt;Please enable the SQLite database extension.&lt;/p&gt;
+        &lt;p class=&quot;uk-form-help-block&quot;&gt;Please note that enabling debug mode or toolbar has serious security implications.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                &lt;/li&gt;&lt;li aria-hidden=&quot;true&quot; class=&quot;&quot;&gt;
+                    &lt;div class=&quot;uk-margin uk-flex uk-flex-space-between uk-flex-wrap&quot; data-uk-margin=&quot;&quot;&gt;
+    &lt;div data-uk-margin=&quot;&quot;&gt;
+        &lt;h2 class=&quot;uk-margin-remove&quot;&gt;Localisation&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div data-uk-margin=&quot;&quot;&gt;
+        &lt;button class=&quot;uk-button uk-button-primary&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;uk-form-row&quot;&gt;
+    &lt;label for=&quot;form-sitelocale&quot; class=&quot;uk-form-label&quot;&gt;Site Locale&lt;/label&gt;
+    &lt;div class=&quot;uk-form-controls&quot;&gt;
+        &lt;select id=&quot;form-sitelocale&quot; class=&quot;uk-form-width-large&quot;&gt;
+            &lt;option value=&quot;ar_EG&quot;&gt;Arabic - Egypt&lt;/option&gt;&lt;option value=&quot;ar_SA&quot;&gt;Arabic - Saudi Arabia&lt;/option&gt;&lt;option value=&quot;az_AZ&quot;&gt;Azerbaijani - Azerbaijan&lt;/option&gt;&lt;option value=&quot;bn&quot;&gt;Bengali&lt;/option&gt;&lt;option value=&quot;bg_BG&quot;&gt;Bulgarian - Bulgaria&lt;/option&gt;&lt;option value=&quot;my_MM&quot;&gt;Burmese - Myanmar (Burma)&lt;/option&gt;&lt;option value=&quot;ca_ES&quot;&gt;Catalan - Spain&lt;/option&gt;&lt;option value=&quot;zh_CN&quot;&gt;Chinese - China&lt;/option&gt;&lt;option value=&quot;zh_TW&quot;&gt;Chinese - Taiwan&lt;/option&gt;&lt;option value=&quot;hr_HR&quot;&gt;Croatian - Croatia&lt;/option&gt;&lt;option value=&quot;cs_CZ&quot;&gt;Czech - Czech Republic&lt;/option&gt;&lt;option value=&quot;da_DK&quot;&gt;Danish - Denmark&lt;/option&gt;&lt;option value=&quot;nl_NL&quot;&gt;Dutch - Netherlands&lt;/option&gt;&lt;option value=&quot;en_HU&quot;&gt;English - Hungary&lt;/option&gt;&lt;option value=&quot;en_GB&quot;&gt;English - United Kingdom&lt;/option&gt;&lt;option value=&quot;en_US&quot;&gt;English - United States&lt;/option&gt;&lt;option value=&quot;fi_FI&quot;&gt;Finnish - Finland&lt;/option&gt;&lt;option value=&quot;fr_CA&quot;&gt;French - Canada&lt;/option&gt;&lt;option value=&quot;fr_FR&quot;&gt;French - France&lt;/option&gt;&lt;option value=&quot;fr_CH&quot;&gt;French - Switzerland&lt;/option&gt;&lt;option value=&quot;gl_ES&quot;&gt;Galician - Spain&lt;/option&gt;&lt;option value=&quot;ka_GE&quot;&gt;Georgian - Georgia&lt;/option&gt;&lt;option value=&quot;de_AT&quot;&gt;German - Austria&lt;/option&gt;&lt;option value=&quot;de_DE&quot;&gt;German - Germany&lt;/option&gt;&lt;option value=&quot;de_CH&quot;&gt;German - Switzerland&lt;/option&gt;&lt;option value=&quot;el_GR&quot;&gt;Greek - Greece&lt;/option&gt;&lt;option value=&quot;he_IL&quot;&gt;Hebrew - Israel&lt;/option&gt;&lt;option value=&quot;hu_HU&quot;&gt;Hungarian - Hungary&lt;/option&gt;&lt;option value=&quot;id_ID&quot;&gt;Indonesian - Indonesia&lt;/option&gt;&lt;option value=&quot;it_IT&quot;&gt;Italian - Italy&lt;/option&gt;&lt;option value=&quot;ja&quot;&gt;Japanese&lt;/option&gt;&lt;option value=&quot;ja_JP&quot;&gt;Japanese - Japan&lt;/option&gt;&lt;option value=&quot;ku&quot;&gt;Kurdish&lt;/option&gt;&lt;option value=&quot;lt_LT&quot;&gt;Lithuanian - Lithuania&lt;/option&gt;&lt;option value=&quot;ms_MY&quot;&gt;Malay - Malaysia&lt;/option&gt;&lt;option value=&quot;nb_NO&quot;&gt;Norwegian Bokm&aring;l - Norway&lt;/option&gt;&lt;option value=&quot;fa&quot;&gt;Persian&lt;/option&gt;&lt;option value=&quot;fa_IR&quot;&gt;Persian - Iran&lt;/option&gt;&lt;option value=&quot;pl_PL&quot;&gt;Polish - Poland&lt;/option&gt;&lt;option value=&quot;pt_BR&quot;&gt;Portuguese - Brazil&lt;/option&gt;&lt;option value=&quot;pt_PT&quot;&gt;Portuguese - Portugal&lt;/option&gt;&lt;option value=&quot;ro_RO&quot;&gt;Romanian - Romania&lt;/option&gt;&lt;option value=&quot;ru_RU&quot;&gt;Russian - Russia&lt;/option&gt;&lt;option value=&quot;sr_RS&quot;&gt;Serbian - Serbia&lt;/option&gt;&lt;option value=&quot;sk_SK&quot;&gt;Slovak - Slovakia&lt;/option&gt;&lt;option value=&quot;sl_SI&quot;&gt;Slovenian - Slovenia&lt;/option&gt;&lt;option value=&quot;so&quot;&gt;Somali&lt;/option&gt;&lt;option value=&quot;es_CL&quot;&gt;Spanish - Chile&lt;/option&gt;&lt;option value=&quot;es_CO&quot;&gt;Spanish - Colombia&lt;/option&gt;&lt;option value=&quot;es_MX&quot;&gt;Spanish - Mexico&lt;/option&gt;&lt;option value=&quot;es_ES&quot;&gt;Spanish - Spain&lt;/option&gt;&lt;option value=&quot;sv_SE&quot;&gt;Swedish - Sweden&lt;/option&gt;&lt;option value=&quot;tl_PH&quot;&gt;Tagalog - Philippines&lt;/option&gt;&lt;option value=&quot;ta&quot;&gt;Tamil&lt;/option&gt;&lt;option value=&quot;te_IN&quot;&gt;Telugu - India&lt;/option&gt;&lt;option value=&quot;th&quot;&gt;Thai&lt;/option&gt;&lt;option value=&quot;tr_TR&quot;&gt;Turkish - Turkey&lt;/option&gt;&lt;option value=&quot;udm&quot;&gt;Udmurt&lt;/option&gt;&lt;option value=&quot;uk_UA&quot;&gt;Ukrainian - Ukraine&lt;/option&gt;&lt;option value=&quot;vi_VN&quot;&gt;Vietnamese - Vietnam&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;uk-form-row&quot;&gt;
+    &lt;label for=&quot;form-adminlocale&quot; class=&quot;uk-form-label&quot;&gt;Admin Locale&lt;/label&gt;
+    &lt;div class=&quot;uk-form-controls&quot;&gt;
+        &lt;select id=&quot;form-adminlocale&quot; class=&quot;uk-form-width-large&quot;&gt;
+            &lt;option value=&quot;ar_EG&quot;&gt;Arabic - Egypt&lt;/option&gt;&lt;option value=&quot;ar_SA&quot;&gt;Arabic - Saudi Arabia&lt;/option&gt;&lt;option value=&quot;az_AZ&quot;&gt;Azerbaijani - Azerbaijan&lt;/option&gt;&lt;option value=&quot;bn&quot;&gt;Bengali&lt;/option&gt;&lt;option value=&quot;bg_BG&quot;&gt;Bulgarian - Bulgaria&lt;/option&gt;&lt;option value=&quot;my_MM&quot;&gt;Burmese - Myanmar (Burma)&lt;/option&gt;&lt;option value=&quot;ca_ES&quot;&gt;Catalan - Spain&lt;/option&gt;&lt;option value=&quot;zh_CN&quot;&gt;Chinese - China&lt;/option&gt;&lt;option value=&quot;zh_TW&quot;&gt;Chinese - Taiwan&lt;/option&gt;&lt;option value=&quot;hr_HR&quot;&gt;Croatian - Croatia&lt;/option&gt;&lt;option value=&quot;cs_CZ&quot;&gt;Czech - Czech Republic&lt;/option&gt;&lt;option value=&quot;da_DK&quot;&gt;Danish - Denmark&lt;/option&gt;&lt;option value=&quot;nl_NL&quot;&gt;Dutch - Netherlands&lt;/option&gt;&lt;option value=&quot;en_HU&quot;&gt;English - Hungary&lt;/option&gt;&lt;option value=&quot;en_GB&quot;&gt;English - United Kingdom&lt;/option&gt;&lt;option value=&quot;en_US&quot;&gt;English - United States&lt;/option&gt;&lt;option value=&quot;fi_FI&quot;&gt;Finnish - Finland&lt;/option&gt;&lt;option value=&quot;fr_CA&quot;&gt;French - Canada&lt;/option&gt;&lt;option value=&quot;fr_FR&quot;&gt;French - France&lt;/option&gt;&lt;option value=&quot;fr_CH&quot;&gt;French - Switzerland&lt;/option&gt;&lt;option value=&quot;gl_ES&quot;&gt;Galician - Spain&lt;/option&gt;&lt;option value=&quot;ka_GE&quot;&gt;Georgian - Georgia&lt;/option&gt;&lt;option value=&quot;de_AT&quot;&gt;German - Austria&lt;/option&gt;&lt;option value=&quot;de_DE&quot;&gt;German - Germany&lt;/option&gt;&lt;option value=&quot;de_CH&quot;&gt;German - Switzerland&lt;/option&gt;&lt;option value=&quot;el_GR&quot;&gt;Greek - Greece&lt;/option&gt;&lt;option value=&quot;he_IL&quot;&gt;Hebrew - Israel&lt;/option&gt;&lt;option value=&quot;hu_HU&quot;&gt;Hungarian - Hungary&lt;/option&gt;&lt;option value=&quot;id_ID&quot;&gt;Indonesian - Indonesia&lt;/option&gt;&lt;option value=&quot;it_IT&quot;&gt;Italian - Italy&lt;/option&gt;&lt;option value=&quot;ja&quot;&gt;Japanese&lt;/option&gt;&lt;option value=&quot;ja_JP&quot;&gt;Japanese - Japan&lt;/option&gt;&lt;option value=&quot;ku&quot;&gt;Kurdish&lt;/option&gt;&lt;option value=&quot;lt_LT&quot;&gt;Lithuanian - Lithuania&lt;/option&gt;&lt;option value=&quot;ms_MY&quot;&gt;Malay - Malaysia&lt;/option&gt;&lt;option value=&quot;nb_NO&quot;&gt;Norwegian Bokm&aring;l - Norway&lt;/option&gt;&lt;option value=&quot;fa&quot;&gt;Persian&lt;/option&gt;&lt;option value=&quot;fa_IR&quot;&gt;Persian - Iran&lt;/option&gt;&lt;option value=&quot;pl_PL&quot;&gt;Polish - Poland&lt;/option&gt;&lt;option value=&quot;pt_BR&quot;&gt;Portuguese - Brazil&lt;/option&gt;&lt;option value=&quot;pt_PT&quot;&gt;Portuguese - Portugal&lt;/option&gt;&lt;option value=&quot;ro_RO&quot;&gt;Romanian - Romania&lt;/option&gt;&lt;option value=&quot;ru_RU&quot;&gt;Russian - Russia&lt;/option&gt;&lt;option value=&quot;sr_RS&quot;&gt;Serbian - Serbia&lt;/option&gt;&lt;option value=&quot;sk_SK&quot;&gt;Slovak - Slovakia&lt;/option&gt;&lt;option value=&quot;sl_SI&quot;&gt;Slovenian - Slovenia&lt;/option&gt;&lt;option value=&quot;so&quot;&gt;Somali&lt;/option&gt;&lt;option value=&quot;es_CL&quot;&gt;Spanish - Chile&lt;/option&gt;&lt;option value=&quot;es_CO&quot;&gt;Spanish - Colombia&lt;/option&gt;&lt;option value=&quot;es_MX&quot;&gt;Spanish - Mexico&lt;/option&gt;&lt;option value=&quot;es_ES&quot;&gt;Spanish - Spain&lt;/option&gt;&lt;option value=&quot;sv_SE&quot;&gt;Swedish - Sweden&lt;/option&gt;&lt;option value=&quot;tl_PH&quot;&gt;Tagalog - Philippines&lt;/option&gt;&lt;option value=&quot;ta&quot;&gt;Tamil&lt;/option&gt;&lt;option value=&quot;te_IN&quot;&gt;Telugu - India&lt;/option&gt;&lt;option value=&quot;th&quot;&gt;Thai&lt;/option&gt;&lt;option value=&quot;tr_TR&quot;&gt;Turkish - Turkey&lt;/option&gt;&lt;option value=&quot;udm&quot;&gt;Udmurt&lt;/option&gt;&lt;option value=&quot;uk_UA&quot;&gt;Ukrainian - Ukraine&lt;/option&gt;&lt;option value=&quot;vi_VN&quot;&gt;Vietnamese - Vietnam&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Is your language not available? Please help out by translating Pagekit into your own language on &lt;a href=&quot;https://www.transifex.com/pagekit/pagekit-cms/&quot;&gt;Transifex&lt;/a&gt;.&lt;/p&gt;
+                &lt;/li&gt;&lt;li aria-hidden=&quot;false&quot; class=&quot;uk-active&quot;&gt;
+                    &lt;div class=&quot;uk-margin uk-flex uk-flex-space-between uk-flex-wrap&quot; data-uk-margin=&quot;&quot;&gt;
+    &lt;div data-uk-margin=&quot;&quot;&gt;
+
+        &lt;h2 class=&quot;uk-margin-remove&quot;&gt;Cache&lt;/h2&gt;
+
+    &lt;/div&gt;
+    &lt;div data-uk-margin=&quot;&quot;&gt;
+
+        &lt;button class=&quot;uk-button uk-button-primary&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;uk-form-row&quot;&gt;
+    &lt;span class=&quot;uk-form-label&quot;&gt;Cache&lt;/span&gt;
+
+    &lt;div class=&quot;uk-form-controls uk-form-controls-text&quot;&gt;
+        &lt;p class=&quot;uk-form-controls-condensed&quot;&gt;
+            &lt;label&gt;&lt;input type=&quot;radio&quot; value=&quot;auto&quot;&gt; Auto (File)&lt;/label&gt;
+        &lt;/p&gt;&lt;p class=&quot;uk-form-controls-condensed&quot;&gt;
+            &lt;label&gt;&lt;input type=&quot;radio&quot; value=&quot;apc&quot; disabled=&quot;&quot;&gt; APC&lt;/label&gt;
+        &lt;/p&gt;&lt;p class=&quot;uk-form-controls-condensed&quot;&gt;
+            &lt;label&gt;&lt;input type=&quot;radio&quot; value=&quot;xcache&quot; disabled=&quot;&quot;&gt; XCache&lt;/label&gt;
+        &lt;/p&gt;&lt;p class=&quot;uk-form-controls-condensed&quot;&gt;
+            &lt;label&gt;&lt;input type=&quot;radio&quot; value=&quot;file&quot;&gt; File&lt;/label&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;uk-form-row&quot;&gt;
+    &lt;span class=&quot;uk-form-label&quot;&gt;Developer&lt;/span&gt;
+
+    &lt;div class=&quot;uk-form-controls uk-form-controls-text&quot;&gt;
+        &lt;p class=&quot;uk-form-controls-condensed&quot;&gt;
+            &lt;label&gt;&lt;input type=&quot;checkbox&quot; value=&quot;1&quot;&gt; Disable cache&lt;/label&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;button class=&quot;uk-button uk-button-primary&quot; type=&quot;button&quot;&gt;Clear Cache&lt;/button&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+                &lt;/li&gt;&lt;li aria-hidden=&quot;true&quot;&gt;
+                    &lt;div class=&quot;uk-margin uk-flex uk-flex-space-between uk-flex-wrap&quot; data-uk-margin=&quot;&quot;&gt;
+    &lt;div data-uk-margin=&quot;&quot;&gt;
+
+        &lt;h2 class=&quot;uk-margin-remove&quot;&gt;Mail&lt;/h2&gt;
+
+    &lt;/div&gt;
+    &lt;div data-uk-margin=&quot;&quot;&gt;
+
+        &lt;button class=&quot;uk-button uk-button-primary&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;uk-form-row&quot;&gt;
+    &lt;label for=&quot;form-emailaddress&quot; class=&quot;uk-form-label&quot;&gt;From Email&lt;/label&gt;
+    &lt;div class=&quot;uk-form-controls&quot;&gt;
+        &lt;input id=&quot;form-emailaddress&quot; class=&quot;uk-form-width-large&quot; type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;uk-form-row&quot;&gt;
+    &lt;label for=&quot;form-fromname&quot; class=&quot;uk-form-label&quot;&gt;From Name&lt;/label&gt;
+    &lt;div class=&quot;uk-form-controls&quot;&gt;
+        &lt;input id=&quot;form-fromname&quot; class=&quot;uk-form-width-large&quot; type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;uk-form-row&quot;&gt;
+    &lt;label for=&quot;form-mailer&quot; class=&quot;uk-form-label&quot;&gt;Mailer&lt;/label&gt;
+    &lt;div class=&quot;uk-form-controls&quot;&gt;
+        &lt;select id=&quot;form-mailer&quot; class=&quot;uk-form-width-large&quot;&gt;
+            &lt;option value=&quot;mail&quot;&gt;PHP Mailer&lt;/option&gt;
+            &lt;option value=&quot;smtp&quot;&gt;SMTP Mailer&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;uk-form-row&quot; style=&quot;display: none;&quot;&gt;
+
+    &lt;div class=&quot;uk-form-row&quot;&gt;
+        &lt;label for=&quot;form-smtpport&quot; class=&quot;uk-form-label&quot;&gt;SMTP Port&lt;/label&gt;
+        &lt;div class=&quot;uk-form-controls&quot;&gt;
+            &lt;input id=&quot;form-smtpport&quot; class=&quot;uk-form-width-large&quot; type=&quot;text&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;uk-form-row&quot;&gt;
+        &lt;label for=&quot;form-smtphost&quot; class=&quot;uk-form-label&quot;&gt;SMTP Host&lt;/label&gt;
+        &lt;div class=&quot;uk-form-controls&quot;&gt;
+            &lt;input id=&quot;form-smtphost&quot; class=&quot;uk-form-width-large&quot; type=&quot;text&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;uk-form-row&quot;&gt;
+        &lt;label for=&quot;form-smtpuser&quot; class=&quot;uk-form-label&quot;&gt;SMTP User&lt;/label&gt;
+        &lt;div class=&quot;uk-form-controls&quot;&gt;
+            &lt;input id=&quot;form-smtpuser&quot; class=&quot;uk-form-width-large&quot; type=&quot;text&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;uk-form-row&quot;&gt;
+        &lt;label for=&quot;form-smtppassword&quot; class=&quot;uk-form-label&quot;&gt;SMTP Password&lt;/label&gt;
+        &lt;div class=&quot;uk-form-controls js-password&quot;&gt;
+            &lt;div class=&quot;uk-form-password&quot;&gt;
+                &lt;input id=&quot;form-smtppassword&quot; class=&quot;uk-form-width-large&quot; type=&quot;password&quot;&gt;
+                &lt;a class=&quot;uk-form-password-toggle&quot; data-uk-form-password=&quot;&quot;&gt;Show&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;uk-form-row&quot;&gt;
+        &lt;label for=&quot;form-smtpencryption&quot; class=&quot;uk-form-label&quot;&gt;SMTP Encryption&lt;/label&gt;
+        &lt;div class=&quot;uk-form-controls&quot;&gt;
+            &lt;select id=&quot;form-smtpencryption&quot; class=&quot;uk-form-width-large&quot;&gt;
+                &lt;option value=&quot;&quot;&gt;None&lt;/option&gt;
+                &lt;option value=&quot;ssl&quot;&gt;SSL&lt;/option&gt;
+                &lt;option value=&quot;tls&quot;&gt;TLS&lt;/option&gt;
+            &lt;/select&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;uk-form-row&quot;&gt;
+    &lt;div class=&quot;uk-form-controls&quot;&gt;
+        &lt;button class=&quot;uk-button&quot; type=&quot;button&quot; style=&quot;display: none;&quot;&gt;Check Connection&lt;/button&gt;
+        &lt;button class=&quot;uk-button&quot; type=&quot;button&quot;&gt;Send Test Email&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/form&gt;
+        &lt;/main&gt;
+
+        &lt;div class=&quot;uk-hidden&quot;&gt;&lt;div class=&quot;pk-system-messages&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+
+        &lt;div id=&quot;offcanvas&quot; class=&quot;uk-offcanvas&quot;&gt;
+            &lt;div class=&quot;uk-offcanvas-bar&quot;&gt;
+
+                &lt;ul class=&quot;uk-nav uk-nav-offcanvas&quot;&gt;
+                    &lt;li class=&quot;uk-nav-header&quot;&gt;System&lt;/li&gt;
+                    &lt;li class=&quot;uk-active&quot;&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/system/settings&quot;&gt;Settings&lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/system/package/extensions&quot;&gt;Extensions&lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/system/package/themes&quot;&gt;Themes&lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/system/update&quot;&gt;Update&lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/system/info&quot;&gt;Info&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;uk-nav-divider&quot;&gt;&lt;/li&gt;
+                    &lt;li class=&quot;uk-nav-header&quot;&gt;Extensions&lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/dashboard&quot;&gt;
+                            &lt;img class=&quot;uk-margin-small-right&quot; width=&quot;34&quot; height=&quot;34&quot; alt=&quot;Dashboard&quot; src=&quot;/pagekit/app/system/modules/dashboard/assets/images/icon-dashboard.svg&quot;&gt; Dashboard
+                        &lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/site/page&quot;&gt;
+                            &lt;img class=&quot;uk-margin-small-right&quot; width=&quot;34&quot; height=&quot;34&quot; alt=&quot;Site&quot; src=&quot;/pagekit/app/system/modules/site/assets/images/icon-site.svg&quot;&gt; Site
+                        &lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/user&quot;&gt;
+                            &lt;img class=&quot;uk-margin-small-right&quot; width=&quot;34&quot; height=&quot;34&quot; alt=&quot;Users&quot; src=&quot;/pagekit/app/system/modules/user/assets/images/icon-users.svg&quot;&gt; Users
+                        &lt;/a&gt;
+                    &lt;/li&gt;&lt;li class=&quot;uk-active&quot;&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/system/settings&quot;&gt;
+                            &lt;img class=&quot;uk-margin-small-right&quot; width=&quot;34&quot; height=&quot;34&quot; alt=&quot;System&quot; src=&quot;/pagekit/app/system/modules/settings/assets/images/icon-settings.svg&quot;&gt; System
+                        &lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/system/marketplace/extensions&quot;&gt;
+                            &lt;img class=&quot;uk-margin-small-right&quot; width=&quot;34&quot; height=&quot;34&quot; alt=&quot;Marketplace&quot; src=&quot;/pagekit/app/installer/assets/images/icon-marketplace.svg&quot;&gt; Marketplace
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div id=&quot;offcanvas-flip&quot; class=&quot;uk-offcanvas&quot;&gt;
+            &lt;div class=&quot;uk-offcanvas-bar uk-offcanvas-bar-flip&quot;&gt;
+
+                &lt;ul class=&quot;uk-nav uk-nav-offcanvas&quot;&gt;
+                    &lt;li class=&quot;uk-nav-header&quot;&gt;admin&lt;/li&gt;
+                    &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;/pagekit/index.php/&quot;&gt;Visit Site&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;/pagekit/index.php/admin/user/edit?id=1&quot;&gt;Settings&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;/pagekit/index.php/user/logout?redirect=admin/login&quot;&gt;Logout&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    
+
+&lt;div class=&quot;uk-modal&quot; aria-hidden=&quot;false&quot;&gt;
+    &lt;div class=&quot;uk-modal-dialog&quot;&gt;
+        
+    &lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;uk-notify uk-notify-top-center&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/MAIN[1]/FORM[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/MAIN[1]/FORM[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/DIV[2]/BUTTON[1]</td>
+							<td><a href="state78.html">state78</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/MAIN[1]/FORM[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[3]/DIV[1]/P[2]/BUTTON[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

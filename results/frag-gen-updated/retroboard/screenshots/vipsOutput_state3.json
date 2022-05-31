@@ -1,0 +1,112 @@
+[
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "id": 0,
+    "parentId": -1,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1200,
+      "height": 510
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]",
+    "id": 1,
+    "parentId": 0,
+    "rect": {
+      "x": 24,
+      "y": 0,
+      "width": 1152,
+      "height": 64
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+    "id": 2,
+    "parentId": 1,
+    "rect": {
+      "x": 34,
+      "y": 36,
+      "width": 185,
+      "height": 13
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]",
+    "id": 4,
+    "parentId": 1,
+    "rect": {
+      "x": 1149,
+      "y": 12,
+      "width": 41,
+      "height": 18
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/IMG[1]",
+    "id": 7,
+    "parentId": 0,
+    "rect": {
+      "x": 20,
+      "y": 120,
+      "width": 1160,
+      "height": 150
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+    "id": 9,
+    "parentId": 0,
+    "rect": {
+      "x": 36,
+      "y": 284,
+      "width": 1128,
+      "height": 186
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]",
+    "id": 10,
+    "parentId": 9,
+    "rect": {
+      "x": 36,
+      "y": 284,
+      "width": 1128,
+      "height": 48
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]",
+    "id": 12,
+    "parentId": 9,
+    "rect": {
+      "x": 48,
+      "y": 349,
+      "width": 1104,
+      "height": 104
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]",
+    "id": 13,
+    "parentId": 12,
+    "rect": {
+      "x": 48,
+      "y": 349,
+      "width": 1104,
+      "height": 20
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+    "id": 15,
+    "parentId": 12,
+    "rect": {
+      "x": 60,
+      "y": 417,
+      "width": 1080,
+      "height": 36
+    }
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]",
+    "id": 0,
+    "parentId": -1,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1200,
+      "height": 589
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]",
+    "id": 1,
+    "parentId": 0,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1200,
+      "height": 110
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]",
+    "id": 2,
+    "parentId": 1,
+    "rect": {
+      "x": 244,
+      "y": 4,
+      "width": 658,
+      "height": 48
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+    "id": 3,
+    "parentId": 2,
+    "rect": {
+      "x": 264,
+      "y": 32,
+      "width": 60,
+      "height": 20
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "id": 5,
+    "parentId": 2,
+    "rect": {
+      "x": 364,
+      "y": 32,
+      "width": 76,
+      "height": 20
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+    "id": 7,
+    "parentId": 2,
+    "rect": {
+      "x": 480,
+      "y": 32,
+      "width": 129,
+      "height": 20
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+    "id": 9,
+    "parentId": 2,
+    "rect": {
+      "x": 648,
+      "y": 32,
+      "width": 90,
+      "height": 20
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+    "id": 11,
+    "parentId": 2,
+    "rect": {
+      "x": 778,
+      "y": 32,
+      "width": 104,
+      "height": 20
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-WELCOME[1]/H1[1]",
+    "id": 14,
+    "parentId": 1,
+    "rect": {
+      "x": 0,
+      "y": 80,
+      "width": 1200,
+      "height": 30
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-WELCOME[1]/DIV[1]/DIV[1]/H2[1]",
+    "id": 17,
+    "parentId": 0,
+    "rect": {
+      "x": 20,
+      "y": 165,
+      "width": 1160,
+      "height": 24
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-WELCOME[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/IMG[1]",
+    "id": 19,
+    "parentId": 0,
+    "rect": {
+      "x": 20,
+      "y": 199,
+      "width": 239,
+      "height": 170
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[2]/DIV[1]/DIV[1]",
+    "id": 21,
+    "parentId": 0,
+    "rect": {
+      "x": 15,
+      "y": 509,
+      "width": 1170,
+      "height": 80
+    }
+  }
+]

@@ -1,0 +1,281 @@
+<html><head>
+	<link rel="stylesheet" type="text/css" href="/mantisbt/css/default.css">
+	<script type="text/javascript" language="JavaScript"><!--
+		if(document.layers) {document.write("<style>td{padding:0px;}<\/style>")}
+	// --></script>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma-directive" content="no-cache">
+	<meta http-equiv="Cache-Directive" content="no-cache">
+	<meta http-equiv="Expires" content="Sun, 03 Oct 2021 19:28:19 GMT">
+	<link rel="shortcut icon" href="/mantisbt/images/favicon.ico" type="image/x-icon">
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Text Search" href="http://localhost:3000/mantisbt/browser_search_plugin.php?type=text">	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Issue Id" href="http://localhost:3000/mantisbt/browser_search_plugin.php?type=id">	<title>MantisBT</title>
+<script type="text/javascript" src="/mantisbt/javascript/min/common.js"></script>
+<script language="javascript">var loading_lang = "Loading...";</script><script type="text/javascript" src="/mantisbt/javascript/min/ajax.js"></script>
+</head>
+<body onload="SetInitialFocus();">
+<div align="left"><a href="my_view_page.php"><img border="0" alt="Mantis Bug Tracker" src="/mantisbt/images/mantis_logo.gif"></a></div><table class="hide"><tbody><tr><td class="login-info-left">Logged in as: <span class="italic">administrator</span> <span class="small">(administrator)</span></td><td class="login-info-middle"><span class="italic">2021-10-03 19:28 UTC</span></td><td class="login-info-right"><form method="post" name="form_set_project" action="/mantisbt/set_project.php">Project: <select name="project_id" class="small" onchange="document.forms.form_set_project.submit();"><option value="0" selected="selected">All Projects</option>
+</select> <input type="submit" class="button-small" value="Switch"></form><a href="http://localhost:3000/mantisbt/issues_rss.php?username=administrator&amp;key=021c6555cf022731feb72e4a25ff20d9"><img src="/mantisbt/images/rss.png" alt="RSS" style="border-style: none; margin: 5px; vertical-align: middle;"></a></td></tr></tbody></table><table class="width100" cellspacing="0"><tbody><tr><td class="menu"><a href="/mantisbt/main_page.php">Main</a> | <a href="/mantisbt/my_view_page.php">My View</a> | <a href="/mantisbt/view_all_bug_page.php">View Issues</a> | <a href="/mantisbt/bug_report_page.php">Report Issue</a> | <a href="/mantisbt/changelog_page.php">Change Log</a> | <a href="/mantisbt/roadmap_page.php">Roadmap</a> | <a href="/mantisbt/summary_page.php">Summary</a> | <a href="/mantisbt/manage_overview_page.php">Manage</a> | <a href="/mantisbt/account_page.php">My Account</a> | <a href="/mantisbt/logout_page.php">Logout</a></td><td class="menu right nowrap"><form method="post" action="/mantisbt/jump_to_bug.php"><input type="text" name="bug_id" size="10" class="small" value="Issue #" onfocus="if (this.value == 'Issue #') this.value = ''" onblur="if (this.value == '') this.value = 'Issue #'">&nbsp;<input type="submit" class="button-small" value="Jump">&nbsp;</form></td></tr></tbody></table>		
+
+		<script type="text/javascript" language="JavaScript">
+		<!--
+		function SetInitialFocus() {
+			field_to_focus = null;			if ( field_to_focus ) {
+				eval( "document.filters['" + field_to_focus + "'].focus()" );
+			}
+
+			SwitchDateFields();
+		}
+
+		function SwitchDateFields() {
+		    // All fields need to be enabled to go back to the script
+			document.filters.start_month.disabled = ! document.filters.do_filter_by_date.checked;document.filters.start_day.disabled = ! document.filters.do_filter_by_date.checked;document.filters.start_year.disabled = ! document.filters.do_filter_by_date.checked;document.filters.end_month.disabled = ! document.filters.do_filter_by_date.checked;document.filters.end_day.disabled = ! document.filters.do_filter_by_date.checked;document.filters.end_year.disabled = ! document.filters.do_filter_by_date.checked;
+		    return true;
+		}
+		// -->
+		</script>
+
+		<br>
+<form method="post" name="filters" action="view_all_set.php?f=3">
+<input type="hidden" name="type" value="1">
+<input type="hidden" name="view_type" value="advanced">
+<table class="width100" cellspacing="1">
+<tbody><tr>
+	<td class="right" colspan="64">
+	<span class="bracket-link">[&nbsp;<a href="view_filters_page.php?target_field=&amp;view_type=simple">Simple Filters</a>&nbsp;]</span> 	</td>
+</tr>
+<tr class="row-category2">
+	<td class="small-caption" colspan="8">Reporter</td>
+	<td class="small-caption" colspan="8">Monitored By</td>
+	<td class="small-caption" colspan="8">Assigned To</td>
+	<td class="small-caption" colspan="16">Category</td>
+	<td class="small-caption" colspan="8">Severity</td>
+	<td class="small-caption" colspan="8">Resolution</td>
+	<td class="small-caption" colspan="8">Profile</td>
+	<!-- <td colspan="0">&nbsp;</td> -->
+</tr>
+<tr class="row-1">
+	<!-- Reporter -->
+	<td valign="top" colspan="8">
+				<select multiple="multiple" size="10" name="reporter_id[]">
+				<option value="0" selected="selected">[any]</option>
+		<option value="-1">[Myself]</option><option value="1">administrator</option>		</select>
+			</td>
+	<!-- Monitored by -->
+	<td valign="top" colspan="8">
+			<!-- Monitored by -->
+		<select multiple="multiple" size="10" name="user_monitor[]">
+			<option value="0" selected="selected">[any]</option>
+			<option value="-1">[Myself]</option><option value="1">administrator</option>		</select>
+			</td>
+	<!-- Handler -->
+	<td valign="top" colspan="8">
+				<!-- Handler -->
+		<select multiple="multiple" size="10" name="handler_id[]">
+			<option value="0" selected="selected">[any]</option>
+						<option value="-2">[none]</option>
+			<option value="-1">[Myself]</option><option value="1">administrator</option>		</select>
+			</td>
+	<!-- Category -->
+	<td valign="top" colspan="16">
+				<!-- Category -->
+		<select multiple="multiple" size="10" name="show_category[]">
+			<option value="0">[any]</option>
+			<option value="General">General</option>		</select>
+			</td>
+    <!-- Severity -->
+    <td valign="top" colspan="8">
+		<!-- Severity -->
+			<select multiple="multiple" size="10" name="show_severity[]">
+				<option value="0" selected="selected">[any]</option>
+				<option value="10">feature</option><option value="20">trivial</option><option value="30">text</option><option value="40">tweak</option><option value="50">minor</option><option value="60">major</option><option value="70">crash</option><option value="80">block</option>			</select>
+		    </td>
+	<!-- Resolution -->
+	<td valign="top" colspan="8">
+		<!-- Resolution -->
+			<select multiple="multiple" size="10" name="show_resolution[]">
+				<option value="0" selected="selected">[any]</option>
+				<option value="10">open</option><option value="20">fixed</option><option value="30">reopened</option><option value="40">unable to reproduce</option><option value="50">not fixable</option><option value="60">duplicate</option><option value="70">no change required</option><option value="80">suspended</option><option value="90">won't fix</option>			</select>
+			</td>
+	<!-- Profile -->
+	<td valign="top" colspan="8">
+		<!-- Profile -->
+		<select multiple="multiple" size="10" name="show_profile[]">
+			<option value="0" selected="selected">[any]</option>
+			<option value=""></option>		</select>
+			</td>
+	<!-- <td colspan="0">&nbsp;</td> -->
+</tr>
+
+<tr class="row-category2">
+	<td class="small-caption" colspan="8">Status</td>
+	<td class="small-caption" colspan="8">
+	&nbsp;	</td>
+	<td class="small-caption" colspan="8">Product Build</td>
+			<td class="small-caption" colspan="16">&nbsp;</td>
+		<td class="small-caption" colspan="8">&nbsp;</td>
+		<td class="small-caption" colspan="8">Priority</td>
+		<td class="small-caption" colspan="8">&nbsp;</td>
+	</tr>
+<tr class="row-1">
+	<!-- Status -->
+	<td valign="top" colspan="8">
+			<!-- Status -->
+			<select multiple="multiple" size="10" name="show_status[]">
+				<option value="0" selected="selected">[any]</option>
+				<option value="10">new</option><option value="20">feedback</option><option value="30">acknowledged</option><option value="40">confirmed</option><option value="50">assigned</option><option value="80">resolved</option><option value="90">closed</option>			</select>
+			</td>
+	<!-- Hide Status -->
+	<td valign="top" colspan="8">
+	&nbsp;	</td>
+	<!-- Build -->
+	<td valign="top" colspan="8">
+			</td>
+	<!-- Version -->
+	<td valign="top" colspan="16">
+		&nbsp;	</td>
+	<!-- Fixed in Version -->
+	<td valign="top" colspan="8">
+		&nbsp; 	</td>
+	<!-- Priority -->
+	<td valign="top" colspan="8">
+		<!-- Priority -->
+    <select multiple="multiple" size="10" name="show_priority[]">
+			<option value="0" selected="selected">[any]</option>
+			<option value="10">none</option><option value="20">low</option><option value="30">normal</option><option value="40">high</option><option value="50">urgent</option><option value="60">immediate</option>    </select>
+			</td>
+	<!-- Target Version -->
+	<td valign="top" colspan="8">
+		&nbsp; 	</td>
+</tr>
+
+<tr class="row-category2">
+	<td class="small-caption" colspan="8">Show</td>
+	<td class="small-caption" colspan="8">View Status</td>
+	<td class="small-caption" colspan="8">Show Sticky Issues</td>
+	<td class="small-caption" colspan="8">Changed(hrs)</td>
+	<td class="small-caption" colspan="24">
+		<input type="checkbox" name="do_filter_by_date" onclick="SwitchDateFields();">
+		Use Date Filters	</td>
+	<td class="small-caption" colspan="8">
+		Relationships	</td>
+	<!-- <td colspan="0">&nbsp;</td> -->
+</tr>
+<tr class="row-2">
+	<!-- Number of bugs per page -->
+	<td valign="top" colspan="8">
+		<!-- Number of bugs per page -->
+		<input type="text" name="per_page" size="3" maxlength="7" value="50">
+			</td>
+	<!-- View Status -->
+	<td valign="top" colspan="8">
+		<!-- View Status -->
+		<select name="view_state">
+			<option value="0" selected="selected">[any]</option><option value="10">public</option><option value="50">private</option>		</select>
+			</td>
+	<!-- Show Sticky bugs -->
+	<td valign="top" colspan="8">
+		<!-- Show or hide sticky bugs -->
+			<input type="checkbox" name="sticky_issues">
+			</td>
+	<!-- Highlight changed bugs -->
+	<td valign="top" colspan="8">
+		<!-- Highlight changed bugs -->
+			<input type="text" name="highlight_changed" size="3" maxlength="7" value="6">
+			</td>
+	<td valign="top" class="left" colspan="24">
+				<table cellspacing="0" cellpadding="0">
+		
+		<!-- Start date -->
+		<tbody><tr>
+			<td>
+			Start Date:
+			</td>
+			<td nowrap="nowrap">
+			<select name="start_year" disabled=""><option value="2021" selected="selected">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option></select>
+<select name="start_month" disabled=""><option value="1">January</option><option value="2">February</option><option value="3">March</option><option value="4">April</option><option value="5">May</option><option value="6">June</option><option value="7">July</option><option value="8">August</option><option value="9">September</option><option value="10" selected="selected">October</option><option value="11">November</option><option value="12">December</option></select>
+<select name="start_day" disabled=""><option value="1" selected="selected">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+			</td>
+		</tr>
+		<!-- End date -->
+		<tr>
+			<td>
+			End Date:
+			</td>
+			<td>
+			<select name="end_year" disabled=""><option value="2021" selected="selected">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option></select>
+<select name="end_month" disabled=""><option value="1">January</option><option value="2">February</option><option value="3">March</option><option value="4">April</option><option value="5">May</option><option value="6">June</option><option value="7">July</option><option value="8">August</option><option value="9">September</option><option value="10" selected="selected">October</option><option value="11">November</option><option value="12">December</option></select>
+<select name="end_day" disabled=""><option value="1">1</option><option value="2">2</option><option value="3" selected="selected">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+			</td>
+		</tr>
+		</tbody></table>
+			</td>
+	<td valign="top" colspan="8">
+        <select name="relationship_type">
+<option value="-1" selected="selected">[any]</option>
+<option value="2">parent of</option>
+<option value="3">child of</option>
+<option value="0">duplicate of</option>
+<option value="4">has duplicate</option>
+<option value="1">related to</option>
+</select>
+<input type="text" name="relationship_bug" size="5" maxlength="10" value="0">	</td>
+	<!-- <td colspan="0">&nbsp;</td> -->
+</tr>
+
+
+<tr class="row-1">
+	<td class="small-caption" colspan="8" valign="top">
+		Sort by:
+	</td>
+	<td valign="top" colspan="32">
+		<select name="sort_0"><option value=""></option><option value="priority">Priority</option><option value="id">Issue ID</option><option value="category_id" selected="selected">Category</option><option value="severity">Severity</option><option value="status">Status</option><option value="last_updated">Updated</option><option value="summary">Summary</option></select><select name="dir_0"><option value=""></option><option value="ASC">Ascending</option><option value="DESC" selected="selected">Descending</option></select>, <select name="sort_1"><option value="" selected="selected"></option><option value="priority">Priority</option><option value="id">Issue ID</option><option value="category_id">Category</option><option value="severity">Severity</option><option value="status">Status</option><option value="last_updated">Updated</option><option value="summary">Summary</option></select><select name="dir_1"><option value="" selected="selected"></option><option value="ASC">Ascending</option><option value="DESC">Descending</option></select>	</td>
+				<td class="small-caption" colspan="8" valign="top">
+				Project:
+			</td>
+			<td valign="top" colspan="16">
+						<!-- Project -->
+		<select multiple="multiple" size="10" name="project_id[]">
+			<option value="-3" selected="selected">[current]</option>
+			<option value="0">All Projects</option>
+		</select>
+					</td>
+	</tr>
+
+
+<tr class="row-category2">
+<td class="small-caption" colspan="8">Search</td>
+<td class="small-caption" colspan="48">Tags</td>
+<td class="small-caption" colspan="8"></td>
+</tr>
+<tr class="row-1">
+	<!-- Search field -->
+	<td colspan="8">
+		<input type="text" size="16" name="search" value="HCVnqrfc">
+	</td>
+
+	<td class="small-caption" colspan="48">		<input type="hidden" id="tag_separator" value=",">
+		<input type="text" name="tag_string" id="tag_string" size="40" value="">
+		<select tabindex="1" name="tag_select" id="tag_select">
+			<option value="0">Existing tags</option>		</select>
+		</td>
+
+	<!-- Submit button -->
+	<td class="right" colspan="8">
+		<input type="submit" name="filter" class="button" value="Apply Filter">
+	</td>
+</tr>
+</tbody></table>
+</form>
+
+	<br>
+	<hr size="1">
+<table border="0" width="100%" cellspacing="0" cellpadding="0"><tbody><tr valign="top"><td>	<address>Copyright © 2000 - 2010 MantisBT Group</address>
+	<address><a href="mailto:webmaster@example.com">webmaster@example.com</a></address>
+</td><td>
+	<div align="right"><a href="http://www.mantisbt.org" title="Free Web Based Bug Tracker"><img src="/mantisbt/images/mantis_logo_button.gif" width="88" height="35" alt="Powered by Mantis Bugtracker" border="0"></a></div>
+</td></tr></tbody></table>
+
+
+</body></html>

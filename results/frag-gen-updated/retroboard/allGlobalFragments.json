@@ -1,0 +1,2808 @@
+[
+  {
+    "stateId": 0,
+    "fragmentId": 0,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state14_33",
+      "state23_40"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 0,
+    "fragmentId": 3,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state14_34",
+      "state23_9"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 0,
+    "fragmentId": 4,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state23_10",
+      "state14_6",
+      "state23_5",
+      "state12_6",
+      "state11_31",
+      "state14_10",
+      "state35_29"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 0,
+    "fragmentId": 6,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state14_21",
+      "state23_12"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 0,
+    "fragmentId": 9,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state11_32",
+      "state14_35"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 3,
+    "fragmentId": 0,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 3,
+    "fragmentId": 1,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state12_24"
+    ],
+    "nd2": [],
+    "duplicates": [
+      "state18_1"
+    ]
+  },
+  {
+    "stateId": 3,
+    "fragmentId": 9,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 3,
+    "fragmentId": 12,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state12_27"
+    ],
+    "nd2": [],
+    "duplicates": [
+      "state18_12"
+    ]
+  },
+  {
+    "stateId": 3,
+    "fragmentId": 16,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 5,
+    "fragmentId": 0,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state8_32",
+      "state11_22"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 5,
+    "fragmentId": 1,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state11_23",
+      "state8_1",
+      "state35_25"
+    ],
+    "nd2": [],
+    "duplicates": [
+      "state6_1",
+      "state57_1"
+    ]
+  },
+  {
+    "stateId": 5,
+    "fragmentId": 11,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state11_24",
+      "state8_11"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 5,
+    "fragmentId": 14,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state8_14",
+      "state11_25",
+      "state57_11"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 5,
+    "fragmentId": 15,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state6_18",
+      "state8_17",
+      "state11_27",
+      "state11_28",
+      "state6_16",
+      "state11_26",
+      "state5_17",
+      "state6_20",
+      "state8_15",
+      "state8_19",
+      "state5_19",
+      "state57_12",
+      "state57_14",
+      "state57_16"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 5,
+    "fragmentId": 17,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state6_18",
+      "state57_16",
+      "state11_27",
+      "state57_12",
+      "state6_16",
+      "state11_26",
+      "state8_19",
+      "state5_19",
+      "state8_17",
+      "state11_28",
+      "state5_15",
+      "state57_14",
+      "state6_20",
+      "state8_15"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 5,
+    "fragmentId": 19,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state6_18",
+      "state57_16",
+      "state11_27",
+      "state57_12",
+      "state6_16",
+      "state11_26",
+      "state8_19",
+      "state8_17",
+      "state11_28",
+      "state5_15",
+      "state57_14",
+      "state5_17",
+      "state6_20",
+      "state8_15"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 6,
+    "fragmentId": 0,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 6,
+    "fragmentId": 11,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 6,
+    "fragmentId": 12,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 6,
+    "fragmentId": 15,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 6,
+    "fragmentId": 16,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state6_18",
+      "state8_17",
+      "state11_27",
+      "state11_28",
+      "state5_15",
+      "state11_26",
+      "state5_17",
+      "state6_20",
+      "state8_15",
+      "state8_19",
+      "state5_19",
+      "state57_12",
+      "state57_14",
+      "state57_16"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 6,
+    "fragmentId": 18,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state57_16",
+      "state11_27",
+      "state57_12",
+      "state6_16",
+      "state11_26",
+      "state8_19",
+      "state5_19",
+      "state8_17",
+      "state11_28",
+      "state5_15",
+      "state57_14",
+      "state5_17",
+      "state6_20",
+      "state8_15"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 6,
+    "fragmentId": 20,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state6_18",
+      "state57_16",
+      "state11_27",
+      "state57_12",
+      "state6_16",
+      "state11_26",
+      "state8_19",
+      "state5_19",
+      "state8_17",
+      "state11_28",
+      "state5_15",
+      "state57_14",
+      "state5_17",
+      "state8_15"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 6,
+    "fragmentId": 24,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 8,
+    "fragmentId": 0,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/H6[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/H6[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/P[1]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/P[1]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/NAV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 8,
+    "fragmentId": 1,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state11_23",
+      "state5_1",
+      "state6_1"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 8,
+    "fragmentId": 11,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state11_24",
+      "state5_11"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 8,
+    "fragmentId": 14,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state5_14",
+      "state11_25",
+      "state57_11"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 8,
+    "fragmentId": 15,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state6_18",
+      "state57_16",
+      "state11_27",
+      "state57_12",
+      "state6_16",
+      "state11_26",
+      "state8_19",
+      "state5_19",
+      "state8_17",
+      "state11_28",
+      "state5_15",
+      "state57_14",
+      "state5_17",
+      "state6_20"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 8,
+    "fragmentId": 17,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state6_18",
+      "state57_16",
+      "state11_27",
+      "state57_12",
+      "state6_16",
+      "state11_26",
+      "state8_19",
+      "state5_19",
+      "state11_28",
+      "state5_15",
+      "state57_14",
+      "state5_17",
+      "state6_20",
+      "state8_15"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 8,
+    "fragmentId": 19,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state6_18",
+      "state57_16",
+      "state11_27",
+      "state57_12",
+      "state6_16",
+      "state11_26",
+      "state5_19",
+      "state8_17",
+      "state11_28",
+      "state5_15",
+      "state57_14",
+      "state5_17",
+      "state6_20",
+      "state8_15"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 8,
+    "fragmentId": 23,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/H6[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/H6[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/P[1]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/P[1]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": true,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 8,
+    "fragmentId": 32,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state5_0",
+      "state11_22"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 8,
+    "fragmentId": 33,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/H6[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/H6[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/P[1]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/P[1]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/SECTION[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/NAV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 0,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]/SPAN[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 1,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]/SPAN[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 2,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": [
+      "state35_2"
+    ]
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 5,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": [
+      "state35_5"
+    ]
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 6,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state23_2",
+      "state14_3"
+    ],
+    "nd2": [],
+    "duplicates": [
+      "state35_6"
+    ]
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 12,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]/SPAN[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 22,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state5_0",
+      "state8_32"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 23,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state8_1",
+      "state5_1",
+      "state6_1"
+    ],
+    "nd2": [],
+    "duplicates": [
+      "state35_25"
+    ]
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 24,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state5_11",
+      "state8_11"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 25,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state5_14",
+      "state8_14",
+      "state57_11"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 26,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state5_15",
+      "state5_17",
+      "state5_19",
+      "state6_16",
+      "state6_18",
+      "state6_20",
+      "state8_15",
+      "state8_17",
+      "state8_19",
+      "state11_27",
+      "state11_28",
+      "state57_12",
+      "state57_14",
+      "state57_16"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 27,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state5_15",
+      "state5_17",
+      "state5_19",
+      "state6_16",
+      "state6_18",
+      "state6_20",
+      "state8_15",
+      "state8_17",
+      "state8_19",
+      "state11_26",
+      "state11_28",
+      "state57_12",
+      "state57_14",
+      "state57_16"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 28,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state5_15",
+      "state5_17",
+      "state5_19",
+      "state6_16",
+      "state6_18",
+      "state6_20",
+      "state8_15",
+      "state8_17",
+      "state8_19",
+      "state11_26",
+      "state11_27",
+      "state57_12",
+      "state57_14",
+      "state57_16"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 29,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]/SPAN[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state35_27",
+      "state23_15"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 30,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state35_28"
+    ],
+    "nd2": [],
+    "duplicates": [
+      "state12_29",
+      "state14_36",
+      "state23_42"
+    ]
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 31,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state23_10",
+      "state14_6",
+      "state23_5",
+      "index_4",
+      "state12_6",
+      "state14_10",
+      "state35_29"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 32,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state14_35",
+      "index_9",
+      "state23_41"
+    ],
+    "nd2": [],
+    "duplicates": [
+      "state12_30",
+      "state14_37",
+      "state23_43",
+      "state35_30"
+    ]
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 33,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]/SPAN[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state23_18"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 11,
+    "fragmentId": 34,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]/SPAN[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": [
+      "state35_31"
+    ]
+  },
+  {
+    "stateId": 12,
+    "fragmentId": 0,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 12,
+    "fragmentId": 1,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]/#text[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 12,
+    "fragmentId": 2,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 12,
+    "fragmentId": 5,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 12,
+    "fragmentId": 6,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state23_10",
+      "state14_6",
+      "state23_5",
+      "index_4",
+      "state11_31",
+      "state14_10",
+      "state35_29"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 12,
+    "fragmentId": 12,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]/#text[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 12,
+    "fragmentId": 15,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state18_10"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 12,
+    "fragmentId": 17,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]/#text[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 12,
+    "fragmentId": 23,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state18_0"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 12,
+    "fragmentId": 24,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state3_1"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 12,
+    "fragmentId": 25,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state18_16"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 12,
+    "fragmentId": 26,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state18_9"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 12,
+    "fragmentId": 27,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state3_12",
+      "state18_12"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 12,
+    "fragmentId": 28,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state14_12"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 14,
+    "fragmentId": 0,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 14,
+    "fragmentId": 1,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]/#text[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 14,
+    "fragmentId": 2,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 14,
+    "fragmentId": 3,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state11_6",
+      "state35_6"
+    ],
+    "nd2": [],
+    "duplicates": [
+      "state23_2"
+    ]
+  },
+  {
+    "stateId": 14,
+    "fragmentId": 6,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state23_10",
+      "index_4",
+      "state12_6",
+      "state11_31",
+      "state14_10",
+      "state35_29"
+    ],
+    "nd2": [],
+    "duplicates": [
+      "state23_5"
+    ]
+  },
+  {
+    "stateId": 14,
+    "fragmentId": 9,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 14,
+    "fragmentId": 10,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state23_10",
+      "state14_6",
+      "state23_5",
+      "index_4",
+      "state12_6",
+      "state11_31",
+      "state35_29"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 14,
+    "fragmentId": 12,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state12_28"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 14,
+    "fragmentId": 20,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]/#text[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 14,
+    "fragmentId": 21,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "index_6"
+    ],
+    "nd2": [],
+    "duplicates": [
+      "state23_12"
+    ]
+  },
+  {
+    "stateId": 14,
+    "fragmentId": 29,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]/#text[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 14,
+    "fragmentId": 33,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state23_40",
+      "index_0"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 14,
+    "fragmentId": 34,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": true,
+    "equivalents": [
+      "index_3",
+      "state23_9"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 14,
+    "fragmentId": 35,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state14_37",
+      "index_9",
+      "state35_30",
+      "state23_43",
+      "state12_30",
+      "state11_32"
+    ],
+    "nd2": [],
+    "duplicates": [
+      "state23_41"
+    ]
+  },
+  {
+    "stateId": 18,
+    "fragmentId": 0,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state12_23"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 18,
+    "fragmentId": 9,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state12_26"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 18,
+    "fragmentId": 10,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state12_15"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 18,
+    "fragmentId": 16,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/NAV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SECTION[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state12_25"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 23,
+    "fragmentId": 0,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]/SPAN[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 23,
+    "fragmentId": 1,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]/SPAN[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 23,
+    "fragmentId": 8,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]/SPAN[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 23,
+    "fragmentId": 9,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "index_3",
+      "state14_34"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 23,
+    "fragmentId": 10,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state14_6",
+      "state23_5",
+      "index_4",
+      "state12_6",
+      "state11_31",
+      "state14_10",
+      "state35_29"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 23,
+    "fragmentId": 15,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]/SPAN[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state11_29",
+      "state35_27"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 23,
+    "fragmentId": 18,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/H5[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]/SPAN[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state11_33"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 23,
+    "fragmentId": 40,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state14_33",
+      "index_0"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 35,
+    "fragmentId": 0,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/H4[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/H4[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]/SPAN[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 35,
+    "fragmentId": 1,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 35,
+    "fragmentId": 12,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 35,
+    "fragmentId": 15,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/H4[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/H4[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]/SPAN[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]"
+    ],
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 35,
+    "fragmentId": 24,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/H4[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/H4[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 35,
+    "fragmentId": 26,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/H4[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/H4[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 35,
+    "fragmentId": 27,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[1]/SPAN[1]/DIV[1]/IMG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/UL[1]/LI[1]/SPAN[1]/SPAN[3]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/BUTTON[2]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/A[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state11_29",
+      "state23_15"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 35,
+    "fragmentId": 28,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/LABEL[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state11_30"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 35,
+    "fragmentId": 29,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/DIV[2]/LABEL[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/STRONG[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]",
+      "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/DIV[2]/SMALL[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/ASIDE[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state23_10",
+      "state14_6",
+      "state23_5",
+      "index_4",
+      "state12_6",
+      "state11_31",
+      "state14_10"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 57,
+    "fragmentId": 0,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[1]/A[1]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[1]/#text[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/SPAN[2]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/HEADER[1]/DIV[2]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 57,
+    "fragmentId": 11,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state5_14",
+      "state8_14",
+      "state11_25"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 57,
+    "fragmentId": 12,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state6_18",
+      "state57_16",
+      "state11_27",
+      "state6_16",
+      "state11_26",
+      "state8_19",
+      "state5_19",
+      "state8_17",
+      "state11_28",
+      "state5_15",
+      "state57_14",
+      "state5_17",
+      "state6_20",
+      "state8_15"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 57,
+    "fragmentId": 14,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state6_18",
+      "state57_16",
+      "state11_27",
+      "state57_12",
+      "state6_16",
+      "state11_26",
+      "state8_19",
+      "state5_19",
+      "state8_17",
+      "state11_28",
+      "state5_15",
+      "state5_17",
+      "state6_20",
+      "state8_15"
+    ],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 57,
+    "fragmentId": 16,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [
+      "state6_18",
+      "state11_27",
+      "state57_12",
+      "state6_16",
+      "state11_26",
+      "state8_19",
+      "state5_19",
+      "state8_17",
+      "state11_28",
+      "state5_15",
+      "state57_14",
+      "state5_17",
+      "state6_20",
+      "state8_15"
+    ],
+    "nd2": [],
+    "duplicates": []
+  }
+]

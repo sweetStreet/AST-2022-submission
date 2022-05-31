@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state45</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/pagekit/index.php/admin/user/roles'>http://localhost:3000/pagekit/index.php/admin/user/roles</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>22</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state19</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>171.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>45</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state45.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state46.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[2]/A[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 22px; top: 247px; width: 252px; height: 38px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 22px; top: 283px; width: 252px; height: 38px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 22px; top: 319px; width: 252px; height: 38px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/P[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 22px; top: 375px; width: 97px; height: 37px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[8]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[9]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[10]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[11]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[12]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/UL[1]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/DIV[1]/UL[1]/LI[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: 495px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html lang=&quot;en-GB&quot; class=&quot;uk-notouch&quot;&gt;&lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+        &lt;link href=&quot;//fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;amp;subset=latin,latin-ext&quot; rel=&quot;stylesheet&quot;&gt;
+                                &lt;meta name=&quot;generator&quot; content=&quot;Pagekit&quot;&gt;
+        &lt;link href=&quot;/pagekit/app/system/modules/theme/favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot;&gt;
+        &lt;link href=&quot;/pagekit/app/system/modules/theme/apple_touch_icon.png&quot; rel=&quot;apple-touch-icon-precomposed&quot;&gt;
+        &lt;title&gt;Roles | Testing&lt;/title&gt;
+        &lt;link href=&quot;/pagekit/app/system/modules/theme/css/theme.css?v=d10d&quot; rel=&quot;stylesheet&quot;&gt;
+        &lt;script&gt;var $config = {&quot;role&quot;:null};&lt;/script&gt;
+        &lt;script&gt;var $data = {&quot;permissions&quot;:{&quot;installer&quot;:{&quot;system: manage packages&quot;:{&quot;title&quot;:&quot;Manage extensions and themes&quot;,&quot;description&quot;:&quot;Manage extensions and themes&quot;},&quot;system: software updates&quot;:{&quot;title&quot;:&quot;Apply system updates&quot;,&quot;trusted&quot;:true}},&quot;system\/widget&quot;:{&quot;system: manage widgets&quot;:{&quot;title&quot;:&quot;Manage widgets&quot;}},&quot;system\/finder&quot;:{&quot;system: manage storage&quot;:{&quot;title&quot;:&quot;Manage storage&quot;,&quot;trusted&quot;:true},&quot;system: manage storage read only&quot;:{&quot;title&quot;:&quot;Manage storage (Read only)&quot;}},&quot;system\/settings&quot;:{&quot;system: access settings&quot;:{&quot;title&quot;:&quot;Access system settings&quot;,&quot;trusted&quot;:true}},&quot;system\/site&quot;:{&quot;site: manage site&quot;:{&quot;title&quot;:&quot;Manage site&quot;},&quot;site: maintenance access&quot;:{&quot;title&quot;:&quot;Use the site in maintenance mode&quot;}},&quot;system\/user&quot;:{&quot;user: manage users&quot;:{&quot;title&quot;:&quot;Manage users&quot;,&quot;trusted&quot;:true},&quot;user: manage user permissions&quot;:{&quot;title&quot;:&quot;Manage user permissions&quot;,&quot;trusted&quot;:true},&quot;system: access admin area&quot;:{&quot;title&quot;:&quot;Access admin area&quot;,&quot;description&quot;:&quot;Allows to access the admin area and to use the site in maintenance mode&quot;,&quot;trusted&quot;:true}}},&quot;roles&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Anonymous&quot;,&quot;priority&quot;:0,&quot;permissions&quot;:[],&quot;locked&quot;:true,&quot;anonymous&quot;:true,&quot;authenticated&quot;:false,&quot;administrator&quot;:false},{&quot;id&quot;:2,&quot;name&quot;:&quot;Authenticated&quot;,&quot;priority&quot;:1,&quot;permissions&quot;:[&quot;blog: post comments&quot;],&quot;locked&quot;:true,&quot;anonymous&quot;:false,&quot;authenticated&quot;:true,&quot;administrator&quot;:false},{&quot;id&quot;:3,&quot;name&quot;:&quot;Administrator&quot;,&quot;priority&quot;:2,&quot;permissions&quot;:[],&quot;locked&quot;:true,&quot;anonymous&quot;:false,&quot;authenticated&quot;:false,&quot;administrator&quot;:true}]};&lt;/script&gt;
+        &lt;script&gt;var $pagekit = {&quot;editor&quot;:&quot;html&quot;,&quot;storage&quot;:&quot;\/storage&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;admin&quot;,&quot;email&quot;:&quot;asd@asd.com&quot;,&quot;username&quot;:&quot;admin&quot;},&quot;menu&quot;:[{&quot;id&quot;:&quot;system: marketplace&quot;,&quot;label&quot;:&quot;Marketplace&quot;,&quot;parent&quot;:&quot;root&quot;,&quot;priority&quot;:125,&quot;icon&quot;:&quot;\/pagekit\/app\/installer\/assets\/images\/icon-marketplace.svg&quot;,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/marketplace\/extensions&quot;,&quot;access&quot;:&quot;system: manage packages&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: marketplace extensions&quot;,&quot;label&quot;:&quot;Extensions&quot;,&quot;parent&quot;:&quot;system: marketplace&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/marketplace\/extensions&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: marketplace themes&quot;,&quot;label&quot;:&quot;Themes&quot;,&quot;parent&quot;:&quot;system: marketplace&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/marketplace\/themes&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: extensions&quot;,&quot;label&quot;:&quot;Extensions&quot;,&quot;parent&quot;:&quot;system: system&quot;,&quot;priority&quot;:5,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/package\/extensions&quot;,&quot;access&quot;:&quot;system: manage packages&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: themes&quot;,&quot;label&quot;:&quot;Themes&quot;,&quot;parent&quot;:&quot;system: system&quot;,&quot;priority&quot;:10,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/package\/themes&quot;,&quot;access&quot;:&quot;system: manage packages&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: update&quot;,&quot;label&quot;:&quot;Update&quot;,&quot;parent&quot;:&quot;system: system&quot;,&quot;priority&quot;:25,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/update&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;site: widgets&quot;,&quot;label&quot;:&quot;Widgets&quot;,&quot;parent&quot;:&quot;site&quot;,&quot;priority&quot;:20,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/site\/widget&quot;,&quot;access&quot;:&quot;system: manage widgets&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;dashboard&quot;,&quot;label&quot;:&quot;Dashboard&quot;,&quot;parent&quot;:&quot;root&quot;,&quot;priority&quot;:100,&quot;icon&quot;:&quot;\/pagekit\/app\/system\/modules\/dashboard\/assets\/images\/icon-dashboard.svg&quot;,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/dashboard&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: storage&quot;,&quot;label&quot;:&quot;Storage&quot;,&quot;parent&quot;:&quot;site&quot;,&quot;priority&quot;:20,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/site\/storage&quot;,&quot;access&quot;:&quot;system: manage storage&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: info&quot;,&quot;label&quot;:&quot;Info&quot;,&quot;parent&quot;:&quot;system: system&quot;,&quot;priority&quot;:30,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/info&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: system&quot;,&quot;label&quot;:&quot;System&quot;,&quot;parent&quot;:&quot;root&quot;,&quot;priority&quot;:120,&quot;icon&quot;:&quot;\/pagekit\/app\/system\/modules\/settings\/assets\/images\/icon-settings.svg&quot;,&quot;access&quot;:&quot;system: access settings&quot;,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/settings&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;system: settings&quot;,&quot;label&quot;:&quot;Settings&quot;,&quot;parent&quot;:&quot;system: system&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/system\/settings&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;site&quot;,&quot;label&quot;:&quot;Site&quot;,&quot;parent&quot;:&quot;root&quot;,&quot;priority&quot;:105,&quot;icon&quot;:&quot;\/pagekit\/app\/system\/modules\/site\/assets\/images\/icon-site.svg&quot;,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/site\/page&quot;,&quot;access&quot;:&quot;site: manage site || system: manage widgets || system: manage storage || system: access settings&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;site: pages&quot;,&quot;label&quot;:&quot;Pages&quot;,&quot;parent&quot;:&quot;site&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/site\/page&quot;,&quot;access&quot;:&quot;site: manage site&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;site: settings&quot;,&quot;label&quot;:&quot;Settings&quot;,&quot;parent&quot;:&quot;site&quot;,&quot;priority&quot;:30,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/site\/settings&quot;,&quot;access&quot;:&quot;system: access settings&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;user&quot;,&quot;label&quot;:&quot;Users&quot;,&quot;parent&quot;:&quot;root&quot;,&quot;priority&quot;:115,&quot;icon&quot;:&quot;\/pagekit\/app\/system\/modules\/user\/assets\/images\/icon-users.svg&quot;,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/user&quot;,&quot;active&quot;:true,&quot;access&quot;:&quot;user: manage users || user: manage user permissions || system: access settings&quot;},{&quot;id&quot;:&quot;user: users&quot;,&quot;label&quot;:&quot;List&quot;,&quot;parent&quot;:&quot;user&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/user&quot;,&quot;active&quot;:false,&quot;access&quot;:&quot;user: manage users&quot;},{&quot;id&quot;:&quot;user: permissions&quot;,&quot;label&quot;:&quot;Permissions&quot;,&quot;parent&quot;:&quot;user&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/user\/permissions&quot;,&quot;access&quot;:&quot;user: manage user permissions&quot;,&quot;active&quot;:false},{&quot;id&quot;:&quot;user: roles&quot;,&quot;label&quot;:&quot;Roles&quot;,&quot;parent&quot;:&quot;user&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/user\/roles&quot;,&quot;access&quot;:&quot;user: manage user permissions&quot;,&quot;active&quot;:true},{&quot;id&quot;:&quot;user: settings&quot;,&quot;label&quot;:&quot;Settings&quot;,&quot;parent&quot;:&quot;user&quot;,&quot;priority&quot;:0,&quot;url&quot;:&quot;\/pagekit\/index.php\/admin\/user\/settings&quot;,&quot;access&quot;:&quot;system: access settings&quot;,&quot;active&quot;:false}],&quot;url&quot;:&quot;\/pagekit\/index.php&quot;,&quot;csrf&quot;:&quot;363fd557d112ad8e8ba052ef901ef6941d015541&quot;};&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/vue/dist/vue.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/jquery/dist/jquery.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/lodash/lodash.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/index.php/system/intl/en_GB?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/system/app/bundle/vue.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/system/modules/user/app/bundle/interceptor.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/system/modules/user/app/bundle/role-index.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/uikit.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/notify.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/tooltip.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/sticky.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/sortable.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/pagination.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/assets/uikit/js/components/form-select.min.js?v=d10d&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;/pagekit/app/system/modules/theme/js/theme.js?v=d10d&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;header id=&quot;header&quot; class=&quot;tm-header&quot;&gt;
+            &lt;div class=&quot;uk-container uk-container-center&quot;&gt;
+
+                &lt;div class=&quot;tm-headerbar uk-flex uk-flex-space-between uk-flex-middle uk-hidden-small&quot;&gt;
+                    &lt;div class=&quot;tm-headerbar-primary&quot; data-uk-dropdown=&quot;{mode:'click', preventflip: 'y'}&quot;&gt;
+
+                        &lt;div class=&quot;tm-cursor-pointer uk-flex uk-flex-middle&quot;&gt;
+                            &lt;i class=&quot;tm-icon-menu&quot;&gt;&lt;/i&gt;
+                            &lt;h1 class=&quot;tm-heading&quot;&gt;Users&lt;/h1&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;uk-dropdown uk-dropdown-navbar tm-dropdown&quot;&gt;
+                            &lt;ul id=&quot;js-appnav&quot; class=&quot;uk-sortable uk-grid uk-grid-small uk-grid-width-1-3&quot; data-url=&quot;/pagekit/index.php/admin/adminmenu&quot; data-uk-sortable=&quot;{ dragCustomClass: 'tm-sortable-dragged', handleClass: 'uk-panel' }&quot;&gt;
+                                &lt;li data-id=&quot;dashboard&quot;&gt;
+                                    &lt;a class=&quot;uk-panel tm-panel-icon&quot; href=&quot;/pagekit/index.php/admin/dashboard&quot;&gt;
+                                        &lt;img width=&quot;50&quot; height=&quot;50&quot; alt=&quot;Dashboard&quot; src=&quot;/pagekit/app/system/modules/dashboard/assets/images/icon-dashboard.svg&quot;&gt;
+                                        &lt;p&gt;Dashboard&lt;/p&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;&lt;li data-id=&quot;site&quot;&gt;
+                                    &lt;a class=&quot;uk-panel tm-panel-icon&quot; href=&quot;/pagekit/index.php/admin/site/page&quot;&gt;
+                                        &lt;img width=&quot;50&quot; height=&quot;50&quot; alt=&quot;Site&quot; src=&quot;/pagekit/app/system/modules/site/assets/images/icon-site.svg&quot;&gt;
+                                        &lt;p&gt;Site&lt;/p&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;&lt;li data-id=&quot;user&quot;&gt;
+                                    &lt;a class=&quot;uk-panel tm-panel-icon&quot; href=&quot;/pagekit/index.php/admin/user&quot;&gt;
+                                        &lt;img width=&quot;50&quot; height=&quot;50&quot; alt=&quot;Users&quot; src=&quot;/pagekit/app/system/modules/user/assets/images/icon-users.svg&quot;&gt;
+                                        &lt;p&gt;Users&lt;/p&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;&lt;li data-id=&quot;system: system&quot;&gt;
+                                    &lt;a class=&quot;uk-panel tm-panel-icon&quot; href=&quot;/pagekit/index.php/admin/system/settings&quot;&gt;
+                                        &lt;img width=&quot;50&quot; height=&quot;50&quot; alt=&quot;System&quot; src=&quot;/pagekit/app/system/modules/settings/assets/images/icon-settings.svg&quot;&gt;
+                                        &lt;p&gt;System&lt;/p&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;&lt;li data-id=&quot;system: marketplace&quot;&gt;
+                                    &lt;a class=&quot;uk-panel tm-panel-icon&quot; href=&quot;/pagekit/index.php/admin/system/marketplace/extensions&quot;&gt;
+                                        &lt;img width=&quot;50&quot; height=&quot;50&quot; alt=&quot;Marketplace&quot; src=&quot;/pagekit/app/installer/assets/images/icon-marketplace.svg&quot;&gt;
+                                        &lt;p&gt;Marketplace&lt;/p&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                    &lt;div class=&quot;tm-contrast&quot;&gt;
+
+                        &lt;ul class=&quot;uk-grid uk-grid-small uk-flex-middle&quot;&gt;
+                            &lt;li&gt;&lt;a class=&quot;tm-icon-help&quot; href=&quot;https://gitter.im/pagekit/pagekit&quot; target=&quot;_blank&quot; title=&quot;Get Help&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class=&quot;tm-icon-visit&quot; target=&quot;_blank&quot; href=&quot;/pagekit/index.php/&quot; title=&quot;Visit Site&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class=&quot;tm-icon-logout&quot; href=&quot;/pagekit/index.php/user/logout?redirect=admin/login&quot; title=&quot;Logout&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;uk-margin-small-left&quot;&gt;&lt;a href=&quot;/pagekit/index.php/admin/user/edit?id=1&quot; title=&quot;Profile&quot;&gt;&lt;img class=&quot;uk-border-circle uk-margin-small-right&quot; height=&quot;32&quot; width=&quot;32&quot; title=&quot;admin&quot; src=&quot;data:image/png;base64,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&quot;&gt; &lt;span&gt;admin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;nav class=&quot;uk-navbar tm-navbar uk-hidden-small&quot;&gt;
+                    &lt;ul class=&quot;uk-navbar-nav&quot;&gt;
+                        &lt;li&gt;
+                            &lt;a href=&quot;/pagekit/index.php/admin/user&quot;&gt;List&lt;/a&gt;
+                        &lt;/li&gt;&lt;li&gt;
+                            &lt;a href=&quot;/pagekit/index.php/admin/user/permissions&quot;&gt;Permissions&lt;/a&gt;
+                        &lt;/li&gt;&lt;li class=&quot;uk-active&quot;&gt;
+                            &lt;a href=&quot;/pagekit/index.php/admin/user/roles&quot;&gt;Roles&lt;/a&gt;
+                        &lt;/li&gt;&lt;li&gt;
+                            &lt;a href=&quot;/pagekit/index.php/admin/user/settings&quot;&gt;Settings&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+
+                &lt;div class=&quot;tm-headerbar uk-flex uk-flex-space-between uk-flex-middle uk-visible-small&quot;&gt;
+                    &lt;a class=&quot;tm-icon-menu&quot; href=&quot;#offcanvas&quot; data-uk-offcanvas=&quot;&quot;&gt;&lt;/a&gt;
+
+                    &lt;h1 class=&quot;tm-heading uk-h3&quot;&gt;Users&lt;/h1&gt;
+
+                    &lt;a href=&quot;#offcanvas-flip&quot; data-uk-offcanvas=&quot;&quot;&gt;
+                        &lt;img class=&quot;uk-border-circle&quot; height=&quot;32&quot; width=&quot;32&quot; alt=&quot;admin&quot; src=&quot;data:image/png;base64,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&quot;&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/header&gt;
+
+        &lt;main class=&quot;tm-main uk-container uk-container-center&quot;&gt;
+            
+&lt;div id=&quot;roles&quot; class=&quot;uk-form&quot;&gt;
+
+    &lt;div class=&quot;uk-grid pk-grid-large&quot; data-uk-grid-margin=&quot;&quot;&gt;
+        &lt;div class=&quot;pk-width-sidebar uk-row-first&quot;&gt;
+
+            &lt;div class=&quot;uk-panel&quot;&gt;
+
+                &lt;ul class=&quot;uk-sortable uk-nav uk-nav-side&quot; data-uk-sortable=&quot;{dragCustomClass:'pk-sortable-dragged-list'}&quot;&gt;
+                    &lt;li class=&quot;uk-visible-hover uk-active&quot;&gt;
+                        
+                        &lt;a&gt;Anonymous&lt;/a&gt;
+                    &lt;/li&gt;&lt;li class=&quot;uk-visible-hover&quot;&gt;
+                        
+                        &lt;a&gt;Authenticated&lt;/a&gt;
+                    &lt;/li&gt;&lt;li class=&quot;uk-visible-hover&quot;&gt;
+                        
+                        &lt;a&gt;Administrator&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+
+                &lt;p&gt;
+                    &lt;a class=&quot;uk-button&quot;&gt;Add Role&lt;/a&gt;
+                &lt;/p&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+        &lt;div class=&quot;pk-width-content&quot;&gt;
+
+            &lt;h2&gt;Anonymous&lt;/h2&gt;
+
+            &lt;div class=&quot;uk-overflow-container uk-margin-large&quot;&gt;
+                &lt;table class=&quot;uk-table uk-table-hover uk-table-middle&quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th class=&quot;pk-table-min-width-200&quot;&gt;installer&lt;/th&gt;
+                            &lt;th class=&quot;pk-table-width-minimum&quot;&gt;&lt;/th&gt;
+                            &lt;th class=&quot;pk-table-width-minimum&quot;&gt;&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;pk-table-text-break&quot;&gt;
+                                &lt;span data-uk-tooltip=&quot;{pos:'top-left'}&quot; title=&quot;Manage extensions and themes&quot;&gt;Manage extensions and themes&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                
+                            &lt;/td&gt;
+                            &lt;td class=&quot;uk-text-center&quot;&gt;
+
+                                &lt;span class=&quot;uk-position-relative&quot; style=&quot;display: none;&quot;&gt;
+                                    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
+                                    &lt;span class=&quot;uk-position-cover&quot;&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+
+                                &lt;input type=&quot;checkbox&quot; value=&quot;system: manage packages&quot;&gt;
+
+                            &lt;/td&gt;
+                        &lt;/tr&gt;&lt;tr class=&quot;uk-visible-hover-inline&quot;&gt;
+                            &lt;td class=&quot;pk-table-text-break&quot;&gt;
+                                &lt;span data-uk-tooltip=&quot;{pos:'top-left'}&quot;&gt;Apply system updates&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                &lt;i class=&quot;pk-icon-warning uk-invisible&quot; data-uk-tooltip=&quot;&quot; title=&quot;Grant this permission to trusted roles only to avoid security implications.&quot;&gt;&lt;/i&gt;
+                            &lt;/td&gt;
+                            &lt;td class=&quot;uk-text-center&quot;&gt;
+
+                                &lt;span class=&quot;uk-position-relative&quot; style=&quot;display: none;&quot;&gt;
+                                    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
+                                    &lt;span class=&quot;uk-position-cover&quot;&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+
+                                &lt;input type=&quot;checkbox&quot; value=&quot;system: software updates&quot;&gt;
+
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;&lt;div class=&quot;uk-overflow-container uk-margin-large&quot;&gt;
+                &lt;table class=&quot;uk-table uk-table-hover uk-table-middle&quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th class=&quot;pk-table-min-width-200&quot;&gt;system/widget&lt;/th&gt;
+                            &lt;th class=&quot;pk-table-width-minimum&quot;&gt;&lt;/th&gt;
+                            &lt;th class=&quot;pk-table-width-minimum&quot;&gt;&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;pk-table-text-break&quot;&gt;
+                                &lt;span data-uk-tooltip=&quot;{pos:'top-left'}&quot;&gt;Manage widgets&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                
+                            &lt;/td&gt;
+                            &lt;td class=&quot;uk-text-center&quot;&gt;
+
+                                &lt;span class=&quot;uk-position-relative&quot; style=&quot;display: none;&quot;&gt;
+                                    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
+                                    &lt;span class=&quot;uk-position-cover&quot;&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+
+                                &lt;input type=&quot;checkbox&quot; value=&quot;system: manage widgets&quot;&gt;
+
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;&lt;div class=&quot;uk-overflow-container uk-margin-large&quot;&gt;
+                &lt;table class=&quot;uk-table uk-table-hover uk-table-middle&quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th class=&quot;pk-table-min-width-200&quot;&gt;system/finder&lt;/th&gt;
+                            &lt;th class=&quot;pk-table-width-minimum&quot;&gt;&lt;/th&gt;
+                            &lt;th class=&quot;pk-table-width-minimum&quot;&gt;&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr class=&quot;uk-visible-hover-inline&quot;&gt;
+                            &lt;td class=&quot;pk-table-text-break&quot;&gt;
+                                &lt;span data-uk-tooltip=&quot;{pos:'top-left'}&quot;&gt;Manage storage&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                &lt;i class=&quot;pk-icon-warning uk-invisible&quot; data-uk-tooltip=&quot;&quot; title=&quot;Grant this permission to trusted roles only to avoid security implications.&quot;&gt;&lt;/i&gt;
+                            &lt;/td&gt;
+                            &lt;td class=&quot;uk-text-center&quot;&gt;
+
+                                &lt;span class=&quot;uk-position-relative&quot; style=&quot;display: none;&quot;&gt;
+                                    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
+                                    &lt;span class=&quot;uk-position-cover&quot;&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+
+                                &lt;input type=&quot;checkbox&quot; value=&quot;system: manage storage&quot;&gt;
+
+                            &lt;/td&gt;
+                        &lt;/tr&gt;&lt;tr&gt;
+                            &lt;td class=&quot;pk-table-text-break&quot;&gt;
+                                &lt;span data-uk-tooltip=&quot;{pos:'top-left'}&quot;&gt;Manage storage (Read only)&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                
+                            &lt;/td&gt;
+                            &lt;td class=&quot;uk-text-center&quot;&gt;
+
+                                &lt;span class=&quot;uk-position-relative&quot; style=&quot;display: none;&quot;&gt;
+                                    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
+                                    &lt;span class=&quot;uk-position-cover&quot;&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+
+                                &lt;input type=&quot;checkbox&quot; value=&quot;system: manage storage read only&quot;&gt;
+
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;&lt;div class=&quot;uk-overflow-container uk-margin-large&quot;&gt;
+                &lt;table class=&quot;uk-table uk-table-hover uk-table-middle&quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th class=&quot;pk-table-min-width-200&quot;&gt;system/settings&lt;/th&gt;
+                            &lt;th class=&quot;pk-table-width-minimum&quot;&gt;&lt;/th&gt;
+                            &lt;th class=&quot;pk-table-width-minimum&quot;&gt;&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr class=&quot;uk-visible-hover-inline&quot;&gt;
+                            &lt;td class=&quot;pk-table-text-break&quot;&gt;
+                                &lt;span data-uk-tooltip=&quot;{pos:'top-left'}&quot;&gt;Access system settings&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                &lt;i class=&quot;pk-icon-warning uk-invisible&quot; data-uk-tooltip=&quot;&quot; title=&quot;Grant this permission to trusted roles only to avoid security implications.&quot;&gt;&lt;/i&gt;
+                            &lt;/td&gt;
+                            &lt;td class=&quot;uk-text-center&quot;&gt;
+
+                                &lt;span class=&quot;uk-position-relative&quot; style=&quot;display: none;&quot;&gt;
+                                    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
+                                    &lt;span class=&quot;uk-position-cover&quot;&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+
+                                &lt;input type=&quot;checkbox&quot; value=&quot;system: access settings&quot;&gt;
+
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;&lt;div class=&quot;uk-overflow-container uk-margin-large&quot;&gt;
+                &lt;table class=&quot;uk-table uk-table-hover uk-table-middle&quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th class=&quot;pk-table-min-width-200&quot;&gt;system/site&lt;/th&gt;
+                            &lt;th class=&quot;pk-table-width-minimum&quot;&gt;&lt;/th&gt;
+                            &lt;th class=&quot;pk-table-width-minimum&quot;&gt;&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td class=&quot;pk-table-text-break&quot;&gt;
+                                &lt;span data-uk-tooltip=&quot;{pos:'top-left'}&quot;&gt;Manage site&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                
+                            &lt;/td&gt;
+                            &lt;td class=&quot;uk-text-center&quot;&gt;
+
+                                &lt;span class=&quot;uk-position-relative&quot; style=&quot;display: none;&quot;&gt;
+                                    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
+                                    &lt;span class=&quot;uk-position-cover&quot;&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+
+                                &lt;input type=&quot;checkbox&quot; value=&quot;site: manage site&quot;&gt;
+
+                            &lt;/td&gt;
+                        &lt;/tr&gt;&lt;tr&gt;
+                            &lt;td class=&quot;pk-table-text-break&quot;&gt;
+                                &lt;span data-uk-tooltip=&quot;{pos:'top-left'}&quot;&gt;Use the site in maintenance mode&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                
+                            &lt;/td&gt;
+                            &lt;td class=&quot;uk-text-center&quot;&gt;
+
+                                &lt;span class=&quot;uk-position-relative&quot; style=&quot;display: none;&quot;&gt;
+                                    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
+                                    &lt;span class=&quot;uk-position-cover&quot;&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+
+                                &lt;input type=&quot;checkbox&quot; value=&quot;site: maintenance access&quot;&gt;
+
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;&lt;div class=&quot;uk-overflow-container uk-margin-large&quot;&gt;
+                &lt;table class=&quot;uk-table uk-table-hover uk-table-middle&quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th class=&quot;pk-table-min-width-200&quot;&gt;system/user&lt;/th&gt;
+                            &lt;th class=&quot;pk-table-width-minimum&quot;&gt;&lt;/th&gt;
+                            &lt;th class=&quot;pk-table-width-minimum&quot;&gt;&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr class=&quot;uk-visible-hover-inline&quot;&gt;
+                            &lt;td class=&quot;pk-table-text-break&quot;&gt;
+                                &lt;span data-uk-tooltip=&quot;{pos:'top-left'}&quot;&gt;Manage users&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                &lt;i class=&quot;pk-icon-warning uk-invisible&quot; data-uk-tooltip=&quot;&quot; title=&quot;Grant this permission to trusted roles only to avoid security implications.&quot;&gt;&lt;/i&gt;
+                            &lt;/td&gt;
+                            &lt;td class=&quot;uk-text-center&quot;&gt;
+
+                                &lt;span class=&quot;uk-position-relative&quot; style=&quot;display: none;&quot;&gt;
+                                    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
+                                    &lt;span class=&quot;uk-position-cover&quot;&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+
+                                &lt;input type=&quot;checkbox&quot; value=&quot;user: manage users&quot;&gt;
+
+                            &lt;/td&gt;
+                        &lt;/tr&gt;&lt;tr class=&quot;uk-visible-hover-inline&quot;&gt;
+                            &lt;td class=&quot;pk-table-text-break&quot;&gt;
+                                &lt;span data-uk-tooltip=&quot;{pos:'top-left'}&quot;&gt;Manage user permissions&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                &lt;i class=&quot;pk-icon-warning uk-invisible&quot; data-uk-tooltip=&quot;&quot; title=&quot;Grant this permission to trusted roles only to avoid security implications.&quot;&gt;&lt;/i&gt;
+                            &lt;/td&gt;
+                            &lt;td class=&quot;uk-text-center&quot;&gt;
+
+                                &lt;span class=&quot;uk-position-relative&quot; style=&quot;display: none;&quot;&gt;
+                                    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
+                                    &lt;span class=&quot;uk-position-cover&quot;&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+
+                                &lt;input type=&quot;checkbox&quot; value=&quot;user: manage user permissions&quot;&gt;
+
+                            &lt;/td&gt;
+                        &lt;/tr&gt;&lt;tr class=&quot;uk-visible-hover-inline&quot;&gt;
+                            &lt;td class=&quot;pk-table-text-break&quot;&gt;
+                                &lt;span data-uk-tooltip=&quot;{pos:'top-left'}&quot; title=&quot;Allows to access the admin area and to use the site in maintenance mode&quot;&gt;Access admin area&lt;/span&gt;
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                &lt;i class=&quot;pk-icon-warning uk-invisible&quot; data-uk-tooltip=&quot;&quot; title=&quot;Grant this permission to trusted roles only to avoid security implications.&quot;&gt;&lt;/i&gt;
+                            &lt;/td&gt;
+                            &lt;td class=&quot;uk-text-center&quot;&gt;
+
+                                &lt;span class=&quot;uk-position-relative&quot; style=&quot;display: none;&quot;&gt;
+                                    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
+                                    &lt;span class=&quot;uk-position-cover&quot;&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+
+                                &lt;input type=&quot;checkbox&quot; value=&quot;system: access admin area&quot;&gt;
+
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    
+
+&lt;/div&gt;
+        &lt;/main&gt;
+
+        &lt;div class=&quot;uk-hidden&quot;&gt;&lt;div class=&quot;pk-system-messages&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+
+        &lt;div id=&quot;offcanvas&quot; class=&quot;uk-offcanvas&quot;&gt;
+            &lt;div class=&quot;uk-offcanvas-bar&quot;&gt;
+
+                &lt;ul class=&quot;uk-nav uk-nav-offcanvas&quot;&gt;
+                    &lt;li class=&quot;uk-nav-header&quot;&gt;Users&lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/user&quot;&gt;List&lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/user/permissions&quot;&gt;Permissions&lt;/a&gt;
+                    &lt;/li&gt;&lt;li class=&quot;uk-active&quot;&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/user/roles&quot;&gt;Roles&lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/user/settings&quot;&gt;Settings&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;uk-nav-divider&quot;&gt;&lt;/li&gt;
+                    &lt;li class=&quot;uk-nav-header&quot;&gt;Extensions&lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/dashboard&quot;&gt;
+                            &lt;img class=&quot;uk-margin-small-right&quot; width=&quot;34&quot; height=&quot;34&quot; alt=&quot;Dashboard&quot; src=&quot;/pagekit/app/system/modules/dashboard/assets/images/icon-dashboard.svg&quot;&gt; Dashboard
+                        &lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/site/page&quot;&gt;
+                            &lt;img class=&quot;uk-margin-small-right&quot; width=&quot;34&quot; height=&quot;34&quot; alt=&quot;Site&quot; src=&quot;/pagekit/app/system/modules/site/assets/images/icon-site.svg&quot;&gt; Site
+                        &lt;/a&gt;
+                    &lt;/li&gt;&lt;li class=&quot;uk-active&quot;&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/user&quot;&gt;
+                            &lt;img class=&quot;uk-margin-small-right&quot; width=&quot;34&quot; height=&quot;34&quot; alt=&quot;Users&quot; src=&quot;/pagekit/app/system/modules/user/assets/images/icon-users.svg&quot;&gt; Users
+                        &lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/system/settings&quot;&gt;
+                            &lt;img class=&quot;uk-margin-small-right&quot; width=&quot;34&quot; height=&quot;34&quot; alt=&quot;System&quot; src=&quot;/pagekit/app/system/modules/settings/assets/images/icon-settings.svg&quot;&gt; System
+                        &lt;/a&gt;
+                    &lt;/li&gt;&lt;li&gt;
+                        &lt;a href=&quot;/pagekit/index.php/admin/system/marketplace/extensions&quot;&gt;
+                            &lt;img class=&quot;uk-margin-small-right&quot; width=&quot;34&quot; height=&quot;34&quot; alt=&quot;Marketplace&quot; src=&quot;/pagekit/app/installer/assets/images/icon-marketplace.svg&quot;&gt; Marketplace
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div id=&quot;offcanvas-flip&quot; class=&quot;uk-offcanvas&quot;&gt;
+            &lt;div class=&quot;uk-offcanvas-bar uk-offcanvas-bar-flip&quot;&gt;
+
+                &lt;ul class=&quot;uk-nav uk-nav-offcanvas&quot;&gt;
+                    &lt;li class=&quot;uk-nav-header&quot;&gt;admin&lt;/li&gt;
+                    &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;/pagekit/index.php/&quot;&gt;Visit Site&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;/pagekit/index.php/admin/user/edit?id=1&quot;&gt;Settings&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;/pagekit/index.php/user/logout?redirect=admin/login&quot;&gt;Logout&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    
+
+&lt;div class=&quot;uk-modal&quot; aria-hidden=&quot;false&quot;&gt;
+    &lt;div class=&quot;uk-modal-dialog&quot;&gt;
+        
+    &lt;/div&gt;
+&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[2]/A[1]</td>
+							<td><a href="state46.html">state46</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/HEADER[1]/DIV[1]/DIV[2]/A[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/P[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[8]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[9]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[10]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[11]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/UL[1]/LI[12]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/UL[1]/LI[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/DIV[1]/UL[1]/LI[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

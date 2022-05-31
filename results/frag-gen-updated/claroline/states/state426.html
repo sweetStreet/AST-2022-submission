@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state426</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&file=textzone_right.inc.html'>http://localhost:3000/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&file=textzone_right.inc.html</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>18</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state63</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>48.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>426</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state426.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 236px; width: 122px; height: 23px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 258px; width: 122px; height: 21px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 278px; width: 122px; height: 21px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 297px; width: 122px; height: 24px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 320px; width: 122px; height: 21px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[6]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 339px; width: 122px; height: 24px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[7]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 362px; width: 122px; height: 21px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[8]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 382px; width: 122px; height: 21px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[9]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 401px; width: 122px; height: 22px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[10]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 421px; width: 122px; height: 22px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[11]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 441px; width: 122px; height: 22px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[12]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 461px; width: 122px; height: 22px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[13]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 481px; width: 122px; height: 24px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[14]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 504px; width: 122px; height: 21px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[15]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 524px; width: 122px; height: 21px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[16]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 543px; width: 122px; height: 22px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[17]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 563px; width: 122px; height: 22px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[18]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 17px; top: 583px; width: 122px; height: 22px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;
+&lt;title&gt;Edit text zones - Claroline&lt;/title&gt;
+&lt;meta http-equiv=&quot;Content-Script-Type&quot; content=&quot;text/javascript&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/HTML; charset=iso-8859-1&quot;&gt;
+&lt;meta name=&quot;generator&quot; content=&quot;Claroline 1.11.10 - http://claroline.net&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/claroline11110/web/css/classic/main.css?1337668864&quot; media=&quot;screen, projection, tv&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/claroline11110/web/css/print.css?1301589034&quot; media=&quot;print&quot;&gt;
+
+&lt;link rel=&quot;top&quot; href=&quot;/index.php&quot; title=&quot;&quot;&gt;
+&lt;link href=&quot;http://www.claroline.net/documentation.htm&quot; rel=&quot;Help&quot;&gt;
+&lt;link href=&quot;/claroline11110/CREDITS.txt&quot; rel=&quot;Author&quot;&gt;
+&lt;link href=&quot;http://www.claroline.net&quot; rel=&quot;Copyright&quot;&gt;
+&lt;link href=&quot;/claroline11110/claroline/../favicon.ico&quot; rel=&quot;shortcut icon&quot;&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    document.cookie=&quot;javascriptEnabled=true; path=/claroline11110&quot;;
+    function claro_session_loss_countdown(sessionLifeTime){
+    var chrono = setTimeout('claro_warn_of_session_loss()', sessionLifeTime * 1000);
+}
+
+function claro_warn_of_session_loss() {
+    alert('WARNING ! You have just lost your session on the server.\nCopy any text you are currently writing and paste it outside the browser');
+}
+&lt;/script&gt;
+
+&lt;script src=&quot;/claroline11110/web/js/jquery.js?1374567070&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/jquery.qtip.js?1371735614&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/claroline.js?1368605938&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/claroline.ui.js?1376037408&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/tooltitle.js?1311692694&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var mimeTexURL = &quot;&quot;
+&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+var __ = (function(){
+
+    var translation = {
+    
+
+    };
+
+    return function(string) {
+        return translation[string] || string;
+    };
+
+})();
+&lt;/script&gt;
+            
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;http://localhost:3000/claroline11110/claroline/editor/tiny_mce/tiny_mce/themes/advanced/skins/default/ui.css&quot;&gt;&lt;/head&gt;
+
+&lt;body dir=&quot;ltr&quot; onload=&quot;claro_session_loss_countdown(1440);&quot; style=&quot;&quot;&gt;
+&lt;!-- $Id: banner.tpl.php 13151 2011-05-11 12:09:47Z abourguignon $ --&gt;
+
+&lt;!-- claroPage --&gt;
+&lt;div id=&quot;claroPage&quot;&gt;
+
+&lt;!-- Banner --&gt;
+&lt;div id=&quot;topBanner&quot;&gt;
+
+&lt;!-- Platform Banner --&gt;
+&lt;div id=&quot;platformBanner&quot;&gt;
+    &lt;div id=&quot;campusBannerLeft&quot;&gt;
+        &lt;span id=&quot;siteName&quot;&gt;
+            &lt;a href=&quot;/claroline11110/index.php&quot; target=&quot;_top&quot;&gt;
+                        Claroline                        &lt;/a&gt;
+        &lt;/span&gt;
+        
+        
+&lt;!-- campusBannerLeft --&gt;
+
+&lt;!-- End of campusBannerLeft --&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;campusBannerRight&quot;&gt;
+        &lt;span id=&quot;institution&quot;&gt;
+                        
+                                                
+                    &lt;/span&gt;
+        
+        
+&lt;!-- campusBannerRight --&gt;
+
+&lt;!-- End of campusBannerRight --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Platform Banner --&gt;
+
+&lt;!-- User Banner --&gt;
+&lt;div id=&quot;userBanner&quot;&gt;
+    &lt;div id=&quot;userBannerLeft&quot;&gt;
+        &lt;ul class=&quot;menu&quot;&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/desktop/index.php&quot; target=&quot;_top&quot;&gt;My desktop&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/messaging&quot; target=&quot;_top&quot;&gt;My messages&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/admin/&quot; target=&quot;_top&quot;&gt;Platform administration&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        
+&lt;!-- userBannerLeft --&gt;
+
+&lt;!-- End of userBannerLeft --&gt;
+        &lt;/ul&gt;
+        
+    &lt;/div&gt;
+    
+    &lt;div id=&quot;userBannerRight&quot;&gt;
+        &lt;ul class=&quot;menu&quot;&gt;
+            &lt;li class=&quot;userName&quot;&gt;
+                John Doe            &lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/auth/profile.php&quot; target=&quot;_top&quot;&gt;Manage my account&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/index.php?logout=true&quot; target=&quot;_top&quot;&gt;Logout&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        
+&lt;!-- userBannerRight --&gt;
+
+&lt;!-- End of userBannerRight --&gt;
+        &lt;/ul&gt;
+        
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- BreadcrumbLine  --&gt;
+&lt;div id=&quot;breadcrumbLine&quot;&gt;
+    &lt;hr&gt;
+    &lt;div class=&quot;breadcrumbTrails&quot;&gt;
+        &lt;ul class=&quot;breadCrumbs&quot;&gt;
+&lt;li class=&quot;breadCrumbsNode firstBreadCrumbsNode&quot;&gt;&lt;a href=&quot;/claroline11110/index.php&quot; target=&quot;_top&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/home.png?1232376376&quot; alt=&quot;home&quot;&gt;&amp;nbsp;Claroline&lt;/a&gt;&amp;nbsp;&amp;gt;&amp;nbsp;&lt;/li&gt;
+&lt;li class=&quot;breadCrumbsNode&quot;&gt;&lt;a href=&quot;/claroline11110/claroline/admin/&quot; target=&quot;_top&quot;&gt;Administration&lt;/a&gt;&amp;nbsp;&amp;gt;&amp;nbsp;&lt;/li&gt;
+&lt;li class=&quot;breadCrumbsNode lastBreadCrumbsNode&quot;&gt;&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php&quot; target=&quot;_top&quot;&gt;Edit text zones&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    &lt;/div&gt;
+    
+    &lt;div id=&quot;toolViewOption&quot;&gt;
+                            &lt;/div&gt;
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+    &lt;hr&gt;
+&lt;/div&gt;
+&lt;!-- End of BreadcrumbLine  --&gt;
+
+&lt;/div&gt;
+&lt;!-- End of topBanner --&gt;
+&lt;!-- $Id: body.tpl.php 14332 2012-11-23 10:08:10Z zefredz $ --&gt;
+
+
+&lt;!-- - - - - - - - - - - Claroline Body - - - - - - - - - --&gt;
+&lt;div id=&quot;claroBody&quot;&gt;
+    
+    
+                
+
+&lt;!-- Page content --&gt;
+&lt;div class=&quot;toolTitleBlock&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;h1 class=&quot;toolTitle mainTitle&quot;&gt;Edit text zones&lt;/h1&gt;
+&lt;/td&gt;&lt;td&gt;&lt;ul class=&quot;commandList&quot;&gt;
+&lt;/ul&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;span class=&quot;toolTitle subTitle&quot;&gt;Edit : Text displayed on the right column&lt;/span&gt;
+&lt;/div&gt;
+&lt;h4&gt;textzone_right.inc.html&lt;/h4&gt;&lt;form action=&quot;/claroline11110/claroline/admin/managing/editFile.php&quot; method=&quot;post&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;file&quot; value=&quot;textzone_right.inc.html&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;cmd&quot; value=&quot;exEdit&quot;&gt;
+
+&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot; src=&quot;/claroline11110/claroline/editor/tiny_mce/tiny_mce/tiny_mce.js&quot;&gt;&lt;/script&gt;
+&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;
+var text_dir = &quot;ltr&quot;;
+&lt;/script&gt;
+
+&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot; src=&quot;/claroline11110/claroline/editor/tiny_mce/advanced_users.conf.js&quot;&gt;&lt;/script&gt;
+
+&lt;textarea id=&quot;textContent&quot; name=&quot;textContent&quot; style=&quot;width: 100%; display: none;&quot; class=&quot;advancedMCE&quot; rows=&quot;20&quot; cols=&quot;80&quot; aria-hidden=&quot;true&quot;&gt;&amp;lt;!-- content: html tiny_mce --&amp;gt;&lt;/textarea&gt;&lt;span role=&quot;application&quot; aria-labelledby=&quot;textContent_voice&quot; id=&quot;textContent_parent&quot; class=&quot;mceEditor defaultSkin&quot;&gt;&lt;span class=&quot;mceVoiceLabel&quot; style=&quot;display:none;&quot; id=&quot;textContent_voice&quot;&gt;Rich Text Area&lt;/span&gt;&lt;table role=&quot;presentation&quot; id=&quot;textContent_tbl&quot; class=&quot;mceLayout&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; style=&quot;width: 100%; height: 246px;&quot;&gt;&lt;tbody&gt;&lt;tr role=&quot;presentation&quot; class=&quot;mceFirst&quot;&gt;&lt;td class=&quot;mceToolbar mceLeft mceFirst mceLast&quot; role=&quot;toolbar&quot;&gt;&lt;div id=&quot;textContent_toolbargroup&quot; role=&quot;group&quot; aria-labelledby=&quot;textContent_toolbargroup_voice&quot; tabindex=&quot;-1&quot;&gt;&lt;span role=&quot;application&quot;&gt;&lt;span id=&quot;textContent_toolbargroup_voice&quot; class=&quot;mceVoiceLabel&quot; style=&quot;display:none;&quot;&gt;Toolbar&lt;/span&gt;&lt;table id=&quot;textContent_toolbar1&quot; class=&quot;mceToolbar mceToolbarRow1 Enabled&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; align=&quot;&quot; role=&quot;presentation&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;mceToolbarStart mceToolbarStartListBox mceFirst&quot;&gt;&lt;span&gt;&lt;!-- IE --&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span role=&quot;listbox&quot; aria-haspopup=&quot;true&quot; aria-labelledby=&quot;textContent_fontselect_voiceDesc&quot; aria-describedby=&quot;textContent_fontselect_voiceDesc&quot;&gt;&lt;table role=&quot;presentation&quot; tabindex=&quot;-1&quot; id=&quot;textContent_fontselect&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;mceListBox mceListBoxEnabled mce_fontselect mceListBoxSelected&quot; aria-valuenow=&quot;Font Family&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;mceFirst&quot;&gt;&lt;span id=&quot;textContent_fontselect_voiceDesc&quot; class=&quot;voiceLabel&quot; style=&quot;display:none;&quot;&gt;Font Family&lt;/span&gt;&lt;a id=&quot;textContent_fontselect_text&quot; tabindex=&quot;-1&quot; href=&quot;javascript:;&quot; class=&quot;mceText mceTitle&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot;&gt;Font Family&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;mceLast&quot;&gt;&lt;a id=&quot;textContent_fontselect_open&quot; tabindex=&quot;-1&quot; href=&quot;javascript:;&quot; class=&quot;mceOpen&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot;&gt;&lt;span&gt;&lt;span style=&quot;display:none;&quot; class=&quot;mceIconOnly&quot; aria-hidden=&quot;true&quot;&gt;▼&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span role=&quot;listbox&quot; aria-haspopup=&quot;true&quot; aria-labelledby=&quot;textContent_fontsizeselect_voiceDesc&quot; aria-describedby=&quot;textContent_fontsizeselect_voiceDesc&quot;&gt;&lt;table role=&quot;presentation&quot; tabindex=&quot;-1&quot; id=&quot;textContent_fontsizeselect&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;mceListBox mceListBoxEnabled mce_fontsizeselect&quot; aria-valuenow=&quot;Font Size&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;mceFirst&quot;&gt;&lt;span id=&quot;textContent_fontsizeselect_voiceDesc&quot; class=&quot;voiceLabel&quot; style=&quot;display:none;&quot;&gt;Font Size&lt;/span&gt;&lt;a id=&quot;textContent_fontsizeselect_text&quot; tabindex=&quot;-1&quot; href=&quot;javascript:;&quot; class=&quot;mceText mceTitle&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot;&gt;Font Size&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;mceLast&quot;&gt;&lt;a id=&quot;textContent_fontsizeselect_open&quot; tabindex=&quot;-1&quot; href=&quot;javascript:;&quot; class=&quot;mceOpen&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot;&gt;&lt;span&gt;&lt;span style=&quot;display:none;&quot; class=&quot;mceIconOnly&quot; aria-hidden=&quot;true&quot;&gt;▼&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span role=&quot;listbox&quot; aria-haspopup=&quot;true&quot; aria-labelledby=&quot;textContent_formatselect_voiceDesc&quot; aria-describedby=&quot;textContent_formatselect_voiceDesc&quot;&gt;&lt;table role=&quot;presentation&quot; tabindex=&quot;-1&quot; id=&quot;textContent_formatselect&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;mceListBox mceListBoxEnabled mce_formatselect&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;mceFirst&quot;&gt;&lt;span id=&quot;textContent_formatselect_voiceDesc&quot; class=&quot;voiceLabel&quot; style=&quot;display:none;&quot;&gt;Format&lt;/span&gt;&lt;a id=&quot;textContent_formatselect_text&quot; tabindex=&quot;-1&quot; href=&quot;javascript:;&quot; class=&quot;mceText&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot;&gt;Format&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;mceLast&quot;&gt;&lt;a id=&quot;textContent_formatselect_open&quot; tabindex=&quot;-1&quot; href=&quot;javascript:;&quot; class=&quot;mceOpen&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot;&gt;&lt;span&gt;&lt;span style=&quot;display:none;&quot; class=&quot;mceIconOnly&quot; aria-hidden=&quot;true&quot;&gt;▼&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;mceToolbarStart&quot;&gt;&lt;span&gt;&lt;!-- IE --&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_bold&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_bold&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_bold_voice&quot; title=&quot;Bold (Ctrl+B)&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_bold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_bold_voice&quot;&gt;Bold (Ctrl+B)&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_italic&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_italic&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_italic_voice&quot; title=&quot;Italic (Ctrl+I)&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_italic&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_italic_voice&quot;&gt;Italic (Ctrl+I)&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_underline&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_underline&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_underline_voice&quot; title=&quot;Underline (Ctrl+U)&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_underline&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_underline_voice&quot;&gt;Underline (Ctrl+U)&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_strikethrough&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_strikethrough&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_strikethrough_voice&quot; title=&quot;Strikethrough&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_strikethrough&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_strikethrough_voice&quot;&gt;Strikethrough&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span class=&quot;mceSeparator&quot; role=&quot;separator&quot; aria-orientation=&quot;vertical&quot; tabindex=&quot;-1&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_sub&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_sub&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_sub_voice&quot; title=&quot;Subscript&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_sub&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_sub_voice&quot;&gt;Subscript&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_sup&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_sup&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_sup_voice&quot; title=&quot;Superscript&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_sup&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_sup_voice&quot;&gt;Superscript&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span class=&quot;mceSeparator&quot; role=&quot;separator&quot; aria-orientation=&quot;vertical&quot; tabindex=&quot;-1&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_undo&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_undo mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_undo_voice&quot; title=&quot;Undo (Ctrl+Z)&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_undo&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_undo_voice&quot;&gt;Undo (Ctrl+Z)&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_redo&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_redo mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_redo_voice&quot; title=&quot;Redo (Ctrl+Y)&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_redo&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_redo_voice&quot;&gt;Redo (Ctrl+Y)&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;mceToolbarEnd mceToolbarEndButton mceLast&quot;&gt;&lt;span&gt;&lt;!-- IE --&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table id=&quot;textContent_toolbar2&quot; class=&quot;mceToolbar mceToolbarRow2 Enabled&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; align=&quot;&quot; role=&quot;presentation&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;mceToolbarStart mceToolbarStartButton mceFirst&quot;&gt;&lt;span&gt;&lt;!-- IE --&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_cut&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_cut&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_cut_voice&quot; title=&quot;Cut (Ctrl+X)&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_cut&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_cut_voice&quot;&gt;Cut (Ctrl+X)&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_copy&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_copy&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_copy_voice&quot; title=&quot;Copy (Ctrl+C)&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_copy&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_copy_voice&quot;&gt;Copy (Ctrl+C)&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_paste&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_paste&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_paste_voice&quot; title=&quot;Paste (Ctrl+V)&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_paste&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_paste_voice&quot;&gt;Paste (Ctrl+V)&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_pasteword&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_pasteword&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_pasteword_voice&quot; title=&quot;Paste from Word&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_pasteword&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_pasteword_voice&quot;&gt;Paste from Word&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span class=&quot;mceSeparator&quot; role=&quot;separator&quot; aria-orientation=&quot;vertical&quot; tabindex=&quot;-1&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_justifyleft&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_justifyleft&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_justifyleft_voice&quot; title=&quot;Align Left&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_justifyleft&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_justifyleft_voice&quot;&gt;Align Left&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_justifycenter&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_justifycenter&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_justifycenter_voice&quot; title=&quot;Align Center&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_justifycenter&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_justifycenter_voice&quot;&gt;Align Center&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_justifyright&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_justifyright&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_justifyright_voice&quot; title=&quot;Align Right&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_justifyright&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_justifyright_voice&quot;&gt;Align Right&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_justifyfull&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_justifyfull&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_justifyfull_voice&quot; title=&quot;Align Full&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_justifyfull&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_justifyfull_voice&quot;&gt;Align Full&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span class=&quot;mceSeparator&quot; role=&quot;separator&quot; aria-orientation=&quot;vertical&quot; tabindex=&quot;-1&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_bullist&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_bullist&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_bullist_voice&quot; title=&quot;Insert/Remove Bulleted List&quot; tabindex=&quot;-1&quot; aria-pressed=&quot;false&quot;&gt;&lt;span class=&quot;mceIcon mce_bullist&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_bullist_voice&quot;&gt;Insert/Remove Bulleted List&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_numlist&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_numlist&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_numlist_voice&quot; title=&quot;Insert/Remove Numbered List&quot; tabindex=&quot;-1&quot; aria-pressed=&quot;false&quot;&gt;&lt;span class=&quot;mceIcon mce_numlist&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_numlist_voice&quot;&gt;Insert/Remove Numbered List&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span class=&quot;mceSeparator&quot; role=&quot;separator&quot; aria-orientation=&quot;vertical&quot; tabindex=&quot;-1&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_outdent&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_outdent mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_outdent_voice&quot; title=&quot;Decrease Indent&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_outdent&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_outdent_voice&quot;&gt;Decrease Indent&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_indent&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_indent&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_indent_voice&quot; title=&quot;Increase Indent&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_indent&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_indent_voice&quot;&gt;Increase Indent&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span class=&quot;mceSeparator&quot; role=&quot;separator&quot; aria-orientation=&quot;vertical&quot; tabindex=&quot;-1&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;div id=&quot;textContent_forecolor&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;textContent_forecolor_voice&quot; aria-haspopup=&quot;true&quot;&gt;&lt;table role=&quot;presentation&quot; class=&quot;mceSplitButton mceSplitButtonEnabled mce_forecolor&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; title=&quot;Select Text Color&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;mceFirst&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_forecolor_action&quot; tabindex=&quot;-1&quot; href=&quot;javascript:;&quot; class=&quot;mceAction mce_forecolor&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; title=&quot;Select Text Color&quot;&gt;&lt;span class=&quot;mceAction mce_forecolor&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; id=&quot;textContent_forecolor_voice&quot; style=&quot;display:none;&quot;&gt;Select Text Color&lt;/span&gt;&lt;div id=&quot;textContent_forecolor_preview&quot; class=&quot;mceColorPreview&quot; style=&quot;background-color: rgb(136, 136, 136);&quot;&gt;&lt;/div&gt;&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;mceLast&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_forecolor_open&quot; tabindex=&quot;-1&quot; href=&quot;javascript:;&quot; class=&quot;mceOpen mce_forecolor&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; title=&quot;Select Text Color&quot;&gt;&lt;span class=&quot;mceOpen mce_forecolor&quot;&gt;&lt;span style=&quot;display:none;&quot; class=&quot;mceIconOnly&quot; aria-hidden=&quot;true&quot;&gt;▼&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;div id=&quot;textContent_backcolor&quot; role=&quot;button&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;textContent_backcolor_voice&quot; aria-haspopup=&quot;true&quot;&gt;&lt;table role=&quot;presentation&quot; class=&quot;mceSplitButton mceSplitButtonEnabled mce_backcolor&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; title=&quot;Select Background Color&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;mceFirst&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_backcolor_action&quot; tabindex=&quot;-1&quot; href=&quot;javascript:;&quot; class=&quot;mceAction mce_backcolor&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; title=&quot;Select Background Color&quot;&gt;&lt;span class=&quot;mceAction mce_backcolor&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; id=&quot;textContent_backcolor_voice&quot; style=&quot;display:none;&quot;&gt;Select Background Color&lt;/span&gt;&lt;div id=&quot;textContent_backcolor_preview&quot; class=&quot;mceColorPreview&quot; style=&quot;background-color: rgb(136, 136, 136);&quot;&gt;&lt;/div&gt;&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;mceLast&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_backcolor_open&quot; tabindex=&quot;-1&quot; href=&quot;javascript:;&quot; class=&quot;mceOpen mce_backcolor&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; title=&quot;Select Background Color&quot;&gt;&lt;span class=&quot;mceOpen mce_backcolor&quot;&gt;&lt;span style=&quot;display:none;&quot; class=&quot;mceIconOnly&quot; aria-hidden=&quot;true&quot;&gt;▼&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span class=&quot;mceSeparator&quot; role=&quot;separator&quot; aria-orientation=&quot;vertical&quot; tabindex=&quot;-1&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_hr&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_hr&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_hr_voice&quot; title=&quot;Insert Horizontal Line&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_hr&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_hr_voice&quot;&gt;Insert Horizontal Line&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_link&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_link mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_link_voice&quot; title=&quot;Insert/Edit Link&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_link&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_link_voice&quot;&gt;Insert/Edit Link&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_unlink&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_unlink mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_unlink_voice&quot; title=&quot;Unlink&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_unlink&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_unlink_voice&quot;&gt;Unlink&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_claroimage&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_claroimage&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_claroimage_voice&quot; title=&quot;Insert/Edit Image&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_claroimage&quot;&gt;&lt;img class=&quot;mceIcon&quot; src=&quot;http://localhost:3000/claroline11110/claroline/editor/tiny_mce/tiny_mce/plugins/claroimage/img/icon.png&quot; alt=&quot;Insert/Edit Image&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_claroimage_voice&quot;&gt;Insert/Edit Image&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_media&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_media&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_media_voice&quot; title=&quot;Insert/Edit Embedded Media&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_media&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_media_voice&quot;&gt;Insert/Edit Embedded Media&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_dailytube&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_dailytube&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_dailytube_voice&quot; title=&quot;Insert DailyMotion or YouTube video&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_dailytube&quot;&gt;&lt;img class=&quot;mceIcon&quot; src=&quot;http://localhost:3000/claroline11110/claroline/editor/tiny_mce/tiny_mce/plugins/dailytube/img/dailytube.png&quot; alt=&quot;Insert DailyMotion or YouTube video&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_dailytube_voice&quot;&gt;Insert DailyMotion or YouTube video&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_template&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_template&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_template_voice&quot; title=&quot;Insert Predefined Template Content&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_template&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_template_voice&quot;&gt;Insert Predefined Template Content&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_code&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_code&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_code_voice&quot; title=&quot;Edit HTML Source&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_code&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_code_voice&quot;&gt;Edit HTML Source&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_texformula&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_texformula&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_texformula_voice&quot; title=&quot;LaTeX equation  editor&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_texformula&quot;&gt;&lt;img class=&quot;mceIcon&quot; src=&quot;http://localhost:3000/claroline11110/claroline/editor/tiny_mce/tiny_mce/plugins/texformula/img/latex.png&quot; alt=&quot;LaTeX equation  editor&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_texformula_voice&quot;&gt;LaTeX equation  editor&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;mceToolbarEnd mceToolbarEndButton mceLast&quot;&gt;&lt;span&gt;&lt;!-- IE --&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table id=&quot;textContent_toolbar3&quot; class=&quot;mceToolbar mceToolbarRow3 Enabled&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; align=&quot;&quot; role=&quot;presentation&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;mceToolbarStart mceToolbarStartButton mceFirst&quot;&gt;&lt;span&gt;&lt;!-- IE --&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_table&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_table&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_table_voice&quot; title=&quot;Insert/Edit Table&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_table&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_table_voice&quot;&gt;Insert/Edit Table&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span class=&quot;mceSeparator&quot; role=&quot;separator&quot; aria-orientation=&quot;vertical&quot; tabindex=&quot;-1&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_row_props&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_row_props mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_row_props_voice&quot; title=&quot;Table Row Properties&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_row_props&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_row_props_voice&quot;&gt;Table Row Properties&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_cell_props&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_cell_props mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_cell_props_voice&quot; title=&quot;Table Cell Properties&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_cell_props&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_cell_props_voice&quot;&gt;Table Cell Properties&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span class=&quot;mceSeparator&quot; role=&quot;separator&quot; aria-orientation=&quot;vertical&quot; tabindex=&quot;-1&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_row_before&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_row_before mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_row_before_voice&quot; title=&quot;Insert Row Before&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_row_before&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_row_before_voice&quot;&gt;Insert Row Before&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_row_after&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_row_after mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_row_after_voice&quot; title=&quot;Insert Row After&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_row_after&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_row_after_voice&quot;&gt;Insert Row After&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_delete_row&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_delete_row mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_delete_row_voice&quot; title=&quot;Delete Row&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_delete_row&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_delete_row_voice&quot;&gt;Delete Row&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span class=&quot;mceSeparator&quot; role=&quot;separator&quot; aria-orientation=&quot;vertical&quot; tabindex=&quot;-1&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_col_before&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_col_before mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_col_before_voice&quot; title=&quot;Insert Column Before&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_col_before&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_col_before_voice&quot;&gt;Insert Column Before&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_col_after&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_col_after mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_col_after_voice&quot; title=&quot;Insert Column After&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_col_after&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_col_after_voice&quot;&gt;Insert Column After&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_delete_col&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_delete_col mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_delete_col_voice&quot; title=&quot;Delete Column&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_delete_col&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_delete_col_voice&quot;&gt;Delete Column&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span class=&quot;mceSeparator&quot; role=&quot;separator&quot; aria-orientation=&quot;vertical&quot; tabindex=&quot;-1&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_split_cells&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_split_cells mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_split_cells_voice&quot; title=&quot;Split Merged Table Cells&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_split_cells&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_split_cells_voice&quot;&gt;Split Merged Table Cells&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_merge_cells&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_merge_cells mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_merge_cells_voice&quot; title=&quot;Merge Table Cells&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_merge_cells&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_merge_cells_voice&quot;&gt;Merge Table Cells&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span class=&quot;mceSeparator&quot; role=&quot;separator&quot; aria-orientation=&quot;vertical&quot; tabindex=&quot;-1&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;textContent_help&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_help&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;textContent_help_voice&quot; title=&quot;Help&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_help&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;textContent_help_voice&quot;&gt;Help&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;mceToolbarEnd mceToolbarEndButton mceLast&quot;&gt;&lt;span&gt;&lt;!-- IE --&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/span&gt;&lt;/div&gt;&lt;a href=&quot;#&quot; accesskey=&quot;z&quot; title=&quot;Jump to tool buttons - Alt+Q, Jump to editor - Alt-Z, Jump to element path - Alt-X&quot; onfocus=&quot;tinyMCE.getInstanceById('textContent').focus();&quot;&gt;&lt;!-- IE --&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;mceIframeContainer mceFirst mceLast&quot;&gt;&lt;iframe id=&quot;textContent_ifr&quot; src=&quot;javascript:&amp;quot;&amp;quot;&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot; title=&quot;Rich Text AreaPress ALT-F10 for toolbar. Press ALT-0 for help&quot; style=&quot;width: 100%; height: 156px; display: block;&quot; cd_frame_id_=&quot;f6c3793eb2483a6f648d52e0621c0897&quot;&gt;&lt;/iframe&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;mceLast&quot;&gt;&lt;td class=&quot;mceStatusbar mceFirst mceLast&quot;&gt;&lt;div id=&quot;textContent_path_row&quot; role=&quot;group&quot; aria-labelledby=&quot;textContent_path_voice&quot;&gt;&lt;span id=&quot;textContent_path_voice&quot;&gt;Path&lt;/span&gt;&lt;span&gt;: &lt;/span&gt;&lt;span id=&quot;textContent_path&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;a id=&quot;textContent_resize&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; class=&quot;mceResize&quot; tabindex=&quot;-1&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/span&gt;
+&lt;p&gt;
+&lt;input type=&quot;submit&quot; class=&quot;claroButton&quot; value=&quot;Ok&quot;&gt;&amp;nbsp; &lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php&quot;&gt;&lt;input type=&quot;button&quot; onclick=&quot;document.location='/claroline11110/claroline/admin/managing/editFile.php';return false&quot; value=&quot;Cancel&quot;&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/form&gt;
+&lt;p&gt;Here you can modify the content of the text zones displayed on the platform home page.&lt;br&gt;See below the files you can edit from this tool.&lt;/p&gt;
+&lt;table cellspacing=&quot;2&quot; cellpadding=&quot;2&quot; border=&quot;0&quot; class=&quot;claroTable emphaseLine&quot;&gt;
+&lt;thead&gt;&lt;tr&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Edit&lt;/th&gt;
+&lt;th&gt;Preview&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;Welcome text displayed on the homepage&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&amp;amp;file=textzone_top.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/edit.png?1232376376&quot; alt=&quot;Edit&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=exView&amp;amp;file=textzone_top.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/preview.png?1232376376&quot; alt=&quot;Preview&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Welcome text displayed to anonymous users&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&amp;amp;file=textzone_top.anonymous.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/edit.png?1232376376&quot; alt=&quot;Edit&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=exView&amp;amp;file=textzone_top.anonymous.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/preview.png?1232376376&quot; alt=&quot;Preview&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Welcome text displayed to authenticated users&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&amp;amp;file=textzone_top.authenticated.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/edit.png?1232376376&quot; alt=&quot;Edit&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=exView&amp;amp;file=textzone_top.authenticated.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/preview.png?1232376376&quot; alt=&quot;Preview&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Text displayed on the right column&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&amp;amp;file=textzone_right.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/edit.png?1232376376&quot; alt=&quot;Edit&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=exView&amp;amp;file=textzone_right.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/preview.png?1232376376&quot; alt=&quot;Preview&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Text displayed if a user tries to enrol in a locked course&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&amp;amp;file=course_subscription_locked.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/edit.png?1232376376&quot; alt=&quot;Edit&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=exView&amp;amp;file=course_subscription_locked.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/preview.png?1232376376&quot; alt=&quot;Preview&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Text displayed if a user tries to enrol in a course requiring a key&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&amp;amp;file=course_subscription_locked_by_key.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/edit.png?1232376376&quot; alt=&quot;Edit&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=exView&amp;amp;file=course_subscription_locked_by_key.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/preview.png?1232376376&quot; alt=&quot;Preview&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Agreement text displayed before the &quot;Create user account&quot; page&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&amp;amp;file=textzone_inscription.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/edit.png?1232376376&quot; alt=&quot;Edit&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=exView&amp;amp;file=textzone_inscription.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/preview.png?1232376376&quot; alt=&quot;Preview&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Text displayed on the &quot;Create user account&quot; page&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&amp;amp;file=textzone_inscription_form.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/edit.png?1232376376&quot; alt=&quot;Edit&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=exView&amp;amp;file=textzone_inscription_form.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/preview.png?1232376376&quot; alt=&quot;Preview&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Text displayed on the &quot;My user account&quot; page&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&amp;amp;file=textzone_edit_profile_form.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/edit.png?1232376376&quot; alt=&quot;Edit&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=exView&amp;amp;file=textzone_edit_profile_form.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/preview.png?1232376376&quot; alt=&quot;Preview&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Message displayed on the file upload pages&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&amp;amp;file=textzone_upload_file_disclaimer.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/edit.png?1232376376&quot; alt=&quot;Edit&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=exView&amp;amp;file=textzone_upload_file_disclaimer.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/preview.png?1232376376&quot; alt=&quot;Preview&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Message displayed in the internal messaging&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&amp;amp;file=textzone_messaging_top.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/edit.png?1232376376&quot; alt=&quot;Edit&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=exView&amp;amp;file=textzone_messaging_top.inc.html&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/preview.png?1232376376&quot; alt=&quot;Preview&quot;&gt;
+&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;br&gt;
+&lt;!-- End of Page Content --&gt;
+
+
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- - - - - - - - - - - End of Claroline Body  - - - - - - - - - - --&gt;
+
+&lt;!-- $Id: footer.tpl.php 12676 2010-10-20 14:59:33Z abourguignon $ --&gt;
+
+
+&lt;div id=&quot;campusFooter&quot;&gt;
+    &lt;hr&gt;
+    &lt;div id=&quot;campusFooterLeft&quot;&gt;
+        
+&lt;!-- campusFooterLeft --&gt;
+
+&lt;!-- End of campusFooterLeft --&gt;
+            &lt;/div&gt;
+    &lt;div id=&quot;campusFooterRight&quot;&gt;
+        
+&lt;!-- campusFooterRight --&gt;
+
+&lt;!-- End of campusFooterRight --&gt;
+        &lt;div id=&quot;platformManager&quot;&gt;Administrator for Claroline : &lt;a href=&quot;mailto:jdoe@mydomain.net?subject=[Claroline]&quot;&gt;John Doe&lt;/a&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div id=&quot;campusFooterCenter&quot;&gt;
+        
+&lt;!-- campusFooterCenter --&gt;
+
+&lt;!-- End of campusFooterCenter --&gt;
+        &lt;span class=&quot;poweredBy&quot;&gt;Powered by &lt;a href=&quot;http://www.claroline.net&quot; target=&quot;_blank&quot;&gt;Claroline&lt;/a&gt; &copy; 2001 - 2013&lt;/span&gt;    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end of claroPage --&gt;
+&lt;/div&gt;
+
+
+&lt;div role=&quot;listbox&quot; id=&quot;menu_textContent_textContent_fontselect_menu&quot; class=&quot;mceListBoxMenu mceNoIcons defaultSkin&quot; style=&quot;position: absolute; left: 19px; top: 238.719px; z-index: 200000; outline: 0px; display: block; width: 120px; height: 150px;&quot; tabindex=&quot;0&quot;&gt;&lt;div role=&quot;presentation&quot; id=&quot;menu_textContent_textContent_fontselect_menu_co&quot; class=&quot;mceMenu mceListBoxMenu mceNoIcons defaultSkin&quot; style=&quot;width: 120px; height: 150px;&quot;&gt;&lt;span class=&quot;mceMenuLine&quot;&gt;&lt;/span&gt;&lt;table role=&quot;presentation&quot; id=&quot;menu_textContent_textContent_fontselect_menu_tbl&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr id=&quot;mce_12&quot; class=&quot;mceMenuItem mceMenuItemEnabled mceFirst&quot;&gt;&lt;td class=&quot;mceMenuItemTitle&quot;&gt;&lt;a id=&quot;mce_12_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Font Family&quot;&gt;Font Family&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_13&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_13_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Andale Mono&quot; style=&quot;font-family:andale mono,times&quot;&gt;Andale Mono&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_14&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_14_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Arial&quot; style=&quot;font-family:arial,helvetica,sans-serif&quot;&gt;Arial&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_15&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_15_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Arial Black&quot; style=&quot;font-family:arial black,avant garde&quot;&gt;Arial Black&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_16&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_16_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Book Antiqua&quot; style=&quot;font-family:book antiqua,palatino&quot;&gt;Book Antiqua&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_17&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_17_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Comic Sans MS&quot; style=&quot;font-family:comic sans ms,sans-serif&quot;&gt;Comic Sans MS&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_18&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_18_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Courier New&quot; style=&quot;font-family:courier new,courier&quot;&gt;Courier New&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_19&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_19_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Georgia&quot; style=&quot;font-family:georgia,palatino&quot;&gt;Georgia&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_20&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_20_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Helvetica&quot; style=&quot;font-family:helvetica&quot;&gt;Helvetica&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_21&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_21_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Impact&quot; style=&quot;font-family:impact,chicago&quot;&gt;Impact&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_22&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_22_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Symbol&quot; style=&quot;font-family:symbol&quot;&gt;Symbol&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_23&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_23_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Tahoma&quot; style=&quot;font-family:tahoma,arial,helvetica,sans-serif&quot;&gt;Tahoma&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_24&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_24_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Terminal&quot; style=&quot;font-family:terminal,monaco&quot;&gt;Terminal&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_25&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_25_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Times New Roman&quot; style=&quot;font-family:times new roman,times&quot;&gt;Times New Roman&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_26&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_26_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Trebuchet MS&quot; style=&quot;font-family:trebuchet ms,geneva&quot;&gt;Trebuchet MS&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_27&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_27_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Verdana&quot; style=&quot;font-family:verdana,geneva&quot;&gt;Verdana&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_28&quot; class=&quot;mceMenuItem mceMenuItemEnabled&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_28_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Webdings&quot;&gt;Webdings&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr id=&quot;mce_29&quot; class=&quot;mceMenuItem mceMenuItemEnabled mceLast&quot;&gt;&lt;td&gt;&lt;a id=&quot;mce_29_aria&quot; role=&quot;option&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot; aria-checked=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceText&quot; title=&quot;Wingdings&quot;&gt;Wingdings&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[6]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[7]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[8]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[9]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[10]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[11]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[12]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[13]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[14]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[15]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[16]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[17]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[18]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

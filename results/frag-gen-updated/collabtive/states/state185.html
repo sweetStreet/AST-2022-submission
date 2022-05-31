@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state185</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/collabtive/managetags.php?action=gettag&tag=&id=0'>http://localhost:3000/collabtive/managetags.php?action=gettag&tag=&id=0</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>3</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state13</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>113.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>185</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state185.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 125px; top: 185px; width: 708px; height: 37px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 169px; top: 269px; width: 34px; height: 33px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state13.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 168px; top: 308px; width: 34px; height: 16px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state13.html'"></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;
+&lt;title&gt; @ Collabtive&lt;/title&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;templates/standard/images/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; title=&quot;Collabtive Search&quot; href=&quot;manageajax.php?action=addfx-all&quot;&gt;
+&lt;link rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;My messages&quot; href=&quot;managerss.php?action=mymsgs-rss&amp;amp;user=1&quot;&gt;
+&lt;link rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;My tasks&quot; href=&quot;managerss.php?action=rss-tasks&amp;amp;user=1&quot;&gt;
+
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+//endcolor for close element flashing
+closeEndcolor = '#377814';
+//endcolor for delete element flashing
+deleteEndcolor = '#c62424';
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/prototype.php&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/ajax.php&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/jsval.php&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/chat.js&quot;&gt;&lt;/script&gt;
+     &lt;script type=&quot;text/javascript&quot;&gt;
+        function _jsVal_Language() {
+            this.err_enter = &quot;Please enter a valid value for \&quot;%FIELDNAME%\&quot;.&quot;;
+            this.err_form = &quot;Please enter valid values for:\n\n&quot;;
+            this.err_select = &quot;Please select a valid value in \&quot;%FIELDNAME%\&quot;.&quot;;
+        }
+&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/mycalendar.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;templates/standard/css/lytebox.css&quot; type=&quot;text/css&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/lytebox.php&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;templates/standard/css/style_main.css&quot;&gt;
+
+
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;!--&lt;div id = &quot;jslog&quot; style = &quot;color:red;position:absolute;top:60%;right:5%;width:300px;border:1px solid;background-color:grey;&quot;&gt;&lt;/div&gt;--&gt;
+
+	&lt;div id=&quot;sitebody&quot;&gt;
+
+	&lt;div id=&quot;header-wrapper&quot;&gt;
+		&lt;div id=&quot;header&quot;&gt;
+			&lt;div class=&quot;header-in&quot;&gt;
+
+				&lt;div class=&quot;left&quot;&gt;
+					&lt;div class=&quot;logo&quot;&gt;
+						&lt;h1&gt;
+							&lt;a href=&quot;index.php&quot; title=&quot;Desktop&quot;&gt;&lt;img src=&quot;./templates/standard/images/logo-b.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+							&lt;span class=&quot;title&quot;&gt;Collabtive&lt;span class=&quot;subtitle&quot;&gt;/ Projectmanagement &lt;/span&gt;&lt;/span&gt;
+						&lt;/h1&gt;
+					&lt;/div&gt;
+
+				&lt;/div&gt; 
+				&lt;div class=&quot;right&quot;&gt;
+											&lt;ul id=&quot;mainmenue&quot;&gt;
+							&lt;li class=&quot;desktop&quot;&gt;&lt;a class=&quot;desktop&quot; href=&quot;index.php&quot;&gt;&lt;span&gt;Desktop&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+														&lt;li class=&quot;profil-male&quot;&gt;&lt;a class=&quot;profil&quot; href=&quot;manageuser.php?action=profile&amp;amp;id=1&quot;&gt;&lt;span&gt;My account&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+							
+							 							&lt;li class=&quot;admin&quot;&gt;&lt;a class=&quot;admin&quot; href=&quot;admin.php?action=projects&quot;&gt;&lt;span&gt;Administration&lt;/span&gt;&lt;span class=&quot;submenarrow&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+								&lt;div class=&quot;submen&quot;&gt;
+									&lt;ul&gt;
+										&lt;li class=&quot;project-settings&quot;&gt;&lt;a class=&quot;&quot; href=&quot;admin.php?action=projects&quot;&gt;&lt;span&gt;Project administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+										&lt;li class=&quot;user-settings&quot;&gt;&lt;a class=&quot;&quot; href=&quot;admin.php?action=users&quot;&gt;&lt;span&gt;User administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+										&lt;li class=&quot;system-settings&quot;&gt;&lt;a class=&quot;&quot; href=&quot;admin.php?action=system&quot;&gt;&lt;span&gt;System administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+									&lt;/ul&gt;
+								&lt;/div&gt;
+							&lt;/li&gt;
+							
+
+							&lt;li class=&quot;logout&quot;&gt;&lt;a href=&quot;manageuser.php?action=logout&quot;&gt;&lt;span&gt;Logout&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+									&lt;/div&gt; &lt;!-- Right End --&gt;
+
+
+
+			&lt;/div&gt; &lt;!-- Header-In End --&gt;
+		&lt;/div&gt; &lt;!-- Header End --&gt;
+	&lt;/div&gt; &lt;!-- Header-Wrapper End --&gt;
+
+
+	&lt;div id=&quot;contentwrapper&quot;&gt;
+
+&lt;div class=&quot;tabswrapper&quot;&gt;
+
+&lt;ul class=&quot;tabs&quot;&gt;
+		&lt;li class=&quot;desk&quot;&gt;&lt;a href=&quot;index.php&quot;&gt;&lt;span&gt;Desktop&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;&lt;div id=&quot;content-left&quot;&gt;
+&lt;div id=&quot;content-left-in&quot;&gt;
+&lt;div class=&quot;neutral&quot;&gt;
+
+&lt;h1&gt;Tags&lt;/h1&gt;
+
+
+			&lt;div class=&quot;headline&quot;&gt;
+				&lt;a href=&quot;javascript:void(0);&quot; id=&quot;block_tags_toggle&quot; class=&quot;win_block&quot; onclick=&quot;toggleBlock('block_tags');&quot;&gt;&lt;/a&gt;
+				
+				&lt;h2&gt;
+					&lt;img src=&quot;./templates/standard/images/symbols/tags.png&quot; alt=&quot;&quot;&gt;
+				&lt;/h2&gt;
+			&lt;/div&gt;
+
+			&lt;div id=&quot;block_tags&quot; class=&quot;blockwrapper&quot;&gt;
+			
+					&lt;div class=&quot;contenttitle&quot;&gt;
+						&lt;div class=&quot;contenttitle_menue&quot;&gt;
+													&lt;/div&gt;
+						&lt;div class=&quot;contenttitle_in&quot;&gt;
+													&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;content_in_wrapper&quot;&gt;
+					&lt;div class=&quot;content_in_wrapper_in&quot;&gt;
+
+
+						&lt;div class=&quot;inwrapper&quot;&gt;		
+							&lt;ul&gt;
+															&lt;li&gt;
+									&lt;div class=&quot;itemwrapper&quot; id=&quot;iw_&quot;&gt;
+
+											&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+												&lt;tbody&gt;&lt;tr&gt;
+													&lt;td class=&quot;leftmen&quot; valign=&quot;top&quot;&gt;
+														&lt;div class=&quot;inmenue&quot;&gt;
+																														
+														&lt;/div&gt;																				
+													&lt;/td&gt;
+													&lt;td class=&quot;thumb&quot;&gt;
+																													&lt;a href=&quot;manageuser.php?action=profile&amp;amp;id=1&quot; title=&quot;admin&quot;&gt;
+																&lt;img src=&quot;templates/standard/images/symbols/user-marker-female.png&quot; alt=&quot;&quot;&gt;
+															&lt;/a&gt;
+																									
+													&lt;/td&gt;
+													&lt;td class=&quot;rightmen&quot; valign=&quot;top&quot;&gt;
+														&lt;!--
+														&lt;div class=&quot;inmenue&quot;&gt;
+															&lt;a class=&quot;del&quot; href=&quot;javascript:confirmfunction('Really delete this item?\nDeleting cannot be undone.','deleteElement(\'files_focus\',\'managefile.php?action=delete&amp;amp;id=&amp;amp;file=\')');&quot; title=&quot;Delete&quot; onclick=&quot;fadeToggle('iw_');&quot;&gt;&lt;/a&gt;
+															&lt;a class=&quot;edit&quot; href=&quot;#&quot; title=&quot;Edit file&quot;&gt;&lt;/a&gt;
+														&lt;/div&gt;
+														--&gt;
+													&lt;/td&gt;
+												&lt;/tr&gt;
+												&lt;tr&gt;
+													&lt;td colspan=&quot;3&quot;&gt;
+														&lt;span class=&quot;name&quot;&gt;
+																																	&lt;a href=&quot;manageuser.php?action=profile&amp;amp;id=1&quot; title=&quot;admin&quot;&gt;admin&lt;/a&gt;
+																															
+														&lt;/span&gt;
+													&lt;/td&gt;
+												&lt;/tr&gt;&lt;tr&gt;
+											&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;						
+
+																										
+									&lt;/div&gt; 								&lt;/li&gt;
+							 
+							&lt;/ul&gt;
+						&lt;/div&gt; 			
+
+
+										
+			&lt;/div&gt; 
+			&lt;/div&gt; 			
+			&lt;div class=&quot;staterow&quot;&gt;
+				&lt;div class=&quot;staterowin&quot;&gt;
+									&lt;/div&gt;
+			&lt;/div&gt;
+				
+					
+			&lt;div class=&quot;tablemenue&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt; 			
+			
+
+&lt;div class=&quot;content-spacer&quot;&gt;&lt;/div&gt;
+
+
+
+&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; 
+&lt;div id=&quot;content-right&quot;&gt;
+
+
+		&lt;div class=&quot;content-right-in&quot;&gt;
+			&lt;h2&gt;&lt;a id=&quot;searchtoggle&quot; class=&quot;win-up&quot; href=&quot;javascript:blindtoggle('search');toggleClass('searchtoggle','win-up','win-down');&quot;&gt;Search&lt;/a&gt;&lt;/h2&gt;
+
+			&lt;form id=&quot;search&quot; method=&quot;get&quot; action=&quot;managesearch.php&quot; onsubmit=&quot;return validateStandard(this,'input_error');&quot;&gt;
+			&lt;fieldset&gt;
+				&lt;div class=&quot;row&quot;&gt;
+					&lt;input type=&quot;text&quot; class=&quot;text&quot; id=&quot;query&quot; name=&quot;query&quot; autocomplete=&quot;off&quot;&gt;
+				&lt;/div&gt;
+
+				&lt;div id=&quot;choices&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;action&quot; value=&quot;search&quot;&gt;
+
+				&lt;div id=&quot;indicator1&quot; style=&quot;display:none;&quot;&gt;&lt;img src=&quot;templates/standard/images/symbols/indicator_arrows.gif&quot; alt=&quot;Searching...&quot;&gt;&lt;/div&gt;
+
+				&lt;button type=&quot;submit&quot; title=&quot;Go!&quot;&gt;&lt;/button&gt;
+			&lt;/fieldset&gt;
+
+			&lt;/form&gt;
+	&lt;/div&gt;
+	
+
+		
+
+			
+		
+		&lt;div class=&quot;content-right-in&quot;&gt;
+			&lt;h2&gt;&lt;a id=&quot;onlinelisttoggle&quot; class=&quot;win-up&quot; href=&quot;javascript:blindtoggle('onlinelist');toggleClass('onlinelisttoggle','win-up','win-down');&quot;&gt;Online&lt;/a&gt;&lt;/h2&gt;
+
+			&lt;div id=&quot;onlinelist&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;a class=&quot;user&quot; href=&quot;manageuser.php?action=profile&amp;amp;id=1&quot;&gt;admin&lt;div&gt;&lt;img src=&quot;thumb.php?pic=templates/standard/images/no-avatar-male.jpg&amp;amp;width=90&quot;&gt;&lt;/div&gt; &lt;/a&gt; &lt;a class=&quot;chat-user&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+	&lt;/div&gt;
+
+
+		
+			  &lt;script type=&quot;text/javascript&quot;&gt;
+			  new Ajax.Autocompleter('query', 'choices', 'managesearch.php?action=ajaxsearch', {paramName:'query',minChars: 2,indicator: 'indicator1'});
+				 var on = new Ajax.PeriodicalUpdater(&quot;onlinelist&quot;,&quot;manageuser.php?action=onlinelist&quot;,{method:'get',evalScripts:true,frequency:35,decay:1.5});
+
+
+			&lt;/script&gt;
+		
+
+&lt;/div&gt;
+			&lt;/div&gt; 		&lt;/div&gt; 
+
+ &lt;div id=&quot;msgchk&quot; style=&quot;display:none;&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+		chkChat();
+&lt;/script&gt;
+
+
+	&lt;div id=&quot;footer-wrapper&quot;&gt;
+		&lt;div class=&quot;footer&quot;&gt;
+			&lt;div class=&quot;footer-in&quot;&gt;
+				&lt;a href=&quot;http://collabtive.o-dyn.de&quot;&gt;Collabtive 1.0&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+
+&lt;div id=&quot;modal_overlay&quot; style=&quot;position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9998; display: none;&quot;&gt;&lt;/div&gt;&lt;div id=&quot;modal_container&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;&lt;div id=&quot;modal_loading&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;&lt;div id=&quot;lbOverlay&quot; class=&quot;grey&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;&lt;div id=&quot;lbMain&quot; style=&quot;display: none;&quot;&gt;&lt;div id=&quot;lbOuterContainer&quot; class=&quot;grey&quot;&gt;&lt;div id=&quot;lbIframeContainer&quot; style=&quot;display: none;&quot;&gt;&lt;iframe id=&quot;lbIframe&quot; name=&quot;lbIframe&quot; style=&quot;display: none;&quot; cd_frame_id_=&quot;a3efb5c9b9d6a11e999aadef0f9d2d90&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;div id=&quot;lbImageContainer&quot;&gt;&lt;img id=&quot;lbImage&quot;&gt;&lt;div id=&quot;lbHoverNav&quot;&gt;&lt;a id=&quot;lbPrev&quot; class=&quot;grey&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;a id=&quot;lbNext&quot; class=&quot;grey&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;lbLoading&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;lbDetailsContainer&quot; class=&quot;grey&quot;&gt;&lt;div id=&quot;lbDetailsData&quot; class=&quot;grey&quot;&gt;&lt;div id=&quot;lbDetails&quot;&gt;&lt;span id=&quot;lbCaption&quot;&gt;&lt;/span&gt;&lt;span id=&quot;lbNumberDisplay&quot;&gt;&lt;/span&gt;&lt;span id=&quot;lbNavDisplay&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div id=&quot;lbBottomNav&quot;&gt;&lt;a id=&quot;lbClose&quot; class=&quot;grey&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;a id=&quot;lbPause&quot; class=&quot;grey&quot; href=&quot;#&quot; style=&quot;display: none;&quot;&gt;&lt;/a&gt;&lt;a id=&quot;lbPlay&quot; class=&quot;grey&quot; href=&quot;#&quot; style=&quot;display: none;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]</td>
+							<td><a href="state13.html">state13</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/UL[1]/LI[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/SPAN[1]/A[1]</td>
+							<td><a href="state13.html">state13</a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

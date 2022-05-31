@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "backtrackTarget": 0,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state0:-1index_2_state3state3_3_state4state4_4_indexindex_5_state6state6_6_state7state7_7_state3state3_8_state6state6_9_state10state10_10_state6state6_13_indexindex_15_state16state16_16_state17state17_17_state18state18_18_state19state19_20_state21state21_21_state22state22_22_state23state23_25_state26state26_26_state27state27_27_state28state28_28_state29state29_29_state30state30_31_state32state32_32_state27state27_33_state34state34_34_state35state35_35_state36state36_36_state37state37_37_state28state28_38_state39state39_40_state41state41_41_state29state29_42_state30state30_43_state44state44_44_state27state27_45_state44state44_46_state47state47_47_state48state48_52_state29state29_53_state27state27_54_state30state30_55_state56state56_56_state30state30_57_state56state56_58_state30state30_59_state56state56_60_state30state30_62_state27state27_63_state56state56_65_state66state66_66_state56state56_68_state66state66_69_state56state56_70_state71state71_71_state72state72_72_state30state30_73_state27state27_74_state75state75_75_state27state27_76_state32state32_77_state78state78_78_state37state37_79_state27state27_80_state37state37_81_state27state27_82_state37state37_84_state27"
+  },
+  {
+    "id": 2,
+    "backtrackTarget": 34,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state34:failed:-1state17_17_state18state18_18_state19state19_20_state21state21_21_state22state22_22_state23state23_25_state26state26_26_state27state27_1000008_state94"
+  },
+  {
+    "id": 3,
+    "backtrackTarget": 94,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state94:-1state17_17_state18state18_18_state19state19_20_state21state21_21_state22state22_22_state23state23_25_state26state26_26_state27state27_1000008_state94state94_87_state26state26_88_state27"
+  }
+]

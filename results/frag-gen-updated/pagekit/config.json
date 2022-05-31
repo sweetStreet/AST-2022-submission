@@ -1,0 +1,1249 @@
+{
+  "url" : "http://localhost:3000/pagekit/index.php/admin/login",
+  "basicAuthUrl" : null,
+  "browserConfig" : {
+    "browserType" : "CHROME_HEADLESS",
+    "numberOfBrowsers" : 1,
+    "browserBuilder" : { },
+    "remoteHubUrl" : null,
+    "browserOptions" : {
+      "headless" : false,
+      "pixelDensity" : 2,
+      "profile" : null
+    },
+    "defaultBuilder" : true,
+    "langOrNull" : null
+  },
+  "plugins" : [ "CrawlOverview", "TestSuiteGenerator", "FragmentationPlugin" ],
+  "proxyConfiguration" : {
+    "port" : -1,
+    "hostname" : "none",
+    "type" : "NOTHING"
+  },
+  "crawlRules" : {
+    "crawlEvents" : [ "click" ],
+    "invariants" : [ ],
+    "oracleComparators" : [ {
+      "preConditions" : [ ],
+      "id" : "DummyComparator",
+      "oracle" : { }
+    } ],
+    "ignoredFrameIdentifiers" : [ ],
+    "preCrawlConfig" : {
+      "waitConditions" : [ ],
+      "crawlConditions" : [ ],
+      "includedElements" : [ {
+        "tagName" : "A",
+        "id" : "id1266610174",
+        "eventType" : "click",
+        "eventableCondition" : null,
+        "withXpathExpression" : null
+      }, {
+        "tagName" : "BUTTON",
+        "id" : "id950594318",
+        "eventType" : "click",
+        "eventableCondition" : null,
+        "withXpathExpression" : null
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id1314455863",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1314455863",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@type='submit']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//INPUT[@type='submit']"
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id1210704199",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1210704199",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@type='button']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//INPUT[@type='button']"
+      } ],
+      "excludedElements" : [ {
+        "tagName" : "A",
+        "id" : "id1955919523",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1955919523",
+          "conditions" : [ ],
+          "inXPath" : "//A[@title='Logout']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//A[@title='Logout']"
+      }, {
+        "tagName" : "A",
+        "id" : "id186352548",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id186352548",
+          "conditions" : [ ],
+          "inXPath" : "//A[@title='Visit Site']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//A[@title='Visit Site']"
+      }, {
+        "tagName" : "A",
+        "id" : "id223181641",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id223181641",
+          "conditions" : [ ],
+          "inXPath" : "/HTML[1]/BODY[1]/MAIN[1]/FORM[1]/DIV[1]/DIV[2]/BUTTON[1]",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "/HTML[1]/BODY[1]/MAIN[1]/FORM[1]/DIV[1]/DIV[2]/BUTTON[1]"
+      }, {
+        "tagName" : "A",
+        "id" : "id174690430",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id174690430",
+          "conditions" : [ ],
+          "inXPath" : "//A[text()='Logout']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//A[text()='Logout']"
+      } ],
+      "filterAttributeNames" : [ "closure_hashcode_(\\w)*", "jquery[0-9]+" ]
+    },
+    "formFillMode" : "RANDOM",
+    "formFillOrder" : "NORMAL",
+    "inputSpecification" : {
+      "formInputs" : {
+        "id form-email" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example@example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name credentials[password]" : {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[password]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "asdfghjkl123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "id form-redirect" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-redirect",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "id form-name" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name credentials[username]" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[username]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "id form-username" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }
+      },
+      "forms" : [ {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example@example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      }, {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[username]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[password]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "asdfghjkl123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      }, {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-redirect",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      } ],
+      "crawlElements" : [ {
+        "tagName" : "BUTTON",
+        "id" : "id1908930721",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1908930721",
+          "conditions" : [ ],
+          "inXPath" : "//*[@id=\"user-edit\"]/DIV[1]/DIV[2]/BUTTON[1]",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "example",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "example123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "example@example.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "example",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "example123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "example@example.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "example",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "example123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "example@example.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "example",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "example123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "example@example.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "example",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "example123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "example@example.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//*[@id=\"user-edit\"]/div[1]/div[2]/button[1]"
+      }, {
+        "tagName" : "BUTTON",
+        "id" : "id702583971",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id702583971",
+          "conditions" : [ ],
+          "inXPath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/P[1]/BUTTON[1]",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "credentials[username]",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "credentials[password]",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "asdfghjkl123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "credentials[username]",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "credentials[password]",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "asdfghjkl123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "credentials[username]",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "credentials[password]",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "asdfghjkl123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "credentials[username]",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "credentials[password]",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "asdfghjkl123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "credentials[username]",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "admin",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "credentials[password]",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "asdfghjkl123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/P[1]/BUTTON[1]"
+      }, {
+        "tagName" : "A",
+        "id" : "id982057084",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id982057084",
+          "conditions" : [ ],
+          "inXPath" : "//*[@id=\"settings\"]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-redirect",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-redirect",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-redirect",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-redirect",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "form-redirect",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//*[@id=\"settings\"]/div[4]/div[1]/div[1]/div[1]/a[1]"
+      } ]
+    },
+    "testInvariantsWhileCrawling" : true,
+    "clickOnce" : true,
+    "randomizeCandidateElements" : false,
+    "crawlFrames" : false,
+    "crawlHiddenAnchors" : true,
+    "waitAfterReloadUrl" : 1000,
+    "waitAfterEvent" : 1000,
+    "followExternalLinks" : false,
+    "crawlPriorityMode" : "NORMAL",
+    "crawlNearDuplicates" : true,
+    "delayNearDuplicateCrawling" : true,
+    "applyNonSelAdvantage" : false,
+    "avoidUnrelatedBacktracking" : false,
+    "useEquivalentReset" : false,
+    "avoidDifferentBacktracking" : false,
+    "skipExploredActions" : true,
+    "maxRepeatExploredActions" : 2,
+    "usefulFragmentRules" : {
+      "thresholdWidth" : 50.0,
+      "thresholdHeight" : 50.0,
+      "subtreeWidth_and" : 2,
+      "subtreeWidth_or" : 4
+    },
+    "restoreConnectedEdges" : false,
+    "allCrawlElements" : [ {
+      "tagName" : "A",
+      "id" : "id1266610174",
+      "eventType" : "click",
+      "eventableCondition" : null,
+      "withXpathExpression" : null
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id950594318",
+      "eventType" : "click",
+      "eventableCondition" : null,
+      "withXpathExpression" : null
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id1314455863",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1314455863",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@type='submit']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//INPUT[@type='submit']"
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id1210704199",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1210704199",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@type='button']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//INPUT[@type='button']"
+    }, {
+      "tagName" : "A",
+      "id" : "id1955919523",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1955919523",
+        "conditions" : [ ],
+        "inXPath" : "//A[@title='Logout']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//A[@title='Logout']"
+    }, {
+      "tagName" : "A",
+      "id" : "id186352548",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id186352548",
+        "conditions" : [ ],
+        "inXPath" : "//A[@title='Visit Site']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//A[@title='Visit Site']"
+    }, {
+      "tagName" : "A",
+      "id" : "id223181641",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id223181641",
+        "conditions" : [ ],
+        "inXPath" : "/HTML[1]/BODY[1]/MAIN[1]/FORM[1]/DIV[1]/DIV[2]/BUTTON[1]",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "/HTML[1]/BODY[1]/MAIN[1]/FORM[1]/DIV[1]/DIV[2]/BUTTON[1]"
+    }, {
+      "tagName" : "A",
+      "id" : "id174690430",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id174690430",
+        "conditions" : [ ],
+        "inXPath" : "//A[text()='Logout']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//A[text()='Logout']"
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id1908930721",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1908930721",
+        "conditions" : [ ],
+        "inXPath" : "//*[@id=\"user-edit\"]/DIV[1]/DIV[2]/BUTTON[1]",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example@example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example@example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example@example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example@example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example@example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "example@example.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//*[@id=\"user-edit\"]/div[1]/div[2]/button[1]"
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id702583971",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id702583971",
+        "conditions" : [ ],
+        "inXPath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/P[1]/BUTTON[1]",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[username]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[password]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "asdfghjkl123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[username]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[password]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "asdfghjkl123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[username]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[password]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "asdfghjkl123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[username]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[password]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "asdfghjkl123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[username]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[password]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "asdfghjkl123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[username]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "admin",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "credentials[password]",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "asdfghjkl123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/P[1]/BUTTON[1]"
+    }, {
+      "tagName" : "A",
+      "id" : "id982057084",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id982057084",
+        "conditions" : [ ],
+        "inXPath" : "//*[@id=\"settings\"]/DIV[4]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-redirect",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-redirect",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-redirect",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-redirect",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-redirect",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "form-redirect",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//*[@id=\"settings\"]/div[4]/div[1]/div[1]/div[1]/a[1]"
+    } ]
+  },
+  "maximumStates" : 0,
+  "maximumRuntime" : 3600000,
+  "maximumDepth" : 0,
+  "stateVertexFactory" : { },
+  "siteDir" : "/Users/liuyu/projects/tackle-test-generator-ui-level/testlabeling/crawljax_frag/out/pagekit/pagekit_HYBRID_DOM_-1.0_60mins/localhost",
+  "outputDir" : "/Users/liuyu/projects/tackle-test-generator-ui-level/testlabeling/crawljax_frag/out/pagekit/pagekit_HYBRID_DOM_-1.0_60mins/localhost/crawl2"
+}

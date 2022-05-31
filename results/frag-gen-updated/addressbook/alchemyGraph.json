@@ -1,0 +1,1929 @@
+{
+  "nodes" : [ {
+    "name" : "state9",
+    "url" : "http://localhost:3000/addressbook/edit.php",
+    "candidateElements" : [ {
+      "top" : 627,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    }, {
+      "top" : 183,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[1]",
+      "width" : 43,
+      "height" : 21
+    }, {
+      "top" : 541,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[2]",
+      "width" : 43,
+      "height" : 21
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 9,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 48.0,
+    "cluster" : 9,
+    "timeAdded" : 1633485954313,
+    "nearestState" : "index"
+  }, {
+    "name" : "state72",
+    "url" : "http://localhost:3000/addressbook/group.php?group=[none]",
+    "candidateElements" : [ {
+      "top" : 105,
+      "left" : 251,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[2]/A[1]",
+      "width" : 54,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 308,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[3]/A[1]",
+      "width" : 45,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 356,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[4]/A[1]",
+      "width" : 83,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 442,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[5]/A[1]",
+      "width" : 47,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 492,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[6]/A[1]",
+      "width" : 74,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 569,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[7]/A[1]",
+      "width" : 41,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 614,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[8]/A[1]",
+      "width" : 42,
+      "height" : 14
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 72,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : true,
+    "distToNearestState" : 4.0,
+    "cluster" : 72,
+    "timeAdded" : 1633486056610,
+    "nearestState" : "state67"
+  }, {
+    "name" : "state171",
+    "url" : "http://localhost:3000/addressbook/group.php?group=GWmvBZbI",
+    "candidateElements" : [ {
+      "top" : 363,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    }, {
+      "top" : 209,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[1]",
+      "width" : 80,
+      "height" : 21
+    }, {
+      "top" : 209,
+      "left" : 293,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[2]",
+      "width" : 108,
+      "height" : 21
+    }, {
+      "top" : 209,
+      "left" : 405,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[3]",
+      "width" : 77,
+      "height" : 21
+    }, {
+      "top" : 277,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[5]",
+      "width" : 80,
+      "height" : 21
+    }, {
+      "top" : 277,
+      "left" : 293,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[6]",
+      "width" : 108,
+      "height" : 21
+    }, {
+      "top" : 277,
+      "left" : 405,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[7]",
+      "width" : 77,
+      "height" : 21
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 3,
+    "id" : 171,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 4.0,
+    "cluster" : 171,
+    "timeAdded" : 1633486247329,
+    "nearestState" : "state17"
+  }, {
+    "name" : "state130",
+    "url" : "http://localhost:3000/addressbook/index.php?group=%5Bnone%5D",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 130,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 1.0,
+    "cluster" : 130,
+    "timeAdded" : 1633486165541,
+    "nearestState" : "state33"
+  }, {
+    "name" : "state132",
+    "url" : "http://localhost:3000/addressbook/index.php?group=",
+    "candidateElements" : [ {
+      "top" : 246,
+      "left" : 278,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[2]/A[1]",
+      "width" : 59,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 398,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[3]/A[1]",
+      "width" : 60,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 588,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[4]/A[1]",
+      "width" : 36,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 740,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[5]/A[1]",
+      "width" : 59,
+      "height" : 14
+    }, {
+      "top" : 277,
+      "left" : 835,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[6]/A[1]",
+      "width" : 16,
+      "height" : 14
+    }, {
+      "top" : 277,
+      "left" : 868,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[7]/A[1]",
+      "width" : 16,
+      "height" : 14
+    }, {
+      "top" : 277,
+      "left" : 900,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[8]/A[1]",
+      "width" : 16,
+      "height" : 14
+    }, {
+      "top" : 326,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[1]/INPUT[1]",
+      "width" : 87,
+      "height" : 21
+    }, {
+      "top" : 326,
+      "left" : 297,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[2]/INPUT[1]",
+      "width" : 55,
+      "height" : 21
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 3,
+    "id" : 132,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 1.0,
+    "cluster" : 132,
+    "timeAdded" : 1633486170869,
+    "nearestState" : "state108"
+  }, {
+    "name" : "state3",
+    "url" : "http://localhost:3000/addressbook/index.php",
+    "candidateElements" : [ {
+      "top" : 5,
+      "left" : 953,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[1]/A[1]",
+      "width" : 37,
+      "height" : 14
+    }, {
+      "top" : 0,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/H1[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 89,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/A[1]",
+      "width" : 340,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[1]/A[1]",
+      "width" : 38,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 251,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[2]/A[1]",
+      "width" : 54,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 308,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[3]/A[1]",
+      "width" : 45,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 356,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[4]/A[1]",
+      "width" : 83,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 442,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[5]/A[1]",
+      "width" : 47,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 492,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[6]/A[1]",
+      "width" : 74,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 569,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[7]/A[1]",
+      "width" : 41,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 614,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[8]/A[1]",
+      "width" : 42,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 291,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[2]/A[1]",
+      "width" : 59,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 466,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[3]/A[1]",
+      "width" : 61,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 625,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[4]/A[1]",
+      "width" : 36,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 758,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[5]/A[1]",
+      "width" : 59,
+      "height" : 14
+    }, {
+      "top" : 381,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    }, {
+      "top" : 302,
+      "left" : 909,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[4]/INPUT[1]",
+      "width" : 55,
+      "height" : 21
+    }, {
+      "top" : 302,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[1]/INPUT[1]",
+      "width" : 87,
+      "height" : 21
+    }, {
+      "top" : 302,
+      "left" : 297,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[2]/INPUT[1]",
+      "width" : 55,
+      "height" : 21
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 13,
+    "id" : 3,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/H1[1]/A[1]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 95.0,
+    "cluster" : 3,
+    "timeAdded" : 1633485942771,
+    "nearestState" : "index"
+  }, {
+    "name" : "state100",
+    "url" : "http://localhost:3000/addressbook/edit.php?group=GWmvBZbI",
+    "candidateElements" : [ {
+      "top" : 241,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/H1[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 1097,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    }, {
+      "top" : 209,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[1]",
+      "width" : 48,
+      "height" : 21
+    }, {
+      "top" : 1011,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[19]",
+      "width" : 48,
+      "height" : 21
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 3,
+    "id" : 100,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/H1[1]/A[1]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 86.0,
+    "cluster" : 100,
+    "timeAdded" : 1633486090592,
+    "nearestState" : "state28"
+  }, {
+    "name" : "state106",
+    "url" : "http://localhost:3000/addressbook/edit.php?group=GWmvBZbI",
+    "candidateElements" : [ {
+      "top" : 405,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 1,
+    "id" : 106,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[4]/DIV[1]/I[1]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[4]/DIV[1]/I[1]/A[2]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 4.0,
+    "cluster" : 106,
+    "timeAdded" : 1633486110648,
+    "nearestState" : "state79"
+  }, {
+    "name" : "state35",
+    "url" : "http://localhost:3000/addressbook/index.php?group=%5Bnone%5D",
+    "candidateElements" : [ {
+      "top" : 246,
+      "left" : 287,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[2]/A[1]",
+      "width" : 60,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 464,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[3]/A[1]",
+      "width" : 61,
+      "height" : 14
+    } ],
+    "fanIn" : 3,
+    "fanOut" : 1,
+    "id" : 35,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 1.0,
+    "cluster" : 35,
+    "timeAdded" : 1633486010174,
+    "nearestState" : "state3"
+  }, {
+    "name" : "state57",
+    "url" : "http://localhost:3000/addressbook/index.php?group=",
+    "candidateElements" : [ {
+      "top" : 246,
+      "left" : 612,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[4]/A[1]",
+      "width" : 36,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 747,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[5]/A[1]",
+      "width" : 59,
+      "height" : 14
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 57,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 1.0,
+    "cluster" : 57,
+    "timeAdded" : 1633486033919,
+    "nearestState" : "state3"
+  }, {
+    "name" : "state79",
+    "url" : "http://localhost:3000/addressbook/group.php",
+    "candidateElements" : [ {
+      "top" : 228,
+      "left" : 295,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/DIV[1]/I[1]/A[1]",
+      "width" : 61,
+      "height" : 14
+    }, {
+      "top" : 324,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    } ],
+    "fanIn" : 3,
+    "fanOut" : 2,
+    "id" : 79,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 1.0,
+    "cluster" : 79,
+    "timeAdded" : 1633486065329,
+    "nearestState" : "state67"
+  }, {
+    "name" : "state109",
+    "url" : "http://localhost:3000/addressbook/view.php?id=1",
+    "candidateElements" : [ {
+      "top" : 649,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    }, {
+      "top" : 542,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[2]",
+      "width" : 55,
+      "height" : 21
+    }, {
+      "top" : 563,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/INPUT[2]",
+      "width" : 43,
+      "height" : 21
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 109,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 56.0,
+    "cluster" : 109,
+    "timeAdded" : 1633486120702,
+    "nearestState" : "state69"
+  }, {
+    "name" : "state108",
+    "url" : "http://localhost:3000/addressbook/index.php",
+    "candidateElements" : [ {
+      "top" : 246,
+      "left" : 280,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[2]/A[1]",
+      "width" : 60,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 399,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[3]/A[1]",
+      "width" : 60,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 580,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[4]/A[1]",
+      "width" : 36,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 735,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[5]/A[1]",
+      "width" : 59,
+      "height" : 14
+    }, {
+      "top" : 277,
+      "left" : 832,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[6]/A[1]",
+      "width" : 16,
+      "height" : 14
+    }, {
+      "top" : 277,
+      "left" : 865,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[7]/A[1]",
+      "width" : 16,
+      "height" : 14
+    }, {
+      "top" : 277,
+      "left" : 898,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[8]/A[1]",
+      "width" : 16,
+      "height" : 14
+    }, {
+      "top" : 405,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    }, {
+      "top" : 326,
+      "left" : 840,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[4]/INPUT[1]",
+      "width" : 55,
+      "height" : 21
+    }, {
+      "top" : 326,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[1]/INPUT[1]",
+      "width" : 87,
+      "height" : 21
+    }, {
+      "top" : 326,
+      "left" : 297,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[2]/INPUT[1]",
+      "width" : 55,
+      "height" : 21
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 7,
+    "id" : 108,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 27.0,
+    "cluster" : 108,
+    "timeAdded" : 1633486115636,
+    "nearestState" : "state81"
+  }, {
+    "name" : "state33",
+    "url" : "http://localhost:3000/addressbook/index.php?group=%5Bnone%5D",
+    "candidateElements" : [ {
+      "top" : 105,
+      "left" : 251,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[2]/A[1]",
+      "width" : 54,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 308,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[3]/A[1]",
+      "width" : 45,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 356,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[4]/A[1]",
+      "width" : 83,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 442,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[5]/A[1]",
+      "width" : 47,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 492,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[6]/A[1]",
+      "width" : 74,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 569,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[7]/A[1]",
+      "width" : 41,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 614,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[8]/A[1]",
+      "width" : 42,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 294,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[2]/A[1]",
+      "width" : 60,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 481,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[3]/A[1]",
+      "width" : 61,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 635,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[4]/A[1]",
+      "width" : 36,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 764,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[5]/A[1]",
+      "width" : 59,
+      "height" : 14
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 2,
+    "id" : 33,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 1.0,
+    "cluster" : 33,
+    "timeAdded" : 1633486004606,
+    "nearestState" : "state3"
+  }, {
+    "name" : "state99",
+    "url" : "http://localhost:3000/addressbook/edit.php?group=GWmvBZbI",
+    "candidateElements" : [ {
+      "top" : 653,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    }, {
+      "top" : 209,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[1]",
+      "width" : 43,
+      "height" : 21
+    }, {
+      "top" : 567,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[2]",
+      "width" : 43,
+      "height" : 21
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 3,
+    "id" : 99,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 1.0,
+    "cluster" : 99,
+    "timeAdded" : 1633486087355,
+    "nearestState" : "state9"
+  }, {
+    "name" : "state10",
+    "url" : "http://localhost:3000/addressbook/notes.htm",
+    "candidateElements" : [ {
+      "top" : 21,
+      "left" : 16,
+      "xpath" : "/HTML[1]/BODY[1]/H1[1]/A[1]",
+      "width" : 0,
+      "height" : 14
+    }, {
+      "top" : 152,
+      "left" : 16,
+      "xpath" : "/HTML[1]/BODY[1]/A[2]",
+      "width" : 70,
+      "height" : 14
+    }, {
+      "top" : 152,
+      "left" : 95,
+      "xpath" : "/HTML[1]/BODY[1]/A[3]",
+      "width" : 57,
+      "height" : 14
+    }, {
+      "top" : 152,
+      "left" : 162,
+      "xpath" : "/HTML[1]/BODY[1]/A[4]",
+      "width" : 38,
+      "height" : 14
+    }, {
+      "top" : 152,
+      "left" : 209,
+      "xpath" : "/HTML[1]/BODY[1]/A[5]",
+      "width" : 55,
+      "height" : 14
+    }, {
+      "top" : 182,
+      "left" : 16,
+      "xpath" : "/HTML[1]/BODY[1]/H3[1]/A[1]",
+      "width" : 0,
+      "height" : 14
+    }, {
+      "top" : 240,
+      "left" : 16,
+      "xpath" : "/HTML[1]/BODY[1]/H3[2]/A[1]",
+      "width" : 0,
+      "height" : 14
+    }, {
+      "top" : 298,
+      "left" : 16,
+      "xpath" : "/HTML[1]/BODY[1]/H3[3]/A[1]",
+      "width" : 0,
+      "height" : 14
+    }, {
+      "top" : 936,
+      "left" : 16,
+      "xpath" : "/HTML[1]/BODY[1]/H3[7]/A[1]",
+      "width" : 0,
+      "height" : 14
+    }, {
+      "top" : 1046,
+      "left" : 16,
+      "xpath" : "/HTML[1]/BODY[1]/H3[8]/A[1]",
+      "width" : 0,
+      "height" : 14
+    }, {
+      "top" : 1118,
+      "left" : 16,
+      "xpath" : "/HTML[1]/BODY[1]/H3[9]/A[1]",
+      "width" : 0,
+      "height" : 14
+    }, {
+      "top" : 1265,
+      "left" : 16,
+      "xpath" : "/HTML[1]/BODY[1]/H3[10]/A[1]",
+      "width" : 0,
+      "height" : 14
+    }, {
+      "top" : 1301,
+      "left" : 493,
+      "xpath" : "/HTML[1]/BODY[1]/CENTER[1]/B[1]/A[1]",
+      "width" : 0,
+      "height" : 14
+    }, {
+      "top" : 1223,
+      "left" : 109,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/FORM[1]/INPUT[1]",
+      "width" : 99,
+      "height" : 21
+    } ],
+    "fanIn" : 20,
+    "fanOut" : 0,
+    "id" : 10,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/H1[1]/A[1]", "xpath /HTML[1]/BODY[1]/H3[1]/A[1]", "xpath /HTML[1]/BODY[1]/H3[2]/A[1]", "xpath /HTML[1]/BODY[1]/H3[3]/A[1]", "xpath /HTML[1]/BODY[1]/H3[7]/A[1]", "xpath /HTML[1]/BODY[1]/H3[8]/A[1]", "xpath /HTML[1]/BODY[1]/H3[9]/A[1]", "xpath /HTML[1]/BODY[1]/H3[10]/A[1]", "xpath /HTML[1]/BODY[1]/CENTER[1]/B[1]/A[1]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 137.0,
+    "cluster" : 10,
+    "timeAdded" : 1633485958851,
+    "nearestState" : "state9"
+  }, {
+    "name" : "state17",
+    "url" : "http://localhost:3000/addressbook/group.php",
+    "candidateElements" : [ {
+      "top" : 318,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    }, {
+      "top" : 183,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[1]",
+      "width" : 80,
+      "height" : 21
+    }, {
+      "top" : 183,
+      "left" : 293,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[2]",
+      "width" : 108,
+      "height" : 21
+    }, {
+      "top" : 183,
+      "left" : 405,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[3]",
+      "width" : 77,
+      "height" : 21
+    }, {
+      "top" : 232,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[4]",
+      "width" : 80,
+      "height" : 21
+    }, {
+      "top" : 232,
+      "left" : 293,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[5]",
+      "width" : 108,
+      "height" : 21
+    }, {
+      "top" : 232,
+      "left" : 405,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[6]",
+      "width" : 77,
+      "height" : 21
+    } ],
+    "fanIn" : 3,
+    "fanOut" : 7,
+    "id" : 17,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 7.0,
+    "cluster" : 17,
+    "timeAdded" : 1633485979073,
+    "nearestState" : "state9"
+  }, {
+    "name" : "state37",
+    "url" : "http://localhost:3000/addressbook/index.php?group=",
+    "candidateElements" : [ {
+      "top" : 246,
+      "left" : 458,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[3]/A[1]",
+      "width" : 61,
+      "height" : 14
+    }, {
+      "top" : 246,
+      "left" : 619,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[4]/A[1]",
+      "width" : 36,
+      "height" : 14
+    } ],
+    "fanIn" : 3,
+    "fanOut" : 1,
+    "id" : 37,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 1.0,
+    "cluster" : 37,
+    "timeAdded" : 1633486015218,
+    "nearestState" : "state3"
+  }, {
+    "name" : "state82",
+    "url" : "http://localhost:3000/addressbook/group.php?group=GWmvBZbI",
+    "candidateElements" : [ {
+      "top" : 105,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[1]/A[1]",
+      "width" : 38,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 251,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[2]/A[1]",
+      "width" : 54,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 308,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[3]/A[1]",
+      "width" : 45,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 356,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[4]/A[1]",
+      "width" : 83,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 442,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[5]/A[1]",
+      "width" : 47,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 492,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[6]/A[1]",
+      "width" : 74,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 569,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[7]/A[1]",
+      "width" : 41,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 614,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[8]/A[1]",
+      "width" : 42,
+      "height" : 14
+    }, {
+      "top" : 336,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 4,
+    "id" : 82,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : true,
+    "distToNearestState" : 1.0,
+    "cluster" : 72,
+    "timeAdded" : 1633486073205,
+    "nearestState" : "state72"
+  }, {
+    "name" : "state81",
+    "url" : "http://localhost:3000/addressbook/index.php",
+    "candidateElements" : [ {
+      "top" : 302,
+      "left" : 840,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[4]/INPUT[1]",
+      "width" : 55,
+      "height" : 21
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 81,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 1.0,
+    "cluster" : 81,
+    "timeAdded" : 1633486069318,
+    "nearestState" : "state3"
+  }, {
+    "name" : "state20",
+    "url" : "http://localhost:3000/addressbook/birthdays.php",
+    "candidateElements" : [ {
+      "top" : 248,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 20,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 9.0,
+    "cluster" : 20,
+    "timeAdded" : 1633485983747,
+    "nearestState" : "state17"
+  }, {
+    "name" : "state61",
+    "url" : "http://localhost:3000/addressbook/group.php",
+    "candidateElements" : [ {
+      "top" : 644,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    }, {
+      "top" : 558,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[2]",
+      "width" : 118,
+      "height" : 21
+    } ],
+    "fanIn" : 3,
+    "fanOut" : 2,
+    "id" : 61,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 11.0,
+    "cluster" : 61,
+    "timeAdded" : 1633486039746,
+    "nearestState" : "state9"
+  }, {
+    "name" : "index",
+    "url" : "http://localhost:3000/addressbook/",
+    "candidateElements" : [ {
+      "top" : 89,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/A[1]",
+      "width" : 340,
+      "height" : 14
+    }, {
+      "top" : 198,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[3]",
+      "width" : 49,
+      "height" : 21
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 0,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : -1.0,
+    "cluster" : 0,
+    "timeAdded" : 1633485935938,
+    "nearestState" : "null"
+  }, {
+    "name" : "state121",
+    "url" : "http://localhost:3000/addressbook/delete.php?part=1;",
+    "candidateElements" : [ ],
+    "fanIn" : 2,
+    "fanOut" : 0,
+    "id" : 121,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 3.0,
+    "cluster" : 121,
+    "timeAdded" : 1633486153652,
+    "nearestState" : "state20"
+  }, {
+    "name" : "state142",
+    "url" : "http://localhost:3000/addressbook/index.php?group=GWmvBZbI",
+    "candidateElements" : [ {
+      "top" : 271,
+      "left" : 279,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[2]/A[1]",
+      "width" : 59,
+      "height" : 14
+    }, {
+      "top" : 271,
+      "left" : 398,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[3]/A[1]",
+      "width" : 60,
+      "height" : 14
+    }, {
+      "top" : 271,
+      "left" : 578,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[4]/A[1]",
+      "width" : 36,
+      "height" : 14
+    }, {
+      "top" : 271,
+      "left" : 734,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[5]/A[1]",
+      "width" : 59,
+      "height" : 14
+    }, {
+      "top" : 302,
+      "left" : 833,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[6]/A[1]",
+      "width" : 16,
+      "height" : 14
+    }, {
+      "top" : 302,
+      "left" : 866,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[7]/A[1]",
+      "width" : 16,
+      "height" : 14
+    }, {
+      "top" : 302,
+      "left" : 899,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[8]/A[1]",
+      "width" : 16,
+      "height" : 14
+    }, {
+      "top" : 466,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    }, {
+      "top" : 351,
+      "left" : 351,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[3]/INPUT[1]",
+      "width" : 178,
+      "height" : 21
+    }, {
+      "top" : 351,
+      "left" : 840,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[4]/INPUT[1]",
+      "width" : 55,
+      "height" : 21
+    }, {
+      "top" : 351,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[1]/INPUT[1]",
+      "width" : 87,
+      "height" : 21
+    }, {
+      "top" : 351,
+      "left" : 297,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[2]/INPUT[1]",
+      "width" : 55,
+      "height" : 21
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 4,
+    "id" : 142,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[3]/INPUT[1]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 5.0,
+    "cluster" : 142,
+    "timeAdded" : 1633486215562,
+    "nearestState" : "state108"
+  }, {
+    "name" : "state112",
+    "url" : "http://localhost:3000/addressbook/edit.php?id=1",
+    "candidateElements" : [ {
+      "top" : 203,
+      "left" : 0,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/H1[1]/A[1]",
+      "width" : 0,
+      "height" : 0
+    }, {
+      "top" : 1059,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    }, {
+      "top" : 183,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[1]",
+      "width" : 59,
+      "height" : 21
+    }, {
+      "top" : 952,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[19]",
+      "width" : 59,
+      "height" : 21
+    }, {
+      "top" : 973,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/INPUT[2]",
+      "width" : 55,
+      "height" : 21
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 2,
+    "id" : 112,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/H1[1]/A[1]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 13.0,
+    "cluster" : 112,
+    "timeAdded" : 1633486126763,
+    "nearestState" : "state100"
+  }, {
+    "name" : "state134",
+    "url" : "http://localhost:3000/addressbook/view.php?group=GWmvBZbI&id=2",
+    "candidateElements" : [ {
+      "top" : 528,
+      "left" : 274,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/I[2]/A[1]",
+      "width" : 62,
+      "height" : 14
+    }, {
+      "top" : 663,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    }, {
+      "top" : 556,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[2]",
+      "width" : 55,
+      "height" : 21
+    }, {
+      "top" : 577,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/INPUT[2]",
+      "width" : 43,
+      "height" : 21
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 134,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 6.0,
+    "cluster" : 134,
+    "timeAdded" : 1633486195895,
+    "nearestState" : "state109"
+  }, {
+    "name" : "state133",
+    "url" : "http://localhost:3000/addressbook/index.php?group=",
+    "candidateElements" : [ {
+      "top" : 246,
+      "left" : 575,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[4]/A[1]",
+      "width" : 36,
+      "height" : 14
+    }, {
+      "top" : 277,
+      "left" : 832,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[6]/A[1]",
+      "width" : 16,
+      "height" : 14
+    }, {
+      "top" : 277,
+      "left" : 865,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[7]/A[1]",
+      "width" : 16,
+      "height" : 14
+    }, {
+      "top" : 277,
+      "left" : 898,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[8]/A[1]",
+      "width" : 16,
+      "height" : 14
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 133,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 1.0,
+    "cluster" : 133,
+    "timeAdded" : 1633486179890,
+    "nearestState" : "state108"
+  }, {
+    "name" : "state29",
+    "url" : "http://localhost:3000/addressbook/import.php",
+    "candidateElements" : [ {
+      "top" : 253,
+      "left" : 313,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/I[1]/A[1]",
+      "width" : 100,
+      "height" : 14
+    }, {
+      "top" : 332,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    }, {
+      "top" : 204,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[3]",
+      "width" : 58,
+      "height" : 21
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 29,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 11.0,
+    "cluster" : 29,
+    "timeAdded" : 1633485998625,
+    "nearestState" : "state17"
+  }, {
+    "name" : "state118",
+    "url" : "http://localhost:3000/addressbook/group.php?group=[none]",
+    "candidateElements" : [ {
+      "top" : 214,
+      "left" : 259,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/DIV[1]/I[1]/A[1]",
+      "width" : 134,
+      "height" : 14
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 118,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : true,
+    "distToNearestState" : 1.0,
+    "cluster" : 67,
+    "timeAdded" : 1633486147652,
+    "nearestState" : "state67"
+  }, {
+    "name" : "state139",
+    "url" : "http://localhost:3000/addressbook/index.php?group=%5Bnone%5D",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 139,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 1.0,
+    "cluster" : 139,
+    "timeAdded" : 1633486209771,
+    "nearestState" : "state57"
+  }, {
+    "name" : "state67",
+    "url" : "http://localhost:3000/addressbook/group.php",
+    "candidateElements" : [ {
+      "top" : 214,
+      "left" : 295,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/DIV[1]/I[1]/A[1]",
+      "width" : 61,
+      "height" : 14
+    }, {
+      "top" : 310,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    } ],
+    "fanIn" : 3,
+    "fanOut" : 2,
+    "id" : 67,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : true,
+    "distToNearestState" : 7.0,
+    "cluster" : 67,
+    "timeAdded" : 1633486047000,
+    "nearestState" : "state20"
+  }, {
+    "name" : "state23",
+    "url" : "http://localhost:3000/addressbook/view.php?all&print",
+    "candidateElements" : [ {
+      "top" : 110,
+      "left" : 98,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 1,
+    "id" : 23,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 16.0,
+    "cluster" : 23,
+    "timeAdded" : 1633485988132,
+    "nearestState" : "index"
+  }, {
+    "name" : "state28",
+    "url" : "http://localhost:3000/addressbook/export.php",
+    "candidateElements" : [ {
+      "top" : 105,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[1]/A[1]",
+      "width" : 38,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 251,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[2]/A[1]",
+      "width" : 54,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 308,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[3]/A[1]",
+      "width" : 45,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 356,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[4]/A[1]",
+      "width" : 83,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 442,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[5]/A[1]",
+      "width" : 47,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 492,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[6]/A[1]",
+      "width" : 74,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 569,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[7]/A[1]",
+      "width" : 41,
+      "height" : 14
+    }, {
+      "top" : 105,
+      "left" : 614,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/UL[1]/LI[8]/A[1]",
+      "width" : 42,
+      "height" : 14
+    }, {
+      "top" : 337,
+      "left" : 418,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[5]/A[1]",
+      "width" : 22,
+      "height" : 14
+    }, {
+      "top" : 419,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    }, {
+      "top" : 210,
+      "left" : 336,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[2]",
+      "width" : 75,
+      "height" : 21
+    }, {
+      "top" : 231,
+      "left" : 336,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/INPUT[2]",
+      "width" : 75,
+      "height" : 21
+    }, {
+      "top" : 252,
+      "left" : 336,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[3]/INPUT[2]",
+      "width" : 75,
+      "height" : 21
+    }, {
+      "top" : 273,
+      "left" : 336,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[4]/INPUT[2]",
+      "width" : 75,
+      "height" : 21
+    }, {
+      "top" : 333,
+      "left" : 336,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[5]/INPUT[2]",
+      "width" : 75,
+      "height" : 21
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 2,
+    "id" : 28,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 30.0,
+    "cluster" : 28,
+    "timeAdded" : 1633485994274,
+    "nearestState" : "state9"
+  }, {
+    "name" : "state69",
+    "url" : "http://localhost:3000/addressbook/group.php",
+    "candidateElements" : [ {
+      "top" : 686,
+      "left" : 306,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]",
+      "width" : 67,
+      "height" : 14
+    }, {
+      "top" : 586,
+      "left" : 210,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[1]/INPUT[3]",
+      "width" : 59,
+      "height" : 21
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 2,
+    "id" : 69,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 4.0,
+    "cluster" : 69,
+    "timeAdded" : 1633486050923,
+    "nearestState" : "state61"
+  } ],
+  "links" : [ {
+    "source" : 0,
+    "target" : 3,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, type=submit, value=Login}}",
+    "eventType" : "click"
+  }, {
+    "source" : 3,
+    "target" : 0,
+    "text" : "Logout",
+    "element" : "Element{node=[A: null], tag=A, text=Logout, attributes={evlist=false, href=#, onclick=document.logout.submit();}}",
+    "eventType" : "click"
+  }, {
+    "source" : 3,
+    "target" : 9,
+    "text" : "add new",
+    "element" : "Element{node=[A: null], tag=A, text=add new, attributes={evlist=false, href=edit.php}}",
+    "eventType" : "click"
+  }, {
+    "source" : 9,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 3,
+    "target" : 17,
+    "text" : "groups",
+    "element" : "Element{node=[A: null], tag=A, text=groups, attributes={evlist=false, href=group.php}}",
+    "eventType" : "click"
+  }, {
+    "source" : 17,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 3,
+    "target" : 20,
+    "text" : "next birthdays",
+    "element" : "Element{node=[A: null], tag=A, text=next birthdays, attributes={evlist=false, href=birthdays.php}}",
+    "eventType" : "click"
+  }, {
+    "source" : 20,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 3,
+    "target" : 23,
+    "text" : "print all",
+    "element" : "Element{node=[A: null], tag=A, text=print all, attributes={evlist=false, href=view.php?all&print}}",
+    "eventType" : "click"
+  }, {
+    "source" : 23,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 3,
+    "target" : 23,
+    "text" : "print phones",
+    "element" : "Element{node=[A: null], tag=A, text=print phones, attributes={evlist=false, href=view.php?all&print&phones}}",
+    "eventType" : "click"
+  }, {
+    "source" : 3,
+    "target" : 28,
+    "text" : "export",
+    "element" : "Element{node=[A: null], tag=A, text=export, attributes={evlist=false, href=export.php}}",
+    "eventType" : "click"
+  }, {
+    "source" : 28,
+    "target" : 29,
+    "text" : "import",
+    "element" : "Element{node=[A: null], tag=A, text=import, attributes={anyaccess=none, evlist=false, href=import.php}}",
+    "eventType" : "click"
+  }, {
+    "source" : 29,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 3,
+    "target" : 33,
+    "text" : "Last name",
+    "element" : "Element{node=[A: null], tag=A, text=Last name, attributes={class=fdTableSortTrigger, evlist=false, href=#, title=Sort on “Last name”}}",
+    "eventType" : "click"
+  }, {
+    "source" : 33,
+    "target" : 35,
+    "text" : "First name",
+    "element" : "Element{node=[A: null], tag=A, text=First name, attributes={class=fdTableSortTrigger, evlist=false, href=#, title=Sort on “First name”}}",
+    "eventType" : "click"
+  }, {
+    "source" : 35,
+    "target" : 33,
+    "text" : "Last name",
+    "element" : "Element{node=[A: null], tag=A, text=Last name, attributes={class=fdTableSortTrigger, evlist=false, href=#, title=Sort on “Last name”}}",
+    "eventType" : "click"
+  }, {
+    "source" : 33,
+    "target" : 37,
+    "text" : "E-mail",
+    "element" : "Element{node=[A: null], tag=A, text=E-mail, attributes={class=fdTableSortTrigger, evlist=false, href=#, title=Sort on “E-mail”}}",
+    "eventType" : "click"
+  }, {
+    "source" : 37,
+    "target" : 35,
+    "text" : "First name",
+    "element" : "Element{node=[A: null], tag=A, text=First name, attributes={class=fdTableSortTrigger, evlist=false, href=#, title=Sort on “First name”}}",
+    "eventType" : "click"
+  }, {
+    "source" : 28,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 3,
+    "target" : 35,
+    "text" : "First name",
+    "element" : "Element{node=[A: null], tag=A, text=First name, attributes={class=fdTableSortTrigger, evlist=false, href=#, title=Sort on “First name”}}",
+    "eventType" : "click"
+  }, {
+    "source" : 3,
+    "target" : 37,
+    "text" : "E-mail",
+    "element" : "Element{node=[A: null], tag=A, text=E-mail, attributes={class=fdTableSortTrigger, evlist=false, href=#, title=Sort on “E-mail”}}",
+    "eventType" : "click"
+  }, {
+    "source" : 3,
+    "target" : 57,
+    "text" : "Telephone",
+    "element" : "Element{node=[A: null], tag=A, text=Telephone, attributes={class=fdTableSortTrigger, evlist=false, href=#, title=Sort on “Telephone”}}",
+    "eventType" : "click"
+  }, {
+    "source" : 57,
+    "target" : 37,
+    "text" : "E-mail",
+    "element" : "Element{node=[A: null], tag=A, text=E-mail, attributes={class=fdTableSortTrigger, evlist=false, href=#, title=Sort on “E-mail”}}",
+    "eventType" : "click"
+  }, {
+    "source" : 17,
+    "target" : 61,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=new, type=submit, value=New group}}",
+    "eventType" : "click"
+  }, {
+    "source" : 61,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 3,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 17,
+    "target" : 67,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=delete, type=submit, value=Delete group(s)}}",
+    "eventType" : "click"
+  }, {
+    "source" : 67,
+    "target" : 17,
+    "text" : "group page",
+    "element" : "Element{node=[A: null], tag=A, text=group page, attributes={evlist=false, href=group.php}}",
+    "eventType" : "click"
+  }, {
+    "source" : 17,
+    "target" : 69,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=edit, type=submit, value=Edit group}}",
+    "eventType" : "click"
+  }, {
+    "source" : 69,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 3,
+    "target" : 72,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=add, type=submit, value=Add to}}",
+    "eventType" : "click"
+  }, {
+    "source" : 17,
+    "target" : 61,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=new, type=submit, value=New group}}",
+    "eventType" : "click"
+  }, {
+    "source" : 61,
+    "target" : 79,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=submit, type=submit, value=Enter information}}",
+    "eventType" : "click"
+  }, {
+    "source" : 79,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 81,
+    "target" : 82,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=add, type=submit, value=Add to}}",
+    "eventType" : "click"
+  }, {
+    "source" : 82,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 82,
+    "target" : 81,
+    "text" : "home",
+    "element" : "Element{node=[A: null], tag=A, text=home, attributes={anyaccess=action, evlist=false, href=./?group=GWmvBZbI}}",
+    "eventType" : "click"
+  }, {
+    "source" : 82,
+    "target" : 99,
+    "text" : "add new",
+    "element" : "Element{node=[A: null], tag=A, text=add new, attributes={anyaccess=action, evlist=false, href=edit.php?group=GWmvBZbI}}",
+    "eventType" : "click"
+  }, {
+    "source" : 99,
+    "target" : 100,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={anyaccess=none, evlist=false, name=quickadd, type=submit, value=Next}}",
+    "eventType" : "click"
+  }, {
+    "source" : 100,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 99,
+    "target" : 100,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={anyaccess=none, evlist=false, name=quickadd, type=submit, value=Next}}",
+    "eventType" : "click"
+  }, {
+    "source" : 100,
+    "target" : 106,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=submit, type=submit, value=Enter}}",
+    "eventType" : "click"
+  }, {
+    "source" : 106,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 108,
+    "target" : 109,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=view.php?id=1}}",
+    "eventType" : "click"
+  }, {
+    "source" : 109,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 108,
+    "target" : 112,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=edit.php?id=1}}",
+    "eventType" : "click"
+  }, {
+    "source" : 112,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 108,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 108,
+    "target" : 118,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=add, type=submit, value=Add to}}",
+    "eventType" : "click"
+  }, {
+    "source" : 108,
+    "target" : 121,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, onclick=DeleteSel(), type=button, value=Delete}}",
+    "eventType" : "click"
+  }, {
+    "source" : 100,
+    "target" : 106,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=submit, type=submit, value=Enter}}",
+    "eventType" : "click"
+  }, {
+    "source" : 108,
+    "target" : 130,
+    "text" : "Last name",
+    "element" : "Element{node=[A: null], tag=A, text=Last name, attributes={anyaccess=action, class=fdTableSortTrigger, evlist=false, href=#, title=Sort on “Last name”}}",
+    "eventType" : "click"
+  }, {
+    "source" : 108,
+    "target" : 132,
+    "text" : "First name",
+    "element" : "Element{node=[A: null], tag=A, text=First name, attributes={anyaccess=action, class=fdTableSortTrigger, evlist=false, href=#, title=Sort on “First name”}}",
+    "eventType" : "click"
+  }, {
+    "source" : 132,
+    "target" : 133,
+    "text" : "E-mail",
+    "element" : "Element{node=[A: null], tag=A, text=E-mail, attributes={anyaccess=none, class=fdTableSortTrigger, evlist=false, href=#, title=Sort on “E-mail”}}",
+    "eventType" : "click"
+  }, {
+    "source" : 133,
+    "target" : 134,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={anyaccess=action, evlist=false, href=view.php?id=2}}",
+    "eventType" : "click"
+  }, {
+    "source" : 134,
+    "target" : 112,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={anyaccess=none, evlist=false, name=modifiy, type=submit, value=Modify}}",
+    "eventType" : "click"
+  }, {
+    "source" : 112,
+    "target" : 79,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=update, type=submit, value=Update}}",
+    "eventType" : "click"
+  }, {
+    "source" : 132,
+    "target" : 139,
+    "text" : "Telephone",
+    "element" : "Element{node=[A: null], tag=A, text=Telephone, attributes={anyaccess=none, class=fdTableSortTrigger, evlist=false, href=#, title=Sort on “Telephone”}}",
+    "eventType" : "click"
+  }, {
+    "source" : 132,
+    "target" : 142,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, onclick=MailSelection(), type=button, value=Send e-Mail}}",
+    "eventType" : "click"
+  }, {
+    "source" : 142,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 142,
+    "target" : 82,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=add, type=submit, value=Add to}}",
+    "eventType" : "click"
+  }, {
+    "source" : 142,
+    "target" : 108,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, onclick=MailSelection(), type=button, value=Send e-Mail}}",
+    "eventType" : "click"
+  }, {
+    "source" : 142,
+    "target" : 121,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, onclick=DeleteSel(), type=button, value=Delete}}",
+    "eventType" : "click"
+  }, {
+    "source" : 99,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 82,
+    "target" : 171,
+    "text" : "groups",
+    "element" : "Element{node=[A: null], tag=A, text=groups, attributes={anyaccess=action, evlist=false, href=group.php?group=GWmvBZbI}}",
+    "eventType" : "click"
+  }, {
+    "source" : 171,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 171,
+    "target" : 61,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=new, type=submit, value=New group}}",
+    "eventType" : "click"
+  }, {
+    "source" : 171,
+    "target" : 67,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=delete, type=submit, value=Delete group(s)}}",
+    "eventType" : "click"
+  }, {
+    "source" : 67,
+    "target" : 10,
+    "text" : "v8.0.0 - r475",
+    "element" : "Element{node=[A: null], tag=A, text=v8.0.0 - r475, attributes={evlist=false, href=notes.htm}}",
+    "eventType" : "click"
+  }, {
+    "source" : 17,
+    "target" : 67,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=delete, type=submit, value=Delete group(s)}}",
+    "eventType" : "click"
+  }, {
+    "source" : 17,
+    "target" : 69,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=edit, type=submit, value=Edit group}}",
+    "eventType" : "click"
+  }, {
+    "source" : 69,
+    "target" : 79,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=update, type=submit, value=Update}}",
+    "eventType" : "click"
+  }, {
+    "source" : 79,
+    "target" : 17,
+    "text" : "group page",
+    "element" : "Element{node=[A: null], tag=A, text=group page, attributes={anyaccess=action, evlist=false, href=group.php}}",
+    "eventType" : "click"
+  } ]
+}

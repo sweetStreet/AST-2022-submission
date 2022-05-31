@@ -1,0 +1,4231 @@
+{
+  "states" : {
+    "state90" : {
+      "name" : "state90",
+      "url" : "http://localhost:4200/petclinic/pettypes",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 200,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 200,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 391,
+        "left" : 721,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/APP-PETTYPE-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 59,
+        "height" : 36
+      }, {
+        "top" : 557,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[2]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 557,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[2]/BUTTON[2]",
+        "width" : 55,
+        "height" : 36
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 3,
+      "id" : 90,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 18.0,
+      "cluster" : 90,
+      "timeAdded" : 1633559730246,
+      "nearestState" : "state65"
+    },
+    "state52" : {
+      "name" : "state52",
+      "url" : "http://localhost:4200/petclinic/vets/add",
+      "candidateElements" : [ {
+        "top" : 321,
+        "left" : 218,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[5]/DIV[1]/BUTTON[1]",
+        "width" : 72,
+        "height" : 36
+      }, {
+        "top" : 321,
+        "left" : 290,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[5]/DIV[1]/BUTTON[2]",
+        "width" : 86,
+        "height" : 36
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 52,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 1.0,
+      "cluster" : 14,
+      "timeAdded" : 1633559616335,
+      "nearestState" : "state14"
+    },
+    "state95" : {
+      "name" : "state95",
+      "url" : "http://localhost:4200/petclinic/pettypes",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 200,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 200,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 338,
+        "left" : 721,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/APP-PETTYPE-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 59,
+        "height" : 36
+      }, {
+        "top" : 504,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[2]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 504,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[2]/BUTTON[2]",
+        "width" : 55,
+        "height" : 36
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 2,
+      "id" : 95,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 8.0,
+      "cluster" : 95,
+      "timeAdded" : 1633559749206,
+      "nearestState" : "state90"
+    },
+    "state5" : {
+      "name" : "state5",
+      "url" : "http://localhost:4200/petclinic/owners",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 107,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 107,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 107,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 107,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 302,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 106,
+        "height" : 16
+      }, {
+        "top" : 376,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+        "width" : 129,
+        "height" : 16
+      }, {
+        "top" : 470,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]",
+        "width" : 100,
+        "height" : 16
+      }, {
+        "top" : 601,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[8]/TD[1]/A[1]",
+        "width" : 99,
+        "height" : 16
+      }, {
+        "top" : 675,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[10]/TD[1]/A[1]",
+        "width" : 99,
+        "height" : 16
+      }, {
+        "top" : 203,
+        "left" : 218,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 105,
+        "height" : 36
+      }, {
+        "top" : 741,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 103,
+        "height" : 36
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 2,
+      "id" : 5,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 167.0,
+      "cluster" : 5,
+      "timeAdded" : 1633559453037,
+      "nearestState" : "index"
+    },
+    "state7" : {
+      "name" : "state7",
+      "url" : "http://localhost:4200/petclinic/owners/add",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 399,
+        "left" : 218,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[7]/DIV[1]/BUTTON[1]",
+        "width" : 61,
+        "height" : 36
+      }, {
+        "top" : 399,
+        "left" : 278,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[7]/DIV[1]/BUTTON[2]",
+        "width" : 103,
+        "height" : 36
+      } ],
+      "fanIn" : 4,
+      "fanOut" : 5,
+      "id" : 7,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 40.0,
+      "cluster" : 7,
+      "timeAdded" : 1633559467705,
+      "nearestState" : "index"
+    },
+    "state176" : {
+      "name" : "state176",
+      "url" : "http://localhost:4200/petclinic/owners",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 121,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 121,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 121,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 121,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 302,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 106,
+        "height" : 16
+      }, {
+        "top" : 339,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+        "width" : 75,
+        "height" : 16
+      }, {
+        "top" : 376,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+        "width" : 129,
+        "height" : 16
+      }, {
+        "top" : 413,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]",
+        "width" : 84,
+        "height" : 16
+      }, {
+        "top" : 450,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]",
+        "width" : 100,
+        "height" : 16
+      }, {
+        "top" : 487,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[6]/TD[1]/A[1]",
+        "width" : 93,
+        "height" : 16
+      }, {
+        "top" : 524,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[7]/TD[1]/A[1]",
+        "width" : 65,
+        "height" : 16
+      }, {
+        "top" : 561,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[8]/TD[1]/A[1]",
+        "width" : 99,
+        "height" : 16
+      }, {
+        "top" : 598,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[9]/TD[1]/A[1]",
+        "width" : 110,
+        "height" : 16
+      }, {
+        "top" : 635,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[10]/TD[1]/A[1]",
+        "width" : 99,
+        "height" : 16
+      }, {
+        "top" : 672,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[11]/TD[1]/A[1]",
+        "width" : 45,
+        "height" : 16
+      }, {
+        "top" : 709,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[12]/TD[1]/A[1]",
+        "width" : 45,
+        "height" : 16
+      }, {
+        "top" : 203,
+        "left" : 218,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 105,
+        "height" : 36
+      }, {
+        "top" : 755,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 103,
+        "height" : 36
+      } ],
+      "fanIn" : 5,
+      "fanOut" : 1,
+      "id" : 176,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 11.0,
+      "cluster" : 133,
+      "timeAdded" : 1633559977703,
+      "nearestState" : "state133"
+    },
+    "state230" : {
+      "name" : "state230",
+      "url" : "http://localhost:4200/petclinic/specialties",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 200,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 200,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 444,
+        "left" : 721,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/DIV[1]/APP-SPECIALTY-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 59,
+        "height" : 36
+      }, {
+        "top" : 610,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/DIV[2]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 610,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/DIV[2]/BUTTON[2]",
+        "width" : 55,
+        "height" : 36
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 3,
+      "id" : 230,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 11.0,
+      "cluster" : 230,
+      "timeAdded" : 1633560112575,
+      "nearestState" : "state90"
+    },
+    "state144" : {
+      "name" : "state144",
+      "url" : "http://localhost:4200/petclinic/owners",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 302,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 45,
+        "height" : 16
+      }, {
+        "top" : 203,
+        "left" : 218,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 105,
+        "height" : 36
+      }, {
+        "top" : 348,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 103,
+        "height" : 36
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 144,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 30.0,
+      "cluster" : 133,
+      "timeAdded" : 1633559892440,
+      "nearestState" : "state107"
+    },
+    "state268" : {
+      "name" : "state268",
+      "url" : "http://localhost:4200/petclinic/owners/1/pets/add",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 396,
+        "left" : 218,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PET-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[6]/DIV[1]/BUTTON[1]",
+        "width" : 72,
+        "height" : 36
+      }, {
+        "top" : 396,
+        "left" : 290,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PET-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[6]/DIV[1]/BUTTON[2]",
+        "width" : 86,
+        "height" : 36
+      }, {
+        "top" : 328,
+        "left" : 223,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/MAT-DATEPICKER-CONTENT[1]/MAT-CALENDAR[1]/MAT-CALENDAR-HEADER[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 98,
+        "height" : 40
+      }, {
+        "top" : 328,
+        "left" : 429,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/MAT-DATEPICKER-CONTENT[1]/MAT-CALENDAR[1]/MAT-CALENDAR-HEADER[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 40,
+        "height" : 40
+      }, {
+        "top" : 328,
+        "left" : 469,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/MAT-DATEPICKER-CONTENT[1]/MAT-CALENDAR[1]/MAT-CALENDAR-HEADER[1]/DIV[1]/DIV[1]/BUTTON[3]",
+        "width" : 40,
+        "height" : 40
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 268,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 149.0,
+      "cluster" : 268,
+      "timeAdded" : 1633560209341,
+      "nearestState" : "state262"
+    },
+    "state269" : {
+      "name" : "state269",
+      "url" : "http://localhost:4200/petclinic/owners/1/pets/add",
+      "candidateElements" : [ {
+        "top" : 328,
+        "left" : 223,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/MAT-DATEPICKER-CONTENT[1]/MAT-CALENDAR[1]/MAT-CALENDAR-HEADER[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 124,
+        "height" : 40
+      }, {
+        "top" : 328,
+        "left" : 429,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/MAT-DATEPICKER-CONTENT[1]/MAT-CALENDAR[1]/MAT-CALENDAR-HEADER[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 40,
+        "height" : 40
+      }, {
+        "top" : 328,
+        "left" : 469,
+        "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/MAT-DATEPICKER-CONTENT[1]/MAT-CALENDAR[1]/MAT-CALENDAR-HEADER[1]/DIV[1]/DIV[1]/BUTTON[3]",
+        "width" : 40,
+        "height" : 40
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 269,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 45.0,
+      "cluster" : 269,
+      "timeAdded" : 1633560218042,
+      "nearestState" : "state268"
+    },
+    "state107" : {
+      "name" : "state107",
+      "url" : "http://localhost:4200/petclinic/pettypes",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 200,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 200,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 264,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 264,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 55,
+        "height" : 36
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 3,
+      "id" : 107,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 8.0,
+      "cluster" : 107,
+      "timeAdded" : 1633559781271,
+      "nearestState" : "state66"
+    },
+    "state13" : {
+      "name" : "state13",
+      "url" : "http://localhost:4200/petclinic/vets",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 200,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 200,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 363,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 363,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 416,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 416,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 469,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[6]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 469,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[6]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 533,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 533,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 81,
+        "height" : 36
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 2,
+      "id" : 13,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 25.0,
+      "cluster" : 13,
+      "timeAdded" : 1633559487657,
+      "nearestState" : "state11"
+    },
+    "state35" : {
+      "name" : "state35",
+      "url" : "http://localhost:4200/petclinic/vets",
+      "candidateElements" : [ {
+        "top" : 480,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 480,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 81,
+        "height" : 36
+      } ],
+      "fanIn" : 3,
+      "fanOut" : 2,
+      "id" : 35,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 11.0,
+      "cluster" : 13,
+      "timeAdded" : 1633559565876,
+      "nearestState" : "state34"
+    },
+    "state34" : {
+      "name" : "state34",
+      "url" : "http://localhost:4200/petclinic/vets",
+      "candidateElements" : [ {
+        "top" : 200,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 200,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 363,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 363,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 416,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 416,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 469,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[6]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 469,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[6]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 533,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 533,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 81,
+        "height" : 36
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 1,
+      "id" : 34,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 1.0,
+      "cluster" : 13,
+      "timeAdded" : 1633559560468,
+      "nearestState" : "state13"
+    },
+    "state55" : {
+      "name" : "state55",
+      "url" : "http://localhost:4200/petclinic/pettypes",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 200,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 200,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 359,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 359,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 423,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 423,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 55,
+        "height" : 36
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 3,
+      "id" : 55,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 8.0,
+      "cluster" : 55,
+      "timeAdded" : 1633559625255,
+      "nearestState" : "state39"
+    },
+    "state33" : {
+      "name" : "state33",
+      "url" : "http://localhost:4200/petclinic/vets/2/edit",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 344,
+        "left" : 218,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-EDIT[1]/DIV[1]/DIV[1]/FORM[1]/DIV[5]/DIV[1]/BUTTON[1]",
+        "width" : 72,
+        "height" : 36
+      }, {
+        "top" : 344,
+        "left" : 290,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-EDIT[1]/DIV[1]/DIV[1]/FORM[1]/DIV[5]/DIV[1]/BUTTON[2]",
+        "width" : 86,
+        "height" : 36
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 3,
+      "id" : 33,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 19.0,
+      "cluster" : 33,
+      "timeAdded" : 1633559555481,
+      "nearestState" : "state14"
+    },
+    "state11" : {
+      "name" : "state11",
+      "url" : "http://localhost:4200/petclinic/pettypes",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 200,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 200,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 359,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 359,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 412,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 412,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 465,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[6]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 465,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[6]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 529,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 529,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 55,
+        "height" : 36
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 4,
+      "id" : 11,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 57.0,
+      "cluster" : 11,
+      "timeAdded" : 1633559479161,
+      "nearestState" : "state7"
+    },
+    "state39" : {
+      "name" : "state39",
+      "url" : "http://localhost:4200/petclinic/pettypes",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 200,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 200,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 359,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 359,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 412,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 412,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 476,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 476,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 55,
+        "height" : 36
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 3,
+      "id" : 39,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 8.0,
+      "cluster" : 39,
+      "timeAdded" : 1633559579481,
+      "nearestState" : "state11"
+    },
+    "state16" : {
+      "name" : "state16",
+      "url" : "http://localhost:4200/petclinic/specialties/1/edit",
+      "candidateElements" : [ {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 10,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 10,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 10,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 10,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 154,
+        "left" : 701,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-EDIT[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 77,
+        "height" : 36
+      }, {
+        "top" : 154,
+        "left" : 778,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-EDIT[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[2]",
+        "width" : 73,
+        "height" : 36
+      } ],
+      "fanIn" : 3,
+      "fanOut" : 2,
+      "id" : 16,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 15.0,
+      "cluster" : 16,
+      "timeAdded" : 1633559503525,
+      "nearestState" : "index"
+    },
+    "state15" : {
+      "name" : "state15",
+      "url" : "http://localhost:4200/petclinic/specialties",
+      "candidateElements" : [ {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 200,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 200,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 370,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 370,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 55,
+        "height" : 36
+      } ],
+      "fanIn" : 5,
+      "fanOut" : 5,
+      "id" : 15,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 25.0,
+      "cluster" : 15,
+      "timeAdded" : 1633559498697,
+      "nearestState" : "state11"
+    },
+    "state14" : {
+      "name" : "state14",
+      "url" : "http://localhost:4200/petclinic/vets/add",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 321,
+        "left" : 218,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[5]/DIV[1]/BUTTON[1]",
+        "width" : 72,
+        "height" : 36
+      }, {
+        "top" : 321,
+        "left" : 290,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[5]/DIV[1]/BUTTON[2]",
+        "width" : 86,
+        "height" : 36
+      } ],
+      "fanIn" : 3,
+      "fanOut" : 2,
+      "id" : 14,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 18.0,
+      "cluster" : 14,
+      "timeAdded" : 1633559493681,
+      "nearestState" : "state7"
+    },
+    "state36" : {
+      "name" : "state36",
+      "url" : "http://localhost:4200/petclinic/welcome",
+      "candidateElements" : [ {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 0,
+      "id" : 36,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 1.0,
+      "cluster" : 0,
+      "timeAdded" : 1633559571044,
+      "nearestState" : "index"
+    },
+    "state82" : {
+      "name" : "state82",
+      "url" : "http://localhost:4200/petclinic/owners",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 47,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 47,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 47,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 47,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 302,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 106,
+        "height" : 16
+      }, {
+        "top" : 339,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+        "width" : 75,
+        "height" : 16
+      }, {
+        "top" : 376,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+        "width" : 129,
+        "height" : 16
+      }, {
+        "top" : 413,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]",
+        "width" : 84,
+        "height" : 16
+      }, {
+        "top" : 450,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]",
+        "width" : 100,
+        "height" : 16
+      }, {
+        "top" : 524,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[7]/TD[1]/A[1]",
+        "width" : 65,
+        "height" : 16
+      }, {
+        "top" : 561,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[8]/TD[1]/A[1]",
+        "width" : 99,
+        "height" : 16
+      }, {
+        "top" : 635,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[10]/TD[1]/A[1]",
+        "width" : 99,
+        "height" : 16
+      }, {
+        "top" : 203,
+        "left" : 218,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 105,
+        "height" : 36
+      }, {
+        "top" : 681,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 103,
+        "height" : 36
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 1,
+      "id" : 82,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 20.0,
+      "cluster" : 82,
+      "timeAdded" : 1633559695048,
+      "nearestState" : "state5"
+    },
+    "state86" : {
+      "name" : "state86",
+      "url" : "http://localhost:4200/petclinic/owners",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 84,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 84,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 84,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 84,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 302,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 106,
+        "height" : 16
+      }, {
+        "top" : 339,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+        "width" : 75,
+        "height" : 16
+      }, {
+        "top" : 376,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+        "width" : 129,
+        "height" : 16
+      }, {
+        "top" : 413,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]",
+        "width" : 84,
+        "height" : 16
+      }, {
+        "top" : 450,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]",
+        "width" : 100,
+        "height" : 16
+      }, {
+        "top" : 524,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[7]/TD[1]/A[1]",
+        "width" : 65,
+        "height" : 16
+      }, {
+        "top" : 561,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[8]/TD[1]/A[1]",
+        "width" : 99,
+        "height" : 16
+      }, {
+        "top" : 635,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[10]/TD[1]/A[1]",
+        "width" : 99,
+        "height" : 16
+      }, {
+        "top" : 672,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[11]/TD[1]/A[1]",
+        "width" : 45,
+        "height" : 16
+      }, {
+        "top" : 203,
+        "left" : 218,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 105,
+        "height" : 36
+      }, {
+        "top" : 718,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 103,
+        "height" : 36
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 1,
+      "id" : 86,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 11.0,
+      "cluster" : 86,
+      "timeAdded" : 1633559713479,
+      "nearestState" : "state82"
+    },
+    "index" : {
+      "name" : "index",
+      "url" : "http://localhost:4200/petclinic/",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      } ],
+      "fanIn" : 26,
+      "fanOut" : 3,
+      "id" : 0,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : -1.0,
+      "cluster" : 0,
+      "timeAdded" : 1633559436920,
+      "nearestState" : "null"
+    },
+    "state262" : {
+      "name" : "state262",
+      "url" : "http://localhost:4200/petclinic/owners/1/pets/add",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 272,
+        "left" : 390,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PET-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[4]/DIV[1]/MAT-DATEPICKER-TOGGLE[1]/BUTTON[1]",
+        "width" : 40,
+        "height" : 40
+      }, {
+        "top" : 396,
+        "left" : 218,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PET-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[6]/DIV[1]/BUTTON[1]",
+        "width" : 72,
+        "height" : 36
+      }, {
+        "top" : 396,
+        "left" : 290,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PET-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[6]/DIV[1]/BUTTON[2]",
+        "width" : 86,
+        "height" : 36
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 2,
+      "id" : 262,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 18.0,
+      "cluster" : 262,
+      "timeAdded" : 1633560192147,
+      "nearestState" : "state14"
+    },
+    "state133" : {
+      "name" : "state133",
+      "url" : "http://localhost:4200/petclinic/owners",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 84,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 84,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 84,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 84,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 302,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+        "width" : 106,
+        "height" : 16
+      }, {
+        "top" : 339,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+        "width" : 75,
+        "height" : 16
+      }, {
+        "top" : 376,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+        "width" : 129,
+        "height" : 16
+      }, {
+        "top" : 413,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]",
+        "width" : 84,
+        "height" : 16
+      }, {
+        "top" : 450,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]",
+        "width" : 100,
+        "height" : 16
+      }, {
+        "top" : 487,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[6]/TD[1]/A[1]",
+        "width" : 93,
+        "height" : 16
+      }, {
+        "top" : 524,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[7]/TD[1]/A[1]",
+        "width" : 65,
+        "height" : 16
+      }, {
+        "top" : 561,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[8]/TD[1]/A[1]",
+        "width" : 99,
+        "height" : 16
+      }, {
+        "top" : 598,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[9]/TD[1]/A[1]",
+        "width" : 110,
+        "height" : 16
+      }, {
+        "top" : 635,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[10]/TD[1]/A[1]",
+        "width" : 99,
+        "height" : 16
+      }, {
+        "top" : 672,
+        "left" : 28,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[11]/TD[1]/A[1]",
+        "width" : 45,
+        "height" : 16
+      }, {
+        "top" : 203,
+        "left" : 218,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 105,
+        "height" : 36
+      }, {
+        "top" : 718,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 103,
+        "height" : 36
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 3,
+      "id" : 133,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 6.0,
+      "cluster" : 133,
+      "timeAdded" : 1633559850159,
+      "nearestState" : "state86"
+    },
+    "state257" : {
+      "name" : "state257",
+      "url" : "http://localhost:4200/petclinic/owners/1/edit",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 399,
+        "left" : 218,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-EDIT[1]/DIV[1]/DIV[1]/FORM[1]/DIV[7]/DIV[1]/BUTTON[1]",
+        "width" : 61,
+        "height" : 36
+      }, {
+        "top" : 399,
+        "left" : 278,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-EDIT[1]/DIV[1]/DIV[1]/FORM[1]/DIV[7]/DIV[1]/BUTTON[2]",
+        "width" : 125,
+        "height" : 36
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 257,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 1.0,
+      "cluster" : 257,
+      "timeAdded" : 1633560177144,
+      "nearestState" : "state7"
+    },
+    "state115" : {
+      "name" : "state115",
+      "url" : "http://localhost:4200/petclinic/pettypes",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 212,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 212,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 55,
+        "height" : 36
+      } ],
+      "fanIn" : 4,
+      "fanOut" : 3,
+      "id" : 115,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 8.0,
+      "cluster" : 115,
+      "timeAdded" : 1633559800901,
+      "nearestState" : "state107"
+    },
+    "state137" : {
+      "name" : "state137",
+      "url" : "http://localhost:4200/petclinic/owners/1",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 254,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-DETAIL[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 72,
+        "height" : 36
+      }, {
+        "top" : 254,
+        "left" : 92,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-DETAIL[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 103,
+        "height" : 36
+      }, {
+        "top" : 254,
+        "left" : 194,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-DETAIL[1]/DIV[1]/DIV[1]/BUTTON[3]",
+        "width" : 115,
+        "height" : 36
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 11,
+      "id" : 137,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 31.0,
+      "cluster" : 137,
+      "timeAdded" : 1633559872432,
+      "nearestState" : "state107"
+    },
+    "state159" : {
+      "name" : "state159",
+      "url" : "http://localhost:4200/petclinic/vets",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 200,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 200,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 359,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 359,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 423,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 423,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 81,
+        "height" : 36
+      } ],
+      "fanIn" : 3,
+      "fanOut" : 3,
+      "id" : 159,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 13.0,
+      "cluster" : 159,
+      "timeAdded" : 1633559931328,
+      "nearestState" : "state49"
+    },
+    "state119" : {
+      "name" : "state119",
+      "url" : "http://localhost:4200/petclinic/pettypes",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 30,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 286,
+        "left" : 721,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/APP-PETTYPE-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 59,
+        "height" : 36
+      }, {
+        "top" : 452,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[2]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 452,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[2]/BUTTON[2]",
+        "width" : 55,
+        "height" : 36
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 2,
+      "id" : 119,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 8.0,
+      "cluster" : 119,
+      "timeAdded" : 1633559812802,
+      "nearestState" : "state95"
+    },
+    "state66" : {
+      "name" : "state66",
+      "url" : "http://localhost:4200/petclinic/pettypes",
+      "candidateElements" : [ {
+        "top" : 317,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 317,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 55,
+        "height" : 36
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 2,
+      "id" : 66,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 8.0,
+      "cluster" : 66,
+      "timeAdded" : 1633559653970,
+      "nearestState" : "state65"
+    },
+    "state65" : {
+      "name" : "state65",
+      "url" : "http://localhost:4200/petclinic/pettypes",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 200,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 200,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 684,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[1]",
+        "width" : 55,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 739,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[2]",
+        "width" : 71,
+        "height" : 36
+      }, {
+        "top" : 370,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 370,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 55,
+        "height" : 36
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 65,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : 1.0,
+      "cluster" : 65,
+      "timeAdded" : 1633559648704,
+      "nearestState" : "state15"
+    },
+    "state28" : {
+      "name" : "state28",
+      "url" : "http://localhost:4200/petclinic/pettypes/1/edit",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 10,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 10,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 10,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 10,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 154,
+        "left" : 701,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-EDIT[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+        "width" : 77,
+        "height" : 36
+      }, {
+        "top" : 154,
+        "left" : 778,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-EDIT[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[2]",
+        "width" : 73,
+        "height" : 36
+      } ],
+      "fanIn" : 6,
+      "fanOut" : 1,
+      "id" : 28,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 1.0,
+      "cluster" : 16,
+      "timeAdded" : 1633559535284,
+      "nearestState" : "state16"
+    },
+    "state49" : {
+      "name" : "state49",
+      "url" : "http://localhost:4200/petclinic/vets",
+      "candidateElements" : [ {
+        "top" : 16,
+        "left" : 15,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 229,
+        "height" : 46
+      }, {
+        "top" : 4,
+        "left" : 244,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 100,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 343,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+        "width" : 116,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 459,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+        "width" : 169,
+        "height" : 76
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 0,
+        "left" : 0,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 4,
+        "left" : 628,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+        "width" : 130,
+        "height" : 76
+      }, {
+        "top" : 4,
+        "left" : 758,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+        "width" : 144,
+        "height" : 76
+      }, {
+        "top" : 200,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 200,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 253,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 306,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 363,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 363,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 416,
+        "left" : 599,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[3]/BUTTON[1]",
+        "width" : 81,
+        "height" : 36
+      }, {
+        "top" : 416,
+        "left" : 680,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[5]/TD[3]/BUTTON[2]",
+        "width" : 97,
+        "height" : 36
+      }, {
+        "top" : 480,
+        "left" : 20,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+        "width" : 68,
+        "height" : 36
+      }, {
+        "top" : 480,
+        "left" : 87,
+        "xpath" : "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+        "width" : 81,
+        "height" : 36
+      } ],
+      "fanIn" : 0,
+      "fanOut" : 2,
+      "id" : 49,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : true,
+      "distToNearestState" : 1.0,
+      "cluster" : 13,
+      "timeAdded" : 1633559605816,
+      "nearestState" : "state35"
+    }
+  },
+  "edges" : [ {
+    "from" : "state5",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-cph-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "index",
+    "to" : "state7",
+    "text" : "Add New",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add New, attributes={_ngcontent-gio-c0=, evlist=false, href=/petclinic/owners/add, ng-reflect-router-link=/owners/add, routerlink=/owners/add}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state7",
+    "to" : "state5",
+    "text" : "Search",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Search, attributes={_ngcontent-wts-c0=, anyaccess=action, evlist=false, href=/petclinic/owners, ng-reflect-router-link=/owners, routerlink=/owners}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state5",
+    "to" : "index",
+    "text" : "Home",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Home, attributes={_ngcontent-cph-c0=, evlist=false, href=/petclinic/welcome, ng-reflect-router-link=welcome, routerlink=welcome, title=home page}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state7",
+    "text" : "Add New",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add New, attributes={_ngcontent-ccf-c0=, anyaccess=action, evlist=false, href=/petclinic/owners/add, ng-reflect-router-link=/owners/add, routerlink=/owners/add}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state13",
+    "to" : "state14",
+    "text" : "Add New",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add New, attributes={_ngcontent-jqi-c0=, anyaccess=none, evlist=false, href=/petclinic/vets/add, ng-reflect-router-link=/vets/add, routerlink=/vets/add}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state14",
+    "to" : "state15",
+    "text" : "Specialties",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Specialties, attributes={_ngcontent-wkb-c0=, anyaccess=none, evlist=false, href=/petclinic/specialties, ng-reflect-router-link=/specialties, ng-reflect-router-link-active=active, routerlink=/specialties, routerlinkactive=active, title=specialties}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state15",
+    "to" : "state16",
+    "text" : "Edit",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Edit, attributes={_ngcontent-wkb-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state16",
+    "to" : "state15",
+    "text" : "Update",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-EDIT[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Update, attributes={_ngcontent-wkb-c4=, class=btn btn-default, evlist=false, type=submit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state15",
+    "to" : "state16",
+    "text" : "Edit",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Edit, attributes={_ngcontent-wkb-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state16",
+    "to" : "state15",
+    "text" : "Cancel",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-EDIT[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Cancel, attributes={_ngcontent-wkb-c4=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state15",
+    "to" : "state16",
+    "text" : "Edit",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Edit, attributes={_ngcontent-wkb-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-ccf-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state28",
+    "text" : "Edit",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Edit, attributes={_ngcontent-ccf-c3=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state28",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-jfy-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state13",
+    "to" : "state33",
+    "text" : "Edit Vet",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[3]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Edit Vet, attributes={_ngcontent-jqi-c1=, anyaccess=none, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state34",
+    "to" : "state35",
+    "text" : "Delete Vet",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[3]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Delete Vet, attributes={_ngcontent-gin-c1=, anyaccess=none, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state35",
+    "to" : "state36",
+    "text" : "Home",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Home, attributes={_ngcontent-gin-c1=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state11",
+    "to" : "state39",
+    "text" : "Delete",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Delete, attributes={_ngcontent-ccf-c3=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state39",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-afn-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state39",
+    "to" : "state28",
+    "text" : "Edit",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Edit, attributes={_ngcontent-afn-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state49",
+    "to" : "state33",
+    "text" : "Edit Vet",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[3]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Edit Vet, attributes={_ngcontent-ysy-c1=, anyaccess=none, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state33",
+    "to" : "state35",
+    "text" : "Save Vet",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-EDIT[1]/DIV[1]/DIV[1]/FORM[1]/DIV[5]/DIV[1]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Save Vet, attributes={_ngcontent-gin-c2=, anyaccess=none, class=btn btn-default, evlist=false, type=submit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state35",
+    "to" : "state52",
+    "text" : "Add Vet",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add Vet, attributes={_ngcontent-gin-c1=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state39",
+    "to" : "state55",
+    "text" : "Delete",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Delete, attributes={_ngcontent-afn-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state55",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-lje-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state55",
+    "to" : "state28",
+    "text" : "Edit",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Edit, attributes={_ngcontent-lje-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state55",
+    "to" : "state65",
+    "text" : "Delete",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Delete, attributes={_ngcontent-lje-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state65",
+    "to" : "state66",
+    "text" : "Delete",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[2]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Delete, attributes={_ngcontent-oks-c2=, anyaccess=none, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state66",
+    "to" : "index",
+    "text" : "Home",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Home, attributes={_ngcontent-oks-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state7",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-wts-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state33",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-gin-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state82",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-tid-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state86",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-foo-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state66",
+    "to" : "state90",
+    "text" : "Add",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add, attributes={_ngcontent-oks-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state90",
+    "to" : "state28",
+    "text" : "Edit",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Edit, attributes={_ngcontent-mjt-c2=, anyaccess=none, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state90",
+    "to" : "state95",
+    "text" : "Delete",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Delete, attributes={_ngcontent-mjt-c2=, anyaccess=none, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state95",
+    "to" : "state66",
+    "text" : "Save",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/APP-PETTYPE-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Save, attributes={_ngcontent-qha-c3=, anyaccess=none, class=btn btn-default, evlist=false, type=submit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state90",
+    "to" : "state28",
+    "text" : "Edit",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Edit, attributes={_ngcontent-mjt-c2=, anyaccess=none, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state95",
+    "to" : "index",
+    "text" : "Home",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Home, attributes={_ngcontent-qha-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state107",
+    "to" : "state95",
+    "text" : "Add",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add, attributes={_ngcontent-rkt-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state107",
+    "to" : "state28",
+    "text" : "Edit",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Edit, attributes={_ngcontent-rkt-c2=, anyaccess=none, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state107",
+    "to" : "state115",
+    "text" : "Delete",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Delete, attributes={_ngcontent-rkt-c2=, anyaccess=none, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state115",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-uji-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "index",
+    "to" : "state115",
+    "text" : "Pet Types",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Pet Types, attributes={_ngcontent-gio-c0=, evlist=false, href=/petclinic/pettypes, ng-reflect-router-link=/pettypes, ng-reflect-router-link-active=active, routerlink=/pettypes, routerlinkactive=active, title=pettypes}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state115",
+    "to" : "state119",
+    "text" : "Add",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add, attributes={_ngcontent-uji-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state119",
+    "to" : "state115",
+    "text" : "Add",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[2]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add, attributes={_ngcontent-cph-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state115",
+    "to" : "index",
+    "text" : "Home",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Home, attributes={_ngcontent-uji-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state119",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-cph-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state133",
+    "to" : "state137",
+    "text" : "George Franklin",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=George Franklin, attributes={_ngcontent-ssn-c1=, anyaccess=none, evlist=false, href=/petclinic/owners/1, ng-reflect-router-link=/owners/1, ng-reflect-router-link-active=active, routerlinkactive=active}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state137",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-yvs-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state133",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-ssn-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state133",
+    "to" : "state144",
+    "text" : "Find Owner",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Find Owner, attributes={_ngcontent-ssn-c1=, class=btn btn-default, evlist=false, type=submit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state144",
+    "to" : "state7",
+    "text" : "Add Owner",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add Owner, attributes={_ngcontent-wuc-c1=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state33",
+    "to" : "state35",
+    "text" : "< Back",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-EDIT[1]/DIV[1]/DIV[1]/FORM[1]/DIV[5]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=< Back, attributes={_ngcontent-gin-c2=, anyaccess=none, class=btn btn-default, evlist=false, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state49",
+    "to" : "state159",
+    "text" : "Delete Vet",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[3]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Delete Vet, attributes={_ngcontent-ysy-c1=, anyaccess=none, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state159",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-hbn-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state7",
+    "to" : "state159",
+    "text" : "All",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=All, attributes={_ngcontent-wts-c0=, anyaccess=none, evlist=false, href=/petclinic/vets, ng-reflect-router-link=/vets, routerlink=/vets}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state159",
+    "to" : "index",
+    "text" : "Home",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Home, attributes={_ngcontent-hbn-c1=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state159",
+    "to" : "state14",
+    "text" : "Add Vet",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-VET-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add Vet, attributes={_ngcontent-hbn-c1=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state14",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-wkb-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state7",
+    "to" : "state176",
+    "text" : "Add Owner",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[7]/DIV[1]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add Owner, attributes={_ngcontent-wts-c1=, class=btn btn-default, disabled=, evlist=false, type=submit}}",
+    "eventType" : "click"
+  }, {
+    "from" : "index",
+    "to" : "state176",
+    "text" : "Search",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Search, attributes={_ngcontent-gio-c0=, evlist=false, href=/petclinic/owners, ng-reflect-router-link=/owners, routerlink=/owners}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state7",
+    "to" : "state176",
+    "text" : "Back",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[7]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Back, attributes={_ngcontent-wts-c1=, class=btn btn-default, evlist=false, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state176",
+    "to" : "state137",
+    "text" : "George Franklin",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-LIST[1]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=George Franklin, attributes={_ngcontent-wdx-c2=, anyaccess=action, evlist=false, href=/petclinic/owners/1, ng-reflect-router-link=/owners/1, ng-reflect-router-link-active=active, routerlinkactive=active}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state137",
+    "to" : "index",
+    "text" : "Home",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Home, attributes={_ngcontent-yvs-c0=, evlist=false, href=/petclinic/welcome, ng-reflect-router-link=welcome, routerlink=welcome, title=home page}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state137",
+    "to" : "state176",
+    "text" : "Search",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Search, attributes={_ngcontent-yvs-c0=, evlist=false, href=/petclinic/owners, ng-reflect-router-link=/owners, routerlink=/owners}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state137",
+    "to" : "state7",
+    "text" : "Add New",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add New, attributes={_ngcontent-yvs-c0=, evlist=false, href=/petclinic/owners/add, ng-reflect-router-link=/owners/add, routerlink=/owners/add}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state137",
+    "to" : "state159",
+    "text" : "All",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=All, attributes={_ngcontent-yvs-c0=, evlist=false, href=/petclinic/vets, ng-reflect-router-link=/vets, routerlink=/vets}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state137",
+    "to" : "state14",
+    "text" : "Add New",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Add New, attributes={_ngcontent-yvs-c0=, evlist=false, href=/petclinic/vets/add, ng-reflect-router-link=/vets/add, routerlink=/vets/add}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state137",
+    "to" : "state115",
+    "text" : "Pet Types",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Pet Types, attributes={_ngcontent-yvs-c0=, evlist=false, href=/petclinic/pettypes, ng-reflect-router-link=/pettypes, ng-reflect-router-link-active=active, routerlink=/pettypes, routerlinkactive=active, title=pettypes}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state137",
+    "to" : "state15",
+    "text" : "Specialties",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Specialties, attributes={_ngcontent-yvs-c0=, evlist=false, href=/petclinic/specialties, ng-reflect-router-link=/specialties, ng-reflect-router-link-active=active, routerlink=/specialties, routerlinkactive=active, title=specialties}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state15",
+    "to" : "index",
+    "text" : "Home",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Home, attributes={_ngcontent-wkb-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state15",
+    "to" : "state230",
+    "text" : "Add",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/DIV[1]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add, attributes={_ngcontent-wkb-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state230",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-nos-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state230",
+    "to" : "index",
+    "text" : "Home",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/DIV[2]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Home, attributes={_ngcontent-nos-c4=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state230",
+    "to" : "state15",
+    "text" : "Add",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-SPECIALTY-LIST[1]/DIV[1]/DIV[1]/DIV[2]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add, attributes={_ngcontent-nos-c4=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state137",
+    "to" : "state176",
+    "text" : "< Back",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-DETAIL[1]/DIV[1]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=< Back, attributes={_ngcontent-yvs-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state137",
+    "to" : "state257",
+    "text" : "Edit Owner",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-DETAIL[1]/DIV[1]/DIV[1]/BUTTON[2]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Edit Owner, attributes={_ngcontent-yvs-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state257",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-toc-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state137",
+    "to" : "state262",
+    "text" : "Add New Pet",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-OWNER-DETAIL[1]/DIV[1]/DIV[1]/BUTTON[3]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=Add New Pet, attributes={_ngcontent-yvs-c2=, class=btn btn-default, evlist=false}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state262",
+    "to" : "index",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/DIV[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={_ngcontent-lao-c0=, class=navbar-brand, evlist=false, href=#}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state262",
+    "to" : "state268",
+    "text" : "",
+    "id" : "xpath /HTML[1]/BODY[1]/APP-ROOT[1]/APP-PET-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[4]/DIV[1]/MAT-DATEPICKER-TOGGLE[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=, attributes={aria-haspopup=dialog, aria-label=Open calendar, class=mat-icon-button, evlist=false, mat-icon-button=, ng-reflect-disabled=false, tabindex=0, type=button}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state268",
+    "to" : "state269",
+    "text" : "06 2020",
+    "id" : "xpath /HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/MAT-DATEPICKER-CONTENT[1]/MAT-CALENDAR[1]/MAT-CALENDAR-HEADER[1]/DIV[1]/DIV[1]/BUTTON[1]",
+    "element" : "Element{node=[BUTTON: null], tag=BUTTON, text=06 2020, attributes={aria-label=Choose month and year, cdkarialive=polite, class=mat-calendar-period-button mat-button, evlist=false, mat-button=, ng-reflect-politeness=polite, type=button}}",
+    "eventType" : "click"
+  } ],
+  "statistics" : {
+    "duration" : "13 minutes 39 seconds",
+    "crawlPaths" : 61,
+    "averageDomSize" : "1,200.698 kB",
+    "edges" : 84,
+    "startDate" : "2021-10-06 17:30:29 CDT",
+    "stateStats" : {
+      "leastFanOut" : {
+        "id" : "state52",
+        "count" : 0
+      },
+      "leastFanIn" : {
+        "id" : "state107",
+        "count" : 0
+      },
+      "mostFanOut" : {
+        "id" : "state137",
+        "count" : 11
+      },
+      "mostFanIn" : {
+        "id" : "index",
+        "count" : 26
+      },
+      "totalNumberOfStates" : 36,
+      "urls" : {
+        "http://localhost:4200/petclinic/pettypes" : [ "state90", "state95", "state107", "state55", "state11", "state39", "state115", "state119", "state66", "state65" ],
+        "http://localhost:4200/petclinic/vets/add" : [ "state52", "state14" ],
+        "http://localhost:4200/petclinic/owners" : [ "state5", "state176", "state144", "state82", "state86", "state133" ],
+        "http://localhost:4200/petclinic/owners/add" : [ "state7" ],
+        "http://localhost:4200/petclinic/specialties" : [ "state230", "state15" ],
+        "http://localhost:4200/petclinic/owners/1/pets/add" : [ "state268", "state269", "state262" ],
+        "http://localhost:4200/petclinic/vets" : [ "state13", "state35", "state34", "state159", "state49" ],
+        "http://localhost:4200/petclinic/vets/2/edit" : [ "state33" ],
+        "http://localhost:4200/petclinic/specialties/1/edit" : [ "state16" ],
+        "http://localhost:4200/petclinic/welcome" : [ "state36" ],
+        "http://localhost:4200/petclinic/" : [ "index" ],
+        "http://localhost:4200/petclinic/owners/1/edit" : [ "state257" ],
+        "http://localhost:4200/petclinic/owners/1" : [ "state137" ],
+        "http://localhost:4200/petclinic/pettypes/1/edit" : [ "state28" ]
+      }
+    },
+    "failedEvents" : 0
+  },
+  "exitStatus" : "EXHAUSTED"
+}

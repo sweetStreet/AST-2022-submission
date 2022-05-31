@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state21</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:4000/boards/1-wfnvxfxe'>http://localhost:4000/boards/1-wfnvxfxe</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state18</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>7.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>21</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state21.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/FORM[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 425px; top: 165px; width: 49px; height: 19px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state18.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/FORM[1]/BUTTON[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 315px; top: 151px; width: 88px; height: 47px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state24.html'"></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Trello tribute done in Elixir, Phoenix, React and Redux.&quot;&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;ricardo@codeloveandboards.com&quot;&gt;
+
+    &lt;title&gt;WfNvXFxe | Phoenix Trello&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/application.css&quot;&gt;
+    &lt;link id=&quot;favicon&quot; rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;64x64&quot; href=&quot;/images/favicon.png&quot;&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;main id=&quot;main_container&quot; role=&quot;main&quot;&gt;&lt;div data-reactid=&quot;.0&quot;&gt;&lt;div id=&quot;authentication_container&quot; class=&quot;application-container&quot; data-reactid=&quot;.0.0&quot;&gt;&lt;header class=&quot;main-header&quot; data-reactid=&quot;.0.0.0&quot;&gt;&lt;nav id=&quot;boards_nav&quot; data-reactid=&quot;.0.0.0.0&quot;&gt;&lt;ul data-reactid=&quot;.0.0.0.0.0&quot;&gt;&lt;li data-reactid=&quot;.0.0.0.0.0.0&quot;&gt;&lt;a href=&quot;#&quot; data-reactid=&quot;.0.0.0.0.0.0.0&quot;&gt;&lt;i class=&quot;fa fa-columns&quot; data-reactid=&quot;.0.0.0.0.0.0.0.0&quot;&gt;&lt;/i&gt;&lt;span data-reactid=&quot;.0.0.0.0.0.0.0.1&quot;&gt; Boards&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;&lt;a href=&quot;/&quot; data-reactid=&quot;.0.0.0.1&quot;&gt;&lt;span class=&quot;logo&quot; data-reactid=&quot;.0.0.0.1.0&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;nav class=&quot;right&quot; data-reactid=&quot;.0.0.0.2&quot;&gt;&lt;ul data-reactid=&quot;.0.0.0.2.0&quot;&gt;&lt;li data-reactid=&quot;.0.0.0.2.0.0&quot;&gt;&lt;a class=&quot;current-user&quot; data-reactid=&quot;.0.0.0.2.0.0.0&quot;&gt;&lt;img alt=&quot;Gravatar for john@phoenix-trello.com&quot; src=&quot;//www.gravatar.com/avatar/6a88cfcf7b76267b129b8dc477c4105e?d=retro&amp;amp;r=g&amp;amp;s=50&quot; srcset=&quot;//www.gravatar.com/avatar/6a88cfcf7b76267b129b8dc477c4105e?d=retro&amp;amp;r=g&amp;amp;s=100 2x&quot; height=&quot;50&quot; width=&quot;50&quot; class=&quot;react-gravatar react-gravatar&quot; data-reactid=&quot;.0.0.0.2.0.0.0.0&quot;&gt;&lt;span data-reactid=&quot;.0.0.0.2.0.0.0.1&quot;&gt; &lt;/span&gt;&lt;span data-reactid=&quot;.0.0.0.2.0.0.0.2&quot;&gt;John Doe&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li data-reactid=&quot;.0.0.0.2.0.1&quot;&gt;&lt;a href=&quot;#&quot; id=&quot;crawler-sign-out&quot; data-reactid=&quot;.0.0.0.2.0.1.0&quot;&gt;&lt;i class=&quot;fa fa-sign-out&quot; data-reactid=&quot;.0.0.0.2.0.1.0.0&quot;&gt;&lt;/i&gt;&lt;span data-reactid=&quot;.0.0.0.2.0.1.0.1&quot;&gt; Sign out&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;&lt;/header&gt;&lt;div class=&quot;main-container&quot; data-reactid=&quot;.0.0.1&quot;&gt;&lt;div class=&quot;view-container boards show&quot; data-reactid=&quot;.0.0.1.0&quot;&gt;&lt;header class=&quot;view-header&quot; data-reactid=&quot;.0.0.1.0.0&quot;&gt;&lt;h3 data-reactid=&quot;.0.0.1.0.0.0&quot;&gt;WfNvXFxe&lt;/h3&gt;&lt;ul class=&quot;board-users&quot; data-reactid=&quot;.0.0.1.0.0.1&quot;&gt;&lt;span data-reactid=&quot;.0.0.1.0.0.1.0&quot;&gt;&lt;li class=&quot;connected&quot; data-reactid=&quot;.0.0.1.0.0.1.0.$=10=2$34&quot;&gt;&lt;img alt=&quot;Gravatar for john@phoenix-trello.com&quot; src=&quot;//www.gravatar.com/avatar/6a88cfcf7b76267b129b8dc477c4105e?d=retro&amp;amp;r=g&amp;amp;s=50&quot; srcset=&quot;//www.gravatar.com/avatar/6a88cfcf7b76267b129b8dc477c4105e?d=retro&amp;amp;r=g&amp;amp;s=100 2x&quot; height=&quot;50&quot; width=&quot;50&quot; class=&quot;react-gravatar react-gravatar&quot; data-reactid=&quot;.0.0.1.0.0.1.0.$=10=2$34.0&quot;&gt;&lt;/li&gt;&lt;li data-reactid=&quot;.0.0.1.0.0.1.0.$=11&quot; class=&quot;&quot;&gt;&lt;a class=&quot;add-new&quot; href=&quot;#&quot; data-reactid=&quot;.0.0.1.0.0.1.0.$=11.0&quot;&gt;&lt;i class=&quot;fa fa-plus&quot; data-reactid=&quot;.0.0.1.0.0.1.0.$=11.0.0&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;/span&gt;&lt;/ul&gt;&lt;/header&gt;&lt;div class=&quot;canvas-wrapper&quot; data-reactid=&quot;.0.0.1.0.1&quot;&gt;&lt;div class=&quot;canvas&quot; data-reactid=&quot;.0.0.1.0.1.0&quot;&gt;&lt;div class=&quot;lists-wrapper&quot; data-reactid=&quot;.0.0.1.0.1.0.0&quot;&gt;&lt;div id=&quot;list_1&quot; class=&quot;list&quot; style=&quot;display:block;&quot; data-reactid=&quot;.0.0.1.0.1.0.0.0:$1&quot; draggable=&quot;true&quot;&gt;&lt;div class=&quot;inner&quot; data-reactid=&quot;.0.0.1.0.1.0.0.0:$1.0&quot;&gt;&lt;header data-reactid=&quot;.0.0.1.0.1.0.0.0:$1.0.0&quot;&gt;&lt;h4 data-reactid=&quot;.0.0.1.0.1.0.0.0:$1.0.0.0&quot;&gt;updated list&lt;/h4&gt;&lt;/header&gt;&lt;div class=&quot;cards-wrapper&quot; data-reactid=&quot;.0.0.1.0.1.0.0.0:$1.0.1&quot;&gt;&lt;/div&gt;&lt;footer data-reactid=&quot;.0.0.1.0.1.0.0.0:$1.0.2&quot;&gt;&lt;a class=&quot;add-new&quot; href=&quot;#&quot; data-reactid=&quot;.0.0.1.0.1.0.0.0:$1.0.2.1&quot;&gt;Add a new card...&lt;/a&gt;&lt;/footer&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;list form&quot; data-reactid=&quot;.0.0.1.0.1.0.0.1&quot;&gt;&lt;div class=&quot;inner&quot; data-reactid=&quot;.0.0.1.0.1.0.0.1.0&quot;&gt;&lt;form id=&quot;new_list_form&quot; data-reactid=&quot;.0.0.1.0.1.0.0.1.0.0&quot;&gt;&lt;input id=&quot;list_name&quot; type=&quot;text&quot; placeholder=&quot;Add a new list...&quot; required=&quot;&quot; value=&quot;&quot; data-reactid=&quot;.0.0.1.0.1.0.0.1.0.0.0&quot;&gt;&lt;button type=&quot;submit&quot; data-reactid=&quot;.0.0.1.0.1.0.0.1.0.0.2&quot;&gt;Save list&lt;/button&gt;&lt;span data-reactid=&quot;.0.0.1.0.1.0.0.1.0.0.3&quot;&gt; or &lt;/span&gt;&lt;a href=&quot;#&quot; data-reactid=&quot;.0.0.1.0.1.0.0.1.0.0.4&quot;&gt;cancel&lt;/a&gt;&lt;/form&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/main&gt;
+    &lt;footer id=&quot;main_footer&quot;&gt;
+      &lt;small&gt;
+        &lt;a href=&quot;https://trello.com/&quot; target=&quot;_blank&quot;&gt;Trello&lt;/a&gt; tribute for educational purposes
+        crafted with &hearts; for &lt;a href=&quot;https://diacode.com/&quot;&gt;Diacode&lt;/a&gt;
+        by &lt;a href=&quot;https://twitter.com/bigardone&quot;&gt;@bigardone&lt;/a&gt;&lt;/small&gt;
+    &lt;/footer&gt;
+    &lt;script src=&quot;/js/application.js&quot;&gt;&lt;/script&gt;
+  &lt;iframe src=&quot;/phoenix/live_reload/frame&quot; style=&quot;display: none;&quot;&gt;&lt;/iframe&gt;
+
+
+&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/FORM[1]/A[1]</td>
+							<td><a href="state18.html">state18</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/FORM[1]/BUTTON[1]</td>
+							<td><a href="state24.html">state24</a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state10</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/addressbook/notes.htm'>http://localhost:3000/addressbook/notes.htm</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>20</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>14</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state9</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>137.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>10</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>xpath /HTML[1]/BODY[1]/H1[1]/A[1], xpath /HTML[1]/BODY[1]/H3[1]/A[1], xpath /HTML[1]/BODY[1]/H3[2]/A[1], xpath /HTML[1]/BODY[1]/H3[3]/A[1], xpath /HTML[1]/BODY[1]/H3[7]/A[1], xpath /HTML[1]/BODY[1]/H3[8]/A[1], xpath /HTML[1]/BODY[1]/H3[9]/A[1], xpath /HTML[1]/BODY[1]/H3[10]/A[1], xpath /HTML[1]/BODY[1]/CENTER[1]/B[1]/A[1]</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state10.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/H1[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 13px; top: 18px; width: 2px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/A[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: 13px; top: 149px; width: 72px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/A[3]" class='hovers'
+				style="position: absolute; z-index: 10; left: 92px; top: 149px; width: 59px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/A[4]" class='hovers'
+				style="position: absolute; z-index: 10; left: 159px; top: 149px; width: 40px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/A[5]" class='hovers'
+				style="position: absolute; z-index: 10; left: 206px; top: 149px; width: 57px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/H3[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 13px; top: 179px; width: 2px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/H3[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 13px; top: 237px; width: 2px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/H3[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 13px; top: 295px; width: 2px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/H3[7]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 13px; top: 933px; width: 2px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/H3[8]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 13px; top: 1043px; width: 2px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/H3[9]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 13px; top: 1115px; width: 2px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/H3[10]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 13px; top: 1262px; width: 2px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/CENTER[1]/B[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 490px; top: 1298px; width: 2px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/FORM[1]/INPUT[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 106px; top: 1220px; width: 101px; height: 23px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;&lt;head&gt;
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+		&lt;meta name=&quot;Description&quot; content=&quot;PHP-Addressbook Notes&quot;&gt;
+		&lt;meta name=&quot;Keywords&quot; content=&quot;&quot;&gt;
+		&lt;title&gt;PHP Address Book v8.x&lt;/title&gt;
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen&quot; href=&quot;./style.css&quot;&gt;
+		&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./icons/font.png&quot;&gt;
+		&lt;style type=&quot;text/css&quot;&gt; &lt;!-- body{background:none;padding:4px 16px;} --&gt; &lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+&lt;h1&gt;&lt;a name=&quot;4&quot;&gt;&lt;/a&gt;Donations:&lt;/h1&gt;
+&lt;p&gt;The software is free, anyone who enjoys it a lot, is welcome to send me some mental support over PayPal. I will use it as wisely as possible.&lt;/p&gt;
+&lt;a href=&quot;http://sourceforge.net/donate/index.php?group_id=157964&quot;&gt;
+  &lt;img src=&quot;http://images.sourceforge.net/images/project-support.jpg&quot; alt=&quot;Donate to this Project&quot;&gt;
+&lt;/a&gt;
+
+&lt;h1&gt;PHP-addressbook Version 8.x&lt;/h1&gt;
+&lt;a href=&quot;#1&quot;&gt;requirements&lt;/a&gt; | &lt;a href=&quot;#2&quot;&gt;installation&lt;/a&gt; | &lt;a href=&quot;#3&quot;&gt;licence&lt;/a&gt; | &lt;a href=&quot;#4&quot;&gt;disclaimer&lt;/a&gt;
+
+&lt;h3&gt;&lt;a name=&quot;1&quot;&gt;&lt;/a&gt;Download:&lt;/h3&gt;
+&lt;p&gt;For the most recent version of &quot;PHP-addressbook&quot; see: &lt;b&gt;&lt;a href=&quot;https://sourceforge.net/project/showfiles.php?group_id=157964&quot;&gt;https://sourceforge.net/project/showfiles.php?group_id=157964&lt;/a&gt;.&lt;/b&gt;&lt;/p&gt;
+
+&lt;h3&gt;&lt;a name=&quot;1&quot;&gt;&lt;/a&gt;Requirements:&lt;/h3&gt;
+&lt;p&gt;You will need a webserver which has installed PHP 4/5, and mySQL version 3.2 upwards.&lt;/p&gt;
+
+&lt;h3&gt;&lt;a name=&quot;2&quot;&gt;&lt;/a&gt;Installation:&lt;/h3&gt;
+&lt;p&gt;1. Unzip the files and place them on your webserver (or locally, as you will have to make some changes and then upload) in a directory called addressbook or whatever.&lt;/p&gt;
+&lt;p&gt;2. Open &lt;b&gt;config.php&lt;/b&gt; and change the variables to your server specification.&lt;/p&gt;
+&lt;p&gt;3. You need to create the table addressbook in your mySQL database. (You can alter the table name, but you need to change the entry in config.php, and the table name in addressbook.sql.) Either via telnet, or using a program such as &lt;a href=&quot;http://www.anse.de/mysqlfront/&quot;&gt;mySQLfront&lt;/a&gt;, or &lt;a href=&quot;http://phpmyadmin.sourceforge.net&quot;&gt;phpMyAdmin&lt;/a&gt; enter the information stored in &lt;b&gt;addressbook.sql&lt;/b&gt;. You can create a separate database for the addressbook, it`s up to you.&lt;/p&gt;
+&lt;p&gt;That`s it!&lt;/p&gt;
+
+&lt;h3&gt;User Features&lt;/h3&gt;
+- Address and birthday management.&lt;br&gt;
+- Address grouping and mailing.&lt;br&gt;
+- Phonebook printing.&lt;br&gt;
+- Birthday reminder list.&lt;br&gt;
+- vCard an csv export capabilities.&lt;br&gt;
+- Gmail, Yahoo and Hotmail integrations.&lt;br&gt;
+- Many translations.&lt;br&gt;
+- Google map integration.&lt;br&gt;
+- User management in database.&lt;br&gt;
+- iPhone + Android connection support (beta, on deman).
+
+&lt;h3&gt;Technical Features&lt;/h3&gt;
+- Full UTF-8 support.&lt;br&gt;
+- Browser language detection.&lt;br&gt;
+- Fast AJAX-Search.&lt;br&gt;
+- Page compression for bandwidth saving.
+
+&lt;h3&gt;Intro:&lt;/h3&gt;
+&lt;p&gt;This is an address book program for people who have their own web space. At present it is does not have a multiple user function. I wrote it because I wanted a place where I could store all my addresses so I can access them from multiple locations, and its a handy backup if you lose your address book, and there weren`t any freeware programs that suited my needs. IT IS NOT SUITABLE FOR COMMERCIAL USE. If you want to use this program on an intranet, please email &lt;b&gt;rob@widgetmonkey.com&lt;/b&gt; . I am working on additions, such as multiple log in. I might also expand it to become a calendar / organiser. We`ll see.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Optional extras:&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;You might want to password protect the addressbook - not everyone wants to have their details freely available on the web! It is HIGHLY recommended that you do. Password proctection is best done with .htaccess and .htpassword files. There are tutorials out there to help.&lt;/p&gt;
+&lt;p&gt;You can move the config.php file to another directory if you want to make it safer - just remember to alter the include( ) statement in dbconnect.php.&lt;/p&gt;
+&lt;p&gt;Any questions: Submit your feedback at &lt;a href=&quot;http://sourceforge.net/projects/php-addressbook/&quot;&gt;sourceforge.net&lt;/a&gt;
+or send me an e-mail &lt;a href=&quot;mailto:chatelao{@}users.sourceforge.net&quot;&gt;chatalao{a}users.sourceforge.net&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;&lt;a name=&quot;3&quot;&gt;&lt;/a&gt;Licence:&lt;/h3&gt;
+&lt;p&gt;This addressbook is free under the AGPL license.&lt;/p&gt;
+&lt;p&gt;For details about the &quot;famfamfam&quot; icons, please look here: &lt;a href=&quot;http://www.famfamfam.com/lab/icons/silk/&quot;&gt;famfamfam&lt;/a&gt;.&lt;/p&gt;
+For details about the &quot;Table Sort Script&quot;, please look here: &lt;a href=&quot;http://www.frequency-decoder.com/2006/09/16/unobtrusive-table-sort-script-revisited/&quot;&gt;Table Sort Script&lt;/a&gt;.
+
+&lt;h3&gt;&lt;a name=&quot;4&quot;&gt;&lt;/a&gt;Disclaimer:&lt;/h3&gt;
+&lt;p&gt;Any use or modifications of this program is at the user`s risk. Any distribution or malicious use of address details, email addresses or telephone numbers is not the responsibility of the author. There may be several unknown securities-leaks, strong protection of the website and data is no part of this package. This is under the sole reposibility of the user.&lt;/p&gt;
+
+&lt;h3&gt;&lt;a name=&quot;4&quot;&gt;&lt;/a&gt;Donations:&lt;/h3&gt;
+&lt;p&gt;The software is free, anyone who enjoys it a lot, is welcome to send me some mental support over PayPal. I will use it as wisely as possible.&lt;/p&gt;
+&lt;a href=&quot;http://sourceforge.net/donate/index.php?group_id=157964&quot;&gt;
+  &lt;img src=&quot;http://images.sourceforge.net/images/project-support.jpg&quot; alt=&quot;Donate to this Project&quot;&gt;
+&lt;/a&gt;
+
+&lt;div style=&quot;background:#D70500;width:250px;border:1px solid #840300;padding:4px;&quot;&gt;
+&lt;form action=&quot;http://www.hotscripts.com/rate/67789.html&quot; method=&quot;post&quot;&gt;
+	&lt;div style=&quot;color:#fff;font-weight:700;&quot;&gt;
+		If you like the script, please rate it!
+		&lt;input type=&quot;hidden&quot; name=&quot;external&quot; value=&quot;1&quot;&gt;
+	&lt;/div&gt;
+	&lt;select name=&quot;rate&quot; size=&quot;1&quot;&gt;
+		&lt;option value=&quot;5&quot; selected=&quot;selected&quot;&gt;Excellent!&lt;/option&gt;
+		&lt;option value=&quot;4&quot;&gt;Very Good&lt;/option&gt;
+		&lt;option value=&quot;3&quot;&gt;Good&lt;/option&gt;
+		&lt;option value=&quot;2&quot;&gt;Fair&lt;/option&gt;
+		&lt;option value=&quot;1&quot;&gt;Poor&lt;/option&gt;
+	&lt;/select&gt;
+	&lt;input name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Cast My Vote!&quot;&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;&lt;a name=&quot;3&quot;&gt;&lt;/a&gt;Just enjoy &quot;PHP address book&quot;!&lt;/h3&gt;
+&lt;hr&gt;
+&lt;center&gt;&lt;b&gt;&lt;a name=&quot;3&quot;&gt;&lt;/a&gt;Last Update: 16. June 2010 - chatelao&lt;/b&gt;&lt;/center&gt;
+
+
+&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/H1[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/A[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/A[3]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/A[4]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/A[5]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/H3[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/H3[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/H3[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/H3[7]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/H3[8]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/H3[9]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/H3[10]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/CENTER[1]/B[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/FORM[1]/INPUT[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

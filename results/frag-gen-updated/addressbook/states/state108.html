@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state108</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/addressbook/index.php'>http://localhost:3000/addressbook/index.php</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>7</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>11</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state81</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>27.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>108</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state108.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 277px; top: 243px; width: 62px; height: 16px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state130.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 396px; top: 243px; width: 62px; height: 16px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state132.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 577px; top: 243px; width: 38px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 732px; top: 243px; width: 61px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 829px; top: 274px; width: 18px; height: 16px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state109.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[7]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 862px; top: 274px; width: 18px; height: 16px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state112.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[8]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 895px; top: 274px; width: 18px; height: 16px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]" class='hovers'
+				style="position: absolute; z-index: 20; left: 303px; top: 402px; width: 69px; height: 16px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state10.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[4]/INPUT[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 837px; top: 323px; width: 57px; height: 23px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state118.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[1]/INPUT[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 207px; top: 323px; width: 89px; height: 23px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[2]/INPUT[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 294px; top: 323px; width: 57px; height: 23px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state121.html'"></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;&lt;head&gt;
+	&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+	&lt;meta name=&quot;Description&quot; content=&quot;PHP-Addressbook&quot;&gt;
+	&lt;meta name=&quot;Keywords&quot; content=&quot;&quot;&gt;
+
+	&lt;style type=&quot;text/css&quot;&gt;
+		
+    body {background-image:url('./skins/header-blue.jpg');background-repeat:repeat-x;background-position:top left;}
+    table#maintable th {text-align:center;border:1px solid #ccc;font-size:12px;background:#739fce;color:#fff;}
+    table#birthdays th {color:#fff;background:#739fce;margin:25px;border:1px solid #ccc;}
+		table#maintable th a {color:#fff;}
+body,#footer,ul {margin:0;padding:0;}
+body,p,td,h1,h2,a,a:hover {font-family:Arial,Helvetica,sans-serif;font-size:12px}
+h1 {font-size:18px}
+h2 {font-size:14px}
+a {color:#036}
+a:hover {color:#06C;text-decoration:none}
+img {border:0;}
+textarea {font-family:Arial,Helvetica,sans-serif;font-size:10pt}
+
+#container {margin:0 auto;width:780px;border:0}
+#top{color:#fff;margin:5px 0 0;height:20px;text-align:right;}
+#header {height:80px;}
+#header h1 {display:none;}
+
+#nav {margin:0 0 20px;height:25px;width:770px;float:left;border:0;display:inline;}
+#nav ul li a {color:#fff;padding:0 4px;}
+#nav ul li img {display:none;}
+
+#content {margin:20px 0 0;width:780px;}
+#footer {margin:45px 0 0;padding:20px 0;clear:both;}
+
+ul {list-style:none;}
+ul li {display:inline;}
+#footer ul li {display:block;}
+
+label {margin-right:0.5em;width:10em;float:left;text-align:left;display:block;}
+
+#search-az {text-align:center;padding:2px;}
+#a-z a {font-size:75%;} 
+
+.odd {background:#e5e5e5;}
+.even {background:#f3f3f3;}
+
+#right,.right {float:right;}
+#left,.left {float:left;}
+.clear {clear:both;}
+
+.msgbox {padding:16px;border:1px solid #ccc;background:#fff4b4;width:60%;font-weight:700;}
+.msgbox i {font-weight:400;}
+
+table {width:100%;border:1px solid #ccc;border-collapse:collapse;}
+table tr td {border:1px solid #ccc;padding:2px 1px}
+table img,.center {text-align:center;}
+table th {text-align:left;font-size:14px;padding:8px 4px;}
+
+table#birthdays {border:0;}
+.tablespace td {border:0;}
+
+/* View.php */
+table#view,table#view td {border:1px solid #000;border-collapse:collapse;}
+table#view td {padding:5px;}
+
+/* Edit.php */
+#content input[type=text],#content textarea {width:220px; margin-bottom:3px;}
+#content input[type=text] {height:1,1em}
+// #content textarea {height:8em}
+input.byear{width:4em !important;}
+
+/* Source Forge */
+#download {margin:0;width:180px;background:#63A624;color:#fff;border:1px solid #000;text-align:center;}
+#download a,#top a {color:#fff;}
+
+/* Login */
+#content input[name=user],input[name=pass] {width:150px; margin-bottom:3px;}	&lt;/style&gt;
+	&lt;!--[if !IE]&gt;--&gt;
+	&lt;link media=&quot;only screen and (max-device-width: 480px)&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;iphone.css&quot;&gt;
+	&lt;!--&lt;![endif]--&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;&quot;&gt;
+
+
+	&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;icons/font.png&quot;&gt;
+	&lt;title&gt;Address book&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div id=&quot;container&quot;&gt;
+			&lt;div id=&quot;top&quot;&gt;
+&lt;!--
+[&lt;a title=&quot;other languages&quot; href=&quot;?more_langs=yes&quot;&gt;+&lt;/a&gt;] | &lt;a href='?lang=ar'&gt;&lt;img title='Arabic' alt='Arabic' src='icons/ar.gif'/&gt;&lt;/a&gt; | &lt;a href='?lang=de'&gt;&lt;img title='German' alt='German' src='icons/de.gif'/&gt;&lt;/a&gt; | &lt;a href='?lang=fr'&gt;&lt;img title='French' alt='French' src='icons/fr.gif'/&gt;&lt;/a&gt; | &lt;a href='?lang=it'&gt;&lt;img title='Italian' alt='Italian' src='icons/it.gif'/&gt;&lt;/a&gt; | &lt;a href='?lang=th'&gt;&lt;img title='Thai' alt='Thai' src='icons/th.gif'/&gt;&lt;/a&gt; | &lt;a href='?lang=ru'&gt;&lt;img title='Russian' alt='Russian' src='icons/ru.gif'/&gt;&lt;/a&gt; | 
+
+&lt;a href=&quot;preferences.php?from=%2Faddressbook%2Findex.php&quot;&gt;Preferences&lt;/a&gt;
+--&gt;
+&lt;form name=&quot;logout&quot; method=&quot;post&quot; class=&quot;header&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;logout&quot; value=&quot;yes&quot;&gt;
+&lt;b&gt;(admin)&lt;/b&gt; &lt;a href=&quot;#&quot; onclick=&quot;document.logout.submit();&quot;&gt;Logout&lt;/a&gt;
+&lt;/form&gt;
+			&lt;/div&gt;
+			&lt;div id=&quot;header&quot;&gt;
+				&lt;h1&gt;&lt;a href=&quot;.&quot;&gt;Address Book&lt;/a&gt;&lt;/h1&gt;
+				&lt;a href=&quot;.&quot;&gt;&lt;img src=&quot;title.png&quot; title=&quot;Addressbook&quot; alt=&quot;Addressbook&quot; id=&quot;logo&quot;&gt;&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div id=&quot;nav&quot;&gt;
+      			&lt;!--
+* http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/index.htm
+* http://www.dynamicdrive.com/dynamicindex1/popupmenu.htm
+* http://www.alistapart.com/articles/horizdropdowns/
+--&gt;
+&lt;ul&gt;
+&lt;li&gt;
+	&lt;a href=&quot;./&quot;&gt;home&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;all&quot;&gt;
+	&lt;a href=&quot;edit.php&quot;&gt;add new&lt;/a&gt;
+&lt;/li&gt;
+	&lt;li class=&quot;admin&quot;&gt;
+		&lt;a href=&quot;group.php&quot;&gt;groups&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;all&quot;&gt;
+		&lt;a href=&quot;birthdays.php&quot;&gt;next birthdays&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class=&quot;export&quot;&gt;
+    	&lt;a href=&quot;view.php?all&amp;amp;print&quot;&gt;print all&lt;/a&gt;
+  &lt;/li&gt;
+	&lt;li class=&quot;export&quot;&gt;
+      &lt;a href=&quot;view.php?all&amp;amp;print&amp;amp;phones&quot;&gt;print phones&lt;/a&gt;
+  &lt;/li&gt;
+	&lt;li class=&quot;export&quot;&gt;
+    	&lt;a href=&quot;export.php&quot;&gt;export&lt;/a&gt;
+  &lt;/li&gt; 
+	&lt;li class=&quot;export&quot;&gt;
+    	&lt;a href=&quot;import.php&quot;&gt;import&lt;/a&gt;
+  &lt;/li&gt; 
+&lt;/ul&gt;
+			&lt;/div&gt;
+			&lt;div id=&quot;content&quot;&gt;
+
+
+&lt;br&gt;&lt;br&gt;
+&lt;div id=&quot;search-az&quot;&gt;
+
+
+	&lt;form accept-charset=&quot;utf-8&quot; method=&quot;get&quot; name=&quot;searchform&quot; onsubmit=&quot;return false&quot;&gt;
+		&lt;input type=&quot;text&quot; value=&quot;&quot; name=&quot;searchstring&quot; title=&quot;Search for any text&quot; size=&quot;45&quot; tabindex=&quot;0&quot; onkeyup=&quot;filterResults(this)&quot;&gt;
+	&lt;/form&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+	document.searchform.searchstring.focus();
+&lt;/script&gt;
+&lt;/div&gt;&lt;br&gt;
+&lt;hr&gt;
+&lt;label style=&quot;width:24em;&quot;&gt;&lt;strong&gt;Number of results: &lt;span id=&quot;search_count&quot;&gt;1&lt;/span&gt;&lt;/strong&gt;&lt;/label&gt;
+&lt;form id=&quot;right&quot; method=&quot;get&quot;&gt;
+	&lt;select name=&quot;group&quot; onchange=&quot;this.parentNode.submit()&quot;&gt;
+				&lt;option value=&quot;&quot;&gt;[all]&lt;/option&gt;
+		&lt;option value=&quot;[none]&quot;&gt;[none]&lt;/option&gt;
+		&lt;option&gt;GWmvBZbI&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/form&gt;
+&lt;br&gt;&lt;br class=&quot;clear&quot;&gt;
+
+&lt;form accept-charset=&quot;utf-8&quot; name=&quot;MainForm&quot; method=&quot;post&quot; action=&quot;group.php&quot;&gt;
+	&lt;input type=&quot;hidden&quot; name=&quot;group&quot; value=&quot;&quot;&gt;
+	&lt;table id=&quot;maintable&quot; class=&quot;sortcompletecallback-applyZebra&quot;&gt;
+		&lt;tbody&gt;&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;&lt;th class=&quot;sortable fd-column-1&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;fdTableSortTrigger&quot; title=&quot;Sort on &ldquo;Last name&rdquo;&quot;&gt;Last name&lt;/a&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;&lt;th class=&quot;sortable fd-column-2&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;fdTableSortTrigger&quot; title=&quot;Sort on &ldquo;First name&rdquo;&quot;&gt;First name&lt;/a&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;&lt;th class=&quot;sortable fd-column-3&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;fdTableSortTrigger&quot; title=&quot;Sort on &ldquo;E-mail&rdquo;&quot;&gt;E-mail&lt;/a&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;&lt;th class=&quot;sortable fd-column-4&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;fdTableSortTrigger&quot; title=&quot;Sort on &ldquo;Telephone&rdquo;&quot;&gt;Telephone&lt;/a&gt;&lt;span&gt;&lt;/span&gt;&lt;/th&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;&lt;/th&gt;      
+	&lt;/tr&gt;
+&lt;tr class=&quot;&quot; name=&quot;entry&quot;&gt;&lt;td class=&quot;center&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;1&quot; name=&quot;selected[]&quot; value=&quot;1&quot; title=&quot;Select (Andrea Stocco)&quot; alt=&quot;Select (Andrea Stocco)&quot; accept=&quot;tsigalko18@gmail.com%3BvOmbQeuM&quot;&gt;&lt;/td&gt;&lt;td&gt;Stocco&lt;/td&gt;&lt;td&gt;Andrea&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;mailto:tsigalko18@gmail.com&quot;&gt;tsigalko18@gmail.com&lt;/a&gt;&lt;/td&gt;&lt;td&gt;qzVORnQc&lt;/td&gt;&lt;td class=&quot;center&quot;&gt;&lt;a href=&quot;view.php?id=1&quot;&gt;&lt;img src=&quot;icons/status_online.png&quot; title=&quot;Details&quot; alt=&quot;Details&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;center&quot;&gt;&lt;a href=&quot;edit.php?id=1&quot;&gt;&lt;img src=&quot;icons/pencil.png&quot; title=&quot;Edit&quot; alt=&quot;Edit&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;center&quot;&gt;&lt;a href=&quot;vcard.php?id=1&quot;&gt;&lt;img src=&quot;icons/vcard.png&quot; title=&quot;vCard&quot; alt=&quot;vCard&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;center&quot;&gt;&lt;a href=&quot;http://maps.google.com/maps?q=1165+The+Castings&amp;amp;t=h&quot; target=&quot;_blank&quot;&gt;
+                                &lt;img src=&quot;icons/car.png&quot; title=&quot;Google Maps&quot; alt=&quot;vCard&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;center&quot;&gt;&lt;a href=&quot;http://bLYkqTkt&quot;&gt;&lt;img src=&quot;icons/house.png&quot; title=&quot;http://bLYkqTkt&quot; alt=&quot;http://bLYkqTkt&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;&amp;nbsp;&lt;input type=&quot;checkbox&quot; id=&quot;MassCB&quot; onclick=&quot;MassSelection()&quot;&gt; &lt;em&gt;&lt;strong&gt;Select all&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;&lt;br&gt;&lt;div class=&quot;left&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;Send e-Mail&quot; onclick=&quot;MailSelection()&quot;&gt;&lt;/div&gt;&lt;div class=&quot;left&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;Delete&quot; onclick=&quot;DeleteSel()&quot;&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div class=&quot;right&quot;&gt;&lt;input type=&quot;submit&quot; name=&quot;add&quot; value=&quot;Add to&quot;&gt;-&lt;select name=&quot;to_group&quot;&gt;&lt;option&gt;GWmvBZbI&lt;/option&gt;
+&lt;/select&gt;&lt;/div&gt;&lt;br&gt;&lt;/form&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+&lt;!--
+
+//
+// Select All/None items
+//
+function MassSelection() {
+  
+  select_count = document.getElementsByName(&quot;selected[]&quot;).length;
+  all_checked  = document.getElementById(&quot;MassCB&quot;).checked;
+  
+	for (i = 0; i &lt; select_count; i++) {
+	  // select only visible items
+	  if( document.getElementsByName(&quot;selected[]&quot;)[i].parentNode.parentNode.style.display != &quot;none&quot;) {
+		  document.getElementsByName(&quot;selected[]&quot;)[i].checked = all_checked;
+		}
+	}
+}
+
+//
+// Send Mail to selected persons
+//
+function MailSelection() {
+	var addresses = &quot;&quot;;
+	var dst_count = 0;
+
+  select_count = document.getElementsByName(&quot;selected[]&quot;).length;
+	for (i = 0; i &lt; select_count; i++) {
+		selected_i = document.getElementsByName(&quot;selected[]&quot;)[i];
+		if( selected_i.checked == true) {
+			if( selected_i.accept != &quot;&quot; &amp;&amp; selected_i.accept != null) {
+				if(dst_count &gt; 0) {
+					addresses = addresses + &quot;%3B&quot;;
+				}
+				addresses = addresses + selected_i.accept;
+				dst_count++;
+			}
+		}
+	}
+
+	if(dst_count == 0)
+		alert(&quot;No address selected.&quot;);
+	else
+		location.href = &quot;mailto:&quot;+addresses;
+}
+
+function Doodle() {
+	
+	var participants = &quot;&quot;;
+	var dst_count = 0;
+
+  select_count = document.getElementsByName(&quot;selected[]&quot;).length;
+	for (i = 0; i &lt; select_count; i++) {
+		selected_i = document.getElementsByName(&quot;selected[]&quot;)[i];
+		if( selected_i.checked == true) {
+			participants += selected_i.id+&quot;;&quot;;
+			dst_count++;
+		}
+	}
+	alert(participants);
+	if(dst_count == 0)
+		alert(&quot;No paticipants selected.&quot;);
+	else
+	  location.href = &quot;./doodle.php?part=&quot;+participants;
+}
+
+function DeleteSel() {
+	
+	var participants = &quot;&quot;;
+	var dst_count = 0;
+
+  select_count = document.getElementsByName(&quot;selected[]&quot;).length;
+	for (i = 0; i &lt; select_count; i++) {
+		selected_i = document.getElementsByName(&quot;selected[]&quot;)[i];
+		if( selected_i.checked == true) {
+			participants += selected_i.id+&quot;;&quot;;
+			dst_count++;
+		}
+	}
+
+	if(dst_count == 0)
+		alert(&quot;No paticipants selected.&quot;);
+	else
+		if(confirm('Delete '+dst_count+' addresses?')) {
+	    location.href = &quot;./delete.php?part=&quot;+participants;
+	  }
+}
+
+function applyZebra() {
+	
+  	// loop over all lines
+  	var maintable = document.getElementById(&quot;maintable&quot;)
+  	var tbody     = maintable.getElementsByTagName(&quot;tbody&quot;);
+  	var entries   = tbody[0].children;
+  	var zebraCnt  = 0;
+
+	  // Skip header(0) + selection row(length-1)
+  	for(i = 1; i &lt; entries.length; i++) {
+  		if(entries[i].style.display != &quot;none&quot;) {
+      	if((zebraCnt % 2) == 0) {
+      	  entries[i].className = &quot;&quot;;
+      	} else {
+      	  entries[i].className = &quot;odd&quot;;
+      	}
+     	  zebraCnt++;
+  		}
+    }
+}
+
+//
+// Filter the items in the fields
+//
+function filterResults(field) {
+
+  	var query = field.value;
+  	 	
+  	// split lowercase on white spaces
+  	var words = query.toLowerCase().split(&quot; &quot;);
+
+  	// loop over all lines
+  	var maintable = document.getElementById(&quot;maintable&quot;)
+  	var tbody     = maintable.getElementsByTagName(&quot;tbody&quot;);
+  	var entries   = tbody[0].children;
+  	var foundCnt  = 0;
+	
+	  // Skip header(0) + selection row(length-1)
+  	for(i = 1; i &lt; entries.length; i++) {
+  		
+      // Use all columns that don't have the css class &quot;center&quot;
+      var content = entries[i].childNodes[0].childNodes[0].accept;
+      for(var j=0;j&lt;entries[i].childNodes.length;j++) {
+          if(entries[i].childNodes[j].className == &quot;center&quot;) continue;
+          content += &quot; &quot;+entries[i].childNodes[j].innerHTML;
+      }
+  		            
+      // Don't be case sensitive
+  		content = content.toLowerCase();
+
+      // check if all words are present  		            
+      var foundAll = true;
+  		for(j = 0; j &lt; words.length; j++) {
+  			foundAll = foundAll &amp;&amp; (content.search(words[j]) != -1);
+  		}
+  		
+  		// Keep selected entries
+      foundAll = foundAll || entries[i].childNodes[0].childNodes[0].checked;
+  		
+      // ^Hide entry
+      if(foundAll) {
+      	entries[i].style.display = &quot;&quot;;
+     	  foundCnt++;  			
+      } else {
+      	entries[i].style.display = &quot;none&quot;;
+      }
+  	}  	
+  	document.getElementById(&quot;search_count&quot;).innerHTML = foundCnt;
+  	
+  	applyZebra();
+}
+
+filterResults(document.getElementsByName(&quot;searchstring&quot;)[0]);
+
+//--&gt;
+&lt;/script&gt;
+
+	&lt;/div&gt;
+	&lt;div id=&quot;footer&quot;&gt;
+
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href=&quot;http://sourceforge.net/projects/php-addressbook/&quot;&gt;php-addressbook&lt;/a&gt; &lt;a href=&quot;notes.htm&quot;&gt;v8.0.0 - r475&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+	
+
+&lt;!-- 
+Copyright Notice:
+This script was written by Rob Minto, and is free to use and distribute under GPL. 
+Any improvements, please email rob(at)widgetmonkey.com. 
+Keep software free. 
+And please leave this copyright notice. Thanks.
+
+Major update 2007-2009 by Olivier Chatelain, feel free to use and distribute under GPL. 
+Any improvements, please email chatelao(at)users.sourceforge.net. 
+
+Updated 2009 - Complete theme redesign by Leighton West. Any theme problems,
+please email retrorobot(at)users.sourceforge.net.
+
+Major contribution Mark James (&quot;famfamfam&quot;-icons, cc-by-2.5)
+For more details see: http://www.famfamfam.com/lab/icons/silk/
+
+Major contribution &quot;frequency decoder&quot; (&quot;Unobtrusive Table Sort Script&quot;, cc-by-sa-2.5)
+For more details see: http://www.frequency-decoder.com/2006/09/16/unobtrusive-table-sort-script-revisited/
+--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jstablesort/tablesort.min.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[2]/A[1]</td>
+							<td><a href="state130.html">state130</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[3]/A[1]</td>
+							<td><a href="state132.html">state132</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[1]/TH[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[6]/A[1]</td>
+							<td><a href="state109.html">state109</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[7]/A[1]</td>
+							<td><a href="state112.html">state112</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/TABLE[1]/TBODY[1]/TR[2]/TD[8]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[5]/UL[1]/LI[1]/A[2]</td>
+							<td><a href="state10.html">state10</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[4]/INPUT[1]</td>
+							<td><a href="state118.html">state118</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[1]/INPUT[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[4]/FORM[2]/DIV[2]/INPUT[1]</td>
+							<td><a href="state121.html">state121</a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

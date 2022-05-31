@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state7</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/ppma/index.php?r=entry/index'>http://localhost:3000/ppma/index.php?r=entry/index</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>8</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>15</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state2</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>33.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>7</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>xpath /HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/FORM[1]/INPUT[6]</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state7.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 793px; top: 194px; width: 20px; height: 27px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state8.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/P[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 142px; top: 238px; width: 113px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/THEAD[1]/TR[1]/TH[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 155px; top: 342px; width: 41px; height: 19px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state8.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/THEAD[1]/TR[1]/TH[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 376px; top: 342px; width: 71px; height: 19px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state8.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 155px; top: 381px; width: 109px; height: 18px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state135.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 530px; top: 381px; width: 73px; height: 18px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state8.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 689px; top: 380px; width: 20px; height: 23px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: 712px; top: 380px; width: 20px; height: 23px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[3]" class='hovers'
+				style="position: absolute; z-index: 10; left: 735px; top: 380px; width: 20px; height: 23px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[4]" class='hovers'
+				style="position: absolute; z-index: 20; left: 758px; top: 380px; width: 20px; height: 23px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state135.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[5]" class='hovers'
+				style="position: absolute; z-index: 20; left: 781px; top: 380px; width: 20px; height: 23px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state2.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/ASIDE[1]/DIV[1]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 868px; top: 122px; width: 132px; height: 113px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/ASIDE[1]/DIV[2]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 868px; top: 330px; width: 109px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/ASIDE[1]/DIV[3]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 868px; top: 450px; width: 109px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/FORM[1]/INPUT[6]" class='hovers'
+				style="position: absolute; z-index: 20; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state89.html'"></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html class=&quot; js no-touch svg inlinesvg svgclippaths no-ie8compat&quot; style=&quot;&quot;&gt;&lt;head&gt;
+    	&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    	&lt;meta name=&quot;language&quot; content=&quot;en&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/ppma/css/general_enclosed_foundicons.css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/ppma/css/accessibility_foundicons.css&quot;&gt;
+        &lt;link rel=&quot;shortcut icon&quot; href=&quot;/ppma/favicon.ico&quot;&gt;
+
+        &lt;!--[if lt IE 8]&gt;
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;/ppma/css/general_enclosed_foundicons_ie7.css&quot;&gt;
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;/ppma/css/accessibility_foundicons_ie7.css&quot;&gt;
+        &lt;![endif]--&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/ppma/css/foundation.min.css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/ppma/css/app.css&quot;&gt;
+                            	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/ppma/css/custom-theme/jquery-ui-1.9.2.custom.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/ppma/assets/a29bf504/tag-cloud.css&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/foundation.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/ppma/assets/4472cfae/jquery.ba-bbq.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/ppma/js/jquery-ui-1.9.2.custom.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/ppma/js/zeroclipboard/dist/ZeroClipboard.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/ppma/js/ppma.min.js&quot;&gt;&lt;/script&gt;
+&lt;title&gt;PHP Password Manager - Entry&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+
+        
+    &lt;div class=&quot;container&quot;&gt;
+        
+        
+    &lt;nav class=&quot;top-bar&quot;&gt;
+        &lt;ul&gt;
+            &lt;li class=&quot;name&quot;&gt;&lt;h1&gt;&lt;a href=&quot;/ppma/index.php&quot;&gt;PHP Password Manager&lt;/a&gt;&lt;/h1&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;section&gt;
+            &lt;ul class=&quot;left&quot;&gt;
+                &lt;li class=&quot;has-dropdown&quot;&gt;
+                    &lt;a href=&quot;/ppma/index.php?r=entry/index&quot;&gt;Entries&lt;/a&gt;                    &lt;ul class=&quot;dropdown&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;/ppma/index.php?r=entry/index&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;/ppma/index.php?r=entry/create&quot;&gt;Create&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;/ppma/index.php?r=import/csv&quot;&gt;Import from CSV&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;/ppma/index.php?r=import/phppassmanager&quot;&gt;Import from phpPasswordManager&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;/ppma/index.php?r=export/csv&quot;&gt;Export to CSV&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;has-dropdown&quot;&gt;
+                    &lt;a href=&quot;/ppma/index.php?r=tag/index&quot;&gt;Tags&lt;/a&gt;                    &lt;ul class=&quot;dropdown&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;/ppma/index.php?r=tag/index&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;/ppma/index.php?r=tag/create&quot;&gt;Create&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;has-dropdown&quot;&gt;
+                    &lt;a&gt;Settings&lt;/a&gt;
+                    &lt;ul class=&quot;dropdown&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;/ppma/index.php?r=settings/application&quot;&gt;General&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;has-dropdown&quot;&gt;
+                    &lt;a&gt;Profile&lt;/a&gt;
+                    &lt;ul class=&quot;dropdown&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;/ppma/index.php?r=settings/password&quot;&gt;Change Password&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;/ppma/index.php?r=user/logout&quot;&gt;Logout&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;ul class=&quot;right&quot;&gt;
+
+                &lt;li class=&quot;search&quot;&gt;
+                    &lt;form method=&quot;get&quot;&gt;
+                        &lt;input type=&quot;hidden&quot; name=&quot;r&quot; value=&quot;entry/index&quot;&gt;
+                        &lt;input type=&quot;search&quot; name=&quot;q&quot; value=&quot;&quot; rel=&quot;http://localhost:3000/ppma/index.php?r=entry/searchName&quot; class=&quot;ui-autocomplete-input&quot; autocomplete=&quot;off&quot;&gt;&lt;span role=&quot;status&quot; aria-live=&quot;polite&quot; class=&quot;ui-helper-hidden-accessible&quot;&gt;&lt;/span&gt;
+                    &lt;/form&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/section&gt;
+    &lt;/nav&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;nine columns&quot; role=&quot;content&quot; id=&quot;content&quot;&gt;
+                        
+&lt;h1&gt;Manage Entries&lt;/h1&gt;
+
+&lt;p&gt;
+    You may optionally enter a comparison operator (&lt;b&gt;&amp;lt;&lt;/b&gt;, &lt;b&gt;&amp;lt;=&lt;/b&gt;, &lt;b&gt;&amp;gt;&lt;/b&gt;, &lt;b&gt;&amp;gt;=&lt;/b&gt;, &lt;b&gt;&amp;lt;&amp;gt;&lt;/b&gt;
+    or &lt;b&gt;=&lt;/b&gt;) at the beginning of each of your search values to specify how the comparison should be done.
+&lt;/p&gt;
+
+    &lt;div class=&quot;alert-box success&quot;&gt;
+        The entry was created successfully.        &lt;a href=&quot;&quot; class=&quot;close&quot;&gt;&times;&lt;/a&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;&lt;a class=&quot;search-button&quot;&gt;Advanced Search&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;search-form&quot; style=&quot;display: none;&quot;&gt;
+        &lt;form id=&quot;yw0&quot; action=&quot;/ppma/index.php?r=entry/index&quot; method=&quot;get&quot;&gt;
+&lt;div style=&quot;display:none&quot;&gt;&lt;input type=&quot;hidden&quot; value=&quot;entry/index&quot; name=&quot;r&quot;&gt;&lt;/div&gt;
+            &lt;label for=&quot;Entry_name&quot;&gt;Name&lt;/label&gt;            &lt;input size=&quot;50&quot; maxlength=&quot;255&quot; name=&quot;Entry[name]&quot; id=&quot;Entry_name&quot; type=&quot;text&quot;&gt;
+            &lt;label for=&quot;Entry_url&quot;&gt;URL&lt;/label&gt;            &lt;input size=&quot;50&quot; maxlength=&quot;255&quot; name=&quot;Entry[url]&quot; id=&quot;Entry_url&quot; type=&quot;text&quot;&gt;
+            &lt;label for=&quot;Entry_username&quot;&gt;Username&lt;/label&gt;            &lt;input size=&quot;50&quot; maxlength=&quot;255&quot; name=&quot;Entry[username]&quot; id=&quot;Entry_username&quot; type=&quot;text&quot;&gt;
+            &lt;label for=&quot;Entry_tagList&quot;&gt;Tags&lt;/label&gt;            &lt;input size=&quot;50&quot; name=&quot;Entry[tagList]&quot; id=&quot;Entry_tagList&quot; type=&quot;text&quot; value=&quot;&quot;&gt;
+            &lt;label for=&quot;Entry_comment&quot;&gt;Comment&lt;/label&gt;            &lt;input size=&quot;50&quot; name=&quot;Entry[comment]&quot; id=&quot;Entry_comment&quot; type=&quot;text&quot;&gt;
+            &lt;input class=&quot;secondary button radius&quot; type=&quot;submit&quot; name=&quot;yt0&quot; value=&quot;Search&quot;&gt;
+            &lt;hr&gt;
+
+    &lt;/form&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row page-nav&quot; style=&quot;padding-bottom: 10px&quot;&gt;
+    &lt;div class=&quot;ten columns&quot; style=&quot;text-align: right; line-height: 2em&quot;&gt;
+        Results per page:
+    &lt;/div&gt;
+    &lt;div class=&quot;two columns&quot; style=&quot;line-height: 2em&quot; data-url=&quot;/ppma/index.php?r=entry/index&quot;&gt;
+        &lt;select name=&quot;pageSize&quot; id=&quot;pageSize&quot;&gt;
+&lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;
+&lt;option value=&quot;10&quot; selected=&quot;selected&quot;&gt;10&lt;/option&gt;
+&lt;option value=&quot;25&quot;&gt;25&lt;/option&gt;
+&lt;option value=&quot;50&quot;&gt;50&lt;/option&gt;
+&lt;option value=&quot;100&quot;&gt;100&lt;/option&gt;
+&lt;option value=&quot;250&quot;&gt;250&lt;/option&gt;
+&lt;/select&gt;    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;entries&quot; class=&quot;grid-view&quot;&gt;
+&lt;div class=&quot;summary&quot;&gt;Displaying 1-1 of 1 result.&lt;/div&gt;
+&lt;table class=&quot;items&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th id=&quot;entries_c0&quot;&gt;&lt;a class=&quot;sort-link asc&quot; href=&quot;/ppma/index.php?r=entry/index&amp;amp;Entry_sort=name.desc&quot;&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th id=&quot;entries_c1&quot;&gt;&lt;a class=&quot;sort-link&quot; href=&quot;/ppma/index.php?r=entry/index&amp;amp;Entry_sort=username&quot;&gt;Username&lt;/a&gt;&lt;/th&gt;&lt;th id=&quot;entries_c2&quot;&gt;Tags&lt;/th&gt;&lt;th class=&quot;button-column&quot; id=&quot;entries_c3&quot;&gt;&amp;nbsp;&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&quot;odd&quot;&gt;
+&lt;td&gt;&lt;a class=&quot;update-entry&quot; data-reveal-id=&quot;entry-form-modal&quot; rel=&quot;/ppma/index.php?r=entry/getData&amp;amp;id=1&amp;amp;withPassword=1&quot; href=&quot;/ppma/index.php?r=entry/update&amp;amp;id=1&amp;amp;returnUrl=%2Fppma%2Findex.php%3Fr%3Dentry%2Findex&quot;&gt;Random Website&lt;/a&gt;&lt;/td&gt;&lt;td&gt;jdoe&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;/ppma/index.php?r=entry/index&amp;amp;Entry%5BtagList%5D=POFeABBy&quot;&gt;POFeABBy&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;button-column&quot;&gt;&lt;a title=&quot;Visit Website&quot; target=&quot;_blank&quot; href=&quot;nrzmfmkJ&quot;&gt;&lt;i class=&quot;foundicon-access-network&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a title=&quot;Copy Username&quot; class=&quot;copy-to-clipboard&quot; data-clipboard-text=&quot;jdoe&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;foundicon-address-book&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a title=&quot;Copy Password&quot; class=&quot;copy-to-clipboard&quot; data-clipboard-text=&quot;123456&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;foundicon-page&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a title=&quot;Update&quot; data-reveal-id=&quot;entry-form-modal&quot; class=&quot;update-entry&quot; rel=&quot;/ppma/index.php?r=entry/getData&amp;amp;id=1&amp;amp;withPassword=1&quot; href=&quot;/ppma/index.php?r=entry/update&amp;amp;id=1&amp;amp;returnUrl=%2Fppma%2Findex.php%3Fr%3Dentry%2Findex&quot;&gt;&lt;i class=&quot;foundicon-edit&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a title=&quot;Delete&quot; class=&quot;delete&quot; href=&quot;/ppma/index.php?r=entry/delete&amp;amp;id=1&quot;&gt;&lt;i class=&quot;foundicon-remove&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&quot;keys&quot; style=&quot;display:none&quot; title=&quot;/ppma/index.php?r=entry/index&quot;&gt;&lt;span&gt;1&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;        &lt;/div&gt;
+
+        &lt;aside class=&quot;three columns ui-sortable&quot; rel=&quot;/ppma/index.php?r=settings/setSidebarPositions&quot;&gt;
+
+    
+    
+                    
+                            &lt;div id=&quot;tag-cloud&quot; class=&quot;panel&quot;&gt;
+
+    &lt;h5&gt;Tagcloud&lt;/h5&gt;
+    &lt;div class=&quot;settings&quot;&gt;&lt;i class=&quot;foundicon-settings&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+
+                        &lt;span class=&quot;weight-10&quot;&gt;
+                &lt;a href=&quot;/ppma/index.php?r=entry/index&amp;amp;Entry%5BtagList%5D=POFeABBy&quot;&gt;POFeABBy&lt;/a&gt;            &lt;/span&gt;
+            
+&lt;/div&gt;
+            
+                    
+                                                
+&lt;div id=&quot;most-viewed-entries&quot; class=&quot;panel&quot;&gt;
+
+    &lt;h5&gt;Most Viewed&lt;/h5&gt;
+    &lt;div class=&quot;settings&quot;&gt;&lt;i class=&quot;foundicon-settings&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+
+            &lt;ul&gt;
+                            &lt;li&gt;
+                    &lt;a data-reveal-id=&quot;entry-form-modal&quot; rel=&quot;/ppma/index.php?r=entry/getData&amp;amp;id=1&amp;amp;withPassword=1&quot; class=&quot;update-entry&quot; title=&quot;has been viewed 0 time(s)&quot; href=&quot;/ppma/index.php?r=entry/update&amp;amp;id=1&quot;&gt;Random Website&lt;/a&gt;                &lt;/li&gt;
+                    &lt;/ul&gt;
+    
+&lt;/div&gt;                
+            
+                    
+                                                
+&lt;div id=&quot;recent-entries&quot; class=&quot;panel&quot;&gt;
+
+    &lt;h5&gt;Recent Entries&lt;/h5&gt;
+    &lt;div class=&quot;settings&quot;&gt;&lt;i class=&quot;foundicon-settings&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+
+            &lt;ul&gt;
+                            &lt;li&gt;
+                    &lt;a data-reveal-id=&quot;entry-form-modal&quot; rel=&quot;/ppma/index.php?r=entry/getData&amp;amp;id=1&amp;amp;withPassword=1&quot; class=&quot;update-entry&quot; href=&quot;/ppma/index.php?r=entry/update&amp;amp;id=1&quot;&gt;Random Website&lt;/a&gt;                &lt;/li&gt;
+                    &lt;/ul&gt;
+    
+&lt;/div&gt;                
+            
+        
+    
+&lt;/aside&gt;
+    &lt;/div&gt;
+
+    &lt;footer class=&quot;row&quot;&gt;
+        &lt;div class=&quot;twelve columns&quot;&gt;
+            * &lt;a href=&quot;http://sourceforge.net/projects/ppma/&quot;&gt;ppma&lt;/a&gt; (version 0.6.0)
+            powered by &lt;a href=&quot;http://www.yiiframework.com/&quot; target=&quot;_blank&quot;&gt;yii framework&lt;/a&gt; (version 1.1.15) and
+            &lt;a href=&quot;http://foundation.zurb.com/&quot; target=&quot;_blank&quot;&gt;Foundation 3&lt;/a&gt; (version 3.2)
+        &lt;/div&gt;
+    &lt;/footer&gt;
+
+    
+    &lt;/div&gt;
+
+
+        
+&lt;div id=&quot;entry-form-modal&quot; class=&quot;reveal-modal medium&quot;&gt;
+            &lt;h2&gt;Update entry&lt;/h2&gt;
+        
+&lt;form id=&quot;entry-form&quot; action=&quot;/ppma/index.php?r=entry/index&quot; method=&quot;post&quot;&gt;
+    &lt;input name=&quot;Entry[id]&quot; id=&quot;Entry_id&quot; type=&quot;hidden&quot;&gt;
+    &lt;label for=&quot;Entry_name&quot;&gt;Name&lt;/label&gt;    &lt;input autocomplete=&quot;off&quot; name=&quot;Entry[name]&quot; id=&quot;Entry_name&quot; type=&quot;text&quot; maxlength=&quot;255&quot;&gt;    
+    &lt;label for=&quot;Entry_username&quot;&gt;Username&lt;/label&gt;    &lt;input autocomplete=&quot;off&quot; name=&quot;Entry[username]&quot; id=&quot;Entry_username&quot; type=&quot;text&quot; maxlength=&quot;255&quot;&gt;    
+    &lt;label for=&quot;Entry_password&quot; class=&quot;required&quot;&gt;Password &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+    &lt;div class=&quot;row collapse&quot;&gt;
+        &lt;div class=&quot;ten columns&quot;&gt;
+            &lt;input autocomplete=&quot;off&quot; required=&quot;required&quot; name=&quot;Entry[password]&quot; id=&quot;Entry_password&quot; type=&quot;password&quot; maxlength=&quot;255&quot; value=&quot;&quot;&gt;        &lt;/div&gt;
+        &lt;div class=&quot;one columns&quot;&gt;
+            &lt;span class=&quot;postfix button secondary expand copy-to-clipboard&quot; data-clipboard-text=&quot;&quot; title=&quot;copy password&quot;&gt;&lt;i class=&quot;foundicon-page&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;one columns&quot;&gt;
+            &lt;span class=&quot;postfix button secondary expand show-hide-password&quot;&gt;
+                &lt;i class=&quot;foundicon-access-eyeball&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;label for=&quot;Entry_url&quot;&gt;URL&lt;/label&gt;    &lt;input name=&quot;Entry[url]&quot; id=&quot;Entry_url&quot; type=&quot;text&quot; maxlength=&quot;255&quot;&gt;    
+    &lt;label for=&quot;Entry_tagList&quot;&gt;Tags&lt;/label&gt;    &lt;input placeholder=&quot;separate by commas&quot; name=&quot;Entry[tagList]&quot; id=&quot;Entry_tagList&quot; type=&quot;text&quot; value=&quot;&quot;&gt;    
+    &lt;label for=&quot;Entry_comment&quot;&gt;Comment&lt;/label&gt;    &lt;textarea rows=&quot;5&quot; name=&quot;Entry[comment]&quot; id=&quot;Entry_comment&quot;&gt;&lt;/textarea&gt;    
+    &lt;input type=&quot;hidden&quot; value=&quot;/ppma/index.php?r=entry/index&quot; name=&quot;returnUrl&quot; id=&quot;returnUrl&quot;&gt;    &lt;input class=&quot;button radius&quot; type=&quot;submit&quot; name=&quot;yt1&quot; value=&quot;Save&quot;&gt;
+&lt;/form&gt;        &lt;a class=&quot;close-reveal-modal&quot;&gt;&times;&lt;/a&gt;
+&lt;/div&gt;    &lt;script type=&quot;text/javascript&quot; src=&quot;/ppma/assets/bfc7db05/gridview/jquery.yiigridview.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+/*&lt;![CDATA[*/
+jQuery(function($) {
+jQuery(document).on('click','#entries a.delete',function() {
+	if(!confirm('Are you sure you want to delete this item?')) return false;
+	var th = this,
+		afterDelete = function(){};
+	jQuery('#entries').yiiGridView('update', {
+		type: 'POST',
+		url: jQuery(this).attr('href'),
+		success: function(data) {
+			jQuery('#entries').yiiGridView('update');
+			afterDelete(th, true, data);
+		},
+		error: function(XHR) {
+			return afterDelete(th, false, XHR);
+		}
+	});
+	return false;
+});
+jQuery('#entries').yiiGridView({'ajaxUpdate':false,'ajaxVar':'ajax','pagerClass':'pager','loadingClass':'grid-view-loading','filterClass':'filters','tableClass':'items','selectableRows':1,'enableHistory':false,'updateSelector':'{page}, {sort}','filterSelector':'{filter}','pageVar':'Entry_page'});
+
+					if(!window.location.hash)
+						jQuery('#Entry_name').focus();
+				
+});
+/*]]&gt;*/
+&lt;/script&gt;
+
+&lt;ul class=&quot;ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all&quot; id=&quot;ui-id-1&quot; tabindex=&quot;0&quot; style=&quot;z-index: 1; display: none;&quot;&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]</td>
+							<td><a href="state8.html">state8</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/P[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/THEAD[1]/TR[1]/TH[1]/A[1]</td>
+							<td><a href="state8.html">state8</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/THEAD[1]/TR[1]/TH[2]/A[1]</td>
+							<td><a href="state8.html">state8</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]</td>
+							<td><a href="state135.html">state135</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]</td>
+							<td><a href="state8.html">state8</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[3]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[4]</td>
+							<td><a href="state135.html">state135</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[5]</td>
+							<td><a href="state2.html">state2</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/ASIDE[1]/DIV[1]/SPAN[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/ASIDE[1]/DIV[2]/UL[1]/LI[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/ASIDE[1]/DIV[3]/UL[1]/LI[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/FORM[1]/INPUT[6]</td>
+							<td><a href="state89.html">state89</a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

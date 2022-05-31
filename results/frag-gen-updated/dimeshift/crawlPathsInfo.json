@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "backtrackTarget": 0,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state0:-1index_5_state4state4_16_state5state5_17_state4state4_18_state7state7_19_state5state5_20_state9state9_21_state4state4_22_state11state11_23_state12state12_24_state13state13_31_state14state14_32_state15state15_33_state14state14_34_state17"
+  }
+]

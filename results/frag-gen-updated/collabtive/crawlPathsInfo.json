@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "backtrackTarget": 0,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state0:-1index_1_state2state2_2_state3state3_5_state6state6_6_state3"
+  },
+  {
+    "id": 2,
+    "backtrackTarget": 6,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state6:-1state3_5_state6state6_8_state13state13_9_state14state14_11_state16state16_12_state14state14_13_state18"
+  },
+  {
+    "id": 3,
+    "backtrackTarget": 16,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state16:-1state3_5_state6state6_8_state13state13_9_state14state14_11_state16"
+  },
+  {
+    "id": 4,
+    "backtrackTarget": 14,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state14:-1state3_5_state6state6_8_state13state13_9_state14state14_29_state16state16_30_state13state13_32_state41state41_33_state13"
+  },
+  {
+    "id": 5,
+    "backtrackTarget": 6,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state6:-1state3_5_state6state6_37_state3"
+  },
+  {
+    "id": 6,
+    "backtrackTarget": 6,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state6:-1state3_5_state6"
+  },
+  {
+    "id": 7,
+    "backtrackTarget": 6,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state6:-1state3_5_state6"
+  },
+  {
+    "id": 8,
+    "backtrackTarget": 6,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state6:-1state3_5_state6"
+  },
+  {
+    "id": 9,
+    "backtrackTarget": 6,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state6:-1state3_5_state6"
+  },
+  {
+    "id": 10,
+    "backtrackTarget": 6,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state6:-1state3_5_state6"
+  },
+  {
+    "id": 11,
+    "backtrackTarget": 6,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state6:-1state3_5_state6"
+  },
+  {
+    "id": 12,
+    "backtrackTarget": 6,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state6:-1state3_5_state6state6_53_state64"
+  },
+  {
+    "id": 13,
+    "backtrackTarget": 14,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state14:-1state3_5_state6state6_8_state13state13_9_state14state14_54_state18"
+  },
+  {
+    "id": 14,
+    "backtrackTarget": 14,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state14:-1state3_5_state6state6_8_state13state13_9_state14"
+  },
+  {
+    "id": 15,
+    "backtrackTarget": 14,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state14:-1state3_5_state6state6_8_state13state13_9_state14"
+  },
+  {
+    "id": 16,
+    "backtrackTarget": 14,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state14:-1state3_5_state6state6_8_state13state13_9_state14"
+  },
+  {
+    "id": 17,
+    "backtrackTarget": 14,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state14:-1state3_5_state6state6_8_state13state13_9_state14"
+  },
+  {
+    "id": 18,
+    "backtrackTarget": 14,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state14:-1state3_5_state6state6_8_state13state13_9_state14"
+  },
+  {
+    "id": 19,
+    "backtrackTarget": 14,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state14:-1state3_5_state6state6_8_state13state13_9_state14"
+  },
+  {
+    "id": 20,
+    "backtrackTarget": 14,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state14:-1state3_5_state6state6_8_state13state13_9_state14state14_69_state100"
+  },
+  {
+    "id": 21,
+    "backtrackTarget": 16,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state16:-1state3_5_state6state6_8_state13state13_9_state14state14_11_state16state16_70_state106"
+  },
+  {
+    "id": 22,
+    "backtrackTarget": 16,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state16:-1state3_5_state6state6_8_state13state13_9_state14state14_11_state16state16_72_state13state13_73_state3"
+  },
+  {
+    "id": 23,
+    "backtrackTarget": 6,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state6:-1state3_5_state6"
+  },
+  {
+    "id": 24,
+    "backtrackTarget": 6,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state6:-1state3_5_state6"
+  },
+  {
+    "id": 25,
+    "backtrackTarget": 6,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state6:-1state3_5_state6"
+  },
+  {
+    "id": 26,
+    "backtrackTarget": 6,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state6:-1state3_5_state6"
+  },
+  {
+    "id": 27,
+    "backtrackTarget": 16,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state16:-1state3_5_state6state6_8_state13state13_9_state14state14_11_state16"
+  },
+  {
+    "id": 28,
+    "backtrackTarget": 14,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state14:-1state3_5_state6state6_8_state13state13_9_state14"
+  },
+  {
+    "id": 29,
+    "backtrackTarget": 14,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state14:-1state3_5_state6state6_8_state13state13_9_state14"
+  },
+  {
+    "id": 30,
+    "backtrackTarget": 14,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state14:-1state3_5_state6state6_8_state13state13_9_state14"
+  },
+  {
+    "id": 31,
+    "backtrackTarget": 14,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state14:-1state3_5_state6state6_8_state13state13_9_state14"
+  },
+  {
+    "id": 32,
+    "backtrackTarget": 3,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state3:-1state3_104_state153"
+  },
+  {
+    "id": 33,
+    "backtrackTarget": 16,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state16:-1state3_5_state6state6_8_state13state13_9_state14state14_11_state16"
+  },
+  {
+    "id": 34,
+    "backtrackTarget": 106,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state106:failed:-1state3_5_state6state6_8_state13state13_9_state14state14_1000077_state177state177_1000078_state178"
+  },
+  {
+    "id": 35,
+    "backtrackTarget": 13,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state13:-1state3_5_state6state6_8_state13state13_129_state185state185_131_state13"
+  },
+  {
+    "id": 36,
+    "backtrackTarget": 41,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state41:-1state3_5_state6state6_8_state13state13_32_state41"
+  },
+  {
+    "id": 37,
+    "backtrackTarget": 41,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state41:-1state3_5_state6state6_8_state13state13_32_state41"
+  },
+  {
+    "id": 38,
+    "backtrackTarget": 177,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state177:-1state3_5_state6state6_8_state13state13_9_state14state14_1000077_state177"
+  },
+  {
+    "id": 39,
+    "backtrackTarget": 185,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state185:-1state3_5_state6state6_8_state13state13_129_state185state185_137_state13"
+  }
+]

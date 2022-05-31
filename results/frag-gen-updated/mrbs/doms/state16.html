@@ -1,0 +1,246 @@
+<html><head>
+  
+  <meta charset="utf-8">
+  <title>Meeting Room Booking System</title>
+  
+      <link href="jquery/ui/css/sunny/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css">
+    
+    <link href="jquery/datatables/css/mrbs-page.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/mrbs-table.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/ColReorder.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/ColVis.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="css/mrbs.css.php" type="text/css">
+        <link rel="stylesheet" media="print" href="css/mrbs-print.css.php" type="text/css">
+    <!--[if IE]>
+    <link rel="stylesheet" href="css/mrbs-ie.css" type="text/css">
+    <![endif]-->
+        <!--[if IE 8]>
+    <link rel="stylesheet" href="css/mrbs-ie8.css" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/mrbs-ielte8.css" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="css/mrbs-ielte7.css.php" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="css/mrbs-ielte6.css" type="text/css">
+    <![endif]-->
+    
+    <meta name="robots" content="noindex">
+    
+<script type="text/javascript" src="jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-1.8.22.custom.min.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-i18n.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-datepicker-en.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-datepicker-en-US.js"></script>
+     
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE6 = false;
+  //]]>
+</script>
+<!--[if lte IE 6]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE6 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE7 = false;
+  //]]>
+</script>
+<!--[if lte IE 7]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE7 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE8 = false;
+  //]]>
+</script>
+<!--[if lte IE 8]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE8 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+    function init(params)
+  {
+  }
+  //]]>
+</script>
+    
+  <script type="text/javascript" src="jquery/datatables/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="jquery/datatables/js/ColReorder.min.js"></script>
+    <script type="text/javascript" src="jquery/datatables/js/ColVis.mrbs.min.js"></script>
+    <script type="text/javascript" src="jquery/datatables/js/FixedColumns.mrbs.js"></script>
+  <script type="text/javascript" src="jquery/datatables/js/plugins.js"></script>
+      
+  <script type="text/javascript" src="js/datatables.js.php?area=0"></script>
+
+    <script type="text/javascript" src="js/admin.js.php?area=0"></script>
+  <script type="text/javascript" src="js/functions.js.php?area=0"></script>
+<script type="text/javascript" src="js/datepicker.js.php?area=0"></script>
+<script type="text/javascript" src="js/general.js.php?area=0"></script>
+    
+<script type="text/javascript">
+
+//<![CDATA[
+
+
+
+
+
+$(window).load(function() {
+
+  var args = {day: '05',
+              month: '10',
+              year: '2021',
+              area: '0',
+              room: '',
+              page: 'admin'};
+    init(args);
+
+});
+
+
+//]]>
+</script>  
+  </head>
+  
+  <body class="admin js">
+    <script type="text/javascript">
+      //<![CDATA[
+      $('body').addClass('js').removeClass('non_js');
+      //]]>
+    </script> 
+
+    <div class="screenonly">
+
+[Warning: Server failed to set locale to 'en_US.UTF-8']
+  <table id="banner">
+    <tbody><tr>
+      <td id="company">
+        <div>
+          <div id="logo">
+<span>Your Company</span>
+</div>
+          <div id="mrbs">
+            <a href="index.php">Meeting Room Booking System</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <form action="day.php" method="get" id="Form1">
+          <div>
+            <span id="dateselector"><input class="date hasDatepicker" type="text" id="datepicker">
+<input type="hidden" id="datepicker_alt" name="_alt" value="2021-10-5" disabled="disabled">
+<input type="hidden" id="datepicker_alt_day" name="day" value="5">
+<input type="hidden" id="datepicker_alt_month" name="month" value="10">
+<input type="hidden" id="datepicker_alt_year" name="year" value="2021">
+</span>
+  <script type="text/javascript">
+
+  $(function() {
+    $("#datepicker").datepicker({yearRange: '2016:2026',
+                                                       altField: '#datepicker_alt'
+                                                       , onClose: function(dateText, inst) {datepicker_close(dateText, inst, 'Form1');}                                                      });
+        var initial_date = new Date(2021, 9, 5);
+    var dateFormat = $("#datepicker").datepicker( "option", "dateFormat" );
+    document.getElementById('datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('datepicker_alt_day').value = 5;
+    document.getElementById('datepicker_alt_month').value = 10;
+    document.getElementById('datepicker_alt_year').value = 2021;
+    $(".ui-datepicker").draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('dateselector');
+  var datepicker_html = '<input class="date" type="text" id="datepicker">\n';
+    datepicker_html += '<input type="hidden" id="datepicker_alt"'
+  datepicker_html += ' name="_alt"';
+  datepicker_html += ' value="2021-10-5"';
+  datepicker_html += ' disabled="disabled">\n';
+    datepicker_html += '<input type="hidden" id="datepicker_alt_day" name="day">\n';
+  datepicker_html += '<input type="hidden" id="datepicker_alt_month" name="month">\n';
+  datepicker_html += '<input type="hidden" id="datepicker_alt_year" name="year">\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  </script>
+  <input type="submit" value="goto">
+           </div>
+        </form>
+              </td>
+      <td>
+<a href="help.php?day=05&amp;month=10&amp;year=2021">Help</a>
+</td>
+<td>
+<a href="admin.php?day=05&amp;month=10&amp;year=2021">Rooms</a>
+</td>
+<td>
+<a href="report.php?day=05&amp;month=10&amp;year=2021">Report</a>
+</td>
+      
+      <td>
+        <form id="header_search" method="get" action="search.php">
+          <div>
+            <a href="search.php?advanced=1">Search:</a>
+            <input type="search" name="search_str" value="" required="">
+            <input type="hidden" name="day" value="05">
+            <input type="hidden" name="month" value="10">
+            <input type="hidden" name="year" value="2021">
+                      </div>
+        <input type="hidden" name="datatable" value="1"></form>
+      </td>
+      <td>
+<div id="logon_box">
+                <a href="">Unknown user</a>
+                <form method="post" action="admin.php">
+                  <div>
+                    <input type="hidden" name="TargetURL" value="admin.php?">
+                    <input type="hidden" name="Action" value="QueryName">
+                    <input type="submit" value=" Log in ">
+                  </div>
+                </form>
+</div>
+</td>
+    </tr>
+  </tbody></table>
+</div>
+
+<div id="contents">
+<form class="form_general" id="logon" method="post" action="admin.php">
+  <fieldset>
+  <legend>Please log in</legend>
+    <div>
+      <label for="NewUserName">Name:</label>
+      <input type="text" id="NewUserName" name="NewUserName">
+    </div>
+    <div>
+      <label for="NewUserPassword">Password:</label>
+      <input type="password" id="NewUserPassword" name="NewUserPassword">
+    </div>
+    <input type="hidden" name="returl" value="http://localhost:3000/mrbs/web/day.php?year=2021&amp;month=10&amp;day=06&amp;area=1&amp;room=1">
+    <input type="hidden" name="TargetURL" value="day.php?year=2021&amp;month=10&amp;day=06&amp;area=1&amp;room=1">
+    <input type="hidden" name="Action" value="SetName">
+    <div id="logon_submit">
+      <input class="submit" type="submit" value=" Log in ">
+    </div>
+  </fieldset>
+</form>
+</div>  
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-draggable" style="position: relative;"></div></body></html>

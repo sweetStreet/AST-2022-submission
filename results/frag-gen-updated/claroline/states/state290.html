@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state290</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/claroline11110/claroline/course/create.php'>http://localhost:3000/claroline11110/claroline/course/create.php</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>3</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>10</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state81</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>193.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>290</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state290.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/P[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 12px; top: 167px; width: 62px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/P[1]/A[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: 82px; top: 167px; width: 69px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[1]/LEGEND[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 31px; top: 201px; width: 108px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[1]/DL[1]/DD[3]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 510px; top: 395px; width: 18px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[1]/DL[1]/DD[3]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[2]" class='hovers'
+				style="position: absolute; z-index: 20; left: 510px; top: 429px; width: 18px; height: 17px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state295.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[2]/LEGEND[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 31px; top: 879px; width: 134px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[3]/LEGEND[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 31px; top: 937px; width: 132px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/DL[1]/DT[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 50px; top: 999px; width: 59px; height: 17px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state13.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/DL[1]/DT[1]/INPUT[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 12px; top: 997px; width: 34px; height: 21px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state580.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/DL[1]/DT[1]/A[1]/INPUT[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 50px; top: 997px; width: 59px; height: 21px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;
+&lt;title&gt;Claroline&lt;/title&gt;
+&lt;meta http-equiv=&quot;Content-Script-Type&quot; content=&quot;text/javascript&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/HTML; charset=iso-8859-1&quot;&gt;
+&lt;meta name=&quot;generator&quot; content=&quot;Claroline 1.11.10 - http://claroline.net&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/claroline11110/web/css/classic/main.css?1337668864&quot; media=&quot;screen, projection, tv&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/claroline11110/web/css/print.css?1301589034&quot; media=&quot;print&quot;&gt;
+
+&lt;link rel=&quot;top&quot; href=&quot;/index.php&quot; title=&quot;&quot;&gt;
+&lt;link href=&quot;http://www.claroline.net/documentation.htm&quot; rel=&quot;Help&quot;&gt;
+&lt;link href=&quot;/claroline11110/CREDITS.txt&quot; rel=&quot;Author&quot;&gt;
+&lt;link href=&quot;http://www.claroline.net&quot; rel=&quot;Copyright&quot;&gt;
+&lt;link href=&quot;/claroline11110/claroline/../favicon.ico&quot; rel=&quot;shortcut icon&quot;&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    document.cookie=&quot;javascriptEnabled=true; path=/claroline11110&quot;;
+    function claro_session_loss_countdown(sessionLifeTime){
+    var chrono = setTimeout('claro_warn_of_session_loss()', sessionLifeTime * 1000);
+}
+
+function claro_warn_of_session_loss() {
+    alert('WARNING ! You have just lost your session on the server.\nCopy any text you are currently writing and paste it outside the browser');
+}
+&lt;/script&gt;
+
+&lt;script src=&quot;/claroline11110/web/js/jquery.js?1374567070&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/jquery.qtip.js?1371735614&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/claroline.js?1368605938&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/claroline.ui.js?1376037408&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/tooltitle.js?1311692694&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/course_form.js?1374824958&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+var __ = (function(){
+
+    var translation = {
+    
+
+    };
+
+    return function(string) {
+        return translation[string] || string;
+    };
+
+})();
+&lt;/script&gt;
+            
+
+&lt;/head&gt;
+
+&lt;body dir=&quot;ltr&quot; onload=&quot;claro_session_loss_countdown(1440);&quot; style=&quot;&quot;&gt;
+&lt;!-- $Id: banner.tpl.php 13151 2011-05-11 12:09:47Z abourguignon $ --&gt;
+
+&lt;!-- claroPage --&gt;
+&lt;div id=&quot;claroPage&quot;&gt;
+
+&lt;!-- Banner --&gt;
+&lt;div id=&quot;topBanner&quot;&gt;
+
+&lt;!-- Platform Banner --&gt;
+&lt;div id=&quot;platformBanner&quot;&gt;
+    &lt;div id=&quot;campusBannerLeft&quot;&gt;
+        &lt;span id=&quot;siteName&quot;&gt;
+            &lt;a href=&quot;/claroline11110/index.php&quot; target=&quot;_top&quot;&gt;
+                        Claroline                        &lt;/a&gt;
+        &lt;/span&gt;
+        
+        
+&lt;!-- campusBannerLeft --&gt;
+
+&lt;!-- End of campusBannerLeft --&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;campusBannerRight&quot;&gt;
+        &lt;span id=&quot;institution&quot;&gt;
+                        
+                                                
+                    &lt;/span&gt;
+        
+        
+&lt;!-- campusBannerRight --&gt;
+
+&lt;!-- End of campusBannerRight --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Platform Banner --&gt;
+
+&lt;!-- User Banner --&gt;
+&lt;div id=&quot;userBanner&quot;&gt;
+    &lt;div id=&quot;userBannerLeft&quot;&gt;
+        &lt;ul class=&quot;menu&quot;&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/desktop/index.php&quot; target=&quot;_top&quot;&gt;My desktop&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/messaging&quot; target=&quot;_top&quot;&gt;My messages&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/admin/&quot; target=&quot;_top&quot;&gt;Platform administration&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        
+&lt;!-- userBannerLeft --&gt;
+
+&lt;!-- End of userBannerLeft --&gt;
+        &lt;/ul&gt;
+        
+    &lt;/div&gt;
+    
+    &lt;div id=&quot;userBannerRight&quot;&gt;
+        &lt;ul class=&quot;menu&quot;&gt;
+            &lt;li class=&quot;userName&quot;&gt;
+                John Doe            &lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/auth/profile.php&quot; target=&quot;_top&quot;&gt;Manage my account&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/index.php?logout=true&quot; target=&quot;_top&quot;&gt;Logout&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        
+&lt;!-- userBannerRight --&gt;
+
+&lt;!-- End of userBannerRight --&gt;
+        &lt;/ul&gt;
+        
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- BreadcrumbLine  --&gt;
+&lt;div id=&quot;breadcrumbLine&quot;&gt;
+    &lt;hr&gt;
+    &lt;div class=&quot;breadcrumbTrails&quot;&gt;
+        &lt;ul class=&quot;breadCrumbs&quot;&gt;
+&lt;li class=&quot;breadCrumbsNode lastBreadCrumbsNode&quot;&gt;&lt;a href=&quot;/claroline11110/index.php&quot; target=&quot;_top&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/home.png?1232376376&quot; alt=&quot;home&quot;&gt;&amp;nbsp;Claroline&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    &lt;/div&gt;
+    
+    &lt;div id=&quot;toolViewOption&quot;&gt;
+                            &lt;/div&gt;
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+    &lt;hr&gt;
+&lt;/div&gt;
+&lt;!-- End of BreadcrumbLine  --&gt;
+
+&lt;/div&gt;
+&lt;!-- End of topBanner --&gt;
+&lt;!-- $Id: body.tpl.php 14332 2012-11-23 10:08:10Z zefredz $ --&gt;
+
+
+&lt;!-- - - - - - - - - - - Claroline Body - - - - - - - - - --&gt;
+&lt;div id=&quot;claroBody&quot;&gt;
+    
+    
+                
+
+&lt;!-- Page content --&gt;
+&lt;div class=&quot;toolTitleBlock&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;h1 class=&quot;toolTitle mainTitle&quot;&gt;Create a course website&lt;/h1&gt;
+&lt;/td&gt;&lt;td&gt;&lt;ul class=&quot;commandList&quot;&gt;
+&lt;/ul&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;!-- $Id: course_form.tpl.php 14349 2012-12-14 09:54:02Z zefredz $ --&gt;
+
+&lt;form class=&quot;msform&quot; id=&quot;courseSettings&quot; method=&quot;post&quot; action=&quot;/claroline11110/claroline/course/create.php&quot;&gt;
+        &lt;input type=&quot;hidden&quot; name=&quot;cmd&quot; value=&quot;exEdit&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;course_id&quot; value=&quot;&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;course_isSourceCourse&quot; value=&quot;&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;course_sourceCourseId&quot; value=&quot;&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;claroFormId&quot; value=&quot;615ce101c852a&quot;&gt;
+    
+        
+    &lt;p&gt;
+        &lt;a href=&quot;#&quot; class=&quot;expand-all&quot;&gt;Expand all&lt;/a&gt; /
+        &lt;a href=&quot;#&quot; class=&quot;collapse-all&quot;&gt;Collapse all&lt;/a&gt;
+    &lt;/p&gt;
+    
+    &lt;!-- FIRST SECTION: basic settings --&gt;
+    &lt;fieldset class=&quot;collapsible&quot; id=&quot;mandatories&quot;&gt;
+        &lt;legend&gt;
+            &lt;a href=&quot;#&quot; class=&quot;doCollapse&quot;&gt;Basic settings&lt;/a&gt;
+        &lt;/legend&gt;
+        &lt;div class=&quot;collapsible-wrapper&quot;&gt;
+            &lt;dl&gt;
+                
+                &lt;!-- Course title --&gt;
+                &lt;dt&gt;
+                    &lt;label for=&quot;course_title&quot;&gt;
+                        Course title                    &lt;/label&gt;
+                                        &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;
+                                    &lt;/dt&gt;
+                &lt;dd&gt;
+                    &lt;input type=&quot;text&quot; name=&quot;course_title&quot; id=&quot;course_title&quot; value=&quot;&quot; size=&quot;40&quot;&gt;
+                                        &lt;br&gt;
+                    &lt;span class=&quot;notice&quot;&gt;e.g. &lt;i&gt;History of Literature&lt;/i&gt;&lt;/span&gt;
+                                    &lt;/dd&gt;
+                
+                &lt;!-- Course code --&gt;
+                &lt;dt&gt;
+                    &lt;label for=&quot;course_officialCode&quot;&gt;
+                        Code                    &lt;/label&gt;&lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;
+                &lt;/dt&gt;
+                &lt;dd&gt;
+                    &lt;input type=&quot;text&quot; id=&quot;course_officialCode&quot; name=&quot;course_officialCode&quot; value=&quot;&quot; maxlength=&quot;12&quot;&gt;
+                                        &lt;br&gt;
+                    &lt;span class=&quot;notice&quot;&gt;max. 12 characters, ie.&lt;em&gt;ROM2121&lt;/em&gt;&lt;/span&gt;
+                                    &lt;/dd&gt;
+                
+                &lt;!-- Course categories --&gt;
+                &lt;dt&gt;
+                    &lt;label&gt;
+                        Categories                    &lt;/label&gt;
+                &lt;/dt&gt;
+                &lt;dd&gt;
+                    &lt;table class=&quot;multiselect&quot;&gt;
+                      &lt;tbody&gt;&lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;label for=&quot;mslist1&quot;&gt;
+                                Linked categories                            &lt;/label&gt;
+                            &lt;br&gt;
+                            &lt;select multiple=&quot;multiple&quot; name=&quot;linked_categories[]&quot; id=&quot;mslist1&quot;&gt;
+                                                            &lt;/select&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;arrows&quot;&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;msadd&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/go_right.png?1232376376&quot;&gt;&lt;/a&gt;
+                            &lt;br&gt;&lt;br&gt;
+                            &lt;a href=&quot;#&quot; class=&quot;msremove&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/go_left.png?1232376376&quot;&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;label for=&quot;mslist2&quot;&gt;
+                                Unlinked categories                            &lt;/label&gt;
+                            &lt;br&gt;
+                            &lt;select multiple=&quot;multiple&quot; name=&quot;unlinked_categories[]&quot; id=&quot;mslist2&quot;&gt;
+                                &lt;option value=&quot;2&quot;&gt;Sciences&lt;/option&gt;
+&lt;option value=&quot;3&quot;&gt;Economics&lt;/option&gt;
+&lt;option value=&quot;4&quot;&gt;Humanities&lt;/option&gt;
+                            &lt;/select&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/tbody&gt;&lt;/table&gt;
+                    &lt;span class=&quot;notice&quot;&gt;
+                                                    Feel free not to associate courses to any categories.&lt;br&gt;
+                                                    
+                        The categories appearing in grey are invisible categories.                    &lt;/span&gt;
+                &lt;/dd&gt;
+                
+                &lt;!-- Course language select box --&gt;
+                &lt;dt&gt;
+                    &lt;label for=&quot;course_language&quot;&gt;
+                        Language                    &lt;/label&gt;&lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;
+                &lt;/dt&gt;
+                &lt;dd&gt;
+                    &lt;select name=&quot;course_language&quot; id=&quot;course_language&quot;&gt;
+&lt;option value=&quot;english&quot; selected=&quot;selected&quot;&gt;English&lt;/option&gt;
+&lt;/select&gt;
+                &lt;/dd&gt;
+                
+                &lt;!-- Course titular --&gt;
+                &lt;dt&gt;
+                    &lt;label for=&quot;course_titular&quot;&gt;
+                        Lecturer(s)                    &lt;/label&gt;
+                &lt;/dt&gt;
+                &lt;dd&gt;
+                    &lt;input type=&quot;text&quot; id=&quot;course_titular&quot; name=&quot;course_titular&quot; value=&quot;John Doe&quot;&gt;
+                &lt;/dd&gt;
+                
+                &lt;!-- Course titular's email --&gt;
+                &lt;dt&gt;
+                    &lt;label for=&quot;course_email&quot;&gt;
+                        Email                                            &lt;/label&gt;
+                &lt;/dt&gt;
+                &lt;dd&gt;
+                    &lt;input type=&quot;text&quot; id=&quot;course_email&quot; name=&quot;course_email&quot; value=&quot;jdoe@mydomain.net&quot; maxlength=&quot;255&quot;&gt;
+                &lt;/dd&gt;
+                
+                &lt;!-- Course access --&gt;
+                &lt;dt&gt;
+                    Course access &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;
+                &lt;/dt&gt;
+                &lt;dd&gt;
+                    &lt;img src=&quot;/claroline11110/web/img/access_open.png?1232376376&quot; alt=&quot;open&quot;&gt;
+                    &lt;input type=&quot;radio&quot; id=&quot;access_public&quot; name=&quot;course_access&quot; value=&quot;public&quot; checked=&quot;checked&quot;&gt;
+                    &amp;nbsp;
+                    &lt;label for=&quot;access_public&quot;&gt;
+                        Access allowed to anybody (even without login)                    &lt;/label&gt;
+                                        &lt;br&gt;
+                    &lt;img src=&quot;/claroline11110/web/img/access_platform.png?1232376376&quot; alt=&quot;open&quot;&gt;
+                    &lt;input type=&quot;radio&quot; id=&quot;access_reserved&quot; name=&quot;course_access&quot; value=&quot;platform&quot;&gt;
+                    &amp;nbsp;
+                    &lt;label for=&quot;access_reserved&quot;&gt;
+                        Access allowed only to platform members (user registered to the platform)                    &lt;/label&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/claroline11110/web/img/access_locked.png?1232376376&quot; alt=&quot;locked&quot;&gt;
+                    &lt;input type=&quot;radio&quot; id=&quot;access_private&quot; name=&quot;course_access&quot; value=&quot;private&quot;&gt;
+                    &amp;nbsp;
+                    &lt;label for=&quot;access_private&quot;&gt;
+                                                    Access allowed only to course members (people on the user list)                                            &lt;/label&gt;
+                &lt;/dd&gt;
+                
+                &lt;!-- Course registration + registration key --&gt;
+                &lt;dt&gt;
+                    Registration settings &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;
+                &lt;/dt&gt;
+                &lt;dd&gt;
+                    &lt;img src=&quot;/claroline11110/web/img/enroll_allowed.png?1232376376&quot; alt=&quot;&quot;&gt;
+                    &lt;input type=&quot;radio&quot; id=&quot;registration_true&quot; name=&quot;course_registration&quot; value=&quot;open&quot; '=&quot;&quot; checked=&quot;checked&quot;&gt;
+                    &amp;nbsp;
+                    &lt;label for=&quot;registration_true&quot;&gt;
+                        Allowed                    &lt;/label&gt;
+                    
+                    &lt;blockquote&gt;
+                    &lt;img src=&quot;/claroline11110/web/img/tick.png?1276266080&quot; alt=&quot;&quot;&gt;
+                    &lt;input type=&quot;checkbox&quot; id=&quot;registration_validation&quot; name=&quot;registration_validation&quot;&gt;
+                    &amp;nbsp;
+                    &lt;label for=&quot;registration_validation&quot;&gt;
+                        Allowed with validation                    &lt;/label&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/claroline11110/web/img/enroll_key.png?1232376376&quot; alt=&quot;&quot;&gt;
+                    &lt;input type=&quot;checkbox&quot; id=&quot;registration_key&quot; name=&quot;registration_key&quot;&gt;
+                    &amp;nbsp;
+                    &lt;label for=&quot;registration_key&quot;&gt;
+                        Allowed with enrolment key                    &lt;/label&gt;
+                    &amp;nbsp;
+                    &lt;input type=&quot;text&quot; id=&quot;course_registrationKey&quot; name=&quot;course_registrationKey&quot; value=&quot;&quot;&gt;
+                    &lt;/blockquote&gt;
+                    
+                    &lt;img src=&quot;/claroline11110/web/img/enroll_forbidden.png?1232376376&quot; alt=&quot;&quot;&gt;
+                    &lt;input type=&quot;radio&quot; id=&quot;registration_false&quot; name=&quot;course_registration&quot; value=&quot;close&quot;&gt;
+                    &amp;nbsp;
+                    &lt;label for=&quot;registration_false&quot;&gt;
+                        Denied                    &lt;/label&gt;
+                &lt;/dd&gt;
+                
+                &lt;!-- Course settings tips --&gt;
+                &lt;dt&gt;
+                    &amp;nbsp;
+                &lt;/dt&gt;
+                &lt;dd&gt;
+                    &lt;span class=&quot;notice&quot;&gt;By default, all users registered to the platform can enrol to your course. If you want some confidentiality,
+the simplest way is to open registration during one week, ask the students to register themselves, then close registration and check for possible intruders in the user list.
+Another option is to define a registration key which will need to be entered by any student who wants to enrol to the course.&lt;/span&gt;
+                &lt;/dd&gt;
+                
+            &lt;/dl&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+    
+    
+    &lt;!-- SECOND SECTION: optionnal settings --&gt;
+    &lt;fieldset class=&quot;collapsible collapsed&quot; id=&quot;options&quot;&gt;
+        &lt;legend&gt;
+            &lt;a href=&quot;#&quot; class=&quot;doCollapse&quot;&gt;Optionnal settings&lt;/a&gt;
+        &lt;/legend&gt;
+        &lt;div class=&quot;collapsible-wrapper&quot; style=&quot;display: none;&quot;&gt;
+            &lt;dl&gt;
+                
+                &lt;!-- Course department name --&gt;
+                &lt;dt&gt;
+                    &lt;label for=&quot;course_departmentName&quot;&gt;
+                                                Department                    &lt;/label&gt;
+                &lt;/dt&gt;
+                &lt;dd&gt;
+                    &lt;input type=&quot;text&quot; name=&quot;course_departmentName&quot; id=&quot;course_departmentName&quot; value=&quot;&quot; maxlength=&quot;30&quot;&gt;
+                &lt;/dd&gt;
+                
+                &lt;!-- Course department url --&gt;
+                &lt;dt&gt;
+                    &lt;label for=&quot;course_extLinkUrl&quot;&gt;
+                        Department URL                                            &lt;/label&gt;
+                &lt;/dt&gt;
+                &lt;dd&gt;
+                    &lt;input type=&quot;text&quot; name=&quot;course_extLinkUrl&quot; id=&quot;course_extLinkUrl&quot; value=&quot;&quot; maxlength=&quot;180&quot;&gt;
+                &lt;/dd&gt;
+                
+            &lt;/dl&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+    
+    &lt;!-- THIRD SECTION: advanced options --&gt;
+    &lt;fieldset id=&quot;advancedInformation&quot; class=&quot;collapsible collapsed&quot;&gt;
+        &lt;legend&gt;
+            &lt;a href=&quot;#&quot; class=&quot;doCollapse&quot;&gt;Advanced options&lt;/a&gt;
+        &lt;/legend&gt;
+        &lt;div class=&quot;collapsible-wrapper&quot; style=&quot;display: none;&quot;&gt;
+            &lt;dl&gt;
+                
+                &lt;!-- Visibility in category list --&gt;
+                &lt;dt&gt;
+                    Course visibility                &lt;/dt&gt;
+                &lt;dd&gt;
+                                
+                
+                    &lt;img src=&quot;/claroline11110/web/img/visible.png?1232376376&quot; alt=&quot;&quot;&gt;
+                    &lt;input type=&quot;radio&quot; id=&quot;visibility_show&quot; name=&quot;course_visibility&quot; value=&quot;1&quot; checked=&quot;checked&quot;&gt;&amp;nbsp;
+                    &lt;label for=&quot;visibility_show&quot;&gt;
+                        The course is shown in the courses listing                    &lt;/label&gt;
+                    &lt;br&gt;
+                    &lt;img src=&quot;/claroline11110/web/img/invisible.png?1232376376&quot; alt=&quot;&quot;&gt;
+                    &lt;input type=&quot;radio&quot; id=&quot;visibility_hidden&quot; name=&quot;course_visibility&quot; value=&quot;0&quot;&gt;&amp;nbsp;
+                    &lt;label for=&quot;visibility_hidden&quot;&gt;
+                        Visible only to people on the user list                    &lt;/label&gt;
+                    
+                                    
+                &lt;/dd&gt;
+                
+                &lt;dt&gt;
+                    Maximum number of students                &lt;/dt&gt;
+                &lt;dd&gt;
+                    
+                                        
+                    &lt;input type=&quot;text&quot; name=&quot;course_userLimit&quot; id=&quot;course_userLimit&quot; value=&quot;0&quot;&gt;
+                    &lt;br&gt;
+                    &lt;span class=&quot;notice&quot;&gt;
+                        Leave this field empty or use 0 if you don't want to limit the number of users in this course&lt;br&gt;
+                        This limit doesn't include course's tutors and managers                    &lt;/span&gt;
+                    
+                                        
+                &lt;/dd&gt;
+                
+            &lt;/dl&gt;
+            
+                        
+                        &lt;!-- Course status --&gt;
+            &lt;dl&gt;
+                
+                &lt;dt&gt;
+                    Status                &lt;/dt&gt;
+                &lt;dd class=&quot;adminControl&quot;&gt;
+                    
+                                        
+                        &lt;input type=&quot;radio&quot; id=&quot;course_status_enable&quot; name=&quot;course_status_selection&quot; value=&quot;enable&quot; checked=&quot;checked&quot;&gt;&amp;nbsp;
+                        &lt;label for=&quot;course_status_enable&quot;&gt;
+                            Available                        &lt;/label&gt;
+                        &lt;br&gt;&lt;br&gt;
+
+                        &lt;input type=&quot;radio&quot; id=&quot;course_status_date&quot; name=&quot;course_status_selection&quot; value=&quot;date&quot;&gt;&amp;nbsp;
+                        &lt;label for=&quot;course_status_date&quot;&gt;
+                            Available&amp;nbsp;from (included)
+                        &lt;/label&gt;
+                        &lt;select name=&quot;course_publicationDay&quot; id=&quot;course_publicationDay&quot; disabled=&quot;disabled&quot;&gt;
+&lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;
+&lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;
+&lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;
+&lt;option value=&quot;4&quot;&gt;4&lt;/option&gt;
+&lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;
+&lt;option value=&quot;6&quot; selected=&quot;selected&quot;&gt;6&lt;/option&gt;
+&lt;option value=&quot;7&quot;&gt;7&lt;/option&gt;
+&lt;option value=&quot;8&quot;&gt;8&lt;/option&gt;
+&lt;option value=&quot;9&quot;&gt;9&lt;/option&gt;
+&lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;
+&lt;option value=&quot;11&quot;&gt;11&lt;/option&gt;
+&lt;option value=&quot;12&quot;&gt;12&lt;/option&gt;
+&lt;option value=&quot;13&quot;&gt;13&lt;/option&gt;
+&lt;option value=&quot;14&quot;&gt;14&lt;/option&gt;
+&lt;option value=&quot;15&quot;&gt;15&lt;/option&gt;
+&lt;option value=&quot;16&quot;&gt;16&lt;/option&gt;
+&lt;option value=&quot;17&quot;&gt;17&lt;/option&gt;
+&lt;option value=&quot;18&quot;&gt;18&lt;/option&gt;
+&lt;option value=&quot;19&quot;&gt;19&lt;/option&gt;
+&lt;option value=&quot;20&quot;&gt;20&lt;/option&gt;
+&lt;option value=&quot;21&quot;&gt;21&lt;/option&gt;
+&lt;option value=&quot;22&quot;&gt;22&lt;/option&gt;
+&lt;option value=&quot;23&quot;&gt;23&lt;/option&gt;
+&lt;option value=&quot;24&quot;&gt;24&lt;/option&gt;
+&lt;option value=&quot;25&quot;&gt;25&lt;/option&gt;
+&lt;option value=&quot;26&quot;&gt;26&lt;/option&gt;
+&lt;option value=&quot;27&quot;&gt;27&lt;/option&gt;
+&lt;option value=&quot;28&quot;&gt;28&lt;/option&gt;
+&lt;option value=&quot;29&quot;&gt;29&lt;/option&gt;
+&lt;option value=&quot;30&quot;&gt;30&lt;/option&gt;
+&lt;option value=&quot;31&quot;&gt;31&lt;/option&gt;
+&lt;/select&gt;
+&amp;nbsp;&lt;select name=&quot;course_publicationMonth&quot; id=&quot;course_publicationMonth&quot; disabled=&quot;disabled&quot;&gt;
+&lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;
+&lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;
+&lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;
+&lt;option value=&quot;4&quot;&gt;4&lt;/option&gt;
+&lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;
+&lt;option value=&quot;6&quot;&gt;6&lt;/option&gt;
+&lt;option value=&quot;7&quot;&gt;7&lt;/option&gt;
+&lt;option value=&quot;8&quot;&gt;8&lt;/option&gt;
+&lt;option value=&quot;9&quot;&gt;9&lt;/option&gt;
+&lt;option value=&quot;10&quot; selected=&quot;selected&quot;&gt;10&lt;/option&gt;
+&lt;option value=&quot;11&quot;&gt;11&lt;/option&gt;
+&lt;option value=&quot;12&quot;&gt;12&lt;/option&gt;
+&lt;/select&gt;
+&amp;nbsp;&lt;select name=&quot;course_publicationYear&quot; id=&quot;course_publicationYear&quot; disabled=&quot;disabled&quot;&gt;
+&lt;option value=&quot;2019&quot;&gt;2019&lt;/option&gt;
+&lt;option value=&quot;2020&quot;&gt;2020&lt;/option&gt;
+&lt;option value=&quot;2021&quot; selected=&quot;selected&quot;&gt;2021&lt;/option&gt;
+&lt;option value=&quot;2022&quot;&gt;2022&lt;/option&gt;
+&lt;option value=&quot;2023&quot;&gt;2023&lt;/option&gt;
+&lt;option value=&quot;2024&quot;&gt;2024&lt;/option&gt;
+&lt;option value=&quot;2025&quot;&gt;2025&lt;/option&gt;
+&lt;option value=&quot;2026&quot;&gt;2026&lt;/option&gt;
+&lt;/select&gt;
+&amp;nbsp;
+                        &lt;span class=&quot;notice&quot;&gt;(d/m/y)&lt;/span&gt;
+
+
+                        &lt;blockquote&gt;
+                            &lt;input type=&quot;checkbox&quot; id=&quot;useExpirationDate&quot; name=&quot;useExpirationDate&quot; value=&quot;true&quot; disabled=&quot;disabled&quot;&gt;
+                            &lt;label for=&quot;useExpirationDate&quot;&gt;
+                                to (included)
+                            &lt;/label&gt;
+                            &lt;select name=&quot;course_expirationDay&quot; id=&quot;course_expirationDay&quot; disabled=&quot;disabled&quot;&gt;
+&lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;
+&lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;
+&lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;
+&lt;option value=&quot;4&quot;&gt;4&lt;/option&gt;
+&lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;
+&lt;option value=&quot;6&quot; selected=&quot;selected&quot;&gt;6&lt;/option&gt;
+&lt;option value=&quot;7&quot;&gt;7&lt;/option&gt;
+&lt;option value=&quot;8&quot;&gt;8&lt;/option&gt;
+&lt;option value=&quot;9&quot;&gt;9&lt;/option&gt;
+&lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;
+&lt;option value=&quot;11&quot;&gt;11&lt;/option&gt;
+&lt;option value=&quot;12&quot;&gt;12&lt;/option&gt;
+&lt;option value=&quot;13&quot;&gt;13&lt;/option&gt;
+&lt;option value=&quot;14&quot;&gt;14&lt;/option&gt;
+&lt;option value=&quot;15&quot;&gt;15&lt;/option&gt;
+&lt;option value=&quot;16&quot;&gt;16&lt;/option&gt;
+&lt;option value=&quot;17&quot;&gt;17&lt;/option&gt;
+&lt;option value=&quot;18&quot;&gt;18&lt;/option&gt;
+&lt;option value=&quot;19&quot;&gt;19&lt;/option&gt;
+&lt;option value=&quot;20&quot;&gt;20&lt;/option&gt;
+&lt;option value=&quot;21&quot;&gt;21&lt;/option&gt;
+&lt;option value=&quot;22&quot;&gt;22&lt;/option&gt;
+&lt;option value=&quot;23&quot;&gt;23&lt;/option&gt;
+&lt;option value=&quot;24&quot;&gt;24&lt;/option&gt;
+&lt;option value=&quot;25&quot;&gt;25&lt;/option&gt;
+&lt;option value=&quot;26&quot;&gt;26&lt;/option&gt;
+&lt;option value=&quot;27&quot;&gt;27&lt;/option&gt;
+&lt;option value=&quot;28&quot;&gt;28&lt;/option&gt;
+&lt;option value=&quot;29&quot;&gt;29&lt;/option&gt;
+&lt;option value=&quot;30&quot;&gt;30&lt;/option&gt;
+&lt;option value=&quot;31&quot;&gt;31&lt;/option&gt;
+&lt;/select&gt;
+&amp;nbsp;&lt;select name=&quot;course_expirationMonth&quot; id=&quot;course_expirationMonth&quot; disabled=&quot;disabled&quot;&gt;
+&lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;
+&lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;
+&lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;
+&lt;option value=&quot;4&quot;&gt;4&lt;/option&gt;
+&lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;
+&lt;option value=&quot;6&quot;&gt;6&lt;/option&gt;
+&lt;option value=&quot;7&quot;&gt;7&lt;/option&gt;
+&lt;option value=&quot;8&quot;&gt;8&lt;/option&gt;
+&lt;option value=&quot;9&quot;&gt;9&lt;/option&gt;
+&lt;option value=&quot;10&quot; selected=&quot;selected&quot;&gt;10&lt;/option&gt;
+&lt;option value=&quot;11&quot;&gt;11&lt;/option&gt;
+&lt;option value=&quot;12&quot;&gt;12&lt;/option&gt;
+&lt;/select&gt;
+&amp;nbsp;&lt;select name=&quot;course_expirationYear&quot; id=&quot;course_expirationYear&quot; disabled=&quot;disabled&quot;&gt;
+&lt;option value=&quot;2019&quot;&gt;2019&lt;/option&gt;
+&lt;option value=&quot;2020&quot;&gt;2020&lt;/option&gt;
+&lt;option value=&quot;2021&quot; selected=&quot;selected&quot;&gt;2021&lt;/option&gt;
+&lt;option value=&quot;2022&quot;&gt;2022&lt;/option&gt;
+&lt;option value=&quot;2023&quot;&gt;2023&lt;/option&gt;
+&lt;option value=&quot;2024&quot;&gt;2024&lt;/option&gt;
+&lt;option value=&quot;2025&quot;&gt;2025&lt;/option&gt;
+&lt;option value=&quot;2026&quot;&gt;2026&lt;/option&gt;
+&lt;/select&gt;
+&amp;nbsp;
+                            &lt;span class=&quot;notice&quot;&gt;(d/m/y)&lt;/span&gt;
+                        &lt;/blockquote&gt;
+
+
+                        &lt;input type=&quot;radio&quot; id=&quot;course_status_disabled&quot; name=&quot;course_status_selection&quot; value=&quot;disable&quot;&gt;&amp;nbsp;
+                        &lt;label for=&quot;course_status_disabled&quot;&gt;
+                            Not available                        &lt;/label&gt;
+
+
+                        &lt;blockquote&gt;
+
+                            
+
+                            &lt;input type=&quot;radio&quot; id=&quot;status_pending&quot; name=&quot;course_status&quot; value=&quot;pending&quot; checked=&quot;checked&quot; disabled=&quot;disabled&quot;&gt;&amp;nbsp;
+                            &lt;label for=&quot;status_pending&quot;&gt;
+                                Reactivable by course manager                            &lt;/label&gt;
+
+
+                            
+                            &lt;br&gt;
+
+                                
+                                    &lt;input type=&quot;radio&quot; id=&quot;status_disable&quot; name=&quot;course_status&quot; value=&quot;disable&quot; disabled=&quot;disabled&quot;&gt;&amp;nbsp;
+                                    &lt;label for=&quot;status_disable&quot;&gt;
+                                        Reactivable by administrator                                    &lt;/label&gt;
+                                    &lt;br&gt;
+
+                                    &lt;input type=&quot;radio&quot; id=&quot;status_trash&quot; name=&quot;course_status&quot; value=&quot;trash&quot; disabled=&quot;disabled&quot;&gt;&amp;nbsp;
+                                    &lt;label for=&quot;status_trash&quot;&gt;
+                                        Move to trash                                    &lt;/label&gt;
+
+                                    
+                            
+                        &lt;/blockquote&gt;
+
+                                            
+                                    
+                &lt;/dd&gt;
+                
+            &lt;/dl&gt;
+                    &lt;/div&gt;
+    &lt;/fieldset&gt;
+    
+    &lt;dl&gt;
+        &lt;dt&gt;
+            &lt;input type=&quot;submit&quot; name=&quot;changeProperties&quot; value=&quot;Ok&quot;&gt;&amp;nbsp;
+            &lt;a href=&quot;/claroline11110/index.php&quot;&gt;&lt;input type=&quot;button&quot; onclick=&quot;document.location='/claroline11110/index.php';return false&quot; value=&quot;Cancel&quot;&gt;&lt;/a&gt;
+        &lt;/dt&gt;
+        &lt;dd&gt;&lt;/dd&gt;
+    &lt;/dl&gt;
+&lt;/form&gt;
+
+&lt;p class=&quot;notice&quot;&gt;
+    &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt; denotes required field&lt;/p&gt;&lt;!-- End of Page Content --&gt;
+
+
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- - - - - - - - - - - End of Claroline Body  - - - - - - - - - - --&gt;
+
+&lt;!-- $Id: footer.tpl.php 12676 2010-10-20 14:59:33Z abourguignon $ --&gt;
+
+
+&lt;div id=&quot;campusFooter&quot;&gt;
+    &lt;hr&gt;
+    &lt;div id=&quot;campusFooterLeft&quot;&gt;
+        
+&lt;!-- campusFooterLeft --&gt;
+
+&lt;!-- End of campusFooterLeft --&gt;
+            &lt;/div&gt;
+    &lt;div id=&quot;campusFooterRight&quot;&gt;
+        
+&lt;!-- campusFooterRight --&gt;
+
+&lt;!-- End of campusFooterRight --&gt;
+        &lt;div id=&quot;platformManager&quot;&gt;Administrator for Claroline : &lt;a href=&quot;mailto:jdoe@mydomain.net?subject=[Claroline]&quot;&gt;John Doe&lt;/a&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div id=&quot;campusFooterCenter&quot;&gt;
+        
+&lt;!-- campusFooterCenter --&gt;
+
+&lt;!-- End of campusFooterCenter --&gt;
+        &lt;span class=&quot;poweredBy&quot;&gt;Powered by &lt;a href=&quot;http://www.claroline.net&quot; target=&quot;_blank&quot;&gt;Claroline&lt;/a&gt; &copy; 2001 - 2013&lt;/span&gt;    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end of claroPage --&gt;
+&lt;/div&gt;
+
+
+&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/P[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/P[1]/A[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[1]/LEGEND[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[1]/DL[1]/DD[3]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[1]/DIV[1]/DL[1]/DD[3]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[2]</td>
+							<td><a href="state295.html">state295</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[2]/LEGEND[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/FIELDSET[3]/LEGEND[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/DL[1]/DT[1]/A[1]</td>
+							<td><a href="state13.html">state13</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/DL[1]/DT[1]/INPUT[1]</td>
+							<td><a href="state580.html">state580</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/FORM[1]/DL[1]/DT[1]/A[1]/INPUT[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

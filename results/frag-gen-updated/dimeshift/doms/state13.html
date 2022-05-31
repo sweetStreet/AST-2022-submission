@@ -1,0 +1,369 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Wallets | DimeShift</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+	<script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+		var site_path = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port : '');
+	</script>
+
+	<script src="//localhost:35729/livereload.js"></script>
+
+	<link href="/resources/css.css" media="screen" rel="stylesheet" type="text/css">
+	<meta name="google-site-verification" content="MyNePgPoKL2FkR070Lj1pIT8Or7gERZiobVzjG0PtOk">
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-400436-21', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body style="" class="modal-open">
+<div id="wrap">
+		<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom disable-selection" id="header">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style=""><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				
+
+				<a href="/" class="btn btn-info btn-lg btn-logo">$ dimeshift</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li class="header_is_not_signed_in" style="display: none;">
+						<a href="/" class="menu_category menu_category_home" data-i18n="Home">Home</a>
+					</li>
+					<li class="header_is_signed_in active" style="">
+						<a href="/wallets" class="menu_category menu_category_wallets" data-i18n="Wallets">Wallets</a>
+					</li>
+					<li class="header_is_signed_in active" style="">
+						<a href="/plans" class="menu_category menu_category_wallets" data-i18n="Goals">Goals</a>
+					</li>
+					<li><a href="mailto:jeka911@gmail.com?subject=Wallet" class="menu_category" data-i18n="Contact">Contact</a></li>
+					<li><a href="http://docs.dimeshift.apiary.io/" class="menu_category">API</a></li>
+					<li class="header_is_not_signed_in" style="display: none;">
+						<a href="/user/registration" data-i18n="Register">Register</a>
+					</li>
+					<li class="header_is_not_signed_in" style="display: none;">
+						<a href="/user/signin" class="signin_caller" data-i18n="Sign In">Sign In</a>
+					</li>
+					<li class="header_is_signed_in" style="">
+						<a href="/profile" data-i18n="Settings">Settings</a>
+					</li>
+					<li class="header_is_signed_in" style="">
+						<a href="/user/logout" class="signout_caller" data-i18n="Log Out">Log Out</a>
+					</li>
+					<li>
+						<a href="/user/change_language" class="icon_holder"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div> 
+	<!-- /.navbar -->
+
+
+
+	<div class="container" id="container">
+
+		<div id="fill_profile_invitation" style="display: none;">
+			<div class="alert alert-info">
+			<span data-i18n="Please don't forget to let us know your email address, so you can sign in to DimeShift on your next visit">Please don't forget to let us know your email address, so you can sign in to DimeShift on your next visit</span>. <a href="/user/fillprofile" class="btn btn-primary btn-xs" data-i18n="Do it">Do it</a>
+			</div>
+		</div>
+
+		<div class="page_holder" id="page_holder_1" style="display: none;"></div>
+		<div class="page_holder" id="page_holder_2" style="display: block;"><div class="page"><ul class="breadcrumb">
+  <li><a href="http://localhost:3000"><span data-i18n="Home">Home</span></a></li>
+  <li class="active"><span data-i18n="Your Wallets">Your Wallets</span></li>
+</ul>
+
+
+<div class="row">
+<div class="col-xs-12 col-md-9">
+
+									<div class="alert alert-warning" role="alert"><span data-i18n="You have no wallets">You have no wallets</span> <a href="http://localhost:3000/wallets/add" class="btn btn-primary btn-xs" id="add_wallet_button"><span data-i18n="Add">Add</span></a></div>
+						
+</div>
+<div class="col-xs-12 col-md-3">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title"><span data-i18n="Filter">Filter</span></h3>
+		</div>
+		<div class="panel-body">
+			<ul class="nav nav-pills nav-stacked">
+				<li class="active"><a href="#" class="filter_menu" data-status="active"><span class="glyphicon glyphicon-ok"></span> <span data-i18n="Active">Active</span></a></li>
+				<li><a href="#" class="filter_menu" data-status="hidden"><span class="glyphicon glyphicon-trash"></span> <span data-i18n="Trash">Trash</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title"><span data-i18n="Access">Access</span></h3>
+		</div>
+		<div class="panel-body">
+			<ul class="nav nav-pills nav-stacked">
+				<li class="active"><a href="#" class="origin_menu" data-origin="both"><span class="glyphicon glyphicon-ok"></span> <span data-i18n="Both">Both</span></a></li>
+				<li><a href="#" class="origin_menu" data-origin="mine"><span class="glyphicon glyphicon-user"></span> <span data-i18n="Yours">Yours</span></a></li>
+				<li><a href="#" class="origin_menu" data-origin="shared"><span class="glyphicon glyphicon-share-alt"></span> <span data-i18n="Shared with you">Shared with you</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+
+</div>
+</div>
+
+
+<div class="hidden">
+	<span id="tour_step_0">Here is quick introdution to DimeShift.<br><br>Our demo robot has created few sample wallets for you to check out.</span>
+	<span id="tour_step_1">But you can add as many as you want.<br><br>Different name, different currencies</span>
+	<span id="tour_step_2">There're few options availiable when you move your mouse over your wallet.<br><br>
+	But lets jump directly to wallet page.<br><br>Click any row to jump to it.
+	</span>
+</div></div></div>
+	</div>
+
+	<div id="push"></div>
+</div>
+
+	<div id="preloader" style="opacity: 1; display: none;"></div>
+	<footer id="footer" role="contentinfo">
+		<div class="container">
+			<div class="pull-right">
+				<a href="https://github.com/jeka-kiselyov/dimeshift" data-i18n="View Source on GitHub">View Source on GitHub</a>
+			</div>
+			<p class="muted credit"><span data-i18n="Copyright" class="hidden-xs hidden-sm">Copyright</span><span class="visible-xs-inline visible-sm-inline">©</span> 2017 <a href="http://dimeshift.com">DimeShift</a><span class="hidden-xs hidden-sm">.</span> <span data-i18n="GNU Affero GPL License" class="hidden-xs hidden-sm">GNU Affero GPL License</span> </p>
+		</div>
+	</footer>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script src="/resources/js.js" type="text/javascript"></script><script type="text/javascript" src="/vendors/jquery/jquery.min.js"></script><script type="text/javascript" src="/vendors/bootstrap/js/modal.js"></script><script type="text/javascript" src="/vendors/bootstrap/js/button.js"></script><script type="text/javascript" src="/vendors/bootstrap/js/dropdown.js"></script><script type="text/javascript" src="/vendors/bootstrap/js/collapse.js"></script><script type="text/javascript" src="/vendors/bootstrap/js/tooltip.js"></script><script type="text/javascript" src="/vendors/bootstrap/js/popover.js"></script><script type="text/javascript" src="/vendors/bootstrap-tour/build/js/bootstrap-tour.js"></script><script type="text/javascript" src="/vendors/underscore/underscore-min.js"></script><script type="text/javascript" src="/vendors/backbone/backbone.js"></script><script type="text/javascript" src="/vendors/backbone.paginator/lib/backbone.paginator.min.js"></script><script type="text/javascript" src="/vendors/bootstrap-clickonmouseover/bootstrap.clickonmouseover.js"></script><script type="text/javascript" src="/vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script><script type="text/javascript" src="/vendors/mprogress/build/js/mprogress.min.js"></script><script type="text/javascript" src="/vendors/jsmart/jsmart.js"></script><script type="text/javascript" src="/scripts/functions.js"></script><script type="text/javascript" src="/scripts/app.js"></script><script type="text/javascript" src="/scripts/app/helper.js"></script><script type="text/javascript" src="/scripts/app/view_stack.js"></script><script type="text/javascript" src="/scripts/app/settings.js"></script><script type="text/javascript" src="/scripts/app/local_storage.js"></script><script type="text/javascript" src="/scripts/app/template_manager.js"></script><script type="text/javascript" src="/scripts/app/i18n.js"></script><script type="text/javascript" src="/scripts/app/exchange.js"></script><script type="text/javascript" src="/scripts/app/abstract/dialog.js"></script><script type="text/javascript" src="/scripts/app/abstract/page.js"></script><script type="text/javascript" src="/scripts/app/models/plan.js"></script><script type="text/javascript" src="/scripts/app/models/transaction.js"></script><script type="text/javascript" src="/scripts/app/models/user.js"></script><script type="text/javascript" src="/scripts/app/models/wallet.js"></script><script type="text/javascript" src="/scripts/app/models/wallets_access.js"></script><script type="text/javascript" src="/scripts/app/collections/plans.js"></script><script type="text/javascript" src="/scripts/app/collections/transactions.js"></script><script type="text/javascript" src="/scripts/app/collections/users.js"></script><script type="text/javascript" src="/scripts/app/collections/wallets.js"></script><script type="text/javascript" src="/scripts/app/collections/wallets_accesses.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/add_profit.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/add_wallet.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/change_language.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/edit_wallet.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/fill_profile.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/hide_wallet.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/logout.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/registration.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/remove_access.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/remove_plan.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/remove_transaction.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/restore.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/set_total_to.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/signin.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/transaction_details.js"></script><script type="text/javascript" src="/scripts/app/views/dialogs/wallet_accesses.js"></script><script type="text/javascript" src="/scripts/app/views/widgets/index.js"></script><script type="text/javascript" src="/scripts/app/views/parts/profile_change_password.js"></script><script type="text/javascript" src="/scripts/app/views/parts/profile_remove_account.js"></script><script type="text/javascript" src="/scripts/app/views/parts/transactions.js"></script><script type="text/javascript" src="/scripts/app/views/parts/wallet_plans.js"></script><script type="text/javascript" src="/scripts/app/views/pages/404.js"></script><script type="text/javascript" src="/scripts/app/views/pages/import_xls.js"></script><script type="text/javascript" src="/scripts/app/views/pages/index.js"></script><script type="text/javascript" src="/scripts/app/views/pages/plan.js"></script><script type="text/javascript" src="/scripts/app/views/pages/plans.js"></script><script type="text/javascript" src="/scripts/app/views/pages/profile.js"></script><script type="text/javascript" src="/scripts/app/views/pages/update_password.js"></script><script type="text/javascript" src="/scripts/app/views/pages/wallet.js"></script><script type="text/javascript" src="/scripts/app/views/pages/wallets.js"></script><script type="text/javascript" src="/scripts/app/views/tours/wallet.js"></script><script type="text/javascript" src="/scripts/app/views/tours/wallets.js"></script><script type="text/javascript" src="/scripts/app/views/charts/balance.js"></script><script type="text/javascript" src="/scripts/app/views/header.js"></script><script type="text/javascript" src="/scripts/app/log.js"></script><script type="text/javascript" src="/scripts/app/router.js"></script><script type="text/javascript" src="/scripts/setup.js"></script>
+
+<div id="dialog_wrapper"><div id="dialog_add_wallet" class="modal dialog_add_wallet in" role="dialog" aria-labelledby="dialog_label" aria-hidden="false" style="display: block;"><div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="dialog_label">Add Wallet</h4>
+      </div>
+      <div class="modal-body modal-body-default" style="padding-bottom: 0;">
+
+      <form method="post" action="http://localhost:3000/wallets/add" role="form" id="add_wallet_modal_form">
+      <fieldset>
+
+        <div class="form-group">
+          <label class="sr-only" for="input_name">Name</label>
+          <input type="text" name="name" class="form-control" id="input_name" placeholder="Name">
+        </div>
+
+        <div class="form-group">
+          <label class="sr-only" for="input_name">Currency</label>
+          <select name="currency" id="input_currency" class="form-control">
+            <option value="">Select Currency</option>
+                          <option value="AED">United Arab Emirates Dirham</option>
+                          <option value="AFN">Afghan Afghani</option>
+                          <option value="ALL">Albanian Lek</option>
+                          <option value="AMD">Armenian Dram</option>
+                          <option value="ANG">Netherlands Antillean Guilder</option>
+                          <option value="AOA">Angolan Kwanza</option>
+                          <option value="ARS">Argentine Peso</option>
+                          <option value="AUD">Australian Dollar</option>
+                          <option value="AWG">Aruban Florin</option>
+                          <option value="AZN">Azerbaijani Manat</option>
+                          <option value="BAM">Bosnia-Herzegovina Convertible Mark</option>
+                          <option value="BBD">Barbadian Dollar</option>
+                          <option value="BDT">Bangladeshi Taka</option>
+                          <option value="BGN">Bulgarian Lev</option>
+                          <option value="BHD">Bahraini Dinar</option>
+                          <option value="BIF">Burundian Franc</option>
+                          <option value="BMD">Bermudan Dollar</option>
+                          <option value="BND">Brunei Dollar</option>
+                          <option value="BOB">Bolivian Boliviano</option>
+                          <option value="BRL">Brazilian Real</option>
+                          <option value="BSD">Bahamian Dollar</option>
+                          <option value="BTC">Bitcoin</option>
+                          <option value="BTN">Bhutanese Ngultrum</option>
+                          <option value="BWP">Botswanan Pula</option>
+                          <option value="BYR">Belarusian Ruble</option>
+                          <option value="BZD">Belize Dollar</option>
+                          <option value="CAD">Canadian Dollar</option>
+                          <option value="CDF">Congolese Franc</option>
+                          <option value="CHF">Swiss Franc</option>
+                          <option value="CLF">Chilean Unit of Account (UF)</option>
+                          <option value="CLP">Chilean Peso</option>
+                          <option value="CNY">Chinese Yuan</option>
+                          <option value="COP">Colombian Peso</option>
+                          <option value="CRC">Costa Rican Colón</option>
+                          <option value="CUP">Cuban Peso</option>
+                          <option value="CVE">Cape Verdean Escudo</option>
+                          <option value="CZK">Czech Republic Koruna</option>
+                          <option value="DJF">Djiboutian Franc</option>
+                          <option value="DKK">Danish Krone</option>
+                          <option value="DOP">Dominican Peso</option>
+                          <option value="DZD">Algerian Dinar</option>
+                          <option value="EEK">Estonian Kroon</option>
+                          <option value="EGP">Egyptian Pound</option>
+                          <option value="ERN">Eritrean Nakfa</option>
+                          <option value="ETB">Ethiopian Birr</option>
+                          <option value="EUR">Euro</option>
+                          <option value="FJD">Fijian Dollar</option>
+                          <option value="FKP">Falkland Islands Pound</option>
+                          <option value="GBP">British Pound Sterling</option>
+                          <option value="GEL">Georgian Lari</option>
+                          <option value="GGP">Guernsey Pound</option>
+                          <option value="GHS">Ghanaian Cedi</option>
+                          <option value="GIP">Gibraltar Pound</option>
+                          <option value="GMD">Gambian Dalasi</option>
+                          <option value="GNF">Guinean Franc</option>
+                          <option value="GTQ">Guatemalan Quetzal</option>
+                          <option value="GYD">Guyanaese Dollar</option>
+                          <option value="HKD">Hong Kong Dollar</option>
+                          <option value="HNL">Honduran Lempira</option>
+                          <option value="HRK">Croatian Kuna</option>
+                          <option value="HTG">Haitian Gourde</option>
+                          <option value="HUF">Hungarian Forint</option>
+                          <option value="IDR">Indonesian Rupiah</option>
+                          <option value="ILS">Israeli New Sheqel</option>
+                          <option value="IMP">Manx pound</option>
+                          <option value="INR">Indian Rupee</option>
+                          <option value="IQD">Iraqi Dinar</option>
+                          <option value="IRR">Iranian Rial</option>
+                          <option value="ISK">Icelandic Króna</option>
+                          <option value="JEP">Jersey Pound</option>
+                          <option value="JMD">Jamaican Dollar</option>
+                          <option value="JOD">Jordanian Dinar</option>
+                          <option value="JPY">Japanese Yen</option>
+                          <option value="KES">Kenyan Shilling</option>
+                          <option value="KGS">Kyrgystani Som</option>
+                          <option value="KHR">Cambodian Riel</option>
+                          <option value="KMF">Comorian Franc</option>
+                          <option value="KPW">North Korean Won</option>
+                          <option value="KRW">South Korean Won</option>
+                          <option value="KWD">Kuwaiti Dinar</option>
+                          <option value="KYD">Cayman Islands Dollar</option>
+                          <option value="KZT">Kazakhstani Tenge</option>
+                          <option value="LAK">Laotian Kip</option>
+                          <option value="LBP">Lebanese Pound</option>
+                          <option value="LKR">Sri Lankan Rupee</option>
+                          <option value="LRD">Liberian Dollar</option>
+                          <option value="LSL">Lesotho Loti</option>
+                          <option value="LTL">Lithuanian Litas</option>
+                          <option value="LVL">Latvian Lats</option>
+                          <option value="LYD">Libyan Dinar</option>
+                          <option value="MAD">Moroccan Dirham</option>
+                          <option value="MDL">Moldovan Leu</option>
+                          <option value="MGA">Malagasy Ariary</option>
+                          <option value="MKD">Macedonian Denar</option>
+                          <option value="MMK">Myanma Kyat</option>
+                          <option value="MNT">Mongolian Tugrik</option>
+                          <option value="MOP">Macanese Pataca</option>
+                          <option value="MRO">Mauritanian Ouguiya</option>
+                          <option value="MTL">Maltese Lira</option>
+                          <option value="MUR">Mauritian Rupee</option>
+                          <option value="MVR">Maldivian Rufiyaa</option>
+                          <option value="MWK">Malawian Kwacha</option>
+                          <option value="MXN">Mexican Peso</option>
+                          <option value="MYR">Malaysian Ringgit</option>
+                          <option value="MZN">Mozambican Metical</option>
+                          <option value="NAD">Namibian Dollar</option>
+                          <option value="NGN">Nigerian Naira</option>
+                          <option value="NIO">Nicaraguan Córdoba</option>
+                          <option value="NOK">Norwegian Krone</option>
+                          <option value="NPR">Nepalese Rupee</option>
+                          <option value="NZD">New Zealand Dollar</option>
+                          <option value="OMR">Omani Rial</option>
+                          <option value="PAB">Panamanian Balboa</option>
+                          <option value="PEN">Peruvian Nuevo Sol</option>
+                          <option value="PGK">Papua New Guinean Kina</option>
+                          <option value="PHP">Philippine Peso</option>
+                          <option value="PKR">Pakistani Rupee</option>
+                          <option value="PLN">Polish Zloty</option>
+                          <option value="PYG">Paraguayan Guarani</option>
+                          <option value="QAR">Qatari Rial</option>
+                          <option value="RON">Romanian Leu</option>
+                          <option value="RSD">Serbian Dinar</option>
+                          <option value="RUB">Russian Ruble</option>
+                          <option value="RWF">Rwandan Franc</option>
+                          <option value="SAR">Saudi Riyal</option>
+                          <option value="SBD">Solomon Islands Dollar</option>
+                          <option value="SCR">Seychellois Rupee</option>
+                          <option value="SDG">Sudanese Pound</option>
+                          <option value="SEK">Swedish Krona</option>
+                          <option value="SGD">Singapore Dollar</option>
+                          <option value="SHP">Saint Helena Pound</option>
+                          <option value="SLL">Sierra Leonean Leone</option>
+                          <option value="SOS">Somali Shilling</option>
+                          <option value="SRD">Surinamese Dollar</option>
+                          <option value="STD">São Tomé and Príncipe Dobra</option>
+                          <option value="SVC">Salvadoran Colón</option>
+                          <option value="SYP">Syrian Pound</option>
+                          <option value="SZL">Swazi Lilangeni</option>
+                          <option value="THB">Thai Baht</option>
+                          <option value="TJS">Tajikistani Somoni</option>
+                          <option value="TMT">Turkmenistani Manat</option>
+                          <option value="TND">Tunisian Dinar</option>
+                          <option value="TOP">Tongan Paʻanga</option>
+                          <option value="TRY">Turkish Lira</option>
+                          <option value="TTD">Trinidad and Tobago Dollar</option>
+                          <option value="TWD">New Taiwan Dollar</option>
+                          <option value="TZS">Tanzanian Shilling</option>
+                          <option value="UAH">Ukrainian Hryvnia</option>
+                          <option value="UGX">Ugandan Shilling</option>
+                          <option value="USD" selected="selected">United States Dollar</option>
+                          <option value="UYU">Uruguayan Peso</option>
+                          <option value="UZS">Uzbekistan Som</option>
+                          <option value="VEF">Venezuelan Bolívar Fuerte</option>
+                          <option value="VND">Vietnamese Dong</option>
+                          <option value="VUV">Vanuatu Vatu</option>
+                          <option value="WST">Samoan Tala</option>
+                          <option value="XAF">CFA Franc BEAC</option>
+                          <option value="XAG">Silver (troy ounce)</option>
+                          <option value="XAU">Gold (troy ounce)</option>
+                          <option value="XCD">East Caribbean Dollar</option>
+                          <option value="XDR">Special Drawing Rights</option>
+                          <option value="XOF">CFA Franc BCEAO</option>
+                          <option value="XPF">CFP Franc</option>
+                          <option value="YER">Yemeni Rial</option>
+                          <option value="ZAR">South African Rand</option>
+                          <option value="ZMK">Zambian Kwacha (pre-2013)</option>
+                          <option value="ZMW">Zambian Kwacha</option>
+                          <option value="ZWL">Zimbabwean Dollar</option>
+                      </select>
+        </div>
+
+        <div class="alert alert-danger errors-container" style="display: none;">
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="btn btn-primary pull-left" value="Add" data-loading-text="Saving..." id="add_wallet_modal_form_submit">
+        </div>
+
+      </fieldset>
+      </form>
+
+      </div>
+      <div class="modal-body modal-body-success" style="display: none;">
+      </div>
+      <div class="modal-footer">
+        <div class="pull-right">
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+</div></div><div class="modal-backdrop  in"></div></body></html>

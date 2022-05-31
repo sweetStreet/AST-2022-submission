@@ -1,0 +1,785 @@
+{
+  "url" : "http://localhost:3000/mantisbt",
+  "basicAuthUrl" : null,
+  "browserConfig" : {
+    "browserType" : "CHROME_HEADLESS",
+    "numberOfBrowsers" : 1,
+    "browserBuilder" : { },
+    "remoteHubUrl" : null,
+    "browserOptions" : {
+      "headless" : false,
+      "pixelDensity" : 2,
+      "profile" : null
+    },
+    "defaultBuilder" : true,
+    "langOrNull" : null
+  },
+  "plugins" : [ "CrawlOverview", "TestSuiteGenerator", "FragmentationPlugin" ],
+  "proxyConfiguration" : {
+    "port" : -1,
+    "hostname" : "none",
+    "type" : "NOTHING"
+  },
+  "crawlRules" : {
+    "crawlEvents" : [ "click" ],
+    "invariants" : [ ],
+    "oracleComparators" : [ {
+      "preConditions" : [ ],
+      "id" : "DummyComparator",
+      "oracle" : { }
+    } ],
+    "ignoredFrameIdentifiers" : [ ],
+    "preCrawlConfig" : {
+      "waitConditions" : [ ],
+      "crawlConditions" : [ ],
+      "includedElements" : [ {
+        "tagName" : "A",
+        "id" : "id1298215932",
+        "eventType" : "click",
+        "eventableCondition" : null,
+        "withXpathExpression" : null
+      }, {
+        "tagName" : "BUTTON",
+        "id" : "id716422065",
+        "eventType" : "click",
+        "eventableCondition" : null,
+        "withXpathExpression" : null
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id281845627",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id281845627",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@type='submit']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//INPUT[@type='submit']"
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id31076635",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id31076635",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@type='button']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//INPUT[@type='button']"
+      } ],
+      "excludedElements" : [ {
+        "tagName" : "A",
+        "id" : "id1172311055",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1172311055",
+          "conditions" : [ ],
+          "inXPath" : "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]"
+      }, {
+        "tagName" : "A",
+        "id" : "id1924749617",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1924749617",
+          "conditions" : [ ],
+          "inXPath" : "/HTML[1]/BODY[1]/DIV[1]/A[1]",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "/HTML[1]/BODY[1]/DIV[1]/A[1]"
+      }, {
+        "tagName" : "A",
+        "id" : "id2114416122",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id2114416122",
+          "conditions" : [ ],
+          "inXPath" : "//TABLE[@class='width75']//*",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//TABLE[@class='width75']//*"
+      }, {
+        "tagName" : "BUTTON",
+        "id" : "id304580981",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id304580981",
+          "conditions" : [ ],
+          "inXPath" : "//TABLE[@class='width75']//*",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//TABLE[@class='width75']//*"
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id1836539926",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1836539926",
+          "conditions" : [ ],
+          "inXPath" : "//TABLE[@class='width75']//*",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//TABLE[@class='width75']//*"
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id2077258341",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id2077258341",
+          "conditions" : [ ],
+          "inXPath" : "//TABLE[@class='width75']//*",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//TABLE[@class='width75']//*"
+      } ],
+      "filterAttributeNames" : [ "closure_hashcode_(\\w)*", "jquery[0-9]+" ]
+    },
+    "formFillMode" : "RANDOM",
+    "formFillOrder" : "NORMAL",
+    "inputSpecification" : {
+      "formInputs" : {
+        "name password" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "root",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name username" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "administrator",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }
+      },
+      "forms" : [ {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "administrator",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "root",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      }, {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "root",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      } ],
+      "crawlElements" : [ {
+        "tagName" : "INPUT",
+        "id" : "id1348861720",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1348861720",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@value='Login']",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "administrator",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "root",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "administrator",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "root",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "administrator",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "root",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "administrator",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "root",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "username",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "administrator",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "root",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//INPUT[@value='Login']"
+      }, {
+        "tagName" : "INPUT",
+        "id" : "id1472582570",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1472582570",
+          "conditions" : [ ],
+          "inXPath" : "//INPUT[@value='Login']",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "root",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "root",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "root",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "root",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "root",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//INPUT[@value='Login']"
+      } ]
+    },
+    "testInvariantsWhileCrawling" : true,
+    "clickOnce" : true,
+    "randomizeCandidateElements" : false,
+    "crawlFrames" : false,
+    "crawlHiddenAnchors" : true,
+    "waitAfterReloadUrl" : 500,
+    "waitAfterEvent" : 500,
+    "followExternalLinks" : false,
+    "crawlPriorityMode" : "NORMAL",
+    "crawlNearDuplicates" : true,
+    "delayNearDuplicateCrawling" : true,
+    "applyNonSelAdvantage" : true,
+    "avoidUnrelatedBacktracking" : false,
+    "useEquivalentReset" : false,
+    "avoidDifferentBacktracking" : false,
+    "skipExploredActions" : true,
+    "maxRepeatExploredActions" : 2,
+    "usefulFragmentRules" : {
+      "thresholdWidth" : 50.0,
+      "thresholdHeight" : 50.0,
+      "subtreeWidth_and" : 1,
+      "subtreeWidth_or" : 4
+    },
+    "restoreConnectedEdges" : false,
+    "allCrawlElements" : [ {
+      "tagName" : "A",
+      "id" : "id1298215932",
+      "eventType" : "click",
+      "eventableCondition" : null,
+      "withXpathExpression" : null
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id716422065",
+      "eventType" : "click",
+      "eventableCondition" : null,
+      "withXpathExpression" : null
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id281845627",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id281845627",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@type='submit']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//INPUT[@type='submit']"
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id31076635",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id31076635",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@type='button']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//INPUT[@type='button']"
+    }, {
+      "tagName" : "A",
+      "id" : "id1172311055",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1172311055",
+        "conditions" : [ ],
+        "inXPath" : "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]"
+    }, {
+      "tagName" : "A",
+      "id" : "id1924749617",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1924749617",
+        "conditions" : [ ],
+        "inXPath" : "/HTML[1]/BODY[1]/DIV[1]/A[1]",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "/HTML[1]/BODY[1]/DIV[1]/A[1]"
+    }, {
+      "tagName" : "A",
+      "id" : "id2114416122",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id2114416122",
+        "conditions" : [ ],
+        "inXPath" : "//TABLE[@class='width75']//*",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//TABLE[@class='width75']//*"
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id304580981",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id304580981",
+        "conditions" : [ ],
+        "inXPath" : "//TABLE[@class='width75']//*",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//TABLE[@class='width75']//*"
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id1836539926",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1836539926",
+        "conditions" : [ ],
+        "inXPath" : "//TABLE[@class='width75']//*",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//TABLE[@class='width75']//*"
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id2077258341",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id2077258341",
+        "conditions" : [ ],
+        "inXPath" : "//TABLE[@class='width75']//*",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//TABLE[@class='width75']//*"
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id1348861720",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1348861720",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@value='Login']",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "administrator",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "root",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "administrator",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "root",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "administrator",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "root",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "administrator",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "root",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "administrator",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "root",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "username",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "administrator",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "root",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//INPUT[@value='Login']"
+    }, {
+      "tagName" : "INPUT",
+      "id" : "id1472582570",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1472582570",
+        "conditions" : [ ],
+        "inXPath" : "//INPUT[@value='Login']",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "root",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "root",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "root",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "root",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "root",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "root",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//INPUT[@value='Login']"
+    } ]
+  },
+  "maximumStates" : 0,
+  "maximumRuntime" : 3600000,
+  "maximumDepth" : 0,
+  "stateVertexFactory" : { },
+  "siteDir" : "/Users/liuyu/projects/tackle-test-generator-ui-level/testlabeling/crawljax_frag/out/mantisbt/mantisbt_HYBRID_DOM_-1.0_60mins/localhost",
+  "outputDir" : "/Users/liuyu/projects/tackle-test-generator-ui-level/testlabeling/crawljax_frag/out/mantisbt/mantisbt_HYBRID_DOM_-1.0_60mins/localhost/crawl1"
+}

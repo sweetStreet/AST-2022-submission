@@ -1,0 +1,341 @@
+<html lang="he-IL" class="uk-notouch"><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=latin,latin-ext" rel="stylesheet">
+                                <meta name="generator" content="Pagekit">
+        <link href="/pagekit/app/system/modules/theme/favicon.ico" rel="shortcut icon" type="image/x-icon">
+        <link href="/pagekit/app/system/modules/theme/apple_touch_icon.png" rel="apple-touch-icon-precomposed">
+        <title>עמודים | Testing</title>
+        <link href="/pagekit/app/system/modules/theme/css/theme.css?v=d10d" rel="stylesheet">
+        <script>var $data = {"config":{"menus":[]},"types":[{"name":"@page","label":"Page","controller":"Pagekit\\Site\\Controller\\PageController::indexAction","id":"page"},{"label":"Link","frontpage":false,"id":"link"}]};</script>
+        <script>var $pagekit = {"editor":"html","storage":"\/cJCyhjlR","user":{"id":1,"name":"admin","email":"asd@asd.com","username":"admin"},"menu":[{"id":"system: marketplace","label":"Marketplace","parent":"root","priority":125,"icon":"\/pagekit\/app\/installer\/assets\/images\/icon-marketplace.svg","url":"\/pagekit\/index.php\/admin\/system\/marketplace\/extensions","access":"system: manage packages","active":false},{"id":"system: marketplace extensions","label":"Extensions","parent":"system: marketplace","priority":0,"url":"\/pagekit\/index.php\/admin\/system\/marketplace\/extensions","active":false},{"id":"system: marketplace themes","label":"Themes","parent":"system: marketplace","priority":0,"url":"\/pagekit\/index.php\/admin\/system\/marketplace\/themes","active":false},{"id":"system: extensions","label":"Extensions","parent":"system: system","priority":5,"url":"\/pagekit\/index.php\/admin\/system\/package\/extensions","access":"system: manage packages","active":false},{"id":"system: themes","label":"Themes","parent":"system: system","priority":10,"url":"\/pagekit\/index.php\/admin\/system\/package\/themes","access":"system: manage packages","active":false},{"id":"system: update","label":"Update","parent":"system: system","priority":25,"url":"\/pagekit\/index.php\/admin\/system\/update","active":false},{"id":"site: widgets","label":"Widgets","parent":"site","priority":20,"url":"\/pagekit\/index.php\/admin\/site\/widget","access":"system: manage widgets","active":false},{"id":"dashboard","label":"Dashboard","parent":"root","priority":100,"icon":"\/pagekit\/app\/system\/modules\/dashboard\/assets\/images\/icon-dashboard.svg","url":"\/pagekit\/index.php\/admin\/dashboard","active":false},{"id":"system: storage","label":"Storage","parent":"site","priority":20,"url":"\/pagekit\/index.php\/admin\/site\/storage","access":"system: manage storage","active":false},{"id":"system: info","label":"Info","parent":"system: system","priority":30,"url":"\/pagekit\/index.php\/admin\/system\/info","active":false},{"id":"system: system","label":"System","parent":"root","priority":120,"icon":"\/pagekit\/app\/system\/modules\/settings\/assets\/images\/icon-settings.svg","access":"system: access settings","url":"\/pagekit\/index.php\/admin\/system\/settings","active":false},{"id":"system: settings","label":"Settings","parent":"system: system","priority":0,"url":"\/pagekit\/index.php\/admin\/system\/settings","active":false},{"id":"site","label":"Site","parent":"root","priority":105,"icon":"\/pagekit\/app\/system\/modules\/site\/assets\/images\/icon-site.svg","url":"\/pagekit\/index.php\/admin\/site\/page","access":"site: manage site || system: manage widgets || system: manage storage || system: access settings","active":true},{"id":"site: pages","label":"Pages","parent":"site","priority":0,"url":"\/pagekit\/index.php\/admin\/site\/page","access":"site: manage site","active":true},{"id":"site: settings","label":"Settings","parent":"site","priority":30,"url":"\/pagekit\/index.php\/admin\/site\/settings","access":"system: access settings","active":false},{"id":"user","label":"Users","parent":"root","priority":115,"icon":"\/pagekit\/app\/system\/modules\/user\/assets\/images\/icon-users.svg","url":"\/pagekit\/index.php\/admin\/user","active":false,"access":"user: manage users || user: manage user permissions || system: access settings"},{"id":"user: users","label":"List","parent":"user","priority":0,"url":"\/pagekit\/index.php\/admin\/user","active":false,"access":"user: manage users"},{"id":"user: permissions","label":"Permissions","parent":"user","priority":0,"url":"\/pagekit\/index.php\/admin\/user\/permissions","access":"user: manage user permissions","active":false},{"id":"user: roles","label":"Roles","parent":"user","priority":0,"url":"\/pagekit\/index.php\/admin\/user\/roles","access":"user: manage user permissions","active":false},{"id":"user: settings","label":"Settings","parent":"user","priority":0,"url":"\/pagekit\/index.php\/admin\/user\/settings","access":"system: access settings","active":false}],"url":"\/pagekit\/index.php","csrf":"35ddb0d05733f92bf9a50028e2520dd59e70de75"};</script>
+        <script src="/pagekit/app/assets/vue/dist/vue.js?v=d10d"></script>
+        <script src="/pagekit/app/assets/jquery/dist/jquery.min.js?v=d10d"></script>
+        <script src="/pagekit/app/assets/lodash/lodash.min.js?v=d10d"></script>
+        <script src="/pagekit/index.php/system/intl/he_IL?v=d10d"></script>
+        <script src="/pagekit/app/system/app/bundle/vue.js?v=d10d"></script>
+        <script src="/pagekit/app/system/modules/user/app/bundle/interceptor.js?v=d10d"></script>
+        <script src="/pagekit/app/assets/uikit/js/uikit.min.js?v=d10d"></script>
+        <script src="/pagekit/app/assets/uikit/js/components/nestable.min.js?v=d10d"></script>
+        <script src="/pagekit/app/system/modules/site/app/bundle/index.js?v=d10d"></script>
+        <script src="/pagekit/app/assets/uikit/js/components/notify.min.js?v=d10d"></script>
+        <script src="/pagekit/app/assets/uikit/js/components/tooltip.min.js?v=d10d"></script>
+        <script src="/pagekit/app/assets/uikit/js/components/sticky.min.js?v=d10d"></script>
+        <script src="/pagekit/app/assets/uikit/js/components/sortable.min.js?v=d10d"></script>
+        <script src="/pagekit/app/assets/uikit/js/components/pagination.min.js?v=d10d"></script>
+        <script src="/pagekit/app/assets/uikit/js/components/form-select.min.js?v=d10d"></script>
+        <script src="/pagekit/app/system/modules/theme/js/theme.js?v=d10d"></script>
+    </head>
+    <body>
+
+        <header id="header" class="tm-header">
+            <div class="uk-container uk-container-center">
+
+                <div class="tm-headerbar uk-flex uk-flex-space-between uk-flex-middle uk-hidden-small">
+                    <div class="tm-headerbar-primary" data-uk-dropdown="{mode:'click', preventflip: 'y'}">
+
+                        <div class="tm-cursor-pointer uk-flex uk-flex-middle">
+                            <i class="tm-icon-menu"></i>
+                            <h1 class="tm-heading">Site</h1>
+                        </div>
+
+                        <div class="uk-dropdown uk-dropdown-navbar tm-dropdown">
+                            <ul id="js-appnav" class="uk-sortable uk-grid uk-grid-small uk-grid-width-1-3" data-url="/pagekit/index.php/admin/adminmenu" data-uk-sortable="{ dragCustomClass: 'tm-sortable-dragged', handleClass: 'uk-panel' }">
+                                <li data-id="dashboard">
+                                    <a class="uk-panel tm-panel-icon" href="/pagekit/index.php/admin/dashboard">
+                                        <img width="50" height="50" alt="ניהול" src="/pagekit/app/system/modules/dashboard/assets/images/icon-dashboard.svg">
+                                        <p>ניהול</p>
+                                    </a>
+                                </li><li data-id="site">
+                                    <a class="uk-panel tm-panel-icon" href="/pagekit/index.php/admin/site/page">
+                                        <img width="50" height="50" alt="Site" src="/pagekit/app/system/modules/site/assets/images/icon-site.svg">
+                                        <p>Site</p>
+                                    </a>
+                                </li><li data-id="user">
+                                    <a class="uk-panel tm-panel-icon" href="/pagekit/index.php/admin/user">
+                                        <img width="50" height="50" alt="משתמשים" src="/pagekit/app/system/modules/user/assets/images/icon-users.svg">
+                                        <p>משתמשים</p>
+                                    </a>
+                                </li><li data-id="system: system">
+                                    <a class="uk-panel tm-panel-icon" href="/pagekit/index.php/admin/system/settings">
+                                        <img width="50" height="50" alt="מערכת" src="/pagekit/app/system/modules/settings/assets/images/icon-settings.svg">
+                                        <p>מערכת</p>
+                                    </a>
+                                </li><li data-id="system: marketplace">
+                                    <a class="uk-panel tm-panel-icon" href="/pagekit/index.php/admin/system/marketplace/extensions">
+                                        <img width="50" height="50" alt="שוק" src="/pagekit/app/installer/assets/images/icon-marketplace.svg">
+                                        <p>שוק</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="tm-contrast">
+
+                        <ul class="uk-grid uk-grid-small uk-flex-middle">
+                            <li><a class="tm-icon-help" href="https://gitter.im/pagekit/pagekit" target="_blank" title="Get Help"></a></li>
+                            <li><a class="tm-icon-visit" target="_blank" href="/pagekit/index.php/" title="צפה באתר"></a></li>
+                            <li><a class="tm-icon-logout" href="/pagekit/index.php/user/logout?redirect=admin/login" title="התנתק"></a></li>
+                            <li class="uk-margin-small-left"><a href="/pagekit/index.php/admin/user/edit?id=1" title="Profile"><img class="uk-border-circle uk-margin-small-right" height="32" width="32" title="admin" src="data:image/png;base64,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"> <span>admin</span></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <nav class="uk-navbar tm-navbar uk-hidden-small">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active">
+                            <a href="/pagekit/index.php/admin/site/page">עמודים</a>
+                        </li><li>
+                            <a href="/pagekit/index.php/admin/site/widget">וידג'טים</a>
+                        </li><li>
+                            <a href="/pagekit/index.php/admin/site/storage">אחסון</a>
+                        </li><li>
+                            <a href="/pagekit/index.php/admin/site/settings">הגדרות</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="tm-headerbar uk-flex uk-flex-space-between uk-flex-middle uk-visible-small">
+                    <a class="tm-icon-menu" href="#offcanvas" data-uk-offcanvas=""></a>
+
+                    <h1 class="tm-heading uk-h3">Site</h1>
+
+                    <a href="#offcanvas-flip" data-uk-offcanvas="">
+                        <img class="uk-border-circle" height="32" width="32" alt="admin" src="data:image/png;base64,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">
+                    </a>
+                </div>
+
+            </div>
+        </header>
+
+        <main class="tm-main uk-container uk-container-center">
+            
+<div id="site" class="uk-form">
+
+    <div class="uk-grid pk-grid-large" data-uk-grid-margin="">
+        <div class="pk-width-sidebar uk-row-first">
+
+            <div class="uk-panel">
+
+                <ul class="uk-nav uk-nav-side">
+                    <li class="uk-visible-hover uk-active">
+                        <a>Main</a>
+                        <ul class="uk-subnav pk-subnav-icon">
+                            <li><a class="pk-icon-edit pk-icon-hover" data-uk-tooltip="{delay: 500}" title="Edit"></a></li>
+                            <li><a class="pk-icon-delete pk-icon-hover" data-uk-tooltip="{delay: 500}" title="Delete"></a></li>
+                        </ul>
+                    </li><li class="uk-visible-hover uk-nav-divider">
+                        
+                        
+                    </li><li class="uk-visible-hover">
+                        <a>Not Linked</a>
+                        
+                    </li>
+                </ul>
+
+                <p>
+                    <a class="uk-button">הוסף תפריט</a>
+                </p>
+
+            </div>
+
+        </div>
+        <div class="pk-width-content">
+
+            <div class="uk-margin uk-flex uk-flex-space-between uk-flex-wrap" data-uk-margin="">
+                <div class="uk-flex uk-flex-middle uk-flex-wrap" data-uk-margin="">
+
+                    <h2 class="uk-margin-remove">Main</h2>
+
+                    <div class="uk-margin-left" style="display: none;">
+                        <ul class="uk-subnav pk-subnav-icon">
+                            <li><a class="pk-icon-check pk-icon-hover" data-uk-tooltip="{delay: 500}" title="Publish"></a></li>
+                            <li><a class="pk-icon-block pk-icon-hover" data-uk-tooltip="{delay: 500}" title="Unpublish"></a></li>
+                            <li data-uk-dropdown="{ mode: 'click' }">
+                                <a class="pk-icon-move pk-icon-hover" data-uk-tooltip="{delay: 500}" title="Move"></a>
+                                <div class="uk-dropdown uk-dropdown-small">
+                                    <ul class="uk-nav uk-nav-dropdown">
+                                        <li><a>Main</a></li><li><a>Not Linked</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a class="pk-icon-delete pk-icon-hover" data-uk-tooltip="{delay: 500}" title="Delete"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="uk-position-relative" data-uk-margin="">
+
+                    <div data-uk-dropdown="{ mode: 'click' }">
+                        <a class="uk-button uk-button-primary">הוסף עמוד</a>
+                        <div class="uk-dropdown uk-dropdown-small uk-dropdown-flip">
+                            <ul class="uk-nav uk-nav-dropdown">
+                                <li>
+                                    <a href="/pagekit/index.php/admin/site/page/edit?id=link&amp;menu=main">Link</a></li><li>
+                                    <a href="/pagekit/index.php/admin/site/page/edit?id=page&amp;menu=main">Page</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="uk-overflow-container">
+
+                <div class="pk-table-fake pk-table-fake-header">
+                    <div class="pk-table-width-minimum pk-table-fake-nestable-padding"><input type="checkbox" number=""></div>
+                    <div class="pk-table-min-width-100">כותרת</div>
+                    <div class="pk-table-width-100 uk-text-center">מצב</div>
+                    <div class="pk-table-width-100">סוג</div>
+                    <div class="pk-table-width-150">כתובת</div>
+                </div>
+
+                <ul class="uk-nestable uk-margin-remove uk-nestable-empty" style="">
+                    <li class="uk-nestable-item check-item" data-id="1">
+        <div class="uk-nestable-panel pk-table-fake uk-form uk-visible-hover">
+            <div class="pk-table-width-minimum pk-table-collapse">
+                <div class="uk-nestable-toggle" data-nestable-action="toggle"></div>
+            </div>
+            <div class="pk-table-width-minimum"><input type="checkbox" name="id" value="1"></div>
+            <div class="pk-table-min-width-100">
+                <a href="/pagekit/index.php/admin/site/page/edit?id=1">Home</a>
+                
+            </div>
+            <div class="pk-table-width-minimum">
+                
+                
+            </div>
+            <div class="pk-table-width-100 uk-text-center">
+                
+                    <a class="pk-icon-circle-danger"></a>
+                
+            </div>
+            <div class="pk-table-width-100">Page</div>
+            <div class="pk-table-width-150 pk-table-max-width-150 uk-text-truncate">
+                <span>/home</span>
+                
+            </div>
+        </div>
+
+        <ul class="uk-nestable-list" style="display: none;">
+            
+        </ul>
+
+    </li>
+                </ul>
+
+            </div>
+
+            <h3 class="uk-h1 uk-text-muted uk-text-center" style="display: none;">לא נמצאו עמודים.</h3>
+
+        </div>
+    </div>
+
+    
+
+</div>
+
+<script id="node" type="text/template">
+
+    <li class="uk-nestable-item check-item" :class="{'uk-parent': tree[node.id], 'uk-active': $root.isSelected(node)}" :data-id="node.id">
+        <div class="uk-nestable-panel pk-table-fake uk-form uk-visible-hover">
+            <div class="pk-table-width-minimum pk-table-collapse">
+                <div class="uk-nestable-toggle" data-nestable-action="toggle"></div>
+            </div>
+            <div class="pk-table-width-minimum"><input type="checkbox" name="id" :value="node.id"></div>
+            <div class="pk-table-min-width-100">
+                <a :href="$url.route('admin/site/page/edit', { id: node.id })">{{ node.title }}</a>
+                <span class="uk-text-muted uk-text-small uk-margin-small-left" v-if="node.data.menu_hide">{{ 'Hidden' | trans }}</span>
+            </div>
+            <div class="pk-table-width-minimum">
+                <a class="pk-icon-home pk-icon-hover uk-invisible" :title="'Set as frontpage' | trans" data-uk-tooltip="{delay: 500}" v-if="!isFrontpage && node.status && type.frontpage !== false" @click="setFrontpage"></a>
+                <i class="pk-icon-home-active pk-icon-muted uk-float-right" :title="'Frontpage' | trans" v-if="isFrontpage"></i>
+            </div>
+            <div class="pk-table-width-100 uk-text-center">
+                <td class="uk-text-center">
+                    <a :class="{'pk-icon-circle-danger': !node.status, 'pk-icon-circle-success': node.status}" @click="toggleStatus"></a>
+                </td>
+            </div>
+            <div class="pk-table-width-100">{{ type.label }}</div>
+            <div class="pk-table-width-150 pk-table-max-width-150 uk-text-truncate">
+                <a :title="node.url" target="_blank" :href="$url.route(node.url.substr(1))" v-if="node.accessible && node.url">{{ decodeURI(node.url) }}</a>
+                <span v-else>{{ node.path }}</span>
+            </div>
+        </div>
+
+        <ul class="uk-nestable-list" v-show="tree[node.id]">
+            <node v-for="node in tree[node.id]" :tree="tree" :node="node"></node>
+        </ul>
+
+    </li>
+
+</script>
+        </main>
+
+        <div class="uk-hidden"><div class="pk-system-messages"></div></div>
+
+        <div id="offcanvas" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+
+                <ul class="uk-nav uk-nav-offcanvas">
+                    <li class="uk-nav-header">Site</li>
+                    <li class="uk-active">
+                        <a href="/pagekit/index.php/admin/site/page">עמודים</a>
+                    </li><li>
+                        <a href="/pagekit/index.php/admin/site/widget">וידג'טים</a>
+                    </li><li>
+                        <a href="/pagekit/index.php/admin/site/storage">אחסון</a>
+                    </li><li>
+                        <a href="/pagekit/index.php/admin/site/settings">הגדרות</a>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="uk-nav-header">הרחבות</li>
+                    <li>
+                        <a href="/pagekit/index.php/admin/dashboard">
+                            <img class="uk-margin-small-right" width="34" height="34" alt="ניהול" src="/pagekit/app/system/modules/dashboard/assets/images/icon-dashboard.svg"> ניהול
+                        </a>
+                    </li><li class="uk-active">
+                        <a href="/pagekit/index.php/admin/site/page">
+                            <img class="uk-margin-small-right" width="34" height="34" alt="Site" src="/pagekit/app/system/modules/site/assets/images/icon-site.svg"> Site
+                        </a>
+                    </li><li>
+                        <a href="/pagekit/index.php/admin/user">
+                            <img class="uk-margin-small-right" width="34" height="34" alt="משתמשים" src="/pagekit/app/system/modules/user/assets/images/icon-users.svg"> משתמשים
+                        </a>
+                    </li><li>
+                        <a href="/pagekit/index.php/admin/system/settings">
+                            <img class="uk-margin-small-right" width="34" height="34" alt="מערכת" src="/pagekit/app/system/modules/settings/assets/images/icon-settings.svg"> מערכת
+                        </a>
+                    </li><li>
+                        <a href="/pagekit/index.php/admin/system/marketplace/extensions">
+                            <img class="uk-margin-small-right" width="34" height="34" alt="שוק" src="/pagekit/app/installer/assets/images/icon-marketplace.svg"> שוק
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="offcanvas-flip" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+
+                <ul class="uk-nav uk-nav-offcanvas">
+                    <li class="uk-nav-header">admin</li>
+                    <li><a target="_blank" href="/pagekit/index.php/">צפה באתר</a></li>
+                    <li><a href="/pagekit/index.php/admin/user/edit?id=1">הגדרות</a></li>
+                    <li><a href="/pagekit/index.php/user/logout?redirect=admin/login">התנתק</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    
+
+<div class="uk-modal" aria-hidden="false">
+    <div class="uk-modal-dialog">
+        
+    </div>
+</div><div class="uk-notify uk-notify-top-center" style="display: none;"></div></body></html>

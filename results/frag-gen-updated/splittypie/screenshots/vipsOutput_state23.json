@@ -1,0 +1,68 @@
+[
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]",
+    "id": 0,
+    "parentId": -1,
+    "rect": {
+      "x": 215,
+      "y": 80,
+      "width": 770,
+      "height": 184
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/H3[1]",
+    "id": 1,
+    "parentId": 0,
+    "rect": {
+      "x": 215,
+      "y": 103,
+      "width": 770,
+      "height": 37
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/P[1]",
+    "id": 3,
+    "parentId": 0,
+    "rect": {
+      "x": 215,
+      "y": 152,
+      "width": 770,
+      "height": 54
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]",
+    "id": 5,
+    "parentId": 0,
+    "rect": {
+      "x": 215,
+      "y": 235,
+      "width": 770,
+      "height": 29
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/BUTTON[1]",
+    "id": 6,
+    "parentId": 5,
+    "rect": {
+      "x": 231,
+      "y": 235,
+      "width": 67,
+      "height": 23
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/MAIN[1]/DIV[1]/BUTTON[2]",
+    "id": 8,
+    "parentId": 5,
+    "rect": {
+      "x": 340,
+      "y": 235,
+      "width": 72,
+      "height": 23
+    }
+  }
+]

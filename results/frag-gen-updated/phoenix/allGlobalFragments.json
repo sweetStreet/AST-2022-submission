@@ -1,0 +1,63 @@
+[
+  {
+    "stateId": 0,
+    "fragmentId": 0,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/FORM[1]/DIV[1]/INPUT[1]",
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/FORM[1]/DIV[2]/INPUT[1]",
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/FORM[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/FORM[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/A[1]",
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/A[1]/#text[1]",
+      "/HTML[1]/BODY[1]/FOOTER[1]/SMALL[1]/A[1]",
+      "/HTML[1]/BODY[1]/FOOTER[1]/SMALL[1]/A[1]/#text[1]",
+      "/HTML[1]/BODY[1]/FOOTER[1]/SMALL[1]/A[2]",
+      "/HTML[1]/BODY[1]/FOOTER[1]/SMALL[1]/A[2]/#text[1]",
+      "/HTML[1]/BODY[1]/FOOTER[1]/SMALL[1]/A[3]",
+      "/HTML[1]/BODY[1]/FOOTER[1]/SMALL[1]/A[3]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 0,
+    "fragmentId": 1,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/FORM[1]/DIV[1]/INPUT[1]",
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/FORM[1]/DIV[2]/INPUT[1]",
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/FORM[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/FORM[1]/BUTTON[1]/#text[1]",
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/A[1]",
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/A[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  },
+  {
+    "stateId": 0,
+    "fragmentId": 2,
+    "vipsBlocks": [
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/FORM[1]/DIV[1]/INPUT[1]",
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/FORM[1]/DIV[2]/INPUT[1]",
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/FORM[1]/BUTTON[1]",
+      "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/FORM[1]/BUTTON[1]/#text[1]"
+    ],
+    "parentBox": "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/FORM[1]",
+    "isUseful": true,
+    "isGlobal": true,
+    "isDynamic": false,
+    "equivalents": [],
+    "nd2": [],
+    "duplicates": []
+  }
+]

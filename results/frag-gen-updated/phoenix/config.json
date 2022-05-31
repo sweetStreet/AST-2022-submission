@@ -1,0 +1,2654 @@
+{
+  "url" : "http://localhost:4000",
+  "basicAuthUrl" : null,
+  "browserConfig" : {
+    "browserType" : "CHROME_HEADLESS",
+    "numberOfBrowsers" : 1,
+    "browserBuilder" : { },
+    "remoteHubUrl" : null,
+    "browserOptions" : {
+      "headless" : false,
+      "pixelDensity" : 2,
+      "profile" : null
+    },
+    "defaultBuilder" : true,
+    "langOrNull" : null
+  },
+  "plugins" : [ "CrawlOverview", "TestSuiteGenerator", "FragmentationPlugin" ],
+  "proxyConfiguration" : {
+    "port" : -1,
+    "hostname" : "none",
+    "type" : "NOTHING"
+  },
+  "crawlRules" : {
+    "crawlEvents" : [ "click" ],
+    "invariants" : [ ],
+    "oracleComparators" : [ {
+      "preConditions" : [ ],
+      "id" : "DummyComparator",
+      "oracle" : { }
+    } ],
+    "ignoredFrameIdentifiers" : [ ],
+    "preCrawlConfig" : {
+      "waitConditions" : [ ],
+      "crawlConditions" : [ ],
+      "includedElements" : [ {
+        "tagName" : "A",
+        "id" : "id1476606876",
+        "eventType" : "click",
+        "eventableCondition" : null,
+        "withXpathExpression" : null
+      }, {
+        "tagName" : "BUTTON",
+        "id" : "id2025444319",
+        "eventType" : "click",
+        "eventableCondition" : null,
+        "withXpathExpression" : null
+      }, {
+        "tagName" : "DIV",
+        "id" : "id73522719",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id73522719",
+          "conditions" : [ ],
+          "inXPath" : "//DIV[@class='board add-new']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//DIV[@class='board add-new']"
+      }, {
+        "tagName" : "DIV",
+        "id" : "id40952851",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id40952851",
+          "conditions" : [ ],
+          "inXPath" : "//DIV[@class='list add-new']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//DIV[@class='list add-new']"
+      }, {
+        "tagName" : "DIV",
+        "id" : "id1131339802",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1131339802",
+          "conditions" : [ ],
+          "inXPath" : "//DIV[@class='list']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//DIV[@class='list']"
+      }, {
+        "tagName" : "DIV",
+        "id" : "id1971319939",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1971319939",
+          "conditions" : [ ],
+          "inXPath" : "//DIV[@class='card-content']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//DIV[@class='card-content']"
+      }, {
+        "tagName" : "I",
+        "id" : "id2137283861",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id2137283861",
+          "conditions" : [ ],
+          "inXPath" : "//I[@class='fa fa-trash-o']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//I[@class='fa fa-trash-o']"
+      } ],
+      "excludedElements" : [ {
+        "tagName" : "A",
+        "id" : "id2058452630",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id2058452630",
+          "conditions" : [ ],
+          "inXPath" : "//A[@href='https://trello.com']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//A[@href='https://trello.com']"
+      }, {
+        "tagName" : "A",
+        "id" : "id1315651562",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1315651562",
+          "conditions" : [ ],
+          "inXPath" : "//A[@href='https://diacode.com']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//A[@href='https://diacode.com']"
+      }, {
+        "tagName" : "A",
+        "id" : "id1153040712",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1153040712",
+          "conditions" : [ ],
+          "inXPath" : "//A[@href='https://twitter.com/bigardone']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//A[@href='https://twitter.com/bigardone']"
+      }, {
+        "tagName" : "A",
+        "id" : "id426471487",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id426471487",
+          "conditions" : [ ],
+          "inXPath" : "//A[@id='crawler-sign-out']",
+          "linkedInputFields" : [ ]
+        },
+        "withXpathExpression" : "//A[@id='crawler-sign-out']"
+      } ],
+      "filterAttributeNames" : [ "closure_hashcode_(\\w)*", "jquery[0-9]+" ]
+    },
+    "formFillMode" : "RANDOM",
+    "formFillOrder" : "NORMAL",
+    "inputSpecification" : {
+      "formInputs" : {
+        "name crawljax_user_password_confirmation" : {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password_confirmation",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "id user_email" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name crawljax_user_first_name" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_first_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name crawljax_user_last_name" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_last_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "bar",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "id list_name" : {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "list_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "updated list",
+            "checked" : true
+          }, {
+            "value" : "just updated a list",
+            "checked" : true
+          }, {
+            "value" : "updated list name",
+            "checked" : true
+          }, {
+            "value" : "phantom of the opera",
+            "checked" : true
+          }, {
+            "value" : "updated new list",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name crawljax_user_email" : {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "id user_password" : {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "12345678",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "id card_name" : {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "id",
+            "value" : "card_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "just a card",
+            "checked" : true
+          }, {
+            "value" : "card",
+            "checked" : true
+          }, {
+            "value" : "new card",
+            "checked" : true
+          }, {
+            "value" : "surfing with the alien",
+            "checked" : true
+          }, {
+            "value" : "card name",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "id crawljax_member_email" : {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "id",
+            "value" : "crawljax_member_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          }, {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        },
+        "name crawljax_user_password" : {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }
+      },
+      "forms" : [ {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "12345678",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      }, {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_first_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_last_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "bar",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password_confirmation",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      }, {
+        "formInputs" : [ {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "id",
+            "value" : "crawljax_member_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          }, {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      }, {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "list_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "just a list",
+            "checked" : true
+          }, {
+            "value" : "list name",
+            "checked" : true
+          }, {
+            "value" : "new list",
+            "checked" : true
+          }, {
+            "value" : "standard tuning",
+            "checked" : true
+          }, {
+            "value" : "list",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      }, {
+        "formInputs" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "list_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "updated list",
+            "checked" : true
+          }, {
+            "value" : "just updated a list",
+            "checked" : true
+          }, {
+            "value" : "updated list name",
+            "checked" : true
+          }, {
+            "value" : "phantom of the opera",
+            "checked" : true
+          }, {
+            "value" : "updated new list",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      }, {
+        "formInputs" : [ {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "id",
+            "value" : "card_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "just a card",
+            "checked" : true
+          }, {
+            "value" : "card",
+            "checked" : true
+          }, {
+            "value" : "new card",
+            "checked" : true
+          }, {
+            "value" : "surfing with the alien",
+            "checked" : true
+          }, {
+            "value" : "card name",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      } ],
+      "crawlElements" : [ {
+        "tagName" : "BUTTON",
+        "id" : "id1950242109",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1950242109",
+          "conditions" : [ ],
+          "inXPath" : "//*[@id=\"sign_in_form\"]/BUTTON",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "user_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "john@phoenix-trello.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "id",
+              "value" : "user_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "12345678",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "user_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "john@phoenix-trello.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "id",
+              "value" : "user_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "12345678",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "user_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "john@phoenix-trello.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "id",
+              "value" : "user_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "12345678",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "user_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "john@phoenix-trello.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "id",
+              "value" : "user_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "12345678",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "user_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "john@phoenix-trello.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "id",
+              "value" : "user_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "12345678",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//*[@id=\"sign_in_form\"]/button"
+      }, {
+        "tagName" : "BUTTON",
+        "id" : "id560933911",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id560933911",
+          "conditions" : [ ],
+          "inXPath" : "//BUTTON[text()='Sign up']",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_first_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foo",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_last_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "bar",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "EMAIL",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foo@bar.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foobar123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_password_confirmation",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foobar123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_first_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foo",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_last_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "bar",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "EMAIL",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foo@bar.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foobar123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_password_confirmation",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foobar123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_first_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foo",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_last_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "bar",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "EMAIL",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foo@bar.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foobar123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_password_confirmation",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foobar123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_first_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foo",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_last_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "bar",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "EMAIL",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foo@bar.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foobar123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_password_confirmation",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foobar123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_first_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foo",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_last_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "bar",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "EMAIL",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foo@bar.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_password",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foobar123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "PASSWORD",
+            "identification" : {
+              "how" : "name",
+              "value" : "crawljax_user_password_confirmation",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foobar123",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//BUTTON[text()='Sign up']"
+      }, {
+        "tagName" : "BUTTON",
+        "id" : "id1274046532",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1274046532",
+          "conditions" : [ ],
+          "inXPath" : "//BUTTON[text()='Add member']",
+          "linkedInputFields" : [ {
+            "type" : "EMAIL",
+            "identification" : {
+              "how" : "id",
+              "value" : "crawljax_member_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foo@bar.com",
+              "checked" : true
+            }, {
+              "value" : "john@phoenix-trello.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "EMAIL",
+            "identification" : {
+              "how" : "id",
+              "value" : "crawljax_member_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foo@bar.com",
+              "checked" : true
+            }, {
+              "value" : "john@phoenix-trello.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "EMAIL",
+            "identification" : {
+              "how" : "id",
+              "value" : "crawljax_member_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foo@bar.com",
+              "checked" : true
+            }, {
+              "value" : "john@phoenix-trello.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "EMAIL",
+            "identification" : {
+              "how" : "id",
+              "value" : "crawljax_member_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foo@bar.com",
+              "checked" : true
+            }, {
+              "value" : "john@phoenix-trello.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "EMAIL",
+            "identification" : {
+              "how" : "id",
+              "value" : "crawljax_member_email",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "foo@bar.com",
+              "checked" : true
+            }, {
+              "value" : "john@phoenix-trello.com",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//BUTTON[text()='Add member']"
+      }, {
+        "tagName" : "BUTTON",
+        "id" : "id1395199236",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id1395199236",
+          "conditions" : [ ],
+          "inXPath" : "//BUTTON[text()='Save list']",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "list_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "just a list",
+              "checked" : true
+            }, {
+              "value" : "list name",
+              "checked" : true
+            }, {
+              "value" : "new list",
+              "checked" : true
+            }, {
+              "value" : "standard tuning",
+              "checked" : true
+            }, {
+              "value" : "list",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "list_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "just a list",
+              "checked" : true
+            }, {
+              "value" : "list name",
+              "checked" : true
+            }, {
+              "value" : "new list",
+              "checked" : true
+            }, {
+              "value" : "standard tuning",
+              "checked" : true
+            }, {
+              "value" : "list",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "list_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "just a list",
+              "checked" : true
+            }, {
+              "value" : "list name",
+              "checked" : true
+            }, {
+              "value" : "new list",
+              "checked" : true
+            }, {
+              "value" : "standard tuning",
+              "checked" : true
+            }, {
+              "value" : "list",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "list_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "just a list",
+              "checked" : true
+            }, {
+              "value" : "list name",
+              "checked" : true
+            }, {
+              "value" : "new list",
+              "checked" : true
+            }, {
+              "value" : "standard tuning",
+              "checked" : true
+            }, {
+              "value" : "list",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "list_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "just a list",
+              "checked" : true
+            }, {
+              "value" : "list name",
+              "checked" : true
+            }, {
+              "value" : "new list",
+              "checked" : true
+            }, {
+              "value" : "standard tuning",
+              "checked" : true
+            }, {
+              "value" : "list",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//BUTTON[text()='Save list']"
+      }, {
+        "tagName" : "BUTTON",
+        "id" : "id257845183",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id257845183",
+          "conditions" : [ ],
+          "inXPath" : "//BUTTON[text()='Update list']",
+          "linkedInputFields" : [ {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "list_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "updated list",
+              "checked" : true
+            }, {
+              "value" : "just updated a list",
+              "checked" : true
+            }, {
+              "value" : "updated list name",
+              "checked" : true
+            }, {
+              "value" : "phantom of the opera",
+              "checked" : true
+            }, {
+              "value" : "updated new list",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "list_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "updated list",
+              "checked" : true
+            }, {
+              "value" : "just updated a list",
+              "checked" : true
+            }, {
+              "value" : "updated list name",
+              "checked" : true
+            }, {
+              "value" : "phantom of the opera",
+              "checked" : true
+            }, {
+              "value" : "updated new list",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "list_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "updated list",
+              "checked" : true
+            }, {
+              "value" : "just updated a list",
+              "checked" : true
+            }, {
+              "value" : "updated list name",
+              "checked" : true
+            }, {
+              "value" : "phantom of the opera",
+              "checked" : true
+            }, {
+              "value" : "updated new list",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "list_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "updated list",
+              "checked" : true
+            }, {
+              "value" : "just updated a list",
+              "checked" : true
+            }, {
+              "value" : "updated list name",
+              "checked" : true
+            }, {
+              "value" : "phantom of the opera",
+              "checked" : true
+            }, {
+              "value" : "updated new list",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXT",
+            "identification" : {
+              "how" : "id",
+              "value" : "list_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "updated list",
+              "checked" : true
+            }, {
+              "value" : "just updated a list",
+              "checked" : true
+            }, {
+              "value" : "updated list name",
+              "checked" : true
+            }, {
+              "value" : "phantom of the opera",
+              "checked" : true
+            }, {
+              "value" : "updated new list",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//BUTTON[text()='Update list']"
+      }, {
+        "tagName" : "BUTTON",
+        "id" : "id265375821",
+        "eventType" : "click",
+        "eventableCondition" : {
+          "id" : "id265375821",
+          "conditions" : [ ],
+          "inXPath" : "//BUTTON[text()='Add']",
+          "linkedInputFields" : [ {
+            "type" : "TEXTAREA",
+            "identification" : {
+              "how" : "id",
+              "value" : "card_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "just a card",
+              "checked" : true
+            }, {
+              "value" : "card",
+              "checked" : true
+            }, {
+              "value" : "new card",
+              "checked" : true
+            }, {
+              "value" : "surfing with the alien",
+              "checked" : true
+            }, {
+              "value" : "card name",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXTAREA",
+            "identification" : {
+              "how" : "id",
+              "value" : "card_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "just a card",
+              "checked" : true
+            }, {
+              "value" : "card",
+              "checked" : true
+            }, {
+              "value" : "new card",
+              "checked" : true
+            }, {
+              "value" : "surfing with the alien",
+              "checked" : true
+            }, {
+              "value" : "card name",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXTAREA",
+            "identification" : {
+              "how" : "id",
+              "value" : "card_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "just a card",
+              "checked" : true
+            }, {
+              "value" : "card",
+              "checked" : true
+            }, {
+              "value" : "new card",
+              "checked" : true
+            }, {
+              "value" : "surfing with the alien",
+              "checked" : true
+            }, {
+              "value" : "card name",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXTAREA",
+            "identification" : {
+              "how" : "id",
+              "value" : "card_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "just a card",
+              "checked" : true
+            }, {
+              "value" : "card",
+              "checked" : true
+            }, {
+              "value" : "new card",
+              "checked" : true
+            }, {
+              "value" : "surfing with the alien",
+              "checked" : true
+            }, {
+              "value" : "card name",
+              "checked" : true
+            } ],
+            "eventable" : null
+          }, {
+            "type" : "TEXTAREA",
+            "identification" : {
+              "how" : "id",
+              "value" : "card_name",
+              "webDriverBy" : { }
+            },
+            "inputValues" : [ {
+              "value" : "just a card",
+              "checked" : true
+            }, {
+              "value" : "card",
+              "checked" : true
+            }, {
+              "value" : "new card",
+              "checked" : true
+            }, {
+              "value" : "surfing with the alien",
+              "checked" : true
+            }, {
+              "value" : "card name",
+              "checked" : true
+            } ],
+            "eventable" : null
+          } ]
+        },
+        "withXpathExpression" : "//BUTTON[text()='Add']"
+      } ]
+    },
+    "testInvariantsWhileCrawling" : true,
+    "clickOnce" : true,
+    "randomizeCandidateElements" : false,
+    "crawlFrames" : false,
+    "crawlHiddenAnchors" : false,
+    "waitAfterReloadUrl" : 1000,
+    "waitAfterEvent" : 1000,
+    "followExternalLinks" : false,
+    "crawlPriorityMode" : "NORMAL",
+    "crawlNearDuplicates" : true,
+    "delayNearDuplicateCrawling" : true,
+    "applyNonSelAdvantage" : false,
+    "avoidUnrelatedBacktracking" : true,
+    "useEquivalentReset" : false,
+    "avoidDifferentBacktracking" : false,
+    "skipExploredActions" : false,
+    "maxRepeatExploredActions" : 2,
+    "usefulFragmentRules" : {
+      "thresholdWidth" : 50.0,
+      "thresholdHeight" : 50.0,
+      "subtreeWidth_and" : 1,
+      "subtreeWidth_or" : 4
+    },
+    "restoreConnectedEdges" : true,
+    "allCrawlElements" : [ {
+      "tagName" : "A",
+      "id" : "id1476606876",
+      "eventType" : "click",
+      "eventableCondition" : null,
+      "withXpathExpression" : null
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id2025444319",
+      "eventType" : "click",
+      "eventableCondition" : null,
+      "withXpathExpression" : null
+    }, {
+      "tagName" : "DIV",
+      "id" : "id73522719",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id73522719",
+        "conditions" : [ ],
+        "inXPath" : "//DIV[@class='board add-new']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//DIV[@class='board add-new']"
+    }, {
+      "tagName" : "DIV",
+      "id" : "id40952851",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id40952851",
+        "conditions" : [ ],
+        "inXPath" : "//DIV[@class='list add-new']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//DIV[@class='list add-new']"
+    }, {
+      "tagName" : "DIV",
+      "id" : "id1131339802",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1131339802",
+        "conditions" : [ ],
+        "inXPath" : "//DIV[@class='list']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//DIV[@class='list']"
+    }, {
+      "tagName" : "DIV",
+      "id" : "id1971319939",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1971319939",
+        "conditions" : [ ],
+        "inXPath" : "//DIV[@class='card-content']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//DIV[@class='card-content']"
+    }, {
+      "tagName" : "I",
+      "id" : "id2137283861",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id2137283861",
+        "conditions" : [ ],
+        "inXPath" : "//I[@class='fa fa-trash-o']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//I[@class='fa fa-trash-o']"
+    }, {
+      "tagName" : "A",
+      "id" : "id2058452630",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id2058452630",
+        "conditions" : [ ],
+        "inXPath" : "//A[@href='https://trello.com']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//A[@href='https://trello.com']"
+    }, {
+      "tagName" : "A",
+      "id" : "id1315651562",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1315651562",
+        "conditions" : [ ],
+        "inXPath" : "//A[@href='https://diacode.com']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//A[@href='https://diacode.com']"
+    }, {
+      "tagName" : "A",
+      "id" : "id1153040712",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1153040712",
+        "conditions" : [ ],
+        "inXPath" : "//A[@href='https://twitter.com/bigardone']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//A[@href='https://twitter.com/bigardone']"
+    }, {
+      "tagName" : "A",
+      "id" : "id426471487",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id426471487",
+        "conditions" : [ ],
+        "inXPath" : "//A[@id='crawler-sign-out']",
+        "linkedInputFields" : [ ]
+      },
+      "withXpathExpression" : "//A[@id='crawler-sign-out']"
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id1950242109",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1950242109",
+        "conditions" : [ ],
+        "inXPath" : "//*[@id=\"sign_in_form\"]/BUTTON",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "12345678",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "12345678",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "12345678",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "12345678",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "12345678",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "id",
+            "value" : "user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "12345678",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//*[@id=\"sign_in_form\"]/button"
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id560933911",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id560933911",
+        "conditions" : [ ],
+        "inXPath" : "//BUTTON[text()='Sign up']",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_first_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_last_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "bar",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password_confirmation",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_first_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_last_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "bar",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password_confirmation",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_first_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_last_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "bar",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password_confirmation",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_first_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_last_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "bar",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password_confirmation",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_first_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_last_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "bar",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password_confirmation",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_first_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_last_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "bar",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "PASSWORD",
+          "identification" : {
+            "how" : "name",
+            "value" : "crawljax_user_password_confirmation",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foobar123",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//BUTTON[text()='Sign up']"
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id1274046532",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1274046532",
+        "conditions" : [ ],
+        "inXPath" : "//BUTTON[text()='Add member']",
+        "linkedInputFields" : [ {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "id",
+            "value" : "crawljax_member_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          }, {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "id",
+            "value" : "crawljax_member_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          }, {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "id",
+            "value" : "crawljax_member_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          }, {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "id",
+            "value" : "crawljax_member_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          }, {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "id",
+            "value" : "crawljax_member_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          }, {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "EMAIL",
+          "identification" : {
+            "how" : "id",
+            "value" : "crawljax_member_email",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "foo@bar.com",
+            "checked" : true
+          }, {
+            "value" : "john@phoenix-trello.com",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//BUTTON[text()='Add member']"
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id1395199236",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id1395199236",
+        "conditions" : [ ],
+        "inXPath" : "//BUTTON[text()='Save list']",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "list_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "just a list",
+            "checked" : true
+          }, {
+            "value" : "list name",
+            "checked" : true
+          }, {
+            "value" : "new list",
+            "checked" : true
+          }, {
+            "value" : "standard tuning",
+            "checked" : true
+          }, {
+            "value" : "list",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "list_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "just a list",
+            "checked" : true
+          }, {
+            "value" : "list name",
+            "checked" : true
+          }, {
+            "value" : "new list",
+            "checked" : true
+          }, {
+            "value" : "standard tuning",
+            "checked" : true
+          }, {
+            "value" : "list",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "list_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "just a list",
+            "checked" : true
+          }, {
+            "value" : "list name",
+            "checked" : true
+          }, {
+            "value" : "new list",
+            "checked" : true
+          }, {
+            "value" : "standard tuning",
+            "checked" : true
+          }, {
+            "value" : "list",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "list_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "just a list",
+            "checked" : true
+          }, {
+            "value" : "list name",
+            "checked" : true
+          }, {
+            "value" : "new list",
+            "checked" : true
+          }, {
+            "value" : "standard tuning",
+            "checked" : true
+          }, {
+            "value" : "list",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "list_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "just a list",
+            "checked" : true
+          }, {
+            "value" : "list name",
+            "checked" : true
+          }, {
+            "value" : "new list",
+            "checked" : true
+          }, {
+            "value" : "standard tuning",
+            "checked" : true
+          }, {
+            "value" : "list",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "list_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "just a list",
+            "checked" : true
+          }, {
+            "value" : "list name",
+            "checked" : true
+          }, {
+            "value" : "new list",
+            "checked" : true
+          }, {
+            "value" : "standard tuning",
+            "checked" : true
+          }, {
+            "value" : "list",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//BUTTON[text()='Save list']"
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id257845183",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id257845183",
+        "conditions" : [ ],
+        "inXPath" : "//BUTTON[text()='Update list']",
+        "linkedInputFields" : [ {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "list_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "updated list",
+            "checked" : true
+          }, {
+            "value" : "just updated a list",
+            "checked" : true
+          }, {
+            "value" : "updated list name",
+            "checked" : true
+          }, {
+            "value" : "phantom of the opera",
+            "checked" : true
+          }, {
+            "value" : "updated new list",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "list_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "updated list",
+            "checked" : true
+          }, {
+            "value" : "just updated a list",
+            "checked" : true
+          }, {
+            "value" : "updated list name",
+            "checked" : true
+          }, {
+            "value" : "phantom of the opera",
+            "checked" : true
+          }, {
+            "value" : "updated new list",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "list_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "updated list",
+            "checked" : true
+          }, {
+            "value" : "just updated a list",
+            "checked" : true
+          }, {
+            "value" : "updated list name",
+            "checked" : true
+          }, {
+            "value" : "phantom of the opera",
+            "checked" : true
+          }, {
+            "value" : "updated new list",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "list_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "updated list",
+            "checked" : true
+          }, {
+            "value" : "just updated a list",
+            "checked" : true
+          }, {
+            "value" : "updated list name",
+            "checked" : true
+          }, {
+            "value" : "phantom of the opera",
+            "checked" : true
+          }, {
+            "value" : "updated new list",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "list_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "updated list",
+            "checked" : true
+          }, {
+            "value" : "just updated a list",
+            "checked" : true
+          }, {
+            "value" : "updated list name",
+            "checked" : true
+          }, {
+            "value" : "phantom of the opera",
+            "checked" : true
+          }, {
+            "value" : "updated new list",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXT",
+          "identification" : {
+            "how" : "id",
+            "value" : "list_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "updated list",
+            "checked" : true
+          }, {
+            "value" : "just updated a list",
+            "checked" : true
+          }, {
+            "value" : "updated list name",
+            "checked" : true
+          }, {
+            "value" : "phantom of the opera",
+            "checked" : true
+          }, {
+            "value" : "updated new list",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//BUTTON[text()='Update list']"
+    }, {
+      "tagName" : "BUTTON",
+      "id" : "id265375821",
+      "eventType" : "click",
+      "eventableCondition" : {
+        "id" : "id265375821",
+        "conditions" : [ ],
+        "inXPath" : "//BUTTON[text()='Add']",
+        "linkedInputFields" : [ {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "id",
+            "value" : "card_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "just a card",
+            "checked" : true
+          }, {
+            "value" : "card",
+            "checked" : true
+          }, {
+            "value" : "new card",
+            "checked" : true
+          }, {
+            "value" : "surfing with the alien",
+            "checked" : true
+          }, {
+            "value" : "card name",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "id",
+            "value" : "card_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "just a card",
+            "checked" : true
+          }, {
+            "value" : "card",
+            "checked" : true
+          }, {
+            "value" : "new card",
+            "checked" : true
+          }, {
+            "value" : "surfing with the alien",
+            "checked" : true
+          }, {
+            "value" : "card name",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "id",
+            "value" : "card_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "just a card",
+            "checked" : true
+          }, {
+            "value" : "card",
+            "checked" : true
+          }, {
+            "value" : "new card",
+            "checked" : true
+          }, {
+            "value" : "surfing with the alien",
+            "checked" : true
+          }, {
+            "value" : "card name",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "id",
+            "value" : "card_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "just a card",
+            "checked" : true
+          }, {
+            "value" : "card",
+            "checked" : true
+          }, {
+            "value" : "new card",
+            "checked" : true
+          }, {
+            "value" : "surfing with the alien",
+            "checked" : true
+          }, {
+            "value" : "card name",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "id",
+            "value" : "card_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "just a card",
+            "checked" : true
+          }, {
+            "value" : "card",
+            "checked" : true
+          }, {
+            "value" : "new card",
+            "checked" : true
+          }, {
+            "value" : "surfing with the alien",
+            "checked" : true
+          }, {
+            "value" : "card name",
+            "checked" : true
+          } ],
+          "eventable" : null
+        }, {
+          "type" : "TEXTAREA",
+          "identification" : {
+            "how" : "id",
+            "value" : "card_name",
+            "webDriverBy" : { }
+          },
+          "inputValues" : [ {
+            "value" : "just a card",
+            "checked" : true
+          }, {
+            "value" : "card",
+            "checked" : true
+          }, {
+            "value" : "new card",
+            "checked" : true
+          }, {
+            "value" : "surfing with the alien",
+            "checked" : true
+          }, {
+            "value" : "card name",
+            "checked" : true
+          } ],
+          "eventable" : null
+        } ]
+      },
+      "withXpathExpression" : "//BUTTON[text()='Add']"
+    } ]
+  },
+  "maximumStates" : 0,
+  "maximumRuntime" : 3600000,
+  "maximumDepth" : 0,
+  "stateVertexFactory" : { },
+  "siteDir" : "/Users/liuyu/projects/tackle-test-generator-ui-level/testlabeling/crawljax_frag/out/phoenix/phoenix_HYBRID_DOM_-1.0_60mins/localhost",
+  "outputDir" : "/Users/liuyu/projects/tackle-test-generator-ui-level/testlabeling/crawljax_frag/out/phoenix/phoenix_HYBRID_DOM_-1.0_60mins/localhost/crawl0"
+}

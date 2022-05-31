@@ -1,0 +1,242 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title> @ Collabtive</title>
+<link rel="shortcut icon" href="templates/standard/images/favicon.ico" type="image/x-icon">
+<link rel="search" type="application/opensearchdescription+xml" title="Collabtive Search" href="manageajax.php?action=addfx-all">
+<link rel="alternate" type="application/rss+xml" title="My messages" href="managerss.php?action=mymsgs-rss&amp;user=1">
+<link rel="alternate" type="application/rss+xml" title="My tasks" href="managerss.php?action=rss-tasks&amp;user=1">
+
+
+<script type="text/javascript">
+//endcolor for close element flashing
+closeEndcolor = '#377814';
+//endcolor for delete element flashing
+deleteEndcolor = '#c62424';
+</script>
+<script type="text/javascript" src="include/js/prototype.php"></script>
+<script type="text/javascript" src="include/js/ajax.php"></script>
+<script type="text/javascript" src="include/js/jsval.php"></script>
+<script type="text/javascript" src="include/js/chat.js"></script>
+     <script type="text/javascript">
+        function _jsVal_Language() {
+            this.err_enter = "Please enter a valid value for \"%FIELDNAME%\".";
+            this.err_form = "Please enter valid values for:\n\n";
+            this.err_select = "Please select a valid value in \"%FIELDNAME%\".";
+        }
+</script>
+
+<script type="text/javascript" src="include/js/mycalendar.js"></script>
+
+
+<link rel="stylesheet" href="templates/standard/css/lytebox.css" type="text/css">
+<script type="text/javascript" src="include/js/lytebox.php"></script>
+<link rel="stylesheet" type="text/css" href="templates/standard/css/style_main.css">
+
+
+</head>
+<body>
+
+<!--<div id = "jslog" style = "color:red;position:absolute;top:60%;right:5%;width:300px;border:1px solid;background-color:grey;"></div>-->
+
+	<div id="sitebody">
+
+	<div id="header-wrapper">
+		<div id="header">
+			<div class="header-in">
+
+				<div class="left">
+					<div class="logo">
+						<h1>
+							<a href="index.php" title="Desktop"><img src="./templates/standard/images/logo-b.png" alt=""></a>
+							<span class="title">Collabtive<span class="subtitle">/ Projectmanagement </span></span>
+						</h1>
+					</div>
+
+				</div> 
+				<div class="right">
+											<ul id="mainmenue">
+							<li class="desktop"><a class="desktop" href="index.php"><span>Desktop</span></a></li>
+
+														<li class="profil-male"><a class="profil" href="manageuser.php?action=profile&amp;id=1"><span>My account</span></a></li>
+							
+							 							<li class="admin"><a class="admin" href="admin.php?action=projects"><span>Administration</span><span class="submenarrow"></span></a>
+								<div class="submen">
+									<ul>
+										<li class="project-settings"><a class="" href="admin.php?action=projects"><span>Project administration</span></a></li>
+										<li class="user-settings"><a class="" href="admin.php?action=users"><span>User administration</span></a></li>
+										<li class="system-settings"><a class="" href="admin.php?action=system"><span>System administration</span></a></li>
+									</ul>
+								</div>
+							</li>
+							
+
+							<li class="logout"><a href="manageuser.php?action=logout"><span>Logout</span></a></li>
+						</ul>
+									</div> <!-- Right End -->
+
+
+
+			</div> <!-- Header-In End -->
+		</div> <!-- Header End -->
+	</div> <!-- Header-Wrapper End -->
+
+
+	<div id="contentwrapper">
+
+<div class="tabswrapper">
+
+<ul class="tabs">
+		<li class="desk"><a href="index.php"><span>Desktop</span></a></li>
+	</ul>
+</div><div id="content-left">
+<div id="content-left-in">
+<div class="neutral">
+
+<h1>Tags</h1>
+
+
+			<div class="headline">
+				<a href="javascript:void(0);" id="block_tags_toggle" class="win_block" onclick="toggleBlock('block_tags');"></a>
+				
+				<h2>
+					<img src="./templates/standard/images/symbols/tags.png" alt="">
+				</h2>
+			</div>
+
+			<div id="block_tags" class="blockwrapper">
+			
+					<div class="contenttitle">
+						<div class="contenttitle_menue">
+													</div>
+						<div class="contenttitle_in">
+													</div>
+					</div>
+					<div class="content_in_wrapper">
+					<div class="content_in_wrapper_in">
+
+
+						<div class="inwrapper">		
+							<ul>
+															<li>
+									<div class="itemwrapper" id="iw_">
+
+											<table cellpadding="0" cellspacing="0" border="0">
+												<tbody><tr>
+													<td class="leftmen" valign="top">
+														<div class="inmenue">
+																														
+														</div>																				
+													</td>
+													<td class="thumb">
+																													<a href="manageuser.php?action=profile&amp;id=1" title="admin">
+																<img src="templates/standard/images/symbols/user-marker-female.png" alt="">
+															</a>
+																									
+													</td>
+													<td class="rightmen" valign="top">
+														<!--
+														<div class="inmenue">
+															<a class="del" href="javascript:confirmfunction('Really delete this item?\nDeleting cannot be undone.','deleteElement(\'files_focus\',\'managefile.php?action=delete&amp;id=&amp;file=\')');" title="Delete" onclick="fadeToggle('iw_');"></a>
+															<a class="edit" href="#" title="Edit file"></a>
+														</div>
+														-->
+													</td>
+												</tr>
+												<tr>
+													<td colspan="3">
+														<span class="name">
+																																	<a href="manageuser.php?action=profile&amp;id=1" title="admin">admin</a>
+																															
+														</span>
+													</td>
+												</tr><tr>
+											</tr></tbody></table>						
+
+																										
+									</div> 								</li>
+							 
+							</ul>
+						</div> 			
+
+
+										
+			</div> 
+			</div> 			
+			<div class="staterow">
+				<div class="staterowin">
+									</div>
+			</div>
+				
+					
+			<div class="tablemenue"></div>
+			</div> 			
+			
+
+<div class="content-spacer"></div>
+
+
+
+</div> </div> </div> 
+<div id="content-right">
+
+
+		<div class="content-right-in">
+			<h2><a id="searchtoggle" class="win-up" href="javascript:blindtoggle('search');toggleClass('searchtoggle','win-up','win-down');">Search</a></h2>
+
+			<form id="search" method="get" action="managesearch.php" onsubmit="return validateStandard(this,'input_error');">
+			<fieldset>
+				<div class="row">
+					<input type="text" class="text" id="query" name="query" autocomplete="off">
+				</div>
+
+				<div id="choices" style="display: none;"></div>
+				<input type="hidden" name="action" value="search">
+
+				<div id="indicator1" style="display:none;"><img src="templates/standard/images/symbols/indicator_arrows.gif" alt="Searching..."></div>
+
+				<button type="submit" title="Go!"></button>
+			</fieldset>
+
+			</form>
+	</div>
+	
+
+		
+
+			
+		
+		<div class="content-right-in">
+			<h2><a id="onlinelisttoggle" class="win-up" href="javascript:blindtoggle('onlinelist');toggleClass('onlinelisttoggle','win-up','win-down');">Online</a></h2>
+
+			<div id="onlinelist"><ul><li><a class="user" href="manageuser.php?action=profile&amp;id=1">admin<div><img src="thumb.php?pic=templates/standard/images/no-avatar-male.jpg&amp;width=90"></div> </a> <a class="chat-user"></a></li></ul></div>
+	</div>
+
+
+		
+			  <script type="text/javascript">
+			  new Ajax.Autocompleter('query', 'choices', 'managesearch.php?action=ajaxsearch', {paramName:'query',minChars: 2,indicator: 'indicator1'});
+				 var on = new Ajax.PeriodicalUpdater("onlinelist","manageuser.php?action=onlinelist",{method:'get',evalScripts:true,frequency:35,decay:1.5});
+
+
+			</script>
+		
+
+</div>
+			</div> 		</div> 
+
+ <div id="msgchk" style="display:none;"></div>
+<script type="text/javascript">
+		chkChat();
+</script>
+
+
+	<div id="footer-wrapper">
+		<div class="footer">
+			<div class="footer-in">
+				<a href="http://collabtive.o-dyn.de">Collabtive 1.0</a>
+			</div>
+		</div>
+	</div>
+
+
+<div id="modal_overlay" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9998; display: none;"></div><div id="modal_container" style="display: none;"></div><div id="modal_loading" style="display: none;"></div><div id="lbOverlay" class="grey" style="display: none;"></div><div id="lbMain" style="display: none;"><div id="lbOuterContainer" class="grey"><div id="lbIframeContainer" style="display: none;"><iframe id="lbIframe" name="lbIframe" style="display: none;" cd_frame_id_="a3efb5c9b9d6a11e999aadef0f9d2d90"></iframe></div><div id="lbImageContainer"><img id="lbImage"><div id="lbHoverNav"><a id="lbPrev" class="grey" href="#"></a><a id="lbNext" class="grey" href="#"></a></div></div><div id="lbLoading"></div></div><div id="lbDetailsContainer" class="grey"><div id="lbDetailsData" class="grey"><div id="lbDetails"><span id="lbCaption"></span><span id="lbNumberDisplay"></span><span id="lbNavDisplay" style="display: none;"></span></div><div id="lbBottomNav"><a id="lbClose" class="grey" href="#"></a><a id="lbPause" class="grey" href="#" style="display: none;"></a><a id="lbPlay" class="grey" href="#" style="display: none;"></a></div></div></div></div></body></html>

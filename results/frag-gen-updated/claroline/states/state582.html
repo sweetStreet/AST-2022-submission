@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state582</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/claroline11110/index.php'>http://localhost:3000/claroline11110/index.php</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>6</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state13</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>19.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>582</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state582.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/P[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 967px; top: 403px; width: 122px; height: 14px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/P[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 967px; top: 433px; width: 133px; height: 14px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/P[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 962px; top: 568px; width: 96px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DL[1]/DT[1]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 36px; top: 306px; width: 147px; height: 17px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state581.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 482px; top: 246px; width: 170px; height: 17px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 447px; top: 266px; width: 128px; height: 17px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;
+&lt;title&gt;Claroline&lt;/title&gt;
+&lt;meta http-equiv=&quot;Content-Script-Type&quot; content=&quot;text/javascript&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Style-Type&quot; content=&quot;text/css&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/HTML; charset=iso-8859-1&quot;&gt;
+&lt;meta name=&quot;generator&quot; content=&quot;Claroline 1.11.10 - http://claroline.net&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/claroline11110/web/css/classic/main.css?1337668864&quot; media=&quot;screen, projection, tv&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/claroline11110/web/css/print.css?1301589034&quot; media=&quot;print&quot;&gt;
+
+&lt;link rel=&quot;top&quot; href=&quot;/index.php&quot; title=&quot;&quot;&gt;
+&lt;link href=&quot;http://www.claroline.net/documentation.htm&quot; rel=&quot;Help&quot;&gt;
+&lt;link href=&quot;/claroline11110/CREDITS.txt&quot; rel=&quot;Author&quot;&gt;
+&lt;link href=&quot;http://www.claroline.net&quot; rel=&quot;Copyright&quot;&gt;
+&lt;link href=&quot;/claroline11110/claroline/../favicon.ico&quot; rel=&quot;shortcut icon&quot;&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    document.cookie=&quot;javascriptEnabled=true; path=/claroline11110&quot;;
+    function claro_session_loss_countdown(sessionLifeTime){
+    var chrono = setTimeout('claro_warn_of_session_loss()', sessionLifeTime * 1000);
+}
+
+function claro_warn_of_session_loss() {
+    alert('WARNING ! You have just lost your session on the server.\nCopy any text you are currently writing and paste it outside the browser');
+}
+&lt;/script&gt;
+
+&lt;script src=&quot;/claroline11110/web/js/jquery.js?1374567070&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/jquery.qtip.js?1371735614&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/claroline.js?1368605938&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/claroline11110/web/js/claroline.ui.js?1376037408&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/claroline11110/web/css/desktop.css?1337865920&quot; media=&quot;all&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/claroline11110/web/css/profile.css?1311598020&quot; media=&quot;all&quot;&gt;
+&lt;script src=&quot;/claroline11110/web/js/tooltitle.js?1311692694&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+var __ = (function(){
+
+    var translation = {
+    
+
+    };
+
+    return function(string) {
+        return translation[string] || string;
+    };
+
+})();
+&lt;/script&gt;
+            
+
+&lt;/head&gt;
+
+&lt;body dir=&quot;ltr&quot; onload=&quot;claro_session_loss_countdown(1440);&quot; style=&quot;&quot;&gt;
+&lt;!-- $Id: banner.tpl.php 13151 2011-05-11 12:09:47Z abourguignon $ --&gt;
+
+&lt;!-- claroPage --&gt;
+&lt;div id=&quot;claroPage&quot;&gt;
+
+&lt;!-- Banner --&gt;
+&lt;div id=&quot;topBanner&quot;&gt;
+
+&lt;!-- Platform Banner --&gt;
+&lt;div id=&quot;platformBanner&quot;&gt;
+    &lt;div id=&quot;campusBannerLeft&quot;&gt;
+        &lt;span id=&quot;siteName&quot;&gt;
+            &lt;a href=&quot;/claroline11110/index.php&quot; target=&quot;_top&quot;&gt;
+                        Claroline                        &lt;/a&gt;
+        &lt;/span&gt;
+        
+        
+&lt;!-- campusBannerLeft --&gt;
+
+&lt;!-- End of campusBannerLeft --&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;campusBannerRight&quot;&gt;
+        &lt;span id=&quot;institution&quot;&gt;
+                        
+                                                
+                    &lt;/span&gt;
+        
+        
+&lt;!-- campusBannerRight --&gt;
+
+&lt;!-- End of campusBannerRight --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Platform Banner --&gt;
+
+&lt;!-- User Banner --&gt;
+&lt;div id=&quot;userBanner&quot;&gt;
+    &lt;div id=&quot;userBannerLeft&quot;&gt;
+        &lt;ul class=&quot;menu&quot;&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/desktop/index.php&quot; target=&quot;_top&quot;&gt;My desktop&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/messaging&quot; target=&quot;_top&quot;&gt;My messages&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/admin/&quot; target=&quot;_top&quot;&gt;Platform administration&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        
+&lt;!-- userBannerLeft --&gt;
+
+&lt;!-- End of userBannerLeft --&gt;
+        &lt;/ul&gt;
+        
+    &lt;/div&gt;
+    
+    &lt;div id=&quot;userBannerRight&quot;&gt;
+        &lt;ul class=&quot;menu&quot;&gt;
+            &lt;li class=&quot;userName&quot;&gt;
+                John Doe            &lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/auth/profile.php&quot; target=&quot;_top&quot;&gt;Manage my account&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span&gt;&lt;a href=&quot;/claroline11110/index.php?logout=true&quot; target=&quot;_top&quot;&gt;Logout&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                        
+&lt;!-- userBannerRight --&gt;
+
+&lt;!-- End of userBannerRight --&gt;
+        &lt;/ul&gt;
+        
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- BreadcrumbLine  --&gt;
+&lt;div id=&quot;breadcrumbLine&quot;&gt;
+    &lt;hr&gt;
+    &lt;div class=&quot;breadcrumbTrails&quot;&gt;
+        &lt;ul class=&quot;breadCrumbs&quot;&gt;
+&lt;li class=&quot;breadCrumbsNode firstBreadCrumbsNode&quot;&gt;&lt;a href=&quot;/claroline11110/index.php&quot; target=&quot;_top&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/home.png?1232376376&quot; alt=&quot;home&quot;&gt;&amp;nbsp;Claroline&lt;/a&gt;&amp;nbsp;&amp;gt;&amp;nbsp;&lt;/li&gt;
+&lt;li class=&quot;breadCrumbsNode lastBreadCrumbsNode&quot;&gt;&lt;a href=&quot;/claroline11110/claroline/desktop/index.php&quot; target=&quot;_top&quot;&gt;My desktop&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    &lt;/div&gt;
+    
+    &lt;div id=&quot;toolViewOption&quot;&gt;
+                            &lt;/div&gt;
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+    &lt;hr&gt;
+&lt;/div&gt;
+&lt;!-- End of BreadcrumbLine  --&gt;
+
+&lt;/div&gt;
+&lt;!-- End of topBanner --&gt;
+&lt;!-- $Id: body.tpl.php 14332 2012-11-23 10:08:10Z zefredz $ --&gt;
+
+
+&lt;!-- - - - - - - - - - - Claroline Body - - - - - - - - - --&gt;
+&lt;div id=&quot;claroBody&quot;&gt;
+    
+    
+                
+
+&lt;!-- Page content --&gt;
+&lt;!-- $Id: user_desktop.tpl.php 14225 2012-07-30 06:38:39Z zefredz $ --&gt;
+
+&lt;div id=&quot;rightSidebar&quot;&gt;
+    &lt;!-- $Id: user_profilebox.tpl.php 14448 2013-05-15 08:47:35Z zefredz $ --&gt;
+
+&lt;div id=&quot;userProfileBox&quot;&gt;
+    &lt;h3 class=&quot;blockHeader&quot;&gt;
+        &lt;span class=&quot;userName&quot;&gt;
+                            John Doe            
+                    &lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;div id=&quot;userProfile&quot;&gt;
+                &lt;div id=&quot;userPicture&quot;&gt;
+            &lt;img class=&quot;userPicture&quot; src=&quot;/claroline11110/web/img/nopicture.png?1232376376&quot; alt=&quot;User picture&quot;&gt;
+        &lt;/div&gt;
+        
+                
+        &lt;div id=&quot;userDetails&quot;&gt;
+            &lt;p&gt;
+                &lt;span&gt;Email&lt;/span&gt;
+                jdoe@mydomain.net            &lt;/p&gt;
+            
+                            &lt;p&gt;
+                    &lt;span&gt;Phone&lt;/span&gt;
+                    -                &lt;/p&gt;
+                &lt;p&gt;
+                    &lt;span&gt;Administrative code&lt;/span&gt;
+                    -                &lt;/p&gt;
+                
+                                &lt;p&gt;
+                    &lt;a class=&quot;claroCmd&quot; href=&quot;/claroline11110/claroline/tracking/userReport.php?userId=1&quot;&gt;
+                    &lt;img src=&quot;/claroline11110/web/img/statistics.png?1232376376&quot; alt=&quot;Statistics&quot;&gt;
+                    View my statistics                    &lt;/a&gt;
+                &lt;/p&gt;
+                
+                            
+                        
+                        &lt;p&gt;
+                
+                                
+                &lt;a class=&quot;claroCmd&quot; href=&quot;/claroline11110/claroline/auth/profile.php&quot;&gt;
+                &lt;img src=&quot;/claroline11110/web/img/edit.png?1232376376&quot; alt=&quot;Manage my account&quot;&gt;
+                Manage my account                &lt;/a&gt;
+                
+                                
+            &lt;/p&gt;
+                        
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+        &lt;div id=&quot;userProfileBoxDock&quot;&gt;
+&lt;!-- userProfileBox --&gt;
+
+&lt;!-- End of userProfileBox --&gt;
+&lt;/div&gt;
+    
+    &lt;/div&gt;
+    
+    &lt;p&gt;This text zone is displayed to each user. Platform administrator can change its content or remove it by editing the &lt;b&gt;textzone_right.inc.html&lt;/b&gt; file.&lt;/p&gt;&lt;p&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&amp;amp;file=textzone_right.inc.html&quot;&gt;
+&lt;img src=&quot;/claroline11110/web/img/edit.png?1232376376&quot; alt=&quot;&quot;&gt;Edit text zone
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;leftContent&quot;&gt;
+    &lt;div class=&quot;toolTitleBlock&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;h1 class=&quot;toolTitle mainTitle&quot;&gt;My desktop&lt;/h1&gt;
+&lt;/td&gt;&lt;td&gt;&lt;ul class=&quot;commandList&quot;&gt;
+&lt;/ul&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+    
+    &lt;div id=&quot;dekstopLeftSidebar&quot;&gt;
+        &lt;div class=&quot;portlet mycourselist&quot;&gt;
+&lt;h1&gt;
+My course list
+&lt;/h1&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;div class=&quot;userCommands&quot;&gt;&lt;h2&gt;Manage my courses&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/claroline11110/claroline/course/create.php&quot; class=&quot;userCommandsItem&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/courseadd.png?1232376376&quot; alt=&quot;&quot;&gt; Create a course site&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/claroline11110/claroline/auth/courses.php?cmd=rqReg&amp;amp;categoryId=0&quot; class=&quot;userCommandsItem&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/enroll.png?1232376376&quot; alt=&quot;&quot;&gt; Enrol on a new course&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/claroline11110/claroline/auth/courses.php?cmd=rqUnreg&quot; class=&quot;userCommandsItem&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/unenroll.png?1232376376&quot; alt=&quot;&quot;&gt; Remove course enrolment&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/claroline11110/claroline/course/platform_courses.php&quot; class=&quot;userCommandsItem&quot;&gt;&lt;img src=&quot;/claroline11110/web/img/course.png?1232376376&quot; alt=&quot;&quot;&gt; All platform courses&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/claroline11110/claroline/notification_date.php&quot; class=&quot;userCommandsItem&quot;&gt;&lt;img class=&quot;iconDefinitionList&quot; src=&quot;/claroline11110/web/img/hot.png?1232376376&quot; alt=&quot;New items&quot;&gt; New items to another date&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;userCourseList&quot;&gt;&lt;h2&gt;My course list&lt;/h2&gt;&lt;dl class=&quot;courseList&quot;&gt;&lt;dt&gt;
+&lt;img class=&quot;qtip iconDefinitionList&quot; src=&quot;/claroline11110/web/img/access_platform.png?1232376376&quot; alt=&quot;Access allowed only to platform members (user registered to the platform)&quot;&gt; &lt;span&gt;&lt;a href=&quot;/claroline11110/claroline/course/index.php?cid=VMMMWIXG&quot;&gt;VMMMWIXG - dWevfnOk&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;img class=&quot;qtip role&quot; src=&quot;/claroline11110/web/img/manager.png?1232376376&quot; alt=&quot;You are manager of this course&quot;&gt;
+&lt;/span&gt;
+&lt;/dt&gt;
+&lt;dd&gt;
+&lt;span class=&quot;managerString&quot;&gt;&lt;a href=&quot;mailto:jdoe@mydomain.net&quot;&gt;jmznFgzO&lt;/a&gt;&lt;/span&gt;
+&lt;/dd&gt;
+
+&lt;/dl&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+    
+    &lt;div id=&quot;desktopRightContent&quot;&gt;
+                
+        &lt;div class=&quot;portlet collapsible  collapsed&quot;&gt;
+            &lt;h1&gt;
+                Welcome message                &lt;span class=&quot;separator&quot;&gt;|&lt;/span&gt;
+                &lt;a href=&quot;#&quot; class=&quot;doCollapse&quot;&gt;Show/Hide&lt;/a&gt;
+            &lt;/h1&gt;
+            &lt;div class=&quot;content collapsible-wrapper&quot; style=&quot;display: none;&quot;&gt;
+                &lt;p&gt;This text zone is displayed to each user. Platform administrator can change its content or remove it by editing the &lt;b&gt;textzone_top.authenticated.inc.html&lt;/b&gt; file.&lt;/p&gt;&lt;p&gt;
+&lt;a href=&quot;/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&amp;amp;file=textzone_top.authenticated.inc.html&quot;&gt;
+&lt;img src=&quot;/claroline11110/web/img/edit.png?1232376376&quot; alt=&quot;&quot;&gt;Edit text zone
+&lt;/a&gt;
+&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;portlet mymessages&quot;&gt;
+&lt;h1&gt;
+My 5 last messages
+&lt;/h1&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;table class=&quot;claroTable emphaseLine&quot; width=&quot;99%&quot; border=&quot;0&quot; cellspacing=&quot;2&quot;&gt;
+&lt;thead&gt;
+&lt;tr align=&quot;center&quot; valign=&quot;top&quot;&gt;
+&lt;th&gt;&amp;nbsp;&lt;/th&gt;
+&lt;th&gt;Subject&lt;/th&gt;
+&lt;th&gt;Sender&lt;/th&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+
+&lt;tr class=&quot;unreadMessage&quot;&gt;
+&lt;td&gt;&lt;img src=&quot;/claroline11110/web/img/mail_close.png?1232376376&quot; alt=&quot;&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;/claroline11110/claroline/messaging/readmessage.php?messageId=1&amp;amp;type=received&quot;&gt;Course created : dWevfnOk&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;Doe&amp;nbsp;John&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Wednesday October 06, 2021&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;a href=&quot;/claroline11110/claroline/messaging/index.php&quot;&gt;View all my messages&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;portlet&quot;&gt;
+&lt;h1&gt;
+My calendar
+&lt;/h1&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;div id=&quot;portletMycalendar&quot;&gt;&lt;div class=&quot;details&quot;&gt;
+&lt;dl class=&quot;calendarDetails&quot;&gt;
+&lt;dt&gt;
+&lt;img class=&quot;iconDefinitionList&quot; src=&quot;/claroline11110/claroline/calendar/img/agenda.png?1213165942&quot; alt=&quot;&quot;&gt;&amp;nbsp;No event to display
+&lt;/dt&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    $(document).ready( function(){
+        $('#portletMycalendar').load('/claroline11110/claroline/calendar/ajaxHandler.php', { location : 'userdesktop' });
+    });
+    &lt;/script&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;portlet CLANN_Portlet&quot;&gt;
+&lt;h1&gt;
+Latest announcements
+&lt;/h1&gt;
+&lt;div class=&quot;content&quot;&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;
+&lt;img class=&quot;iconDefinitionList&quot; src=&quot;/claroline11110/claroline/announcements/img/announcement.png?1213165982&quot; alt=&quot;&quot;&gt; No announcement to display
+&lt;/dt&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;&lt;!-- End of Page Content --&gt;
+
+
+    
+    &lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- - - - - - - - - - - End of Claroline Body  - - - - - - - - - - --&gt;
+
+&lt;!-- $Id: footer.tpl.php 12676 2010-10-20 14:59:33Z abourguignon $ --&gt;
+
+
+&lt;div id=&quot;campusFooter&quot;&gt;
+    &lt;hr&gt;
+    &lt;div id=&quot;campusFooterLeft&quot;&gt;
+        
+&lt;!-- campusFooterLeft --&gt;
+
+&lt;!-- End of campusFooterLeft --&gt;
+            &lt;/div&gt;
+    &lt;div id=&quot;campusFooterRight&quot;&gt;
+        
+&lt;!-- campusFooterRight --&gt;
+
+&lt;!-- End of campusFooterRight --&gt;
+        &lt;div id=&quot;platformManager&quot;&gt;Administrator for Claroline : &lt;a href=&quot;mailto:jdoe@mydomain.net?subject=[Claroline]&quot;&gt;John Doe&lt;/a&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div id=&quot;campusFooterCenter&quot;&gt;
+        
+&lt;!-- campusFooterCenter --&gt;
+
+&lt;!-- End of campusFooterCenter --&gt;
+        &lt;span class=&quot;poweredBy&quot;&gt;Powered by &lt;a href=&quot;http://www.claroline.net&quot; target=&quot;_blank&quot;&gt;Claroline&lt;/a&gt; &copy; 2001 - 2013&lt;/span&gt;    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- end of claroPage --&gt;
+&lt;/div&gt;
+
+
+&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/P[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/P[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/P[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DL[1]/DT[1]/SPAN[1]/A[1]</td>
+							<td><a href="state581.html">state581</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

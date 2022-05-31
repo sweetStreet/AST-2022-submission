@@ -1,0 +1,57 @@
+[
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]",
+    "id": 0,
+    "parentId": -1,
+    "rect": {
+      "x": 425,
+      "y": 309,
+      "width": 350,
+      "height": 272
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/IMG[1]",
+    "id": 1,
+    "parentId": 0,
+    "rect": {
+      "x": 523,
+      "y": 309,
+      "width": 155,
+      "height": 42
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[2]/DIV[1]",
+    "id": 3,
+    "parentId": 0,
+    "rect": {
+      "x": 475,
+      "y": 431,
+      "width": 250,
+      "height": 100
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[2]/DIV[1]/DIV[1]/INPUT[1]",
+    "id": 4,
+    "parentId": 3,
+    "rect": {
+      "x": 475,
+      "y": 439,
+      "width": 250,
+      "height": 28
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/FORM[2]/DIV[1]/P[1]",
+    "id": 6,
+    "parentId": 3,
+    "rect": {
+      "x": 425,
+      "y": 526,
+      "width": 350,
+      "height": 55
+    }
+  }
+]

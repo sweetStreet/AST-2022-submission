@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state17</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/wallets'>http://localhost:3000/wallets</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state13</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>21.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>17</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state17.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 27px; top: 108px; width: 850px; height: 48px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 43px; top: 164px; width: 54px; height: 36px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+	&lt;!-- Le HTML5 shim, for IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+	  &lt;script src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+	&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+	&lt;title&gt;Wallets | DimeShift&lt;/title&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
+	&lt;link rel=&quot;icon&quot; href=&quot;/images/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+	&lt;script async=&quot;&quot; src=&quot;//www.google-analytics.com/analytics.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+		var site_path = window.location.protocol + &quot;//&quot; + window.location.hostname + (window.location.port ? ':' + window.location.port : '');
+	&lt;/script&gt;
+
+	&lt;script src=&quot;//localhost:35729/livereload.js&quot;&gt;&lt;/script&gt;
+
+	&lt;link href=&quot;/resources/css.css&quot; media=&quot;screen&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+	&lt;meta name=&quot;google-site-verification&quot; content=&quot;MyNePgPoKL2FkR070Lj1pIT8Or7gERZiobVzjG0PtOk&quot;&gt;
+	&lt;script&gt;
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-400436-21', 'auto');
+		ga('send', 'pageview');
+	&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;https://www.gstatic.com/charts/51/loader.js&quot;&gt;&lt;/script&gt;&lt;link id=&quot;load-css-0&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://www.gstatic.com/charts/51/css/core/tooltip.css&quot;&gt;&lt;link id=&quot;load-css-1&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://www.gstatic.com/charts/51/css/util/util.css&quot;&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;https://www.gstatic.com/charts/51/js/jsapi_compiled_default_module.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;https://www.gstatic.com/charts/51/js/jsapi_compiled_graphics_module.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;https://www.gstatic.com/charts/51/js/jsapi_compiled_ui_module.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;https://www.gstatic.com/charts/51/js/jsapi_compiled_corechart_module.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;
+&lt;body style=&quot;&quot; class=&quot;modal-open&quot;&gt;
+&lt;div id=&quot;wrap&quot;&gt;
+		&lt;!-- Fixed navbar --&gt;
+	&lt;div class=&quot;navbar navbar-inverse navbar-fixed-top headroom disable-selection&quot; id=&quot;header&quot;&gt;
+		&lt;div class=&quot;container&quot;&gt;
+			&lt;div class=&quot;navbar-header&quot;&gt;
+				&lt;!-- Button for smallest screens --&gt;
+				&lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot; style=&quot;&quot;&gt;&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; &lt;/button&gt;
+				
+
+				&lt;a href=&quot;/&quot; class=&quot;btn btn-info btn-lg btn-logo&quot;&gt;$ dimeshift&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+				&lt;ul class=&quot;nav navbar-nav pull-right&quot;&gt;
+					&lt;li class=&quot;header_is_not_signed_in&quot; style=&quot;display: none;&quot;&gt;
+						&lt;a href=&quot;/&quot; class=&quot;menu_category menu_category_home&quot; data-i18n=&quot;Home&quot;&gt;Home&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class=&quot;header_is_signed_in active&quot; style=&quot;&quot;&gt;
+						&lt;a href=&quot;/wallets&quot; class=&quot;menu_category menu_category_wallets&quot; data-i18n=&quot;Wallets&quot;&gt;Wallets&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class=&quot;header_is_signed_in active&quot; style=&quot;&quot;&gt;
+						&lt;a href=&quot;/plans&quot; class=&quot;menu_category menu_category_wallets&quot; data-i18n=&quot;Goals&quot;&gt;Goals&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;mailto:jeka911@gmail.com?subject=Wallet&quot; class=&quot;menu_category&quot; data-i18n=&quot;Contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;http://docs.dimeshift.apiary.io/&quot; class=&quot;menu_category&quot;&gt;API&lt;/a&gt;&lt;/li&gt;
+					&lt;li class=&quot;header_is_not_signed_in&quot; style=&quot;display: none;&quot;&gt;
+						&lt;a href=&quot;/user/registration&quot; data-i18n=&quot;Register&quot;&gt;Register&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class=&quot;header_is_not_signed_in&quot; style=&quot;display: none;&quot;&gt;
+						&lt;a href=&quot;/user/signin&quot; class=&quot;signin_caller&quot; data-i18n=&quot;Sign In&quot;&gt;Sign In&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class=&quot;header_is_signed_in&quot; style=&quot;&quot;&gt;
+						&lt;a href=&quot;/profile&quot; data-i18n=&quot;Settings&quot;&gt;Settings&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class=&quot;header_is_signed_in&quot; style=&quot;&quot;&gt;
+						&lt;a href=&quot;/user/logout&quot; class=&quot;signout_caller&quot; data-i18n=&quot;Log Out&quot;&gt;Log Out&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href=&quot;/user/change_language&quot; class=&quot;icon_holder&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-globe&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;&lt;!--/.nav-collapse --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt; 
+	&lt;!-- /.navbar --&gt;
+
+
+
+	&lt;div class=&quot;container&quot; id=&quot;container&quot;&gt;
+
+		&lt;div id=&quot;fill_profile_invitation&quot; style=&quot;display: none;&quot;&gt;
+			&lt;div class=&quot;alert alert-info&quot;&gt;
+			&lt;span data-i18n=&quot;Please don't forget to let us know your email address, so you can sign in to DimeShift on your next visit&quot;&gt;Please don't forget to let us know your email address, so you can sign in to DimeShift on your next visit&lt;/span&gt;. &lt;a href=&quot;/user/fillprofile&quot; class=&quot;btn btn-primary btn-xs&quot; data-i18n=&quot;Do it&quot;&gt;Do it&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;page_holder&quot; id=&quot;page_holder_1&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;page_holder&quot; id=&quot;page_holder_2&quot; style=&quot;display: block;&quot;&gt;&lt;div class=&quot;page&quot;&gt;&lt;ul class=&quot;breadcrumb&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;http://localhost:3000&quot;&gt;&lt;span data-i18n=&quot;Home&quot;&gt;Home&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;active&quot;&gt;&lt;span data-i18n=&quot;Your Wallets&quot;&gt;Your Wallets&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-xs-12 col-md-9&quot;&gt;
+
+			&lt;div class=&quot;list-group wallet_item&quot; id=&quot;wallet_items&quot;&gt;
+					&lt;a href=&quot;http://localhost:3000/wallets/1&quot; class=&quot;list-group-item item&quot; data-id=&quot;1&quot;&gt;
+			    
+				
+				&lt;div class=&quot;pull-right text-success 
+				transaction_amount&quot;&gt;&lt;strong&gt;0.&lt;sup&gt;00&lt;/sup&gt; RSD&lt;/strong&gt;&lt;/div&gt;
+
+				&lt;div class=&quot;item_buttons wallet_buttons&quot;&gt;
+									&lt;button class=&quot;btn btn-default btn-xs item_button_remove&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-trash&quot;&gt;&lt;/span&gt; &lt;span data-i18n=&quot;Hide&quot;&gt;Hide&lt;/span&gt;&lt;/button&gt;
+										&lt;button class=&quot;btn btn-default btn-xs item_button_edit&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-pencil&quot;&gt;&lt;/span&gt; &lt;span data-i18n=&quot;Edit&quot;&gt;Edit&lt;/span&gt;&lt;/button&gt;
+					&lt;button class=&quot;btn btn-default btn-xs item_button_accesses&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt; &lt;span data-i18n=&quot;Manage Accesses&quot;&gt;Manage Accesses&lt;/span&gt;&lt;/button&gt;
+																		&lt;/div&gt;
+				&lt;h4 class=&quot;list-group-item-heading&quot;&gt;
+								WXlLXGIt&lt;/h4&gt;
+
+			&lt;/a&gt;
+		
+					&lt;div class=&quot;list-group-item list-group-item-info&quot;&gt;&lt;a href=&quot;http://localhost:3000/wallets/add&quot; class=&quot;btn btn-primary&quot; id=&quot;add_wallet_button&quot;&gt;&lt;span data-i18n=&quot;Add&quot;&gt;Add&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+				&lt;/div&gt;	
+	
+&lt;/div&gt;
+&lt;div class=&quot;col-xs-12 col-md-3&quot;&gt;
+	&lt;div class=&quot;panel panel-default&quot;&gt;
+		&lt;div class=&quot;panel-heading&quot;&gt;
+			&lt;h3 class=&quot;panel-title&quot;&gt;&lt;span data-i18n=&quot;Filter&quot;&gt;Filter&lt;/span&gt;&lt;/h3&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;panel-body&quot;&gt;
+			&lt;ul class=&quot;nav nav-pills nav-stacked&quot;&gt;
+				&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;filter_menu&quot; data-status=&quot;active&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt; &lt;span data-i18n=&quot;Active&quot;&gt;Active&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;filter_menu&quot; data-status=&quot;hidden&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-trash&quot;&gt;&lt;/span&gt; &lt;span data-i18n=&quot;Trash&quot;&gt;Trash&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+
+	&lt;div class=&quot;panel panel-default&quot;&gt;
+		&lt;div class=&quot;panel-heading&quot;&gt;
+			&lt;h3 class=&quot;panel-title&quot;&gt;&lt;span data-i18n=&quot;Access&quot;&gt;Access&lt;/span&gt;&lt;/h3&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;panel-body&quot;&gt;
+			&lt;ul class=&quot;nav nav-pills nav-stacked&quot;&gt;
+				&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;origin_menu&quot; data-origin=&quot;both&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt; &lt;span data-i18n=&quot;Both&quot;&gt;Both&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;origin_menu&quot; data-origin=&quot;mine&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt; &lt;span data-i18n=&quot;Yours&quot;&gt;Yours&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;origin_menu&quot; data-origin=&quot;shared&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-share-alt&quot;&gt;&lt;/span&gt; &lt;span data-i18n=&quot;Shared with you&quot;&gt;Shared with you&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&quot;hidden&quot;&gt;
+	&lt;span id=&quot;tour_step_0&quot;&gt;Here is quick introdution to DimeShift.&lt;br&gt;&lt;br&gt;Our demo robot has created few sample wallets for you to check out.&lt;/span&gt;
+	&lt;span id=&quot;tour_step_1&quot;&gt;But you can add as many as you want.&lt;br&gt;&lt;br&gt;Different name, different currencies&lt;/span&gt;
+	&lt;span id=&quot;tour_step_2&quot;&gt;There're few options availiable when you move your mouse over your wallet.&lt;br&gt;&lt;br&gt;
+	But lets jump directly to wallet page.&lt;br&gt;&lt;br&gt;Click any row to jump to it.
+	&lt;/span&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div id=&quot;push&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+	&lt;div id=&quot;preloader&quot; style=&quot;opacity: 1; display: none;&quot;&gt;&lt;/div&gt;
+	&lt;footer id=&quot;footer&quot; role=&quot;contentinfo&quot;&gt;
+		&lt;div class=&quot;container&quot;&gt;
+			&lt;div class=&quot;pull-right&quot;&gt;
+				&lt;a href=&quot;https://github.com/jeka-kiselyov/dimeshift&quot; data-i18n=&quot;View Source on GitHub&quot;&gt;View Source on GitHub&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;p class=&quot;muted credit&quot;&gt;&lt;span data-i18n=&quot;Copyright&quot; class=&quot;hidden-xs hidden-sm&quot;&gt;Copyright&lt;/span&gt;&lt;span class=&quot;visible-xs-inline visible-sm-inline&quot;&gt;&copy;&lt;/span&gt; 2017 &lt;a href=&quot;http://dimeshift.com&quot;&gt;DimeShift&lt;/a&gt;&lt;span class=&quot;hidden-xs hidden-sm&quot;&gt;.&lt;/span&gt; &lt;span data-i18n=&quot;GNU Affero GPL License&quot; class=&quot;hidden-xs hidden-sm&quot;&gt;GNU Affero GPL License&lt;/span&gt; &lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/footer&gt;
+
+    &lt;script type=&quot;text/javascript&quot; src=&quot;https://www.google.com/jsapi&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/resources/js.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/jquery/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap/js/modal.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap/js/button.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap/js/dropdown.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap/js/collapse.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap/js/tooltip.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap/js/popover.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap-tour/build/js/bootstrap-tour.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/underscore/underscore-min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/backbone/backbone.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/backbone.paginator/lib/backbone.paginator.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap-clickonmouseover/bootstrap.clickonmouseover.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/magnific-popup/dist/jquery.magnific-popup.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/mprogress/build/js/mprogress.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/jsmart/jsmart.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/functions.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/helper.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/view_stack.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/settings.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/local_storage.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/template_manager.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/i18n.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/exchange.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/abstract/dialog.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/abstract/page.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/models/plan.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/models/transaction.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/models/user.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/models/wallet.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/models/wallets_access.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/collections/plans.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/collections/transactions.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/collections/users.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/collections/wallets.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/collections/wallets_accesses.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/add_profit.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/add_wallet.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/change_language.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/edit_wallet.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/fill_profile.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/hide_wallet.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/logout.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/registration.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/remove_access.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/remove_plan.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/remove_transaction.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/restore.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/set_total_to.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/signin.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/transaction_details.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/wallet_accesses.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/widgets/index.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/parts/profile_change_password.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/parts/profile_remove_account.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/parts/transactions.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/parts/wallet_plans.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/404.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/import_xls.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/index.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/plan.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/plans.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/profile.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/update_password.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/wallet.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/wallets.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/tours/wallet.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/tours/wallets.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/charts/balance.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/header.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/log.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/router.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/setup.js&quot;&gt;&lt;/script&gt;
+
+&lt;div id=&quot;dialog_wrapper&quot;&gt;&lt;div id=&quot;dialog_add_wallet&quot; class=&quot;modal dialog_add_wallet in&quot; role=&quot;dialog&quot; aria-labelledby=&quot;dialog_label&quot; aria-hidden=&quot;false&quot; style=&quot;display: block;&quot;&gt;&lt;div class=&quot;modal-dialog&quot;&gt;
+  &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&times;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot; id=&quot;dialog_label&quot;&gt;Add Wallet&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body modal-body-default&quot; style=&quot;padding-bottom: 0;&quot;&gt;
+
+      &lt;form method=&quot;post&quot; action=&quot;http://localhost:3000/wallets/add&quot; role=&quot;form&quot; id=&quot;add_wallet_modal_form&quot;&gt;
+      &lt;fieldset&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+          &lt;label class=&quot;sr-only&quot; for=&quot;input_name&quot;&gt;Name&lt;/label&gt;
+          &lt;input type=&quot;text&quot; name=&quot;name&quot; class=&quot;form-control&quot; id=&quot;input_name&quot; placeholder=&quot;Name&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+          &lt;label class=&quot;sr-only&quot; for=&quot;input_name&quot;&gt;Currency&lt;/label&gt;
+          &lt;select name=&quot;currency&quot; id=&quot;input_currency&quot; class=&quot;form-control&quot;&gt;
+            &lt;option value=&quot;&quot;&gt;Select Currency&lt;/option&gt;
+                          &lt;option value=&quot;AED&quot;&gt;United Arab Emirates Dirham&lt;/option&gt;
+                          &lt;option value=&quot;AFN&quot;&gt;Afghan Afghani&lt;/option&gt;
+                          &lt;option value=&quot;ALL&quot;&gt;Albanian Lek&lt;/option&gt;
+                          &lt;option value=&quot;AMD&quot;&gt;Armenian Dram&lt;/option&gt;
+                          &lt;option value=&quot;ANG&quot;&gt;Netherlands Antillean Guilder&lt;/option&gt;
+                          &lt;option value=&quot;AOA&quot;&gt;Angolan Kwanza&lt;/option&gt;
+                          &lt;option value=&quot;ARS&quot;&gt;Argentine Peso&lt;/option&gt;
+                          &lt;option value=&quot;AUD&quot;&gt;Australian Dollar&lt;/option&gt;
+                          &lt;option value=&quot;AWG&quot;&gt;Aruban Florin&lt;/option&gt;
+                          &lt;option value=&quot;AZN&quot;&gt;Azerbaijani Manat&lt;/option&gt;
+                          &lt;option value=&quot;BAM&quot;&gt;Bosnia-Herzegovina Convertible Mark&lt;/option&gt;
+                          &lt;option value=&quot;BBD&quot;&gt;Barbadian Dollar&lt;/option&gt;
+                          &lt;option value=&quot;BDT&quot;&gt;Bangladeshi Taka&lt;/option&gt;
+                          &lt;option value=&quot;BGN&quot;&gt;Bulgarian Lev&lt;/option&gt;
+                          &lt;option value=&quot;BHD&quot;&gt;Bahraini Dinar&lt;/option&gt;
+                          &lt;option value=&quot;BIF&quot;&gt;Burundian Franc&lt;/option&gt;
+                          &lt;option value=&quot;BMD&quot;&gt;Bermudan Dollar&lt;/option&gt;
+                          &lt;option value=&quot;BND&quot;&gt;Brunei Dollar&lt;/option&gt;
+                          &lt;option value=&quot;BOB&quot;&gt;Bolivian Boliviano&lt;/option&gt;
+                          &lt;option value=&quot;BRL&quot;&gt;Brazilian Real&lt;/option&gt;
+                          &lt;option value=&quot;BSD&quot;&gt;Bahamian Dollar&lt;/option&gt;
+                          &lt;option value=&quot;BTC&quot;&gt;Bitcoin&lt;/option&gt;
+                          &lt;option value=&quot;BTN&quot;&gt;Bhutanese Ngultrum&lt;/option&gt;
+                          &lt;option value=&quot;BWP&quot;&gt;Botswanan Pula&lt;/option&gt;
+                          &lt;option value=&quot;BYR&quot;&gt;Belarusian Ruble&lt;/option&gt;
+                          &lt;option value=&quot;BZD&quot;&gt;Belize Dollar&lt;/option&gt;
+                          &lt;option value=&quot;CAD&quot;&gt;Canadian Dollar&lt;/option&gt;
+                          &lt;option value=&quot;CDF&quot;&gt;Congolese Franc&lt;/option&gt;
+                          &lt;option value=&quot;CHF&quot;&gt;Swiss Franc&lt;/option&gt;
+                          &lt;option value=&quot;CLF&quot;&gt;Chilean Unit of Account (UF)&lt;/option&gt;
+                          &lt;option value=&quot;CLP&quot;&gt;Chilean Peso&lt;/option&gt;
+                          &lt;option value=&quot;CNY&quot;&gt;Chinese Yuan&lt;/option&gt;
+                          &lt;option value=&quot;COP&quot;&gt;Colombian Peso&lt;/option&gt;
+                          &lt;option value=&quot;CRC&quot;&gt;Costa Rican Col&oacute;n&lt;/option&gt;
+                          &lt;option value=&quot;CUP&quot;&gt;Cuban Peso&lt;/option&gt;
+                          &lt;option value=&quot;CVE&quot;&gt;Cape Verdean Escudo&lt;/option&gt;
+                          &lt;option value=&quot;CZK&quot;&gt;Czech Republic Koruna&lt;/option&gt;
+                          &lt;option value=&quot;DJF&quot;&gt;Djiboutian Franc&lt;/option&gt;
+                          &lt;option value=&quot;DKK&quot;&gt;Danish Krone&lt;/option&gt;
+                          &lt;option value=&quot;DOP&quot;&gt;Dominican Peso&lt;/option&gt;
+                          &lt;option value=&quot;DZD&quot;&gt;Algerian Dinar&lt;/option&gt;
+                          &lt;option value=&quot;EEK&quot;&gt;Estonian Kroon&lt;/option&gt;
+                          &lt;option value=&quot;EGP&quot;&gt;Egyptian Pound&lt;/option&gt;
+                          &lt;option value=&quot;ERN&quot;&gt;Eritrean Nakfa&lt;/option&gt;
+                          &lt;option value=&quot;ETB&quot;&gt;Ethiopian Birr&lt;/option&gt;
+                          &lt;option value=&quot;EUR&quot;&gt;Euro&lt;/option&gt;
+                          &lt;option value=&quot;FJD&quot;&gt;Fijian Dollar&lt;/option&gt;
+                          &lt;option value=&quot;FKP&quot;&gt;Falkland Islands Pound&lt;/option&gt;
+                          &lt;option value=&quot;GBP&quot;&gt;British Pound Sterling&lt;/option&gt;
+                          &lt;option value=&quot;GEL&quot;&gt;Georgian Lari&lt;/option&gt;
+                          &lt;option value=&quot;GGP&quot;&gt;Guernsey Pound&lt;/option&gt;
+                          &lt;option value=&quot;GHS&quot;&gt;Ghanaian Cedi&lt;/option&gt;
+                          &lt;option value=&quot;GIP&quot;&gt;Gibraltar Pound&lt;/option&gt;
+                          &lt;option value=&quot;GMD&quot;&gt;Gambian Dalasi&lt;/option&gt;
+                          &lt;option value=&quot;GNF&quot;&gt;Guinean Franc&lt;/option&gt;
+                          &lt;option value=&quot;GTQ&quot;&gt;Guatemalan Quetzal&lt;/option&gt;
+                          &lt;option value=&quot;GYD&quot;&gt;Guyanaese Dollar&lt;/option&gt;
+                          &lt;option value=&quot;HKD&quot;&gt;Hong Kong Dollar&lt;/option&gt;
+                          &lt;option value=&quot;HNL&quot;&gt;Honduran Lempira&lt;/option&gt;
+                          &lt;option value=&quot;HRK&quot;&gt;Croatian Kuna&lt;/option&gt;
+                          &lt;option value=&quot;HTG&quot;&gt;Haitian Gourde&lt;/option&gt;
+                          &lt;option value=&quot;HUF&quot;&gt;Hungarian Forint&lt;/option&gt;
+                          &lt;option value=&quot;IDR&quot;&gt;Indonesian Rupiah&lt;/option&gt;
+                          &lt;option value=&quot;ILS&quot;&gt;Israeli New Sheqel&lt;/option&gt;
+                          &lt;option value=&quot;IMP&quot;&gt;Manx pound&lt;/option&gt;
+                          &lt;option value=&quot;INR&quot;&gt;Indian Rupee&lt;/option&gt;
+                          &lt;option value=&quot;IQD&quot;&gt;Iraqi Dinar&lt;/option&gt;
+                          &lt;option value=&quot;IRR&quot;&gt;Iranian Rial&lt;/option&gt;
+                          &lt;option value=&quot;ISK&quot;&gt;Icelandic Kr&oacute;na&lt;/option&gt;
+                          &lt;option value=&quot;JEP&quot;&gt;Jersey Pound&lt;/option&gt;
+                          &lt;option value=&quot;JMD&quot;&gt;Jamaican Dollar&lt;/option&gt;
+                          &lt;option value=&quot;JOD&quot;&gt;Jordanian Dinar&lt;/option&gt;
+                          &lt;option value=&quot;JPY&quot;&gt;Japanese Yen&lt;/option&gt;
+                          &lt;option value=&quot;KES&quot;&gt;Kenyan Shilling&lt;/option&gt;
+                          &lt;option value=&quot;KGS&quot;&gt;Kyrgystani Som&lt;/option&gt;
+                          &lt;option value=&quot;KHR&quot;&gt;Cambodian Riel&lt;/option&gt;
+                          &lt;option value=&quot;KMF&quot;&gt;Comorian Franc&lt;/option&gt;
+                          &lt;option value=&quot;KPW&quot;&gt;North Korean Won&lt;/option&gt;
+                          &lt;option value=&quot;KRW&quot;&gt;South Korean Won&lt;/option&gt;
+                          &lt;option value=&quot;KWD&quot;&gt;Kuwaiti Dinar&lt;/option&gt;
+                          &lt;option value=&quot;KYD&quot;&gt;Cayman Islands Dollar&lt;/option&gt;
+                          &lt;option value=&quot;KZT&quot;&gt;Kazakhstani Tenge&lt;/option&gt;
+                          &lt;option value=&quot;LAK&quot;&gt;Laotian Kip&lt;/option&gt;
+                          &lt;option value=&quot;LBP&quot;&gt;Lebanese Pound&lt;/option&gt;
+                          &lt;option value=&quot;LKR&quot;&gt;Sri Lankan Rupee&lt;/option&gt;
+                          &lt;option value=&quot;LRD&quot;&gt;Liberian Dollar&lt;/option&gt;
+                          &lt;option value=&quot;LSL&quot;&gt;Lesotho Loti&lt;/option&gt;
+                          &lt;option value=&quot;LTL&quot;&gt;Lithuanian Litas&lt;/option&gt;
+                          &lt;option value=&quot;LVL&quot;&gt;Latvian Lats&lt;/option&gt;
+                          &lt;option value=&quot;LYD&quot;&gt;Libyan Dinar&lt;/option&gt;
+                          &lt;option value=&quot;MAD&quot;&gt;Moroccan Dirham&lt;/option&gt;
+                          &lt;option value=&quot;MDL&quot;&gt;Moldovan Leu&lt;/option&gt;
+                          &lt;option value=&quot;MGA&quot;&gt;Malagasy Ariary&lt;/option&gt;
+                          &lt;option value=&quot;MKD&quot;&gt;Macedonian Denar&lt;/option&gt;
+                          &lt;option value=&quot;MMK&quot;&gt;Myanma Kyat&lt;/option&gt;
+                          &lt;option value=&quot;MNT&quot;&gt;Mongolian Tugrik&lt;/option&gt;
+                          &lt;option value=&quot;MOP&quot;&gt;Macanese Pataca&lt;/option&gt;
+                          &lt;option value=&quot;MRO&quot;&gt;Mauritanian Ouguiya&lt;/option&gt;
+                          &lt;option value=&quot;MTL&quot;&gt;Maltese Lira&lt;/option&gt;
+                          &lt;option value=&quot;MUR&quot;&gt;Mauritian Rupee&lt;/option&gt;
+                          &lt;option value=&quot;MVR&quot;&gt;Maldivian Rufiyaa&lt;/option&gt;
+                          &lt;option value=&quot;MWK&quot;&gt;Malawian Kwacha&lt;/option&gt;
+                          &lt;option value=&quot;MXN&quot;&gt;Mexican Peso&lt;/option&gt;
+                          &lt;option value=&quot;MYR&quot;&gt;Malaysian Ringgit&lt;/option&gt;
+                          &lt;option value=&quot;MZN&quot;&gt;Mozambican Metical&lt;/option&gt;
+                          &lt;option value=&quot;NAD&quot;&gt;Namibian Dollar&lt;/option&gt;
+                          &lt;option value=&quot;NGN&quot;&gt;Nigerian Naira&lt;/option&gt;
+                          &lt;option value=&quot;NIO&quot;&gt;Nicaraguan C&oacute;rdoba&lt;/option&gt;
+                          &lt;option value=&quot;NOK&quot;&gt;Norwegian Krone&lt;/option&gt;
+                          &lt;option value=&quot;NPR&quot;&gt;Nepalese Rupee&lt;/option&gt;
+                          &lt;option value=&quot;NZD&quot;&gt;New Zealand Dollar&lt;/option&gt;
+                          &lt;option value=&quot;OMR&quot;&gt;Omani Rial&lt;/option&gt;
+                          &lt;option value=&quot;PAB&quot;&gt;Panamanian Balboa&lt;/option&gt;
+                          &lt;option value=&quot;PEN&quot;&gt;Peruvian Nuevo Sol&lt;/option&gt;
+                          &lt;option value=&quot;PGK&quot;&gt;Papua New Guinean Kina&lt;/option&gt;
+                          &lt;option value=&quot;PHP&quot;&gt;Philippine Peso&lt;/option&gt;
+                          &lt;option value=&quot;PKR&quot;&gt;Pakistani Rupee&lt;/option&gt;
+                          &lt;option value=&quot;PLN&quot;&gt;Polish Zloty&lt;/option&gt;
+                          &lt;option value=&quot;PYG&quot;&gt;Paraguayan Guarani&lt;/option&gt;
+                          &lt;option value=&quot;QAR&quot;&gt;Qatari Rial&lt;/option&gt;
+                          &lt;option value=&quot;RON&quot;&gt;Romanian Leu&lt;/option&gt;
+                          &lt;option value=&quot;RSD&quot;&gt;Serbian Dinar&lt;/option&gt;
+                          &lt;option value=&quot;RUB&quot;&gt;Russian Ruble&lt;/option&gt;
+                          &lt;option value=&quot;RWF&quot;&gt;Rwandan Franc&lt;/option&gt;
+                          &lt;option value=&quot;SAR&quot;&gt;Saudi Riyal&lt;/option&gt;
+                          &lt;option value=&quot;SBD&quot;&gt;Solomon Islands Dollar&lt;/option&gt;
+                          &lt;option value=&quot;SCR&quot;&gt;Seychellois Rupee&lt;/option&gt;
+                          &lt;option value=&quot;SDG&quot;&gt;Sudanese Pound&lt;/option&gt;
+                          &lt;option value=&quot;SEK&quot;&gt;Swedish Krona&lt;/option&gt;
+                          &lt;option value=&quot;SGD&quot;&gt;Singapore Dollar&lt;/option&gt;
+                          &lt;option value=&quot;SHP&quot;&gt;Saint Helena Pound&lt;/option&gt;
+                          &lt;option value=&quot;SLL&quot;&gt;Sierra Leonean Leone&lt;/option&gt;
+                          &lt;option value=&quot;SOS&quot;&gt;Somali Shilling&lt;/option&gt;
+                          &lt;option value=&quot;SRD&quot;&gt;Surinamese Dollar&lt;/option&gt;
+                          &lt;option value=&quot;STD&quot;&gt;S&atilde;o Tom&eacute; and Pr&iacute;ncipe Dobra&lt;/option&gt;
+                          &lt;option value=&quot;SVC&quot;&gt;Salvadoran Col&oacute;n&lt;/option&gt;
+                          &lt;option value=&quot;SYP&quot;&gt;Syrian Pound&lt;/option&gt;
+                          &lt;option value=&quot;SZL&quot;&gt;Swazi Lilangeni&lt;/option&gt;
+                          &lt;option value=&quot;THB&quot;&gt;Thai Baht&lt;/option&gt;
+                          &lt;option value=&quot;TJS&quot;&gt;Tajikistani Somoni&lt;/option&gt;
+                          &lt;option value=&quot;TMT&quot;&gt;Turkmenistani Manat&lt;/option&gt;
+                          &lt;option value=&quot;TND&quot;&gt;Tunisian Dinar&lt;/option&gt;
+                          &lt;option value=&quot;TOP&quot;&gt;Tongan Paʻanga&lt;/option&gt;
+                          &lt;option value=&quot;TRY&quot;&gt;Turkish Lira&lt;/option&gt;
+                          &lt;option value=&quot;TTD&quot;&gt;Trinidad and Tobago Dollar&lt;/option&gt;
+                          &lt;option value=&quot;TWD&quot;&gt;New Taiwan Dollar&lt;/option&gt;
+                          &lt;option value=&quot;TZS&quot;&gt;Tanzanian Shilling&lt;/option&gt;
+                          &lt;option value=&quot;UAH&quot;&gt;Ukrainian Hryvnia&lt;/option&gt;
+                          &lt;option value=&quot;UGX&quot;&gt;Ugandan Shilling&lt;/option&gt;
+                          &lt;option value=&quot;USD&quot; selected=&quot;selected&quot;&gt;United States Dollar&lt;/option&gt;
+                          &lt;option value=&quot;UYU&quot;&gt;Uruguayan Peso&lt;/option&gt;
+                          &lt;option value=&quot;UZS&quot;&gt;Uzbekistan Som&lt;/option&gt;
+                          &lt;option value=&quot;VEF&quot;&gt;Venezuelan Bol&iacute;var Fuerte&lt;/option&gt;
+                          &lt;option value=&quot;VND&quot;&gt;Vietnamese Dong&lt;/option&gt;
+                          &lt;option value=&quot;VUV&quot;&gt;Vanuatu Vatu&lt;/option&gt;
+                          &lt;option value=&quot;WST&quot;&gt;Samoan Tala&lt;/option&gt;
+                          &lt;option value=&quot;XAF&quot;&gt;CFA Franc BEAC&lt;/option&gt;
+                          &lt;option value=&quot;XAG&quot;&gt;Silver (troy ounce)&lt;/option&gt;
+                          &lt;option value=&quot;XAU&quot;&gt;Gold (troy ounce)&lt;/option&gt;
+                          &lt;option value=&quot;XCD&quot;&gt;East Caribbean Dollar&lt;/option&gt;
+                          &lt;option value=&quot;XDR&quot;&gt;Special Drawing Rights&lt;/option&gt;
+                          &lt;option value=&quot;XOF&quot;&gt;CFA Franc BCEAO&lt;/option&gt;
+                          &lt;option value=&quot;XPF&quot;&gt;CFP Franc&lt;/option&gt;
+                          &lt;option value=&quot;YER&quot;&gt;Yemeni Rial&lt;/option&gt;
+                          &lt;option value=&quot;ZAR&quot;&gt;South African Rand&lt;/option&gt;
+                          &lt;option value=&quot;ZMK&quot;&gt;Zambian Kwacha (pre-2013)&lt;/option&gt;
+                          &lt;option value=&quot;ZMW&quot;&gt;Zambian Kwacha&lt;/option&gt;
+                          &lt;option value=&quot;ZWL&quot;&gt;Zimbabwean Dollar&lt;/option&gt;
+                      &lt;/select&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;alert alert-danger errors-container&quot; style=&quot;display: none;&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;form-group&quot;&gt;
+          &lt;input type=&quot;submit&quot; class=&quot;btn btn-primary pull-left&quot; value=&quot;Add&quot; data-loading-text=&quot;Saving...&quot; id=&quot;add_wallet_modal_form_submit&quot;&gt;
+        &lt;/div&gt;
+
+      &lt;/fieldset&gt;
+      &lt;/form&gt;
+
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body modal-body-success&quot; style=&quot;display: none;&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;div class=&quot;pull-right&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;modal-backdrop  in&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

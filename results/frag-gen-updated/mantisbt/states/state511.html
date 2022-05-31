@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state511</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/mantisbt/view_all_bug_page.php'>http://localhost:3000/mantisbt/view_all_bug_page.php</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>14</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>state95</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>4.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>511</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state511.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 230px; top: 196px; width: 78px; height: 15px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 615px; top: 196px; width: 55px; height: 15px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[5]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 230px; top: 443px; width: 70px; height: 15px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[5]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 415px; top: 443px; width: 110px; height: 15px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[5]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 615px; top: 443px; width: 80px; height: 15px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[5]/TD[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 808px; top: 443px; width: 92px; height: 15px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[5]/TD[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 955px; top: 443px; width: 77px; height: 15px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[7]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 230px; top: 487px; width: 23px; height: 15px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[7]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 415px; top: 487px; width: 66px; height: 15px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[7]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 615px; top: 487px; width: 31px; height: 15px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[9]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 415px; top: 531px; width: 46px; height: 15px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[9]/TD[5]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 807px; top: 531px; width: 44px; height: 15px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[10]/TD[2]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 491px; top: 555px; width: 93px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[10]/TD[2]/SPAN[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 608px; top: 555px; width: 117px; height: 18px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/mantisbt/css/default.css&quot;&gt;
+	&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;&lt;!--
+		if(document.layers) {document.write(&quot;&lt;style&gt;td{padding:0px;}&lt;\/style&gt;&quot;)}
+	// --&gt;&lt;/script&gt;
+	&lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+	&lt;meta http-equiv=&quot;Pragma&quot; content=&quot;no-cache&quot;&gt;
+	&lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;no-cache&quot;&gt;
+	&lt;meta http-equiv=&quot;Pragma-directive&quot; content=&quot;no-cache&quot;&gt;
+	&lt;meta http-equiv=&quot;Cache-Directive&quot; content=&quot;no-cache&quot;&gt;
+	&lt;meta http-equiv=&quot;Expires&quot; content=&quot;Sun, 03 Oct 2021 19:59:50 GMT&quot;&gt;
+	&lt;meta name=&quot;robots&quot; content=&quot;noindex,follow&quot;&gt;
+	&lt;link rel=&quot;shortcut icon&quot; href=&quot;/mantisbt/images/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+	&lt;link rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; title=&quot;MantisBT: Text Search&quot; href=&quot;http://localhost:3000/mantisbt/browser_search_plugin.php?type=text&quot;&gt;	&lt;link rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; title=&quot;MantisBT: Issue Id&quot; href=&quot;http://localhost:3000/mantisbt/browser_search_plugin.php?type=id&quot;&gt;	&lt;title&gt;View Issues - MantisBT&lt;/title&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/mantisbt/javascript/min/common.js&quot;&gt;&lt;/script&gt;
+&lt;script language=&quot;javascript&quot;&gt;var loading_lang = &quot;Loading...&quot;;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/mantisbt/javascript/min/ajax.js&quot;&gt;&lt;/script&gt;
+	&lt;meta http-equiv=&quot;Refresh&quot; content=&quot;1800;URL=http://localhost:3000/mantisbt/view_all_bug_page.php?page_number=1&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div align=&quot;left&quot;&gt;&lt;a href=&quot;my_view_page.php&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Mantis Bug Tracker&quot; src=&quot;/mantisbt/images/mantis_logo.gif&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;table class=&quot;hide&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;login-info-left&quot;&gt;Logged in as: &lt;span class=&quot;italic&quot;&gt;administrator&lt;/span&gt; &lt;span class=&quot;small&quot;&gt;(administrator)&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;login-info-middle&quot;&gt;&lt;span class=&quot;italic&quot;&gt;2021-10-03 19:59 UTC&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;login-info-right&quot;&gt;&lt;form method=&quot;post&quot; name=&quot;form_set_project&quot; action=&quot;/mantisbt/set_project.php&quot;&gt;Project: &lt;select name=&quot;project_id&quot; class=&quot;small&quot; onchange=&quot;document.forms.form_set_project.submit();&quot;&gt;&lt;option value=&quot;0&quot; selected=&quot;selected&quot;&gt;All Projects&lt;/option&gt;
+&lt;/select&gt; &lt;input type=&quot;submit&quot; class=&quot;button-small&quot; value=&quot;Switch&quot;&gt;&lt;/form&gt;&lt;a href=&quot;http://localhost:3000/mantisbt/issues_rss.php?username=administrator&amp;amp;key=021c6555cf022731feb72e4a25ff20d9&quot;&gt;&lt;img src=&quot;/mantisbt/images/rss.png&quot; alt=&quot;RSS&quot; style=&quot;border-style: none; margin: 5px; vertical-align: middle;&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table class=&quot;width100&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;menu&quot;&gt;&lt;a href=&quot;/mantisbt/main_page.php&quot;&gt;Main&lt;/a&gt; | &lt;a href=&quot;/mantisbt/my_view_page.php&quot;&gt;My View&lt;/a&gt; | &lt;a href=&quot;/mantisbt/view_all_bug_page.php&quot;&gt;View Issues&lt;/a&gt; | &lt;a href=&quot;/mantisbt/bug_report_page.php&quot;&gt;Report Issue&lt;/a&gt; | &lt;a href=&quot;/mantisbt/changelog_page.php&quot;&gt;Change Log&lt;/a&gt; | &lt;a href=&quot;/mantisbt/roadmap_page.php&quot;&gt;Roadmap&lt;/a&gt; | &lt;a href=&quot;/mantisbt/summary_page.php&quot;&gt;Summary&lt;/a&gt; | &lt;a href=&quot;/mantisbt/manage_overview_page.php&quot;&gt;Manage&lt;/a&gt; | &lt;a href=&quot;/mantisbt/account_page.php&quot;&gt;My Account&lt;/a&gt; | &lt;a href=&quot;/mantisbt/logout_page.php&quot;&gt;Logout&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;menu right nowrap&quot;&gt;&lt;form method=&quot;post&quot; action=&quot;/mantisbt/jump_to_bug.php&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;bug_id&quot; size=&quot;10&quot; class=&quot;small&quot; value=&quot;Issue #&quot; onfocus=&quot;if (this.value == 'Issue #') this.value = ''&quot; onblur=&quot;if (this.value == '') this.value = 'Issue #'&quot;&gt;&amp;nbsp;&lt;input type=&quot;submit&quot; class=&quot;button-small&quot; value=&quot;Jump&quot;&gt;&amp;nbsp;&lt;/form&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;div id=&quot;filter_open&quot;&gt;
+		&lt;br&gt;
+		&lt;form method=&quot;post&quot; name=&quot;filters_open&quot; id=&quot;filters_form_open&quot; action=&quot;view_all_set.php?f=3&quot;&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;type&quot; value=&quot;1&quot;&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;page_number&quot; value=&quot;1&quot;&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;view_type&quot; value=&quot;advanced&quot;&gt;
+		&lt;table class=&quot;width100&quot; cellspacing=&quot;1&quot;&gt;
+
+		
+		&lt;tbody&gt;&lt;tr class=&quot;row-category2&quot;&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=reporter_id[]&quot; id=&quot;reporter_id_filter&quot;&gt;Reporter:&lt;/a&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=user_monitor[]&quot; id=&quot;user_monitor_filter&quot;&gt;Monitored By:&lt;/a&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=handler_id[]&quot; id=&quot;handler_id_filter&quot;&gt;Assigned To:&lt;/a&gt;
+			&lt;/td&gt;
+			&lt;td colspan=&quot;2&quot; class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=show_category[]&quot; id=&quot;show_category_filter&quot;&gt;Category:&lt;/a&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=show_severity[]&quot; id=&quot;show_severity_filter&quot;&gt;Severity:&lt;/a&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=show_resolution[]&quot; id=&quot;show_resolution_filter&quot;&gt;Resolution:&lt;/a&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+									&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=show_profile[]&quot; id=&quot;show_profile_filter&quot;&gt;Profile:&lt;/a&gt;
+							&lt;/td&gt;
+					&lt;/tr&gt;
+
+		&lt;tr class=&quot;row-1&quot;&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;reporter_id_filter_target&quot;&gt;
+							&lt;input type=&quot;hidden&quot; name=&quot;reporter_id[]&quot; value=&quot;1&quot;&gt;administrator			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;user_monitor_filter_target&quot;&gt;
+							&lt;input type=&quot;hidden&quot; name=&quot;user_monitor[]&quot; value=&quot;0&quot;&gt;any			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;handler_id_filter_target&quot;&gt;
+							&lt;input type=&quot;hidden&quot; name=&quot;handler_id[]&quot; value=&quot;0&quot;&gt;any			&lt;/td&gt;
+			&lt;td colspan=&quot;2&quot; class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;show_category_filter_target&quot;&gt;
+							&lt;input type=&quot;hidden&quot; name=&quot;show_category[]&quot; value=&quot;0&quot;&gt;any			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;show_severity_filter_target&quot;&gt;
+							&lt;input type=&quot;hidden&quot; name=&quot;show_severity[]&quot; value=&quot;0&quot;&gt;any			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;show_resolution_filter_target&quot;&gt;
+																	&lt;input type=&quot;hidden&quot; name=&quot;show_resolution[]&quot; value=&quot;0&quot;&gt;
+										any			&lt;/td&gt;
+						&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;show_profile_filter_target&quot;&gt;
+																	&lt;input type=&quot;hidden&quot; name=&quot;show_profile[]&quot; value=&quot;0&quot;&gt;
+										any			&lt;/td&gt;
+						&lt;/tr&gt;
+
+		&lt;tr class=&quot;row-category2&quot;&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				Status:
+			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+							&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+						&lt;/td&gt;
+						&lt;td colspan=&quot;2&quot; class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&amp;nbsp;
+			&lt;/td&gt;
+			&lt;td colspan=&quot;1&quot; class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&amp;nbsp;
+			&lt;/td&gt;
+						&lt;td colspan=&quot;1&quot; class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=show_priority[]&quot; id=&quot;show_priority_filter&quot;&gt;Priority:&lt;/a&gt;
+			&lt;/td&gt;
+			&lt;td colspan=&quot;1&quot; class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=target_version[]&quot; id=&quot;show_target_version_filter&quot;&gt;Target Version:&lt;/a&gt;
+			&lt;/td&gt;
+					&lt;/tr&gt;
+
+		&lt;tr class=&quot;row-1&quot;&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;show_status_filter_target&quot;&gt;	&lt;!-- Status --&gt;
+			&lt;select multiple=&quot;multiple&quot; size=&quot;10&quot; name=&quot;show_status[]&quot;&gt;
+				&lt;option value=&quot;0&quot; selected=&quot;selected&quot;&gt;[any]&lt;/option&gt;
+				&lt;option value=&quot;10&quot;&gt;new&lt;/option&gt;&lt;option value=&quot;20&quot;&gt;feedback&lt;/option&gt;&lt;option value=&quot;30&quot;&gt;acknowledged&lt;/option&gt;&lt;option value=&quot;40&quot;&gt;confirmed&lt;/option&gt;&lt;option value=&quot;50&quot;&gt;assigned&lt;/option&gt;&lt;option value=&quot;80&quot;&gt;resolved&lt;/option&gt;&lt;option value=&quot;90&quot;&gt;closed&lt;/option&gt;			&lt;/select&gt;
+		&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;hide_status_filter_target&quot;&gt;
+										&lt;/td&gt;
+						&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;&lt;/td&gt;
+						&lt;td colspan=&quot;2&quot; class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&amp;nbsp;
+			&lt;/td&gt;
+			&lt;td colspan=&quot;1&quot; class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&amp;nbsp;
+			&lt;/td&gt;
+						&lt;td colspan=&quot;1&quot; class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;show_priority_filter_target&quot;&gt;
+              &lt;input type=&quot;hidden&quot; name=&quot;show_priority[]&quot; value=&quot;0&quot;&gt;any	    	&lt;/td&gt;
+			&lt;td colspan=&quot;1&quot; class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;show_target_version_filter_target&quot;&gt;
+							&lt;input type=&quot;hidden&quot; name=&quot;target_version[]&quot; value=&quot;0&quot;&gt;any			&lt;/td&gt;
+			
+		&lt;/tr&gt;
+
+		&lt;tr class=&quot;row-category2&quot;&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=per_page&quot; id=&quot;per_page_filter&quot;&gt;Show:&lt;/a&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=view_state&quot; id=&quot;view_state_filter&quot;&gt;View Status:&lt;/a&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=sticky_issues&quot; id=&quot;sticky_issues_filter&quot;&gt;Show Sticky Issues:&lt;/a&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; colspan=&quot;2&quot;&gt;
+				&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=highlight_changed&quot; id=&quot;highlight_changed_filter&quot;&gt;Changed(hrs):&lt;/a&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=do_filter_by_date&quot; id=&quot;do_filter_by_date_filter&quot;&gt;Use Date Filters:&lt;/a&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; colspan=&quot;2&quot;&gt;
+				&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=relationship_type&quot; id=&quot;relationship_type_filter&quot;&gt;Relationships:&lt;/a&gt;
+			&lt;/td&gt;
+					&lt;/tr&gt;
+		&lt;tr class=&quot;row-1&quot;&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;per_page_filter_target&quot;&gt;
+				50&lt;input type=&quot;hidden&quot; name=&quot;per_page&quot; value=&quot;50&quot;&gt;			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;view_state_filter_target&quot;&gt;
+				any&lt;input type=&quot;hidden&quot; name=&quot;view_state&quot; value=&quot;0&quot;&gt;			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;sticky_issues_filter_target&quot;&gt;
+				No				&lt;input type=&quot;hidden&quot; name=&quot;sticky_issues&quot; value=&quot;off&quot;&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; colspan=&quot;2&quot; id=&quot;highlight_changed_filter_target&quot;&gt;
+				6&lt;input type=&quot;hidden&quot; name=&quot;highlight_changed&quot; value=&quot;6&quot;&gt;			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;do_filter_by_date_filter_target&quot;&gt;
+									&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;
+		&lt;!--
+			function SwitchDateFields() {
+		    	// All fields need to be enabled to go back to the script
+				document.filters_open.start_month.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.start_day.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.start_year.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.end_month.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.end_day.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.end_year.disabled = ! document.filters_open.do_filter_by_date.checked;
+
+		   		return true;
+			}
+		// --&gt;
+		&lt;/script&gt;
+							No			&lt;/td&gt;
+
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; colspan=&quot;2&quot; id=&quot;relationship_type_filter_target&quot;&gt;
+							&lt;input type=&quot;hidden&quot; name=&quot;relationship_type&quot; value=&quot;-1&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;relationship_bug&quot; value=&quot;0&quot;&gt;any			&lt;/td&gt;
+					&lt;/tr&gt;
+		&lt;tr class=&quot;row-category2&quot;&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+									&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=platform&quot; id=&quot;platform_filter&quot;&gt;Platform:&lt;/a&gt;
+							&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+									&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=os&quot; id=&quot;os_filter&quot;&gt;OS:&lt;/a&gt;
+							&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+									&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=os_build&quot; id=&quot;os_build_filter&quot;&gt;OS Version:&lt;/a&gt;
+							&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; colspan=&quot;5&quot;&gt;
+								&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=tag_string&quot; id=&quot;tag_string_filter&quot;&gt;Tags:&lt;/a&gt;
+							&lt;/td&gt;
+					&lt;/tr&gt;
+		&lt;tr class=&quot;row-1&quot;&gt;
+						&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;platform_filter_target&quot;&gt;
+								&lt;input type=&quot;hidden&quot; name=&quot;platform[]&quot; value=&quot;0&quot;&gt;
+				any			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;os_filter_target&quot;&gt;
+								&lt;input type=&quot;hidden&quot; name=&quot;os[]&quot; value=&quot;0&quot;&gt;
+				any			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;os_build_filter_target&quot;&gt;
+								&lt;input type=&quot;hidden&quot; name=&quot;os_build[]&quot; value=&quot;0&quot;&gt;
+				any			&lt;/td&gt;
+			
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;tag_string_filter_target&quot; colspan=&quot;5&quot;&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;tag_string&quot; value=&quot;&quot;&gt;			&lt;/td&gt;
+		&lt;/tr&gt;
+				&lt;tr class=&quot;row-1&quot;&gt;
+			&lt;td class=&quot;small-caption category2&quot; valign=&quot;top&quot;&gt;
+                &lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=note_user_id&quot; id=&quot;note_user_id_filter&quot;&gt;Note By:&lt;/a&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;note_user_id_filter_target&quot;&gt;
+                &lt;input type=&quot;hidden&quot; name=&quot;note_user_id[]&quot; value=&quot;0&quot;&gt;any            &lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot;&gt;
+				&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=show_sort&quot; id=&quot;show_sort_filter&quot;&gt;Sort by:&lt;/a&gt;
+			&lt;/td&gt;
+			&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;show_sort_filter_target&quot;&gt;
+				Priority Descending&lt;input type=&quot;hidden&quot; name=&quot;sort_0&quot; value=&quot;priority&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;dir_0&quot; value=&quot;DESC&quot;&gt;			&lt;/td&gt;
+								&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; colspan=&quot;2&quot;&gt;
+						&lt;a href=&quot;view_filters_page.php?for_screen=1&amp;amp;view_type=advanced&amp;amp;target_field=project_id&quot; id=&quot;project_id_filter&quot;&gt;Project:&lt;/a&gt;
+					&lt;/td&gt;
+					&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; id=&quot;project_id_filter_target&quot;&gt;
+						&lt;input type=&quot;hidden&quot; name=&quot;project_id[]&quot; value=&quot;-3&quot;&gt;current					&lt;/td&gt;
+					&lt;td class=&quot;small-caption&quot; valign=&quot;top&quot; colspan=&quot;3&quot;&gt;&amp;nbsp;&lt;/td&gt;		&lt;/tr&gt;
+				&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot;&gt;
+				&lt;a href=&quot;&quot; onclick=&quot;ToggleDiv( 'filter' ); return false;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;images/minus.png&quot; alt=&quot;-&quot;&gt;&lt;/a&gt;&amp;nbsp;Search&amp;nbsp;&lt;input type=&quot;text&quot; size=&quot;16&quot; name=&quot;search&quot; value=&quot;&quot;&gt;
+				&lt;input type=&quot;submit&quot; name=&quot;filter&quot; class=&quot;button-small&quot; value=&quot;Apply Filter&quot;&gt;
+			&lt;/td&gt;
+			
+			&lt;td class=&quot;center&quot; colspan=&quot;2&quot;&gt; &lt;!-- use this label for padding --&gt;
+				&lt;span class=&quot;bracket-link&quot;&gt;[&amp;nbsp;&lt;a href=&quot;view_all_set.php?type=6&amp;amp;view_type=simple&quot;&gt;Simple Filters&lt;/a&gt;&amp;nbsp;]&lt;/span&gt; &lt;span class=&quot;bracket-link&quot;&gt;[&amp;nbsp;&lt;a href=&quot;permalink_page.php?url=http%3A%2F%2Flocalhost%3A3000%2Fmantisbt%2Fsearch.php%3Fproject_id%3D0%26reporter_id%3D1%26sticky_issues%3Doff%26sortby%3Dpriority%26dir%3DDESC%26hide_status_id%3D80&quot; target=&quot;_blank&quot;&gt;Create Permalink&lt;/a&gt;&amp;nbsp;]&lt;/span&gt; 			&lt;/td&gt;
+			&lt;td class=&quot;right&quot; colspan=&quot;4&quot;&gt;
+								&lt;form method=&quot;get&quot; name=&quot;reset_query&quot; action=&quot;view_all_set.php&quot;&gt;
+										&lt;input type=&quot;hidden&quot; name=&quot;type&quot; value=&quot;3&quot;&gt;
+					&lt;input type=&quot;hidden&quot; name=&quot;source_query_id&quot; value=&quot;-1&quot;&gt;
+					&lt;input type=&quot;submit&quot; name=&quot;reset_query_button&quot; class=&quot;button-small&quot; value=&quot;Reset Filter&quot;&gt;
+					&lt;/form&gt;
+									&lt;form method=&quot;post&quot; name=&quot;save_query&quot; action=&quot;query_store_page.php&quot;&gt;
+										&lt;input type=&quot;submit&quot; name=&quot;save_query_button&quot; class=&quot;button-small&quot; value=&quot;Save Current Filter&quot;&gt;
+					&lt;/form&gt;
+						&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;/tbody&gt;&lt;/table&gt;
+&lt;/form&gt;&lt;/div&gt;&lt;div id=&quot;filter_closed&quot; class=&quot;hidden&quot;&gt;
+		&lt;br&gt;
+		&lt;form method=&quot;post&quot; name=&quot;filters_closed&quot; id=&quot;filters_form_closed&quot; action=&quot;view_all_set.php?f=3&quot;&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;type&quot; value=&quot;1&quot;&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;page_number&quot; value=&quot;1&quot;&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;view_type&quot; value=&quot;advanced&quot;&gt;
+		&lt;table class=&quot;width100&quot; cellspacing=&quot;1&quot;&gt;
+
+				&lt;tbody&gt;&lt;tr&gt;
+			&lt;td colspan=&quot;2&quot;&gt;
+				&lt;a href=&quot;&quot; onclick=&quot;ToggleDiv( 'filter' ); return false;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;images/plus.png&quot; alt=&quot;+&quot;&gt;&lt;/a&gt;&amp;nbsp;Search&amp;nbsp;&lt;input type=&quot;text&quot; size=&quot;16&quot; name=&quot;search&quot; value=&quot;&quot;&gt;
+				&lt;input type=&quot;submit&quot; name=&quot;filter&quot; class=&quot;button-small&quot; value=&quot;Apply Filter&quot;&gt;
+			&lt;/td&gt;
+			
+			&lt;td class=&quot;center&quot; colspan=&quot;2&quot;&gt; &lt;!-- use this label for padding --&gt;
+				&lt;span class=&quot;bracket-link&quot;&gt;[&amp;nbsp;&lt;a href=&quot;view_all_set.php?type=6&amp;amp;view_type=simple&quot;&gt;Simple Filters&lt;/a&gt;&amp;nbsp;]&lt;/span&gt; &lt;span class=&quot;bracket-link&quot;&gt;[&amp;nbsp;&lt;a href=&quot;permalink_page.php?url=http%3A%2F%2Flocalhost%3A3000%2Fmantisbt%2Fsearch.php%3Fproject_id%3D0%26reporter_id%3D1%26sticky_issues%3Doff%26sortby%3Dpriority%26dir%3DDESC%26hide_status_id%3D80&quot; target=&quot;_blank&quot;&gt;Create Permalink&lt;/a&gt;&amp;nbsp;]&lt;/span&gt; 			&lt;/td&gt;
+			&lt;td class=&quot;right&quot; colspan=&quot;4&quot;&gt;
+								&lt;form method=&quot;get&quot; name=&quot;reset_query&quot; action=&quot;view_all_set.php&quot;&gt;
+										&lt;input type=&quot;hidden&quot; name=&quot;type&quot; value=&quot;3&quot;&gt;
+					&lt;input type=&quot;hidden&quot; name=&quot;source_query_id&quot; value=&quot;-1&quot;&gt;
+					&lt;input type=&quot;submit&quot; name=&quot;reset_query_button&quot; class=&quot;button-small&quot; value=&quot;Reset Filter&quot;&gt;
+					&lt;/form&gt;
+									&lt;form method=&quot;post&quot; name=&quot;save_query&quot; action=&quot;query_store_page.php&quot;&gt;
+										&lt;input type=&quot;submit&quot; name=&quot;save_query_button&quot; class=&quot;button-small&quot; value=&quot;Save Current Filter&quot;&gt;
+					&lt;/form&gt;
+						&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;/tbody&gt;&lt;/table&gt;
+&lt;/form&gt;&lt;/div&gt;		&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;
+		&lt;!--
+			var string_loading = 'Loading...';
+		// --&gt;
+		&lt;/script&gt;
+		&lt;script type=&quot;text/javascript&quot; src=&quot;/mantisbt/javascript/min/xmlhttprequest.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/mantisbt/javascript/min/addLoadEvent.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/mantisbt/javascript/min/dynamic_filters.js&quot;&gt;&lt;/script&gt;
+&lt;br&gt;
+&lt;form name=&quot;bug_action&quot; method=&quot;get&quot; action=&quot;bug_actiongroup_page.php&quot;&gt;
+&lt;table id=&quot;buglist&quot; class=&quot;width100&quot; cellspacing=&quot;1&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+	&lt;td class=&quot;form-title&quot; colspan=&quot;10&quot;&gt;
+		&lt;span class=&quot;floatleft&quot;&gt;
+		Viewing Issues (0 - 0 / 0) &lt;/span&gt;
+
+		&lt;span class=&quot;floatleft small&quot;&gt; &amp;nbsp;&lt;span class=&quot;bracket-link&quot;&gt;[&amp;nbsp;&lt;a href=&quot;print_all_bug_page.php&quot;&gt;Print Reports&lt;/a&gt;&amp;nbsp;]&lt;/span&gt; &amp;nbsp;&lt;span class=&quot;bracket-link&quot;&gt;[&amp;nbsp;&lt;a href=&quot;csv_export.php&quot;&gt;CSV Export&lt;/a&gt;&amp;nbsp;]&lt;/span&gt; &amp;nbsp;&lt;span class=&quot;bracket-link&quot;&gt;[&amp;nbsp;&lt;a href=&quot;excel_xml_export.php&quot;&gt;Excel Export&lt;/a&gt;&amp;nbsp;]&lt;/span&gt;  &lt;/span&gt;
+
+		&lt;span class=&quot;floatright small&quot;&gt; &lt;/span&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;row-category&quot;&gt;
+&lt;td&gt; &amp;nbsp; &lt;/td&gt;&lt;td&gt; &amp;nbsp; &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;view_all_set.php?sort=priority&amp;amp;dir=ASC&amp;amp;type=2&quot;&gt;P&lt;/a&gt;&lt;img src=&quot;http://localhost:3000/mantisbt/images/down.gif&quot; alt=&quot;&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;view_all_set.php?sort=id&amp;amp;dir=DESC&amp;amp;type=2&quot;&gt;ID&lt;/a&gt;&lt;/td&gt;&lt;td&gt; # &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;view_all_set.php?sort=category_id&amp;amp;dir=DESC&amp;amp;type=2&quot;&gt;Category&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;view_all_set.php?sort=severity&amp;amp;dir=DESC&amp;amp;type=2&quot;&gt;Severity&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;view_all_set.php?sort=status&amp;amp;dir=DESC&amp;amp;type=2&quot;&gt;Status&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;view_all_set.php?sort=last_updated&amp;amp;dir=DESC&amp;amp;type=2&quot;&gt;Updated&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;view_all_set.php?sort=summary&amp;amp;dir=DESC&amp;amp;type=2&quot;&gt;Summary&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr class=&quot;spacer&quot;&gt;
+	&lt;td colspan=&quot;10&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class=&quot;left&quot; colspan=&quot;10&quot;&gt;
+			&lt;span class=&quot;floatleft&quot;&gt;
+&amp;nbsp;			&lt;/span&gt;
+			&lt;span class=&quot;floatright small&quot;&gt;
+							&lt;/span&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/form&gt;
+
+&lt;br&gt;&lt;table class=&quot;width100&quot; cellspacing=&quot;1&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;small-caption&quot; width=&quot;14%&quot; bgcolor=&quot;#fcbdbd&quot;&gt;new&lt;/td&gt;&lt;td class=&quot;small-caption&quot; width=&quot;14%&quot; bgcolor=&quot;#e3b7eb&quot;&gt;feedback&lt;/td&gt;&lt;td class=&quot;small-caption&quot; width=&quot;14%&quot; bgcolor=&quot;#ffcd85&quot;&gt;acknowledged&lt;/td&gt;&lt;td class=&quot;small-caption&quot; width=&quot;14%&quot; bgcolor=&quot;#fff494&quot;&gt;confirmed&lt;/td&gt;&lt;td class=&quot;small-caption&quot; width=&quot;14%&quot; bgcolor=&quot;#c2dfff&quot;&gt;assigned&lt;/td&gt;&lt;td class=&quot;small-caption&quot; width=&quot;14%&quot; bgcolor=&quot;#d2f5b0&quot;&gt;resolved&lt;/td&gt;&lt;td class=&quot;small-caption&quot; width=&quot;14%&quot; bgcolor=&quot;#c9ccc4&quot;&gt;closed&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;	&lt;br&gt;
+	&lt;hr size=&quot;1&quot;&gt;
+&lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr valign=&quot;top&quot;&gt;&lt;td&gt;	&lt;address&gt;Copyright &copy; 2000 - 2010 MantisBT Group&lt;/address&gt;
+	&lt;address&gt;&lt;a href=&quot;mailto:webmaster@example.com&quot;&gt;webmaster@example.com&lt;/a&gt;&lt;/address&gt;
+&lt;/td&gt;&lt;td&gt;
+	&lt;div align=&quot;right&quot;&gt;&lt;a href=&quot;http://www.mantisbt.org&quot; title=&quot;Free Web Based Bug Tracker&quot;&gt;&lt;img src=&quot;/mantisbt/images/mantis_logo_button.gif&quot; width=&quot;88&quot; height=&quot;35&quot; alt=&quot;Powered by Mantis Bugtracker&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+
+&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[5]/TD[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[5]/TD[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[5]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[5]/TD[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[5]/TD[6]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[7]/TD[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[7]/TD[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[7]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[9]/TD[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[9]/TD[5]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[10]/TD[2]/SPAN[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[10]/TD[2]/SPAN[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

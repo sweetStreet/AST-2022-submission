@@ -1,0 +1,1043 @@
+{
+  "nodes" : [ {
+    "name" : "state31",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS",
+    "candidateElements" : [ {
+      "top" : 181,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 63,
+      "height" : 16
+    }, {
+      "top" : 203,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 64,
+      "height" : 16
+    }, {
+      "top" : 225,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 16
+    }, {
+      "top" : 248,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 16
+    }, {
+      "top" : 270,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[6]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 16
+    }, {
+      "top" : 293,
+      "left" : 495,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[7]/TD[1]/A[1]",
+      "width" : 67,
+      "height" : 16
+    } ],
+    "fanIn" : 4,
+    "fanOut" : 4,
+    "id" : 31,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 12.0,
+    "cluster" : 31,
+    "timeAdded" : 1633554920641,
+    "nearestState" : "state23"
+  }, {
+    "name" : "state84",
+    "url" : "http://localhost:8080/jpetstore/actions/Order.action",
+    "candidateElements" : [ {
+      "top" : 99,
+      "left" : 973,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 133,
+      "height" : 16
+    }, {
+      "top" : 564,
+      "left" : 573,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/A[1]",
+      "width" : 43,
+      "height" : 18
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 84,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 52.0,
+    "cluster" : 84,
+    "timeAdded" : 1633554970279,
+    "nearestState" : "state6"
+  }, {
+    "name" : "state50",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action",
+    "candidateElements" : [ {
+      "top" : 99,
+      "left" : 973,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 133,
+      "height" : 16
+    }, {
+      "top" : 236,
+      "left" : 311,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 293,
+      "height" : 16
+    }, {
+      "top" : 124,
+      "left" : 610,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[2]/B[1]/A[1]",
+      "width" : 65,
+      "height" : 16
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 2,
+    "id" : 50,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 14.0,
+    "cluster" : 50,
+    "timeAdded" : 1633554941449,
+    "nearestState" : "state39"
+  }, {
+    "name" : "state83",
+    "url" : "http://localhost:8080/jpetstore/actions/Order.action?newOrderForm=",
+    "candidateElements" : [ {
+      "top" : 470,
+      "left" : 570,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/INPUT[1]",
+      "width" : 49,
+      "height" : 18
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 1,
+    "id" : 83,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 43.0,
+    "cluster" : 83,
+    "timeAdded" : 1633554966388,
+    "nearestState" : "state6"
+  }, {
+    "name" : "state6",
+    "url" : "http://localhost:8080/jpetstore/actions/Account.action?newAccountForm=",
+    "candidateElements" : [ {
+      "top" : 658,
+      "left" : 529,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/INPUT[1]",
+      "width" : 131,
+      "height" : 18
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 6,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 89.0,
+    "cluster" : 6,
+    "timeAdded" : 1633554874039,
+    "nearestState" : "state4"
+  }, {
+    "name" : "state5",
+    "url" : "http://localhost:8080/jpetstore/actions/Account.action?signonForm=",
+    "candidateElements" : [ {
+      "top" : 233,
+      "left" : 661,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 90,
+      "height" : 16
+    }, {
+      "top" : 215,
+      "left" : 579,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/INPUT[1]",
+      "width" : 31,
+      "height" : 18
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 2,
+    "id" : 5,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 38.0,
+    "cluster" : 5,
+    "timeAdded" : 1633554870250,
+    "nearestState" : "state2"
+  }, {
+    "name" : "index",
+    "url" : "http://localhost:8080/jpetstore/",
+    "candidateElements" : [ {
+      "top" : 71,
+      "left" : 89,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/P[1]/A[1]",
+      "width" : 96,
+      "height" : 16
+    } ],
+    "fanIn" : 0,
+    "fanOut" : 1,
+    "id" : 0,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : true,
+    "distToNearestState" : -1.0,
+    "cluster" : 0,
+    "timeAdded" : 1633554852585,
+    "nearestState" : "null"
+  }, {
+    "name" : "state8",
+    "url" : "http://localhost:8080/jpetstore/help.html",
+    "candidateElements" : [ {
+      "top" : 183,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+      "width" : 70,
+      "height" : 16
+    }, {
+      "top" : 199,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+      "width" : 63,
+      "height" : 16
+    }, {
+      "top" : 215,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+      "width" : 212,
+      "height" : 16
+    }, {
+      "top" : 231,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+      "width" : 136,
+      "height" : 16
+    }, {
+      "top" : 247,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+      "width" : 141,
+      "height" : 16
+    }, {
+      "top" : 263,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[6]/A[1]",
+      "width" : 201,
+      "height" : 16
+    }, {
+      "top" : 279,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[7]/A[1]",
+      "width" : 180,
+      "height" : 16
+    }, {
+      "top" : 295,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[8]/A[1]",
+      "width" : 206,
+      "height" : 16
+    }, {
+      "top" : 311,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[9]/A[1]",
+      "width" : 94,
+      "height" : 16
+    }, {
+      "top" : 327,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[10]/A[1]",
+      "width" : 126,
+      "height" : 16
+    }, {
+      "top" : 343,
+      "left" : 114,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/UL[1]/LI[11]/A[1]",
+      "width" : 89,
+      "height" : 16
+    }, {
+      "top" : 380,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H2[1]/A[1]",
+      "width" : 0,
+      "height" : 25
+    }, {
+      "top" : 498,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H2[2]/A[1]",
+      "width" : 0,
+      "height" : 25
+    }, {
+      "top" : 651,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H2[3]/A[1]",
+      "width" : 23,
+      "height" : 48
+    }, {
+      "top" : 762,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H4[1]/A[1]",
+      "width" : 0,
+      "height" : 16
+    }, {
+      "top" : 970,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H4[2]/A[1]",
+      "width" : 0,
+      "height" : 16
+    }, {
+      "top" : 1072,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H2[4]/A[1]",
+      "width" : 0,
+      "height" : 25
+    }, {
+      "top" : 1115,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H4[3]/A[1]",
+      "width" : 0,
+      "height" : 16
+    }, {
+      "top" : 1307,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H4[4]/A[1]",
+      "width" : 0,
+      "height" : 16
+    }, {
+      "top" : 1453,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H4[5]/A[1]",
+      "width" : 0,
+      "height" : 16
+    }, {
+      "top" : 1664,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/H2[5]/A[1]",
+      "width" : 0,
+      "height" : 25
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 8,
+    "failedEvents" : [ "xpath /HTML[1]/BODY[1]/DIV[1]/H2[1]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H2[2]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H4[1]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H4[2]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H2[4]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H4[3]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H4[4]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H4[5]/A[1]", "xpath /HTML[1]/BODY[1]/DIV[1]/H2[5]/A[1]" ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 99.0,
+    "cluster" : 8,
+    "timeAdded" : 1633554879708,
+    "nearestState" : "index"
+  }, {
+    "name" : "state2",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action",
+    "candidateElements" : [ {
+      "top" : 47,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+      "width" : 287,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 551,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 16,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 576,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[2]",
+      "width" : 45,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 630,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[3]",
+      "width" : 8,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 492,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[1]",
+      "width" : 26,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 527,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[2]",
+      "width" : 30,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 566,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[3]",
+      "width" : 52,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 627,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[4]",
+      "width" : 28,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 664,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[5]",
+      "width" : 33,
+      "height" : 16
+    }, {
+      "top" : 112,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 148,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[2]",
+      "width" : 46,
+      "height" : 16
+    }, {
+      "top" : 184,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[3]",
+      "width" : 43,
+      "height" : 16
+    }, {
+      "top" : 220,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[4]",
+      "width" : 78,
+      "height" : 16
+    }, {
+      "top" : 256,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[5]",
+      "width" : 50,
+      "height" : 16
+    }, {
+      "top" : 24,
+      "left" : 969,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[3]/DIV[1]/FORM[1]/INPUT[2]",
+      "width" : 56,
+      "height" : 19
+    } ],
+    "fanIn" : 0,
+    "fanOut" : 12,
+    "id" : 2,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : true,
+    "distToNearestState" : 83.0,
+    "cluster" : 2,
+    "timeAdded" : 1633554859094,
+    "nearestState" : "index"
+  }, {
+    "name" : "state4",
+    "url" : "http://localhost:8080/jpetstore/actions/Cart.action?viewCart=",
+    "candidateElements" : [ {
+      "top" : 47,
+      "left" : 74,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+      "width" : 287,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 551,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 16,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 576,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[2]",
+      "width" : 45,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 492,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[1]",
+      "width" : 26,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 527,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[2]",
+      "width" : 30,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 566,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[3]",
+      "width" : 52,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 627,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[4]",
+      "width" : 28,
+      "height" : 16
+    }, {
+      "top" : 74,
+      "left" : 664,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[4]/A[5]",
+      "width" : 33,
+      "height" : 16
+    }, {
+      "top" : 99,
+      "left" : 973,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 133,
+      "height" : 16
+    }, {
+      "top" : 203,
+      "left" : 295,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/INPUT[1]",
+      "width" : 64,
+      "height" : 18
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 2,
+    "id" : 4,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 54.0,
+    "cluster" : 4,
+    "timeAdded" : 1633554865171,
+    "nearestState" : "state2"
+  }, {
+    "name" : "state114",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action",
+    "candidateElements" : [ {
+      "top" : 25,
+      "left" : 504,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 16,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 529,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[2]",
+      "width" : 56,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 594,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[3]",
+      "width" : 74,
+      "height" : 16
+    }, {
+      "top" : 25,
+      "left" : 677,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/A[4]",
+      "width" : 8,
+      "height" : 16
+    }, {
+      "top" : 128,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 164,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[2]",
+      "width" : 46,
+      "height" : 16
+    }, {
+      "top" : 200,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[3]",
+      "width" : 43,
+      "height" : 16
+    }, {
+      "top" : 236,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[4]",
+      "width" : 78,
+      "height" : 16
+    }, {
+      "top" : 272,
+      "left" : 82,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[5]",
+      "width" : 50,
+      "height" : 16
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 1,
+    "id" : 114,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 4.0,
+    "cluster" : 114,
+    "timeAdded" : 1633554998924,
+    "nearestState" : "state2"
+  }, {
+    "name" : "state104",
+    "url" : "http://localhost:8080/jpetstore/actions/Order.action?newOrder=&confirmed=true",
+    "candidateElements" : [ {
+      "top" : 143,
+      "left" : 973,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 133,
+      "height" : 16
+    }, {
+      "top" : 735,
+      "left" : 352,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[26]/TD[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    } ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 104,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 63.0,
+    "cluster" : 104,
+    "timeAdded" : 1633554987734,
+    "nearestState" : "state84"
+  }, {
+    "name" : "state115",
+    "url" : "http://localhost:8080/jpetstore/actions/Cart.action?viewCart=",
+    "candidateElements" : [ ],
+    "fanIn" : 1,
+    "fanOut" : 0,
+    "id" : 115,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 3.0,
+    "cluster" : 115,
+    "timeAdded" : 1633555002774,
+    "nearestState" : "state4"
+  }, {
+    "name" : "state24",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-SW-01",
+    "candidateElements" : [ {
+      "top" : 99,
+      "left" : 1011,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 95,
+      "height" : 16
+    }, {
+      "top" : 181,
+      "left" : 409,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 179,
+      "left" : 719,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[5]/A[1]",
+      "width" : 61,
+      "height" : 18
+    }, {
+      "top" : 203,
+      "left" : 409,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 201,
+      "left" : 719,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[5]/A[1]",
+      "width" : 61,
+      "height" : 18
+    } ],
+    "fanIn" : 10,
+    "fanOut" : 2,
+    "id" : 24,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 20.0,
+    "cluster" : 24,
+    "timeAdded" : 1633554907439,
+    "nearestState" : "state23"
+  }, {
+    "name" : "state23",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=FISH",
+    "candidateElements" : [ {
+      "top" : 181,
+      "left" : 518,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 16
+    }, {
+      "top" : 203,
+      "left" : 518,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 16
+    }, {
+      "top" : 225,
+      "left" : 518,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/A[1]",
+      "width" : 60,
+      "height" : 16
+    }, {
+      "top" : 248,
+      "left" : 518,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[5]/TD[1]/A[1]",
+      "width" : 60,
+      "height" : 16
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 4,
+    "id" : 23,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 31.0,
+    "cluster" : 23,
+    "timeAdded" : 1633554904109,
+    "nearestState" : "state4"
+  }, {
+    "name" : "state34",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-PO-02",
+    "candidateElements" : [ {
+      "top" : 99,
+      "left" : 1002,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 105,
+      "height" : 16
+    }, {
+      "top" : 181,
+      "left" : 397,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 179,
+      "left" : 731,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[5]/A[1]",
+      "width" : 61,
+      "height" : 18
+    } ],
+    "fanIn" : 3,
+    "fanOut" : 1,
+    "id" : 34,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 13.0,
+    "cluster" : 34,
+    "timeAdded" : 1633554925556,
+    "nearestState" : "state24"
+  }, {
+    "name" : "state39",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=REPTILES",
+    "candidateElements" : [ {
+      "top" : 181,
+      "left" : 517,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 65,
+      "height" : 16
+    }, {
+      "top" : 203,
+      "left" : 517,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]",
+      "width" : 58,
+      "height" : 16
+    } ],
+    "fanIn" : 6,
+    "fanOut" : 2,
+    "id" : 39,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 12.0,
+    "cluster" : 39,
+    "timeAdded" : 1633554931560,
+    "nearestState" : "state23"
+  }, {
+    "name" : "state27",
+    "url" : "http://localhost:8080/jpetstore/actions/Cart.action?addItemToCart=&workingItemId=EST-1",
+    "candidateElements" : [ {
+      "top" : 181,
+      "left" : 158,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/A[1]",
+      "width" : 40,
+      "height" : 16
+    }, {
+      "top" : 179,
+      "left" : 678,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[2]/TD[8]/A[1]",
+      "width" : 46,
+      "height" : 18
+    }, {
+      "top" : 228,
+      "left" : 386,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/A[1]",
+      "width" : 108,
+      "height" : 17
+    }, {
+      "top" : 208,
+      "left" : 273,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/INPUT[1]",
+      "width" : 64,
+      "height" : 18
+    } ],
+    "fanIn" : 0,
+    "fanOut" : 3,
+    "id" : 27,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 18.0,
+    "cluster" : 27,
+    "timeAdded" : 1633554914878,
+    "nearestState" : "state4"
+  }, {
+    "name" : "state25",
+    "url" : "http://localhost:8080/jpetstore/actions/Catalog.action?viewItem=&itemId=EST-1",
+    "candidateElements" : [ {
+      "top" : 99,
+      "left" : 983,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/A[1]",
+      "width" : 124,
+      "height" : 16
+    }, {
+      "top" : 352,
+      "left" : 374,
+      "xpath" : "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[7]/TD[1]/A[1]",
+      "width" : 61,
+      "height" : 18
+    } ],
+    "fanIn" : 2,
+    "fanOut" : 1,
+    "id" : 25,
+    "failedEvents" : [ ],
+    "hasNearDuplicate" : false,
+    "distToNearestState" : 20.0,
+    "cluster" : 25,
+    "timeAdded" : 1633554910816,
+    "nearestState" : "state23"
+  } ],
+  "links" : [ {
+    "source" : 4,
+    "target" : 5,
+    "text" : "Sign In",
+    "element" : "Element{node=[A: null], tag=A, text=Sign In, attributes={anyaccess=none, evlist=false, href=/jpetstore/actions/Account.action?signonForm=}}",
+    "eventType" : "click"
+  }, {
+    "source" : 5,
+    "target" : 6,
+    "text" : "Register Now!",
+    "element" : "Element{node=[A: null], tag=A, text=Register Now!, attributes={evlist=false, href=/jpetstore/actions/Account.action?newAccountForm=}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 8,
+    "text" : "?",
+    "element" : "Element{node=[A: null], tag=A, text=?, attributes={evlist=false, href=../help.html}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 23,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=FISH}}",
+    "eventType" : "click"
+  }, {
+    "source" : 23,
+    "target" : 24,
+    "text" : "FI-SW-01",
+    "element" : "Element{node=[A: null], tag=A, text=FI-SW-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-SW-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 24,
+    "target" : 25,
+    "text" : "EST-1",
+    "element" : "Element{node=[A: null], tag=A, text=EST-1, attributes={anyaccess=none, evlist=false, href=/jpetstore/actions/Catalog.action?viewItem=&itemId=EST-1}}",
+    "eventType" : "click"
+  }, {
+    "source" : 25,
+    "target" : 24,
+    "text" : "Return to FI-SW-01",
+    "element" : "Element{node=[A: null], tag=A, text=Return to FI-SW-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-SW-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 27,
+    "target" : 25,
+    "text" : "EST-1",
+    "element" : "Element{node=[A: null], tag=A, text=EST-1, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewItem=&itemId=EST-1}}",
+    "eventType" : "click"
+  }, {
+    "source" : 4,
+    "target" : 31,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={anyaccess=none, evlist=false, href=/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS}}",
+    "eventType" : "click"
+  }, {
+    "source" : 31,
+    "target" : 24,
+    "text" : "K9-BD-01",
+    "element" : "Element{node=[A: null], tag=A, text=K9-BD-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-BD-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 24,
+    "target" : 31,
+    "text" : "Return to FISH",
+    "element" : "Element{node=[A: null], tag=A, text=Return to FISH, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewCategory=&categoryId=FISH}}",
+    "eventType" : "click"
+  }, {
+    "source" : 31,
+    "target" : 34,
+    "text" : "K9-PO-02",
+    "element" : "Element{node=[A: null], tag=A, text=K9-PO-02, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-PO-02}}",
+    "eventType" : "click"
+  }, {
+    "source" : 34,
+    "target" : 31,
+    "text" : "Return to DOGS",
+    "element" : "Element{node=[A: null], tag=A, text=Return to DOGS, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS}}",
+    "eventType" : "click"
+  }, {
+    "source" : 31,
+    "target" : 24,
+    "text" : "K9-DL-01",
+    "element" : "Element{node=[A: null], tag=A, text=K9-DL-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-DL-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 39,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=REPTILES}}",
+    "eventType" : "click"
+  }, {
+    "source" : 39,
+    "target" : 24,
+    "text" : "RP-SN-01",
+    "element" : "Element{node=[A: null], tag=A, text=RP-SN-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=RP-SN-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 39,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=CATS}}",
+    "eventType" : "click"
+  }, {
+    "source" : 39,
+    "target" : 24,
+    "text" : "RP-LI-02",
+    "element" : "Element{node=[A: null], tag=A, text=RP-LI-02, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=RP-LI-02}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 39,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=BIRDS}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 50,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=searchProducts, type=submit, value=Search}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 23,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=FISH}}",
+    "eventType" : "click"
+  }, {
+    "source" : 23,
+    "target" : 34,
+    "text" : "FI-SW-02",
+    "element" : "Element{node=[A: null], tag=A, text=FI-SW-02, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-SW-02}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 31,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=DOGS}}",
+    "eventType" : "click"
+  }, {
+    "source" : 31,
+    "target" : 34,
+    "text" : "K9-RT-01",
+    "element" : "Element{node=[A: null], tag=A, text=K9-RT-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-RT-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 39,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=CATS}}",
+    "eventType" : "click"
+  }, {
+    "source" : 23,
+    "target" : 24,
+    "text" : "FI-FW-01",
+    "element" : "Element{node=[A: null], tag=A, text=FI-FW-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-FW-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 50,
+    "target" : 24,
+    "text" : "Friendly dog from England",
+    "element" : "Element{node=[A: null], tag=A, text=Friendly dog from England, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-BD-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 39,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=REPTILES}}",
+    "eventType" : "click"
+  }, {
+    "source" : 27,
+    "target" : 83,
+    "text" : "Proceed to Checkout",
+    "element" : "Element{node=[A: null], tag=A, text=Proceed to Checkout, attributes={class=Button, evlist=false, href=/jpetstore/actions/Order.action?newOrderForm=}}",
+    "eventType" : "click"
+  }, {
+    "source" : 83,
+    "target" : 84,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=newOrder, type=submit, value=Continue}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 39,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Catalog.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCategory=&categoryId=BIRDS}}",
+    "eventType" : "click"
+  }, {
+    "source" : 23,
+    "target" : 24,
+    "text" : "FI-FW-02",
+    "element" : "Element{node=[A: null], tag=A, text=FI-FW-02, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=FI-FW-02}}",
+    "eventType" : "click"
+  }, {
+    "source" : 50,
+    "target" : 24,
+    "text" : "K9-BD-01",
+    "element" : "Element{node=[A: null], tag=A, text=K9-BD-01, attributes={evlist=false, href=/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-BD-01}}",
+    "eventType" : "click"
+  }, {
+    "source" : 84,
+    "target" : 104,
+    "text" : "Confirm",
+    "element" : "Element{node=[A: null], tag=A, text=Confirm, attributes={class=Button, evlist=false, href=/jpetstore/actions/Order.action?newOrder=&confirmed=true}}",
+    "eventType" : "click"
+  }, {
+    "source" : 2,
+    "target" : 4,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Cart.action;jsessionid=CBE38E7BFD1E93E99C2B87D154700A6F?viewCart=}}",
+    "eventType" : "click"
+  }, {
+    "source" : 27,
+    "target" : 4,
+    "text" : "Remove",
+    "element" : "Element{node=[A: null], tag=A, text=Remove, attributes={class=Button, evlist=false, href=/jpetstore/actions/Cart.action?removeItemFromCart=&workingItemId=EST-1}}",
+    "eventType" : "click"
+  }, {
+    "source" : 5,
+    "target" : 114,
+    "text" : "",
+    "element" : "Element{node=[INPUT: null], tag=INPUT, text=, attributes={evlist=false, name=signon, type=submit, value=Login}}",
+    "eventType" : "click"
+  }, {
+    "source" : 114,
+    "target" : 115,
+    "text" : "",
+    "element" : "Element{node=[A: null], tag=A, text=, attributes={evlist=false, href=/jpetstore/actions/Cart.action?viewCart=}}",
+    "eventType" : "click"
+  }, {
+    "source" : 0,
+    "target" : 114,
+    "text" : "Enter the Store",
+    "element" : "Element{node=[A: null], tag=A, text=Enter the Store, attributes={evlist=false, href=actions/Catalog.action}}",
+    "eventType" : "click"
+  } ]
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "xpath": "/HTML[1]/BODY[1]",
+    "id": 0,
+    "parentId": -1,
+    "rect": {
+      "x": 8,
+      "y": 8,
+      "width": 1184,
+      "height": 874
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/H1[1]",
+    "id": 1,
+    "parentId": 0,
+    "rect": {
+      "x": 8,
+      "y": 8,
+      "width": 1184,
+      "height": 37
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/P[1]",
+    "id": 3,
+    "parentId": 0,
+    "rect": {
+      "x": 8,
+      "y": 66,
+      "width": 1184,
+      "height": 18
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/ADDRESS[1]",
+    "id": 5,
+    "parentId": 0,
+    "rect": {
+      "x": 8,
+      "y": 110,
+      "width": 1184,
+      "height": 18
+    }
+  }
+]

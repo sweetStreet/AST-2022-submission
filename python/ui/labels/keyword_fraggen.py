@@ -121,7 +121,7 @@ class KeywordGen:
             return "index"
         return "state" + str(state_id)
 
-# for P in 'addressbook' 'claroline' 'collabtive' 'dimeshift' 'jpetstore' 'mantisbt' 'mrbs' 'pagekit' 'petclinic' 'phoenix' 'ppma' 'retroboard' 'splittypie'; do python -m ui.labels.keyword_fraggen --project_name=$P label_with_preprocess --algorithm="keybert"; done
+    # for P in 'addressbook' 'claroline' 'collabtive' 'dimeshift' 'jpetstore' 'mantisbt' 'mrbs' 'pagekit' 'petclinic' 'phoenix' 'ppma' 'retroboard' 'splittypie'; do python -m ui.labels.keyword_fraggen --project_name=$P label_with_preprocess --algorithm="keybert"; done
     def label_with_preprocess(self, algorithm: str):
         os.environ["TOKENIZERS_PARALLELISM"] = "false"
         logging_file = Macros.results_dir / algorithm / f"{self.project_name}-labels.log"
@@ -166,6 +166,37 @@ class KeywordGen:
                      IOUtils.Format.txtList,
                      append=True)
         dump_xlsx(Macros.results_dir/algorithm/f"{self.project_name}-labels.xlsx", result)
+
+    def data_count_attributes_per_project(self, projects: List[str]):
+        '''
+        :param projects: name of the projects to rank the attributes
+        '''
+        data = collections.defaultdict(list)
+        keyset = set()
+        for project in projects:
+            data_source_counter = IOUtils.load(f"{Macros.results_dir}/metrics/{project}-label-source.json")
+            # ordered_data_source_counter = collections.OrderedDict(sorted(data_source_counter.items()))
+            ordered_data_source_counter = collections.OrderedDict(
+                sorted(data_source_counter.items(), key=lambda item: item[1], reverse=True))
+            data[project] = ordered_data_source_counter
+            keyset.update(ordered_data_source_counter.keys())
+        large_dict = collections.Counter()
+        for project in projects:
+            for key in keyset:
+                if key not in data[project]:
+                    data[project][key] = 0
+                else:
+                    large_dict[key] += data[project][key]
+        sorted_keys = list(dict(sorted(large_dict.items(), key=lambda item: item[1], reverse=True)).keys())
+        reordered_data = collections.OrderedDict()
+        for project in projects:
+            reordered_data[project] = dict()
+            for key in sorted_keys:
+                if key in data[project]:
+                    reordered_data[project][key] = data[project][key]
+                else:
+                    reordered_data[project][key] = 0
+        return reordered_data, list(sorted_keys)
 
     def xlsx_to_json(self, crawl_paths_folder: str = "", method: str = "PCFG"):
         logging_file = Macros.results_dir / "paths" / f"{self.project_name}-labels-offline-log.log"

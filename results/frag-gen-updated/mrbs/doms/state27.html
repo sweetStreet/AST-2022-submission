@@ -1,0 +1,819 @@
+<html><head>
+  
+  <meta charset="utf-8">
+  <title>Meeting Room Booking System</title>
+  
+      <link href="jquery/ui/css/sunny/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css">
+    
+    <link href="jquery/datatables/css/mrbs-page.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/mrbs-table.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/ColReorder.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/ColVis.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="css/mrbs.css.php" type="text/css">
+        <link rel="stylesheet" media="print" href="css/mrbs-print.css.php" type="text/css">
+    <!--[if IE]>
+    <link rel="stylesheet" href="css/mrbs-ie.css" type="text/css">
+    <![endif]-->
+        <!--[if IE 8]>
+    <link rel="stylesheet" href="css/mrbs-ie8.css" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/mrbs-ielte8.css" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="css/mrbs-ielte7.css.php" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="css/mrbs-ielte6.css" type="text/css">
+    <![endif]-->
+    
+    <meta name="robots" content="noindex">
+    
+<script type="text/javascript" src="jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-1.8.22.custom.min.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-i18n.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-datepicker-en.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-datepicker-en-US.js"></script>
+     
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE6 = false;
+  //]]>
+</script>
+<!--[if lte IE 6]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE6 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE7 = false;
+  //]]>
+</script>
+<!--[if lte IE 7]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE7 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE8 = false;
+  //]]>
+</script>
+<!--[if lte IE 8]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE8 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+    function init(params)
+  {
+  }
+  //]]>
+</script>
+    
+  <script type="text/javascript" src="js/edit_entry.js.php?area=2"></script>
+  <script type="text/javascript" src="js/functions.js.php?area=2"></script>
+<script type="text/javascript" src="js/datepicker.js.php?area=2"></script>
+<script type="text/javascript" src="js/general.js.php?area=2"></script>
+    
+<script type="text/javascript">
+
+//<![CDATA[
+
+
+
+
+
+$(window).load(function() {
+
+  var args = {day: '13',
+              month: '3',
+              year: '2022',
+              area: '2',
+              room: '5',
+              page: 'edit_entry'};
+    init(args);
+
+});
+
+
+//]]>
+</script>  
+  </head>
+  
+  <body class="edit_entry js">
+    <script type="text/javascript">
+      //<![CDATA[
+      $('body').addClass('js').removeClass('non_js');
+      //]]>
+    </script> 
+
+    <div class="screenonly">
+
+[Warning: Server failed to set locale to 'en_US.UTF-8']
+  <table id="banner">
+    <tbody><tr>
+      <td id="company">
+        <div>
+          <div id="logo">
+<span>Your Company</span>
+</div>
+          <div id="mrbs">
+            <a href="index.php">Meeting Room Booking System</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <form action="day.php" method="get" id="Form1">
+          <div>
+            <span id="dateselector"><input class="date hasDatepicker" type="text" id="datepicker">
+<input type="hidden" id="datepicker_alt" name="_alt" value="2022-3-13" disabled="disabled">
+<input type="hidden" id="datepicker_alt_day" name="day" value="13">
+<input type="hidden" id="datepicker_alt_month" name="month" value="3">
+<input type="hidden" id="datepicker_alt_year" name="year" value="2022">
+</span>
+  <script type="text/javascript">
+
+  $(function() {
+    $("#datepicker").datepicker({yearRange: '2016:2027',
+                                                       altField: '#datepicker_alt'
+                                                       , onClose: function(dateText, inst) {datepicker_close(dateText, inst, 'Form1');}                                                      });
+        var initial_date = new Date(2022, 2, 13);
+    var dateFormat = $("#datepicker").datepicker( "option", "dateFormat" );
+    document.getElementById('datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('datepicker_alt_day').value = 13;
+    document.getElementById('datepicker_alt_month').value = 3;
+    document.getElementById('datepicker_alt_year').value = 2022;
+    $(".ui-datepicker").draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('dateselector');
+  var datepicker_html = '<input class="date" type="text" id="datepicker">\n';
+    datepicker_html += '<input type="hidden" id="datepicker_alt"'
+  datepicker_html += ' name="_alt"';
+  datepicker_html += ' value="2022-3-13"';
+  datepicker_html += ' disabled="disabled">\n';
+    datepicker_html += '<input type="hidden" id="datepicker_alt_day" name="day">\n';
+  datepicker_html += '<input type="hidden" id="datepicker_alt_month" name="month">\n';
+  datepicker_html += '<input type="hidden" id="datepicker_alt_year" name="year">\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  </script>
+  <input type="hidden" name="area" value="2">
+<input type="hidden" name="room" value="5">
+<input type="submit" value="goto">
+           </div>
+        </form>
+              </td>
+      <td>
+<a href="help.php?day=13&amp;month=3&amp;year=2022&amp;area=2&amp;room=5">Help</a>
+</td>
+<td>
+<a href="admin.php?day=13&amp;month=3&amp;year=2022&amp;area=2&amp;room=5">Rooms</a>
+</td>
+<td>
+<a href="report.php?day=13&amp;month=3&amp;year=2022&amp;area=2&amp;room=5">Report</a>
+</td>
+      
+      <td>
+        <form id="header_search" method="get" action="search.php">
+          <div>
+            <a href="search.php?advanced=1">Search:</a>
+            <input type="search" name="search_str" value="" required="">
+            <input type="hidden" name="day" value="13">
+            <input type="hidden" name="month" value="3">
+            <input type="hidden" name="year" value="2022">
+            <input type="hidden" name="area" value="2">
+<input type="hidden" name="room" value="5">
+          </div>
+        <input type="hidden" name="datatable" value="1"></form>
+      </td>
+      <td>
+<div id="logon_box">
+
+                <a href="report.php?from_day=13&amp;from_month=3&amp;from_year=2022&amp;to_day=1&amp;to_month=12&amp;to_year=2030&amp;areamatch=&amp;roommatch=&amp;namematch=&amp;descrmatch=&amp;summarize=1&amp;sortby=r&amp;display=d&amp;sumby=d&amp;creatormatch=administrator" title="Click to display all my upcoming entries">You are administrator</a>
+                <form method="post" action="admin.php">
+                  <div>
+                    <input type="hidden" name="TargetURL" value="edit_entry.php?room=5&amp;area=2&amp;year=2022&amp;month=3&amp;day=13&amp;hour=7&amp;minute=0">
+                    <input type="hidden" name="Action" value="SetName">
+                    <input type="hidden" name="NewUserName" value="">
+                    <input type="hidden" name="NewUserPassword" value="">
+                    <input type="submit" value=" Log Off ">
+                  </div>
+                </form>
+</div>
+</td>
+    </tr>
+  </tbody></table>
+</div>
+
+<div id="contents">
+
+<script type="text/javascript">
+//<![CDATA[
+
+var currentArea = 2;
+var areas = [];
+areas[1] = [];
+areas[1]['id'] = 1;
+areas[1]['area_name'] = 'Building 1';
+areas[1]['resolution'] = 1800;
+areas[1]['default_duration'] = 3600;
+areas[1]['enable_periods'] = false;
+areas[1]['morningstarts'] = 7;
+areas[1]['morningstarts_minutes'] = 0;
+areas[1]['eveningends'] = 18;
+areas[1]['eveningends_minutes'] = 30;
+areas[1]['max_duration_enabled'] = false;
+areas[1]['max_duration_secs'] = 7200;
+areas[1]['max_duration_periods'] = 2;
+areas[1]['max_duration_qty'] = 2;
+areas[1]['max_duration_units'] = 'hours';
+areas[2] = [];
+areas[2]['id'] = 2;
+areas[2]['area_name'] = 'Building 2';
+areas[2]['resolution'] = 1800;
+areas[2]['default_duration'] = 3600;
+areas[2]['enable_periods'] = false;
+areas[2]['morningstarts'] = 7;
+areas[2]['morningstarts_minutes'] = 0;
+areas[2]['eveningends'] = 18;
+areas[2]['eveningends_minutes'] = 30;
+areas[2]['max_duration_enabled'] = false;
+areas[2]['max_duration_secs'] = 7200;
+areas[2]['max_duration_periods'] = 2;
+areas[2]['max_duration_qty'] = 2;
+areas[2]['max_duration_units'] = 'hours';
+
+// set up some global variables for use by OnAllDayClick(). 
+var old_start, old_end;
+
+// Executed when the user clicks on the all_day checkbox.
+function OnAllDayClick(el)
+{
+  var form = document.forms["main"];
+  if (form)
+  {
+    var startSelect = form["start_seconds" + currentArea];
+    var endSelect = form["end_seconds" + currentArea];
+    var allDay = form["all_day" + currentArea];
+    var i;
+    if (allDay.checked) // If checking the box...
+    {
+            old_start = startSelect.options[startSelect.selectedIndex].value;
+      startSelect.selectedIndex = 0;
+      startSelect.disabled = true;
+    
+      old_end = endSelect.options[endSelect.selectedIndex].value;
+      endSelect.selectedIndex = endSelect.options.length - 1;
+      endSelect.disabled = true;
+    }
+    else      {
+      startSelect.disabled = false;
+      for (i=0; i<startSelect.options.length; i++)
+      {
+        if (startSelect.options[i].value == old_start)
+        {
+          startSelect.options.selectedIndex = i;
+          break;
+        }
+      }     
+      endSelect.disabled = false;
+      for (i=0; i<endSelect.options.length; i++)
+      {
+        if (endSelect.options[i].value == old_end)
+        {
+          endSelect.options.selectedIndex = i;
+          break;
+        }
+      } 
+      prevStartValue = undefined;      }
+    adjustSlotSelectors(form);   }
+}
+//]]>
+</script>
+
+
+
+<form class="form_general" id="main" action="edit_entry_handler.php" method="post">
+  <fieldset>
+  <legend>Add Entry</legend>
+
+<div id="div_name">
+<label for="name">Brief description:</label>
+<input type="text" required="" pattern="\s*\S+.*" id="name" name="name" maxlength="80" value="">
+</div>
+<div id="div_description">
+<label for="description">Full description:<br>&nbsp;&nbsp;(Number of people,<br>&nbsp;&nbsp;Internal/External etc.)</label>
+<textarea id="description" name="description" rows="8" cols="40"></textarea>
+</div>
+<div id="div_start_date">
+<label>Start:</label>
+<span id="start_dateselector"><input class="date hasDatepicker" type="text" id="start_datepicker">
+<input type="hidden" id="start_datepicker_alt" name="start__alt" value="2022-3-13" disabled="disabled">
+<input type="hidden" id="start_datepicker_alt_day" name="start_day" value="13">
+<input type="hidden" id="start_datepicker_alt_month" name="start_month" value="3">
+<input type="hidden" id="start_datepicker_alt_year" name="start_year" value="2022">
+</span>
+  <script type="text/javascript">
+
+  $(function() {
+    $("#start_datepicker").datepicker({yearRange: '2016:2027',
+                                                       altField: '#start_datepicker_alt'
+                                                                                                             });
+        var initial_date = new Date(2022, 2, 13);
+    var dateFormat = $("#start_datepicker").datepicker( "option", "dateFormat" );
+    document.getElementById('start_datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('start_datepicker_alt_day').value = 13;
+    document.getElementById('start_datepicker_alt_month').value = 3;
+    document.getElementById('start_datepicker_alt_year').value = 2022;
+    $(".ui-datepicker").draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('start_dateselector');
+  var datepicker_html = '<input class="date" type="text" id="start_datepicker">\n';
+    datepicker_html += '<input type="hidden" id="start_datepicker_alt"'
+  datepicker_html += ' name="start__alt"';
+  datepicker_html += ' value="2022-3-13"';
+  datepicker_html += ' disabled="disabled">\n';
+    datepicker_html += '<input type="hidden" id="start_datepicker_alt_day" name="start_day">\n';
+  datepicker_html += '<input type="hidden" id="start_datepicker_alt_month" name="start_month">\n';
+  datepicker_html += '<input type="hidden" id="start_datepicker_alt_year" name="start_year">\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  </script>
+  <select style="display: none" disabled="disabled" id="start_seconds1" name="start_seconds" onchange="adjustSlotSelectors(this.form)">
+<option value="25200" selected="selected">07:00</option>
+<option value="27000">07:30</option>
+<option value="28800">08:00</option>
+<option value="30600">08:30</option>
+<option value="32400">09:00</option>
+<option value="34200">09:30</option>
+<option value="36000">10:00</option>
+<option value="37800">10:30</option>
+<option value="39600">11:00</option>
+<option value="41400">11:30</option>
+<option value="43200">12:00</option>
+<option value="45000">12:30</option>
+<option value="46800">13:00</option>
+<option value="48600">13:30</option>
+<option value="50400">14:00</option>
+<option value="52200">14:30</option>
+<option value="54000">15:00</option>
+<option value="55800">15:30</option>
+<option value="57600">16:00</option>
+<option value="59400">16:30</option>
+<option value="61200">17:00</option>
+<option value="63000">17:30</option>
+<option value="64800">18:00</option>
+<option value="66600">18:30</option>
+</select>
+<div class="group">
+<div id="ad1" style="display: none">
+<input id="all_day1" class="all_day checkbox" name="all_day" type="checkbox" value="yes" onclick="OnAllDayClick(this)" disabled="disabled">
+<label for="all_day1">All day</label>
+</div>
+</div>
+<select id="start_seconds2" name="start_seconds" onchange="adjustSlotSelectors(this.form)" style="width: 137px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<option value="25200">07:00</option><option value="27000">07:30</option><option value="28800">08:00</option><option value="30600">08:30</option><option value="32400">09:00</option><option value="34200">09:30</option><option value="36000">10:00</option><option value="37800">10:30</option><option value="39600">11:00</option><option value="41400">11:30</option><option value="43200">12:00</option><option value="45000">12:30</option><option value="46800">13:00</option><option value="48600">13:30</option><option value="50400">14:00</option><option value="52200">14:30</option><option value="54000">15:00</option><option value="55800">15:30</option><option value="57600">16:00</option><option value="59400">16:30</option><option value="61200">17:00</option><option value="63000">17:30</option><option value="64800">18:00</option><option value="66600">18:30</option></select>
+<div class="group">
+<div id="ad2">
+<input id="all_day2" class="all_day checkbox" name="all_day" type="checkbox" value="yes" onclick="OnAllDayClick(this)">
+<label for="all_day2">All day</label>
+</div>
+</div>
+</div>
+<div id="div_end_date">
+<label>End:</label>
+<div>
+<span id="end_dateselector"><input class="date hasDatepicker" type="text" id="end_datepicker">
+<input type="hidden" id="end_datepicker_alt" name="end__alt" value="2022-3-13" disabled="disabled">
+<input type="hidden" id="end_datepicker_alt_day" name="end_day" value="13">
+<input type="hidden" id="end_datepicker_alt_month" name="end_month" value="3">
+<input type="hidden" id="end_datepicker_alt_year" name="end_year" value="2022">
+</span>
+  <script type="text/javascript">
+
+  $(function() {
+    $("#end_datepicker").datepicker({yearRange: '2016:2027',
+                                                       altField: '#end_datepicker_alt'
+                                                                                                             });
+        var initial_date = new Date(2022, 2, 13);
+    var dateFormat = $("#end_datepicker").datepicker( "option", "dateFormat" );
+    document.getElementById('end_datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('end_datepicker_alt_day').value = 13;
+    document.getElementById('end_datepicker_alt_month').value = 3;
+    document.getElementById('end_datepicker_alt_year').value = 2022;
+    $(".ui-datepicker").draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('end_dateselector');
+  var datepicker_html = '<input class="date" type="text" id="end_datepicker">\n';
+    datepicker_html += '<input type="hidden" id="end_datepicker_alt"'
+  datepicker_html += ' name="end__alt"';
+  datepicker_html += ' value="2022-3-13"';
+  datepicker_html += ' disabled="disabled">\n';
+    datepicker_html += '<input type="hidden" id="end_datepicker_alt_day" name="end_day">\n';
+  datepicker_html += '<input type="hidden" id="end_datepicker_alt_month" name="end_month">\n';
+  datepicker_html += '<input type="hidden" id="end_datepicker_alt_year" name="end_year">\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  </script>
+  </div>
+<select style="display: none" disabled="disabled" id="end_seconds1" name="end_seconds" onchange="adjustSlotSelectors(this.form)">
+<option value="25200">07:00</option>
+<option value="27000">07:30</option>
+<option value="28800" selected="selected">08:00</option>
+<option value="30600">08:30</option>
+<option value="32400">09:00</option>
+<option value="34200">09:30</option>
+<option value="36000">10:00</option>
+<option value="37800">10:30</option>
+<option value="39600">11:00</option>
+<option value="41400">11:30</option>
+<option value="43200">12:00</option>
+<option value="45000">12:30</option>
+<option value="46800">13:00</option>
+<option value="48600">13:30</option>
+<option value="50400">14:00</option>
+<option value="52200">14:30</option>
+<option value="54000">15:00</option>
+<option value="55800">15:30</option>
+<option value="57600">16:00</option>
+<option value="59400">16:30</option>
+<option value="61200">17:00</option>
+<option value="63000">17:30</option>
+<option value="64800">18:00</option>
+<option value="66600">18:30</option>
+<option value="68400">19:00</option>
+</select>
+<select id="end_seconds2" name="end_seconds" onchange="adjustSlotSelectors(this.form)" style="width: 137px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<option value="27000">07:30&nbsp;&nbsp;(30 minutes)</option><option value="28800">08:00&nbsp;&nbsp;(1 hour)</option><option value="30600">08:30&nbsp;&nbsp;(1.5 hours)</option><option value="32400">09:00&nbsp;&nbsp;(2 hours)</option><option value="34200">09:30&nbsp;&nbsp;(2.5 hours)</option><option value="36000">10:00&nbsp;&nbsp;(3 hours)</option><option value="37800">10:30&nbsp;&nbsp;(3.5 hours)</option><option value="39600">11:00&nbsp;&nbsp;(4 hours)</option><option value="41400">11:30&nbsp;&nbsp;(4.5 hours)</option><option value="43200">12:00&nbsp;&nbsp;(5 hours)</option><option value="45000">12:30&nbsp;&nbsp;(5.5 hours)</option><option value="46800">13:00&nbsp;&nbsp;(6 hours)</option><option value="48600">13:30&nbsp;&nbsp;(6.5 hours)</option><option value="50400">14:00&nbsp;&nbsp;(7 hours)</option><option value="52200">14:30&nbsp;&nbsp;(7.5 hours)</option><option value="54000">15:00&nbsp;&nbsp;(8 hours)</option><option value="55800">15:30&nbsp;&nbsp;(8.5 hours)</option><option value="57600">16:00&nbsp;&nbsp;(9 hours)</option><option value="59400">16:30&nbsp;&nbsp;(9.5 hours)</option><option value="61200">17:00&nbsp;&nbsp;(10 hours)</option><option value="63000">17:30&nbsp;&nbsp;(10.5 hours)</option><option value="64800">18:00&nbsp;&nbsp;(11 hours)</option><option value="66600">18:30&nbsp;&nbsp;(11.5 hours)</option><option value="68400">19:00&nbsp;&nbsp;(12 hours)</option></select>
+<span id="end_time_error" class="error"></span>
+</div>
+<div id="div_areas">
+<label for="area">Area:</label><select id="area" name="area"><option value="1">Building 1</option><option value="2">Building 2</option></select></div>
+ 
+      <script type="text/javascript">
+      //<![CDATA[
+      
+      var area = 2;
+      
+      function changeRooms( formObj )
+      {
+        areasObj = eval( "formObj.area" );
+
+        area = areasObj[areasObj.selectedIndex].value;
+        roomsObj = eval( "formObj.elements['rooms']" );
+
+        // remove all entries
+        roomsNum = roomsObj.length;
+        for (i=(roomsNum-1); i >= 0; i--)
+        {
+          roomsObj.options[i] = null;
+        }
+        // add entries based on area selected
+        switch (area){
+          case "1":
+roomsObj.options[0] = new Option("Room 4",4);
+roomsObj.options[1] = new Option("Room 1",1);
+roomsObj.options[2] = new Option("Room 3",3);
+roomsObj.options[3] = new Option("Room 2",2);
+roomsObj.options[0].selected = true;
+break;
+case "2":
+roomsObj.options[0] = new Option("Room 6",10);
+roomsObj.options[1] = new Option("Room 3",7);
+roomsObj.options[2] = new Option("Room 5",9);
+roomsObj.options[3] = new Option("Room 2",6);
+roomsObj.options[4] = new Option("Room 4",8);
+roomsObj.options[5] = new Option("Room 1",5);
+roomsObj.options[0].selected = true;
+break;
+        } //switch
+        
+                var oldStartId = "start_seconds" + currentArea;
+        var oldEndId = "end_seconds" + currentArea;
+        var newStartId = "start_seconds" + area;
+        var newEndId = "end_seconds" + area;
+        var oldAllDayId = "ad" + currentArea;
+        var newAllDayId = "ad" + area;
+        var oldAreaStartValue = formObj[oldStartId].options[formObj[oldStartId].selectedIndex].value;
+        var oldAreaEndValue = formObj[oldEndId].options[formObj[oldEndId].selectedIndex].value;
+        $("#" + oldStartId).hide()
+                           .attr('disabled', 'disabled');
+        $("#" + oldEndId).hide()
+                         .attr('disabled', 'disabled');
+        $("#" + newStartId).show()
+                           .removeAttr('disabled');
+        $("#" + newEndId).show()
+                         .removeAttr('disabled');
+                         +        $("#" + oldAllDayId).hide();
+        $("#" + newAllDayId).show();
+        if($("#all_day" + currentArea).attr('checked') == 'checked')
+        { 
+          $("#all_day" + area).attr('checked', 'checked').removeAttr('disabled');
+        }
+        else
+        {
+          $("#all_day" + area).removeAttr('checked').removeAttr('disabled');
+        }
+        $("#all_day" + currentArea).removeAttr('disabled');
+        var oldArea = currentArea;
+        currentArea = area;
+        prevStartValue = undefined;
+        adjustSlotSelectors(formObj, oldArea, oldAreaStartValue, oldAreaEndValue);
+      }
+      
+      // Create area selector, only if we have Javascript
+      var div_areas = document.getElementById('div_areas');
+      // First of all create a label and insert it into the <div>
+      var area_label = document.createElement('label');
+      var area_label_text = document.createTextNode('Area:');
+      area_label.appendChild(area_label_text);
+      area_label.setAttribute('for', 'area');
+      div_areas.appendChild(area_label);
+      // Now give it a select box
+      var area_select = document.createElement('select');
+      area_select.setAttribute('id', 'area');
+      area_select.setAttribute('name', 'area');
+      area_select.onchange = function(){changeRooms(this.form)}; // setAttribute doesn't work for onChange with IE6
+      // populated with options
+      var option;
+      var option_text
+              option = document.createElement('option');
+        option.value = 1;
+        option_text = document.createTextNode('Building 1');
+                option.appendChild(option_text);
+        area_select.appendChild(option);
+                option = document.createElement('option');
+        option.value = 2;
+        option_text = document.createTextNode('Building 2');
+                  option.selected = true;
+                  option.appendChild(option_text);
+        area_select.appendChild(option);
+              // insert the <select> which we've just assembled into the <div>
+      div_areas.appendChild(area_select);
+      
+            
+      //]]>
+      </script>
+      
+      
+      <div id="div_rooms">
+<label for="rooms">Rooms:</label>
+<div class="group">
+<select id="rooms" name="rooms[]" required="" multiple="multiple" size="5">
+<option value="10">Room 6</option>
+<option value="7">Room 3</option>
+<option value="9">Room 5</option>
+<option value="6">Room 2</option>
+<option value="8">Room 4</option>
+<option selected="selected" value="5">Room 1</option>
+</select>
+<span>Use Control-Click to select more than one room</span>
+</div>
+</div>
+<div id="div_type">
+<label for="type">Type:</label>
+<select id="type" name="type">
+<option value="E">External</option>
+<option value="I" selected="selected">Internal</option>
+</select>
+</div>
+<div id="div_confirmation_status">
+<label>Confirmation status:</label>
+<div class="group">
+<label><input class="radio" name="confirmed" type="radio" value="1" checked="checked">Confirmed</label>
+<label><input class="radio" name="confirmed" type="radio" value="0">Tentative</label>
+</div>
+</div>
+<fieldset id="rep_info">
+<legend></legend>
+      <div id="rep_type">
+        <label>Repeat type:</label>
+        <div class="group">
+                <label><input class="radio" name="rep_type" type="radio" value="0" checked="checked">None</label>
+      <label><input class="radio" name="rep_type" type="radio" value="1">Daily</label>
+      <label><input class="radio" name="rep_type" type="radio" value="2">Weekly</label>
+      <label><input class="radio" name="rep_type" type="radio" value="3">Monthly</label>
+      <label><input class="radio" name="rep_type" type="radio" value="4">Yearly</label>
+      <label><input class="radio" name="rep_type" type="radio" value="5">Monthly, corresponding day</label>
+      <label><input class="radio" name="rep_type" type="radio" value="6">n-Weekly</label>
+        </div>
+      </div>
+
+      <div id="rep_end_date">
+        <label>Repeat end date:</label>
+<span id="rep_end_dateselector"><input class="date hasDatepicker" type="text" id="rep_end_datepicker">
+<input type="hidden" id="rep_end_datepicker_alt" name="rep_end__alt" value="2022-3-13" disabled="disabled">
+<input type="hidden" id="rep_end_datepicker_alt_day" name="rep_end_day" value="13">
+<input type="hidden" id="rep_end_datepicker_alt_month" name="rep_end_month" value="3">
+<input type="hidden" id="rep_end_datepicker_alt_year" name="rep_end_year" value="2022">
+</span>
+  <script type="text/javascript">
+
+  $(function() {
+    $("#rep_end_datepicker").datepicker({yearRange: '2016:2027',
+                                                       altField: '#rep_end_datepicker_alt'
+                                                                                                             });
+        var initial_date = new Date(2022, 2, 13);
+    var dateFormat = $("#rep_end_datepicker").datepicker( "option", "dateFormat" );
+    document.getElementById('rep_end_datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('rep_end_datepicker_alt_day').value = 13;
+    document.getElementById('rep_end_datepicker_alt_month').value = 3;
+    document.getElementById('rep_end_datepicker_alt_year').value = 2022;
+    $(".ui-datepicker").draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('rep_end_dateselector');
+  var datepicker_html = '<input class="date" type="text" id="rep_end_datepicker">\n';
+    datepicker_html += '<input type="hidden" id="rep_end_datepicker_alt"'
+  datepicker_html += ' name="rep_end__alt"';
+  datepicker_html += ' value="2022-3-13"';
+  datepicker_html += ' disabled="disabled">\n';
+    datepicker_html += '<input type="hidden" id="rep_end_datepicker_alt_day" name="rep_end_day">\n';
+  datepicker_html += '<input type="hidden" id="rep_end_datepicker_alt_month" name="rep_end_month">\n';
+  datepicker_html += '<input type="hidden" id="rep_end_datepicker_alt_year" name="rep_end_year">\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  </script>
+        </div>
+      
+      <div id="rep_day">
+        <label>Repeat day:<br>(for weekly or n-weekly)</label>
+        <div class="group">
+                <label><input class="checkbox" name="rep_day[]" value="0" type="checkbox">Sunday</label>
+      <label><input class="checkbox" name="rep_day[]" value="1" type="checkbox">Monday</label>
+      <label><input class="checkbox" name="rep_day[]" value="2" type="checkbox">Tuesday</label>
+      <label><input class="checkbox" name="rep_day[]" value="3" type="checkbox">Wednesday</label>
+      <label><input class="checkbox" name="rep_day[]" value="4" type="checkbox">Thursday</label>
+      <label><input class="checkbox" name="rep_day[]" value="5" type="checkbox">Friday</label>
+      <label><input class="checkbox" name="rep_day[]" value="6" type="checkbox">Saturday</label>
+        </div>
+      </div>
+     
+      <div>
+<label for="rep_num_weeks">Number of weeks:<br>(for n-weekly)</label>
+<input type="number" min="2" step="1" id="rep_num_weeks" name="rep_num_weeks">
+</div>
+<div>
+<label for="skip">Skip past conflicts:</label>
+<input type="checkbox" class="checkbox" id="skip" name="skip" value="1">
+</div>
+</fieldset>
+    <input type="hidden" name="returl" value="http://localhost:3000/mrbs/web/month.php?year=2022&amp;month=03&amp;day=21&amp;area=2&amp;room=5">
+    <input type="hidden" name="create_by" value="administrator">
+    <input type="hidden" name="rep_id" value="0">
+    <input type="hidden" name="edit_type" value="series">
+    <fieldset class="submit_buttons">
+<legend></legend>
+<div id="edit_entry_submit_back">
+<input class="submit" type="submit" name="back_button" value="Back" formnovalidate="">
+</div>
+<div id="edit_entry_submit_save">
+<input class="submit default_action" type="submit" name="save_button" value="Save">
+</div>
+<div id="conflict_check" class="good" title="No scheduling conflicts">✔</div>
+<div id="policy_check" class="good" title="No policy conflicts">✔</div>
+</fieldset><div id="check_results" style="display: none">
+<div id="check_tabs">
+<ul id="details_tabs">
+<li><a href="#schedule_details">Schedule</a></li>
+<li><a href="#policy_details">Policy</a></li>
+<li id="ui-tab-dialog-close"></li>
+</ul>
+<div id="schedule_details">No scheduling conflicts</div>
+<div id="policy_details">No policy conflicts</div>
+</div>
+</div>
+  </fieldset>
+</form>
+
+</div><div class="screenonly trailer" id="trailer">
+<div id="viewday">
+<div class="trailer_label">
+<a href="day.php?year=2022&amp;month=3&amp;day=13&amp;area=Array&amp;room=5">View Day:</a>
+</div>
+<div class="trailer_links">
+<span><a href="day.php?year=2022&amp;month=03&amp;day=07&amp;area=Array&amp;room=5">Mar 07</a></span>
+ | <span><a href="day.php?year=2022&amp;month=03&amp;day=08&amp;area=Array&amp;room=5">Mar 08</a></span>
+ | <span><a href="day.php?year=2022&amp;month=03&amp;day=09&amp;area=Array&amp;room=5">Mar 09</a></span>
+ | <span><a href="day.php?year=2022&amp;month=03&amp;day=10&amp;area=Array&amp;room=5">Mar 10</a></span>
+ | <span><a href="day.php?year=2022&amp;month=03&amp;day=11&amp;area=Array&amp;room=5">Mar 11</a></span>
+ | <span><a href="day.php?year=2022&amp;month=03&amp;day=12&amp;area=Array&amp;room=5">Mar 12</a></span>
+ | <span class="current">[ <a href="day.php?year=2022&amp;month=03&amp;day=13&amp;area=Array&amp;room=5">Mar 13</a> ]</span>
+ | <span><a href="day.php?year=2022&amp;month=03&amp;day=14&amp;area=Array&amp;room=5">Mar 14</a></span>
+ | <span><a href="day.php?year=2022&amp;month=03&amp;day=15&amp;area=Array&amp;room=5">Mar 15</a></span>
+ | <span><a href="day.php?year=2022&amp;month=03&amp;day=16&amp;area=Array&amp;room=5">Mar 16</a></span>
+ | <span><a href="day.php?year=2022&amp;month=03&amp;day=17&amp;area=Array&amp;room=5">Mar 17</a></span>
+ | <span><a href="day.php?year=2022&amp;month=03&amp;day=18&amp;area=Array&amp;room=5">Mar 18</a></span>
+ | <span><a href="day.php?year=2022&amp;month=03&amp;day=19&amp;area=Array&amp;room=5">Mar 19</a></span>
+ | <span><a href="day.php?year=2022&amp;month=03&amp;day=20&amp;area=Array&amp;room=5">Mar 20</a></span>
+</div>
+</div>
+<div id="viewweek">
+<div class="trailer_label">
+<a href="week.php?year=2022&amp;month=3&amp;day=13&amp;area=Array&amp;room=5">View Week:</a>
+</div>
+<div class="trailer_links">
+  <a href="week.php?year=2022&amp;month=02&amp;day=13&amp;area=Array&amp;room=5">Feb 13</a>
+ |   <a href="week.php?year=2022&amp;month=02&amp;day=20&amp;area=Array&amp;room=5">Feb 20</a>
+ |   <a href="week.php?year=2022&amp;month=02&amp;day=27&amp;area=Array&amp;room=5">Feb 27</a>
+ |   <a href="week.php?year=2022&amp;month=03&amp;day=06&amp;area=Array&amp;room=5">Mar 06</a>
+ | <span class="current">
+[   <a href="week.php?year=2022&amp;month=03&amp;day=13&amp;area=Array&amp;room=5">Mar 13</a>
+]</span>
+ |   <a href="week.php?year=2022&amp;month=03&amp;day=20&amp;area=Array&amp;room=5">Mar 20</a>
+ |   <a href="week.php?year=2022&amp;month=03&amp;day=27&amp;area=Array&amp;room=5">Mar 27</a>
+ |   <a href="week.php?year=2022&amp;month=04&amp;day=03&amp;area=Array&amp;room=5">Apr 03</a>
+ |   <a href="week.php?year=2022&amp;month=04&amp;day=10&amp;area=Array&amp;room=5">Apr 10</a>
+</div>
+</div>
+<div id="viewmonth">
+<div class="trailer_label">
+<a href="month.php?year=2022&amp;month=3&amp;day=13&amp;area=Array&amp;room=5">View Month:</a>
+</div>
+<div class="trailer_links">
+  <a href="month.php?year=2022&amp;month=01&amp;day=13&amp;area=Array&amp;room=5">Jan 2022</a>
+ |   <a href="month.php?year=2022&amp;month=02&amp;day=13&amp;area=Array&amp;room=5">Feb 2022</a>
+ | <span class="current">
+[   <a href="month.php?year=2022&amp;month=03&amp;day=13&amp;area=Array&amp;room=5">Mar 2022</a>
+]</span>
+ |   <a href="month.php?year=2022&amp;month=04&amp;day=13&amp;area=Array&amp;room=5">Apr 2022</a>
+ |   <a href="month.php?year=2022&amp;month=05&amp;day=13&amp;area=Array&amp;room=5">May 2022</a>
+ |   <a href="month.php?year=2022&amp;month=06&amp;day=13&amp;area=Array&amp;room=5">Jun 2022</a>
+ |   <a href="month.php?year=2022&amp;month=07&amp;day=13&amp;area=Array&amp;room=5">Jul 2022</a>
+ |   <a href="month.php?year=2022&amp;month=08&amp;day=13&amp;area=Array&amp;room=5">Aug 2022</a>
+ |   <a href="month.php?year=2022&amp;month=09&amp;day=13&amp;area=Array&amp;room=5">Sep 2022</a>
+</div>
+</div>
+</div>
+  
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-draggable" style="position: relative;"></div></body></html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state2</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/mantisbt/signup_page.php'>http://localhost:3000/mantisbt/signup_page.php</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>3</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>index</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>30.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state2.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/SPAN[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 494px; top: 464px; width: 38px; height: 18px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='index.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[3]/SPAN[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 561px; top: 464px; width: 139px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[6]/TD[1]/INPUT[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 568px; top: 415px; width: 59px; height: 23px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/mantisbt/css/default.css&quot;&gt;
+	&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;&lt;!--
+		if(document.layers) {document.write(&quot;&lt;style&gt;td{padding:0px;}&lt;\/style&gt;&quot;)}
+	// --&gt;&lt;/script&gt;
+	&lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+	&lt;meta http-equiv=&quot;Pragma&quot; content=&quot;no-cache&quot;&gt;
+	&lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;no-cache&quot;&gt;
+	&lt;meta http-equiv=&quot;Pragma-directive&quot; content=&quot;no-cache&quot;&gt;
+	&lt;meta http-equiv=&quot;Cache-Directive&quot; content=&quot;no-cache&quot;&gt;
+	&lt;meta http-equiv=&quot;Expires&quot; content=&quot;Sun, 03 Oct 2021 19:23:54 GMT&quot;&gt;
+	&lt;meta name=&quot;robots&quot; content=&quot;noindex,follow&quot;&gt;
+	&lt;link rel=&quot;shortcut icon&quot; href=&quot;/mantisbt/images/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+	&lt;link rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; title=&quot;MantisBT: Text Search&quot; href=&quot;http://localhost:3000/mantisbt/browser_search_plugin.php?type=text&quot;&gt;	&lt;link rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; title=&quot;MantisBT: Issue Id&quot; href=&quot;http://localhost:3000/mantisbt/browser_search_plugin.php?type=id&quot;&gt;	&lt;title&gt;MantisBT&lt;/title&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/mantisbt/javascript/min/common.js&quot;&gt;&lt;/script&gt;
+&lt;script language=&quot;javascript&quot;&gt;var loading_lang = &quot;Loading...&quot;;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/mantisbt/javascript/min/ajax.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div align=&quot;left&quot;&gt;&lt;a href=&quot;my_view_page.php&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Mantis Bug Tracker&quot; src=&quot;/mantisbt/images/mantis_logo.gif&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;form name=&quot;signup_form&quot; method=&quot;post&quot; action=&quot;signup.php&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;signup_token&quot; value=&quot;2021100368efbde504285e611d9c32a960447ea7950d4776&quot;&gt;&lt;table class=&quot;width50&quot; cellspacing=&quot;1&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+	&lt;td class=&quot;form-title&quot; colspan=&quot;3&quot;&gt;
+		Signup	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;row-1&quot;&gt;
+	&lt;td class=&quot;category&quot; width=&quot;30%&quot;&gt;
+		Username:
+	&lt;/td&gt;
+	&lt;td width=&quot;70%&quot; colspan=&quot;2&quot;&gt;
+		&lt;input type=&quot;text&quot; name=&quot;username&quot; size=&quot;32&quot; maxlength=&quot;32&quot;&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;row-2&quot;&gt;
+	&lt;td class=&quot;category&quot;&gt;
+		E-mail:
+	&lt;/td&gt;
+	&lt;td colspan=&quot;2&quot;&gt;
+		&lt;input type=&quot;text&quot; name=&quot;email&quot; size=&quot;32&quot; maxlength=&quot;64&quot; value=&quot;&quot;&gt;	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;row-1&quot;&gt;
+	&lt;td class=&quot;category&quot;&gt;
+		Enter the code as it is shown in the box on the right.:
+	&lt;/td&gt;
+	&lt;td&gt;
+		&lt;input type=&quot;text&quot; name=&quot;captcha&quot; size=&quot;5&quot; maxlength=&quot;5&quot; value=&quot;&quot;&gt;	&lt;/td&gt;
+	&lt;td&gt;
+		&lt;img src=&quot;make_captcha_img.php?public_key=57665&quot; alt=&quot;visual captcha&quot;&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;public_key&quot; value=&quot;57665&quot;&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td colspan=&quot;3&quot;&gt;
+		&lt;br&gt;
+		On completion of this form and verification of your answers, you will be sent a confirmation e-mail to the e-mail address you specified.&lt;br&gt;Using the confirmation e-mail, you will be able to activate your account. If you fail to activate your account within seven days, it will be purged.&lt;br&gt;You must specify a valid e-mail address in order to receive the account confirmation e-mail.		&lt;br&gt;&lt;br&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td class=&quot;center&quot; colspan=&quot;3&quot;&gt;
+		&lt;input type=&quot;submit&quot; class=&quot;button&quot; value=&quot;Signup&quot;&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;br&gt;&lt;div align=&quot;center&quot;&gt;&lt;span class=&quot;bracket-link&quot;&gt;[&amp;nbsp;&lt;a href=&quot;login_page.php&quot;&gt;Login&lt;/a&gt;&amp;nbsp;]&lt;/span&gt; &amp;nbsp;&lt;span class=&quot;bracket-link&quot;&gt;[&amp;nbsp;&lt;a href=&quot;lost_pwd_page.php&quot;&gt;Lost your password?&lt;/a&gt;&amp;nbsp;]&lt;/span&gt; &lt;/div&gt;&lt;!-- Autofocus JS --&gt;
+&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot;&gt;
+&lt;!--
+	window.document.signup_form.username.focus();
+// --&gt;
+&lt;/script&gt;
+	&lt;br&gt;
+	&lt;hr size=&quot;1&quot;&gt;
+&lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr valign=&quot;top&quot;&gt;&lt;td&gt;	&lt;address&gt;Copyright &copy; 2000 - 2010 MantisBT Group&lt;/address&gt;
+&lt;/td&gt;&lt;td&gt;
+	&lt;div align=&quot;right&quot;&gt;&lt;a href=&quot;http://www.mantisbt.org&quot; title=&quot;Free Web Based Bug Tracker&quot;&gt;&lt;img src=&quot;/mantisbt/images/mantis_logo_button.gif&quot; width=&quot;88&quot; height=&quot;35&quot; alt=&quot;Powered by Mantis Bugtracker&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+
+&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/SPAN[1]/A[1]</td>
+							<td><a href="index.html">index</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[3]/SPAN[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[2]/FORM[1]/TABLE[1]/TBODY[1]/TR[6]/TD[1]/INPUT[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

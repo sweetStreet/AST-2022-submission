@@ -1,0 +1,640 @@
+[
+  {
+    "xpath": "/HTML[1]/BODY[1]",
+    "id": 0,
+    "parentId": -1,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1200,
+      "height": 317
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]",
+    "id": 1,
+    "parentId": 0,
+    "rect": {
+      "x": 0,
+      "y": 15,
+      "width": 1200,
+      "height": 56
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]",
+    "id": 2,
+    "parentId": 1,
+    "rect": {
+      "x": 6,
+      "y": 22,
+      "width": 365,
+      "height": 42
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]",
+    "id": 4,
+    "parentId": 1,
+    "rect": {
+      "x": 385,
+      "y": 21,
+      "width": 206,
+      "height": 44
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]",
+    "id": 6,
+    "parentId": 1,
+    "rect": {
+      "x": 611,
+      "y": 35,
+      "width": 27,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]",
+    "id": 8,
+    "parentId": 1,
+    "rect": {
+      "x": 671,
+      "y": 35,
+      "width": 41,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[5]/A[1]",
+    "id": 10,
+    "parentId": 1,
+    "rect": {
+      "x": 748,
+      "y": 35,
+      "width": 39,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/FORM[1]/DIV[1]",
+    "id": 12,
+    "parentId": 1,
+    "rect": {
+      "x": 812,
+      "y": 32,
+      "width": 188,
+      "height": 21
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/FORM[1]/DIV[1]/A[1]",
+    "id": 13,
+    "parentId": 12,
+    "rect": {
+      "x": 841,
+      "y": 35,
+      "width": 45,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/FORM[1]/DIV[1]/INPUT[1]",
+    "id": 15,
+    "parentId": 12,
+    "rect": {
+      "x": 894,
+      "y": 35,
+      "width": 72,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[7]/DIV[1]",
+    "id": 18,
+    "parentId": 1,
+    "rect": {
+      "x": 1013,
+      "y": 21,
+      "width": 181,
+      "height": 44
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/H2[1]",
+    "id": 21,
+    "parentId": 0,
+    "rect": {
+      "x": 26,
+      "y": 86,
+      "width": 1148,
+      "height": 21
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]",
+    "id": 23,
+    "parentId": 0,
+    "rect": {
+      "x": 26,
+      "y": 122,
+      "width": 290,
+      "height": 148
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/FIELDSET[1]",
+    "id": 24,
+    "parentId": 23,
+    "rect": {
+      "x": 26,
+      "y": 122,
+      "width": 232,
+      "height": 18
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/FIELDSET[1]/LABEL[1]",
+    "id": 25,
+    "parentId": 24,
+    "rect": {
+      "x": 26,
+      "y": 122,
+      "width": 33,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/FIELDSET[1]/INPUT[5]",
+    "id": 27,
+    "parentId": 24,
+    "rect": {
+      "x": 198,
+      "y": 122,
+      "width": 16,
+      "height": 16
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[1]/FIELDSET[1]/INPUT[6]",
+    "id": 29,
+    "parentId": 24,
+    "rect": {
+      "x": 232,
+      "y": 122,
+      "width": 16,
+      "height": 16
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[2]/FIELDSET[1]",
+    "id": 32,
+    "parentId": 23,
+    "rect": {
+      "x": 40,
+      "y": 179,
+      "width": 249,
+      "height": 77
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[2]/FIELDSET[1]/LEGEND[1]",
+    "id": 33,
+    "parentId": 32,
+    "rect": {
+      "x": 42,
+      "y": 165,
+      "width": 57,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[2]/FIELDSET[1]/DIV[1]",
+    "id": 35,
+    "parentId": 32,
+    "rect": {
+      "x": 40,
+      "y": 193,
+      "width": 249,
+      "height": 26
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/FORM[2]/FIELDSET[1]/DIV[2]/INPUT[1]",
+    "id": 37,
+    "parentId": 32,
+    "rect": {
+      "x": 152,
+      "y": 238,
+      "width": 54,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/H2[2]",
+    "id": 41,
+    "parentId": 0,
+    "rect": {
+      "x": 26,
+      "y": 296,
+      "width": 1148,
+      "height": 21
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[1]",
+    "id": 43,
+    "parentId": 0,
+    "rect": {
+      "x": 1036,
+      "y": 358,
+      "width": 138,
+      "height": 30
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]",
+    "id": 45,
+    "parentId": 0,
+    "rect": {
+      "x": 26,
+      "y": 401,
+      "width": 1148,
+      "height": 21
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[3]/LABEL[1]",
+    "id": 46,
+    "parentId": 45,
+    "rect": {
+      "x": 26,
+      "y": 403,
+      "width": 124,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[4]",
+    "id": 48,
+    "parentId": 45,
+    "rect": {
+      "x": 600,
+      "y": 401,
+      "width": 574,
+      "height": 21
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]",
+    "id": 51,
+    "parentId": 0,
+    "rect": {
+      "x": 26,
+      "y": 432,
+      "width": 1148,
+      "height": 150
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[6]/DIV[2]",
+    "id": 52,
+    "parentId": 51,
+    "rect": {
+      "x": 26,
+      "y": 432,
+      "width": 143,
+      "height": 150
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[6]/DIV[2]/DIV[1]/TABLE[1]/THEAD[1]/TR[1]/TH[1]",
+    "id": 53,
+    "parentId": 52,
+    "rect": {
+      "x": 36,
+      "y": 435,
+      "width": 117,
+      "height": 27
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[6]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/A[1]",
+    "id": 55,
+    "parentId": 52,
+    "rect": {
+      "x": 35,
+      "y": 472,
+      "width": 48,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[6]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/DIV[1]/A[1]",
+    "id": 57,
+    "parentId": 52,
+    "rect": {
+      "x": 35,
+      "y": 501,
+      "width": 48,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[6]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/DIV[1]/A[1]",
+    "id": 59,
+    "parentId": 52,
+    "rect": {
+      "x": 35,
+      "y": 530,
+      "width": 48,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[6]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[4]/TD[1]/DIV[1]/A[1]",
+    "id": 61,
+    "parentId": 52,
+    "rect": {
+      "x": 35,
+      "y": 559,
+      "width": 48,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]",
+    "id": 64,
+    "parentId": 51,
+    "rect": {
+      "x": 177,
+      "y": 432,
+      "width": 997,
+      "height": 150
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[6]",
+    "id": 65,
+    "parentId": 64,
+    "rect": {
+      "x": 177,
+      "y": 432,
+      "width": 997,
+      "height": 55
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[6]/DIV[3]",
+    "id": 66,
+    "parentId": 65,
+    "rect": {
+      "x": 177,
+      "y": 432,
+      "width": 957,
+      "height": 55
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[6]/DIV[1]",
+    "id": 68,
+    "parentId": 65,
+    "rect": {
+      "x": 1144,
+      "y": 432,
+      "width": 30,
+      "height": 55
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[6]",
+    "id": 71,
+    "parentId": 64,
+    "rect": {
+      "x": 177,
+      "y": 499,
+      "width": 997,
+      "height": 17
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[6]/DIV[3]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/DIV[1]/IMG[1]",
+    "id": 72,
+    "parentId": 71,
+    "rect": {
+      "x": 186,
+      "y": 499,
+      "width": 16,
+      "height": 16
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[6]/DIV[3]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[3]/DIV[1]",
+    "id": 74,
+    "parentId": 71,
+    "rect": {
+      "x": 612,
+      "y": 501,
+      "width": 182,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[6]/DIV[1]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/DIV[1]/A[1]/IMG[1]",
+    "id": 76,
+    "parentId": 71,
+    "rect": {
+      "x": 1143,
+      "y": 499,
+      "width": 16,
+      "height": 16
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]",
+    "id": 79,
+    "parentId": 64,
+    "rect": {
+      "x": 177,
+      "y": 526,
+      "width": 997,
+      "height": 56
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[6]/DIV[3]/DIV[2]/TABLE[1]/TBODY[1]",
+    "id": 80,
+    "parentId": 79,
+    "rect": {
+      "x": 178,
+      "y": 526,
+      "width": 24,
+      "height": 55
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]",
+    "id": 82,
+    "parentId": 79,
+    "rect": {
+      "x": 476,
+      "y": 526,
+      "width": 318,
+      "height": 56
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[6]/DIV[1]/DIV[2]/TABLE[1]/TBODY[1]",
+    "id": 84,
+    "parentId": 79,
+    "rect": {
+      "x": 1143,
+      "y": 526,
+      "width": 31,
+      "height": 55
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]",
+    "id": 89,
+    "parentId": 0,
+    "rect": {
+      "x": 26,
+      "y": 592,
+      "width": 1148,
+      "height": 22
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[7]",
+    "id": 90,
+    "parentId": 89,
+    "rect": {
+      "x": 26,
+      "y": 592,
+      "width": 574,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/DIV[1]/DIV[1]/DIV[8]",
+    "id": 92,
+    "parentId": 89,
+    "rect": {
+      "x": 715,
+      "y": 592,
+      "width": 459,
+      "height": 22
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/FORM[1]/FIELDSET[1]",
+    "id": 95,
+    "parentId": 0,
+    "rect": {
+      "x": 40,
+      "y": 726,
+      "width": 249,
+      "height": 129
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/FORM[1]/FIELDSET[1]/LEGEND[1]",
+    "id": 96,
+    "parentId": 95,
+    "rect": {
+      "x": 42,
+      "y": 712,
+      "width": 66,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/FORM[1]/FIELDSET[1]",
+    "id": 98,
+    "parentId": 95,
+    "rect": {
+      "x": 40,
+      "y": 740,
+      "width": 249,
+      "height": 78
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[2]/DIV[3]/FORM[1]/FIELDSET[1]/DIV[4]/INPUT[1]",
+    "id": 100,
+    "parentId": 95,
+    "rect": {
+      "x": 152,
+      "y": 836,
+      "width": 61,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[3]",
+    "id": 103,
+    "parentId": 0,
+    "rect": {
+      "x": 26,
+      "y": 912,
+      "width": 1148,
+      "height": 45
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[3]",
+    "id": 104,
+    "parentId": 103,
+    "rect": {
+      "x": 26,
+      "y": 912,
+      "width": 76,
+      "height": 45
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[3]",
+    "id": 106,
+    "parentId": 103,
+    "rect": {
+      "x": 143,
+      "y": 912,
+      "width": 471,
+      "height": 45
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[3]",
+    "id": 108,
+    "parentId": 103,
+    "rect": {
+      "x": 621,
+      "y": 912,
+      "width": 148,
+      "height": 45
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[13]/A[1]",
+    "id": 110,
+    "parentId": 103,
+    "rect": {
+      "x": 780,
+      "y": 912,
+      "width": 41,
+      "height": 15
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/DIV[3]/DIV[1]/DIV[2]/SPAN[14]/A[1]",
+    "id": 112,
+    "parentId": 103,
+    "rect": {
+      "x": 832,
+      "y": 912,
+      "width": 41,
+      "height": 15
+    }
+  }
+]

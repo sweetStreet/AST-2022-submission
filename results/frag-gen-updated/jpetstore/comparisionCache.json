@@ -1,0 +1,867 @@
+[
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state31",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state39",
+    "state2Name": "state5"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state24",
+    "state2Name": "state6"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state50",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state6"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state50",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state50",
+    "state2Name": "state5"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state50",
+    "state2Name": "state8"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state6"
+  },
+  {
+    "stateComparision": "DUPLICATE",
+    "state1Name": "index",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state25",
+    "state2Name": "state6"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state84",
+    "state2Name": "state24"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state34"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state39",
+    "state2Name": "state24"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "state24"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state23",
+    "state2Name": "state6"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state4",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "state39"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state83",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state50",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state25",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state31"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state5",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state27",
+    "state2Name": "state23"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state39",
+    "state2Name": "state25"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state8",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state83",
+    "state2Name": "state39"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state6",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state84"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state5",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state24",
+    "state2Name": "state23"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state27",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state31",
+    "state2Name": "state6"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "state5"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state83",
+    "state2Name": "state34"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state34"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state27",
+    "state2Name": "state25"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state50",
+    "state2Name": "state6"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state83",
+    "state2Name": "state23"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state31"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state84",
+    "state2Name": "state5"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state23",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state25",
+    "state2Name": "state24"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state6",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state83",
+    "state2Name": "state50"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state84",
+    "state2Name": "state34"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state31",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state104"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state39",
+    "state2Name": "state23"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state8",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state31",
+    "state2Name": "state5"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state27",
+    "state2Name": "state5"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state34",
+    "state2Name": "state5"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state34",
+    "state2Name": "state24"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state27"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state50",
+    "state2Name": "state24"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state39",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state83"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state23",
+    "state2Name": "state8"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state2",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state84",
+    "state2Name": "state39"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state34",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state34",
+    "state2Name": "state27"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state84",
+    "state2Name": "state83"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state83",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "state6"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state84",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state50",
+    "state2Name": "state34"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state8",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state5"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state50",
+    "state2Name": "state23"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state24"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state39"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state25"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state31",
+    "state2Name": "state23"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "state25"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "state31"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "state34"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state31",
+    "state2Name": "state8"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "state8"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state25"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state34",
+    "state2Name": "state8"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state104"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state31",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state84"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state23"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state23",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state50"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "state27"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "state50"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state83",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state23",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state83"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "state83"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state83",
+    "state2Name": "state27"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state34",
+    "state2Name": "state31"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state114"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state31",
+    "state2Name": "state25"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state8",
+    "state2Name": "state6"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state24",
+    "state2Name": "state5"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state84",
+    "state2Name": "state8"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state39",
+    "state2Name": "state8"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state84",
+    "state2Name": "state25"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state84",
+    "state2Name": "state23"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state23",
+    "state2Name": "state5"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state84",
+    "state2Name": "state31"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state8"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state25",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state25",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state25",
+    "state2Name": "state5"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state39",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state39",
+    "state2Name": "state34"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state83",
+    "state2Name": "state6"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state50",
+    "state2Name": "state39"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state25",
+    "state2Name": "state8"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state50",
+    "state2Name": "state25"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state27",
+    "state2Name": "state24"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state24",
+    "state2Name": "state8"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state34",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state34",
+    "state2Name": "state25"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state24",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state6",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state24",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state25",
+    "state2Name": "state23"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state34",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state84",
+    "state2Name": "state50"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state8"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state39",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state83",
+    "state2Name": "state8"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "state23"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state27",
+    "state2Name": "state8"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state27",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state83",
+    "state2Name": "state25"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state6",
+    "state2Name": "state5"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "state84"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state50",
+    "state2Name": "state27"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state39",
+    "state2Name": "state31"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state24",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state39",
+    "state2Name": "state6"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state83",
+    "state2Name": "state5"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state5"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state39"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state104",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state4",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state31",
+    "state2Name": "state24"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state27"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state84",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state84",
+    "state2Name": "state6"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state84",
+    "state2Name": "state27"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state8",
+    "state2Name": "state5"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state27",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state83",
+    "state2Name": "state31"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state83",
+    "state2Name": "state24"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state5",
+    "state2Name": "index"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state27",
+    "state2Name": "state6"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state31",
+    "state2Name": "state27"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state23"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state50",
+    "state2Name": "state31"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state114",
+    "state2Name": "state50"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state39",
+    "state2Name": "state27"
+  },
+  {
+    "stateComparision": "DUPLICATE",
+    "state1Name": "state2",
+    "state2Name": "state2"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state24"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state34",
+    "state2Name": "state6"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state34",
+    "state2Name": "state23"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state115",
+    "state2Name": "state4"
+  },
+  {
+    "stateComparision": "DIFFERENT",
+    "state1Name": "state84",
+    "state2Name": "state2"
+  }
+]

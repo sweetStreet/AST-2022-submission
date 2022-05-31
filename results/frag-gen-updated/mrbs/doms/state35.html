@@ -1,0 +1,511 @@
+<html><head>
+  
+  <meta charset="utf-8">
+  <title>Meeting Room Booking System</title>
+  
+      <link href="jquery/ui/css/sunny/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css">
+    
+    <link href="jquery/datatables/css/mrbs-page.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/mrbs-table.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/ColReorder.css" rel="stylesheet" type="text/css">
+    <link href="jquery/datatables/css/ColVis.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="css/mrbs.css.php" type="text/css">
+        <link rel="stylesheet" media="print" href="css/mrbs-print.css.php" type="text/css">
+    <!--[if IE]>
+    <link rel="stylesheet" href="css/mrbs-ie.css" type="text/css">
+    <![endif]-->
+        <!--[if IE 8]>
+    <link rel="stylesheet" href="css/mrbs-ie8.css" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/mrbs-ielte8.css" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="css/mrbs-ielte7.css.php" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="css/mrbs-ielte6.css" type="text/css">
+    <![endif]-->
+    
+    <meta name="robots" content="noindex">
+    
+<script type="text/javascript" src="jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-1.8.22.custom.min.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-i18n.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-datepicker-en.js"></script>
+<script type="text/javascript" src="jquery/ui/jquery-ui-datepicker-en-US.js"></script>
+     
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE6 = false;
+  //]]>
+</script>
+<!--[if lte IE 6]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE6 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE7 = false;
+  //]]>
+</script>
+<!--[if lte IE 7]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE7 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE8 = false;
+  //]]>
+</script>
+<!--[if lte IE 8]>
+<script type="text/javascript">
+  //<![CDATA[
+  var lteIE8 = true;
+  //]]>
+</script>
+<![endif]-->
+    
+<script type="text/javascript">
+  //<![CDATA[
+    function init(params)
+  {
+  }
+  //]]>
+</script>
+    
+<script type="text/javascript" src="js/functions.js.php?area=1"></script>
+<script type="text/javascript" src="js/datepicker.js.php?area=1"></script>
+<script type="text/javascript" src="js/general.js.php?area=1"></script>
+    
+<script type="text/javascript">
+
+//<![CDATA[
+
+
+
+
+
+$(window).load(function() {
+
+  var args = {day: '13',
+              month: '6',
+              year: '2022',
+              area: '1',
+              room: '1',
+              page: 'help'};
+    init(args);
+
+});
+
+
+//]]>
+</script>  
+  </head>
+  
+  <body class="help js">
+    <script type="text/javascript">
+      //<![CDATA[
+      $('body').addClass('js').removeClass('non_js');
+      //]]>
+    </script> 
+
+    <div class="screenonly">
+
+[Warning: Server failed to set locale to 'en_US.UTF-8']
+  <table id="banner">
+    <tbody><tr>
+      <td id="company">
+        <div>
+          <div id="logo">
+<span>Your Company</span>
+</div>
+          <div id="mrbs">
+            <a href="index.php">Meeting Room Booking System</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <form action="day.php" method="get" id="Form1">
+          <div>
+            <span id="dateselector"><input class="date hasDatepicker" type="text" id="datepicker">
+<input type="hidden" id="datepicker_alt" name="_alt" value="2022-6-13" disabled="disabled">
+<input type="hidden" id="datepicker_alt_day" name="day" value="13">
+<input type="hidden" id="datepicker_alt_month" name="month" value="6">
+<input type="hidden" id="datepicker_alt_year" name="year" value="2022">
+</span>
+  <script type="text/javascript">
+
+  $(function() {
+    $("#datepicker").datepicker({yearRange: '2016:2027',
+                                                       altField: '#datepicker_alt'
+                                                       , onClose: function(dateText, inst) {datepicker_close(dateText, inst, 'Form1');}                                                      });
+        var initial_date = new Date(2022, 5, 13);
+    var dateFormat = $("#datepicker").datepicker( "option", "dateFormat" );
+    document.getElementById('datepicker').value = $.datepicker.formatDate(dateFormat, initial_date);
+    document.getElementById('datepicker_alt_day').value = 13;
+    document.getElementById('datepicker_alt_month').value = 6;
+    document.getElementById('datepicker_alt_year').value = 2022;
+    $(".ui-datepicker").draggable();
+  });
+ 
+  
+  var dateselector = document.getElementById('dateselector');
+  var datepicker_html = '<input class="date" type="text" id="datepicker">\n';
+    datepicker_html += '<input type="hidden" id="datepicker_alt"'
+  datepicker_html += ' name="_alt"';
+  datepicker_html += ' value="2022-6-13"';
+  datepicker_html += ' disabled="disabled">\n';
+    datepicker_html += '<input type="hidden" id="datepicker_alt_day" name="day">\n';
+  datepicker_html += '<input type="hidden" id="datepicker_alt_month" name="month">\n';
+  datepicker_html += '<input type="hidden" id="datepicker_alt_year" name="year">\n';
+  dateselector.innerHTML = datepicker_html;
+  
+  </script>
+  <input type="hidden" name="area" value="1">
+<input type="hidden" name="room" value="1">
+<input type="submit" value="goto">
+           </div>
+        </form>
+              </td>
+      <td>
+<a href="help.php?day=13&amp;month=6&amp;year=2022&amp;area=1&amp;room=1">Help</a>
+</td>
+<td>
+<a href="admin.php?day=13&amp;month=6&amp;year=2022&amp;area=1&amp;room=1">Rooms</a>
+</td>
+<td>
+<a href="report.php?day=13&amp;month=6&amp;year=2022&amp;area=1&amp;room=1">Report</a>
+</td>
+      
+      <td>
+        <form id="header_search" method="get" action="search.php">
+          <div>
+            <a href="search.php?advanced=1">Search:</a>
+            <input type="search" name="search_str" value="" required="">
+            <input type="hidden" name="day" value="13">
+            <input type="hidden" name="month" value="6">
+            <input type="hidden" name="year" value="2022">
+            <input type="hidden" name="area" value="1">
+<input type="hidden" name="room" value="1">
+          </div>
+        <input type="hidden" name="datatable" value="1"></form>
+      </td>
+      <td>
+<div id="logon_box">
+
+                <a href="report.php?from_day=13&amp;from_month=6&amp;from_year=2022&amp;to_day=1&amp;to_month=12&amp;to_year=2030&amp;areamatch=&amp;roommatch=&amp;namematch=&amp;descrmatch=&amp;summarize=1&amp;sortby=r&amp;display=d&amp;sumby=d&amp;creatormatch=administrator" title="Click to display all my upcoming entries">You are administrator</a>
+                <form method="post" action="admin.php">
+                  <div>
+                    <input type="hidden" name="TargetURL" value="help.php?day=13&amp;month=6&amp;year=2022&amp;area=1&amp;room=1">
+                    <input type="hidden" name="Action" value="SetName">
+                    <input type="hidden" name="NewUserName" value="">
+                    <input type="hidden" name="NewUserPassword" value="">
+                    <input type="submit" value=" Log Off ">
+                  </div>
+                </form>
+</div>
+</td>
+    </tr>
+  </tbody></table>
+</div>
+
+<div id="contents">
+<h3>About MRBS</h3>
+<table id="version_info">
+<tbody><tr><td><a href="http://mrbs.sourceforge.net">Meeting Room Booking System</a>:</td><td>MRBS 1.4.9</td></tr>
+<tr><td>Database:</td><td>MySQL 5.5.61-0ubuntu0.14.04.1</td></tr>
+<tr><td>System:</td><td>Linux b12c1ab79abf 5.10.25-linuxkit #1 SMP Tue Mar 23 09:27:39 UTC 2021 x86_64</td></tr>
+<tr><td>Server time:</td><td>Tue Oct  5 04:03:21 2021</td></tr>
+<tr><td>PHP:</td><td>5.5.9-1ubuntu4.26</td></tr>
+</tbody></table>
+<p>
+Your browser is set with the following language preference order:
+en-US
+</p>
+<h3>Help</h3>
+<p>
+Please contact <a href="mailto:admin_email@your.org">Your Administrator</a> for any questions that aren't answered here.
+</p>
+<!-- $Id: site_faq.html 2142 2011-10-23 18:47:56Z cimorrison $ -->
+
+<div id="site_faq_contents">
+  <a id="top"></a><h4>Authentication</h4>
+  <ul>
+    <li><a href="#authenticate">How do I login?</a></li>
+    <li><a href="#meeting_delete">Why can't I delete/alter a meeting?</a></li>
+  </ul>
+  
+  <h4>Making/Altering Meetings</h4>
+  <ul>
+    <li><a href="#repeating">How do I make a recurring meeting?</a></li>
+    <li><a href="#repeating_delete">How do I delete one instance of a recurring meeting?</a></li>
+    <li><a href="#multiple_sites">How do I schedule rooms at different sites?</a></li>
+    <li><a href="#too_many">My meeting failed to be created because of <q>too many entries</q>!</a></li>
+    <li><a href="#multiple_users">What happens if multiple people schedule the same meeting?</a></li>
+  </ul>
+  
+  <h4>Miscellaneous</h4>
+  <ul>
+    <li><a href="#internal_external">What is the difference between <q>Internal</q> and <q>External</q>?</a></li>
+  </ul>
+  
+  <h4>About The Meeting Room Booking System</h4>
+  <ul>
+    <li><a href="#how_much">How much did the system cost?</a></li>
+    <li><a href="#about">How does the system work and who wrote it?</a></li>
+  </ul>
+</div>
+
+<div id="site_faq_body">
+
+  <div id="authenticate">
+    <h4>How do I login?</h4>
+    <p>
+      The system can be configured to use one of several methods of authentication,
+      including LDAP, Netware, and SMB. See your system administrator if you
+      are having trouble logging in. Some functions are restricted to certain
+      users, and other users will get the message <q>You do not have access rights to
+      modify this item</q>. See your system administrator if this is not working
+      correctly for you.
+      If the system is configured to use LDAP authentication, this means that you
+      login with the same username and password as you use for getting email
+      e.g. <q>Mark Belanger</q> and <q>MyPassword</q>.
+    </p>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="meeting_delete">
+    <h4>Why can't I delete/alter a meeting?</h4>
+    <p>
+      In order to delete or alter a meeting, you must be logged in as the
+      same person that made the meeting.  Contact one of the meeting room
+      administrators or the person who initially made the meeting to
+      have it deleted or changed.
+    </p>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="repeating">
+    <h4>How do I make a recurring meeting?</h4>
+    <p>
+      Clicking on the desired time brings you into the booking screen.
+      Select the appropriate <dfn>Repeat Type</dfn>. The room will be scheduled
+      at the same time, until the <dfn>Repeat End Date</dfn>, on the days
+      determined by the Repeat Type.
+    </p>
+    <ul>
+      <li>
+        A <dfn>Daily</dfn> repeat schedules every day.
+      </li>
+      <li>
+        A <dfn>Weekly</dfn> repeat schedules those days of the week that you
+        check under <dfn>Repeat Day</dfn>. For example, use Weekly repeat
+        to schedule the room every Monday, Tuesday, and Thursday; check
+        those days under Repeat Day. If you check no days under Repeat Day,
+        the schedule will repeat on the same day of each week as the first
+        scheduled day.
+      </li>
+      <li>
+        An <dfn>N_Weekly</dfn> repeat is the same as a Weekly repeat, except
+        that the bookings are only made for every Nth week where N is 
+        entered under <dfn>Number of Weeks</dfn>.   For example, to make
+        a booking for every other week, use 2 for the number of weeks.
+      </li>
+      <li>
+        A <dfn>Monthly</dfn> repeat schedules the same day of each month,
+        for example the 15th of the month.  If you select the 29th, 30th
+        or 31st of the month, then for a month where that day does not
+        exist the last day of that month will be used instead.
+      </li>
+      <li>
+        A <dfn>Yearly</dfn> repeat schedules the same month and day of the month,
+        for example every March 15th.   If you select the 29th February, then
+        for those years where that date does not exist the 28th February will
+        be used instead.
+      </li>
+      <li>
+        Finally, a <dfn>Monthly, corresponding day</dfn> repeat schedules one day
+        each month, the same weekday and ordinal position within the month.
+        Use this repeat type to schedule the first Monday, second Tuesday,
+        or fourth Friday of each month, for example.  If you have selected the 29th, 30th
+        or 31st of the month, i.e. the fifth weekday of a month, then for those 
+        months where there is no corresponding fifth day, the fourth day will 
+        be used instead.  (This is a useful way of booking the last weekday in
+        every month).
+      </li>
+    </ul>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="repeating_delete">
+    <h4>How do I delete one instance of a recurring meeting?</h4>
+    <p>
+      Select the day/room/time that you want to delete and select <dfn>Delete Entry</dfn>.
+    </p>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="multiple_sites">
+    <h4>How do I schedule rooms at different sites?</h4>
+    <p>
+      You don't.  Presently the system cannot book two different rooms simultaneously.
+      You must schedule each one separately.  Make sure that the time you want
+      is available at both sites before making a booking.
+    </p>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="too_many">
+    <h4>My meeting failed to be created because of <q>too many entries</q>!</h4>
+    <p>
+      No meeting can create more than 365 entries.  There needs to be some limit on the number of meetings created.  
+      This number can be increased if necessary.
+    </p>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="multiple_users">
+    <h4>What happens if multiple people schedule the same meeting?</h4>
+    <p>
+      The short answer is: The first person to click on
+      the <dfn>Submit</dfn> button wins.
+      Behind the scenes, the system is using a proper multi-user, multi-threaded
+      relational database than can handle many thousands of simultaneous users.
+    </p>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="internal_external">
+    <h4>What is the difference between <q>Internal</q> and <q>External</q>?</h4>
+    <p>
+      By default, MRBS defines two meeting types. <dfn>Internal</dfn> means that the
+      meeting will only be attended by employees.  An <dfn>External</dfn> meeting
+      might also be attended by customers, vendors, investors, etc. Your site
+      can define up to a total of 10 meeting types, according to your needs.
+      Meetings are highlighted in the main calendar view with a color corresponding
+      to their type, and a color key of all defined types is shown at the bottom
+      of the main calendar view.
+    </p>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="how_much">
+    <a></a><h4>How much did the system cost?</h4>
+    <p>
+      Nothing.  See the next section for more information.
+    </p>
+    <a href="#top">Top</a>
+  </div>
+  
+  <div id="about">
+    <h4>How does the system work and who wrote it?</h4>
+    <p>
+      The <a href="http://sourceforge.net/project/?group_id=5113">Meeting Room Booking System</a>
+      is open source software that is distributed under the Gnu Public License(GPL).
+      This means that software is free to use, distribute, and modify. 
+    </p> 
+    <p>
+      The system is written mostly in <a href="http://www.php.net">PHP</a>, 
+      which is an open source programming language that can be embedded in web 
+      pages similar in concept to Microsoft active server pages.  PHP is especially 
+      good at accessing databases.
+    </p>
+    <p>  
+      The database used for the system is either
+      <a href="http://www.mysql.com">MySQL</a>
+      or <a href="http://www.postgresql.org">PostgreSQL</a>.
+      MySQL is a very fast, multi-threaded, multi-user and robust 
+      SQL (Structured Query Language) database server that is also GPL.
+      PostgreSQL is a full-featured multi-user open source Object Relational SQL
+      database server.
+    </p>
+    <p> 
+      The system will run on multiple platforms, including the PC architecture
+      using the <a href="http://www.linux.com">Linux</a> operating system.
+      Linux, is a free, open source, unix-like operating system.
+    </p>
+    <p>
+      The web server being used is yet another piece of free, open source
+      software.  The <a href="http://www.apache.org">Apache</a> web server is
+      the world's most popular web server.
+    </p>
+    <p>
+      The bottom line is: <strong>every piece of this system, from the operating system to the application,
+      is completely free - source code and all</strong>.
+    </p>
+    <a href="#top">Top</a>
+  </div>
+  
+</div>
+</div><div class="screenonly trailer" id="trailer">
+<div id="viewday">
+<div class="trailer_label">
+<a href="day.php?year=2022&amp;month=6&amp;day=13&amp;area=1&amp;room=1">View Day:</a>
+</div>
+<div class="trailer_links">
+<span><a href="day.php?year=2022&amp;month=06&amp;day=07&amp;area=1&amp;room=1">Jun 07</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=08&amp;area=1&amp;room=1">Jun 08</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=09&amp;area=1&amp;room=1">Jun 09</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=10&amp;area=1&amp;room=1">Jun 10</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=11&amp;area=1&amp;room=1">Jun 11</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=12&amp;area=1&amp;room=1">Jun 12</a></span>
+ | <span class="current">[ <a href="day.php?year=2022&amp;month=06&amp;day=13&amp;area=1&amp;room=1">Jun 13</a> ]</span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=14&amp;area=1&amp;room=1">Jun 14</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=15&amp;area=1&amp;room=1">Jun 15</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=16&amp;area=1&amp;room=1">Jun 16</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=17&amp;area=1&amp;room=1">Jun 17</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=18&amp;area=1&amp;room=1">Jun 18</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=19&amp;area=1&amp;room=1">Jun 19</a></span>
+ | <span><a href="day.php?year=2022&amp;month=06&amp;day=20&amp;area=1&amp;room=1">Jun 20</a></span>
+</div>
+</div>
+<div id="viewweek">
+<div class="trailer_label">
+<a href="week.php?year=2022&amp;month=6&amp;day=13&amp;area=1&amp;room=1">View Week:</a>
+</div>
+<div class="trailer_links">
+  <a href="week.php?year=2022&amp;month=05&amp;day=16&amp;area=1&amp;room=1">May 15</a>
+ |   <a href="week.php?year=2022&amp;month=05&amp;day=23&amp;area=1&amp;room=1">May 22</a>
+ |   <a href="week.php?year=2022&amp;month=05&amp;day=30&amp;area=1&amp;room=1">May 29</a>
+ |   <a href="week.php?year=2022&amp;month=06&amp;day=06&amp;area=1&amp;room=1">Jun 05</a>
+ | <span class="current">
+[   <a href="week.php?year=2022&amp;month=06&amp;day=13&amp;area=1&amp;room=1">Jun 12</a>
+]</span>
+ |   <a href="week.php?year=2022&amp;month=06&amp;day=20&amp;area=1&amp;room=1">Jun 19</a>
+ |   <a href="week.php?year=2022&amp;month=06&amp;day=27&amp;area=1&amp;room=1">Jun 26</a>
+ |   <a href="week.php?year=2022&amp;month=07&amp;day=04&amp;area=1&amp;room=1">Jul 03</a>
+ |   <a href="week.php?year=2022&amp;month=07&amp;day=11&amp;area=1&amp;room=1">Jul 10</a>
+</div>
+</div>
+<div id="viewmonth">
+<div class="trailer_label">
+<a href="month.php?year=2022&amp;month=6&amp;day=13&amp;area=1&amp;room=1">View Month:</a>
+</div>
+<div class="trailer_links">
+  <a href="month.php?year=2022&amp;month=04&amp;day=13&amp;area=1&amp;room=1">Apr 2022</a>
+ |   <a href="month.php?year=2022&amp;month=05&amp;day=13&amp;area=1&amp;room=1">May 2022</a>
+ | <span class="current">
+[   <a href="month.php?year=2022&amp;month=06&amp;day=13&amp;area=1&amp;room=1">Jun 2022</a>
+]</span>
+ |   <a href="month.php?year=2022&amp;month=07&amp;day=13&amp;area=1&amp;room=1">Jul 2022</a>
+ |   <a href="month.php?year=2022&amp;month=08&amp;day=13&amp;area=1&amp;room=1">Aug 2022</a>
+ |   <a href="month.php?year=2022&amp;month=09&amp;day=13&amp;area=1&amp;room=1">Sep 2022</a>
+ |   <a href="month.php?year=2022&amp;month=10&amp;day=13&amp;area=1&amp;room=1">Oct 2022</a>
+ |   <a href="month.php?year=2022&amp;month=11&amp;day=13&amp;area=1&amp;room=1">Nov 2022</a>
+ |   <a href="month.php?year=2022&amp;month=12&amp;day=13&amp;area=1&amp;room=1">Dec 2022</a>
+</div>
+</div>
+</div>
+  
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-draggable" style="position: relative;"></div></body></html>

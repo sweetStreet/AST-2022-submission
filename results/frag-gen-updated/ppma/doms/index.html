@@ -1,0 +1,60 @@
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat" style=""><head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    	<meta name="language" content="en">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/ppma/css/general_enclosed_foundicons.css">
+        <link rel="stylesheet" href="/ppma/css/accessibility_foundicons.css">
+        <link rel="shortcut icon" href="/ppma/favicon.ico">
+
+        <!--[if lt IE 8]>
+            <link rel="stylesheet" href="/ppma/css/general_enclosed_foundicons_ie7.css">
+            <link rel="stylesheet" href="/ppma/css/accessibility_foundicons_ie7.css">
+        <![endif]-->
+        <link rel="stylesheet" href="/ppma/css/foundation.min.css">
+        <link rel="stylesheet" href="/ppma/css/app.css">
+                            	<script type="text/javascript" src="js/foundation.min.js"></script>
+<script type="text/javascript" src="/ppma/js/zeroclipboard/dist/ZeroClipboard.min.js"></script>
+<script type="text/javascript" src="/ppma/js/ppma.min.js"></script>
+<title>PHP Password Manager - Login User</title>
+    </head>
+
+    <body>
+
+        
+    <div class="row">
+        <div class="five columns centered" id="login">
+            <div class="row">
+                <div class="ten columns centered">
+                    
+<form class="custom" id="login-form" action="/ppma/index.php?r=user/login" method="post">
+    <label for="LoginForm_username" class="required">Username <span class="required">*</span></label>    <input name="LoginForm[username]" id="LoginForm_username" type="text">    
+    <label for="LoginForm_password" class="required">Password <span class="required">*</span></label>    <div class="row collapse">
+        <div class="ten columns">
+            <input name="LoginForm[password]" id="LoginForm_password" type="password">        </div>
+        <div class="two columns">
+            <a class="postfix button secondary expand"><i class="foundicon-right-arrow"></i></a>
+        </div>
+    </div>
+    
+    <label for="LoginForm_rememberMe">
+        <input id="ytLoginForm_rememberMe" type="hidden" value="0" name="LoginForm[rememberMe]"><input class="hide" name="LoginForm[rememberMe]" id="LoginForm_rememberMe" value="1" type="checkbox">        <span class="custom checkbox "></span> Remember me on this computer
+    </label>
+
+</form>                </div>
+            </div>
+        </div>
+    </div>
+
+
+            <script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+
+					if(!window.location.hash)
+						jQuery('#LoginForm_username').focus();
+				
+});
+/*]]>*/
+</script>
+
+</body></html>

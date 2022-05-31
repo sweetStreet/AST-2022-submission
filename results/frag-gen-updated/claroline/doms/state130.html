@@ -1,0 +1,277 @@
+<html><head>
+<title>Claroline</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/HTML; charset=iso-8859-1">
+<meta name="generator" content="Claroline 1.11.10 - http://claroline.net">
+
+<link rel="stylesheet" type="text/css" href="/claroline11110/web/css/classic/main.css?1337668864" media="screen, projection, tv">
+<link rel="stylesheet" type="text/css" href="/claroline11110/web/css/print.css?1301589034" media="print">
+
+<link rel="top" href="/index.php" title="">
+<link href="http://www.claroline.net/documentation.htm" rel="Help">
+<link href="/claroline11110/CREDITS.txt" rel="Author">
+<link href="http://www.claroline.net" rel="Copyright">
+<link href="/claroline11110/claroline/../favicon.ico" rel="shortcut icon">
+
+<script type="text/javascript">
+    document.cookie="javascriptEnabled=true; path=/claroline11110";
+    function claro_session_loss_countdown(sessionLifeTime){
+    var chrono = setTimeout('claro_warn_of_session_loss()', sessionLifeTime * 1000);
+}
+
+function claro_warn_of_session_loss() {
+    alert('WARNING ! You have just lost your session on the server.\nCopy any text you are currently writing and paste it outside the browser');
+}
+</script>
+
+<script src="/claroline11110/web/js/jquery.js?1374567070" type="text/javascript"></script>
+<script src="/claroline11110/web/js/jquery.qtip.js?1371735614" type="text/javascript"></script>
+<script src="/claroline11110/web/js/claroline.js?1368605938" type="text/javascript"></script>
+<script src="/claroline11110/web/js/claroline.ui.js?1376037408" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#SelectorReadStatus').hide();
+            $('#searchStrategyBox').hide();
+            $('#toSimpleSearch').hide();
+            
+            $('#toAdvancedSearch').click(function(){
+                $('#SelectorReadStatus').show();
+                $('#searchStrategyBox').show();
+                
+                $('#toAdvancedSearch').hide();
+                $('#toSimpleSearch').show();
+            });
+            
+            $('#toSimpleSearch').click(function(){
+                $('#SelectorReadStatus').hide();
+                $('#searchStrategyBox').hide();
+                
+                $('#toSimpleSearch').hide();
+                $('#toAdvancedSearch').show();
+            });
+        });
+    </script>
+
+        <script type="text/javascript">
+        function emptyTrashBox ( localPath )
+        {
+            if (confirm("Are you sure to empty trashbox ?"))
+            {
+                window.location=localPath;
+                return false;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        </script>
+<script src="/claroline11110/web/js/tooltitle.js?1311692694" type="text/javascript"></script>
+
+<script type="text/javascript">
+var __ = (function(){
+
+    var translation = {
+    
+
+    };
+
+    return function(string) {
+        return translation[string] || string;
+    };
+
+})();
+</script>
+            
+
+</head>
+
+<body dir="ltr" onload="claro_session_loss_countdown(1440);" style="">
+<!-- $Id: banner.tpl.php 13151 2011-05-11 12:09:47Z abourguignon $ -->
+
+<!-- claroPage -->
+<div id="claroPage">
+
+<!-- Banner -->
+<div id="topBanner">
+
+<!-- Platform Banner -->
+<div id="platformBanner">
+    <div id="campusBannerLeft">
+        <span id="siteName">
+            <a href="/claroline11110/index.php" target="_top">
+                        Claroline                        </a>
+        </span>
+        
+        
+<!-- campusBannerLeft -->
+
+<!-- End of campusBannerLeft -->
+    </div>
+    <div id="campusBannerRight">
+        <span id="institution">
+                        
+                                                
+                    </span>
+        
+        
+<!-- campusBannerRight -->
+
+<!-- End of campusBannerRight -->
+    </div>
+    <div class="spacer"></div>
+</div>
+<!-- End of Platform Banner -->
+
+<!-- User Banner -->
+<div id="userBanner">
+    <div id="userBannerLeft">
+        <ul class="menu">
+                        <li><span><a href="/claroline11110/claroline/desktop/index.php" target="_top">My desktop</a></span></li>
+                        <li><span><a href="/claroline11110/claroline/messaging" target="_top">My messages</a></span></li>
+                        <li><span><a href="/claroline11110/claroline/admin/" target="_top">Platform administration</a></span></li>
+                        
+<!-- userBannerLeft -->
+
+<!-- End of userBannerLeft -->
+        </ul>
+        
+    </div>
+    
+    <div id="userBannerRight">
+        <ul class="menu">
+            <li class="userName">
+                John Doe            </li>
+                        <li><span><a href="/claroline11110/claroline/auth/profile.php" target="_top">Manage my account</a></span></li>
+                        <li><span><a href="/claroline11110/index.php?logout=true" target="_top">Logout</a></span></li>
+                        
+<!-- userBannerRight -->
+
+<!-- End of userBannerRight -->
+        </ul>
+        
+    </div>
+    
+    <div class="spacer"></div>
+</div>
+
+<!-- BreadcrumbLine  -->
+<div id="breadcrumbLine">
+    <hr>
+    <div class="breadcrumbTrails">
+        <ul class="breadCrumbs">
+<li class="breadCrumbsNode firstBreadCrumbsNode"><a href="/claroline11110/index.php" target="_top"><img src="/claroline11110/web/img/home.png?1232376376" alt="home">&nbsp;Claroline</a>&nbsp;&gt;&nbsp;</li>
+<li class="breadCrumbsNode lastBreadCrumbsNode"><a href="/claroline11110/claroline/messaging/messagebox.php?box=trashbox" target="_top">My messages</a></li>
+</ul>
+    </div>
+    
+    <div id="toolViewOption">
+                            </div>
+    
+    <div class="spacer"></div>
+    <hr>
+</div>
+<!-- End of BreadcrumbLine  -->
+
+</div>
+<!-- End of topBanner -->
+<!-- $Id: body.tpl.php 14332 2012-11-23 10:08:10Z zefredz $ -->
+
+
+<!-- - - - - - - - - - - Claroline Body - - - - - - - - - -->
+<div id="claroBody">
+    
+    
+                
+
+<!-- Page content -->
+<div class="toolTitleBlock"><table><tbody><tr><td><h1 class="toolTitle mainTitle">My messages</h1>
+</td><td><ul class="commandList">
+</ul>
+</td></tr></tbody></table></div>
+<p>
+<a href="/claroline11110/claroline/admin/managing/editFile.php?cmd=rqEdit&amp;file=textzone_messaging_top.inc.html">
+<img src="/claroline11110/web/img/edit.png?1232376376" alt="">Edit text zone
+</a>
+</p><div>
+<ul id="navlist">
+<li><a href="/claroline11110/claroline/messaging/messagebox.php?box=inbox" id="inbox">Inbox(0)</a></li>
+<li><a href="/claroline11110/claroline/messaging/messagebox.php?box=outbox" id="outbox">Outbox</a></li>
+<li><a class="current" href="/claroline11110/claroline/messaging/messagebox.php?box=trashbox" id="trashbox">Trashbox</a></li>
+</ul>
+</div>
+<div class="claroDialogBox ">
+<div class="claroDialogMsg msgForm"><form action="/claroline11110/claroline/messaging/messagebox.php?box=trashbox" method="post">
+<input type="text" name="search" value="" class="inputSearch"> 
+    <select name="SelectorReadStatus" id="SelectorReadStatus" size="1" style="display: none;">        <option value="all" selected="selected">All (Read or not)</option>        <option value="read">Only read</option>        <option value="unread">Only not read</option>    </select> <input type="submit" value="Search">
+<span id="toAdvancedSearch">[<a href="#">Advanced</a>]</span><span id="toSimpleSearch" style="display: none;">[<a href="#">Simple</a>]</span><br>
+<span id="searchStrategyBox" style="display: none;">
+<input type="checkbox" name="searchStrategy" id="searchStrategy" value="Match the exact expression"><label for="searchStrategy">Exact expression</label>
+</span>
+</form>
+</div></div>
+
+<table class="claroTable emphaseLine" width="100%">
+
+<thead>
+<tr> 
+<th>Subject</th>
+<th><a href="/claroline11110/claroline/messaging/messagebox.php?box=trashbox&amp;SelectorReadStatus=all&amp;fieldOrder=sender&amp;order=asc">Sender</a></th>
+<th><a href="/claroline11110/claroline/messaging/messagebox.php?box=trashbox&amp;SelectorReadStatus=all&amp;fieldOrder=date&amp;order=asc">Date</a></th>
+<th class="im_list_action">
+</th></tr></thead>
+<tbody>
+
+
+
+<tr><td colspan="4">No message</td></tr>
+
+</tbody>
+</table>
+<br>
+
+<span>
+<a href="/claroline11110/claroline/messaging/messagebox.php?box=trashbox&amp;SelectorReadStatus=all&amp;cmd=rqEmptyTrashBox" onclick="return emptyTrashBox('/claroline11110/claroline/messaging/messagebox.php?box=trashbox&amp;SelectorReadStatus=all&amp;cmd=exEmptyTrashBox')" class="claroCmd">Empty trashbox</a>
+</span>
+
+<br><br>
+
+<!-- End of Page Content -->
+
+
+    
+    <div class="spacer"></div>
+</div>
+<!-- - - - - - - - - - - End of Claroline Body  - - - - - - - - - - -->
+
+<!-- $Id: footer.tpl.php 12676 2010-10-20 14:59:33Z abourguignon $ -->
+
+
+<div id="campusFooter">
+    <hr>
+    <div id="campusFooterLeft">
+        
+<!-- campusFooterLeft -->
+
+<!-- End of campusFooterLeft -->
+            </div>
+    <div id="campusFooterRight">
+        
+<!-- campusFooterRight -->
+
+<!-- End of campusFooterRight -->
+        <div id="platformManager">Administrator for Claroline : <a href="mailto:jdoe@mydomain.net?subject=[Claroline]">John Doe</a></div>    </div>
+    <div id="campusFooterCenter">
+        
+<!-- campusFooterCenter -->
+
+<!-- End of campusFooterCenter -->
+        <span class="poweredBy">Powered by <a href="http://www.claroline.net" target="_blank">Claroline</a> © 2001 - 2013</span>    </div>
+</div>
+<!-- end of claroPage -->
+</div>
+
+
+</body></html>

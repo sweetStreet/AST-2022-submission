@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state2</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/collabtive/index.php?mode=login'>http://localhost:3000/collabtive/index.php?mode=login</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>44</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>index</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>435.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>2</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state2.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/H1[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 430px; top: 8px; width: 2px; height: 2px; border: 2px solid green;  cursor: pointer;" onclick="location.href='state3.html'"></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 885px; top: 16px; width: 34px; height: 34px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 923px; top: 16px; width: 34px; height: 34px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 961px; top: 16px; width: 34px; height: 34px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 999px; top: 16px; width: 34px; height: 34px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 107px; top: 82px; width: 59px; height: 47px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 125px; top: 351px; width: 708px; height: 37px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 775px; top: 358px; width: 21px; height: 28px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[1]/H2[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 169px; top: 360px; width: 83px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[8]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[8]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[10]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[11]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[13]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[14]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[15]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[8]/TD[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 163px; top: 426px; width: 79px; height: 25px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/H2[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 885px; top: 150px; width: 186px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[2]/H2[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 885px; top: 217px; width: 186px; height: 18px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 885px; top: 239px; width: 170px; height: 25px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: 1053px; top: 239px; width: 18px; height: 25px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[8]/DIV[1]/DIV[2]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[8]/DIV[1]/DIV[2]/DIV[1]/A[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[8]/DIV[2]/DIV[1]/DIV[2]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[8]/DIV[2]/DIV[1]/DIV[2]/A[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[8]/DIV[2]/DIV[1]/DIV[2]/A[3]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/BUTTON[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 169px; top: 223px; width: 101px; height: 24px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/DIV[3]/BUTTON[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 169px; top: 257px; width: 106px; height: 24px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[2]" class='hovers'
+				style="position: absolute; z-index: 10; left: -3px; top: -3px; width: 2px; height: 2px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/FORM[1]/FIELDSET[1]/BUTTON[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 1035px; top: 171px; width: 36px; height: 25px; border: 2px solid orange;  " ></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;
+&lt;title&gt;Desktop @ Collabtive&lt;/title&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;templates/standard/images/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; title=&quot;Collabtive Search&quot; href=&quot;manageajax.php?action=addfx-all&quot;&gt;
+&lt;link rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;My messages&quot; href=&quot;managerss.php?action=mymsgs-rss&amp;amp;user=1&quot;&gt;
+&lt;link rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;My tasks&quot; href=&quot;managerss.php?action=rss-tasks&amp;amp;user=1&quot;&gt;
+
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+//endcolor for close element flashing
+closeEndcolor = '#377814';
+//endcolor for delete element flashing
+deleteEndcolor = '#c62424';
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/prototype.php&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/ajax.php&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/jsval.php&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/chat.js&quot;&gt;&lt;/script&gt;
+     &lt;script type=&quot;text/javascript&quot;&gt;
+        function _jsVal_Language() {
+            this.err_enter = &quot;Please enter a valid value for \&quot;%FIELDNAME%\&quot;.&quot;;
+            this.err_form = &quot;Please enter valid values for:\n\n&quot;;
+            this.err_select = &quot;Please select a valid value in \&quot;%FIELDNAME%\&quot;.&quot;;
+        }
+&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/mycalendar.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;templates/standard/css/lytebox.css&quot; type=&quot;text/css&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/lytebox.php&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;templates/standard/css/style_main.css&quot;&gt;
+
+
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;include/js/tiny_mce/tiny_mce.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+//	theme_advanced_statusbar_location : &quot;bottom&quot;,
+tinyMCE.init({
+	mode : &quot;textareas&quot;,
+	theme : &quot;advanced&quot;,
+	language: &quot;en&quot;,
+	width: &quot;400px&quot;,
+	height: &quot;250px&quot;,
+	plugins : &quot;inlinepopups,style,advimage,advlink,xhtmlxtras,safari,template&quot;,
+	theme_advanced_buttons1 : &quot;bold,italic,underline,|,fontsizeselect,forecolor,|,bullist,numlist,|,link,unlink,image&quot;,
+	theme_advanced_buttons2 : &quot;&quot;,
+	theme_advanced_buttons3 : &quot;&quot;,
+	theme_advanced_toolbar_location : &quot;top&quot;,
+	theme_advanced_toolbar_align : &quot;left&quot;,
+	theme_advanced_path : false,
+	extended_valid_elements : &quot;a[name|href|target|title],img[class|src|border=0|alt|title|hspace|vspace|width|height|align|name],font[face|size|color|style],span[class|align|style]&quot;,
+    theme_advanced_statusbar_location: &quot;bottom&quot;,
+    theme_advanced_resizing : true,
+	theme_advanced_resizing_use_cookie : false,
+	theme_advanced_resizing_min_width : &quot;400px&quot;,
+	theme_advanced_resizing_max_width : &quot;600px&quot;,
+	theme_advanced_resize_horizontal : false,
+	force_br_newlines : true,
+	cleanup: true,
+	cleanup_on_startup: true,
+	force_p_newlines : false,
+	convert_newlines_to_brs : false,
+	forced_root_block : false,
+	external_image_list_url: 'manageajax.php?action=jsonfiles&amp;id='
+
+});
+
+&lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;http://localhost:3000/collabtive/include/js/tiny_mce/themes/advanced/skins/default/ui.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;http://localhost:3000/collabtive/include/js/tiny_mce/plugins/inlinepopups/skins/clearlooks2/window.css&quot;&gt;&lt;/head&gt;
+&lt;body&gt;
+
+&lt;!--&lt;div id = &quot;jslog&quot; style = &quot;color:red;position:absolute;top:60%;right:5%;width:300px;border:1px solid;background-color:grey;&quot;&gt;&lt;/div&gt;--&gt;
+
+	&lt;div id=&quot;sitebody&quot;&gt;
+
+	&lt;div id=&quot;header-wrapper&quot;&gt;
+		&lt;div id=&quot;header&quot;&gt;
+			&lt;div class=&quot;header-in&quot;&gt;
+
+				&lt;div class=&quot;left&quot;&gt;
+					&lt;div class=&quot;logo&quot;&gt;
+						&lt;h1&gt;
+							&lt;a href=&quot;index.php&quot; title=&quot;Desktop&quot;&gt;&lt;img src=&quot;./templates/standard/images/logo-b.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+							&lt;span class=&quot;title&quot;&gt;Collabtive&lt;span class=&quot;subtitle&quot;&gt;/ Projectmanagement &lt;/span&gt;&lt;/span&gt;
+						&lt;/h1&gt;
+					&lt;/div&gt;
+
+				&lt;/div&gt; 
+				&lt;div class=&quot;right&quot;&gt;
+											&lt;ul id=&quot;mainmenue&quot;&gt;
+							&lt;li class=&quot;desktop&quot;&gt;&lt;a class=&quot;active&quot; href=&quot;index.php&quot;&gt;&lt;span&gt;Desktop&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+														&lt;li class=&quot;profil-male&quot;&gt;&lt;a class=&quot;&quot; href=&quot;manageuser.php?action=profile&amp;amp;id=1&quot;&gt;&lt;span&gt;My account&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+							
+							 							&lt;li class=&quot;admin&quot;&gt;&lt;a class=&quot;&quot; href=&quot;admin.php?action=projects&quot;&gt;&lt;span&gt;Administration&lt;/span&gt;&lt;span class=&quot;submenarrow&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+								&lt;div class=&quot;submen&quot;&gt;
+									&lt;ul&gt;
+										&lt;li class=&quot;project-settings&quot;&gt;&lt;a class=&quot;&quot; href=&quot;admin.php?action=projects&quot;&gt;&lt;span&gt;Project administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+										&lt;li class=&quot;user-settings&quot;&gt;&lt;a class=&quot;&quot; href=&quot;admin.php?action=users&quot;&gt;&lt;span&gt;User administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+										&lt;li class=&quot;system-settings&quot;&gt;&lt;a class=&quot;&quot; href=&quot;admin.php?action=system&quot;&gt;&lt;span&gt;System administration&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+									&lt;/ul&gt;
+								&lt;/div&gt;
+							&lt;/li&gt;
+							
+
+							&lt;li class=&quot;logout&quot;&gt;&lt;a href=&quot;manageuser.php?action=logout&quot;&gt;&lt;span&gt;Logout&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+									&lt;/div&gt; &lt;!-- Right End --&gt;
+
+
+
+			&lt;/div&gt; &lt;!-- Header-In End --&gt;
+		&lt;/div&gt; &lt;!-- Header End --&gt;
+	&lt;/div&gt; &lt;!-- Header-Wrapper End --&gt;
+
+
+	&lt;div id=&quot;contentwrapper&quot;&gt;
+&lt;div class=&quot;tabswrapper&quot;&gt;
+
+&lt;ul class=&quot;tabs&quot;&gt;
+		&lt;li class=&quot;desk&quot;&gt;&lt;a class=&quot;active&quot; href=&quot;index.php&quot;&gt;&lt;span&gt;Desktop&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&quot;content-left&quot;&gt;
+	&lt;div id=&quot;content-left-in&quot;&gt;
+
+				&lt;div class=&quot;infowin_left&quot; style=&quot;&quot; id=&quot;systemmsg&quot;&gt;
+									&lt;span id=&quot;closed&quot; style=&quot;display:none;&quot; class=&quot;info_in_green&quot;&gt;&lt;img src=&quot;templates/standard/images/symbols/projects.png&quot; alt=&quot;&quot;&gt;Project was closed&lt;/span&gt;
+			&lt;span id=&quot;deleted&quot; style=&quot;display:none;&quot; class=&quot;info_in_red&quot;&gt;&lt;img src=&quot;templates/standard/images/symbols/projects.png&quot; alt=&quot;&quot;&gt;Project was deleted&lt;/span&gt;
+		&lt;/div&gt;
+
+		
+			&lt;script type=&quot;text/javascript&quot;&gt;
+				systemMsg('systemmsg');
+			&lt;/script&gt;
+		
+		
+					&lt;div class=&quot;projects&quot;&gt;
+	&lt;div class=&quot;block&quot;&gt;
+		&lt;div class=&quot;addmenue&quot;&gt;
+
+			&lt;div class=&quot;block_in_wrapper&quot;&gt;
+				&lt;form class=&quot;main&quot;&gt;
+					&lt;h1&gt;Update available&lt;/h1&gt;
+	
+					&lt;strong&gt;Collabtive 3.0.1&lt;/strong&gt; was released on &lt;strong&gt;Jan 12, 2017&lt;/strong&gt;.
+					&lt;br&gt;&lt;br&gt;
+					&lt;div class=&quot;row&quot;&gt;
+						&lt;button type=&quot;reset&quot; onfocus=&quot;this.blur();&quot; onclick=&quot;blindtoggle('changelog');&quot;&gt;Show changelog&lt;/button&gt;&lt;br&gt;
+					&lt;/div&gt;
+
+					&lt;div class=&quot;row&quot; id=&quot;changelog&quot; style=&quot;display:none;&quot;&gt;
+						&lt;br&gt;
+						&lt;h2&gt;Changelog&lt;/h2&gt;
+						&lt;ol&gt;&lt;li&gt;Improved performance&lt;/li&gt;&lt;li&gt;Personal messages&lt;/li&gt;&lt;li&gt;More responspive user interface&lt;/li&gt;&lt;li&gt;Android and Windows platform support&lt;/li&gt;&lt;li&gt;Easier to use and administrate plugins&lt;/li&gt;&lt;li&gt;New plugin for audio / video conferences&lt;/li&gt;&lt;li&gt;Many bug fixes&lt;/li&gt;&lt;/ol&gt;
+					&lt;/div&gt;
+										
+					&lt;div class=&quot;row-butn-bottom&quot;&gt;
+						&lt;button type=&quot;reset&quot; onfocus=&quot;this.blur();&quot; onclick=&quot;window.location='http://collabtive.o-dyn.de/downloadref.php';&quot;&gt;Download update&lt;/button&gt;&lt;br&gt;
+					&lt;/div&gt;
+					&lt;br&gt;
+				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;			&lt;br&gt;
+				
+		&lt;h1&gt;Desktop&lt;/h1&gt;
+
+							&lt;div class=&quot;projects&quot;&gt;
+				&lt;div class=&quot;headline&quot;&gt;
+					&lt;a href=&quot;javascript:void(0);&quot; id=&quot;projecthead_toggle&quot; class=&quot;win_block&quot; onclick=&quot;toggleBlock('projecthead');&quot;&gt;&lt;/a&gt;
+													&lt;div class=&quot;wintools&quot;&gt;
+								&lt;a class=&quot;add&quot; href=&quot;javascript:blindtoggle('form_addmyproject');&quot; id=&quot;add_myprojects&quot; onclick=&quot;toggleClass(this,'add-active','add');toggleClass('add_butn_myprojects','butn_link_active','butn_link');&quot;&gt;&lt;span&gt;Add project&lt;/span&gt;&lt;/a&gt;
+							&lt;/div&gt;
+											&lt;h2&gt;
+						&lt;a href=&quot;myprojects.php&quot; title=&quot;My projects&quot;&gt;&lt;img src=&quot;./templates/standard/images/symbols/projects.png&quot; alt=&quot;&quot;&gt;My projects&lt;/a&gt;
+					&lt;/h2&gt;
+				&lt;/div&gt;
+
+				&lt;div class=&quot;block&quot; id=&quot;projecthead&quot; style=&quot;&quot;&gt;					&lt;div id=&quot;form_addmyproject&quot; class=&quot;addmenue&quot; style=&quot;display:none;&quot;&gt;
+						&lt;div class=&quot;block_in_wrapper&quot;&gt;
+&lt;h2&gt;Add project&lt;/h2&gt;
+
+	&lt;form novalidate=&quot;&quot; class=&quot;main&quot; method=&quot;post&quot; action=&quot;admin.php?action=addpro&quot; onsubmit=&quot;return validateCompleteForm(this);&quot;&gt;
+	&lt;fieldset&gt;
+		&lt;div class=&quot;row&quot;&gt;&lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;&lt;input type=&quot;text&quot; class=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; required=&quot;1&quot; realname=&quot;Name&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;row&quot;&gt;&lt;label for=&quot;desc&quot;&gt;Description:&lt;/label&gt;&lt;div class=&quot;editor&quot;&gt;&lt;textarea name=&quot;desc&quot; id=&quot;desc&quot; rows=&quot;3&quot; cols=&quot;1&quot; aria-hidden=&quot;true&quot; style=&quot;display: none;&quot;&gt;&lt;/textarea&gt;&lt;span role=&quot;application&quot; aria-labelledby=&quot;desc_voice&quot; id=&quot;desc_parent&quot; class=&quot;mceEditor defaultSkin&quot;&gt;&lt;span class=&quot;mceVoiceLabel&quot; style=&quot;display:none;&quot; id=&quot;desc_voice&quot;&gt;Rich Text Area&lt;/span&gt;&lt;table role=&quot;presentation&quot; id=&quot;desc_tbl&quot; class=&quot;mceLayout&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; style=&quot;width: 400px; height: 250px;&quot;&gt;&lt;tbody&gt;&lt;tr role=&quot;presentation&quot; class=&quot;mceFirst&quot;&gt;&lt;td class=&quot;mceToolbar mceLeft mceFirst mceLast&quot; role=&quot;presentation&quot;&gt;&lt;div id=&quot;desc_toolbargroup&quot; role=&quot;group&quot; aria-labelledby=&quot;desc_toolbargroup_voice&quot; tabindex=&quot;-1&quot;&gt;&lt;span role=&quot;application&quot;&gt;&lt;span id=&quot;desc_toolbargroup_voice&quot; class=&quot;mceVoiceLabel&quot; style=&quot;display:none;&quot;&gt;Toolbar&lt;/span&gt;&lt;table id=&quot;desc_toolbar1&quot; class=&quot;mceToolbar mceToolbarRow1 Enabled&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; align=&quot;&quot; role=&quot;presentation&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;false&quot; aria-pressed=&quot;false&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;mceToolbarStart mceToolbarStartButton mceFirst&quot;&gt;&lt;span&gt;&lt;!-- IE --&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;desc_bold&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_bold&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;desc_bold_voice&quot; title=&quot;Bold (Ctrl+B)&quot; tabindex=&quot;-1&quot; aria-pressed=&quot;false&quot;&gt;&lt;span class=&quot;mceIcon mce_bold&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;desc_bold_voice&quot;&gt;Bold (Ctrl+B)&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;desc_italic&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_italic&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;desc_italic_voice&quot; title=&quot;Italic (Ctrl+I)&quot; tabindex=&quot;-1&quot; aria-pressed=&quot;false&quot;&gt;&lt;span class=&quot;mceIcon mce_italic&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;desc_italic_voice&quot;&gt;Italic (Ctrl+I)&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;desc_underline&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_underline&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;desc_underline_voice&quot; title=&quot;Underline (Ctrl+U)&quot; tabindex=&quot;-1&quot; aria-pressed=&quot;false&quot;&gt;&lt;span class=&quot;mceIcon mce_underline&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;desc_underline_voice&quot;&gt;Underline (Ctrl+U)&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span class=&quot;mceSeparator&quot; role=&quot;separator&quot; aria-orientation=&quot;vertical&quot; tabindex=&quot;-1&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-labelledby=&quot;desc_fontsizeselect_text&quot; aria-describedby=&quot;desc_fontsizeselect_voiceDesc&quot;&gt;&lt;table role=&quot;presentation&quot; tabindex=&quot;-1&quot; id=&quot;desc_fontsizeselect&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;mceListBox mceListBoxEnabled mce_fontsizeselect&quot; aria-valuenow=&quot;Font size&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;mceFirst&quot;&gt;&lt;span id=&quot;desc_fontsizeselect_voiceDesc&quot; class=&quot;voiceLabel&quot; style=&quot;display:none;&quot;&gt;Font size&lt;/span&gt;&lt;a id=&quot;desc_fontsizeselect_text&quot; tabindex=&quot;-1&quot; href=&quot;javascript:;&quot; class=&quot;mceText mceTitle&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot;&gt;Font size&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;mceLast&quot;&gt;&lt;a id=&quot;desc_fontsizeselect_open&quot; tabindex=&quot;-1&quot; href=&quot;javascript:;&quot; class=&quot;mceOpen&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot;&gt;&lt;span&gt;&lt;span style=&quot;display:none;&quot; class=&quot;mceIconOnly&quot; aria-hidden=&quot;true&quot;&gt;▼&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;mceToolbarStart&quot;&gt;&lt;span&gt;&lt;!-- IE --&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span role=&quot;button&quot; aria-labelledby=&quot;desc_forecolor_voice&quot; aria-haspopup=&quot;true&quot;&gt;&lt;table id=&quot;desc_forecolor&quot; role=&quot;presentation&quot; tabindex=&quot;-1&quot; class=&quot;mceSplitButton mceSplitButtonEnabled mce_forecolor&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; title=&quot;Select text color&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;mceFirst&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;desc_forecolor_action&quot; tabindex=&quot;-1&quot; href=&quot;javascript:;&quot; class=&quot;mceAction mce_forecolor&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; title=&quot;Select text color&quot;&gt;&lt;span class=&quot;mceAction mce_forecolor&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; id=&quot;desc_forecolor_voice&quot; style=&quot;display:none;&quot;&gt;Select text color&lt;/span&gt;&lt;div id=&quot;desc_forecolor_preview&quot; class=&quot;mceColorPreview&quot; style=&quot;background-color: rgb(136, 136, 136);&quot;&gt;&lt;/div&gt;&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;mceLast&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;desc_forecolor_open&quot; tabindex=&quot;-1&quot; href=&quot;javascript:;&quot; class=&quot;mceOpen mce_forecolor&quot; onclick=&quot;return false;&quot; onmousedown=&quot;return false;&quot; title=&quot;Select text color&quot;&gt;&lt;span class=&quot;mceOpen mce_forecolor&quot;&gt;&lt;span style=&quot;display:none;&quot; class=&quot;mceIconOnly&quot; aria-hidden=&quot;true&quot;&gt;▼&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span class=&quot;mceSeparator&quot; role=&quot;separator&quot; aria-orientation=&quot;vertical&quot; tabindex=&quot;-1&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;desc_bullist&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_bullist&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;desc_bullist_voice&quot; title=&quot;Unordered list&quot; tabindex=&quot;-1&quot; aria-pressed=&quot;false&quot;&gt;&lt;span class=&quot;mceIcon mce_bullist&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;desc_bullist_voice&quot;&gt;Unordered list&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;desc_numlist&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_numlist&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;desc_numlist_voice&quot; title=&quot;Ordered list&quot; tabindex=&quot;-1&quot; aria-pressed=&quot;false&quot;&gt;&lt;span class=&quot;mceIcon mce_numlist&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;desc_numlist_voice&quot;&gt;Ordered list&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;span class=&quot;mceSeparator&quot; role=&quot;separator&quot; aria-orientation=&quot;vertical&quot; tabindex=&quot;-1&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;desc_link&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_link mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;desc_link_voice&quot; title=&quot;Insert/edit link&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_link&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;desc_link_voice&quot;&gt;Insert/edit link&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;desc_unlink&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mce_unlink mceButtonDisabled&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;desc_unlink_voice&quot; title=&quot;Unlink&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;span class=&quot;mceIcon mce_unlink&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;desc_unlink_voice&quot;&gt;Unlink&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;position: relative&quot;&gt;&lt;a role=&quot;button&quot; id=&quot;desc_image&quot; href=&quot;javascript:;&quot; class=&quot;mceButton mceButtonEnabled mce_image&quot; onmousedown=&quot;return false;&quot; onclick=&quot;return false;&quot; aria-labelledby=&quot;desc_image_voice&quot; title=&quot;Insert/edit image&quot; tabindex=&quot;-1&quot;&gt;&lt;span class=&quot;mceIcon mce_image&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mceVoiceLabel mceIconOnly&quot; style=&quot;display: none;&quot; id=&quot;desc_image_voice&quot;&gt;Insert/edit image&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;&lt;td class=&quot;mceToolbarEnd mceToolbarEndButton mceLast&quot;&gt;&lt;span&gt;&lt;!-- IE --&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/span&gt;&lt;/div&gt;&lt;a href=&quot;#&quot; accesskey=&quot;z&quot; title=&quot;Jump to tool buttons - Alt+Q, Jump to editor - Alt-Z, Jump to element path - Alt-X&quot; onfocus=&quot;tinyMCE.getInstanceById('desc').focus();&quot;&gt;&lt;!-- IE --&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;mceIframeContainer mceFirst mceLast&quot;&gt;&lt;iframe id=&quot;desc_ifr&quot; src=&quot;javascript:&amp;quot;&amp;quot;&quot; frameborder=&quot;0&quot; title=&quot;Rich Text Area. Press ALT F10 for toolbar. Press ALT 0 for help.&quot; style=&quot;width: 100%; height: 206px;&quot; cd_frame_id_=&quot;f0eb684b94b64c1b97b08e3b002287f1&quot;&gt;&lt;/iframe&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;mceLast&quot;&gt;&lt;td class=&quot;mceStatusbar mceFirst mceLast&quot;&gt;&lt;div id=&quot;desc_path_row&quot; role=&quot;group&quot; aria-labelledby=&quot;desc_path_voice&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;a id=&quot;desc_resize&quot; href=&quot;javascript:;&quot; onclick=&quot;return false;&quot; class=&quot;mceResize&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+
+	    &lt;div class=&quot;clear_both_b&quot;&gt;&lt;/div&gt;
+
+		&lt;div class=&quot;row&quot;&gt;
+		&lt;label for=&quot;end&quot;&gt;Due:&lt;/label&gt;
+				&lt;input type=&quot;text&quot; class=&quot;text&quot; name=&quot;end&quot; id=&quot;endP&quot; realname=&quot;Due&quot;&gt;
+		&lt;br&gt;&lt;br&gt;
+		&lt;label for=&quot;neverdue&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;neverdue&quot; name=&quot;neverdue&quot; id=&quot;neverdue&quot; onclick=&quot;$('endP').value='';$('endP').disabled='disabled';&quot;&gt;Never due
+		&lt;/div&gt;
+
+		&lt;div class=&quot;datepick&quot;&gt;
+			&lt;div id=&quot;add_project&quot; class=&quot;picker&quot; style=&quot;display:none;&quot;&gt;&lt;table class=&quot;cal&quot; cellpadding=&quot;0&quot; cellspacing=&quot;1&quot; border=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr class=&quot;head&quot;&gt;&lt;td class=&quot;back&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;td colspan=&quot;5&quot;&gt;October 2021&lt;/td&gt;&lt;td class=&quot;next&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;weekday&quot;&gt;&lt;td&gt;Mon&lt;/td&gt;&lt;td&gt;Tue&lt;/td&gt;&lt;td&gt;Wed&lt;/td&gt;&lt;td&gt;Thu&lt;/td&gt;&lt;td&gt;Fri&lt;/td&gt;&lt;td&gt;Sat&lt;/td&gt;&lt;td&gt;Sun&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;wrong&quot;&gt;27&lt;/td&gt;&lt;td class=&quot;wrong&quot;&gt;28&lt;/td&gt;&lt;td class=&quot;wrong&quot;&gt;29&lt;/td&gt;&lt;td class=&quot;wrong&quot;&gt;30&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='01.10.2021';new Effect.Fade('add_project');&quot;&gt;1&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='02.10.2021';new Effect.Fade('add_project');&quot;&gt;2&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='03.10.2021';new Effect.Fade('add_project');&quot;&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='04.10.2021';new Effect.Fade('add_project');&quot;&gt;4&lt;/td&gt;&lt;td class=&quot;today&quot; onclick=&quot;$('endP').value='05.10.2021';new Effect.Fade('add_project');&quot;&gt;5&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='06.10.2021';new Effect.Fade('add_project');&quot;&gt;6&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='07.10.2021';new Effect.Fade('add_project');&quot;&gt;7&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='08.10.2021';new Effect.Fade('add_project');&quot;&gt;8&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='09.10.2021';new Effect.Fade('add_project');&quot;&gt;9&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='10.10.2021';new Effect.Fade('add_project');&quot;&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='11.10.2021';new Effect.Fade('add_project');&quot;&gt;11&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='12.10.2021';new Effect.Fade('add_project');&quot;&gt;12&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='13.10.2021';new Effect.Fade('add_project');&quot;&gt;13&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='14.10.2021';new Effect.Fade('add_project');&quot;&gt;14&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='15.10.2021';new Effect.Fade('add_project');&quot;&gt;15&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='16.10.2021';new Effect.Fade('add_project');&quot;&gt;16&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='17.10.2021';new Effect.Fade('add_project');&quot;&gt;17&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='18.10.2021';new Effect.Fade('add_project');&quot;&gt;18&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='19.10.2021';new Effect.Fade('add_project');&quot;&gt;19&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='20.10.2021';new Effect.Fade('add_project');&quot;&gt;20&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='21.10.2021';new Effect.Fade('add_project');&quot;&gt;21&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='22.10.2021';new Effect.Fade('add_project');&quot;&gt;22&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='23.10.2021';new Effect.Fade('add_project');&quot;&gt;23&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='24.10.2021';new Effect.Fade('add_project');&quot;&gt;24&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='25.10.2021';new Effect.Fade('add_project');&quot;&gt;25&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='26.10.2021';new Effect.Fade('add_project');&quot;&gt;26&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='27.10.2021';new Effect.Fade('add_project');&quot;&gt;27&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='28.10.2021';new Effect.Fade('add_project');&quot;&gt;28&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='29.10.2021';new Effect.Fade('add_project');&quot;&gt;29&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='30.10.2021';new Effect.Fade('add_project');&quot;&gt;30&lt;/td&gt;&lt;td class=&quot;normalday&quot; onclick=&quot;$('endP').value='31.10.2021';new Effect.Fade('add_project');&quot;&gt;31&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=&quot;7&quot; class=&quot;dpfoot&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;javascript:new Effect.Fade('add_project','{duration:0.8}');&quot;&gt;Close&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;script type=&quot;text/javascript&quot;&gt;
+		  	theCal = new calendar(10,2021);
+			theCal.dayNames = [&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thu&quot;,&quot;Fri&quot;,&quot;Sat&quot;,&quot;Sun&quot;];
+			theCal.monthNames = [&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;];
+			theCal.relateTo = &quot;endP&quot;;
+			theCal.dateFormat = &quot;d.m.Y&quot;;
+			theCal.getDatepicker(&quot;add_project&quot;);
+		&lt;/script&gt;
+
+		&lt;div class=&quot;row&quot;&gt;
+		&lt;label for=&quot;budget&quot;&gt;Budget:&lt;/label&gt;
+		&lt;input type=&quot;text&quot; class=&quot;text&quot; name=&quot;budget&quot; id=&quot;budget&quot;&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;row&quot;&gt;&lt;label&gt;People:&lt;/label&gt;
+		&lt;div style=&quot;float:left;&quot;&gt;
+        	        &lt;div class=&quot;row&quot;&gt;
+	        &lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;assignto[]&quot; id=&quot;1&quot; checked=&quot;checked&quot;&gt;&lt;label for=&quot;1&quot;&gt;admin&lt;/label&gt;&lt;br&gt;
+	      	&lt;/div&gt;
+	    	    &lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;input type=&quot;hidden&quot; name=&quot;assignme&quot; value=&quot;1&quot;&gt;
+
+	    &lt;div class=&quot;clear_both_b&quot;&gt;&lt;/div&gt;
+
+		&lt;div class=&quot;row-butn-bottom&quot;&gt;
+		&lt;label&gt;&amp;nbsp;&lt;/label&gt;
+		&lt;button type=&quot;submit&quot; onfocus=&quot;this.blur();&quot;&gt;Add&lt;/button&gt;
+				&lt;button type=&quot;reset&quot; onclick=&quot;blindtoggle('form_addmyproject');toggleClass('add_myprojects','add-active','add');toggleClass('add_butn_myprojects','butn_link_active','butn_link');toggleClass('sm_myprojects','smooth','nosmooth');return false;&quot; onfocus=&quot;this.blur();&quot;&gt;Cancel&lt;/button&gt;
+				&lt;/div&gt;
+
+
+	&lt;/fieldset&gt;
+	&lt;/form&gt;
+
+&lt;/div&gt; 					&lt;/div&gt;
+
+				&lt;div class=&quot;nosmooth&quot; id=&quot;sm_deskprojects&quot;&gt;
+					&lt;table id=&quot;desktopprojects&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;
+						&lt;thead&gt;
+							&lt;tr&gt;
+								&lt;th class=&quot;a&quot;&gt;&lt;/th&gt;
+								&lt;th class=&quot;b&quot; style=&quot;cursor:pointer;&quot; onclick=&quot;sortBlock('desktopprojects','');&quot;&gt;Project&lt;/th&gt;
+								&lt;th class=&quot;c&quot; style=&quot;cursor:pointer&quot; onclick=&quot;sortBlock('desktopprojects','done');&quot;&gt;Done&lt;/th&gt;
+								&lt;th class=&quot;d&quot; style=&quot;text-align:right&quot; onclick=&quot;sortBlock('desktopprojects','daysleft');&quot;&gt;Days&amp;nbsp;&amp;nbsp;&lt;/th&gt;
+								&lt;th class=&quot;tools&quot;&gt;&lt;/th&gt;
+							&lt;/tr&gt;
+						&lt;/thead&gt;
+
+						&lt;tfoot&gt;
+							&lt;tr&gt;
+								&lt;td colspan=&quot;5&quot;&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+						&lt;/tfoot&gt;
+
+											&lt;/table&gt;
+
+					&lt;div class=&quot;tablemenue&quot;&gt;
+						&lt;div class=&quot;tablemenue-in&quot;&gt;
+															&lt;a class=&quot;butn_link&quot; href=&quot;javascript:blindtoggle('form_addmyproject');&quot; id=&quot;add_butn_myprojects&quot; onclick=&quot;toggleClass('add_myprojects','add-active','add');toggleClass(this,'butn_link_active','butn_link');toggleClass('sm_deskprojects','smooth','nosmooth');&quot;&gt;Add project&lt;/a&gt;
+													&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt; 			   &lt;/div&gt; 			&lt;/div&gt; 			&lt;div class=&quot;content-spacer&quot;&gt;&lt;/div&gt;
+										
+				
+		
+			&lt;script type=&quot;text/javascript&quot;&gt;
+			try{
+			var accord_projects = new accordion('projecthead');
+			}
+			catch(e)
+			{}
+			try{
+			var accord_tasks = new accordion('taskhead');
+			}
+			catch(e)
+			{}
+			try{
+			var accord_msgs = new accordion('activityhead');
+			}
+			catch(e)
+			{}
+			changeshow('manageajax.php?action=newcal','thecal','progress');
+			&lt;/script&gt;
+		
+
+	&lt;/div&gt; &lt;/div&gt; 
+&lt;div id=&quot;content-right&quot;&gt;
+
+
+		&lt;div class=&quot;content-right-in&quot;&gt;
+			&lt;h2&gt;&lt;a id=&quot;searchtoggle&quot; class=&quot;win-up&quot; href=&quot;javascript:blindtoggle('search');toggleClass('searchtoggle','win-up','win-down');&quot;&gt;Search&lt;/a&gt;&lt;/h2&gt;
+
+			&lt;form id=&quot;search&quot; method=&quot;get&quot; action=&quot;managesearch.php&quot; onsubmit=&quot;return validateStandard(this,'input_error');&quot;&gt;
+			&lt;fieldset&gt;
+				&lt;div class=&quot;row&quot;&gt;
+					&lt;input type=&quot;text&quot; class=&quot;text&quot; id=&quot;query&quot; name=&quot;query&quot; autocomplete=&quot;off&quot;&gt;
+				&lt;/div&gt;
+
+				&lt;div id=&quot;choices&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;
+				&lt;input type=&quot;hidden&quot; name=&quot;action&quot; value=&quot;search&quot;&gt;
+
+				&lt;div id=&quot;indicator1&quot; style=&quot;display:none;&quot;&gt;&lt;img src=&quot;templates/standard/images/symbols/indicator_arrows.gif&quot; alt=&quot;Searching...&quot;&gt;&lt;/div&gt;
+
+				&lt;button type=&quot;submit&quot; title=&quot;Go!&quot;&gt;&lt;/button&gt;
+			&lt;/fieldset&gt;
+
+			&lt;/form&gt;
+	&lt;/div&gt;
+	
+
+		
+
+			
+		
+		&lt;div class=&quot;content-right-in&quot;&gt;
+			&lt;h2&gt;&lt;a id=&quot;onlinelisttoggle&quot; class=&quot;win-up&quot; href=&quot;javascript:blindtoggle('onlinelist');toggleClass('onlinelisttoggle','win-up','win-down');&quot;&gt;Online&lt;/a&gt;&lt;/h2&gt;
+
+			&lt;div id=&quot;onlinelist&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;a class=&quot;user&quot; href=&quot;manageuser.php?action=profile&amp;amp;id=1&quot;&gt;admin&lt;div&gt;&lt;img src=&quot;thumb.php?pic=templates/standard/images/no-avatar-male.jpg&amp;amp;width=90&quot;&gt;&lt;/div&gt; &lt;/a&gt; &lt;a class=&quot;chat-user&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+	&lt;/div&gt;
+
+
+		
+			  &lt;script type=&quot;text/javascript&quot;&gt;
+			  new Ajax.Autocompleter('query', 'choices', 'managesearch.php?action=ajaxsearch', {paramName:'query',minChars: 2,indicator: 'indicator1'});
+				 var on = new Ajax.PeriodicalUpdater(&quot;onlinelist&quot;,&quot;manageuser.php?action=onlinelist&quot;,{method:'get',evalScripts:true,frequency:35,decay:1.5});
+
+
+			&lt;/script&gt;
+		
+
+&lt;/div&gt;
+			&lt;/div&gt; 		&lt;/div&gt; 
+
+ &lt;div id=&quot;msgchk&quot; style=&quot;display:none;&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+		chkChat();
+&lt;/script&gt;
+
+
+	&lt;div id=&quot;footer-wrapper&quot;&gt;
+		&lt;div class=&quot;footer&quot;&gt;
+			&lt;div class=&quot;footer-in&quot;&gt;
+				&lt;a href=&quot;http://collabtive.o-dyn.de&quot;&gt;Collabtive 1.0&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+
+&lt;div id=&quot;modal_overlay&quot; style=&quot;position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9998; display: none;&quot;&gt;&lt;/div&gt;&lt;div id=&quot;modal_container&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;&lt;div id=&quot;modal_loading&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;&lt;div id=&quot;lbOverlay&quot; class=&quot;grey&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;&lt;div id=&quot;lbMain&quot; style=&quot;display: none;&quot;&gt;&lt;div id=&quot;lbOuterContainer&quot; class=&quot;grey&quot;&gt;&lt;div id=&quot;lbIframeContainer&quot; style=&quot;display: none;&quot;&gt;&lt;iframe id=&quot;lbIframe&quot; name=&quot;lbIframe&quot; style=&quot;display: none;&quot; cd_frame_id_=&quot;75e23db7e39c8303873eaaacf0a0124a&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;div id=&quot;lbImageContainer&quot;&gt;&lt;img id=&quot;lbImage&quot;&gt;&lt;div id=&quot;lbHoverNav&quot;&gt;&lt;a id=&quot;lbPrev&quot; class=&quot;grey&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;a id=&quot;lbNext&quot; class=&quot;grey&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;lbLoading&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;lbDetailsContainer&quot; class=&quot;grey&quot;&gt;&lt;div id=&quot;lbDetailsData&quot; class=&quot;grey&quot;&gt;&lt;div id=&quot;lbDetails&quot;&gt;&lt;span id=&quot;lbCaption&quot;&gt;&lt;/span&gt;&lt;span id=&quot;lbNumberDisplay&quot;&gt;&lt;/span&gt;&lt;span id=&quot;lbNavDisplay&quot; style=&quot;display: none;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div id=&quot;lbBottomNav&quot;&gt;&lt;a id=&quot;lbClose&quot; class=&quot;grey&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;a id=&quot;lbPause&quot; class=&quot;grey&quot; href=&quot;#&quot; style=&quot;display: none;&quot;&gt;&lt;/a&gt;&lt;a id=&quot;lbPlay&quot; class=&quot;grey&quot; href=&quot;#&quot; style=&quot;display: none;&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/H1[1]/A[1]</td>
+							<td><a href="state3.html">state3</a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[1]/UL[1]/LI[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[1]/H2[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[4]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[6]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[8]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[8]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[10]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[11]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[13]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[14]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[15]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[2]/DIV[1]/SPAN[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[5]/DIV[1]/TABLE[1]/TBODY[1]/TR[8]/TD[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[2]/DIV[1]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/H2[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[2]/H2[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[2]/DIV[1]/UL[1]/LI[1]/A[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[8]/DIV[1]/DIV[2]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[8]/DIV[1]/DIV[2]/DIV[1]/A[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[8]/DIV[2]/DIV[1]/DIV[2]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[8]/DIV[2]/DIV[1]/DIV[2]/A[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[8]/DIV[2]/DIV[1]/DIV[2]/A[3]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/DIV[1]/BUTTON[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]/DIV[3]/BUTTON[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[2]/DIV[1]/DIV[3]/DIV[2]/DIV[1]/DIV[1]/FORM[1]/FIELDSET[1]/DIV[9]/BUTTON[2]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[2]/DIV[3]/DIV[1]/FORM[1]/FIELDSET[1]/BUTTON[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

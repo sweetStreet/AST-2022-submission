@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crawl overview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CrawlJax">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<style>
+.tooltip-inner {
+	max-width: 300px;
+	word-wrap: break-word;
+}
+
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+							<a class="brand" href="../index.html#graph">Crawl overview</a>
+						<ul class="nav">
+									<li class="active"><a href="#">State inspector</a></li>
+							</ul>
+			<div class="nav pull-right">
+				<a href="#" class="btn graphBtn" id='pauseButton' data-toggle="tooltip" data-placement="bottom" title="Pause the graph movement"><i class="icon-pause"></i></a>
+				<a href="#" class="btn graphBtn" rel="popover" data-placement="bottom"  data-original-title="What to do"><i class='icon-question-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="toggleND" data-placement="bottom"  data-original-title="Show or Hide Near Duplicates"><i class='icon-remove-sign'></i></a>
+				<a href="#" class="btn graphBtn" id="clusterBtn" data-placement="bottom"  data-original-title="Show clusters"><i class='icon-asterisk'></i></a>
+				<div style="display: none" id='popup-content'>
+					<p>You can double click a state to inspect it further.</p>
+					<p>Clicking an edge gives more details on the state transition.</p>
+					<p>Use your mouse to zoom in and out by scrolling, or drag the states and view around.</p>
+				</div>
+				<a href="result.json" class="btn" data-toggle="tooltip" data-placement="bottom" title="Download result as JSON"><i class='icon-download'></i></a>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</nav>	<div class='container' >
+		<h1>Summary of state7</h1>
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="span1">
+				<col class="span7">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>URL</th>
+					<td><a href='http://localhost:3000/'>http://localhost:3000/</a></td>
+				</tr>
+				<tr>
+					<th>Fan in</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Fan out</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Interaction elements</th>
+					<td>4</td>
+				</tr>
+				<tr>
+					<th>Nearest State</th>
+					<td>index</td>
+				</tr>
+				<tr>
+					<th>Distance to nearest State</th>
+					<td>1.0</td>
+				</tr>
+				<tr>
+					<th>Has Near Duplicate</th>
+					<td>false</td>
+				</tr>
+				<tr>
+					<th>Cluster</th>
+					<td>7</td>
+				</tr>
+				<tr>
+					<th>Failed events</th>
+					<td>-</td>
+			</tbody>
+		</table>
+		<ul id='tabs' class="nav nav-tabs">
+			<li class="active">
+				<a href="#screenshot">Screenshot</a>
+			</li>
+			<li>
+				<a href="#dom">Captured DOM</a>
+			</li>	
+			<li>
+				<a href="#interactions">Interactions</a>
+			</li>			
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="position: relative;" id='screenshot'>			
+				<img style='max-width: none;' border='0' src='../screenshots/state7.png' /> 
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 27px; top: -3px; width: 125px; height: 48px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 762px; top: -3px; width: 70px; height: 47px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[6]/A[1]" class='hovers'
+				style="position: absolute; z-index: 10; left: 961px; top: -3px; width: 84px; height: 47px; border: 2px solid orange;  " ></div>
+								<div rel="tooltip" data-original-title="/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[7]/A[1]" class='hovers'
+				style="position: absolute; z-index: 20; left: 1043px; top: -3px; width: 75px; height: 47px; border: 2px solid #00FFFF;  cursor: pointer;" onclick="location.href='state5.html'"></div>
+							</div>
+			<div class="tab-pane" id='dom'>
+				<h2>Captured DOM</h2>
+				<pre class='brush: html'>&lt;html&gt;&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+	&lt;!-- Le HTML5 shim, for IE6-8 support of HTML5 elements --&gt;
+	&lt;!--[if lt IE 9]&gt;
+	  &lt;script src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+	&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+	&lt;title&gt;Homepage | DimeShift&lt;/title&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
+	&lt;link rel=&quot;icon&quot; href=&quot;/images/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+	&lt;script async=&quot;&quot; src=&quot;//www.google-analytics.com/analytics.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+		var site_path = window.location.protocol + &quot;//&quot; + window.location.hostname + (window.location.port ? ':' + window.location.port : '');
+	&lt;/script&gt;
+
+	&lt;script src=&quot;//localhost:35729/livereload.js&quot;&gt;&lt;/script&gt;
+
+	&lt;link href=&quot;/resources/css.css&quot; media=&quot;screen&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+	&lt;meta name=&quot;google-site-verification&quot; content=&quot;MyNePgPoKL2FkR070Lj1pIT8Or7gERZiobVzjG0PtOk&quot;&gt;
+	&lt;script&gt;
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-400436-21', 'auto');
+		ga('send', 'pageview');
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body style=&quot;&quot; class=&quot;&quot;&gt;
+&lt;div id=&quot;wrap&quot;&gt;
+		&lt;!-- Fixed navbar --&gt;
+	&lt;div class=&quot;navbar navbar-inverse navbar-fixed-top headroom disable-selection&quot; id=&quot;header&quot;&gt;
+		&lt;div class=&quot;container&quot;&gt;
+			&lt;div class=&quot;navbar-header&quot;&gt;
+				&lt;!-- Button for smallest screens --&gt;
+				&lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot; style=&quot;&quot;&gt;&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; &lt;/button&gt;
+				
+
+				&lt;a href=&quot;/&quot; class=&quot;btn btn-info btn-lg btn-logo&quot;&gt;$ dimeshift&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+				&lt;ul class=&quot;nav navbar-nav pull-right&quot;&gt;
+					&lt;li class=&quot;header_is_not_signed_in active&quot;&gt;
+						&lt;a href=&quot;/&quot; class=&quot;menu_category menu_category_home&quot; data-i18n=&quot;Home&quot;&gt;Home&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class=&quot;header_is_signed_in&quot; style=&quot;display: none;&quot;&gt;
+						&lt;a href=&quot;/wallets&quot; class=&quot;menu_category menu_category_wallets&quot; data-i18n=&quot;Wallets&quot;&gt;Wallets&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class=&quot;header_is_signed_in&quot; style=&quot;display: none;&quot;&gt;
+						&lt;a href=&quot;/plans&quot; class=&quot;menu_category menu_category_wallets&quot; data-i18n=&quot;Goals&quot;&gt;Goals&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;mailto:jeka911@gmail.com?subject=Wallet&quot; class=&quot;menu_category&quot; data-i18n=&quot;Contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;http://docs.dimeshift.apiary.io/&quot; class=&quot;menu_category&quot;&gt;API&lt;/a&gt;&lt;/li&gt;
+					&lt;li class=&quot;header_is_not_signed_in&quot;&gt;
+						&lt;a href=&quot;/user/registration&quot; data-i18n=&quot;Register&quot;&gt;Register&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class=&quot;header_is_not_signed_in&quot;&gt;
+						&lt;a href=&quot;/user/signin&quot; class=&quot;signin_caller&quot; data-i18n=&quot;Sign In&quot;&gt;Sign In&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class=&quot;header_is_signed_in&quot; style=&quot;display: none;&quot;&gt;
+						&lt;a href=&quot;/profile&quot; data-i18n=&quot;Settings&quot;&gt;Settings&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class=&quot;header_is_signed_in&quot; style=&quot;display: none;&quot;&gt;
+						&lt;a href=&quot;/user/logout&quot; class=&quot;signout_caller&quot; data-i18n=&quot;Log Out&quot;&gt;Log Out&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href=&quot;/user/change_language&quot; class=&quot;icon_holder&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-globe&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;&lt;!--/.nav-collapse --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt; 
+	&lt;!-- /.navbar --&gt;
+
+
+
+	&lt;div class=&quot;container&quot; id=&quot;container&quot;&gt;
+
+		&lt;div id=&quot;fill_profile_invitation&quot; style=&quot;display: none;&quot;&gt;
+			&lt;div class=&quot;alert alert-info&quot;&gt;
+			&lt;span data-i18n=&quot;Please don't forget to let us know your email address, so you can sign in to DimeShift on your next visit&quot;&gt;Please don't forget to let us know your email address, so you can sign in to DimeShift on your next visit&lt;/span&gt;. &lt;a href=&quot;/user/fillprofile&quot; class=&quot;btn btn-primary btn-xs&quot; data-i18n=&quot;Do it&quot;&gt;Do it&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;page_holder&quot; id=&quot;page_holder_1&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;page_holder&quot; id=&quot;page_holder_2&quot;&gt;&lt;div class=&quot;page&quot;&gt;&lt;h1&gt;DimeShift &ndash; &lt;span data-i18n=&quot;the easiest way to track your expenses&quot;&gt;the easiest way to track your expenses&lt;/span&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;span data-i18n=&quot;To demonstrate how simple it is&quot;&gt;To demonstrate how simple it is&lt;/span&gt; &ndash; &lt;span data-i18n=&quot;we don't even ask you to register&quot;&gt;we don't even ask you to register&lt;/span&gt;.&lt;/p&gt;
+
+&lt;div style=&quot;height: 50px;&quot;&gt;
+&lt;p class=&quot;register_with_mouse&quot; style=&quot;&quot;&gt;&lt;span data-i18n=&quot;Just move your mouse pointer over&quot;&gt;Just move your mouse pointer over&lt;/span&gt; 
+          &lt;input type=&quot;submit&quot; class=&quot;btn btn-primary&quot; id=&quot;demo_signup&quot; data-i18nvalue=&quot;here&quot; value=&quot;here&quot;&gt; &lt;span data-i18n=&quot;and start using wallet right now!&quot;&gt;and start using wallet right now!&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;register_without_mouse&quot; style=&quot;display: none;&quot;&gt;&lt;span data-i18n=&quot;Just click&quot;&gt;Just click&lt;/span&gt;
+          &lt;input type=&quot;submit&quot; class=&quot;btn btn-primary&quot; id=&quot;demo_without_mouse_signup&quot; data-i18nvalue=&quot;here&quot; value=&quot;here&quot;&gt; &lt;span data-i18n=&quot;and start using wallet right now!&quot;&gt;and start using wallet right now!&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;span id=&quot;screenshots_header_ruler&quot;&gt;&lt;/span&gt;
+
+&lt;h4 id=&quot;screenshots_header&quot; style=&quot;margin-top: 427px;&quot;&gt;&lt;span data-i18n=&quot;Screenshots&quot;&gt;Screenshots&lt;/span&gt;&lt;/h4&gt;
+&lt;div class=&quot;row home_screenshots&quot;&gt;
+  &lt;div class=&quot;col-md-3 col-sm-6 col-xs-12&quot;&gt;
+  	&lt;a href=&quot;http://localhost:3000/images/homepage/screenshots/transactions.jpg&quot; class=&quot;image-link&quot; id=&quot;image-link-1&quot; style=&quot;background-image: url('http://localhost:3000/images/homepage/screenshots/transactions.jpg');&quot;&gt;&lt;/a&gt;
+&lt;div class=&quot;hideme&quot; id=&quot;image-link-1-title&quot;&gt;&lt;span data-i18n=&quot;Easiest way to manage your personal finances online&quot;&gt;Easiest way to manage your personal finances online&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;hideme&quot; id=&quot;image-link-1-description&quot;&gt;&lt;span data-i18n=&quot;Simple as it is&quot;&gt;Simple as it is&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-3 col-sm-6 col-xs-12&quot;&gt;
+  	&lt;a href=&quot;http://localhost:3000/images/homepage/screenshots/wallets.jpg&quot; class=&quot;image-link&quot; id=&quot;image-link-wallets&quot; style=&quot;background-image: url('http://localhost:3000/images/homepage/screenshots/wallets.jpg');&quot;&gt;&lt;/a&gt;
+&lt;div class=&quot;hideme&quot; id=&quot;image-link-wallets-title&quot;&gt;&lt;span data-i18n=&quot;Any currency&quot;&gt;Any currency&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;hideme&quot; id=&quot;image-link-wallets-description&quot;&gt;&lt;span data-i18n=&quot;Create as many wallets as you need&quot;&gt;Create as many wallets as you need&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-3 col-sm-6 col-xs-12&quot;&gt;
+  	&lt;a href=&quot;http://localhost:3000/images/homepage/screenshots/goal.jpg&quot; class=&quot;image-link&quot; id=&quot;image-link-agpl&quot; style=&quot;background-image: url('http://localhost:3000/images/homepage/screenshots/goal.jpg');&quot;&gt;&lt;/a&gt;
+&lt;div class=&quot;hideme&quot; id=&quot;image-link-agpl-title&quot;&gt;&lt;span data-i18n=&quot;Set Goals!&quot;&gt;Set Goals!&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;hideme&quot; id=&quot;image-link-agpl-description&quot;&gt;&lt;span data-i18n=&quot;Save money!&quot;&gt;Save money!&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-3 col-sm-6 col-xs-12&quot;&gt;
+    &lt;a href=&quot;http://localhost:3000/images/homepage/screenshots/i18n.jpg&quot; class=&quot;image-link&quot; id=&quot;image-link-2&quot; style=&quot;background-image: url('http://localhost:3000/images/homepage/screenshots/i18n.jpg');&quot;&gt;&lt;/a&gt;
+&lt;div class=&quot;hideme&quot; id=&quot;image-link-2-title&quot;&gt;&lt;span data-i18n=&quot;Internalization&quot;&gt;Internalization&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;hideme&quot; id=&quot;image-link-2-description&quot;&gt;&lt;span data-i18n=&quot;Just click on the globe icon in top right corner&quot;&gt;Just click on the globe icon in top right corner&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div id=&quot;push&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+	&lt;div id=&quot;preloader&quot; style=&quot;opacity: 1; display: none;&quot;&gt;&lt;/div&gt;
+	&lt;footer id=&quot;footer&quot; role=&quot;contentinfo&quot;&gt;
+		&lt;div class=&quot;container&quot;&gt;
+			&lt;div class=&quot;pull-right&quot;&gt;
+				&lt;a href=&quot;https://github.com/jeka-kiselyov/dimeshift&quot; data-i18n=&quot;View Source on GitHub&quot;&gt;View Source on GitHub&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;p class=&quot;muted credit&quot;&gt;&lt;span data-i18n=&quot;Copyright&quot; class=&quot;hidden-xs hidden-sm&quot;&gt;Copyright&lt;/span&gt;&lt;span class=&quot;visible-xs-inline visible-sm-inline&quot;&gt;&copy;&lt;/span&gt; 2017 &lt;a href=&quot;http://dimeshift.com&quot;&gt;DimeShift&lt;/a&gt;&lt;span class=&quot;hidden-xs hidden-sm&quot;&gt;.&lt;/span&gt; &lt;span data-i18n=&quot;GNU Affero GPL License&quot; class=&quot;hidden-xs hidden-sm&quot;&gt;GNU Affero GPL License&lt;/span&gt; &lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/footer&gt;
+
+    &lt;script type=&quot;text/javascript&quot; src=&quot;https://www.google.com/jsapi&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;/resources/js.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/jquery/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap/js/modal.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap/js/button.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap/js/dropdown.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap/js/collapse.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap/js/tooltip.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap/js/popover.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap-tour/build/js/bootstrap-tour.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/underscore/underscore-min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/backbone/backbone.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/backbone.paginator/lib/backbone.paginator.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/bootstrap-clickonmouseover/bootstrap.clickonmouseover.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/magnific-popup/dist/jquery.magnific-popup.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/mprogress/build/js/mprogress.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/vendors/jsmart/jsmart.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/functions.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/helper.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/view_stack.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/settings.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/local_storage.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/template_manager.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/i18n.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/exchange.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/abstract/dialog.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/abstract/page.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/models/plan.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/models/transaction.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/models/user.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/models/wallet.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/models/wallets_access.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/collections/plans.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/collections/transactions.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/collections/users.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/collections/wallets.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/collections/wallets_accesses.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/add_profit.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/add_wallet.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/change_language.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/edit_wallet.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/fill_profile.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/hide_wallet.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/logout.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/registration.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/remove_access.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/remove_plan.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/remove_transaction.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/restore.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/set_total_to.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/signin.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/transaction_details.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/dialogs/wallet_accesses.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/widgets/index.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/parts/profile_change_password.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/parts/profile_remove_account.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/parts/transactions.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/parts/wallet_plans.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/404.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/import_xls.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/index.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/plan.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/plans.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/profile.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/update_password.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/wallet.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/pages/wallets.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/tours/wallet.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/tours/wallets.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/charts/balance.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/views/header.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/log.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/app/router.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/setup.js&quot;&gt;&lt;/script&gt;
+
+&lt;div id=&quot;dialog_wrapper&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</pre>
+			</div>
+			<div class="tab-pane" id='interactions'>
+				<h2>Interactions</h2>
+				<table class="table table-bordered table-striped">
+					<tbody>
+						<tr>
+							<th>Xpath</th>
+							<th>Destination</tg>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[1]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[6]/A[1]</td>
+							<td><a href=".html"></a></td>
+						</tr>
+												<tr>
+							<td>/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/UL[1]/LI[7]/A[1]</td>
+							<td><a href="state5.html">state5</a></td>
+						</tr>
+											</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/shCore.js"></script>
+	<script type="text/javascript" src="../lib/shBrushXml.js"></script>
+	<script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+			SyntaxHighlighter.all()
+
+			$('#tabs a').click(function (e) {
+		  		e.preventDefault();
+		  		$(this).tab('show');
+			})
+		});
+    	
+    	$('.hovers').tooltip({
+    	    placement: function(a, element) {
+    	        var position = $(element).position();
+    	        if (position.left > 515) {
+    	            return "left";
+    	        }
+    	        if (position.left < 515) {
+    	            return "right";
+    	        }
+    	        if (position.top < 110){
+    	            return "bottom";
+    	        }
+    	        return "top";
+    	    }
+    	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+[
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]",
+    "id": 0,
+    "parentId": -1,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1200,
+      "height": 708
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]",
+    "id": 1,
+    "parentId": 0,
+    "rect": {
+      "x": 244,
+      "y": 4,
+      "width": 658,
+      "height": 76
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]",
+    "id": 2,
+    "parentId": 1,
+    "rect": {
+      "x": 244,
+      "y": 4,
+      "width": 216,
+      "height": 76
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[1]/A[1]",
+    "id": 3,
+    "parentId": 2,
+    "rect": {
+      "x": 264,
+      "y": 32,
+      "width": 60,
+      "height": 20
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[2]/A[1]",
+    "id": 5,
+    "parentId": 2,
+    "rect": {
+      "x": 364,
+      "y": 32,
+      "width": 76,
+      "height": 20
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]",
+    "id": 8,
+    "parentId": 1,
+    "rect": {
+      "x": 480,
+      "y": 32,
+      "width": 129,
+      "height": 20
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]",
+    "id": 10,
+    "parentId": 1,
+    "rect": {
+      "x": 628,
+      "y": 4,
+      "width": 274,
+      "height": 76
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[4]/A[1]",
+    "id": 11,
+    "parentId": 10,
+    "rect": {
+      "x": 648,
+      "y": 32,
+      "width": 90,
+      "height": 20
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[1]/NAV[1]/DIV[1]/UL[1]/LI[5]/A[1]",
+    "id": 13,
+    "parentId": 10,
+    "rect": {
+      "x": 778,
+      "y": 32,
+      "width": 104,
+      "height": 20
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/H2[1]",
+    "id": 17,
+    "parentId": 0,
+    "rect": {
+      "x": 20,
+      "y": 120,
+      "width": 1160,
+      "height": 24
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/TABLE[1]/THEAD[1]/TR[1]/TH[1]",
+    "id": 19,
+    "parentId": 0,
+    "rect": {
+      "x": 28,
+      "y": 162,
+      "width": 721,
+      "height": 19
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]",
+    "id": 21,
+    "parentId": 0,
+    "rect": {
+      "x": 20,
+      "y": 212,
+      "width": 1160,
+      "height": 276
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/APP-PETTYPE-ADD[1]/DIV[1]/DIV[1]",
+    "id": 22,
+    "parentId": 21,
+    "rect": {
+      "x": 40,
+      "y": 252,
+      "width": 1160,
+      "height": 100
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/APP-PETTYPE-ADD[1]/DIV[1]/DIV[1]/H2[1]",
+    "id": 23,
+    "parentId": 22,
+    "rect": {
+      "x": 40,
+      "y": 252,
+      "width": 1160,
+      "height": 24
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/APP-PETTYPE-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]",
+    "id": 25,
+    "parentId": 22,
+    "rect": {
+      "x": 10,
+      "y": 286,
+      "width": 1220,
+      "height": 36
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/APP-PETTYPE-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/LABEL[1]",
+    "id": 26,
+    "parentId": 25,
+    "rect": {
+      "x": 25,
+      "y": 293,
+      "width": 72,
+      "height": 20
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/APP-PETTYPE-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/DIV[1]",
+    "id": 28,
+    "parentId": 25,
+    "rect": {
+      "x": 127,
+      "y": 286,
+      "width": 580,
+      "height": 34
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[1]/APP-PETTYPE-ADD[1]/DIV[1]/DIV[1]/FORM[1]/DIV[2]/DIV[1]/BUTTON[1]",
+    "id": 30,
+    "parentId": 25,
+    "rect": {
+      "x": 736,
+      "y": 294,
+      "width": 32,
+      "height": 20
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/APP-PETTYPE-LIST[1]/DIV[1]/DIV[1]/DIV[2]",
+    "id": 34,
+    "parentId": 21,
+    "rect": {
+      "x": 20,
+      "y": 452,
+      "width": 1160,
+      "height": 36
+    }
+  },
+  {
+    "xpath": "/HTML[1]/BODY[1]/APP-ROOT[1]/DIV[2]/DIV[1]/DIV[1]",
+    "id": 37,
+    "parentId": 0,
+    "rect": {
+      "x": 15,
+      "y": 628,
+      "width": 1170,
+      "height": 80
+    }
+  }
+]

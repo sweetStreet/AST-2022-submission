@@ -1,0 +1,315 @@
+<html><head>
+	<link rel="stylesheet" type="text/css" href="/mantisbt/css/default.css">
+	<script type="text/javascript" language="JavaScript"><!--
+		if(document.layers) {document.write("<style>td{padding:0px;}<\/style>")}
+	// --></script>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma-directive" content="no-cache">
+	<meta http-equiv="Cache-Directive" content="no-cache">
+	<meta http-equiv="Expires" content="Sun, 03 Oct 2021 19:57:45 GMT">
+	<meta name="robots" content="noindex,follow">
+	<link rel="shortcut icon" href="/mantisbt/images/favicon.ico" type="image/x-icon">
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Text Search" href="http://localhost:3000/mantisbt/browser_search_plugin.php?type=text">	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Issue Id" href="http://localhost:3000/mantisbt/browser_search_plugin.php?type=id">	<title>View Issues - MantisBT</title>
+<script type="text/javascript" src="/mantisbt/javascript/min/common.js"></script>
+<script language="javascript">var loading_lang = "Loading...";</script><script type="text/javascript" src="/mantisbt/javascript/min/ajax.js"></script>
+	<meta http-equiv="Refresh" content="1800;URL=http://localhost:3000/mantisbt/view_all_bug_page.php?page_number=1">
+</head>
+<body>
+<div align="left"><a href="my_view_page.php"><img border="0" alt="Mantis Bug Tracker" src="/mantisbt/images/mantis_logo.gif"></a></div><table class="hide"><tbody><tr><td class="login-info-left">Logged in as: <span class="italic">administrator</span> <span class="small">(administrator)</span></td><td class="login-info-middle"><span class="italic">2021-10-03 19:57 UTC</span></td><td class="login-info-right"><form method="post" name="form_set_project" action="/mantisbt/set_project.php">Project: <select name="project_id" class="small" onchange="document.forms.form_set_project.submit();"><option value="0" selected="selected">All Projects</option>
+</select> <input type="submit" class="button-small" value="Switch"></form><a href="http://localhost:3000/mantisbt/issues_rss.php?username=administrator&amp;key=021c6555cf022731feb72e4a25ff20d9"><img src="/mantisbt/images/rss.png" alt="RSS" style="border-style: none; margin: 5px; vertical-align: middle;"></a></td></tr></tbody></table><table class="width100" cellspacing="0"><tbody><tr><td class="menu"><a href="/mantisbt/main_page.php">Main</a> | <a href="/mantisbt/my_view_page.php">My View</a> | <a href="/mantisbt/view_all_bug_page.php">View Issues</a> | <a href="/mantisbt/bug_report_page.php">Report Issue</a> | <a href="/mantisbt/changelog_page.php">Change Log</a> | <a href="/mantisbt/roadmap_page.php">Roadmap</a> | <a href="/mantisbt/summary_page.php">Summary</a> | <a href="/mantisbt/manage_overview_page.php">Manage</a> | <a href="/mantisbt/account_page.php">My Account</a> | <a href="/mantisbt/logout_page.php">Logout</a></td><td class="menu right nowrap"><form method="post" action="/mantisbt/jump_to_bug.php"><input type="text" name="bug_id" size="10" class="small" value="Issue #" onfocus="if (this.value == 'Issue #') this.value = ''" onblur="if (this.value == '') this.value = 'Issue #'">&nbsp;<input type="submit" class="button-small" value="Jump">&nbsp;</form></td></tr></tbody></table><div id="filter_open">
+		<br>
+		<form method="post" name="filters_open" id="filters_form_open" action="view_all_set.php?f=3">
+				<input type="hidden" name="type" value="1">
+				<input type="hidden" name="page_number" value="1">
+		<input type="hidden" name="view_type" value="advanced">
+		<table class="width100" cellspacing="1">
+
+		
+		<tbody><tr class="row-category2">
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=reporter_id[]" id="reporter_id_filter">Reporter:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=user_monitor[]" id="user_monitor_filter">Monitored By:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=handler_id[]" id="handler_id_filter">Assigned To:</a>
+			</td>
+			<td colspan="2" class="small-caption" valign="top">
+				Category:
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=show_severity[]" id="show_severity_filter">Severity:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=show_resolution[]" id="show_resolution_filter">Resolution:</a>
+			</td>
+			<td class="small-caption" valign="top">
+									<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=show_profile[]" id="show_profile_filter">Profile:</a>
+							</td>
+					</tr>
+
+		<tr class="row-1">
+			<td class="small-caption" valign="top" id="reporter_id_filter_target">
+							<input type="hidden" name="reporter_id[]" value="1">administrator			</td>
+			<td class="small-caption" valign="top" id="user_monitor_filter_target">
+							<input type="hidden" name="user_monitor[]" value="0">any			</td>
+			<td class="small-caption" valign="top" id="handler_id_filter_target">
+							<input type="hidden" name="handler_id[]" value="0">any			</td>
+			<td colspan="2" class="small-caption" valign="top" id="show_category_filter_target">		<!-- Category -->
+		<select multiple="multiple" size="10" name="show_category[]">
+			<option value="0">[any]</option>
+			<option value="General">General</option>		</select>
+		</td>
+			<td class="small-caption" valign="top" id="show_severity_filter_target">
+							<input type="hidden" name="show_severity[]" value="0">any			</td>
+			<td class="small-caption" valign="top" id="show_resolution_filter_target">
+																	<input type="hidden" name="show_resolution[]" value="0">
+										any			</td>
+						<td class="small-caption" valign="top" id="show_profile_filter_target">
+																	<input type="hidden" name="show_profile[]" value="0">
+										any			</td>
+						</tr>
+
+		<tr class="row-category2">
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=show_status[]" id="show_status_filter">Status:</a>
+			</td>
+			<td class="small-caption" valign="top">
+							</td>
+			<td class="small-caption" valign="top">
+						</td>
+						<td colspan="2" class="small-caption" valign="top">
+				&nbsp;
+			</td>
+			<td colspan="1" class="small-caption" valign="top">
+				&nbsp;
+			</td>
+						<td colspan="1" class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=show_priority[]" id="show_priority_filter">Priority:</a>
+			</td>
+			<td colspan="1" class="small-caption" valign="top">
+				Target Version:
+			</td>
+					</tr>
+
+		<tr class="row-1">
+			<td class="small-caption" valign="top" id="show_status_filter_target">
+							<input type="hidden" name="show_status[]" value="0">any			</td>
+			<td class="small-caption" valign="top" id="hide_status_filter_target">
+										</td>
+						<td class="small-caption" valign="top"></td>
+						<td colspan="2" class="small-caption" valign="top">
+				&nbsp;
+			</td>
+			<td colspan="1" class="small-caption" valign="top">
+				&nbsp;
+			</td>
+						<td colspan="1" class="small-caption" valign="top" id="show_priority_filter_target">
+              <input type="hidden" name="show_priority[]" value="0">any	    	</td>
+			<td colspan="1" class="small-caption" valign="top" id="show_target_version_filter_target"><!-- Fixed in Version -->
+		<select multiple="multiple" size="10" name="target_version[]">
+			<option value="0">[any]</option>
+			<option value="-2">[none]</option>
+					</select>
+		</td>
+			
+		</tr>
+
+		<tr class="row-category2">
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=per_page" id="per_page_filter">Show:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=view_state" id="view_state_filter">View Status:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=sticky_issues" id="sticky_issues_filter">Show Sticky Issues:</a>
+			</td>
+			<td class="small-caption" valign="top" colspan="2">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=highlight_changed" id="highlight_changed_filter">Changed(hrs):</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=do_filter_by_date" id="do_filter_by_date_filter">Use Date Filters:</a>
+			</td>
+			<td class="small-caption" valign="top" colspan="2">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=relationship_type" id="relationship_type_filter">Relationships:</a>
+			</td>
+					</tr>
+		<tr class="row-1">
+			<td class="small-caption" valign="top" id="per_page_filter_target">
+				50<input type="hidden" name="per_page" value="50">			</td>
+			<td class="small-caption" valign="top" id="view_state_filter_target">
+				any<input type="hidden" name="view_state" value="0">			</td>
+			<td class="small-caption" valign="top" id="sticky_issues_filter_target">
+				No				<input type="hidden" name="sticky_issues" value="off">
+			</td>
+			<td class="small-caption" valign="top" colspan="2" id="highlight_changed_filter_target">
+				6<input type="hidden" name="highlight_changed" value="6">			</td>
+			<td class="small-caption" valign="top" id="do_filter_by_date_filter_target">
+									<script type="text/javascript" language="JavaScript">
+		<!--
+			function SwitchDateFields() {
+		    	// All fields need to be enabled to go back to the script
+				document.filters_open.start_month.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.start_day.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.start_year.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.end_month.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.end_day.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.end_year.disabled = ! document.filters_open.do_filter_by_date.checked;
+
+		   		return true;
+			}
+		// -->
+		</script>
+							No			</td>
+
+			<td class="small-caption" valign="top" colspan="2" id="relationship_type_filter_target">
+							<input type="hidden" name="relationship_type" value="-1"><input type="hidden" name="relationship_bug" value="0">any			</td>
+					</tr>
+		<tr class="row-category2">
+			<td class="small-caption" valign="top">
+									<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=platform" id="platform_filter">Platform:</a>
+							</td>
+			<td class="small-caption" valign="top">
+									<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=os" id="os_filter">OS:</a>
+							</td>
+			<td class="small-caption" valign="top">
+									<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=os_build" id="os_build_filter">OS Version:</a>
+							</td>
+			<td class="small-caption" valign="top" colspan="5">
+								<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=tag_string" id="tag_string_filter">Tags:</a>
+							</td>
+					</tr>
+		<tr class="row-1">
+						<td class="small-caption" valign="top" id="platform_filter_target">
+								<input type="hidden" name="platform[]" value="0">
+				any			</td>
+			<td class="small-caption" valign="top" id="os_filter_target">
+								<input type="hidden" name="os[]" value="0">
+				any			</td>
+			<td class="small-caption" valign="top" id="os_build_filter_target">
+								<input type="hidden" name="os_build[]" value="0">
+				any			</td>
+			
+			<td class="small-caption" valign="top" id="tag_string_filter_target" colspan="5">
+				<input type="hidden" name="tag_string" value="">			</td>
+		</tr>
+				<tr class="row-1">
+			<td class="small-caption category2" valign="top">
+                <a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=note_user_id" id="note_user_id_filter">Note By:</a>
+            </td>
+            <td class="small-caption" valign="top" id="note_user_id_filter_target">
+                <input type="hidden" name="note_user_id[]" value="0">any            </td>
+			<td class="small-caption" valign="top">
+				Sort by:
+			</td>
+			<td class="small-caption" valign="top" id="show_sort_filter_target"><select name="sort_0"><option value=""></option><option value="priority" selected="selected">Priority</option><option value="id">Issue ID</option><option value="category_id">Category</option><option value="severity">Severity</option><option value="status">Status</option><option value="last_updated">Updated</option><option value="summary">Summary</option></select><select name="dir_0"><option value=""></option><option value="ASC">Ascending</option><option value="DESC" selected="selected">Descending</option></select>, <select name="sort_1"><option value="" selected="selected"></option><option value="priority">Priority</option><option value="id">Issue ID</option><option value="category_id">Category</option><option value="severity">Severity</option><option value="status">Status</option><option value="last_updated">Updated</option><option value="summary">Summary</option></select><select name="dir_1"><option value="" selected="selected"></option><option value="ASC">Ascending</option><option value="DESC">Descending</option></select></td>
+								<td class="small-caption" valign="top" colspan="2">
+						Project:
+					</td>
+					<td class="small-caption" valign="top" id="project_id_filter_target">		<!-- Project -->
+		<select multiple="multiple" size="10" name="project_id[]">
+			<option value="-3" selected="selected">[current]</option>
+			<option value="0">All Projects</option>
+		</select>
+		</td>
+					<td class="small-caption" valign="top" colspan="3">&nbsp;</td>		</tr>
+				<tr>
+			<td colspan="2">
+				<a href="" onclick="ToggleDiv( 'filter' ); return false;"><img border="0" src="images/minus.png" alt="-"></a>&nbsp;Search&nbsp;<input type="text" size="16" name="search" value="">
+				<input type="submit" name="filter" class="button-small" value="Apply Filter">
+			</td>
+			
+			<td class="center" colspan="2"> <!-- use this label for padding -->
+				<span class="bracket-link">[&nbsp;<a href="view_all_set.php?type=6&amp;view_type=simple">Simple Filters</a>&nbsp;]</span> <span class="bracket-link">[&nbsp;<a href="permalink_page.php?url=http%3A%2F%2Flocalhost%3A3000%2Fmantisbt%2Fsearch.php%3Fproject_id%3D0%26reporter_id%3D1%26sticky_issues%3Doff%26sortby%3Dpriority%26dir%3DDESC%26hide_status_id%3D80" target="_blank">Create Permalink</a>&nbsp;]</span> 			</td>
+			<td class="right" colspan="4">
+								<form method="get" name="reset_query" action="view_all_set.php">
+										<input type="hidden" name="type" value="3">
+					<input type="hidden" name="source_query_id" value="-1">
+					<input type="submit" name="reset_query_button" class="button-small" value="Reset Filter">
+					</form>
+									<form method="post" name="save_query" action="query_store_page.php">
+										<input type="submit" name="save_query_button" class="button-small" value="Save Current Filter">
+					</form>
+						</td>
+		</tr>
+		</tbody></table>
+</form></div><div id="filter_closed" class="hidden">
+		<br>
+		<form method="post" name="filters_closed" id="filters_form_closed" action="view_all_set.php?f=3">
+				<input type="hidden" name="type" value="1">
+				<input type="hidden" name="page_number" value="1">
+		<input type="hidden" name="view_type" value="advanced">
+		<table class="width100" cellspacing="1">
+
+				<tbody><tr>
+			<td colspan="2">
+				<a href="" onclick="ToggleDiv( 'filter' ); return false;"><img border="0" src="images/plus.png" alt="+"></a>&nbsp;Search&nbsp;<input type="text" size="16" name="search" value="">
+				<input type="submit" name="filter" class="button-small" value="Apply Filter">
+			</td>
+			
+			<td class="center" colspan="2"> <!-- use this label for padding -->
+				<span class="bracket-link">[&nbsp;<a href="view_all_set.php?type=6&amp;view_type=simple">Simple Filters</a>&nbsp;]</span> <span class="bracket-link">[&nbsp;<a href="permalink_page.php?url=http%3A%2F%2Flocalhost%3A3000%2Fmantisbt%2Fsearch.php%3Fproject_id%3D0%26reporter_id%3D1%26sticky_issues%3Doff%26sortby%3Dpriority%26dir%3DDESC%26hide_status_id%3D80" target="_blank">Create Permalink</a>&nbsp;]</span> 			</td>
+			<td class="right" colspan="4">
+								<form method="get" name="reset_query" action="view_all_set.php">
+										<input type="hidden" name="type" value="3">
+					<input type="hidden" name="source_query_id" value="-1">
+					<input type="submit" name="reset_query_button" class="button-small" value="Reset Filter">
+					</form>
+									<form method="post" name="save_query" action="query_store_page.php">
+										<input type="submit" name="save_query_button" class="button-small" value="Save Current Filter">
+					</form>
+						</td>
+		</tr>
+		</tbody></table>
+</form></div>		<script type="text/javascript" language="JavaScript">
+		<!--
+			var string_loading = 'Loading...';
+		// -->
+		</script>
+		<script type="text/javascript" src="/mantisbt/javascript/min/xmlhttprequest.js"></script>
+<script type="text/javascript" src="/mantisbt/javascript/min/addLoadEvent.js"></script>
+<script type="text/javascript" src="/mantisbt/javascript/min/dynamic_filters.js"></script>
+<br>
+<form name="bug_action" method="get" action="bug_actiongroup_page.php">
+<table id="buglist" class="width100" cellspacing="1">
+<tbody><tr>
+	<td class="form-title" colspan="10">
+		<span class="floatleft">
+		Viewing Issues (0 - 0 / 0) </span>
+
+		<span class="floatleft small"> &nbsp;<span class="bracket-link">[&nbsp;<a href="print_all_bug_page.php">Print Reports</a>&nbsp;]</span> &nbsp;<span class="bracket-link">[&nbsp;<a href="csv_export.php">CSV Export</a>&nbsp;]</span> &nbsp;<span class="bracket-link">[&nbsp;<a href="excel_xml_export.php">Excel Export</a>&nbsp;]</span>  </span>
+
+		<span class="floatright small"> </span>
+	</td>
+</tr>
+<tr class="row-category">
+<td> &nbsp; </td><td> &nbsp; </td><td><a href="view_all_set.php?sort=priority&amp;dir=ASC&amp;type=2">P</a><img src="http://localhost:3000/mantisbt/images/down.gif" alt=""></td><td><a href="view_all_set.php?sort=id&amp;dir=DESC&amp;type=2">ID</a></td><td> # </td><td><a href="view_all_set.php?sort=category_id&amp;dir=DESC&amp;type=2">Category</a></td><td><a href="view_all_set.php?sort=severity&amp;dir=DESC&amp;type=2">Severity</a></td><td><a href="view_all_set.php?sort=status&amp;dir=DESC&amp;type=2">Status</a></td><td><a href="view_all_set.php?sort=last_updated&amp;dir=DESC&amp;type=2">Updated</a></td><td><a href="view_all_set.php?sort=summary&amp;dir=DESC&amp;type=2">Summary</a></td></tr>
+
+<tr class="spacer">
+	<td colspan="10"></td>
+</tr>
+	<tr>
+		<td class="left" colspan="10">
+			<span class="floatleft">
+&nbsp;			</span>
+			<span class="floatright small">
+							</span>
+		</td>
+	</tr>
+</tbody></table>
+</form>
+
+<br><table class="width100" cellspacing="1"><tbody><tr><td class="small-caption" width="14%" bgcolor="#fcbdbd">new</td><td class="small-caption" width="14%" bgcolor="#e3b7eb">feedback</td><td class="small-caption" width="14%" bgcolor="#ffcd85">acknowledged</td><td class="small-caption" width="14%" bgcolor="#fff494">confirmed</td><td class="small-caption" width="14%" bgcolor="#c2dfff">assigned</td><td class="small-caption" width="14%" bgcolor="#d2f5b0">resolved</td><td class="small-caption" width="14%" bgcolor="#c9ccc4">closed</td></tr></tbody></table>	<br>
+	<hr size="1">
+<table border="0" width="100%" cellspacing="0" cellpadding="0"><tbody><tr valign="top"><td>	<address>Copyright © 2000 - 2010 MantisBT Group</address>
+	<address><a href="mailto:webmaster@example.com">webmaster@example.com</a></address>
+</td><td>
+	<div align="right"><a href="http://www.mantisbt.org" title="Free Web Based Bug Tracker"><img src="/mantisbt/images/mantis_logo_button.gif" width="88" height="35" alt="Powered by Mantis Bugtracker" border="0"></a></div>
+</td></tr></tbody></table>
+
+
+</body></html>

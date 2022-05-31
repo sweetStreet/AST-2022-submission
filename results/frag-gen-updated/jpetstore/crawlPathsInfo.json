@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "backtrackTarget": 0,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state0:-1index_1_state2state2_3_state4state4_4_state5state5_5_state6state6_6_state2state2_7_state8"
+  },
+  {
+    "id": 2,
+    "backtrackTarget": 2,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state2:-1index_1_state2state2_29_state23state23_30_state24state24_31_state25state25_32_state24state24_33_state27state27_34_state25state25_35_state27state27_36_state4state4_37_state31state31_38_state24state24_39_state31state31_40_state34state34_41_state31state31_42_state24"
+  },
+  {
+    "id": 3,
+    "backtrackTarget": 2,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state2:-1index_1_state2state2_43_state39state39_44_state24"
+  },
+  {
+    "id": 4,
+    "backtrackTarget": 2,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state2:-1index_1_state2state2_45_state39state39_46_state24"
+  },
+  {
+    "id": 5,
+    "backtrackTarget": 2,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state2:-1index_1_state2state2_47_state39"
+  },
+  {
+    "id": 6,
+    "backtrackTarget": 2,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state2:-1index_1_state2state2_48_state50state50_49_state2state2_50_state23state23_51_state34"
+  },
+  {
+    "id": 7,
+    "backtrackTarget": 4,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state4:-1index_1_state2state2_3_state4state4_52_state2state2_53_state31state31_54_state34"
+  },
+  {
+    "id": 8,
+    "backtrackTarget": 4,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state4:-1index_1_state2state2_3_state4"
+  },
+  {
+    "id": 9,
+    "backtrackTarget": 2,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state2:-1index_1_state2state2_56_state39"
+  },
+  {
+    "id": 10,
+    "backtrackTarget": 23,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state23:-1index_1_state2state2_29_state23state23_57_state24"
+  },
+  {
+    "id": 11,
+    "backtrackTarget": 50,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state50:-1index_1_state2state2_48_state50state50_58_state24"
+  },
+  {
+    "id": 12,
+    "backtrackTarget": 2,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state2:-1index_1_state2state2_59_state39"
+  },
+  {
+    "id": 13,
+    "backtrackTarget": 27,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state27:-1index_1_state2state2_29_state23state23_30_state24state24_33_state27state27_60_state83state83_61_state84state84_62_state2state2_63_state39"
+  },
+  {
+    "id": 14,
+    "backtrackTarget": 5,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state5:failed:-1index_1_state2state2_1000021_state27"
+  },
+  {
+    "id": 15,
+    "backtrackTarget": 23,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state23:-1index_1_state2state2_29_state23state23_64_state24"
+  },
+  {
+    "id": 16,
+    "backtrackTarget": 50,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state50:-1index_1_state2state2_48_state50state50_65_state24"
+  },
+  {
+    "id": 17,
+    "backtrackTarget": 84,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state84:-1index_1_state2state2_1000021_state27state27_60_state83state83_61_state84state84_66_state104state104_67_state2"
+  },
+  {
+    "id": 18,
+    "backtrackTarget": 104,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state104:failed:-1index_1_state2state2_1000031_state4"
+  },
+  {
+    "id": 19,
+    "backtrackTarget": 5,
+    "backtrackSuccess": true,
+    "reachedNearDup": -1,
+    "pathString": "BT-state5:-1index_1_state2state2_1000031_state4state4_4_state5state5_68_state114state114_69_state115"
+  },
+  {
+    "id": 20,
+    "backtrackTarget": 114,
+    "backtrackSuccess": false,
+    "reachedNearDup": -1,
+    "pathString": "BT-state114:failed:-1index_1000035_state114"
+  }
+]
