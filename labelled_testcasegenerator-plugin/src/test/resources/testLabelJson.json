@@ -1,0 +1,29 @@
+[
+{
+    "label_map":
+    {
+
+        "2":
+        {
+            "appeared": false,
+            "better_label": "text",
+            "details":
+            {
+                "attributes":
+                {
+                    "evlist": "false",
+                    "href": "#",
+                    "onclick": "document.logout.submit();"
+                },
+                "tag": "A",
+                "text": "Logout"
+            },
+            "label": "logout",
+            "label_from_edge": true,
+            "manual_label": "logout",
+            "score": 2,
+            "term_frequency": "{'tag': 1, 'logout': 2, 'attribute': 1, 'false': 1, 'document': 1, 'submit': 1}"
+        }
+    },
+    "method_name": "method_2"
+}]
