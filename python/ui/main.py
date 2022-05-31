@@ -50,7 +50,7 @@ def rank_attributes(**options):
     for project in project_lists:
         KeywordGen(project).check_label_source()
     sorted_keys = data_count_attributes_per_project(project_lists)
-    IOUtils.dump(Macros.results_dir / "attributes_count.json", sorted_keys)
+    IOUtils.dump(Macros.results_dir / "ranked_attributes.json", sorted_keys)
 
 # python -m ui.main labeled_tests --project="addressbook" --crawlfolder="/Users/xyz/AST-2022-submission/results/frag-gen-updated/addressbook"
 def labeled_tests(**options):

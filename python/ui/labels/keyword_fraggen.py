@@ -124,6 +124,7 @@ class KeywordGen:
     # for P in 'addressbook' 'claroline' 'collabtive' 'dimeshift' 'jpetstore' 'mantisbt' 'mrbs' 'pagekit' 'petclinic' 'phoenix' 'ppma' 'retroboard' 'splittypie'; do python -m ui.labels.keyword_fraggen --project_name=$P label_with_preprocess --algorithm="keybert"; done
     def label_with_preprocess(self, algorithm: str):
         os.environ["TOKENIZERS_PARALLELISM"] = "false"
+        (Macros.results_dir / algorithm).mkdir(exist_ok=True)
         logging_file = Macros.results_dir / algorithm / f"{self.project_name}-labels.log"
         if logging_file.exists():
             IOUtils.rm(logging_file)
@@ -138,7 +139,7 @@ class KeywordGen:
         index_of_details = col_name_list.index("details")
         num_of_none_label = 0
         for row in load_xlsx(self.xlsx_file_path):
-            if row[index_of_manual_label].strip() == "none":
+            if row[index_of_manual_label] is not None and row[index_of_manual_label].strip() == "none":
                 num_of_none_label += 1
                 continue
             if algorithm == "preprocess":
@@ -156,7 +157,6 @@ class KeywordGen:
                                  append=True)
                 row.append(keybert_edge_label)
             elif algorithm == "heuristic":
-                (Macros.results_dir / algorithm).mkdir(exist_ok=True)
                 heuristic_edge_label = get_element_label_heuristic(json.loads(row[index_of_details]))
                 if heuristic_edge_label.strip() == "":
                     heuristic_edge_label = get_context_label(row[index_of_context])

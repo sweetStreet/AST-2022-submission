@@ -277,43 +277,37 @@ def preprocess_eventable_element_details(eventable_element_details):
 
 
 def get_element_label_heuristic(eventable_element_details: dict):
+    # load ranked attributes
+    ranked_attributes = IOUtils.load(Macros.results_dir / "ranked_attributes.json")
     # heuristic rule
     element_label = ""
-    if element_label == "" and "text" in eventable_element_details:
-        button_text = eventable_element_details["text"]
-        element_label = process_attribute_value(button_text)
-    if element_label == "" and "attributes" in eventable_element_details and "href" in eventable_element_details[
-        "attributes"]:
-        href = eventable_element_details["attributes"]["href"]
-        tokenized_href = process_attribute_value(href.strip().split("?")[-1])
-        kw_model = KeyBERT()
-        keywords = kw_model.extract_keywords(tokenized_href, keyphrase_ngram_range=(1, 2), stop_words='english', use_mmr=True,
-                                             diversity=0.7)
-        if keywords:
-            element_label = keywords[0][0]
-        else:
-            element_label = href.strip().split("/")[-1].split(".")[0]
-            element_label = process_attribute_value(element_label)
-    if element_label == "" and "attributes" in eventable_element_details and "class" in eventable_element_details[
+    for attribute in ranked_attributes:
+        if attribute == "text":
+            # special case for "text" attribute because of Crawljax
+            # crawled format 
+            attribute_value = eventable_element_details[attribute]
+            element_label = process_attribute_value(attribute_value)
+        elif "attributes" in eventable_element_details and attribute in eventable_element_details[
             "attributes"]:
-        value_text = eventable_element_details["attributes"]["class"]
-        element_label = process_attribute_value(value_text)
-    if element_label == "" and "attributes" in eventable_element_details and "title" in eventable_element_details[
-        "attributes"]:
-        value_text = eventable_element_details["attributes"]["title"]
-        element_label = process_attribute_value(value_text)
-    if element_label == "" and "attributes" in eventable_element_details and "aria-label" in eventable_element_details[
-            "attributes"]:
-        value_text = eventable_element_details["attributes"]["aria-label"]
-        element_label = process_attribute_value(value_text)
-    if element_label == "" and "attributes" in eventable_element_details and "id" in eventable_element_details[
-        "attributes"]:
-        name_text = eventable_element_details["attributes"]["id"]
-        element_label = process_attribute_value(name_text)
-    if element_label == "" and "attributes" in eventable_element_details and "value" in eventable_element_details[
-        "attributes"]:
-        name_text = eventable_element_details["attributes"]["value"]
-        element_label = process_attribute_value(name_text)
+            if attribute == "href":
+                # special case for "href" attribute because its value
+                # is usually longer and more complicated than other
+                # attributes
+                href = eventable_element_details["attributes"]["href"]
+                tokenized_href = process_attribute_value(href.strip().split("?")[-1])
+                kw_model = KeyBERT()
+                keywords = kw_model.extract_keywords(tokenized_href, keyphrase_ngram_range=(1, 2), stop_words='english', use_mmr=True,
+                                                    diversity=0.7)
+                if keywords:
+                    element_label = keywords[0][0]
+                else:
+                    element_label = href.strip().split("/")[-1].split(".")[0]
+                    element_label = process_attribute_value(element_label)
+            else:
+                value_text = eventable_element_details["attributes"][attribute]
+                element_label = process_attribute_value(value_text)
+        if element_label != "":
+                break
     if element_label == "":
         preprocessed = remove_non_english_words(
             lemmatization(tokenize(preprocess_eventable_element_details(eventable_element_details))))
