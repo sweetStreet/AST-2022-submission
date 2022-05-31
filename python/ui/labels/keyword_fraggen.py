@@ -167,13 +167,13 @@ class KeywordGen:
                      append=True)
         dump_xlsx(Macros.results_dir/algorithm/f"{self.project_name}-labels.xlsx", result)
 
-    def xlsx_to_json(self, project_name: str, crawl_paths_folder: str = "", method: str = "PCFG"):
-        logging_file = Macros.results_dir / "paths" / f"{project_name}-labels-offline-log.log"
+    def xlsx_to_json(self, crawl_paths_folder: str = "", method: str = "PCFG"):
+        logging_file = Macros.results_dir / "paths" / f"{self.project_name}-labels-offline-log.log"
         if logging_file.exists():
             BashUtils.run(f"rm {logging_file}")
 
         id_to_label = dict()
-        excel_path = Macros.results_dir / "paths" / f"{project_name}-labels.xlsx"
+        excel_path = Macros.results_dir / "paths" / f"{self.project_name}-labels.xlsx"
         wb_obj = openpyxl.load_workbook(excel_path)
         sheet_obj = wb_obj.active
         m_row = sheet_obj.max_row
@@ -223,7 +223,7 @@ class KeywordGen:
                 continue
 
         if not crawl_paths_folder:
-            crawl_paths_file = Macros.results_dir / "frag-gen-updated" / project_name / "CrawlPaths.json"
+            crawl_paths_file = Macros.results_dir / "frag-gen-updated" / self.project_name / "CrawlPaths.json"
         else:
             if not crawl_paths_folder.endswith("/"):
                 crawl_paths_folder = crawl_paths_folder + "/"
@@ -231,7 +231,7 @@ class KeywordGen:
 
         crawl_paths = IOUtils.load(crawl_paths_file)
 
-        json_result_path = Macros.results_dir / "paths" / f"{project_name}-labels.json"
+        json_result_path = Macros.results_dir / "paths" / f"{self.project_name}-labels.json"
         result = []
 
         appeared_element_to_id = dict()
