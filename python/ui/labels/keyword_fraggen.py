@@ -1,5 +1,4 @@
 import collections
-
 import openpyxl
 from seutil import IOUtils, BashUtils
 from ui.Macros import Macros
@@ -10,6 +9,7 @@ from collections import OrderedDict
 from jsonargparse import CLI
 from typing import Union, List
 import os
+from pathlib import Path
 
 class KeywordGen:
 
@@ -24,9 +24,6 @@ class KeywordGen:
         """
         parse Crawljax (FragGen) results to original xlsx format
         """
-        # id_to_manual_label_dict = dict()
-        # for row in load_xlsx(xlsx_path=f"/Users/liuyu/Desktop/paths_with_keybert_labels/{self.project_name}-labels.xlsx"):
-        #     id_to_manual_label_dict[row[0]] = row[11]
         row_content = None
         logging_file = Macros.results_dir / "paths" / f"{self.project_name}-label-paths-xlsx-format.log"
         if logging_file.exists():
@@ -39,9 +36,10 @@ class KeywordGen:
         sheet.append(
             ["id", "details", "current dom", "context dom", "source state url", "target state url", "state diff url",
             "manual label"])
-        with IOUtils.cd(f"{Macros.project_dir}/DomTreeDiff"):
-            # BashUtils.run("export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home", expected_return_code=0)
-            BashUtils.run(f"JAVA_HOME={Macros.JAVA_HOME} mvn clean package", expected_return_code=0)
+        # # state diff
+        # with IOUtils.cd(f"{Macros.project_dir}/DomTreeDiff"):
+        #     BashUtils.run("export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home", expected_return_code=0)
+        #     BashUtils.run(f"JAVA_HOME={Macros.JAVA_HOME} mvn clean package", expected_return_code=0)
 
         if not crawl_paths_folder:
             crawl_paths_file = Macros.results_dir / "frag-gen-updated" / self.project_name / "CrawlPaths.json"
@@ -50,6 +48,7 @@ class KeywordGen:
                 crawl_paths_folder = crawl_paths_folder + "/"
             crawl_paths_file = crawl_paths_folder + "CrawlPaths.json"
 
+        Path(Macros.results_dir / "paths").mkdir(parents=True, exist_ok=True)
         IOUtils.dump(logging_file, [f"crawl result: {crawl_paths_file}"], IOUtils.Format.txtList, append=True)
 
         crawl_paths = IOUtils.load(crawl_paths_file)
