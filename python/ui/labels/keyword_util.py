@@ -13,16 +13,12 @@ import enchant
 from typing import List
 from keybert import KeyBERT
 import csv
-from ui.labels import compare_dom_tree
-import os
-import time
 from pathlib import Path
 from lxml import html, etree
 from io import StringIO
 from summa.summarizer import summarize
 from summa.keywords import keywords
 import xmltodict as xd
-import re
 import logging
 from sentence_transformers import SentenceTransformer
 import openpyxl
