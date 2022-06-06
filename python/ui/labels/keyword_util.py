@@ -55,6 +55,11 @@ def preprocess_dom(state_stripped_dom: str):
 
 
 def tokenize(s: str):
+    """
+    input: string
+    Tokenize a string including camel case and snake case.
+    return: string of tokens
+    """
     result = ""
     buffer = ""
     for word in s.split():
