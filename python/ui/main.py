@@ -64,13 +64,6 @@ def labeled_tests(**options):
     keywordGen = KeywordGen(project_name)
     keywordGen.label_paths_xlsx_format(crawl_folder_path)
     keywordGen.label_with_preprocess("heuristic")
-    # # the commented code is for invoking Crawljax plugin
-    # keywordGen.xlsx_to_json(crawl_folder_path)
-    # with IOUtils.cd(Macros.project_dir / "labelled_testcasegenerator-plugin"):
-    #     BashUtils.run("mvn clean package -DskipTests")
-    #     label_json_path = Macros.results_dir/"paths"/f"{project_name}-labels.json"
-    #     BashUtils.run(f"mvn exec:java -Dexec.mainClass='com.crawljax.plugins.labelledTCG.OfflineTestGenerator' "
-    #                   f"-Dexec.args='{crawl_folder_path} {label_json_path}'")
 
 if __name__ == "__main__":
     CliUtils.main(sys.argv[1:], globals(), normalize_options)
