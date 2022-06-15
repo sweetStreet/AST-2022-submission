@@ -52,8 +52,8 @@ def rank_attributes(**options):
     sorted_keys = data_count_attributes_per_project(project_lists)
     IOUtils.dump(Macros.results_dir / "ranked_attributes.json", sorted_keys)
 
-# python -m ui.main labeled_tests --project="addressbook" --crawlfolder="/Users/xyz/AST-2022-submission/results/frag-gen-updated/addressbook"
-def labeled_tests(**options):
+# python -m ui.main labeled_tests_supervised --project="addressbook" --crawlfolder="/Users/xyz/AST-2022-submission/results/frag-gen-updated/addressbook"
+def labeled_tests_supervised(**options):
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
     project_name = options.get("project")
     crawl_folder_path = options.get("crawlfolder")
