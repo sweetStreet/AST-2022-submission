@@ -345,44 +345,6 @@ def get_element_label(eventable_element_details: dict):
 
 
 ########################################## label node (state) ############################################
-def find_parent(project_name: str):
-    # CrawlPaths element contains too many newly added attributes
-    crawl_paths_file = Macros.results_dir / "frag-gen" / project_name / "CrawlPaths.json"
-    crawl_paths = IOUtils.load(crawl_paths_file)
-
-    # open the file in the write mode
-    with open(f'{Macros.results_dir}/{project_name}-dom.csv', 'w') as f:
-        # create the csv writer
-        writer = csv.writer(f)
-        writer.writerow(["id", "element", "first parent", "second parent", "third parent", "forth parent"])
-
-        for crawl_path in crawl_paths:
-            for clickable_element in crawl_path:
-                previous_state = clickable_element["source"]
-                previous_state_id = str(clickable_element["source"]["id"])
-                if previous_state_id == "0":
-                    html_path = f'{Macros.results_dir}/frag-gen/{project_name}/doms/index.html'
-                else:
-                    html_path = f'{Macros.results_dir}/frag-gen/{project_name}/doms/state{previous_state_id}.html'
-                with open(html_path, 'r') as file:
-                    state_dom = file.read()
-                if not state_dom:
-                    logging.debug("failed to find the state dom")
-                    continue
-                eventable_element_xpath = str(clickable_element["identification"]["value"])
-                cur_dom, first_parent, second_parent, third_parent, forth_parent = find_parent_for_each_element(
-                    state_dom, eventable_element_xpath.lower())
-                if cur_dom == "":
-                    logging.debug("Could not find element")
-                    logging.debug(f'id: {clickable_element["id"]}')
-                    logging.debug(f'element: {clickable_element["element"]}')
-                    logging.debug(f'state id: {previous_state["id"]}')
-                    continue
-                # write a row to the csv file
-                writer.writerow(
-                    [clickable_element["id"], cur_dom, first_parent, second_parent, third_parent, forth_parent])
-
-
 def find_element(state_dom: str, clickable_element_xpath: str, return_format: str = "dom"):
     '''
     locate the clickable element in the web page
